@@ -373,10 +373,10 @@ sim_results <-
             "playoffs" = mean(playoffs),
             'last_place' = mean(last_place))
 
-read_csv('historical_playoff_odds_2022.csv') %>%
+read_csv('history/historical_playoff_odds_2022.csv') %>%
   filter(matchup_id != params$matchweek_id) %>%
   bind_rows(sim_results %>% mutate('matchup_id' = params$matchweek_id)) %>%
-  write_csv('historical_playoff_odds_2022.csv')
+  write_csv('history/historical_playoff_odds_2022.csv')
 ```
 
 

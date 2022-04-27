@@ -1,0 +1,1 @@
+/usr/local/bin/Rscript -e 'Sys.setenv("RSTUDIO_PANDOC" = "/private/var/folders/g1/8cw3xbh143x7f1tlr6dh60tw0000gn/T/AppTranslocation/393BC802-6C4F-4507-A263-DD21EB74B2B4/d/RStudio.app/Contents/MacOS/pandoc");library(rmarkdown);render("fantasy.Rmd", "html_document")'
