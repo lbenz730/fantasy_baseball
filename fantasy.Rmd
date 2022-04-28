@@ -6,6 +6,7 @@ params:
   matchweek_id: 3
   nsims: 100000
   midweek: FALSE
+  season: 2022
 output: 
    html_document: default
 ---
@@ -35,7 +36,7 @@ source('helpers.R')
 
 ```{r}
 ### Get data
-y <- robust_scrape('http://fantasy.espn.com/apis/v3/games/flb/seasons/2022/segments/0/leagues/49106?view=mTeam')
+y <- robust_scrape(glue('http://fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?view=mTeam'))
 
 ### Teams
 teams <- jsonlite::flatten(y$teams)
@@ -67,7 +68,7 @@ for(i in 1:20) {
     i >= 14 ~ 11 + 7*i
   )
   
-  x <- robust_scrape(glue("http://fantasy.espn.com/apis/v3/games/flb/seasons/2022/segments/0/leagues/49106?scoringPeriodId={sp_id}&view=mBoxscore"))
+  x <- robust_scrape(glue("http://fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?scoringPeriodId={sp_id}&view=mBoxscore"))
   
   
   schedule_ <- x$schedule
@@ -682,7 +683,7 @@ ggplot(exp_standings, aes(x = exp_win_pct, y = win_pct)) +
 ```
 
 ```{r}
-history <- read_csv('historical_playoff_odds_2022.csv')
+history <- read_csv('history/historical_playoff_odds_2022.csv')
 
 ggplot(history, aes(x = matchup_id, y = playoffs, fill = team)) +
   facet_wrap(~team) +
