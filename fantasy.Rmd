@@ -55,6 +55,7 @@ teams <-
   select(team_id, division_id, team, everything())
 
 teams$logo[which(teams$team == "The Traveling Secretaries")] <- 'https://i.imgur.com/wll1Ubw.jpg'
+write_csv(teams, glue('info/teams_{params$season}.csv'))
 
 ### Schedule and Batting + Pitching Points
 home_schedule <- NULL
