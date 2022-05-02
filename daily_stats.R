@@ -20,9 +20,7 @@ df_start <-
          'end_period' = cumsum(duration),
          'start_period' = end_period - duration + 1)
 
-df_schedule <- read_csv('info/schedule_2022.csv')
-
-get_daily_stats <- function(x, y, index, team) {
+get_daily_stats <- function(x, y, index, team, df_schedule) {
   if(team == 'home') {
     x <- x$schedule$home$rosterForCurrentScoringPeriod
     y <- y$schedule$home$rosterForCurrentScoringPeriod
@@ -44,22 +42,20 @@ get_daily_stats <- function(x, y, index, team) {
       } }) %>% 
     mutate('player' = y$entries[[index]]$playerPoolEntry$player$fullName,
            'player_id' = y$entries[[index]]$playerPoolEntry$player$id) %>% 
-    mutate('team_id' = ifelse(team == 'home', df_schedule$home_team_id[index], df_schedule$away_team_id[index]))
+    mutate('team_id' = ifelse(team == 'home', df_schedule$home_team_id[index], df_schedule$away_team_id[index])) %>% 
+    mutate('game_id' = index)
   
   return(df)
   
 }
 
 
-get_matchup_stats <- function(week, end_early = F, season = 2022) {
-  if(season == 2021) {
-    df_schedule <- read_csv('history/schedule_2021.csv') 
-  }
+get_matchup_stats <- function(week, season = 2022) {
+  
+  df_schedule <- read_csv(glue('data/stats/{season}/schedule_{season}.csv'))
+  
   start <- df_start$start_period[week]
   end <- df_start$end_period[week]
-  if(end_early) {
-    end <- start + wday(Sys.Date()-2) 
-  }
   
   df <- 
     future_map_dfr(start:end, ~{
@@ -77,72 +73,33 @@ get_matchup_stats <- function(week, end_early = F, season = 2022) {
       
       indices <- which(!map_lgl(x$schedule$home$rosterForCurrentScoringPeriod$entries, is.null))
       
-      df <- 
-        bind_rows(map_dfr(indices, function(i) get_daily_stats(x, y, i, 'home')),
-                  map_dfr(indices, function(i) get_daily_stats(x, y, i, 'away'))) %>% 
-        mutate('scoring_period_id' = .x) %>% 
-        mutate('game_id' = z$gameId) %>% 
-        mutate('matchup_id' = week) %>% 
-        left_join(roster_status, by = c("player", "player_id", "team_id")) %>% 
-        mutate('in_lineup' = lineup_id <= 15,
-               'pitcher' = lineup_id %in% c(14, 15),
-               'batter' = lineup_id <= 9)
-      
-      
-      df
+      tmp1 <- map_dfr(indices, function(i) get_daily_stats(x, y, i, 'home', df_schedule))
+      tmp2 <- map_dfr(indices, function(i) get_daily_stats(x, y, i, 'away', df_schedule))
+      if(nrow(tmp1) > 0) {
+        df <- 
+          bind_rows(tmp1, tmp2) %>% 
+          mutate('scoring_period_id' = .x) %>% 
+          mutate('matchup_id' = week) %>% 
+          left_join(roster_status, by = c("player", "player_id", "team_id")) %>% 
+          mutate('in_lineup' = lineup_id <= 15,
+                 'pitcher' = lineup_id %in% c(14, 15),
+                 'batter' = lineup_id <= 12)
+        
+        
+        df
+      } else {
+        NULL
+      }
       
     })
   
   return(df)
 }
 
-df_2021 <- map_dfr(1:20, ~get_matchup_stats(.x, season = 2021))
-
-# df1 <- get_matchup_stats(1)
-# df2 <- get_matchup_stats(2)
-df3 <- get_matchup_stats(3, T)
+# ### 2021 Scrape
+# df_2021 <- map_dfr(1:20, ~get_matchup_stats(.x, season = 2021))
+# write_csv(df_2021, 'data/stats/2021/daily_stats_2021.csv')
 # 
-# 
-# bind_rows(df1, df2, df3) %>% 
-#   write_csv('history/daily_stats_2022.csv')
-# 
-# 
-# df %>% 
-#   group_by(team_id, lineup_id) %>% 
-#   summarise('ppg' = mean(points)) %>% 
-#   filter(lineup_id == 1)
-# summarise('points' = sum(points),
-#           'starts' = sum(starts))
-# 
-# 
-# 
-# df %>% 
-#   filter(in_lineup) %>% 
-#   inner_join(df_start, by = 'matchup_id') %>% 
-#   mutate('day_of_matchup' = scoring_period_id - start_period + 1) %>% 
-#   group_by(matchup_id, team_id, day_of_matchup, start_cap) %>% 
-#   summarise('day_points' = sum(points),
-#             'start_points' = sum(points[start], na.rm = T),
-#             'starts' = sum(start)) %>% 
-#   group_by(matchup_id, team_id) %>% 
-#   mutate('total_points' = cumsum(day_points),
-#          'total_starts' = cumsum(starts)) %>% 
-#   View()
-
-
-# 
-
-
-
-read_csv('history/daily_stats_2022.csv') %>% 
-  filter(matchup_id < 3) %>% 
-  bind_rows(df3) %>% 
-  filter(in_lineup) %>%
-  # filter(scoring_period_id == max(scoring_period_id)) %>%
-  group_by(team_id) %>% 
-  summarise('points' = sum(points)) %>% 
-  ungroup() %>% 
-  mutate('pts_back' = points - max(points)) %>% 
-  arrange(-points) %>% 
-  inner_join(teams)
-
+# ### 2022 Scrape
+# df_2022 <- map_dfr(1:3, ~get_matchup_stats(.x, season = 2022))
+# write_csv(df_2022, 'data/stats/2022/daily_stats_2022.csv')

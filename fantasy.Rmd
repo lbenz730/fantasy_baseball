@@ -32,6 +32,7 @@ theme_set(theme_bw() +
 set.seed(123)
 
 source('helpers.R')
+source('daily_stats.R')
 ```
 
 ```{r}
@@ -55,7 +56,7 @@ teams <-
   select(team_id, division_id, team, everything())
 
 teams$logo[which(teams$team == "The Traveling Secretaries")] <- 'https://i.imgur.com/wll1Ubw.jpg'
-write_csv(teams, glue('info/teams_{params$season}.csv'))
+write_csv(teams, glue('data/stats/{params$season}/teams_{params$season}.csv'))
 
 ### Schedule and Batting + Pitching Points
 home_schedule <- NULL
@@ -148,6 +149,17 @@ for(i in 1:nrow(relief_starts)) {
   sp_points$n_points[ix_sp] <- relief_starts$sp_points[i]
   sp_points$n_games[ix_sp] <- relief_starts$sp_games[i]
 }
+
+write_csv(schedule, glue('data/stats/{params$season}/schedule_{params$season}.csv'))
+write_csv(batter_points, glue('data/stats/{params$season}/batting_weekly_{params$season}.csv'))
+write_csv(sp_points, glue('data/stats/{params$season}/sp_weekly_{params$season}.csv'))
+write_csv(rp_points, glue('data/stats/{params$season}/rp_weekly_{params$season}.csv'))
+
+### Update Daily Stats
+read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
+  filter(matchup_id < params$matchweek_id) %>%  
+  bind_rows(get_matchup_stats(params$matchweek_id, season = params$season)) %>% 
+  write_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
 
 ```
 
@@ -375,10 +387,10 @@ sim_results <-
             "playoffs" = mean(playoffs),
             'last_place' = mean(last_place))
 
-read_csv('history/historical_playoff_odds_2022.csv') %>%
+read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
   filter(matchup_id != params$matchweek_id) %>%
   bind_rows(sim_results %>% mutate('matchup_id' = params$matchweek_id)) %>%
-  write_csv('history/historical_playoff_odds_2022.csv')
+  write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 ```
 
 
@@ -684,7 +696,7 @@ ggplot(exp_standings, aes(x = exp_win_pct, y = win_pct)) +
 ```
 
 ```{r}
-history <- read_csv('history/historical_playoff_odds_2022.csv')
+history <- read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
 ggplot(history, aes(x = matchup_id, y = playoffs, fill = team)) +
   facet_wrap(~team) +

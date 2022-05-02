@@ -1,0 +1,97 @@
+library(tidyverse)
+library(glue)
+
+build_train_set <- function(season) {
+  ### Read in Data set 
+  df_schedule <- read_csv(glue('data/stats/{season}/schedule_{season}.csv'))
+  df_stats <- read_csv(glue('data/stats/{season}/daily_stats_{season}.csv'))
+  df_teams <- read_csv(glue('data/stats/{season}/teams_{season}.csv'))
+  
+  ### Define Start Caps 
+  df_start <- 
+    tibble('matchup_id' = 1:20) %>% 
+    mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
+                                   matchup_id == 14 ~ 11,
+                                   T ~ 8),
+           'duration' = case_when(matchup_id == 1 ~ 11, 
+                                  matchup_id == 14 ~ 14,
+                                  T ~ 7),
+           'end_period' = cumsum(duration),
+           'start_period' = end_period - duration + 1)
+  
+
+  df_features <- 
+    df_stats %>%
+    filter(in_lineup) %>%
+    inner_join(df_start, by = 'matchup_id') %>%
+    mutate('day_of_matchup' = scoring_period_id - start_period + 1) %>%
+    mutate('days_left' = end_period - scoring_period_id) %>%
+    group_by(matchup_id, team_id, day_of_matchup, days_left, start_cap) %>%
+    summarise('day_points' = sum(points),
+              'start_points' = sum(points[start], na.rm = T),
+              'starts' = sum(start),
+              'batting_points' = sum(points[batter]),
+              'pitching_points' = sum(points[pitcher])) %>%
+    group_by(matchup_id, team_id) %>%
+    mutate('total_starts' = cumsum(starts)) %>% 
+    mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) <= start_cap ) %>% 
+    mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points), 0.5, ceiling))) %>% 
+    mutate('total_points' = cumsum(day_points - penalty),
+           'total_batting_points' = cumsum(batting_points),
+           'total_pitching_points' = cumsum(pitching_points)) %>% 
+    group_by(team_id, matchup_id) %>% 
+    group_split() %>% 
+    map_dfr(., ~{
+      bind_rows(.x, tibble('matchup_id' = .x$matchup_id[1],
+                           'team_id' = .x$team_id[1],
+                           'day_of_matchup' = 0,
+                           'days_left' = .x$days_left[1] + 1,
+                           'start_cap' = .x$start_cap[1]))
+    }) %>% 
+    ungroup() %>% 
+    arrange(matchup_id, team_id, day_of_matchup) %>% 
+    select(-penalty) %>% 
+    mutate('over_start_cap' = total_starts >= start_cap,
+           'penalty' = total_points - total_batting_points - total_pitching_points)
+  
+  
+  ### Add in Pre-Matchup Day
+  df_lag <- 
+    df_features %>% 
+    group_by(matchup_id) %>% 
+    filter(days_left == min(days_left)) %>% 
+    group_by(team_id) %>% 
+    mutate('start_rate' = map_dbl(total_starts/start_cap, ~min(1, .x))) %>% 
+    arrange(matchup_id) %>% 
+    mutate('prev_points_per_day' = lag(total_points/day_of_matchup),
+           'points_per_day' = lag(cummean(total_points/day_of_matchup)),
+           'bat_points_per_day' = lag(cummean(total_batting_points/day_of_matchup)),
+           'pitch_points_per_day' = lag(cummean(total_pitching_points/day_of_matchup)),
+           'max_start_rate' = lag(cummean(start_rate)) ) %>% 
+    select(team_id, matchup_id, contains('per_day'), contains('max_start_rate')) %>% 
+    ungroup()
+  
+  df_features <-
+    df_features %>% 
+    inner_join(df_lag, by = c("matchup_id", "team_id")) 
+  
+  ### Win Results
+  df_results <- 
+    df_schedule %>% 
+    mutate('win' = as.numeric(home_total_points > away_total_points)) %>% 
+    select(matchup_id, home_team_id, away_team_id, win)
+  
+  
+  df_train <-
+    df_results %>% 
+    inner_join(df_features, by = c('matchup_id', 'home_team_id' = 'team_id')) %>% 
+    inner_join(df_features, by = c('matchup_id', 'day_of_matchup', 'days_left', 'start_cap',
+                                   'away_team_id' = 'team_id'), suffix = c('_home', '_away')) %>% 
+    mutate('score_diff' = total_points_home - total_points_away,
+           'start_diff' = total_starts_home - total_starts_away) %>% 
+    mutate('ratio' = score_diff/(days_left + 0.0001))
+  
+  
+  
+  return(df_train)
+}
