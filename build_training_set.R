@@ -49,10 +49,12 @@ build_train_set <- function(season) {
                            'start_cap' = .x$start_cap[1]))
     }) %>% 
     ungroup() %>% 
+    mutate_if(is.numeric, ~replace(.x, is.na(.x), 0)) %>% 
     arrange(matchup_id, team_id, day_of_matchup) %>% 
     select(-penalty) %>% 
     mutate('over_start_cap' = total_starts >= start_cap,
-           'penalty' = total_points - total_batting_points - total_pitching_points)
+           'penalty' = total_points - total_batting_points - total_pitching_points) %>% 
+    mutate('starts_left' = pmax(0, start_cap - total_starts))
   
   
   ### Add in Pre-Matchup Day
@@ -89,9 +91,24 @@ build_train_set <- function(season) {
                                    'away_team_id' = 'team_id'), suffix = c('_home', '_away')) %>% 
     mutate('score_diff' = total_points_home - total_points_away,
            'start_diff' = total_starts_home - total_starts_away) %>% 
-    mutate('ratio' = score_diff/(days_left + 0.0001))
-  
-  
+    mutate('matchup_over' = 
+             (total_points_home > total_points_away) * (days_left == 0) - 
+             (total_points_home < total_points_away) * (days_left == 0) ) %>% 
+    mutate('score_days_ratio_home' = abs(pmin(0, score_diff/(days_left + 0.001))),
+           'score_days_ratio_away' = abs(pmax(0, score_diff/(days_left + 0.001)))) %>% 
+    mutate('score_starts_ratio_home' = abs(pmin(0, score_diff/(starts_left_home + 0.001))),
+           'score_starts_ratio_away' = abs(pmax(0, score_diff/(starts_left_away + 0.001)))) %>% 
+    mutate('score_days_ratio' = score_days_ratio_home - score_days_ratio_away,
+           'score_starts_ratio' = score_starts_ratio_home - score_starts_ratio_away) %>% 
+    mutate('start_advantage' = (starts_left_home - starts_left_away)) %>% 
+    mutate('start_advantage_ratio' = (starts_left_home - starts_left_away)/(starts_left_home + starts_left_away + 1)) %>% 
+    ### Have to Fix these
+    mutate('points_per_day_spread' = (points_per_day_home - points_per_day_away) * exp(-(7 - pmin(days_left, 7))),
+           'points_per_start_spread' = (pitch_points_per_day_home - pitch_points_per_day_away) * exp(-(7 - pmin(days_left, 7))),
+           'points_per_bat_spread' = (bat_points_per_day_home - bat_points_per_day_away) * exp(-(7 - pmin(days_left, 7))))
   
   return(df_train)
 }
+
+
+

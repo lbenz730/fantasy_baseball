@@ -1,22 +1,46 @@
 library(tidyverse)
 library(xgboost)
 library(splitTools)
+library(tidymodels)
 source('build_training_set.R')
 
 set.seed(212)
 df <- build_train_set(2021) 
 
+covariates <- c('score_diff', 
+                'days_left',
+                
+                'score_days_ratio',
+                'score_starts_ratio',
+                
+                'start_advantage',
+                'start_advantage_ratio',
+                
+                'points_per_day_spread',
+                'points_per_start_spread',
+                'points_per_bat_spread'
+)
+
+constraints <- c(1, 0, 
+                 -1, -1,
+                 1, 1,
+                 1, 1, 1)
+
+
+
+
 ### Preprocessing Recipe
 preprocessing_recipe <- 
   recipe(win ~ ., data = df) %>% 
   step_rm(ends_with('id')) %>% 
+  step_rm(-all_of(covariates)) %>% 
   prep()
 
 ### CV Folds
 ### One fold per week
 cv_folds <- 
   create_folds(y = df$matchup_id,
-               k = 5,
+               k = 10,
                type = "grouped",
                invert = TRUE)
 
@@ -25,7 +49,7 @@ xgb_grid <-
   grid_latin_hypercube(
     mtry(range = c(1, ncol(df))),
     min_n(),
-    tree_depth(range = c(5L, 12)),
+    tree_depth(range = c(5L, 15)),
     dials::learn_rate(range = c(-4, -1), trans = scales::log10_trans()),
     loss_reduction(),
     sample_size = sample_prop(),
@@ -40,6 +64,8 @@ xgb_grid <-
 
 
 run_cv <- function(param_set) {
+  df_train <- bake(preprocessing_recipe, df) 
+  
   params <-
     list(
       booster = "gbtree",
@@ -50,17 +76,17 @@ run_cv <- function(param_set) {
       subsample = param_set$subsample,
       colsample_bytree = param_set$colsample_bytree,
       max_depth = param_set$max_depth,
-      min_child_weight = param_set$min_child_weight
-      # monotonic_constraints = '(0, 0, 
+      min_child_weight = param_set$min_child_weight,
+      monotone_constraints = constraints
     )
   
   ### Cross validation
   cv_model <- 
     xgb.cv(
-      data = as.matrix(df %>% select(-ends_with('_id'), -win)),
+      data = as.matrix(df_train),
       label = df$win,
       params = params,
-      nrounds = 2000,
+      nrounds = 5000,
       folds = cv_folds,
       metrics = list("logloss"),
       early_stopping_rounds = 50,
@@ -99,14 +125,55 @@ params <-
        'subsample' = best_params$subsample,
        'colsample_bytree' = best_params$colsample_bytree,
        'max_depth' = best_params$max_depth,
-       'min_child_weight' = best_params$min_child_weight)
+       'min_child_weight' = best_params$min_child_weight,
+       'monotone_constraints' = constraints)
+
+
 
 
 model <- 
   xgboost(params = params,
-          data = as.matrix(df %>% select(-ends_with('_id'), -win)),
+          data = as.matrix(bake(preprocessing_recipe, df)),
           label = df$win,
           nrounds = best_params$iter,
           verbose = 2)
 
-### Let's move to try one logistic regression per day of matchup
+# df$win_prob <- predict(model, as.matrix(bake(preprocessing_recipe, df)))
+
+
+df_2022 <- build_train_set(2022)
+df_2022$win_prob <- predict(model, as.matrix(bake(preprocessing_recipe, df_2022)))
+df_2022$win_prob[df_2022$days_left == 0 & df_2022$score_diff > 0] <- 1
+df_2022$win_prob[df_2022$days_left == 0 & df_2022$score_diff < 0] <- 0
+
+df_2022 %>% 
+  filter(matchup_id == 3) %>% 
+  ggplot(aes(x = day_of_matchup, y = win_prob)) + 
+  facet_wrap(~paste(home_team_id, away_team_id)) + 
+  geom_point() +
+  geom_line()
+
+
+df_2022 %>% 
+  filter(matchup_id == 3, home_team_id == 2) %>% 
+  select(any_of(covariates), win_prob) %>% 
+  View()
+
+# df_cv %>%
+#   dplyr::select(logloss, eta, gamma, subsample, colsample_bytree, max_depth, min_child_weight) %>%
+#   tidyr::pivot_longer(
+#     eta:min_child_weight,
+#     values_to = "value",
+#     names_to = "parameter"
+#   ) %>%
+#   ggplot(aes(value, logloss, color = parameter)) +
+#   geom_point(alpha = 0.8, show.legend = FALSE, size = 3) +
+#   facet_wrap(~parameter, scales = "free_x") +
+#   labs(x = NULL, y = "logloss") +
+#   theme_minimal()
+
+importance <- xgboost::xgb.importance(
+  feature_names = colnames(model),
+  model = model
+)
+xgboost::xgb.ggplot.importance(importance_matrix = importance)
