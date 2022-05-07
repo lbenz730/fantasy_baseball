@@ -101,11 +101,13 @@ build_train_set <- function(season) {
     mutate('score_days_ratio' = score_days_ratio_home - score_days_ratio_away,
            'score_starts_ratio' = score_starts_ratio_home - score_starts_ratio_away) %>% 
     mutate('start_advantage' = (starts_left_home - starts_left_away)) %>% 
-    mutate('start_advantage_ratio' = (starts_left_home - starts_left_away)/(starts_left_home + starts_left_away + 1)) %>% 
-    ### Have to Fix these
-    mutate('points_per_day_spread' = (points_per_day_home - points_per_day_away) * exp(-(7 - pmin(days_left, 7))),
-           'points_per_start_spread' = (pitch_points_per_day_home - pitch_points_per_day_away) * exp(-(7 - pmin(days_left, 7))),
-           'points_per_bat_spread' = (bat_points_per_day_home - bat_points_per_day_away) * exp(-(7 - pmin(days_left, 7))))
+    mutate('start_advantage_ratio' = (starts_left_home - starts_left_away)/(starts_left_home + starts_left_away + 1),
+           'pitch_spread_per_start' = (pitch_points_per_day_home - pitch_points_per_day_away) * exp(starts_left_home + starts_left_away - 2 * start_cap),
+           'points_per_bat_spread' = (bat_points_per_day_home - bat_points_per_day_away) * matchup_id/20 * exp(-(7 - pmin(days_left, 7))))
+           
+             
+
+  df_train$points_per_bat_spread[df_train$days_left <= 4] <- 0
   
   return(df_train)
 }

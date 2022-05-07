@@ -135,8 +135,9 @@ ferry <- '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Sp
 
 relief_starts <- 
   tribble(
-    ~week, ~player, ~sp_points, ~sp_games, ~rp_points, ~rp_games,
-    1, 'Garrett Whitlock', 13.5, 1, 14.5, 2,
-    2, 'Garrett Whitlock', 18, 1, 6, 1,
-    2, 'Keegan Thompson', 13.5, 1, 0, 0
+    ~week, ~player, ~sp_points, ~sp_games, ~n_qs, ~rp_points, ~rp_games,
+    1, 'Garrett Whitlock', 13.5, 1, 0, 14.5, 2,
+    2, 'Garrett Whitlock', 18, 1,  0, 6, 1,
+    2, 'Keegan Thompson', 13.5, 1, 0, 0, 0,
+    4, 'Spencer Strider', 16, 1, 0, 0, 0
   )

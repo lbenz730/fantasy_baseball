@@ -16,15 +16,17 @@ covariates <- c('score_diff',
                 'start_advantage',
                 'start_advantage_ratio',
                 
-                'points_per_day_spread',
-                'points_per_start_spread',
-                'points_per_bat_spread'
+                'points_per_bat_spread',
+                'pitch_spread_per_start', 
+                ''
 )
 
-constraints <- c(1, 0, 
-                 -1, -1,
-                 1, 1,
-                 1, 1, 1)
+constraints <- c(
+  1, 0, 
+  -1, -1,
+  1, 1,
+  1, 1
+)
 
 
 
@@ -33,8 +35,9 @@ constraints <- c(1, 0,
 preprocessing_recipe <- 
   recipe(win ~ ., data = df) %>% 
   step_rm(ends_with('id')) %>% 
-  step_rm(-all_of(covariates)) %>% 
+  step_rm(-any_of(covariates)) %>% 
   prep()
+write_rds(preprocessing_recipe, 'recipe.rds')
 
 ### CV Folds
 ### One fold per week
@@ -53,7 +56,7 @@ xgb_grid <-
     dials::learn_rate(range = c(-4, -1), trans = scales::log10_trans()),
     loss_reduction(),
     sample_size = sample_prop(),
-    size = 10) %>%
+    size = 100) %>%
   mutate('mtry' = mtry/ncol(df)) %>%
   rename('eta'= learn_rate,
          'gamma' = loss_reduction,
@@ -138,42 +141,4 @@ model <-
           nrounds = best_params$iter,
           verbose = 2)
 
-# df$win_prob <- predict(model, as.matrix(bake(preprocessing_recipe, df)))
-
-
-df_2022 <- build_train_set(2022)
-df_2022$win_prob <- predict(model, as.matrix(bake(preprocessing_recipe, df_2022)))
-df_2022$win_prob[df_2022$days_left == 0 & df_2022$score_diff > 0] <- 1
-df_2022$win_prob[df_2022$days_left == 0 & df_2022$score_diff < 0] <- 0
-
-df_2022 %>% 
-  filter(matchup_id == 3) %>% 
-  ggplot(aes(x = day_of_matchup, y = win_prob)) + 
-  facet_wrap(~paste(home_team_id, away_team_id)) + 
-  geom_point() +
-  geom_line()
-
-
-df_2022 %>% 
-  filter(matchup_id == 3, home_team_id == 2) %>% 
-  select(any_of(covariates), win_prob) %>% 
-  View()
-
-# df_cv %>%
-#   dplyr::select(logloss, eta, gamma, subsample, colsample_bytree, max_depth, min_child_weight) %>%
-#   tidyr::pivot_longer(
-#     eta:min_child_weight,
-#     values_to = "value",
-#     names_to = "parameter"
-#   ) %>%
-#   ggplot(aes(value, logloss, color = parameter)) +
-#   geom_point(alpha = 0.8, show.legend = FALSE, size = 3) +
-#   facet_wrap(~parameter, scales = "free_x") +
-#   labs(x = NULL, y = "logloss") +
-#   theme_minimal()
-
-importance <- xgboost::xgb.importance(
-  feature_names = colnames(model),
-  model = model
-)
-xgboost::xgb.ggplot.importance(importance_matrix = importance)
+xgb.save(model, 'xgb_winprob')

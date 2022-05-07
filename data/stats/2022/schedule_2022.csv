@@ -11,18 +11,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 2,10,13,340,163.5,176.5,9,313,214,99,Springer Bell,Of Bryce and Men
 2,11,14,300.5,150,150.5,2,310.5,174,136.5,Freedom of the Pressly,Framber Valdez Oil Spill
 2,12,1,213.5,105,108.5,8,262.5,141.5,121,Yosemite Yeshivas,Mt. Everest Taquito Farmers
-3,13,4,305.5,187,118.5,7,349.5,201.5,148,All That is Wright,All Walshed Up
+3,13,4,306.5,187,119.5,7,349.5,201.5,148,All That is Wright,All Walshed Up
 3,14,12,397.5,167.5,230,11,272,176,96,Blasphemous Hot Takes,The West Bank Occupiers 
 3,15,5,315,173,142,6,388,173.5,214.5,The Traveling Secretaries,The Novaks
-3,16,14,326.5,208.5,118,13,382.5,236.5,146,Freedom of the Pressly,Springer Bell
-3,17,9,318.5,158.5,160,1,314,185.5,128.5,Of Bryce and Men,Yosemite Yeshivas
-3,18,2,340,160.5,179.5,8,316.5,167.5,149,Framber Valdez Oil Spill,Mt. Everest Taquito Farmers
-4,19,7,NA,NA,NA,11,NA,NA,NA,All Walshed Up,The West Bank Occupiers 
-4,20,6,NA,NA,NA,4,NA,NA,NA,The Novaks,All That is Wright
-4,21,5,NA,NA,NA,12,NA,NA,NA,The Traveling Secretaries,Blasphemous Hot Takes
-4,22,13,NA,NA,NA,1,NA,NA,NA,Springer Bell,Yosemite Yeshivas
-4,23,8,NA,NA,NA,14,NA,NA,NA,Mt. Everest Taquito Farmers,Freedom of the Pressly
-4,24,2,NA,NA,NA,9,NA,NA,NA,Framber Valdez Oil Spill,Of Bryce and Men
+3,16,14,323.5,208.5,115,13,384.5,238.5,146,Freedom of the Pressly,Springer Bell
+3,17,9,319.5,159.5,160,1,315,186.5,128.5,Of Bryce and Men,Yosemite Yeshivas
+3,18,2,341,161.5,179.5,8,316.5,167.5,149,Framber Valdez Oil Spill,Mt. Everest Taquito Farmers
+4,19,7,132,125.5,6.5,11,141.5,98,43.5,All Walshed Up,The West Bank Occupiers 
+4,20,6,225,122.5,102.5,4,152,88,64,The Novaks,All That is Wright
+4,21,5,249.5,110,139.5,12,103.5,105.5,-2,The Traveling Secretaries,Blasphemous Hot Takes
+4,22,13,180.5,101.5,79,1,169.5,128,41.5,Springer Bell,Yosemite Yeshivas
+4,23,8,178.5,111,67.5,14,204,128,76,Mt. Everest Taquito Farmers,Freedom of the Pressly
+4,24,2,144,87,57,9,149,111,38,Framber Valdez Oil Spill,Of Bryce and Men
 5,25,6,NA,NA,NA,7,NA,NA,NA,The Novaks,All Walshed Up
 5,26,11,NA,NA,NA,5,NA,NA,NA,The West Bank Occupiers ,The Traveling Secretaries
 5,27,4,NA,NA,NA,12,NA,NA,NA,All That is Wright,Blasphemous Hot Takes

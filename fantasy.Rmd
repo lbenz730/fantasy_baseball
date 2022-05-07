@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchweek_id: 3
+  matchweek_id: 4
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -33,6 +33,7 @@ set.seed(123)
 
 source('helpers.R')
 source('daily_stats.R')
+source('wp_graphics.R')
 ```
 
 ```{r}
@@ -74,12 +75,12 @@ for(i in 1:20) {
   
   
   schedule_ <- x$schedule
-  home <- schedule_$home %>% slice(1:120) ### Reg Season
-  away <- schedule_$away %>% slice(1:120)
+  home <- schedule_$home %>% dplyr::slice(1:120) ### Reg Season
+  away <- schedule_$away %>% dplyr::slice(1:120)
   
   schedule_ <- select(schedule_,
                       'matchup_id' = matchupPeriodId,
-                      'game_id' = id) %>% slice(1:120)
+                      'game_id' = id) %>% dplyr::slice(1:120)
   
   home_schedule_ <- 
     select(home, 
@@ -138,9 +139,51 @@ for(i in 1:20) {
   schedule <- bind_rows(schedule, schedule_)
 }
 
+
+### Update Daily Stats
+read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
+  filter(matchup_id < params$matchweek_id) %>%  
+  bind_rows(get_matchup_stats(params$matchweek_id, season = params$season)) %>% 
+  write_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
+
+
+df_daily <- read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
+
+relief_starts <- 
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(pitcher) %>% 
+  group_by(player, team_id, matchup_id) %>% 
+  summarise('sp_games' = sum(start),
+            'rp_games' = sum(relief),
+            'sp_points' = sum(points[start], na.rm = T),
+            'rp_points' = sum(points[relief], na.rm = T)) %>% 
+  filter(sp_games > 0, rp_games > 0)
+
+df_penalty <- 
+  df_daily %>%
+  filter(in_lineup) %>%
+  inner_join(df_start, by = 'matchup_id') %>%
+  mutate('day_of_matchup' = scoring_period_id - start_period + 1) %>%
+  mutate('days_left' = end_period - scoring_period_id) %>%
+  group_by(matchup_id, team_id, day_of_matchup, days_left, start_cap) %>%
+  summarise('day_points' = sum(points),
+            'start_points' = sum(points[start], na.rm = T),
+            'starts' = sum(start),
+            'batting_points' = sum(points[batter]),
+            'pitching_points' = sum(points[pitcher])) %>%
+  group_by(matchup_id, team_id) %>%
+  mutate('total_starts' = cumsum(starts)) %>% 
+  mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) <= start_cap ) %>% 
+  mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points), 0.5, ceiling))) %>%
+  select(matchup_id, team_id, penalty) %>% 
+  filter(penalty != 0) %>% 
+  distinct() %>% 
+  inner_join(select(teams, team, team_id))
+
 ### Relief Starts
 for(i in 1:nrow(relief_starts)) {
-  week <- relief_starts$week[i]
+  week <- relief_starts$matchup_id[i]
   player <- relief_starts$player[i]
   ix_rp <- which(rp_points$player == player & rp_points$matchup_id == week)
   ix_sp <- which(sp_points$player == player & sp_points$matchup_id == week)
@@ -155,11 +198,7 @@ write_csv(batter_points, glue('data/stats/{params$season}/batting_weekly_{params
 write_csv(sp_points, glue('data/stats/{params$season}/sp_weekly_{params$season}.csv'))
 write_csv(rp_points, glue('data/stats/{params$season}/rp_weekly_{params$season}.csv'))
 
-### Update Daily Stats
-read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
-  filter(matchup_id < params$matchweek_id) %>%  
-  bind_rows(get_matchup_stats(params$matchweek_id, season = params$season)) %>% 
-  write_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
+
 
 ```
 
@@ -599,6 +638,180 @@ gtsave(gt1, 'figures/stats.png', vwidth = 3000)
 
 <img src="figures/stats.png" height="600px" width="1600px" />
 
+### Top Performers
+```{r}
+### Top Performers
+df_bat <-
+  batter_points %>%
+  filter(!is.na(n_games)) %>%
+  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
+         'ppg' = n_points/n_games) %>%
+  filter(matchup_id <= params$matchweek_id) %>%
+  group_by(matchup_id) %>% 
+  arrange(-n_points, n_games) %>%
+  dplyr::slice(1:10) %>% 
+  left_join(teams) %>%
+  group_by(player) %>% 
+  mutate('n' = n()) %>% 
+  ungroup() %>% 
+  mutate(player = paste0(player, ' (', n, ')')) %>% 
+  filter(matchup_id == params$matchweek_id) %>%
+  select(player, player_url, team, logo, n_points)
+
+names(df_bat) <- paste0(names(df_bat), '_bat')
+
+
+### Top Performers
+df_sp <-
+  sp_points %>%
+  filter(!is.na(n_games)) %>%
+  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
+         'ppg' = n_points/n_games) %>%
+  filter(matchup_id <= params$matchweek_id) %>%
+  group_by(matchup_id) %>% 
+  arrange(-n_points, n_games) %>%
+  dplyr::slice(1:10) %>% 
+  left_join(teams) %>%
+  group_by(player) %>% 
+  mutate('n' = n()) %>% 
+  ungroup() %>% 
+  mutate(player = paste0(player, ' (', n, ')')) %>% 
+  filter(matchup_id == params$matchweek_id) %>%
+  select(player, player_url, team, logo, n_games, n_points)
+
+names(df_sp) <- paste0(names(df_sp), '_sp')
+
+### Top Performers
+df_rp <-
+  rp_points %>%
+  filter(!is.na(n_games)) %>%
+  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
+         'ppg' = n_points/n_games) %>%
+  filter(matchup_id <= params$matchweek_id) %>%
+  group_by(matchup_id) %>% 
+  arrange(-n_points, n_games) %>%
+  dplyr::slice(1:10) %>% 
+  left_join(teams) %>%
+  group_by(player) %>% 
+  mutate('n' = n()) %>% 
+  ungroup() %>% 
+  mutate(player = paste0(player, ' (', n, ')')) %>% 
+  filter(matchup_id == params$matchweek_id) %>%
+  select(player, player_url, team, logo, n_games, n_points)
+
+names(df_rp) <- paste0(names(df_rp), '_rp')
+
+
+df_top <- bind_cols(df_bat, df_sp, df_rp)
+
+gt_top <-
+  gt(df_top) %>%
+  
+  ### Align Columns
+  cols_align(align = "center", columns = everything()) %>%
+  
+  
+  tab_spanner(label = 'Relief Pitching', columns = contains('_rp')) %>%
+  tab_spanner(label = 'Starting Pitching', columns = contains('_sp')) %>%
+  tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
+  
+  
+  
+  ### Borders
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_column_labels(
+        columns = gt::everything()
+      )
+    )
+  ) %>%
+  
+  ### Logos
+  text_transform(
+    locations = cells_body(contains(c('logo', 'player_url'))),
+    fn = function(x) {
+      web_image(
+        url = x,
+        height = 50
+      )
+    }
+  ) %>%
+  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "right",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_body(
+        columns = contains('points')
+      )
+    )
+  ) %>%
+  
+  
+  ### Names
+  cols_label(
+    'team_bat' = 'Team',
+    'logo_bat' = '',
+    'player_url_bat' = '',
+    'player_bat' = 'Player',
+    'n_points_bat' = 'Points',
+    
+    'team_sp' = 'Team',
+    'logo_sp' = '',
+    'player_url_sp' = '',
+    'player_sp' = 'Player',
+    'n_points_sp' = 'Points',
+    'n_games_sp' = '# of Starts',
+    
+    'team_rp' = 'Team',
+    'logo_rp' = '',
+    'player_url_rp' = '',
+    'player_rp' = 'Player',
+    'n_points_rp' = 'Points',
+    'n_games_rp' = '# of Appearances'
+    
+  ) %>%
+  tab_header(
+    title = md('**Top Performances**'),
+    subtitle = md(glue('**Week {params$matchweek_id}**'))
+  ) %>%
+  tab_options(column_labels.font.size = 20,
+              heading.title.font.size = 40,
+              heading.subtitle.font.size = 40,
+              heading.title.font.weight = 'bold',
+              heading.subtitle.font.weight = 'bold',
+              column_labels.font.weight = 'bold'
+              
+  ) %>% 
+  tab_source_note('Numbers next to player denotes the # of appearances in the weekly top 10')
+
+```
+
+```{r, include = F}
+gtsave(gt_top , 'figures/top_performers.png', vwidth = 3000)
+gtsave(gt_top , glue('figures/top_performers/week{params$matchweek_id}.png'), vwidth = 3000)
+```
+
+
+<img src="figures/top_performers.png" height="500px" width="1000px" />
+
+### Win Probability Charts
+```{r,  fig.height = 9, fig.width = 16}
+df_wp <- plot_wp(params$season, params$matchweek_id)
+```
+
 ### Points Breakdown by Week
 ```{r}
 ggplot(team_points,  aes(x = matchup_id, y = adj_pts)) +
@@ -720,170 +933,4 @@ ggplot(history, aes(x = matchup_id, y = last_place, fill = team)) +
        title = 'Ferry Odds Over Time')
 ```
 
-```{r}
-### Top Performers
-df_bat <-
-  batter_points %>%
-  filter(!is.na(n_games)) %>%
-  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
-         'ppg' = n_points/n_games) %>%
-  filter(matchup_id <= params$matchweek_id) %>%
-  group_by(matchup_id) %>% 
-  arrange(-n_points, n_games) %>%
-  slice(1:10) %>% 
-  left_join(teams) %>%
-  group_by(player) %>% 
-  mutate('n' = n()) %>% 
-  ungroup() %>% 
-  mutate(player = paste0(player, ' (', n, ')')) %>% 
-  filter(matchup_id == params$matchweek_id) %>%
-  select(player, player_url, team, logo, n_points)
 
-names(df_bat) <- paste0(names(df_bat), '_bat')
-
-
-### Top Performers
-df_sp <-
-  sp_points %>%
-  filter(!is.na(n_games)) %>%
-  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
-         'ppg' = n_points/n_games) %>%
-  filter(matchup_id <= params$matchweek_id) %>%
-  group_by(matchup_id) %>% 
-  arrange(-n_points, n_games) %>%
-  slice(1:10) %>% 
-  left_join(teams) %>%
-  group_by(player) %>% 
-  mutate('n' = n()) %>% 
-  ungroup() %>% 
-  mutate(player = paste0(player, ' (', n, ')')) %>% 
-  filter(matchup_id == params$matchweek_id) %>%
-  select(player, player_url, team, logo, n_games, n_points)
-
-names(df_sp) <- paste0(names(df_sp), '_sp')
-
-### Top Performers
-df_rp <-
-  rp_points %>%
-  filter(!is.na(n_games)) %>%
-  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
-         'ppg' = n_points/n_games) %>%
-  filter(matchup_id <= params$matchweek_id) %>%
-  group_by(matchup_id) %>% 
-  arrange(-n_points, n_games) %>%
-  slice(1:10) %>% 
-  left_join(teams) %>%
-  group_by(player) %>% 
-  mutate('n' = n()) %>% 
-  ungroup() %>% 
-  mutate(player = paste0(player, ' (', n, ')')) %>% 
-  filter(matchup_id == params$matchweek_id) %>%
-  select(player, player_url, team, logo, n_games, n_points)
-
-names(df_rp) <- paste0(names(df_rp), '_rp')
-
-
-df_top <- bind_cols(df_bat, df_sp, df_rp)
-
-gt_top <-
-  gt(df_top) %>%
-  
-  ### Align Columns
-  cols_align(align = "center", columns = everything()) %>%
-  
-  
-  tab_spanner(label = 'Relief Pitching', columns = contains('_rp')) %>%
-  tab_spanner(label = 'Starting Pitching', columns = contains('_sp')) %>%
-  tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
-  
-  
-  
-  ### Borders
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "bottom",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_column_labels(
-        columns = gt::everything()
-      )
-    )
-  ) %>%
-  
-  ### Logos
-  text_transform(
-    locations = cells_body(contains(c('logo', 'player_url'))),
-    fn = function(x) {
-      web_image(
-        url = x,
-        height = 50
-      )
-    }
-  ) %>%
-  
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "right",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_body(
-        columns = contains('points')
-      )
-    )
-  ) %>%
-  
-  
-  ### Names
-  cols_label(
-    'team_bat' = 'Team',
-    'logo_bat' = '',
-    'player_url_bat' = '',
-    'player_bat' = 'Player',
-    'n_points_bat' = 'Points',
-    
-    'team_sp' = 'Team',
-    'logo_sp' = '',
-    'player_url_sp' = '',
-    'player_sp' = 'Player',
-    'n_points_sp' = 'Points',
-    'n_games_sp' = '# of Starts',
-    
-    'team_rp' = 'Team',
-    'logo_rp' = '',
-    'player_url_rp' = '',
-    'player_rp' = 'Player',
-    'n_points_rp' = 'Points',
-    'n_games_rp' = '# of Appearances'
-    
-  ) %>%
-  tab_header(
-    title = md('**Top Performances**'),
-    subtitle = md(glue('**Week {params$matchweek_id}**'))
-  ) %>%
-  tab_options(column_labels.font.size = 20,
-              heading.title.font.size = 40,
-              heading.subtitle.font.size = 40,
-              heading.title.font.weight = 'bold',
-              heading.subtitle.font.weight = 'bold',
-              column_labels.font.weight = 'bold'
-              
-  ) %>% 
-  tab_source_note('Numbers next to player denotes the # of appearances in the weekly top 10')
-
-```
-
-```{r, include = F}
-gtsave(gt_top , 'figures/top_performers.png', vwidth = 3000)
-gtsave(gt_top , glue('figures/top_performers/week{params$matchweek_id}.png'), vwidth = 3000)
-```
-
-
-<img src="figures/top_performers.png" height="500px" width="1000px" />

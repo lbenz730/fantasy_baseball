@@ -34,10 +34,12 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
       if(length(.x) > 0) {
         tibble('points' = sum(.x$appliedTotal, na.rm = T),
                'start' = as.logical(sum(.x$stats$`33` > 0 | .x$stats$`34` >= 12, na.rm = T)),
+               'relief' = as.logical(sum(.x$stats$`32` > 0 & .x$stats$`33` == 0, na.rm = T)),
                'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)))
       } else {
         tibble('points' = 0,
                'start' = F,
+               'relief' = F,
                'relief_start' = F)
       } }) %>% 
     mutate('player' = y$entries[[index]]$playerPoolEntry$player$fullName,
@@ -101,5 +103,5 @@ get_matchup_stats <- function(week, season = 2022) {
 # write_csv(df_2021, 'data/stats/2021/daily_stats_2021.csv')
 # 
 # ### 2022 Scrape
-# df_2022 <- map_dfr(1:3, ~get_matchup_stats(.x, season = 2022))
+# df_2022 <- map_dfr(1:4, ~get_matchup_stats(.x, season = 2022))
 # write_csv(df_2022, 'data/stats/2022/daily_stats_2022.csv')
