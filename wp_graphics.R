@@ -5,7 +5,7 @@ library(glue)
 library(ggimage)
 source('build_training_set.R')
 
-plot_wp <- function(season, week) {
+plot_wp <- function(season, week, plot = T) {
   xgb_model <- xgb.load('xgb_winprob')
   preprocessing_recipe <- read_rds('recipe.rds')
   df <- 
@@ -31,10 +31,14 @@ plot_wp <- function(season, week) {
   df_image <- distinct(df, team_home, team_away, logo_home, logo_away)
   
   df$win_prob <- predict(xgb_model, as.matrix(bake(preprocessing_recipe, df)))
-  df$win_prob[df$days_left == 0 & df$score_diff > 0] <- 1
-  df$win_prob[df$days_left == 0 & df$score_diff < 0] <- 0
   df$win_prob[df$day_of_matchup == 1 & df$matchup_id == 1] <- 0.5
   
+  if(wday(Sys.Date()) == 1 & hour(Sys.time()) < 12) {
+    df <- filter(df, days_left > 0) 
+  } else if(!(wday(Sys.Date()) == 1 & hour(Sys.time()) < 20)) {
+    df$win_prob[df$days_left == 0 & df$score_diff > 0] <- 1
+    df$win_prob[df$days_left == 0 & df$score_diff < 0] <- 0
+  }
   
   p <- 
     ggplot(df, aes(x = day_of_matchup, y = win_prob)) + 
@@ -60,7 +64,9 @@ plot_wp <- function(season, week) {
     scale_fill_brewer(palette = 'RdYlGn', drop = FALSE) + 
     guides(fill = guide_legend(nrow = 3))
   
-  print(p)
+  if(plot) {
+    print(p)
+  }
   
   
   ggsave(glue('figures/wp_charts/{season}/wp_chart_{season}_{week}.png'), height = 9, width = 16)

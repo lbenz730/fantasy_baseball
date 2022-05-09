@@ -142,3 +142,9 @@ model <-
           verbose = 2)
 
 xgb.save(model, 'xgb_winprob')
+
+importance <- xgboost::xgb.importance(
+  feature_names = colnames(bake(preprocessing_recipe, df)),
+  model = model
+)
+xgboost::xgb.ggplot.importance(importance_matrix = importance)

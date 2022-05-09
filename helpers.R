@@ -132,12 +132,3 @@ get_last_place <- function(wins, points) {
 }
 
 ferry <- '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Spirit_of_America_-_Staten_Island_Ferry.jpg/1280px-Spirit_of_America_-_Staten_Island_Ferry.jpg" style="height:30px;">'
-
-relief_starts <- 
-  tribble(
-    ~week, ~player, ~sp_points, ~sp_games, ~n_qs, ~rp_points, ~rp_games,
-    1, 'Garrett Whitlock', 13.5, 1, 0, 14.5, 2,
-    2, 'Garrett Whitlock', 18, 1,  0, 6, 1,
-    2, 'Keegan Thompson', 13.5, 1, 0, 0, 0,
-    4, 'Spencer Strider', 16, 1, 0, 0, 0
-  )

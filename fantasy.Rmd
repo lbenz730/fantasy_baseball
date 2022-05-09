@@ -155,10 +155,11 @@ relief_starts <-
   filter(pitcher) %>% 
   group_by(player, team_id, matchup_id) %>% 
   summarise('sp_games' = sum(start),
-            'rp_games' = sum(relief),
+            'rp_games' = sum(relief) - sum(relief_start),
+            'relief_starts' = sum(relief_start),
             'sp_points' = sum(points[start], na.rm = T),
-            'rp_points' = sum(points[relief], na.rm = T)) %>% 
-  filter(sp_games > 0, rp_games > 0)
+            'rp_points' = sum(points[relief & !relief_start], na.rm = T)) %>% 
+  filter(sp_games > 0 & rp_games > 0 | relief_starts > 0)
 
 df_penalty <- 
   df_daily %>%
@@ -166,7 +167,7 @@ df_penalty <-
   inner_join(df_start, by = 'matchup_id') %>%
   mutate('day_of_matchup' = scoring_period_id - start_period + 1) %>%
   mutate('days_left' = end_period - scoring_period_id) %>%
-  group_by(matchup_id, team_id, day_of_matchup, days_left, start_cap) %>%
+  group_by(matchup_id, team_id, day_of_matchup, days_left, start_cap, scoring_period_id) %>%
   summarise('day_points' = sum(points),
             'start_points' = sum(points[start], na.rm = T),
             'starts' = sum(start),
@@ -176,10 +177,13 @@ df_penalty <-
   mutate('total_starts' = cumsum(starts)) %>% 
   mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) <= start_cap ) %>% 
   mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points), 0.5, ceiling))) %>%
-  select(matchup_id, team_id, penalty) %>% 
+  select(matchup_id, team_id, penalty, scoring_period_id) %>% 
+  inner_join(select(teams, team, team_id)) %>% 
   filter(penalty != 0) %>% 
   distinct() %>% 
-  inner_join(select(teams, team, team_id))
+  ungroup() %>% 
+  select(team, matchup_id, scoring_period_id, penalty)
+
 
 ### Relief Starts
 for(i in 1:nrow(relief_starts)) {
@@ -333,7 +337,7 @@ exp_standings <-
   left_join(sp_ppg %>% select(-n_games, -total)) %>% 
   left_join(qs_pct %>% select(-n_games, -n_qs)) %>% 
   arrange(-win_pct, -total_points) %>% 
-  arrange(desc(total_points)) 
+  mutate('rank' = 1:12)
 
 league_avg <-  
   tibble('team' = 'League Average',
@@ -352,6 +356,8 @@ league_avg <-
          'pitching_points' = mean(exp_standings$pitching_points),
          'total_points' = mean(exp_standings$total_points), 
          'qs_pct' = weighted.mean(qs_pct$qs_pct, qs_pct$n_games))
+
+
 
 exp_standings <- bind_rows(exp_standings, league_avg)
 ```
@@ -453,11 +459,15 @@ df <-
          batting_points,
          pitching_points,
          total_points,
-         qs_pct)  %>%
-  left_join(sim_results)
+         qs_pct, 
+         rank) %>%
+  left_join(sim_results) %>% 
+  arrange(-exp_win, -total_points) 
 
+df$team[1:12] <-  paste0(df$team[1:12], ' (', df$rank[1:12], ')')
 df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
 df$mean_pts[13] <- mean(df$mean_pts[1:12])
+df <- select(df, -rank)
 
 
 gt1 <-
@@ -583,7 +593,7 @@ gt1 <-
   
   ### Names
   cols_label(
-    team = 'Team',
+    team = 'Team (Seed)',
     logo = '',
     win = 'Wins',
     loss = 'Losses',
@@ -812,6 +822,41 @@ gtsave(gt_top , glue('figures/top_performers/week{params$matchweek_id}.png'), vw
 df_wp <- plot_wp(params$season, params$matchweek_id)
 ```
 
+```{r}
+const <- 0
+if(wday(Sys.Date()) == 1 & hour(Sys.time()) <= 20) {
+  const <- 1
+}
+
+df_wp %>%
+  group_by(team_home) %>% 
+  filter(days_left == min(days_left)+const) %>% 
+  ungroup() %>% 
+  mutate('statement' = paste0(team_home, ' (', round(100 * win_prob), '%) vs. ', team_away, ' (', round(100 * (1-win_prob)), '%)')) %>% 
+  pull(statement) %>% 
+  paste(collapse = '\n') %>% 
+  paste0('Win Probability Week: ', params$matchweek_id, '\n-------------------\n', .) %>% 
+  write('wp.txt')
+
+if(wday(Sys.Date()) == 2) {
+  read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
+    filter(matchup_id <= params$matchweek_id) %>%  
+    bind_rows(get_matchup_stats(params$matchweek_id + 1, season = params$season)) %>% 
+    write_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
+  df_lookahead <- plot_wp(params$season, params$matchweek_id + 1, plot = F)
+  
+  df_lookahead %>%   
+    group_by(team_home) %>% 
+    filter(day_of_matchup == 0) %>% 
+    ungroup() %>% 
+    mutate('statement' = paste0(team_home, ' (', round(100 * win_prob), '%) vs. ', team_away, ' (', round(100 * (1-win_prob)), '%)')) %>% 
+    pull(statement) %>% 
+    paste(collapse = '\n') %>% 
+    paste0('Pre-Match Lines Week: ', params$matchweek_id+1, '\n-------------------\n', .) %>% 
+    write('week_lines.txt')
+}
+```
+
 ### Points Breakdown by Week
 ```{r}
 ggplot(team_points,  aes(x = matchup_id, y = adj_pts)) +
@@ -931,6 +976,50 @@ ggplot(history, aes(x = matchup_id, y = last_place, fill = team)) +
   labs(x = 'Week',
        y = 'Ferry Odds',
        title = 'Ferry Odds Over Time')
+
+
+```
+
+```{r fig.height = 9, fig.width = 16}
+df_points <- 
+  df_daily  %>% 
+  filter(in_lineup) %>% 
+  inner_join(teams) %>% 
+  bind_rows(df_penalty %>% mutate('points' = -penalty)) %>% 
+  filter(scoring_period_id <= 40) %>% 
+  group_by(team, scoring_period_id) %>% 
+  summarise('n_points' = sum(points)) %>% 
+  mutate('total_points' = cumsum(n_points)) %>% 
+  group_by(scoring_period_id) %>% 
+  mutate('points_back' = total_points - max(total_points)) %>% 
+  mutate('rank' = rank(-total_points)) %>% 
+  ungroup() 
+
+
+
+df_start <- 
+  tibble('matchup_id' = 1:20) %>% 
+  mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
+                                 matchup_id == 14 ~ 11,
+                                 T ~ 8),
+         'duration' = case_when(matchup_id == 1 ~ 11, 
+                                matchup_id == 14 ~ 14,
+                                T ~ 7),
+         'end_period' = cumsum(duration),
+         'start_period' = end_period - duration + 1)
+library(ggbump)
+ggplot(df_points, aes(x = scoring_period_id, y = rank)) + 
+  facet_wrap(~team) + 
+  geom_vline(data = df_start %>% filter(matchup_id <= params$matchweek_id), aes(xintercept = end_period), lty = 2) + 
+  geom_bump(data = rename(df_points, 'team2' = team), aes(group = team2), col = 'grey', alpha = 0.5) +
+  geom_bump(aes(col = team), lwd = 1.2) + 
+  scale_y_reverse(limits = c(12, 1), breaks = 12:1) + 
+  labs(x = 'Day of Season', 
+       y = 'Rank by Points Scored', 
+       title = 'Scoring Rank Over Time') 
+
+ggsave('figures/points_bump.png', height = 9/1.2, width = 16/1.2)
+
 ```
 
 

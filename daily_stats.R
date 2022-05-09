@@ -35,12 +35,17 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
         tibble('points' = sum(.x$appliedTotal, na.rm = T),
                'start' = as.logical(sum(.x$stats$`33` > 0 | .x$stats$`34` >= 12, na.rm = T)),
                'relief' = as.logical(sum(.x$stats$`32` > 0 & .x$stats$`33` == 0, na.rm = T)),
-               'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)))
+               'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)),
+               'qs' = as.logical(sum(.x$stats$`63`, na.rm = T)),
+               'save' = as.logical(sum(.x$stats$`57`, na.rm = T)))
       } else {
         tibble('points' = 0,
                'start' = F,
                'relief' = F,
-               'relief_start' = F)
+               'relief_start' = F,
+               'qs' = F,
+               'save' = F)
+               
       } }) %>% 
     mutate('player' = y$entries[[index]]$playerPoolEntry$player$fullName,
            'player_id' = y$entries[[index]]$playerPoolEntry$player$id) %>% 
@@ -85,7 +90,8 @@ get_matchup_stats <- function(week, season = 2022) {
           left_join(roster_status, by = c("player", "player_id", "team_id")) %>% 
           mutate('in_lineup' = lineup_id <= 15,
                  'pitcher' = lineup_id %in% c(14, 15),
-                 'batter' = lineup_id <= 12)
+                 'batter' = lineup_id <= 12) %>% 
+          mutate('season' = season)
         
         
         df
@@ -101,7 +107,7 @@ get_matchup_stats <- function(week, season = 2022) {
 # ### 2021 Scrape
 # df_2021 <- map_dfr(1:20, ~get_matchup_stats(.x, season = 2021))
 # write_csv(df_2021, 'data/stats/2021/daily_stats_2021.csv')
-# 
-# ### 2022 Scrape
+
+# # 2022 Scrape
 # df_2022 <- map_dfr(1:4, ~get_matchup_stats(.x, season = 2022))
 # write_csv(df_2022, 'data/stats/2022/daily_stats_2022.csv')
