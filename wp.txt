@@ -1,8 +1,8 @@
-Win Probability Week: 4
+Win Probability Week: 5
 -------------------
-All Walshed Up (100%) vs. The West Bank Occupiers (0%)
-The Novaks (100%) vs. All That is Wright (0%)
-The Traveling Secretaries (100%) vs. Blasphemous Hot Takes (0%)
-Springer Bell (100%) vs. Yosemite Yeshivas (0%)
-Mt. Everest Taquito Farmers (0%) vs. Freedom of the Pressly (100%)
-Framber Valdez Oil Spill (0%) vs. Of Bryce and Men (100%)
+The Novaks (93%) vs. All Walshed Up (7%)
+The West Bank Occupiers (13%) vs. The Traveling Secretaries (87%)
+All That is Wright (4%) vs. Blasphemous Hot Takes (96%)
+Mt. Everest Taquito Farmers (6%) vs. Springer Bell (94%)
+Yosemite Yeshivas (76%) vs. Framber Valdez Oil Spill (24%)
+Freedom of the Pressly (56%) vs. Of Bryce and Men (44%)

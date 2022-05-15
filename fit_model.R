@@ -148,3 +148,9 @@ importance <- xgboost::xgb.importance(
   model = model
 )
 xgboost::xgb.ggplot.importance(importance_matrix = importance)
+
+
+log_reg <- glm(win ~ score_diff*start_advantage, 
+               data = df, family = 'binomial')
+
+write_rds(log_reg, 'log_reg.rds') 

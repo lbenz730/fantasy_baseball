@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchweek_id: 4
+  matchweek_id: 5
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -34,6 +34,7 @@ set.seed(123)
 source('helpers.R')
 source('daily_stats.R')
 source('wp_graphics.R')
+source('trades.R')
 ```
 
 ```{r}
@@ -202,7 +203,15 @@ write_csv(batter_points, glue('data/stats/{params$season}/batting_weekly_{params
 write_csv(sp_points, glue('data/stats/{params$season}/sp_weekly_{params$season}.csv'))
 write_csv(rp_points, glue('data/stats/{params$season}/rp_weekly_{params$season}.csv'))
 
+### Trades
+df_trades <- 
+  read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv')) %>% 
+  filter(matchup_id < params$matchweek_id) %>% 
+  bind_rows(get_trades(params$matchweek_id))
+write_csv(df_trades, glue('data/stats/{params$season}/trades_{params$season}.csv'))
 
+traded_players <- get_trade_players(df_trades)
+write_csv(traded_players, glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
 
 ```
 
@@ -272,7 +281,7 @@ team_points <-
 ### Batter points per game
 batter_ppg <- 
   batter_points %>% 
-  filter(matchup_id <= params$matchweek_id) %>% 
+  filter(matchup_id <= params$matchweek_id) %>%
   filter(!is.na(n_games)) %>% 
   inner_join(select(teams, team_id, team)) %>% 
   group_by(team) %>% 
@@ -824,7 +833,7 @@ df_wp <- plot_wp(params$season, params$matchweek_id)
 
 ```{r}
 const <- 0
-if(wday(Sys.Date()) == 1 & hour(Sys.time()) <= 20) {
+if((wday(Sys.Date()) == 1 & hour(Sys.time()) <= 20)) {
   const <- 1
 }
 
@@ -986,7 +995,6 @@ df_points <-
   filter(in_lineup) %>% 
   inner_join(teams) %>% 
   bind_rows(df_penalty %>% mutate('points' = -penalty)) %>% 
-  filter(scoring_period_id <= 40) %>% 
   group_by(team, scoring_period_id) %>% 
   summarise('n_points' = sum(points)) %>% 
   mutate('total_points' = cumsum(n_points)) %>% 
@@ -1022,4 +1030,241 @@ ggsave('figures/points_bump.png', height = 9/1.2, width = 16/1.2)
 
 ```
 
+```{r}
+traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
+trade_stats <- NULL
+for(i in 1:nrow(traded_players)) {
+  old_team <- traded_players$team_from[i]
+  new_team <- traded_players$team_to[i]
+  scoring_period <- traded_players$scoring_period_id[i]
+  
+  tmp_before <- 
+    df_daily %>% 
+    filter(player_id == traded_players$player_id[i]) %>% 
+    filter(team_id == old_team) %>% 
+    filter(scoring_period_id < scoring_period) %>% 
+    summarise('points' = sum(points),
+              'played' = sum(start) + sum(relief) + sum(played),
+              'batter' = sum(played),
+              'sp' = sum(start),
+              'rp' = sum(relief)) %>% 
+    mutate('ppg' = points/played) %>% 
+    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ ppg - df$batting_ppg[13],
+                                    rp > 0 & sp == 0 ~ ppg - df$rp_ppg[13],
+                                    sp > 0 ~ ppg - df$sp_ppg[13])) %>% 
+    select(points, played, ppg, ppg_vs_avg)
+  names(tmp_before) <- paste0(names(tmp_before), '_before')
+  
+  tmp_after <- 
+    df_daily %>% 
+    filter(player_id == traded_players$player_id[i]) %>% 
+    filter(team_id == new_team) %>% 
+    filter(scoring_period_id > scoring_period) %>% 
+    summarise('points' = sum(points),
+              'played' = sum(start) + sum(relief) + sum(played),
+              'batter' = sum(played),
+              'sp' = sum(start),
+              'rp' = sum(relief)) %>% 
+    mutate('ppg' = points/played) %>% 
+    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ ppg - df$batting_ppg[13],
+                                    rp > 0 & sp == 0 ~ ppg - df$rp_ppg[13],
+                                    sp > 0 ~ ppg - df$sp_ppg[13])) %>% 
+    select(points, played, ppg, ppg_vs_avg)
+  names(tmp_after) <- paste0(names(tmp_after), '_after')
+  
+  trade_stats <- 
+    trade_stats %>% bind_rows(
+      bind_cols(tmp_before, tmp_after) %>% 
+        mutate('player_id' = traded_players$player_id[i],
+               'team_from' = old_team,
+               'team_to' = new_team)
+    )
+  
+}
+
+tmp_stats <- 
+  traded_players %>%
+  inner_join(trade_stats) %>% 
+  inner_join(select(teams, team_id, team, logo), by = c('team_to' = 'team_id')) %>% 
+  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+  group_by(trade_id) %>% 
+  mutate('n_rec' = map_dbl(team_to, ~sum(team_to == .x)))  %>% 
+  mutate('n_given' = map_dbl(team_from, ~sum(team_to == .x)))  %>% 
+  group_by(trade_id, team_to) %>% 
+  group_split() %>% 
+  map(~{ 
+    if(.x$n_given[1]  > .x$n_rec[1]) {
+      tmp <- .x[1,]
+      tmp[1,] <- NA
+      bind_rows(.x, tmp)
+    } else {
+      .x 
+    }
+  })
+
+df_trades <- 
+  map_dfr(1:(length(tmp_stats)/2),  ~{
+    x <- tmp_stats[[2 * .x -1]]
+    names(x) <- paste0(names(x), '_1')
+    y <- tmp_stats[[2 * .x]]
+    names(y) <- paste0(names(y), '_2')
+    bind_cols(x, y)
+  }) %>% 
+  select(trade_id_1, 
+         player_1, player_url_1, team_1, logo_1,
+         points_before_1, played_before_1, ppg_before_1, ppg_vs_avg_before_1,
+         points_after_1, played_after_1, ppg_after_1, ppg_vs_avg_after_1,
+         player_2, player_url_2, team_2, logo_2,
+         points_before_2, played_before_2, ppg_before_2, ppg_vs_avg_before_2,
+         points_after_2, played_after_2, ppg_after_2, ppg_vs_avg_after_2) 
+
+
+gt_trades <- 
+  df_trades %>% 
+  select(-trade_id_1) %>% 
+  gt() %>% 
+  ### Align Columns
+  cols_align(align = "center", columns = everything()) %>%
+  
+  tab_spanner(label = 'Before Trade ', columns = contains('_before_1')) %>%
+  tab_spanner(label = 'Before Trade', columns = contains('_before_2')) %>%
+  tab_spanner(label = 'After Trade ', columns = contains('_after_1')) %>%
+  tab_spanner(label = 'After Trade', columns = contains('_after_2')) %>% 
+  
+  ### Round Numbers
+  fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+  fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+  fmt_missing(columns = everything(), missing_text = "---") %>%
+  
+  ### Align Columns
+  cols_align(align = "center", columns = everything()) %>%
+  
+  
+  ### Borders
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_column_labels(
+        columns = gt::everything()
+      )
+    )
+  ) %>%
+  
+  ### Logos
+  text_transform(
+    locations = cells_body(columns = contains(c('logo_1', 'player_url_1')),
+                           rows = (!is.na(logo_1) & !is.na(player_url_1))),
+    fn = function(x) {
+      web_image(
+        url = x,
+        height = 50
+      )
+    }
+  ) %>% 
+  text_transform(
+    locations = cells_body(columns = contains(c('logo_2', 'player_url_2')),
+                           rows = (!is.na(logo_2) & !is.na(player_url_2))),
+    fn = function(x) {
+      web_image(
+        url = x,
+        height = 50
+      )
+    }
+  ) %>% 
+  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "right",
+        color = "black",
+        weight = px(6)
+      )
+    ),
+    locations = list(
+      cells_body(
+        columns = contains('ppg_vs_avg_after_1')
+      )
+    )
+  ) %>%
+  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "right",
+        color = "black",
+        weight = px(2)
+      )
+    ),
+    locations = list(
+      cells_body(
+        columns = c(contains('ppg_vs_avg_before'), contains('logo'))
+      )
+    )
+  ) %>%
+  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "black",
+        weight = px(2)
+      )
+    ),
+    locations = list(
+      cells_body(
+        rows = which(df_trades$trade_id_1 != lead(df_trades$trade_id_1) | is.na(lead(df_trades$trade_id_1)))
+      )
+    )
+  ) %>%
+  
+  ### Names
+  cols_label(
+    'player_1' = 'Player',
+    'player_2' = 'Player',
+    'player_url_1' = '',
+    'player_url_2' = '',
+    'team_1' = 'New Team',
+    'team_2' = 'New Team',
+    'logo_1' = '',
+    'logo_2' = '',
+    'points_before_1' = 'Points',
+    'points_before_2' = 'Points',
+    'points_after_1' = 'Points',
+    'points_after_2' = 'Points',
+    'played_before_1' = 'Games',
+    'played_before_2' = 'Games',
+    'played_after_1' = 'Games',
+    'played_after_2' = 'Games',
+    'ppg_before_1' = 'PPG',
+    'ppg_before_2' = 'PPG',
+    'ppg_after_1' = 'PPG',
+    'ppg_after_2' = 'PPG',
+    'ppg_vs_avg_before_1' = 'PPG vs. League Avg.',
+    'ppg_vs_avg_before_2' = 'PPG vs. League Avg.',
+    'ppg_vs_avg_after_1' = 'PPG vs. League Avg.',
+    'ppg_vs_avg_after_2' = 'PPG vs. League Avg.') %>% 
+  
+  tab_header(
+    title = 'Trade Analysis'
+  ) %>%
+  tab_options(column_labels.font.size = 12,
+              heading.title.font.size = 40,
+              heading.subtitle.font.size = 40,
+              heading.title.font.weight = 'bold',
+              heading.subtitle.font.weight = 'bold',
+              column_labels.font.weight = 'bold'
+              
+  ) 
+```
+
+```{r, include = F}
+gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
+```
+<img src="figures/trades.png" height="250px" width="1500px" />
 

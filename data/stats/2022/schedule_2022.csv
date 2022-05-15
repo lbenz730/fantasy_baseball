@@ -23,12 +23,12 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 4,22,13,322.5,182.5,140,1,228.5,157.5,71,Springer Bell,Yosemite Yeshivas
 4,23,8,339.5,165,174.5,14,360,192.5,167.5,Mt. Everest Taquito Farmers,Freedom of the Pressly
 4,24,2,229.5,144.5,85,9,298,175.5,122.5,Framber Valdez Oil Spill,Of Bryce and Men
-5,25,6,NA,NA,NA,7,NA,NA,NA,The Novaks,All Walshed Up
-5,26,11,NA,NA,NA,5,NA,NA,NA,The West Bank Occupiers ,The Traveling Secretaries
-5,27,4,NA,NA,NA,12,NA,NA,NA,All That is Wright,Blasphemous Hot Takes
-5,28,8,NA,NA,NA,13,NA,NA,NA,Mt. Everest Taquito Farmers,Springer Bell
-5,29,1,NA,NA,NA,2,NA,NA,NA,Yosemite Yeshivas,Framber Valdez Oil Spill
-5,30,14,NA,NA,NA,9,NA,NA,NA,Freedom of the Pressly,Of Bryce and Men
+5,25,6,248,179,69,7,193,148,45,The Novaks,All Walshed Up
+5,26,11,189.5,142.5,47,5,211,138,73,The West Bank Occupiers ,The Traveling Secretaries
+5,27,4,163,122.5,40.5,12,268,177,91,All That is Wright,Blasphemous Hot Takes
+5,28,8,167.5,126.5,41,13,243.5,140.5,103,Mt. Everest Taquito Farmers,Springer Bell
+5,29,1,262.5,170.5,92,2,205,159,46,Yosemite Yeshivas,Framber Valdez Oil Spill
+5,30,14,203.5,149.5,54,9,239,165.5,73.5,Freedom of the Pressly,Of Bryce and Men
 6,31,7,NA,NA,NA,13,NA,NA,NA,All Walshed Up,Springer Bell
 6,32,5,NA,NA,NA,2,NA,NA,NA,The Traveling Secretaries,Framber Valdez Oil Spill
 6,33,12,NA,NA,NA,9,NA,NA,NA,Blasphemous Hot Takes,Of Bryce and Men

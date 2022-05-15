@@ -33,6 +33,7 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
     map_dfr(x$entries[[index]]$playerPoolEntry$player$stats, ~{
       if(length(.x) > 0) {
         tibble('points' = sum(.x$appliedTotal, na.rm = T),
+               'played' = sum(.x$stats$`81`, na.rm = T),
                'start' = as.logical(sum(.x$stats$`33` > 0 | .x$stats$`34` >= 12, na.rm = T)),
                'relief' = as.logical(sum(.x$stats$`32` > 0 & .x$stats$`33` == 0, na.rm = T)),
                'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)),
@@ -40,6 +41,7 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'save' = as.logical(sum(.x$stats$`57`, na.rm = T)))
       } else {
         tibble('points' = 0,
+               'played' = 0,
                'start' = F,
                'relief' = F,
                'relief_start' = F,
@@ -69,6 +71,8 @@ get_matchup_stats <- function(week, season = 2022) {
       x <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mMatchupScore'))
       y <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mMatchup'))
       z <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mRoster'))
+      # w <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=kona_player_info'))
+      
       
       roster_status <- 
         map2_dfr(z$teams$roster$entries, z$teams$id, ~{

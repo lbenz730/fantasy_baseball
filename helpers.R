@@ -132,3 +132,13 @@ get_last_place <- function(wins, points) {
 }
 
 ferry <- '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Spirit_of_America_-_Staten_Island_Ferry.jpg/1280px-Spirit_of_America_-_Staten_Island_Ferry.jpg" style="height:30px;">'
+
+update_daily_stats <- function() {
+  df_daily <- 
+    read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
+    filter(matchup_id < params$matchweek_id) %>%  
+    bind_rows(get_matchup_stats(params$matchweek_id, season = params$season)) 
+  write_csv(df_daily, glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
+  return(df_daily)
+  
+}

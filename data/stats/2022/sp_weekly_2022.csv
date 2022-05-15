@@ -2110,12 +2110,149 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 22,NA,NA,NA,NA,NA,NA,13
 23,NA,NA,NA,NA,NA,NA,8
 24,NA,NA,NA,NA,NA,NA,2
-25,NA,NA,NA,NA,NA,NA,6
-26,NA,NA,NA,NA,NA,NA,11
-27,NA,NA,NA,NA,NA,NA,4
-28,NA,NA,NA,NA,NA,NA,8
-29,NA,NA,NA,NA,NA,NA,1
-30,NA,NA,NA,NA,NA,NA,14
+25,5,Jesse Winker,32833,NA,4.5,NA,6
+25,5,Jesus Aguilar,32132,NA,12,NA,6
+25,5,Corbin Burnes,39878,1,26,1,6
+25,5,Devin Williams,33224,NA,-1.5,0,6
+25,5,Jurickson Profar,31117,NA,15,NA,6
+25,5,Aaron Hicks,31253,NA,0.5,NA,6
+25,5,Max Muncy,33303,NA,12.5,NA,6
+25,5,J.D. Martinez,31065,NA,16.5,NA,6
+25,5,Brandon Lowe,39961,NA,8,NA,6
+25,5,Eduardo Rodriguez,32675,1,21,1,6
+25,5,Zack Wheeler,31267,1,10.5,0,6
+25,5,Tommy Pham,31208,NA,19.5,NA,6
+25,5,Jeff McNeil,33900,NA,6,NA,6
+25,5,Alex Wood,32620,1,12,0,6
+25,5,Noah Syndergaard,31730,1,13.5,0,6
+25,5,Corey Seager,32691,NA,21.5,NA,6
+25,5,Marcell Ozuna,31668,NA,10,NA,6
+25,5,Yadiel Hernandez,40822,NA,1,NA,6
+25,5,Mark Canha,31670,NA,10.5,NA,6
+25,5,Gary Sanchez,31095,NA,13.5,NA,6
+25,5,Camilo Doval,41337,NA,4,0,6
+25,5,Manny Machado,31097,NA,9,NA,6
+25,5,Clay Holmes,32827,NA,10,0,6
+25,5,Josh Donaldson,29563,NA,19,NA,6
+25,5,Dylan Cease,34943,1,4,0,6
+26,5,Nestor Cortes,36480,1,35,1,11
+26,5,Carlos Rodon,33696,1,24,1,11
+26,5,Wilmer Flores,30627,NA,1,NA,11
+26,5,Isiah Kiner-Falefa,33572,NA,2,NA,11
+26,5,Chris Taylor,32900,NA,11,NA,11
+26,5,Yuli Gurriel,36006,NA,15.5,NA,11
+26,5,Randy Arozarena,36488,NA,7,NA,11
+26,5,Eric Lauer,39915,1,8,0,11
+26,5,Brandon Woodruff,37515,1,0,0,11
+26,5,Jake Cronenworth,36364,NA,6.5,NA,11
+26,5,Cristian Javier,41261,1,-7.5,0,11
+26,5,Jorge Polanco,32525,NA,15,NA,11
+26,5,Trea Turner,33710,NA,20,NA,11
+26,5,Ben Gamel,31824,NA,-0.5,NA,11
+26,5,Spencer Strider,4307825,NA,-1,0,11
+26,5,Jonah Heim,33842,NA,5,NA,11
+26,5,Christian Yelich,31283,NA,19.5,NA,11
+26,5,Hunter Renfroe,33205,NA,12,NA,11
+26,5,Yu Darvish,32055,1,1,0,11
+26,5,Luis Urias,35383,NA,11,NA,11
+26,5,Robbie Grossman,31385,NA,5,NA,11
+26,5,Alex Verdugo,33786,NA,11,NA,11
+26,5,Javier Baez,32127,NA,1.5,NA,11
+27,5,Tylor Megill,3332018,1,-20,0,4
+27,5,Austin Hays,36928,NA,3.5,NA,4
+27,5,Lourdes Gurriel Jr.,36040,NA,6.5,NA,4
+27,5,Steven Kwan,41996,NA,9.5,NA,4
+27,5,Ke'Bryan Hayes,35020,NA,14.5,NA,4
+27,5,Brandon Drury,32269,NA,25,NA,4
+27,5,Julio Rodriguez,41044,NA,4.5,NA,4
+27,5,Jordan Montgomery,38173,1,3,0,4
+27,5,Spencer Torkelson,4424286,NA,-0.5,NA,4
+27,5,Michael Kopech,33763,1,27,1,4
+27,5,Will Smith,38309,NA,9.5,NA,4
+27,5,Anthony Bass,31144,NA,1,0,4
+27,5,Sandy Alcantara,35241,1,26,1,4
+27,5,Tyler Rogers,34026,NA,3,0,4
+27,5,Alex Cobb,31086,1,16,0,4
+27,5,Starling Marte,30830,NA,5.5,NA,4
+27,5,Luis Castillo,35124,1,5.5,0,4
+27,5,Xander Bogaerts,31606,NA,8.5,NA,4
+27,5,Ozzie Albies,33783,NA,10.5,NA,4
+27,5,Dylan Carlson,39226,NA,8,NA,4
+27,5,Vladimir Guerrero Jr.,35002,NA,4,NA,4
+27,5,Craig Kimbrel,30653,NA,4,0,4
+27,5,Enrique Hernandez,31358,NA,4.5,NA,4
+27,5,Keegan Thompson,41086,1,2.5,0,4
+27,5,Anthony Rizzo,30782,NA,9,NA,4
+28,5,Ketel Marte,32512,NA,16,NA,8
+28,5,Myles Straw,39105,NA,4.5,NA,8
+28,5,Edwin Diaz,35394,NA,8,0,8
+28,5,Anthony Rendon,32098,NA,13,NA,8
+28,5,Logan Gilbert,41221,1,11.5,0,8
+28,5,Zac Gallen,39910,1,12,0,8
+28,5,Alex Bregman,34886,NA,18.5,NA,8
+28,5,Julio Urias,33223,1,12,1,8
+28,5,David Peralta,33384,NA,3.5,NA,8
+28,5,Keibert Ruiz,38827,NA,7,NA,8
+28,5,Liam Hendriks,31755,NA,-7,0,8
+28,5,Gerrit Cole,32081,1,19,1,8
+28,5,Raisel Iglesias,33618,NA,2,0,8
+28,5,Anthony Santander,36084,NA,9.5,NA,8
+28,5,Brandon Belt,30901,NA,7,NA,8
+28,5,Kyle Tucker,34967,NA,25,NA,8
+28,5,German Marquez,34874,1,4,0,8
+28,5,Christian Vazquez,31389,NA,9,NA,8
+28,5,Pavin Smith,40767,NA,2,NA,8
+28,5,Amed Rosario,33215,NA,11.5,NA,8
+29,5,Luke Voit,35201,NA,15.5,NA,1
+29,5,Mike Clevinger,32769,1,8,0,1
+29,5,Matt Chapman,33857,NA,2,NA,1
+29,5,Jesse Winker,32833,NA,1,NA,1
+29,5,Yusei Kikuchi,41415,1,15.5,0,1
+29,5,Freddy Peralta,39825,1,17.5,0,1
+29,5,Mike Zunino,32657,NA,-0.5,NA,1
+29,5,Nick Castellanos,31187,NA,22.5,NA,1
+29,5,MacKenzie Gore,39636,1,7.5,0,1
+29,5,Jhoan Duran,41109,NA,3,0,1
+29,5,Trevor Story,32150,NA,14.5,NA,1
+29,5,William Contreras,39895,NA,8.5,NA,1
+29,5,Nolan Arenado,31261,NA,7,NA,1
+29,5,George Kirby,42406,1,-1.5,0,1
+29,5,Whit Merrifield,32422,NA,21,NA,1
+29,5,Juan Soto,36969,NA,25,NA,1
+29,5,Jeff McNeil,33900,NA,2.5,NA,1
+29,5,Michael King,40429,NA,9,0,1
+29,5,Luis Severino,33263,1,10,0,1
+29,5,Rowdy Tellez,34287,NA,4.5,NA,1
+29,5,Eugenio Suarez,32367,NA,2.5,NA,1
+29,5,Jon Gray,33203,1,13.5,0,1
+29,5,Miles Mikolas,32116,1,22.5,1,1
+29,5,Rafael Montero,32631,NA,4,0,1
+29,5,Giancarlo Stanton,30583,NA,39,NA,1
+29,5,Bo Bichette,38904,NA,5.5,NA,1
+30,5,Charlie Morton,29155,1,27.5,1,14
+30,5,Tommy Edman,39907,NA,14,NA,14
+30,5,Rafael Devers,33859,NA,23.5,NA,14
+30,5,Owen Miller,41187,NA,2,NA,14
+30,5,Bryan Reynolds,38980,NA,3,NA,14
+30,5,Taylor Rogers,33671,NA,10.5,0,14
+30,5,Merrill Kelly,32968,1,5,0,14
+30,5,Carlos Carrasco,28968,1,19,1,14
+30,5,Adam Frazier,33546,NA,12,NA,14
+30,5,Willy Adames,33675,NA,2.5,NA,14
+30,5,Charlie Blackmon,31084,NA,9.5,NA,14
+30,5,Austin Meadows,33197,NA,8,NA,14
+30,5,DJ LeMahieu,30765,NA,2,NA,14
+30,5,Ryan Pressly,33072,NA,2,0,14
+30,5,Connor Joe,35440,NA,10,NA,14
+30,5,Giovanny Gallegos,36050,NA,7,0,14
+30,5,Ian Anderson,40916,1,6.5,0,14
+30,5,Sean Murphy,33557,NA,12,NA,14
+30,5,Shohei Ohtani,39832,1,22,1,14
+30,5,Jeremy Pena,41273,NA,14,NA,14
+30,5,Lucas Giolito,32697,1,22.5,1,14
+30,5,Andrew Vaughn,42394,NA,0.5,NA,14
+30,5,C.J. Cron,32155,NA,2.5,NA,14
+30,5,Manuel Margot,33599,NA,8.5,NA,14
 31,NA,NA,NA,NA,NA,NA,7
 32,NA,NA,NA,NA,NA,NA,5
 33,NA,NA,NA,NA,NA,NA,12
@@ -2230,12 +2367,147 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 22,NA,NA,NA,NA,NA,NA,1
 23,NA,NA,NA,NA,NA,NA,14
 24,NA,NA,NA,NA,NA,NA,9
-25,NA,NA,NA,NA,NA,NA,7
-26,NA,NA,NA,NA,NA,NA,5
-27,NA,NA,NA,NA,NA,NA,12
-28,NA,NA,NA,NA,NA,NA,13
-29,NA,NA,NA,NA,NA,NA,2
-30,NA,NA,NA,NA,NA,NA,9
+25,5,Andres Gimenez,37729,NA,8,NA,7
+25,5,Teoscar Hernandez,33377,NA,8,NA,7
+25,5,Jose Ramirez,32801,NA,8.5,NA,7
+25,5,Kendall Graveman,33636,NA,4.5,0,7
+25,5,Ryan Helsley,39909,NA,7.5,0,7
+25,5,Thairo Estrada,36485,NA,8.5,NA,7
+25,5,Jose Abreu,33095,NA,0.5,NA,7
+25,5,Ranger Suarez,39817,1,24.5,1,7
+25,5,Andrew Benintendi,34986,NA,16,NA,7
+25,5,Taylor Ward,34923,NA,8,NA,7
+25,5,Dany Jimenez,42380,NA,15,0,7
+25,5,Kyle Gibson,31053,1,-8.5,0,7
+25,5,Dansby Swanson,34895,NA,9.5,NA,7
+25,5,Robbie Ray,32175,1,19,0,7
+25,5,Adolis Garcia,35537,NA,1,NA,7
+25,5,Joe Ryan,42450,1,0.5,0,7
+25,5,Marcus Semien,32146,NA,-2,NA,7
+25,5,Ha-Seong Kim,4089862,NA,-1.5,NA,7
+25,5,Jared Walsh,35673,NA,14,NA,7
+25,5,Cedric Mullins,35578,NA,16.5,NA,7
+25,5,Ryan Mountcastle,34940,NA,3.5,NA,7
+25,5,Jean Segura,31037,NA,26,NA,7
+25,5,Bruce Zimmermann,41118,1,13.5,1,7
+25,5,Tyler Stephenson,34975,NA,23.5,NA,7
+26,5,Eduardo Escobar,30272,NA,0.5,NA,5
+26,5,Frankie Montas,33249,1,6.5,0,5
+26,5,Ian Happ,34945,NA,14.5,NA,5
+26,5,Wander Franco,40929,NA,2,NA,5
+26,5,Cal Quantrill,39875,1,4,0,5
+26,5,Daulton Varsho,40963,NA,5,NA,5
+26,5,Randal Grichuk,31399,NA,-1,NA,5
+26,5,Ty France,35591,NA,13,NA,5
+26,5,Avisail Garcia,30729,NA,16.5,NA,5
+26,5,Aaron Nola,33709,1,4.5,0,5
+26,5,Mookie Betts,33039,NA,5.5,NA,5
+26,5,Eric Hosmer,30993,NA,19.5,NA,5
+26,5,Paul Goldschmidt,31027,NA,21,NA,5
+26,5,Jeimer Candelario,32531,NA,10.5,NA,5
+26,5,Kyle Hendricks,33173,2,38,1,5
+26,5,Drew Rasmussen,42584,1,12.5,0,5
+26,5,Josh Hader,32760,NA,13.5,0,5
+26,5,Cody Bellinger,33912,NA,7,NA,5
+26,5,Rhys Hoskins,35291,NA,24,NA,5
+26,5,Chris Bassitt,33148,1,8.5,0,5
+26,5,Kenley Jansen,29630,NA,11.5,0,5
+27,5,Bobby Witt Jr.,42403,NA,11,NA,12
+27,5,Nathan Eovaldi,31174,1,17.5,1,12
+27,5,Yasmani Grandal,30950,NA,3,NA,12
+27,5,Justin Turner,29607,NA,31,NA,12
+27,5,Paul Blackburn,32776,1,24,1,12
+27,5,Luis Garcia,4684365,1,18,0,12
+27,5,AJ Pollock,30699,NA,14,NA,12
+27,5,Juan Yepez,4895558,NA,0.5,NA,12
+27,5,Kyle Freeland,33839,1,-11,0,12
+27,5,Freddie Freeman,30193,NA,13,NA,12
+27,5,Yordan Alvarez,36018,NA,27,NA,12
+27,5,Walker Buehler,39251,1,-1.5,0,12
+27,5,Santiago Espinal,39924,NA,10.5,NA,12
+27,5,Corey Knebel,33206,NA,13,0,12
+27,5,Christian Walker,32758,NA,15,NA,12
+27,5,Trevor Rogers,39640,1,16,0,12
+27,5,Kevin Gausman,32667,1,22.5,1,12
+27,5,Michael Brantley,30043,NA,14.5,NA,12
+27,5,Scott Barlow,32156,NA,13,0,12
+27,5,Adrian Houser,32157,1,1,0,12
+27,5,Kolten Wong,32061,NA,16,NA,12
+27,5,Mike Yastrzemski,33341,NA,12,NA,12
+27,5,Max Kepler,31870,NA,9.5,NA,12
+28,5,Yoan Moncada,33984,NA,16,NA,13
+28,5,Lou Trivino,35844,NA,2,0,13
+28,5,Corey Kluber,30981,1,-16,0,13
+28,5,Josh Bell,32517,NA,3.5,NA,13
+28,5,Justin Verlander,6341,1,32,1,13
+28,5,Brandon Crawford,30469,NA,15.5,NA,13
+28,5,George Springer,32078,NA,10,NA,13
+28,5,Luis Robert,39631,NA,16,NA,13
+28,5,Steven Matz,33106,1,19,1,13
+28,5,Willson Contreras,32532,NA,16.5,NA,13
+28,5,Ryan McMahon,33247,NA,2,NA,13
+28,5,Andrew Kittredge,35872,NA,-3,0,13
+28,5,Ryan Tepera,32107,NA,4.5,0,13
+28,5,Chad Green,33325,NA,6.5,0,13
+28,5,Tony Gonsolin,38958,1,17,0,13
+28,5,Max Scherzer,28976,1,25,1,13
+28,5,Kyle Schwarber,33712,NA,7.5,NA,13
+28,5,Trent Grisham,34995,NA,-1,NA,13
+28,5,Jonathan Schoop,31988,NA,11.5,NA,13
+28,5,Mike Trout,30836,NA,30,NA,13
+28,5,Pablo Lopez,39671,1,32,1,13
+28,5,Tyler O'Neill,34168,NA,-2,NA,13
+28,5,Garrett Whitlock,39674,1,1.5,0,13
+28,5,J.P. Crawford,33210,NA,3,NA,13
+28,5,Pete Alonso,37498,NA,13.5,NA,13
+28,5,Franmil Reyes,33339,NA,-1.5,NA,13
+29,5,Tim Anderson,33184,NA,12,NA,2
+29,5,Kyle Wright,39652,1,-3.5,0,2
+29,5,Framber Valdez,36581,1,24,1,2
+29,5,Drew Smith,39685,NA,6.5,0,2
+29,5,Mark Melancon,29446,NA,1.5,0,2
+29,5,Seiya Suzuki,4142424,NA,3,NA,2
+29,5,Aaron Judge,33192,NA,36,NA,2
+29,5,Gleyber Torres,33804,NA,14.5,NA,2
+29,5,Jose Altuve,31662,NA,18,NA,2
+29,5,Jorge Soler,32558,NA,15,NA,2
+29,5,Shane McClanahan,41199,1,34.5,1,2
+29,5,Shane Bieber,40912,1,11,0,2
+29,5,Dane Dunning,36080,1,5.5,0,2
+29,5,Joey Gallo,32818,NA,12,NA,2
+29,5,Luis Arraez,39572,NA,1.5,NA,2
+29,5,Salvador Perez,31127,NA,14,NA,2
+29,5,Joey Wendle,33017,NA,0.5,NA,2
+29,5,Nathaniel Lowe,40538,NA,-1.5,NA,2
+29,5,Sean Manaea,33244,1,25,1,2
+29,5,Jordan Romano,36380,NA,-8,0,2
+29,5,Patrick Wisdom,32861,NA,2.5,NA,2
+29,5,Travis d'Arnaud,29951,NA,7,NA,2
+29,5,Brandon Nimmo,32159,NA,14.5,NA,2
+29,5,Matt Olson,32767,NA,10,NA,2
+30,5,Logan Webb,41216,1,16.5,1,9
+30,5,Joc Pederson,31392,NA,5.5,NA,9
+30,5,Francisco Lindor,32129,NA,7,NA,9
+30,5,Nelson Cruz,6242,NA,21.5,NA,9
+30,5,Austin Riley,34982,NA,7.5,NA,9
+30,5,Gavin Lux,40423,NA,3.5,NA,9
+30,5,Trey Mancini,33351,NA,17.5,NA,9
+30,5,Bryce Harper,30951,NA,40,NA,9
+30,5,Tarik Skubal,42409,1,26.5,1,9
+30,5,Aroldis Chapman,30442,NA,8,0,9
+30,5,Max Fried,32685,1,6,0,9
+30,5,DJ LeMahieu,30765,NA,19.5,NA,9
+30,5,Aaron Loup,32397,NA,0,0,9
+30,5,Daniel Bard,30158,NA,-2.5,0,9
+30,5,Byron Buxton,32655,NA,8.5,NA,9
+30,5,Alec Bohm,41169,NA,11,NA,9
+30,5,J.T. Realmuto,32177,NA,7.5,NA,9
+30,5,Jesus Luzardo,39667,1,2,0,9
+30,5,Harrison Bader,35062,NA,7,NA,9
+30,5,Ronald Acuna Jr.,36185,NA,4,NA,9
+30,5,Jazz Chisholm Jr.,41433,NA,5.5,NA,9
+30,5,Martin Perez,31098,1,23,1,9
+30,5,David Bednar,38303,NA,13,0,9
 31,NA,NA,NA,NA,NA,NA,13
 32,NA,NA,NA,NA,NA,NA,2
 33,NA,NA,NA,NA,NA,NA,9
