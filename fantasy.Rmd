@@ -1016,8 +1016,16 @@ df_bat_stocks <-
   mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
          'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
          'roll_ppg' = roll_points/roll_games) %>% 
+  group_split() %>% 
+  map_dfr(~{
+    tmp <- approx(.x$scoring_period_id, .x$roll_ppg, n = 500)
+    tibble('team_id' = .x$team_id[1],
+           'scoring_period_id' = tmp$x,
+           'roll_ppg' = tmp$y)
+  }) %>% 
   ungroup() %>% 
   inner_join(teams) 
+
 
 df_pitch_stocks <- 
   df_daily %>% 
@@ -1034,6 +1042,15 @@ df_pitch_stocks <-
          'roll_qs' = zoo::rollsum(n_qs, k = 10, na.pad = T, align = 'right'),
          'roll_ppg' = roll_points/roll_games,
          'roll_qs_pct' = roll_qs/roll_games) %>% 
+  group_split() %>% 
+  map_dfr(~{
+    tmp <- approx(.x$scoring_period_id, .x$roll_ppg, n = 500)
+    tmp2 <- approx(.x$scoring_period_id, .x$roll_qs_pct, n = 500)
+    tibble('team_id' = .x$team_id[1],
+           'scoring_period_id' = tmp$x,
+           'roll_ppg' = tmp$y,
+           'roll_qs_pct' = tmp2$y)
+  }) %>% 
   ungroup() %>% 
   inner_join(teams) 
 
@@ -1050,6 +1067,13 @@ df_rp_stocks <-
   mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
          'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
          'roll_ppg' = roll_points/roll_games) %>% 
+  group_split() %>% 
+  map_dfr(~{
+    tmp <- approx(.x$scoring_period_id, .x$roll_ppg, n = 500)
+    tibble('team_id' = .x$team_id[1],
+           'scoring_period_id' = tmp$x,
+           'roll_ppg' = tmp$y)
+  }) %>% 
   ungroup() %>% 
   inner_join(teams) 
 
