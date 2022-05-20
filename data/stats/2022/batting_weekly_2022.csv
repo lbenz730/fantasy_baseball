@@ -2650,7 +2650,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 31,6,Dany Jimenez,42380,NA,9,7
 31,6,Kyle Gibson,31053,NA,12,7
 31,6,Dansby Swanson,34895,4,1,7
-31,6,Adolis Garcia,35537,4,8,7
+31,6,Adolis Garcia,35537,5,8,7
 31,6,Marcus Semien,32146,1,3,7
 31,6,Jared Walsh,35673,3,15,7
 31,6,Cedric Mullins,35578,5,5.5,7
@@ -2659,7 +2659,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 31,6,Bruce Zimmermann,41118,NA,-0.5,7
 31,6,Tyler Stephenson,34975,3,2,7
 32,6,Eduardo Escobar,30272,4,4.5,5
-32,6,Ian Happ,34945,5,14.5,5
+32,6,Ian Happ,34945,5,15.5,5
 32,6,Wander Franco,40929,4,5,5
 32,6,Cal Quantrill,39875,NA,24,5
 32,6,Daulton Varsho,40963,5,11.5,5
@@ -2669,7 +2669,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 32,6,Mookie Betts,33039,5,22,5
 32,6,Eric Hosmer,30993,3,1.5,5
 32,6,Paul Goldschmidt,31027,5,25.5,5
-32,6,Jeimer Candelario,32531,3,5.5,5
+32,6,Jeimer Candelario,32531,4,5.5,5
 32,6,Kyle Hendricks,33173,NA,-5,5
 32,6,Drew Rasmussen,42584,NA,18,5
 32,6,Cody Bellinger,33912,4,8,5
@@ -2691,7 +2691,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 33,6,David Robertson,29172,NA,5,12
 33,6,Santiago Espinal,39924,4,2,12
 33,6,Corey Knebel,33206,NA,6,12
-33,6,Christian Walker,32758,6,20,12
+33,6,Christian Walker,32758,6,27,12
 33,6,Zach Plesac,42169,NA,14.5,12
 33,6,Kevin Gausman,32667,NA,6.5,12
 33,6,Michael Brantley,30043,4,15.5,12
@@ -2730,7 +2730,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 35,6,Ben Gamel,31824,3,-2,11
 35,6,Spencer Strider,4307825,NA,16,11
 35,6,Joey Gallo,32818,2,0.5,11
-35,6,Jonah Heim,33842,4,15,11
+35,6,Jonah Heim,33842,5,15,11
 35,6,Christian Yelich,31283,3,2.5,11
 35,6,Hunter Renfroe,33205,3,11,11
 35,6,Yu Darvish,32055,NA,25,11
@@ -2746,7 +2746,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 36,6,Juan Yepez,4895558,2,7.5,6
 36,6,Josiah Gray,41165,NA,17,6
 36,6,Jurickson Profar,31117,3,3.5,6
-36,6,Corey Seager,32691,4,16.5,6
+36,6,Corey Seager,32691,5,16.5,6
 36,6,Marcell Ozuna,31668,4,14,6
 36,6,Aaron Hicks,31253,3,-1.5,6
 36,6,Mark Canha,31670,4,16.5,6
@@ -2883,7 +2883,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 31,6,Luis Robert,39631,5,19,13
 31,6,Max Scherzer,28976,NA,11.5,13
 31,6,Kyle Schwarber,33712,4,0,13
-31,6,Willson Contreras,32532,5,14.5,13
+31,6,Willson Contreras,32532,5,14,13
 31,6,Mike Trout,30836,3,17.5,13
 31,6,Pablo Lopez,39671,NA,-1,13
 31,6,Tyler O'Neill,34168,2,0,13
@@ -2908,8 +2908,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 32,6,Luis Arraez,39572,2,15,2
 32,6,Salvador Perez,31127,2,-3,2
 32,6,Ha-Seong Kim,4089862,3,2.5,2
-32,6,Nathaniel Lowe,40538,3,7.5,2
-32,6,Patrick Wisdom,32861,4,5.5,2
+32,6,Nathaniel Lowe,40538,4,7.5,2
+32,6,Patrick Wisdom,32861,4,5,2
 32,6,Travis d'Arnaud,29951,3,0,2
 32,6,Matt Olson,32767,4,4,2
 33,6,Logan Webb,41216,NA,21,9

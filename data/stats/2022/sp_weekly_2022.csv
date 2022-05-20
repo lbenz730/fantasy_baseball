@@ -2659,7 +2659,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 31,6,Bruce Zimmermann,41118,1,-0.5,0,7
 31,6,Tyler Stephenson,34975,NA,2,NA,7
 32,6,Eduardo Escobar,30272,NA,4.5,NA,5
-32,6,Ian Happ,34945,NA,14.5,NA,5
+32,6,Ian Happ,34945,NA,15.5,NA,5
 32,6,Wander Franco,40929,NA,5,NA,5
 32,6,Cal Quantrill,39875,1,24,1,5
 32,6,Daulton Varsho,40963,NA,11.5,NA,5
@@ -2691,7 +2691,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 33,6,David Robertson,29172,NA,5,0,12
 33,6,Santiago Espinal,39924,NA,2,NA,12
 33,6,Corey Knebel,33206,NA,6,0,12
-33,6,Christian Walker,32758,NA,20,NA,12
+33,6,Christian Walker,32758,NA,27,NA,12
 33,6,Zach Plesac,42169,1,14.5,1,12
 33,6,Kevin Gausman,32667,1,6.5,0,12
 33,6,Michael Brantley,30043,NA,15.5,NA,12
@@ -2883,7 +2883,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 31,6,Luis Robert,39631,NA,19,NA,13
 31,6,Max Scherzer,28976,1,11.5,0,13
 31,6,Kyle Schwarber,33712,NA,0,NA,13
-31,6,Willson Contreras,32532,NA,14.5,NA,13
+31,6,Willson Contreras,32532,NA,14,NA,13
 31,6,Mike Trout,30836,NA,17.5,NA,13
 31,6,Pablo Lopez,39671,1,-1,0,13
 31,6,Tyler O'Neill,34168,NA,0,NA,13
@@ -2909,7 +2909,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 32,6,Salvador Perez,31127,NA,-3,NA,2
 32,6,Ha-Seong Kim,4089862,NA,2.5,NA,2
 32,6,Nathaniel Lowe,40538,NA,7.5,NA,2
-32,6,Patrick Wisdom,32861,NA,5.5,NA,2
+32,6,Patrick Wisdom,32861,NA,5,NA,2
 32,6,Travis d'Arnaud,29951,NA,0,NA,2
 32,6,Matt Olson,32767,NA,4,NA,2
 33,6,Logan Webb,41216,1,21,1,9

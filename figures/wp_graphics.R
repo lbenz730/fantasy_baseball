@@ -4,12 +4,13 @@ library(tidymodels)
 library(lubridate)
 library(glue)
 library(ggimage)
-source('build_training_set.R')
+library(here)
+source(here('models/build_training_set.R'))
 
 plot_wp <- function(season, week, plot = T, all = F) {
-  xgb_model <- xgb.load('models/xgb_winprob')
-  log_reg <- read_rds('models/log_reg.rds')
-  preprocessing_recipe <- read_rds('models/recipe.rds')
+  xgb_model <- xgb.load(here('models/xgb_winprob'))
+  log_reg <- read_rds(here('models/log_reg.rds'))
+  preprocessing_recipe <- read_rds(here('models/recipe.rds'))
   df <- 
     build_train_set(season) %>% 
     mutate('start_factor' = factor(case_when(start_advantage >= 4 ~ '> +3',
@@ -21,7 +22,7 @@ plot_wp <- function(season, week, plot = T, all = F) {
   
   
   teams <- 
-    read_csv(glue('data/stats/{season}/teams_{season}.csv')) %>% 
+    read_csv(here(glue('data/stats/{season}/teams_{season}.csv'))) %>% 
     select(team_id, team, logo)
   
   df <- 
@@ -82,7 +83,7 @@ plot_wp <- function(season, week, plot = T, all = F) {
   }
   
   
-  ggsave(glue('figures/wp_charts/{season}/wp_chart_{season}_{week}.png'), height = 9, width = 16)
+  ggsave(here(glue('figures/wp_charts/{season}/wp_chart_{season}_{week}.png')), height = 9, width = 16)
   
   return(select(df, 
                 team_home, team_away, day_of_matchup, 
