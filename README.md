@@ -2,6 +2,10 @@
 A repository of code for scraping data for my ESPN fantasy baseball league in order to aggregate advanced stats, fit win probability models, and make graphics.
 
 
+* __fantasy.Rmd__: R Markdown to do a lot of scraping/graphics for weekly league reports
+* __fantasy.html__: Weekly league report
+
+
 ## Data
 
 * __daily_stats.R__: Script w/ functions to scrape daily player statlines
