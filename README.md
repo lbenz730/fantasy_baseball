@@ -7,6 +7,7 @@ A repository of code for scraping data for my ESPN fantasy baseball league in or
 * __daily_stats.R__: Script w/ functions to scrape daily player statlines
 * __scrape_daily_stats.R__: Wrapper to execute scraping of daily player statlines for entire season(s)
 * __trades.R__: Script to find trades and parse trades for tracking of player stats before and after trades
+* __define_starts.R__: Outlines matchup boundaries and start caps for each matchup (to csv file) 
 * __df_start.csv__: Outlines matchup boundaries and start caps for each matchup
 * __stats/__: Folder of statistics for each available season with each of the following files:
     * __teams_YYYY.csv__: Information on teams, including name, logo, owner, record
@@ -35,3 +36,11 @@ A repository of code for scraping data for my ESPN fantasy baseball league in or
 * __wp.txt__: Text file of current win prob
 * __week_lines.txt__: Text file of pre-matchup win prob
 * __stock_charts/__: Folder of stock charts showing 10 day rolling averages for bat/sp/rp PPG as well as QS% 
+
+## Models
+
+* __build_training_set.R__: Function to build historical training set for training win probability model
+* __fit_model.R__: Trains XGBoost model 
+* __recipe.rds__: Pre-processing recipe object 
+* __log_reg.rds__: Logistic regression model object 
+* __xgb_winprob__: XGBoost model object
