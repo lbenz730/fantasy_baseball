@@ -2,7 +2,7 @@ library(tidyverse)
 library(xgboost)
 library(splitTools)
 library(tidymodels)
-source('build_training_set.R')
+source(here('build_training_set.R'))
 
 set.seed(212)
 df <- build_train_set(2021) 
@@ -37,7 +37,7 @@ preprocessing_recipe <-
   step_rm(ends_with('id')) %>% 
   step_rm(-any_of(covariates)) %>% 
   prep()
-write_rds(preprocessing_recipe, 'models/recipe.rds')
+write_rds(preprocessing_recipe, here('models/recipe.rds'))
 
 ### CV Folds
 ### One fold per week
@@ -141,7 +141,7 @@ model <-
           nrounds = best_params$iter,
           verbose = 2)
 
-xgb.save(model, 'models/xgb_winprob')
+xgb.save(model, here('models/xgb_winprob'))
 
 importance <- xgboost::xgb.importance(
   feature_names = colnames(bake(preprocessing_recipe, df)),
@@ -158,4 +158,4 @@ log_reg <- glm(win ~ score_diff*factor(case_when(start_advantage >= 4 ~ '> +3',
                                                                       '+1', '+2', '+3', '> +3')), 
                data = df, family = 'binomial')
 
-write_rds(log_reg, 'models/log_reg.rds') 
+write_rds(log_reg, here('models/log_reg.rds'))

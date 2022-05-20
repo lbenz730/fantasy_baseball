@@ -1,25 +1,15 @@
 library(tidyverse)
 library(glue)
+library(here)
 
 build_train_set <- function(season) {
   ### Read in Data set 
-  df_schedule <- read_csv(glue('data/stats/{season}/schedule_{season}.csv'))
-  df_stats <- read_csv(glue('data/stats/{season}/daily_stats_{season}.csv'))
-  df_teams <- read_csv(glue('data/stats/{season}/teams_{season}.csv'))
-  
-  ### Define Start Caps 
-  df_start <- 
-    tibble('matchup_id' = 1:20) %>% 
-    mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
-                                   matchup_id == 14 ~ 11,
-                                   T ~ 8),
-           'duration' = case_when(matchup_id == 1 ~ 11, 
-                                  matchup_id == 14 ~ 14,
-                                  T ~ 7),
-           'end_period' = cumsum(duration),
-           'start_period' = end_period - duration + 1)
-  
-
+  df_schedule <- read_csv(here(glue('data/stats/{season}/schedule_{season}.csv')))
+  df_stats <- read_csv(here(glue('data/stats/{season}/daily_stats_{season}.csv')))
+  df_teams <- read_csv(here(glue('data/stats/{season}/teams_{season}.csv')))
+  df_start <- read_csv(here('data/df_start.csv'))
+  df_start <- df_start[df_start$season == season,]
+ 
   df_features <- 
     df_stats %>%
     filter(in_lineup) %>%

@@ -1,25 +1,18 @@
 library(tidyverse)
-source('helpers.R')
+library(here)
+source(here('helpers.R'))
 
-
-df_start <- 
-  tibble('matchup_id' = 1:20) %>% 
-  mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
-                                 matchup_id == 14 ~ 11,
-                                 T ~ 8),
-         'duration' = case_when(matchup_id == 1 ~ 11, 
-                                matchup_id == 14 ~ 14,
-                                T ~ 7),
-         'end_period' = cumsum(duration),
-         'start_period' = end_period - duration + 1)
-
-get_trades <- function(week) {
+get_trades <- function(week, season_ = 2022) {
+  df_start <- 
+    read_csv(here('data/df_start.csv')) %>% 
+    filter(season == season_)
+  
   start <- df_start$start_period[week]
   end <- df_start$end_period[week]
   
   df <- 
     future_map_dfr(start:end, ~{
-      w <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/2022/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2'))
+      w <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season_}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2'))
       w %>% 
         pluck('transactions') %>% 
         filter(type == 'TRADE_ACCEPT') %>% 

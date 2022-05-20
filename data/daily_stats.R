@@ -7,7 +7,7 @@ library(glue)
 library(lubridate)
 plan(multiprocess(workers = parallel::detectCores() - 1))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
-source('helpers.R')
+source(here('helpers.R'))
 
 
 get_daily_stats <- function(x, y, index, team, df_schedule) {
