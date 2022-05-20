@@ -20,4 +20,18 @@ A repository of code for scraping data for my ESPN fantasy baseball league in or
 * __playoff_odds/__: Folder containing files on historical playoff odds from simulations
     * __historical_playoff_odds.R:__ Old script used to back compute old playoff odds for 2021
     * __historical_playoff_odds_YYYY.csv__
-    
+
+
+## Figures
+
+* __playoff_odds.png__: Playoff odds by week 
+* __stats.png__: Advanced stats table
+* __points_bump.png__: Bump chart showing position by points scored over the course of the season 
+* __trades.png__: Before/After trade analysis by points above league average at position group
+* __top_performers.png__: Top performers by batter/SP/RP for current matchup 
+* __wp_graphics.R__: R script for plotting win probability graphics
+* __top_performers/__: Folder of archived top performer charts for each week
+* __wp_charts/__: Folder of archived win probability charts
+* __wp.txt__: Text file of current win prob
+* __week_lines.txt__: Text file of pre-matchup win prob
+* __stock_charts/__: Folder of stock charts showing 10 day rolling averages for bat/sp/rp PPG as well as QS% 
