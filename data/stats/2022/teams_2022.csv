@@ -1,13 +1,13 @@
-team_id,division_id,team,location,nickname,logo,abbreviation,wins,losses,ties
-1,1,Yosemite Yeshivas,Yosemite,Yeshivas,https://ssref.net/scripts/image_resize.cgi?min=200&url=https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/8/8b4db8f5_mlbam.jpg,JEWS,0,4,0
-2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,Germ,3,1,0
-4,1,All That is Wright,All,That is Wright,https://g.espncdn.com/lm-static/logo-packs/flb/Letter-and-Number-Caps-ESPN/caps5.svg,ATiW,1,3,0
-5,1,The Traveling Secretaries,The Traveling,Secretaries,https://i.imgur.com/wll1Ubw.jpg,HUBE,2,2,0
-6,1,The Novaks,The,Novaks,https://www.nydailynews.com/resizer/38DQJPp-rriVrUFvzd0Ueuernmc=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/F252QGGEFUQCSQOOIOFXLFS7UA.jpg,NVKS,4,0,0
-7,1,All Walshed Up,All Walshed,Up,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,AWU,3,1,0
-8,1,Mt. Everest Taquito Farmers,Mt. Everest,Taquito Farmers,http://www.solbern.com/Taquitos.gif,TACO,1,3,0
-9,1,Of Bryce and Men,Of,Bryce and Men,https://i.imgur.com/GPPaF3V.png,WAG,3,1,0
-11,1,The West Bank Occupiers ,The West Bank,Occupiers ,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,LAMA,0,4,0
-12,1,Blasphemous Hot Takes,Blasphemous,Hot Takes,https://i.imgur.com/egcNf8O.jpg,HOT,2,2,0
-13,1,Springer Bell,Springer,Bell,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,BOGA,3,1,0
-14,1,Freedom of the Pressly,Freedom of the,Pressly,https://imgur.com/Gco3zbq.png,PRAT,2,2,0
+team_id,division_id,team,location,nickname,logo,owners,abbreviation,wins,losses,ties
+1,1,Yosemite Yeshivas,Yosemite,Yeshivas,https://ssref.net/scripts/image_resize.cgi?min=200&url=https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/8/8b4db8f5_mlbam.jpg,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,0,5,0
+2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},Germ,4,1,0
+4,1,All That is Wright,All,That is Wright,https://g.espncdn.com/lm-static/logo-packs/flb/Letter-and-Number-Caps-ESPN/caps5.svg,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,1,4,0
+5,1,The Traveling Secretaries,The Traveling,Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,3,2,0
+6,1,The Novaks,The,Novaks,https://www.nydailynews.com/resizer/38DQJPp-rriVrUFvzd0Ueuernmc=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/F252QGGEFUQCSQOOIOFXLFS7UA.jpg,{2E1702EE-0B65-47A2-A7D9-3AE216FF000A},NVKS,5,0,0
+7,1,All Walshed Up,All Walshed,Up,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,{4CBB5F84-22CB-4FE7-B40C-22F318D4DB4F},AWU,3,2,0
+8,1,Mt. Everest Taquito Farmers,Mt. Everest,Taquito Farmers,https://i.imgur.com/VW41hvO.gif,"{47171099-0ED9-4805-925D-64CE3F03A213}, {C423324F-615C-495E-905C-A604D9892983}",TACO,1,4,0
+9,1,Of Bryce and Men,Of,Bryce and Men,https://i.imgur.com/GPPaF3V.png,{6C6E5618-71E4-414B-AE56-1871E4314B09},WAG,4,1,0
+11,1,The West Bank Occupiers ,The West Bank,Occupiers ,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,{61DEDFD6-182F-4D0B-855E-5015A1E168E2},LAMA,0,5,0
+12,1,Blasphemous Hot Takes,Blasphemous,Hot Takes,https://i.imgur.com/egcNf8O.jpg,{8A2DBF73-E806-4373-8F90-B1F92878EE00},HOT,3,2,0
+13,1,Springer Bell,Springer,Bell,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,4,1,0
+14,1,Freedom of the Pressly,Freedom of the,Pressly,https://imgur.com/Gco3zbq.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,2,3,0

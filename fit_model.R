@@ -37,7 +37,7 @@ preprocessing_recipe <-
   step_rm(ends_with('id')) %>% 
   step_rm(-any_of(covariates)) %>% 
   prep()
-write_rds(preprocessing_recipe, 'recipe.rds')
+write_rds(preprocessing_recipe, 'models/recipe.rds')
 
 ### CV Folds
 ### One fold per week
@@ -141,7 +141,7 @@ model <-
           nrounds = best_params$iter,
           verbose = 2)
 
-xgb.save(model, 'xgb_winprob')
+xgb.save(model, 'models/xgb_winprob')
 
 importance <- xgboost::xgb.importance(
   feature_names = colnames(bake(preprocessing_recipe, df)),
@@ -150,7 +150,12 @@ importance <- xgboost::xgb.importance(
 xgboost::xgb.ggplot.importance(importance_matrix = importance)
 
 
-log_reg <- glm(win ~ score_diff*start_advantage, 
+log_reg <- glm(win ~ score_diff*factor(case_when(start_advantage >= 4 ~ '> +3',
+                                                 start_advantage <= -4 ~ '< -3',
+                                                 start_advantage > 0 ~ paste0('+', start_advantage),
+                                                 start_advantage < 0 ~ paste0('-', abs(start_advantage)),
+                                                 T ~ '0'), levels = c('< -3', '-3', '-2', '-1', '0', 
+                                                                      '+1', '+2', '+3', '> +3')), 
                data = df, family = 'binomial')
 
-write_rds(log_reg, 'log_reg.rds') 
+write_rds(log_reg, 'models/log_reg.rds') 

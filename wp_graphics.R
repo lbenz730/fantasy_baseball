@@ -7,9 +7,9 @@ library(ggimage)
 source('build_training_set.R')
 
 plot_wp <- function(season, week, plot = T, all = F) {
-  xgb_model <- xgb.load('xgb_winprob')
-  log_reg <- read_rds('log_reg.rds')
-  preprocessing_recipe <- read_rds('recipe.rds')
+  xgb_model <- xgb.load('models/xgb_winprob')
+  log_reg <- read_rds('models/log_reg.rds')
+  preprocessing_recipe <- read_rds('models/recipe.rds')
   df <- 
     build_train_set(season) %>% 
     mutate('start_factor' = factor(case_when(start_advantage >= 4 ~ '> +3',
@@ -35,13 +35,20 @@ plot_wp <- function(season, week, plot = T, all = F) {
   df$win_prob <- predict(xgb_model, as.matrix(bake(preprocessing_recipe, df)))
   df$win_prob_lr <- predict(log_reg, newdata = df, type = 'response')
   
-  df$win_prob <- 0.67 * df$win_prob + 0.33 * df$win_prob_lr
+  df <- 
+    df %>% 
+    mutate('weight_lr' = case_when(day_of_matchup == 0 ~ 0,
+                                   days_left <= 4 & abs(win_prob_lr - 0.5) - abs(win_prob - 0.5) < -0.2 ~ 0.9,
+                                   days_left <= 2 & abs(start_advantage) <= 2 ~ 0.67,
+                                   T ~ 0.33)) %>% 
+    mutate('win_prob' = (1-weight_lr) * win_prob + weight_lr * win_prob_lr)
+  
   
   df$win_prob[df$day_of_matchup == 0 & df$matchup_id == 1] <- 0.5
   
   if(hour(Sys.time()) < 12 & hour(Sys.time()) > 2 & !all) {
     df <- filter(df, days_left > min(days_left)) 
-  } else if(!(wday(Sys.Date()) == 1 & hour(Sys.time()) < 20)) {
+  } else if(!(wday(Sys.Date()) == 1 & hour(Sys.time()) < 20) | all) {
     df$win_prob[df$days_left == 0 & df$score_diff > 0] <- 1
     df$win_prob[df$days_left == 0 & df$score_diff < 0] <- 0
   }
