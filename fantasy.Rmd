@@ -3,11 +3,12 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 6
+  matchup_id: 7
   nsims: 100000
   midweek: FALSE
   season: 2022
   current_season: 2022
+  publish: FALSE
 output: 
    html_document: default
 ---
@@ -22,6 +23,7 @@ library(furrr)
 library(glue)
 library(lubridate)
 library(here)
+library(patchwork)
 plan(multiprocess(workers = parallel::detectCores() - 1))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
@@ -199,7 +201,7 @@ df_penalty <-
   filter(penalty != 0) %>% 
   distinct() %>% 
   ungroup() %>% 
-  select(team, matchup_id, scoring_period_id, penalty)
+  select(team, matchup_id, scoring_period_id, penalty) 
 
 
 
@@ -356,7 +358,7 @@ exp_standings <-
   filter(matchup_id <= params$matchup_id) %>% 
   group_by(team) %>% 
   summarise(
-    "win_pct" = mean(total_points > total_points_opp, na.rm = T),
+    "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
     "exp_win_pct" = mean((12 - overall_rank)/11, na.rm = T),
     'win' = sum(total_points > total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
     'loss' = params$matchup_id - win,
@@ -507,7 +509,8 @@ gt1 <-
   
   ### Round Numbers
   fmt_number(columns = c(exp_win, exp_loss, mean_wins), decimals = 1, sep_mark = '') %>%
-  fmt_number(columns = c(win, loss, mean_pts), decimals = 0, sep_mark = '') %>%
+  fmt_number(columns = c(win, loss), decimals = 1, sep_mark = '', drop_trailing_zeros = T, drop_trailing_dec_mark = T) %>%
+  fmt_number(columns = c(mean_pts), decimals = 0, sep_mark = '') %>%
   fmt_number(columns = c(sp_ppg, rp_ppg, adj_pts, adj_batting_pts, adj_pitching_pts, batting_points, pitching_points, total_points), decimals = 1, sep_mark = '') %>%
   fmt_number(columns = c(batting_ppg), decimals = 2, sep_mark = '') %>%
   fmt_percent(columns = c(qs_pct, playoffs, last_place), decimals = 1, sep_mark = '') %>%
@@ -851,7 +854,7 @@ gtsave(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwid
 
 ### Win Probability Charts
 ```{r,  fig.height = 9, fig.width = 16}
-df_wp <- plot_wp(params$season, params$matchup_id)
+df_wp <- plot_wp(params$season, params$matchup_id, all = wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12)
 ```
 
 ```{r}
@@ -1004,7 +1007,7 @@ ggsave('figures/points_bump.png', height = 9/1.2, width = 16/1.2)
 ```
 
 # Rolling Trends
-```{r}
+```{r, fig.height=9, fig.width=16}
 df_bat_stocks <- 
   df_daily %>% 
   filter(in_lineup) %>% 
@@ -1018,13 +1021,17 @@ df_bat_stocks <-
          'roll_ppg' = roll_points/roll_games) %>% 
   group_split() %>% 
   map_dfr(~{
-    tmp <- approx(.x$scoring_period_id, .x$roll_ppg, n = 500)
+    x <- .x$scoring_period_id
+    y <- .x$roll_ppg
+    y[x >= 10 & is.na(y)] <- 0
+    tmp <- approx(x, y, n = 500)
     tibble('team_id' = .x$team_id[1],
            'scoring_period_id' = tmp$x,
            'roll_ppg' = tmp$y)
   }) %>% 
   ungroup() %>% 
-  inner_join(teams) 
+  inner_join(teams)
+  
 
 
 df_pitch_stocks <- 
@@ -1044,8 +1051,13 @@ df_pitch_stocks <-
          'roll_qs_pct' = roll_qs/roll_games) %>% 
   group_split() %>% 
   map_dfr(~{
-    tmp <- approx(.x$scoring_period_id, .x$roll_ppg, n = 500)
-    tmp2 <- approx(.x$scoring_period_id, .x$roll_qs_pct, n = 500)
+    x <- .x$scoring_period_id
+    y <- .x$roll_ppg
+    z <- .x$roll_qs_pct
+    y[x >= 10 & is.na(y)] <- 0
+    z[x >= 10 & is.na(z)] <- 0
+    tmp <- approx(x, y, n = 500)
+    tmp2 <- approx(x, z, n = 500)
     tibble('team_id' = .x$team_id[1],
            'scoring_period_id' = tmp$x,
            'roll_ppg' = tmp$y,
@@ -1069,7 +1081,10 @@ df_rp_stocks <-
          'roll_ppg' = roll_points/roll_games) %>% 
   group_split() %>% 
   map_dfr(~{
-    tmp <- approx(.x$scoring_period_id, .x$roll_ppg, n = 500)
+    x <- .x$scoring_period_id
+    y <- .x$roll_ppg
+    y[x >= 10 & is.na(y)] <- 0
+    tmp <- approx(x, y, n = 500)
     tibble('team_id' = .x$team_id[1],
            'scoring_period_id' = tmp$x,
            'roll_ppg' = tmp$y)
@@ -1077,7 +1092,8 @@ df_rp_stocks <-
   ungroup() %>% 
   inner_join(teams) 
 
-ggplot(df_bat_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
+p1 <- 
+  ggplot(df_bat_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
   facet_wrap(~team) +
   geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) + 
   geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
@@ -1088,7 +1104,8 @@ ggplot(df_bat_stocks, aes(x = scoring_period_id, y = roll_ppg)) +
 
 ggsave('figures/stock_charts/bat_stocks.png', height = 9/1.2, width = 16/1.2)
 
-ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
+p2 <- 
+  ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
   facet_wrap(~team) +
   geom_hline(yintercept = df$sp_ppg[13], lty = 2, alpha = 0.3) + 
   geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
@@ -1098,7 +1115,8 @@ ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_ppg)) +
        title = 'Starting Pitching PPG 10 Day Rolling Average') 
 ggsave('figures/stock_charts/sp_stocks.png', height = 9/1.2, width = 16/1.2)
 
-ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_qs_pct)) + 
+p3 <- 
+  ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_qs_pct)) + 
   facet_wrap(~team) +
   geom_hline(yintercept = df$qs_pct[13], lty = 2, alpha = 0.3) + 
   geom_line(aes(col = roll_qs_pct), lwd = 1.2, lineend = 'round') + 
@@ -1109,15 +1127,19 @@ ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_qs_pct)) +
   scale_y_continuous(labels = scales::percent)
 ggsave('figures/stock_charts/qs_stocks.png', height = 9/1.2, width = 16/1.2)
 
-ggplot(df_rp_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
+p4 <- 
+  ggplot(df_rp_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
   facet_wrap(~team) +
-  geom_hline(yintercept = df$rp_ppg[13], lty = 2, alpha = 0.3) + 
+  geom_hline(yintercept = df$rp_ppg[13], lty = 2, alpha = 0.3) +
   geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
   scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$rp_ppg[13]) +
   labs(x = 'Day of Season',
        y = 'RP Points/Game',
        title = 'Relief Pitching PPG 10 Day Rolling Average') 
 ggsave('figures/stock_charts/rp_stocks.png', height = 9/1.2, width = 16/1.2)
+
+(p1 + p2)/(p3 + p4)
+ggsave('figures/stock_charts/stocks.png', height = 9, width = 16)
 ```
 
 # Trades
@@ -1360,3 +1382,12 @@ gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
 ```
 <img src="figures/trades.png" height="250px" width="1500px" />
 
+```{r}
+if(params$publish) {
+  rsconnect::rpubsUpload(title = 'Millburn Fantasy', 
+                         contentFile = 'fantasy.html',
+                         originalDoc = 'fantasy.Rmd',
+                         id = 'https://api.rpubs.com/api/v1/document/905951/1f88063ceeae401cb4bf80f1450a6961')
+                          
+}
+```

@@ -10,5 +10,5 @@ df_2021 <- map_dfr(1:22, ~get_matchup_stats(.x, season = 2021))
 write_csv(df_2021, here('data/stats/2021/daily_stats_2021.csv'))
 
 ### 2022 Scrape
-df_2022 <- map_dfr(1:6, ~get_matchup_stats(.x, season = 2022))
+df_2022 <- map_dfr(1:7, ~get_matchup_stats(.x, season = 2022))
 write_csv(df_2022, here('data/stats/2022/daily_stats_2022.csv'))
