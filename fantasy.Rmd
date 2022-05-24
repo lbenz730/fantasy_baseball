@@ -1031,7 +1031,7 @@ df_bat_stocks <-
   }) %>% 
   ungroup() %>% 
   inner_join(teams)
-  
+
 
 
 df_pitch_stocks <- 
@@ -1146,6 +1146,22 @@ ggsave('figures/stock_charts/stocks.png', height = 9, width = 16)
 ```{r}
 traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
 trade_stats <- NULL
+
+scale_factors <- 
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(matchup_id < params$matchup_id) %>% 
+  group_by(team_id, matchup_id) %>% 
+  summarise('n_bat' = sum(played),
+            'n_rp' = sum(relief & !start)) %>% 
+  inner_join(df_start) %>% 
+  mutate('n_rp' = n_rp/duration * 7,
+         'n_bat' = n_bat/duration * 7) %>% 
+  ungroup() %>% 
+  summarise('n_sp' = 8/6,
+            'n_rp' = mean(n_rp)/3,
+            'n_bat' = mean(n_bat)/13)
+
 for(i in 1:nrow(traded_players)) {
   old_team <- traded_players$team_from[i]
   new_team <- traded_players$team_to[i]
@@ -1162,9 +1178,9 @@ for(i in 1:nrow(traded_players)) {
               'sp' = sum(start),
               'rp' = sum(relief)) %>% 
     mutate('ppg' = points/played) %>% 
-    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ ppg - df$batting_ppg[13],
-                                    rp > 0 & sp == 0 ~ ppg - df$rp_ppg[13],
-                                    sp > 0 ~ ppg - df$sp_ppg[13])) %>% 
+    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
+                                    rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
+                                    sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
     select(points, played, ppg, ppg_vs_avg)
   names(tmp_before) <- paste0(names(tmp_before), '_before')
   
@@ -1179,9 +1195,9 @@ for(i in 1:nrow(traded_players)) {
               'sp' = sum(start),
               'rp' = sum(relief)) %>% 
     mutate('ppg' = points/played) %>% 
-    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ ppg - df$batting_ppg[13],
-                                    rp > 0 & sp == 0 ~ ppg - df$rp_ppg[13],
-                                    sp > 0 ~ ppg - df$sp_ppg[13])) %>% 
+    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
+                                    rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
+                                    sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
     select(points, played, ppg, ppg_vs_avg)
   names(tmp_after) <- paste0(names(tmp_after), '_after')
   
@@ -1359,14 +1375,17 @@ gt_trades <-
     'ppg_before_2' = 'PPG',
     'ppg_after_1' = 'PPG',
     'ppg_after_2' = 'PPG',
-    'ppg_vs_avg_before_1' = 'PPG vs. League Avg.',
-    'ppg_vs_avg_before_2' = 'PPG vs. League Avg.',
-    'ppg_vs_avg_after_1' = 'PPG vs. League Avg.',
-    'ppg_vs_avg_after_2' = 'PPG vs. League Avg.') %>% 
+    'ppg_vs_avg_before_1' = 'Value/Matchup',
+    'ppg_vs_avg_before_2' = 'Value/Matchup',
+    'ppg_vs_avg_after_1' = 'Value/Matchup',
+    'ppg_vs_avg_after_2' = 'Value/Matchup') %>% 
   
-  tab_header(
-    title = 'Trade Analysis'
-  ) %>%
+  tab_header(title = 'Trade Analysis') %>%
+  tab_footnote(footnote = "Value = Points/Week vs. League Average at Position",
+               locations = cells_column_labels(columns = contains('avg'))) %>% 
+  tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week')) %>% 
+  tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week')) %>% 
+  tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week')) %>% 
   tab_options(column_labels.font.size = 16,
               heading.title.font.size = 40,
               heading.subtitle.font.size = 40,
@@ -1378,7 +1397,7 @@ gt_trades <-
 ```
 
 ```{r, include = F}
-gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
+gtsave(gt_trades, 'figures/trades.png', vwidth = 3000)
 ```
 <img src="figures/trades.png" height="250px" width="1500px" />
 
@@ -1388,6 +1407,6 @@ if(params$publish) {
                          contentFile = 'fantasy.html',
                          originalDoc = 'fantasy.Rmd',
                          id = 'https://api.rpubs.com/api/v1/document/905951/1f88063ceeae401cb4bf80f1450a6961')
-                          
+  
 }
 ```
