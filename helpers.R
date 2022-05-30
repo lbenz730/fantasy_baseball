@@ -142,3 +142,10 @@ update_daily_stats <- function() {
   return(df_daily)
   
 }
+
+publish <- function() {
+  rsconnect::rpubsUpload(title = 'Millburn Fantasy', 
+                         contentFile = 'fantasy.html',
+                         originalDoc = 'fantasy.Rmd',
+                         id = 'https://api.rpubs.com/api/v1/document/905951/1f88063ceeae401cb4bf80f1450a6961') 
+}

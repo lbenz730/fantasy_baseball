@@ -1,8 +1,10 @@
 library(tidyverse)
 library(here)
+library(furrr)
+
 source(here('helpers.R'))
 
-get_trades <- function(week, season_ = 2022) {
+get_trades <- function(week, season_ = 2022, proposed = F) {
   df_start <- 
     read_csv(here('data/df_start.csv')) %>% 
     filter(season == season_)
@@ -15,13 +17,21 @@ get_trades <- function(week, season_ = 2022) {
       w <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season_}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2'))
       w %>% 
         pluck('transactions') %>% 
-        filter(type == 'TRADE_ACCEPT') %>% 
-        select('team_id' = teamId, 
-               'scoring_period_id' = scoringPeriodId) %>% 
-        mutate('matchup_id' = week)
-      
+        filter((grepl('TRADE', type) & proposed) | (!proposed & type == 'TRADE_ACCEPT'))
       
     })
+  
+  df <- 
+    df %>% 
+    filter(!duplicated(relatedTransactionId)) 
+  
+  if(!proposed) {
+    df <- 
+      df %>% 
+      select('team_id' = teamId,
+             'scoring_period_id' = scoringPeriodId) %>%
+      mutate('matchup_id' = week)
+  }
   
   return(df)
 }
