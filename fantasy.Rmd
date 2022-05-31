@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 7
+  matchup_id: 8
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -861,7 +861,7 @@ gtsave(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwid
 ```
 
 
-<img src="figures/top_performers.png" width="1800px" />
+<img src="figures/top_performers.png" width="1600px" />
 
 ### Win Probability Charts
 ```{r,  fig.height = 9, fig.width = 16}
@@ -892,7 +892,7 @@ if(wday(Sys.Date()) == 2) {
     ungroup() %>% 
     mutate('statement' = paste0(team_home, ' (', round(100 * win_prob), '%) vs.\n', team_away, ' (', round(100 * (1-win_prob)), '%)')) %>% 
     pull(statement) %>% 
-    paste(collapse = '\n') %>% 
+    paste(collapse = '\n\n') %>% 
     paste0('Pre-Match Lines Week: ', params$matchup_id+1, '\n-------------------\n', .) %>% 
     write('figures/week_lines.txt')
 }
@@ -1019,6 +1019,22 @@ ggsave('figures/points_bump.png', height = 9/1.2, width = 16/1.2)
 
 # Rolling Trends
 ```{r, fig.height=9, fig.width=16}
+scale_factors <- 
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(matchup_id < params$matchup_id) %>% 
+  group_by(team_id, matchup_id) %>% 
+  summarise('n_bat' = sum(played),
+            'n_rp' = sum(relief & !start)) %>% 
+  inner_join(df_start) %>% 
+  mutate('n_rp' = n_rp/duration * 7,
+         'n_bat' = n_bat/duration * 7) %>% 
+  ungroup() %>% 
+  summarise('n_sp' = 8/6,
+            'n_rp' = mean(n_rp)/3,
+            'n_bat' = mean(n_bat)/13)
+
+
 df_bat_stocks <- 
   df_daily %>% 
   filter(in_lineup) %>% 
@@ -1088,19 +1104,11 @@ df_rp_stocks <-
             'n_qs' = sum(qs),
             'ppg' = n_points/n_games) %>% 
   mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
+         'cum_points' = cumsum(n_points),
          'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
          'roll_ppg' = roll_points/roll_games) %>% 
-  group_split() %>% 
-  map_dfr(~{
-    x <- .x$scoring_period_id
-    y <- .x$roll_ppg
-    y[x >= 10 & is.na(y)] <- 0
-    tmp <- approx(x, y, n = 500)
-    tibble('team_id' = .x$team_id[1],
-           'scoring_period_id' = tmp$x,
-           'roll_ppg' = tmp$y)
-  }) %>% 
-  ungroup() %>% 
+  filter(scoring_period_id >= 10) %>% 
+  ungroup() %>%
   inner_join(teams) 
 
 p1 <- 
@@ -1109,6 +1117,7 @@ p1 <-
   geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) + 
   geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
   scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$batting_ppg[13]) +
+  theme(strip.text = element_text(size = 10)) + 
   labs(x = 'Day of Season',
        y = 'Batting Points/Game',
        title = 'Batting PPG 10 Day Rolling Average') 
@@ -1121,6 +1130,7 @@ p2 <-
   geom_hline(yintercept = df$sp_ppg[13], lty = 2, alpha = 0.3) + 
   geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
   scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$sp_ppg[13]) +
+  theme(strip.text = element_text(size = 10)) + 
   labs(x = 'Day of Season',
        y = 'SP Points/Game',
        title = 'Starting Pitching PPG 10 Day Rolling Average') 
@@ -1132,6 +1142,7 @@ p3 <-
   geom_hline(yintercept = df$qs_pct[13], lty = 2, alpha = 0.3) + 
   geom_line(aes(col = roll_qs_pct), lwd = 1.2, lineend = 'round') + 
   scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$qs_pct[13]) +
+  theme(strip.text = element_text(size = 10)) + 
   labs(x = 'Day of Season',
        y = 'QS %',
        title = 'QS% 10 Day Rolling Average') +
@@ -1139,14 +1150,15 @@ p3 <-
 ggsave('figures/stock_charts/qs_stocks.png', height = 9/1.2, width = 16/1.2)
 
 p4 <- 
-  ggplot(df_rp_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
+  ggplot(df_rp_stocks, aes(x = scoring_period_id, y = roll_points)) + 
   facet_wrap(~team) +
-  geom_hline(yintercept = df$rp_ppg[13], lty = 2, alpha = 0.3) +
-  geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
-  scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$rp_ppg[13]) +
+  geom_hline(yintercept = scale_factors$n_rp/7 * 10 * 3 * df$rp_ppg[13], lty = 2, alpha = 0.3) + 
+  geom_line(aes(col = roll_points), lwd = 1.2, lineend = 'round') + 
+  scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = scale_factors$n_rp/7 * 10 * 3 * df$rp_ppg[13]) +
+  theme(strip.text = element_text(size = 10)) + 
   labs(x = 'Day of Season',
-       y = 'RP Points/Game',
-       title = 'Relief Pitching PPG 10 Day Rolling Average') 
+       y = 'RP Points/10 Days',
+       title = 'RP Points in Prev. 10 Days') 
 ggsave('figures/stock_charts/rp_stocks.png', height = 9/1.2, width = 16/1.2)
 
 (p1 + p2)/(p3 + p4)
@@ -1196,21 +1208,6 @@ ggsave('figures/stock_charts/bht_stocks.png', height = 9/1.2, width = 16/1.2)
 ```{r}
 traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
 trade_stats <- NULL
-
-scale_factors <- 
-  df_daily %>% 
-  filter(in_lineup) %>% 
-  filter(matchup_id < params$matchup_id) %>% 
-  group_by(team_id, matchup_id) %>% 
-  summarise('n_bat' = sum(played),
-            'n_rp' = sum(relief & !start)) %>% 
-  inner_join(df_start) %>% 
-  mutate('n_rp' = n_rp/duration * 7,
-         'n_bat' = n_bat/duration * 7) %>% 
-  ungroup() %>% 
-  summarise('n_sp' = 8/6,
-            'n_rp' = mean(n_rp)/3,
-            'n_bat' = mean(n_bat)/13)
 
 max_sp <- max(df_daily$scoring_period_id)
 
@@ -1559,4 +1556,9 @@ gt_trades <-
 ```{r, include = F}
 gtsave(gt_trades, 'figures/trades.png', vwidth = 3000)
 ```
-<img src="figures/trades.png" width="1800px" />
+<img src="figures/trades.png" />
+
+
+
+
+---

@@ -35,18 +35,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 6,34,4,309,154.5,154.5,14,310,224,86,All That is Wright,Freedom of the Pressly
 6,35,11,391.5,200.5,191,1,399,242.5,156.5,The West Bank Occupiers ,Yosemite Yeshivas
 6,36,6,378.5,221.5,157,8,346,179,167,The Novaks,Mt. Everest Taquito Farmers
-7,37,13,215,173,42,5,330,231,99,Springer Bell,The Traveling Secretaries
-7,38,2,260.5,183,77.5,12,302,187,115,Framber Valdez Oil Spill,Blasphemous Hot Takes
-7,39,9,350.5,237,113.5,4,293.5,253,40.5,Of Bryce and Men,All That is Wright
-7,40,14,252.5,179.5,73,11,297,150.5,146.5,Freedom of the Pressly,The West Bank Occupiers 
-7,41,1,273.5,205.5,68,6,198.5,154.5,44,Yosemite Yeshivas,The Novaks
-7,42,8,247,154.5,92.5,7,290.5,240,50.5,Mt. Everest Taquito Farmers,All Walshed Up
-8,43,12,NA,NA,NA,13,NA,NA,NA,Blasphemous Hot Takes,Springer Bell
-8,44,4,NA,NA,NA,2,NA,NA,NA,All That is Wright,Framber Valdez Oil Spill
-8,45,11,NA,NA,NA,9,NA,NA,NA,The West Bank Occupiers ,Of Bryce and Men
-8,46,6,NA,NA,NA,14,NA,NA,NA,The Novaks,Freedom of the Pressly
-8,47,7,NA,NA,NA,1,NA,NA,NA,All Walshed Up,Yosemite Yeshivas
-8,48,5,NA,NA,NA,8,NA,NA,NA,The Traveling Secretaries,Mt. Everest Taquito Farmers
+7,37,13,249.5,177.5,72,5,351,232.5,118.5,Springer Bell,The Traveling Secretaries
+7,38,2,329.5,183,146.5,12,348.5,187,161.5,Framber Valdez Oil Spill,Blasphemous Hot Takes
+7,39,9,395.5,239,156.5,4,407.5,256.5,151,Of Bryce and Men,All That is Wright
+7,40,14,302.5,179.5,123,11,288.5,150.5,138,Freedom of the Pressly,The West Bank Occupiers 
+7,41,1,338.5,213,125.5,6,303.5,156.5,147,Yosemite Yeshivas,The Novaks
+7,42,8,268.5,154.5,114,7,384,243,141,Mt. Everest Taquito Farmers,All Walshed Up
+8,43,12,32,23.5,8.5,13,98,39.5,58.5,Blasphemous Hot Takes,Springer Bell
+8,44,4,24.5,23.5,1,2,57.5,20,37.5,All That is Wright,Framber Valdez Oil Spill
+8,45,11,33.5,33.5,NA,9,66,37.5,28.5,The West Bank Occupiers ,Of Bryce and Men
+8,46,6,59,21,38,14,36,20,16,The Novaks,Freedom of the Pressly
+8,47,7,46.5,27.5,19,1,11,11,NA,All Walshed Up,Yosemite Yeshivas
+8,48,5,38.5,29,9.5,8,48.5,38.5,10,The Traveling Secretaries,Mt. Everest Taquito Farmers
 9,49,13,NA,NA,NA,4,NA,NA,NA,Springer Bell,All That is Wright
 9,50,2,NA,NA,NA,11,NA,NA,NA,Framber Valdez Oil Spill,The West Bank Occupiers 
 9,51,9,NA,NA,NA,6,NA,NA,NA,Of Bryce and Men,The Novaks
