@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 8
+  matchup_id: 9
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -14,12 +14,12 @@ output:
 
 <style type="text/css">
 .main-container {
-  max-width: 1600px;
-  max-height: 900px;
-  width: 100%;
-  height: auto
-  margin-left: auto;
-  margin-right: auto;
+max-width: 1600px;
+max-height: 900px;
+width: 100%;
+height: auto
+margin-left: auto;
+margin-right: auto;
 }
 </style>
 
@@ -525,7 +525,7 @@ gt1 <-
   fmt_number(columns = c(sp_ppg, rp_ppg, adj_pts, adj_batting_pts, adj_pitching_pts, batting_points, pitching_points, total_points), decimals = 1, sep_mark = '') %>%
   fmt_number(columns = c(batting_ppg), decimals = 2, sep_mark = '') %>%
   fmt_percent(columns = c(qs_pct, playoffs, last_place), decimals = 1, sep_mark = '') %>%
-  fmt_missing(columns = everything(), missing_text = "---") %>%
+  sub_missing(columns = everything(), missing_text = "---") %>%
   
   ### Align Columns
   cols_align(align = "center", columns = everything()) %>%
@@ -689,7 +689,7 @@ gt1 <-
 ```
 
 ```{r, include = F}
-gtsave(gt1, 'figures/stats.png', vwidth = 3000)
+gtExtras::gtsave_extra(gt1 , 'figures/stats.png', vwidth = 3000, selector = 'table')
 ```
 
 <img src="figures/stats.png" width="1600px"/>
@@ -734,6 +734,9 @@ df_sp <-
   mutate(player = paste0(player, ' (', n, ')')) %>% 
   filter(matchup_id == params$matchup_id) %>%
   select(player, player_url, team, logo, n_games, n_points)
+if(nrow(df_sp) < 10) {
+  df_sp[max(1, nrow(df_sp)):10,] <- NA
+}
 
 names(df_sp) <- paste0(names(df_sp), '_sp')
 
@@ -754,6 +757,10 @@ df_rp <-
   mutate(player = paste0(player, ' (', n, ')')) %>% 
   filter(matchup_id == params$matchup_id) %>%
   select(player, player_url, team, logo, n_games, n_points)
+if(nrow(df_rp) < 10) {
+  df_rp[max(1,nrow(df_rp)):10,] <- NA
+}
+
 
 names(df_rp) <- paste0(names(df_rp), '_rp')
 
@@ -770,6 +777,7 @@ gt_top <-
   tab_spanner(label = 'Relief Pitching', columns = contains('_rp')) %>%
   tab_spanner(label = 'Starting Pitching', columns = contains('_sp')) %>%
   tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
+  sub_missing(columns = everything(), missing_text = "---") %>%
   
   
   
@@ -856,8 +864,8 @@ gt_top <-
 ```
 
 ```{r, include = F}
-gtsave(gt_top , 'figures/top_performers.png', vwidth = 3000)
-gtsave(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000)
+gtExtras::gtsave_extra(gt_top , 'figures/top_performers.png', vwidth = 3000, selector = 'table')
+gtExtras::gtsave_extra(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000, selector = 'table')
 ```
 
 
@@ -878,6 +886,17 @@ df_wp %>%
   paste(collapse = '\n\n') %>% 
   paste0('Win Probability Week: ', params$matchup_id, '\n-------------------\n', .) %>% 
   write('figures/wp.txt')
+
+upset_p <- 
+  df_wp %>%
+  group_by(team_home) %>% 
+  filter(days_left == min(days_left)) %>% 
+  mutate('p' = pmin(win_prob, 1-win_prob)) %>% 
+  pull(p) %>% 
+  map_dbl(~{1-.x}) %>% 
+  prod()
+upset_p <- 1-upset_p
+
 
 if(wday(Sys.Date()) == 2) {
   read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
@@ -1108,6 +1127,16 @@ df_rp_stocks <-
          'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
          'roll_ppg' = roll_points/roll_games) %>% 
   filter(scoring_period_id >= 10) %>% 
+  group_split() %>% 
+  map_dfr(~{
+    x <- .x$scoring_period_id
+    y <- .x$roll_points
+    y[x >= 10 & is.na(y)] <- 0
+    tmp <- approx(x, y, n = 500)
+    tibble('team_id' = .x$team_id[1],
+           'scoring_period_id' = tmp$x,
+           'roll_points' = tmp$y)
+  }) %>% 
   ungroup() %>%
   inner_join(teams) 
 
@@ -1172,7 +1201,7 @@ hot_take_batters <-
   group_by(player) %>% 
   mutate('cum_games' = cumsum(played),
          'cum_points' = cumsum(points),
-         'roll_ppg' = zoo::rollsum(points, 10, fill = NA, align = 'right')/zoo::rollsum(played, 10, fill = NA, align = 'right')) %>% 
+         'roll_ppg' = zoo::rollsum(points, 10, fill = NA, align = 'right')/(0.00000000001 + zoo::rollsum(played, 10, fill = NA, align = 'right'))) %>% 
   mutate('cum_ppg' = cum_points/cum_games,
          'max_sp' = max(scoring_period_id)) %>% 
   mutate('form' = last(roll_ppg[!is.na(roll_ppg)])) %>% 
@@ -1209,8 +1238,6 @@ ggsave('figures/stock_charts/bht_stocks.png', height = 9/1.2, width = 16/1.2)
 traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
 trade_stats <- NULL
 
-max_sp <- max(df_daily$scoring_period_id)
-
 for(i in 1:nrow(traded_players)) {
   old_team <- traded_players$team_from[i]
   new_team <- traded_players$team_to[i]
@@ -1241,16 +1268,18 @@ for(i in 1:nrow(traded_players)) {
     summarise('points' = sum(points),
               'played' = sum(start) + sum(relief) + sum(played),
               'batter' = sum(played),
+              'pitcher' = sum(pitcher),
               'sp' = sum(start),
-              'rp' = sum(relief)) %>% 
+              'rp' = sum(relief),
+              'n_days' = n()) %>% 
     mutate('ppg' =  points/played) %>% 
     mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
                                     rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
                                     sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
-    mutate('total_value' = points - (max_sp - scoring_period + 1)/7 * 
-             case_when(rp == 0 & sp == 0 ~ df$batting_ppg[13] * scale_factors$n_bat,
+    mutate('total_value' = points - n_days/7 * 
+             case_when(rp == 0 & sp == 0 & pitcher == 0 ~ df$batting_ppg[13] * scale_factors$n_bat,
                        rp > 0 & sp == 0 ~ df$rp_ppg[13] * scale_factors$n_rp,
-                       sp > 0 ~ df$sp_ppg[13] *scale_factors$n_sp)
+                       sp > 0 | pitcher > 0 ~ df$sp_ppg[13] *scale_factors$n_sp)
     ) %>% 
     select(points, played, ppg, ppg_vs_avg, total_value)
   names(tmp_after) <- paste0(names(tmp_after), '_after')
@@ -1308,7 +1337,7 @@ df_trades <-
   ungroup() %>% 
   mutate('trade_id_1' = fct_reorder(factor(paste0('Trade #', trade_id_1)), trade_id_1)) %>% 
   group_by(trade_id_1)
- 
+
 
 
 m <- 
@@ -1338,7 +1367,7 @@ gt_trades <-
   fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
   fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
   fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
-  fmt_missing(columns = everything(), missing_text = "---") %>%
+  sub_missing(columns = everything(), missing_text = "---") %>%
   
   
   
@@ -1554,7 +1583,7 @@ gt_trades <-
 ```
 
 ```{r, include = F}
-gtsave(gt_trades, 'figures/trades.png', vwidth = 3000)
+gtExtras::gtsave_extra(gt_trades , 'figures/trades.png', vwidth = 3000, selector = 'table')
 ```
 <img src="figures/trades.png" />
 
