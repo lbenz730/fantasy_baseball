@@ -13,17 +13,24 @@ get_trades <- function(week, season_ = 2022, proposed = F) {
   end <- df_start$end_period[week]
   
   df <- 
-    future_map_dfr(start:end, ~{
-      w <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season_}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2'))
-      w %>% 
-        pluck('transactions') %>% 
-        filter((grepl('TRADE', type) & proposed) | (!proposed & type == 'TRADE_ACCEPT'))
+    map_dfr(start:end, ~{
+      w <- 
+        robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season_}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2')) %>% 
+        pluck('transactions') 
+      
+      if(!is.null(w)) {
+        w <- filter(w, (grepl('TRADE', type) & proposed) | (!proposed & type == 'TRADE_ACCEPT'))
+      }
+      
+      w
       
     })
   
-  df <- 
-    df %>% 
-    filter(!duplicated(relatedTransactionId)) 
+  if('relatedTransactionId' %in% names(df)) {
+    df <- 
+      df %>% 
+      filter(!duplicated(relatedTransactionId)) 
+  }
   
   if(!proposed) {
     df <- 

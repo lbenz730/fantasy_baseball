@@ -2,10 +2,13 @@ library(tidyverse)
 library(xgboost)
 library(splitTools)
 library(tidymodels)
-source(here('build_training_set.R'))
+library(here)
+source(here('models/build_training_set.R'))
 
 set.seed(212)
-df <- build_train_set(2021) 
+df <- bind_rows(build_train_set(2021), 
+                build_train_set(2020),
+                build_train_set(2022) %>% filter(matchup_id <= 10))
 
 covariates <- c('score_diff', 
                 'days_left',

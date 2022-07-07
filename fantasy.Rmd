@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 9
+  matchup_id: 13
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -689,7 +689,8 @@ gt1 <-
 ```
 
 ```{r, include = F}
-gtExtras::gtsave_extra(gt1 , 'figures/stats.png', vwidth = 3000, selector = 'table')
+# gtExtras::gtsave_extra(gt1 , 'figures/stats.png', vwidth = 3000, selector = 'table')
+gtsave(gt1 , 'figures/stats.png', vwidth = 3000)
 ```
 
 <img src="figures/stats.png" width="1600px"/>
@@ -864,8 +865,11 @@ gt_top <-
 ```
 
 ```{r, include = F}
-gtExtras::gtsave_extra(gt_top , 'figures/top_performers.png', vwidth = 3000, selector = 'table')
-gtExtras::gtsave_extra(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000, selector = 'table')
+# gtExtras::gtsave_extra(gt_top , 'figures/top_performers.png', vwidth = 3000, selector = 'table')
+# gtExtras::gtsave_extra(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000, selector = 'table')
+
+gtsave(gt_top , 'figures/top_performers.png', vwidth = 3000)
+gtsave(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000)
 ```
 
 
@@ -969,8 +973,8 @@ ggplot(exp_standings, aes(x = exp_win_pct, y = win_pct)) +
   geom_abline(slope = 1, intercept = 0, lty = 2, col = 'red') +
   geom_label(aes(label = team, fill =  win_pct - exp_win_pct), alpha = 0.7, size = 2) +
   scale_fill_viridis_c(labels = function(x)paste0(100*x, "%")) +
-  scale_x_continuous(limits = c(0,1), labels = function(x)paste0(100*x, "%")) +
-  scale_y_continuous(limits = c(0,1), labels = function(x)paste0(100*x, "%")) +
+  scale_x_continuous(labels = function(x)paste0(100*x, "%")) +
+  scale_y_continuous(labels = function(x)paste0(100*x, "%")) +
   theme(legend.position = 'bottom') +
   labs(title = "Pythagorean Win %",
        x = "Expected Win %",
@@ -987,7 +991,7 @@ ggplot(history, aes(x = matchup_id, y = playoffs, fill = team)) +
   geom_line(lwd = 1.2, aes(color = team)) +
   geom_point(size = 2, color = 'black', pch = 21) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 1:params$matchup_id) +
+  scale_x_continuous(breaks = 0:params$matchup_id) +
   labs(x = 'Week',
        y = 'Playoff Odds',
        title = 'Playoff Odds Over Time')
@@ -998,10 +1002,11 @@ ggplot(history, aes(x = matchup_id, y = last_place, fill = team)) +
   geom_line(lwd = 1.2, aes(color = team)) +
   geom_point(size = 2, color = 'black', pch = 21) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 1:params$matchup_id) +
+  scale_x_continuous(breaks = 0:params$matchup_id) +
   labs(x = 'Week',
        y = 'Ferry Odds',
        title = 'Ferry Odds Over Time')
+ggsave('figures/ferry_odds.png', height = 9/1.2, width = 16/1.2)
 ```
 
 ```{r fig.height = 9, fig.width = 16}
@@ -1143,7 +1148,7 @@ df_rp_stocks <-
 p1 <- 
   ggplot(df_bat_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
   facet_wrap(~team) +
-  geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) + 
+  geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) +
   geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
   scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$batting_ppg[13]) +
   theme(strip.text = element_text(size = 10)) + 
@@ -1213,11 +1218,19 @@ hot_take_batters <-
   map_dfr(~{
     x <- .x$scoring_period_id
     y <- .x$roll_ppg
-    tmp <- approx(x, y, n = 500)
-    tibble('player' = .x$player[1],
-           'form' = .x$form[1],
-           'scoring_period_id' = tmp$x,
-           'roll_ppg' = tmp$y)}) %>% 
+    if(nrow(.x) > 1) {
+      tmp <- approx(x, y, n = 500)
+      tibble('player' = .x$player[1],
+             'form' = .x$form[1],
+             'scoring_period_id' = tmp$x,
+             'roll_ppg' = tmp$y)
+    } else {
+      tibble('player' = .x$player[1],
+             'form' = .x$form[1],
+             'scoring_period_id' = .x$scoring_period_id,
+             'roll_ppg' = .x$roll_ppg)
+    }
+  }) %>% 
   ungroup()
 
 p5 <- 
@@ -1235,6 +1248,21 @@ ggsave('figures/stock_charts/bht_stocks.png', height = 9/1.2, width = 16/1.2)
 
 # Trades
 ```{r}
+scale_factors <- 
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(matchup_id < params$matchup_id) %>% 
+  group_by(team_id, matchup_id) %>% 
+  summarise('n_bat' = sum(played),
+            'n_rp' = sum(relief & !start)) %>% 
+  inner_join(df_start) %>% 
+  mutate('n_rp' = n_rp/duration * 7,
+         'n_bat' = n_bat/duration * 7) %>% 
+  ungroup() %>% 
+  summarise('n_sp' = 8/6,
+            'n_rp' = mean(n_rp)/3,
+            'n_bat' = mean(n_bat)/13)
+
 traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
 trade_stats <- NULL
 
@@ -1360,8 +1388,10 @@ gt_trades <-
   tab_spanner(label = 'After Trade', columns = contains('_after_2')) %>% 
   
   data_color(columns = contains('avg'),
-             colors = scales::col_numeric(palette = ggsci::rgb_gsea(n = 1000), 
-                                          domain = c(-m, m))) %>%
+             colors = scales::col_quantile(palette = ggsci::rgb_gsea(), 
+                                           domain = c(-m, m),
+                                           probs = c(0, seq(0.05, 0.95, 0.01), 1))
+  ) %>%
   
   ### Round Numbers
   fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
@@ -1583,7 +1613,8 @@ gt_trades <-
 ```
 
 ```{r, include = F}
-gtExtras::gtsave_extra(gt_trades , 'figures/trades.png', vwidth = 3000, selector = 'table')
+# gtExtras::gtsave_extra(gt_trades , 'figures/trades.png', vwidth = 3000, selector = 'table')
+gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
 ```
 <img src="figures/trades.png" />
 

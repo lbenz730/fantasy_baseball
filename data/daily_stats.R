@@ -9,6 +9,7 @@ plan(multiprocess(workers = parallel::detectCores() - 1))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 source(here('helpers.R'))
 
+# https://github.com/cwendt94/espn-api/blob/master/espn_api/baseball/constant.py#L69 [STAT MAP]
 
 get_daily_stats <- function(x, y, index, team, df_schedule) {
   if(team == 'home') {
@@ -28,7 +29,8 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'relief' = as.logical(sum(.x$stats$`32` > 0 & .x$stats$`33` == 0, na.rm = T)),
                'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)),
                'qs' = as.logical(sum(.x$stats$`63`, na.rm = T)),
-               'save' = as.logical(sum(.x$stats$`57`, na.rm = T)))
+               'save' = as.logical(sum(.x$stats$`57`, na.rm = T)),
+               'home_runs' = sum(.x$stats$`5`, na.rm = T))
       } else {
         tibble('points' = 0,
                'played' = 0,
@@ -36,7 +38,8 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'relief' = F,
                'relief_start' = F,
                'qs' = F,
-               'save' = F)
+               'save' = F,
+               'home_runs' = 0)
 
       } }) %>%
     mutate('player' = y$entries[[index]]$playerPoolEntry$player$fullName,

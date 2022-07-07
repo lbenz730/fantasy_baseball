@@ -101,6 +101,3 @@ build_train_set <- function(season) {
   
   return(df_train)
 }
-
-
-
