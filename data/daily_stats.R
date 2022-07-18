@@ -5,6 +5,7 @@ library(gt)
 library(furrr)
 library(glue)
 library(lubridate)
+library(here)
 plan(multiprocess(workers = parallel::detectCores() - 1))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 source(here('helpers.R'))
@@ -72,6 +73,7 @@ get_matchup_stats <- function(week, season = 2022) {
         map2_dfr(z$teams$roster$entries, z$teams$id, ~{
           tibble('player' = .x$playerPoolEntry$player$fullName,
                  'player_id' = .x$playerPoolEntry$player$id,
+                 'eligible_slots' = map_chr(.x$playerPoolEntry$player$eligibleSlots, paste, collapse = '/'),
                  'lineup_id' = .x$lineupSlotId,
                  'team_id' = .y)
         })

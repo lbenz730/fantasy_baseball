@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 13
+  matchup_id: 14
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -21,6 +21,12 @@ height: auto
 margin-left: auto;
 margin-right: auto;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
 
 ```{r setup, include=FALSE}
@@ -34,6 +40,7 @@ library(glue)
 library(lubridate)
 library(here)
 library(patchwork)
+library(truncnorm)
 plan(multiprocess(workers = parallel::detectCores() - 1))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
@@ -50,6 +57,7 @@ source('helpers.R')
 source('data/daily_stats.R')
 source('figures/wp_graphics.R')
 source('data/trades.R')
+source('figures/all_star_teams.R')
 ```
 
 ```{r}
@@ -80,6 +88,7 @@ teams <-
          'ties' = record.overall.ties) %>% 
   mutate('team' = paste(location, nickname)) %>% 
   mutate('owners' = map_chr(teams$owners, ~paste0(.x, collapse = ', '))) %>% 
+  mutate('team' = stripwhite(team)) %>% 
   select(team_id, division_id, team, everything())
 
 teams$logo[which(teams$team == "The Traveling Secretaries")] <- 'https://i.imgur.com/wll1Ubw.jpg'
@@ -366,15 +375,15 @@ qs_pct <-
 ### Exp Record
 exp_standings <- 
   team_points %>% 
-  filter(matchup_id <= params$matchup_id) %>% 
+  filter(matchup_id < params$matchup_id) %>% 
   group_by(team) %>% 
   summarise(
     "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
     "exp_win_pct" = mean((12 - overall_rank)/11, na.rm = T),
     'win' = sum(total_points > total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
-    'loss' = params$matchup_id - win,
+    'loss' = sum(total_points < total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
     "exp_win" = sum((12 - overall_rank)/11, na.rm = T),
-    "exp_loss" = params$matchup_id - exp_win) %>% 
+    "exp_loss" = sum(1 - (12 - overall_rank)/11, na.rm = T)) %>% 
   inner_join(select(teams, team, division_id, logo)) %>% 
   inner_join(total_team_points) %>% 
   left_join(batter_ppg %>% select(-n_games, -total)) %>% 
@@ -408,6 +417,11 @@ exp_standings <- bind_rows(exp_standings, league_avg)
 ```
 
 ```{r}
+### WP for Current Week 
+df_wp <- 
+  plot_wp(params$season, params$matchup_id, plot = F, all = wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12) %>% 
+  filter(day_of_matchup == max(day_of_matchup))
+
 ### playoff simulations
 mu <- mean(team_points$adj_pts, na.rm = T)
 sigma <- sd(team_points$adj_pts, na.rm = T)
@@ -438,6 +452,9 @@ if(params$midweek) {
 
 
 df_sims <- future_map_dfr(1:params$nsims, sim_season)
+
+### Edit Current Week
+df_sims[df_sims$matchup_id == params$matchup_id,] <- edit_wp(df_sims, df_wp, team_mus, team_sigmas)
 
 df_sims <- 
   select(df_sims, contains("home"), matchup_id, game_id, sim_id) %>% 
@@ -513,7 +530,6 @@ df$team[1:12] <-  paste0(df$team[1:12], ' (', df$rank[1:12], ')')
 df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
 df$mean_pts[13] <- mean(df$mean_pts[1:12])
 df <- select(df, -rank)
-
 
 gt1 <-
   gt(df) %>%
@@ -689,8 +705,8 @@ gt1 <-
 ```
 
 ```{r, include = F}
-# gtExtras::gtsave_extra(gt1 , 'figures/stats.png', vwidth = 3000, selector = 'table')
-gtsave(gt1 , 'figures/stats.png', vwidth = 3000)
+gtExtras::gtsave_extra(gt1 , 'figures/stats.png', vwidth = 3000, selector = 'table')
+# gtsave(gt1 , 'figures/stats.png', vwidth = 3000)
 ```
 
 <img src="figures/stats.png" width="1600px"/>
@@ -726,7 +742,7 @@ df_sp <-
          'ppg' = n_points/n_games) %>%
   filter(matchup_id <= params$matchup_id) %>%
   group_by(matchup_id) %>% 
-  arrange(-n_points, n_games) %>%
+  arrange(-ppg, n_games) %>%
   dplyr::slice(1:10) %>% 
   left_join(teams) %>%
   group_by(player) %>% 
@@ -734,7 +750,7 @@ df_sp <-
   ungroup() %>% 
   mutate(player = paste0(player, ' (', n, ')')) %>% 
   filter(matchup_id == params$matchup_id) %>%
-  select(player, player_url, team, logo, n_games, n_points)
+  select(player, player_url, team, logo, n_games, ppg)
 if(nrow(df_sp) < 10) {
   df_sp[max(1, nrow(df_sp)):10,] <- NA
 }
@@ -758,6 +774,7 @@ df_rp <-
   mutate(player = paste0(player, ' (', n, ')')) %>% 
   filter(matchup_id == params$matchup_id) %>%
   select(player, player_url, team, logo, n_games, n_points)
+
 if(nrow(df_rp) < 10) {
   df_rp[max(1,nrow(df_rp)):10,] <- NA
 }
@@ -824,6 +841,21 @@ gt_top <-
     )
   ) %>%
   
+    tab_style(
+    style = list(
+      cell_borders(
+        sides = "right",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_body(
+        columns = contains('ppg')
+      )
+    )
+  ) %>%
+  
   
   ### Names
   cols_label(
@@ -837,7 +869,7 @@ gt_top <-
     'logo_sp' = '',
     'player_url_sp' = '',
     'player_sp' = 'Player',
-    'n_points_sp' = 'Points',
+    'ppg_sp' = 'Points/Start',
     'n_games_sp' = '# of Starts',
     
     'team_rp' = 'Team',
@@ -865,15 +897,31 @@ gt_top <-
 ```
 
 ```{r, include = F}
-# gtExtras::gtsave_extra(gt_top , 'figures/top_performers.png', vwidth = 3000, selector = 'table')
-# gtExtras::gtsave_extra(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000, selector = 'table')
+gtExtras::gtsave_extra(gt_top , 'figures/top_performers.png', vwidth = 3000, selector = 'table')
+gtExtras::gtsave_extra(gt_top , glue('figures/top_performers/{params$season}/top_performers/week{params$matchup_id}.png'), vwidth = 3000, selector = 'table')
 
-gtsave(gt_top , 'figures/top_performers.png', vwidth = 3000)
-gtsave(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000)
+# gtsave(gt_top , 'figures/top_performers.png', vwidth = 3000)
+# gtsave(gt_top , glue('figures/top_performers/week{params$matchup_id}.png'), vwidth = 3000)
 ```
 
 
 <img src="figures/top_performers.png" width="1600px" />
+
+### Best Lineup of the Week
+```{r, include = F}
+best_lineup(params$season, params$matchup_id)
+```
+
+<img src="figures/best_lineup.png" class="center" />
+
+### Season All Stars
+```{r, include = F}
+make_asg_graphics(params$season)
+```
+
+<img src="figures/top_performers/2022/all_stars/asg_2022.png" width="1600px" />
+
+<img src="figures/top_performers/2022/all_stars/asg_2022_count.png" class="center" />
 
 ### Win Probability Charts
 ```{r,  fig.height = 9, fig.width = 16}
@@ -1613,8 +1661,8 @@ gt_trades <-
 ```
 
 ```{r, include = F}
-# gtExtras::gtsave_extra(gt_trades , 'figures/trades.png', vwidth = 3000, selector = 'table')
-gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
+gtExtras::gtsave_extra(gt_trades , 'figures/trades.png', vwidth = 3000, selector = 'table')
+# gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
 ```
 <img src="figures/trades.png" />
 

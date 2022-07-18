@@ -1,3 +1,5 @@
+stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
+
 batting_points_ix <- as.character(c(3, 4, 5, 70, 7, 72, 10, 11, 12, 20, 21, 23, 26, 27))
 
 ### Helper Functions
@@ -129,6 +131,46 @@ get_last_place <- function(wins, points) {
   ix <- order(wins, points, decreasing = F)[1]
   zeros[ix] <- 1
   return(zeros)
+}
+
+edit_wp <- function(df_sims, df_wp, team_mus, team_sigmas) {
+  df <- 
+    df_sims %>% 
+    filter(matchup_id == params$matchup_id) %>% 
+    inner_join(df_wp %>% select('home_team' = team_home,
+                                'away_team' = team_away,
+                                'win_prob' = win_prob)) %>% 
+    mutate('winner' = ifelse(runif(nrow(.)) <= win_prob, home_team, away_team)) %>% 
+    mutate('mu' = ifelse(winner == home_team,
+                         team_mus[home_team],
+                         team_mus[away_team])) %>% 
+    mutate('sigma' = ifelse(winner == home_team,
+                            team_sigmas[home_team],
+                            team_sigmas[away_team])) %>% 
+    mutate('mu_l' = ifelse(winner != home_team,
+                           team_mus[home_team],
+                           team_mus[away_team])) %>% 
+    mutate('sigma_l' = ifelse(winner != home_team,
+                              team_sigmas[home_team],
+                              team_sigmas[away_team])) %>% 
+    mutate('winning_score' = rtruncnorm(n = nrow(.), 
+                                        a = pmax(home_total_points, away_total_points),
+                                        b = Inf,
+                                        mean = mu,
+                                        sd = sigma)) %>% 
+    mutate('losing_score' = rtruncnorm(n = nrow(.), 
+                                       a = pmin(home_total_points, away_total_points),
+                                       b = winning_score,
+                                       mean = mu_l,
+                                       sd = sigma_l)) %>% 
+    mutate('home_total_points' = ifelse(winner == home_team,
+                                        winning_score,
+                                        losing_score),
+           'away_total_points' = ifelse(winner != home_team,
+                                        winning_score,
+                                        losing_score)) %>% 
+    select(all_of(names(df_sims)))
+  return(df)
 }
 
 ferry <- '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Spirit_of_America_-_Staten_Island_Ferry.jpg/1280px-Spirit_of_America_-_Staten_Island_Ferry.jpg" style="height:30px;">'

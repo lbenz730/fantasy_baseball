@@ -3,7 +3,7 @@ library(tidyverse)
 df_start_21_22 <-
   tibble('matchup_id' = 1:22) %>%
   mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
-                                 matchup_id == 14 ~ 11,
+                                 matchup_id == 14 ~ 13,
                                  matchup_id > 20 ~ 16,
                                  T ~ 8),
          'duration' = case_when(matchup_id == 1 ~ 11,
