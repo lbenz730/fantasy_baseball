@@ -3,11 +3,12 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 14
+  matchup_id: 16
   nsims: 100000
   midweek: FALSE
   season: 2022
   current_season: 2022
+  opening_day: '2022-04-07'
 output: 
    html_document: default
 ---
@@ -22,10 +23,10 @@ margin-left: auto;
 margin-right: auto;
 }
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
 }
 </style>
 
@@ -55,8 +56,9 @@ set.seed(123)
 
 source('helpers.R')
 source('data/daily_stats.R')
-source('figures/wp_graphics.R')
 source('data/trades.R')
+source('data/free_agents.R')
+source('figures/wp_graphics.R')
 source('figures/all_star_teams.R')
 ```
 
@@ -375,7 +377,7 @@ qs_pct <-
 ### Exp Record
 exp_standings <- 
   team_points %>% 
-  filter(matchup_id < params$matchup_id) %>% 
+  filter(matchup_id < (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id) %>% 
   group_by(team) %>% 
   summarise(
     "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
@@ -841,7 +843,7 @@ gt_top <-
     )
   ) %>%
   
-    tab_style(
+  tab_style(
     style = list(
       cell_borders(
         sides = "right",
@@ -923,6 +925,165 @@ make_asg_graphics(params$season)
 
 <img src="figures/top_performers/2022/all_stars/asg_2022_count.png" class="center" />
 
+### Best Free Agent Pick Ups
+```{r, include = F}
+scale_factors <- 
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(matchup_id < params$matchup_id) %>% 
+  group_by(team_id, matchup_id) %>% 
+  summarise('n_bat' = sum(played),
+            'n_rp' = sum(relief & !start)) %>% 
+  inner_join(df_start) %>% 
+  mutate('n_rp' = n_rp/duration * 7,
+         'n_bat' = n_bat/duration * 7) %>% 
+  ungroup() %>% 
+  summarise('n_sp' = 8/6,
+            'n_rp' = mean(n_rp)/3,
+            'n_bat' = mean(n_bat)/13)
+
+trans_log <- get_trans_log(params$season)
+df_fa <- 
+  trans_log %>% 
+  filter(transaction_type == 'Free Agent') %>% 
+  filter(w_bat * n_games >= 20 | w_sp * n_games >= 5 | w_rp * n_games >= 5) %>% 
+  mutate('ppg_vs_avg' = 
+           (ppg - df$batting_ppg[13]) * scale_factors$n_bat * w_bat + 
+           (ppg - df$rp_ppg[13]) * scale_factors$n_rp * w_rp + 
+           (ppg - df$sp_ppg[13]) * scale_factors$n_sp * w_sp) %>% 
+  mutate('total_value' = n_points - (end - start + 1)/7 * 
+           (df$batting_ppg[13] * scale_factors$n_bat * w_bat + 
+              df$rp_ppg[13] * scale_factors$n_rp * w_rp + 
+              df$sp_ppg[13] * scale_factors$n_sp * w_sp)) %>% 
+  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+  inner_join(select(teams, team, team_id, logo)) %>% 
+  mutate('added' = as.character(format.Date(as.Date(params$opening_day) - 1 + start, "%b, %d")),
+         'dropped' = ifelse(end == max(end), NA, as.character(format.Date(as.Date(params$opening_day) - 1 + end, "%b, %d")))) %>% 
+  select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) 
+
+df1 <- 
+  df_fa %>% 
+  arrange(-total_value) %>% 
+  head(20)
+names(df1) <- paste0(names(df1), '_1')
+
+df2 <- 
+  df_fa %>% 
+  arrange(-n_points) %>% 
+  head(20)
+names(df2) <- paste0(names(df2), '_2')
+
+df_fa <- bind_cols(df1, df2)
+
+gt_fa <- 
+  
+  gt(df_fa) %>% 
+  ### Align Columns
+  cols_align(align = "center", columns = everything()) %>%
+  
+  ### Round Numbers
+  fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+  fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+  fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
+  sub_missing(columns = everything(), missing_text = "---") %>%
+  
+  tab_spanner(label = 'Top 20 by Value ', columns = contains('_1')) %>%
+  tab_spanner(label = 'Top 20 by Points', columns = contains('_2')) %>%
+  
+  
+  ### Align Columns
+  cols_align(align = "center", columns = everything()) %>%
+  
+  
+  ### Borders
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_column_labels(
+        columns = gt::everything()
+      )
+    )
+  ) %>%
+  
+    tab_style(
+    style = list(
+      cell_borders(
+        sides = "right",
+        color = "black",
+        weight = px(6)
+      )
+    ),
+    locations = list(
+      cells_body(
+        columns = contains('total_value_1')
+      )
+    )
+  ) %>%
+  
+  ### Logos
+  text_transform(
+    locations = cells_body(columns = contains(c('logo', 'player_url'))),
+    fn = function(x) {
+      web_image(
+        url = x,
+        height = 50
+      )
+    }
+  ) %>% 
+  
+  ### Names
+  cols_label(
+    'player_1' = 'Player',
+    'player_url_1' = '',
+    'logo_1' = '',
+    'n_points_1' = 'Points',
+    'ppg_1' = 'PPG',
+    'team_1' = 'Team',
+    'total_value_1' = 'Total Value',
+    'added_1' = 'Added',
+    'dropped_1' = 'Dropped/Traded',
+    'n_games_1' = '# of Games',
+    
+    'player_2' = 'Player',
+    'player_url_2' = '',
+    'logo_2' = '',
+    'n_points_2' = 'Points',
+    'ppg_2' = 'PPG',
+    'team_2' = 'Team',
+    'total_value_2' = 'Total Value',
+    'added_2' = 'Added',
+    'dropped_2' = 'Dropped/Traded',
+    'n_games_2' = '# of Games'
+  ) %>% 
+  
+  tab_header(title = 'Free Agent Analysis') %>%
+  tab_footnote(footnote = "Total value= points scored vs. points that league average player at position would be expected to score in time since acquisition",
+               locations = cells_column_labels(columns = contains('value'))) %>% 
+  tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', df$sp_ppg[13]))) %>% 
+  tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', df$rp_ppg[13]))) %>% 
+  tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', df$batting_ppg[13]))) %>% 
+  tab_source_note('Min Games for Inclusion: Batter (20), SP (5), RP (5)') %>% 
+  tab_options(column_labels.font.size = 16,
+              heading.title.font.size = 40,
+              heading.subtitle.font.size = 40,
+              heading.title.font.weight = 'bold',
+              heading.subtitle.font.weight = 'bold',
+              column_labels.font.weight = 'bold',
+              row_group.font.weight = 'bold',
+              row_group.font.size  = 22)
+
+gtExtras::gtsave_extra(gt_fa , glue('figures/top_performers/{params$season}/best_free_agents.png'), vwidth = 3000, selector = 'table')
+
+```
+
+<img src="figures/top_performers/2022/best_free_agents.png" width="1600px" />
+
 ### Win Probability Charts
 ```{r,  fig.height = 9, fig.width = 16}
 df_wp <- plot_wp(params$season, params$matchup_id, all = wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12)
@@ -950,7 +1111,7 @@ upset_p <-
 upset_p <- 1-upset_p
 
 
-if(wday(Sys.Date()) == 2) {
+if(wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) {
   read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
     filter(matchup_id <= params$matchup_id) %>%  
     bind_rows(get_matchup_stats(params$matchup_id + 1, season = params$season)) %>% 
@@ -1311,13 +1472,16 @@ scale_factors <-
             'n_rp' = mean(n_rp)/3,
             'n_bat' = mean(n_bat)/13)
 
-traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
+traded_players <- 
+  trans_log %>%
+  filter(transaction_type == 'Trade')
 trade_stats <- NULL
 
 for(i in 1:nrow(traded_players)) {
   old_team <- traded_players$team_from[i]
-  new_team <- traded_players$team_to[i]
-  scoring_period <- traded_players$scoring_period_id[i]
+  new_team <- traded_players$team_id[i]
+  scoring_period <- traded_players$start[i]
+  end_period <- traded_players$end[i]
   
   tmp_before <- 
     df_daily %>% 
@@ -1340,7 +1504,8 @@ for(i in 1:nrow(traded_players)) {
     df_daily %>% 
     filter(player_id == traded_players$player_id[i]) %>% 
     filter(team_id == new_team) %>% 
-    filter(scoring_period_id >= scoring_period) %>% 
+    filter(scoring_period_id >= scoring_period) %>%
+    filter(scoring_period_id <= end_period) %>% 
     summarise('points' = sum(points),
               'played' = sum(start) + sum(relief) + sum(played),
               'batter' = sum(played),
@@ -1647,6 +1812,7 @@ gt_trades <-
                locations = cells_column_labels(columns = contains('avg'))) %>% 
   tab_footnote(footnote = "Total value accumulated of all players in trade (points scored vs. points that league average players at position(s) would be expected to score in time since trade)",
                locations = cells_column_labels(columns = contains('value'))) %>% 
+  tab_source_note('Includes games until player dropped/traded in first stint with new team') %>% 
   tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', df$sp_ppg[13]))) %>% 
   tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', df$rp_ppg[13]))) %>% 
   tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', df$batting_ppg[13]))) %>% 

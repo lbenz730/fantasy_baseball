@@ -154,12 +154,12 @@ edit_wp <- function(df_sims, df_wp, team_mus, team_sigmas) {
                               team_sigmas[home_team],
                               team_sigmas[away_team])) %>% 
     mutate('winning_score' = rtruncnorm(n = nrow(.), 
-                                        a = pmax(home_total_points, away_total_points),
+                                        a = pmax(home_total_points, away_total_points, 0, na.rm = T),
                                         b = Inf,
                                         mean = mu,
                                         sd = sigma)) %>% 
     mutate('losing_score' = rtruncnorm(n = nrow(.), 
-                                       a = pmin(home_total_points, away_total_points),
+                                       a = pmin(home_total_points, away_total_points, 0, na.rm = T),
                                        b = winning_score,
                                        mean = mu_l,
                                        sd = sigma_l)) %>% 
