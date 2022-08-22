@@ -88,25 +88,25 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 15,87,12,199.5,134,65.5,5,272,164.5,107.5,Blasphemous Hot Takes,The Traveling Secretaries
 15,88,1,335.5,224.5,111,13,326.5,176,150.5,Yosemite Yeshivas,Springer Bell
 15,89,14,302.5,138.5,164,8,319.5,159.5,160,Freedom of the Pressly,Mt. Everest Taquito Farmers
-15,90,9,316.5,182.5,134,2,354.5,182,172.5,Of Bryce and Men,Framber Valdez Oil Spill
-16,91,7,15,15,NA,6,50.5,37.5,13,All Walshed Up,The Novaks
-16,92,5,23.5,16.5,7,11,36.5,28.5,8,The Traveling Secretaries,The West Bank Occupiers
-16,93,12,92.5,29,63.5,4,32,13.5,18.5,Blasphemous Hot Takes,All That is Wright
-16,94,13,40.5,22,18.5,8,16,12,4,Springer Bell,Mt. Everest Taquito Farmers
-16,95,2,35,19.5,15.5,1,71,30.5,40.5,Framber Valdez Oil Spill,Yosemite Yeshivas
-16,96,9,35,24.5,10.5,14,13.5,13.5,NA,Of Bryce and Men,Freedom of the Pressly
-17,97,7,NA,NA,NA,13,NA,NA,NA,All Walshed Up,Springer Bell
-17,98,5,NA,NA,NA,2,NA,NA,NA,The Traveling Secretaries,Framber Valdez Oil Spill
-17,99,12,NA,NA,NA,9,NA,NA,NA,Blasphemous Hot Takes,Of Bryce and Men
-17,100,4,NA,NA,NA,14,NA,NA,NA,All That is Wright,Freedom of the Pressly
-17,101,11,NA,NA,NA,1,NA,NA,NA,The West Bank Occupiers,Yosemite Yeshivas
-17,102,6,NA,NA,NA,8,NA,NA,NA,The Novaks,Mt. Everest Taquito Farmers
-18,103,13,NA,NA,NA,5,NA,NA,NA,Springer Bell,The Traveling Secretaries
-18,104,2,NA,NA,NA,12,NA,NA,NA,Framber Valdez Oil Spill,Blasphemous Hot Takes
-18,105,9,NA,NA,NA,4,NA,NA,NA,Of Bryce and Men,All That is Wright
-18,106,14,NA,NA,NA,11,NA,NA,NA,Freedom of the Pressly,The West Bank Occupiers
-18,107,1,NA,NA,NA,6,NA,NA,NA,Yosemite Yeshivas,The Novaks
-18,108,8,NA,NA,NA,7,NA,NA,NA,Mt. Everest Taquito Farmers,All Walshed Up
+15,90,9,305.5,182.5,123,2,354.5,182,172.5,Of Bryce and Men,Framber Valdez Oil Spill
+16,91,7,364,194.5,169.5,6,419.5,238.5,181,All Walshed Up,The Novaks
+16,92,5,358,233.5,124.5,11,335,176,159,The Traveling Secretaries,The West Bank Occupiers
+16,93,12,367,195,172,4,363.5,173.5,190,Blasphemous Hot Takes,All That is Wright
+16,94,13,314,179,135,8,218,99.5,118.5,Springer Bell,Mt. Everest Taquito Farmers
+16,95,2,317,193,124,1,286,223,63,Framber Valdez Oil Spill,Yosemite Yeshivas
+16,96,9,327.5,195,132.5,14,344.5,188.5,156,Of Bryce and Men,Freedom of the Pressly
+17,97,7,349,194,155,13,309.5,163,146.5,All Walshed Up,Springer Bell
+17,98,5,359.5,153.5,206,2,371,189.5,181.5,The Traveling Secretaries,Framber Valdez Oil Spill
+17,99,12,314,154,160,9,313,159,154,Blasphemous Hot Takes,Of Bryce and Men
+17,100,4,244.5,150.5,94,14,340,187.5,152.5,All That is Wright,Freedom of the Pressly
+17,101,11,298,164,134,1,230,160.5,69.5,The West Bank Occupiers,Yosemite Yeshivas
+17,102,6,389.5,182,207.5,8,360.5,166,194.5,The Novaks,Mt. Everest Taquito Farmers
+18,103,13,360,204,156,5,290,185,105,Springer Bell,The Traveling Secretaries
+18,104,2,385,219.5,165.5,12,286.5,171,115.5,Framber Valdez Oil Spill,Blasphemous Hot Takes
+18,105,9,340.5,167,173.5,4,343,213,130,Of Bryce and Men,All That is Wright
+18,106,14,396,217,179,11,393,201.5,191.5,Freedom of the Pressly,The West Bank Occupiers
+18,107,1,308.5,197.5,111,6,293.5,182,111.5,Yosemite Yeshivas,The Novaks
+18,108,8,286,136,150,7,392,223.5,168.5,Mt. Everest Taquito Farmers,All Walshed Up
 19,109,12,NA,NA,NA,13,NA,NA,NA,Blasphemous Hot Takes,Springer Bell
 19,110,4,NA,NA,NA,2,NA,NA,NA,All That is Wright,Framber Valdez Oil Spill
 19,111,11,NA,NA,NA,9,NA,NA,NA,The West Bank Occupiers,Of Bryce and Men
