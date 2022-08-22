@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 16
+  matchup_id: 18
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -476,6 +476,8 @@ df_sims <-
   filter(team != team_opp)  %>% 
   left_join(select(teams, team_id, division_id), by  = 'team_id')
 
+write_csv(df_sims, 'data/playoff_odds/raw_sims.csv')
+
 x <- 
   df_sims %>% 
   group_by(team, division_id, sim_id) %>% 
@@ -532,6 +534,13 @@ df$team[1:12] <-  paste0(df$team[1:12], ' (', df$rank[1:12], ')')
 df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
 df$mean_pts[13] <- mean(df$mean_pts[1:12])
 df <- select(df, -rank)
+
+games_left <- (20 - params$matchup_id + !(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12))
+clinch_wins <-  games_left + sort(df$win, decreasing = T)[5] + 1
+ferry_clinch_wins <- games_left + sort(df$win, decreasing = T)[12] + 1
+playoff_elim_wins <- sort(df$win, decreasing = T)[4] - games_left - 1
+ferry_check <- all(sort(df$win)[1:11] > ferry_clinch_wins)
+
 
 gt1 <-
   gt(df) %>%
@@ -654,6 +663,47 @@ gt1 <-
       rows = team == 'League Average'
     )
   ) %>%
+  
+  ### Check
+  text_transform(
+    locations = cells_body(
+      columns = c(playoffs),
+      rows = win >= clinch_wins
+    ),
+    fn = function(x) {
+      emo::ji('check')
+    }
+  ) %>% 
+  
+  text_transform(
+    locations = cells_body(
+      columns = c(playoffs),
+      rows = win <= playoff_elim_wins
+    ),
+    fn = function(x) {
+      emo::ji('x')
+    }
+  ) %>% 
+  
+  text_transform(
+    locations = cells_body(
+      columns = c(last_place),
+      rows = win >= ferry_clinch_wins
+    ),
+    fn = function(x) {
+      emo::ji('x')
+    }
+  ) %>% 
+  
+  text_transform(
+    locations = cells_body(
+      columns = c(playoffs),
+      rows = grepl('12', team) & ferry_check
+    ),
+    fn = function(x) {
+      emo::ji('check')
+    }
+  ) %>% 
   
   ### Names
   cols_label(
@@ -1011,7 +1061,7 @@ gt_fa <-
     )
   ) %>%
   
-    tab_style(
+  tab_style(
     style = list(
       cell_borders(
         sides = "right",
