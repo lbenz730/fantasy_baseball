@@ -10,6 +10,7 @@ source(here('models/build_training_set.R'))
 plot_wp <- function(season, week, plot = T, all = F) {
   xgb_model <- xgb.load(here('models/xgb_winprob'))
   log_reg <- read_rds(here('models/log_reg.rds'))
+  prior <- read_rds(here('models/prior.rds'))
   preprocessing_recipe <- read_rds(here('models/recipe.rds'))
   df <- 
     build_train_set(season) %>% 
@@ -35,6 +36,7 @@ plot_wp <- function(season, week, plot = T, all = F) {
   
   df$win_prob <- predict(xgb_model, as.matrix(bake(preprocessing_recipe, df)))
   df$win_prob_lr <- predict(log_reg, newdata = df, type = 'response')
+  df$win_prob[df$day_of_matchup == 0] <- predict(prior, newdata = df[df$day_of_matchup == 0,], type = 'response')
   
   df <- 
     df %>% 

@@ -8,7 +8,7 @@ source(here('models/build_training_set.R'))
 set.seed(212)
 df <- bind_rows(build_train_set(2021), 
                 build_train_set(2020),
-                build_train_set(2022) %>% filter(matchup_id <= 10))
+                build_train_set(2022) %>% filter(matchup_id <= 18))
 
 covariates <- c('score_diff', 
                 'days_left',
@@ -19,8 +19,8 @@ covariates <- c('score_diff',
                 'start_advantage',
                 'start_advantage_ratio',
                 
-                'points_per_bat_spread',
-                'pitch_spread_per_start', 
+                'points_per_day_spread',
+                # 'pitch_spread_per_start', 
                 ''
 )
 
@@ -28,8 +28,7 @@ constraints <- c(
   1, 0, 
   -1, -1,
   1, 1,
-  1, 1
-)
+  1)
 
 
 
@@ -162,3 +161,6 @@ log_reg <- glm(win ~ score_diff*factor(case_when(start_advantage >= 4 ~ '> +3',
                data = df, family = 'binomial')
 
 write_rds(log_reg, here('models/log_reg.rds'))
+
+prior <- glm(win ~ -1 + points_per_day_spread,  data = df %>% filter(day_of_matchup == 0), family = 'binomial')
+write_rds(prior, here('models/prior.rds')) 

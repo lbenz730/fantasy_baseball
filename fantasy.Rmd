@@ -545,12 +545,6 @@ df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
 df$mean_pts[13] <- mean(df$mean_pts[1:12])
 df <- select(df, -rank)
 
-games_left <- (20 - params$matchup_id + !(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12))
-clinch_wins <-  games_left + sort(df$win, decreasing = T)[5] + 1
-ferry_clinch_wins <- games_left + sort(df$win, decreasing = T)[12] + 1
-playoff_elim_wins <- sort(df$win, decreasing = T)[4] - games_left - 1
-ferry_check <- all(sort(df$win)[1:11] > ferry_clinch_wins)
-
 
 gt1 <-
   gt(df) %>%
@@ -678,7 +672,7 @@ gt1 <-
   text_transform(
     locations = cells_body(
       columns = c(playoffs),
-      rows = win >= clinch_wins
+      rows = playoffs == 100
     ),
     fn = function(x) {
       emo::ji('check')
@@ -688,7 +682,7 @@ gt1 <-
   text_transform(
     locations = cells_body(
       columns = c(playoffs),
-      rows = win <= playoff_elim_wins
+      rows = playoffs == 0
     ),
     fn = function(x) {
       emo::ji('x')
@@ -698,7 +692,7 @@ gt1 <-
   text_transform(
     locations = cells_body(
       columns = c(last_place),
-      rows = win >= ferry_clinch_wins
+      rows = last_place == 0
     ),
     fn = function(x) {
       emo::ji('x')
@@ -707,8 +701,8 @@ gt1 <-
   
   text_transform(
     locations = cells_body(
-      columns = c(playoffs),
-      rows = grepl('12', team) & ferry_check
+      columns = c(last_place),
+      rows = last_place == 100
     ),
     fn = function(x) {
       emo::ji('check')
