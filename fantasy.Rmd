@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 18
+  matchup_id: 19
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -277,17 +277,26 @@ team_points <-
   mutate("adj_pts" = case_when(
     matchup_id == 1 ~ total_points * 7/11,
     matchup_id == 14 ~ total_points * 7/10,
-    matchup_id == params$matchup_id & params$midweek ~ 7/(wday(Sys.Date()-2)) * total_points,
+    (matchup_id == params$matchup_id) & params$midweek ~ 7/(wday(Sys.Date()-2)) * total_points,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ total_points,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     T ~ total_points)) %>% 
   mutate("adj_batting_pts" = case_when(
     matchup_id == 1 ~ batting_points * 7/11,
     matchup_id == 14 ~ batting_points * 7/10,
-    matchup_id == params$matchup_id & params$midweek ~ 7/(wday(Sys.Date()-2)) * batting_points,
+    
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ batting_points,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
+    
     T ~ batting_points)) %>% 
   mutate("adj_pitching_pts" = case_when(
     matchup_id == 1 ~ pitching_points * 7/11,
     matchup_id == 14 ~ pitching_points * 7/10,
     matchup_id == params$matchup_id & params$midweek ~ 7/(wday(Sys.Date()-2)) * pitching_points,
+    
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ pitching_points,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
+    
     T ~ pitching_points)) 
 
 team_points <- 
@@ -302,6 +311,7 @@ total_team_points <-
   filter(matchup_id <= params$matchup_id) %>% 
   group_by(team) %>%
   summarise("total_points" = sum(total_points, na.rm = T),
+            "total_adj_points" = sum(adj_pts, na.rm = T),
             "batting_points" = sum(batting_points, na.rm = T),
             "pitching_points" = sum(pitching_points, na.rm = T),
             "adj_batting_pts" = mean(adj_batting_pts, na.rm = T),
@@ -804,7 +814,7 @@ df_sp <-
   filter(matchup_id == params$matchup_id) %>%
   select(player, player_url, team, logo, n_games, ppg)
 if(nrow(df_sp) < 10) {
-  df_sp[max(1, nrow(df_sp)):10,] <- NA
+  df_sp[max(1, nrow(df_sp) + 1):10,] <- NA
 }
 
 names(df_sp) <- paste0(names(df_sp), '_sp')
@@ -828,7 +838,7 @@ df_rp <-
   select(player, player_url, team, logo, n_games, n_points)
 
 if(nrow(df_rp) < 10) {
-  df_rp[max(1,nrow(df_rp)):10,] <- NA
+  df_rp[max(1,nrow(df_rp) + 1):10,] <- NA
 }
 
 
