@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 19
+  matchup_id: 20
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -672,7 +672,7 @@ gt1 <-
   text_transform(
     locations = cells_body(
       columns = c(playoffs),
-      rows = playoffs == 100
+      rows = playoffs == 1
     ),
     fn = function(x) {
       emo::ji('check')
@@ -702,7 +702,7 @@ gt1 <-
   text_transform(
     locations = cells_body(
       columns = c(last_place),
-      rows = last_place == 100
+      rows = last_place == 1
     ),
     fn = function(x) {
       emo::ji('check')
