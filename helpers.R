@@ -133,6 +133,13 @@ get_last_place <- function(wins, points) {
   return(zeros)
 }
 
+get_playoff_seed <- function(wins, points) {
+  zeros <- rep(NA, 12)
+  ix <- order(wins, points, decreasing = T)[1:4]
+  zeros[ix] <- 1:4
+  return(zeros)
+}
+
 edit_wp <- function(df_sims, df_wp, team_mus, team_sigmas) {
   df <- 
     df_sims %>% 
@@ -172,6 +179,85 @@ edit_wp <- function(df_sims, df_wp, team_mus, team_sigmas) {
     select(all_of(names(df_sims)))
   return(df)
 }
+
+championship_sim <- function(playoff_teams, team_mus, team_sigmas, matchup_id, wp) {
+  if(matchup_id <= reg_season) {
+    p1 <- 
+      pnorm(q = 0, 
+            mean = 2 * (team_mus[playoff_teams[1]] - team_mus[playoff_teams[4]]),
+            sd = 2 * (team_sigmas[playoff_teams[1]] + team_sigmas[playoff_teams[4]]),
+            lower.tail = F)
+    
+    p2 <- 
+      pnorm(q = 0, 
+            mean = 2 * (team_mus[playoff_teams[2]] - team_mus[playoff_teams[3]]),
+            sd = 2 * (team_sigmas[playoff_teams[2]] + team_sigmas[playoff_teams[3]]),
+            lower.tail = F)
+    
+    if(runif(1) <= p1) {
+      winner1 <- playoff_teams[1]
+    } else {
+      winner1 <- playoff_teams[4]
+    }
+    
+    if(runif(1) <= p2) {
+      winner2 <- playoff_teams[2]
+    } else {
+      winner2 <- playoff_teams[3]
+    }
+    
+    p3 <- 
+      pnorm(q = 0, 
+            mean = 2 * (team_mus[winner1] - team_mus[winner2]),
+            sd = 2 * (team_sigmas[winner1] + team_sigmas[winner2]),
+            lower.tail = F)
+    
+    if(runif(1) <= p3) {
+      winner <- winner1
+    } else {
+      winner <- winner2
+    }
+    
+    return(winner)
+    
+  } else if(matchup_id == (reg_season + 1)) {
+    p1 <- wp[1]
+    p2 <- wp[2]
+    
+    if(runif(1) <= p1) {
+      winner1 <- playoff_teams[1]
+    } else {
+      winner1 <- playoff_teams[4]
+    }
+    
+    if(runif(1) <= p2) {
+      winner2 <- playoff_teams[2]
+    } else {
+      winner2 <- playoff_teams[3]
+    }
+    
+    p3 <- 
+      pnorm(q = 0, 
+            mean = 2 * (team_mus[winner1] - team_mus[winner2]),
+            sd = 2 * (team_sigmas[winner1] + team_sigmas[winner2]),
+            lower.tail = F)
+    
+    if(runif(1) <= p3) {
+      winner <- winner1
+    } else {
+      winner <- winner2
+    }
+    
+  } else if(matchup_id == (reg_season + 2)) {
+    if(runif(1) <= wp) {
+      winner <- playoff_teams[1]
+    } else {
+      winner <- playoff_teams[2]
+    }
+  }
+  return(winner)
+}
+
 
 ferry <- '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Spirit_of_America_-_Staten_Island_Ferry.jpg/1280px-Spirit_of_America_-_Staten_Island_Ferry.jpg" style="height:30px;">'
 
