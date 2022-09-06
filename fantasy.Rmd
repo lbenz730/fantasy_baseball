@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 20
+  matchup_id: 21
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -393,7 +393,7 @@ qs_pct <-
 ### Exp Record
 exp_standings <- 
   team_points %>% 
-  filter(matchup_id < (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + min(reg_season, params$matchup_id)) %>% 
+  filter(matchup_id < min(reg_season+1, (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id)) %>% 
   group_by(team) %>% 
   summarise(
     "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
@@ -498,6 +498,7 @@ write_csv(df_sims, 'data/playoff_odds/raw_sims.csv')
 
 x <- 
   df_sims %>% 
+  filter(matchup_id <= reg_season) %>% 
   group_by(team, division_id, sim_id) %>% 
   summarise('wins' = sum(total_points > total_points_opp),
             'points' = sum(total_points)) %>% 
