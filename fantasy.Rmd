@@ -3,7 +3,7 @@ title: "Fantasy Baseball 2022"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 21
+  matchup_id: 22
   nsims: 100000
   midweek: FALSE
   season: 2022
@@ -96,6 +96,7 @@ teams <-
 
 teams$logo[which(teams$team == "The Traveling Secretaries")] <- 'https://i.imgur.com/wll1Ubw.jpg'
 teams$logo[which(teams$team == 'Mt. Everest Taquito Farmers')] <-  'https://i.imgur.com/VW41hvO.gif'
+teams$logo[which(teams$team == 'Yosemite Yeshivas')] <- 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28721.png&w=350&h=254'
 write_csv(teams, glue('data/stats/{params$season}/teams_{params$season}.csv'))
 
 ### Schedule and Batting + Pitching Points
@@ -735,7 +736,7 @@ gt1 <-
     }
   ) %>% 
   
-    text_transform(
+  text_transform(
     locations = cells_body(
       columns = c(champ),
       rows = champ == 0

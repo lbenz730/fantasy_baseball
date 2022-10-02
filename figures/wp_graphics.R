@@ -85,7 +85,7 @@ plot_wp <- function(season, week, plot = T, all = F) {
   }
   
   
-  ggsave(here(glue('figures/wp_charts/{season}/wp_chart_{season}_{week}.png')), height = 9, width = 16)
+  ggsave(plot = p, here(glue('figures/wp_charts/{season}/wp_chart_{season}_{week}.png')), height = 9, width = 16)
   
   return(select(df, 
                 team_home, team_away, day_of_matchup, 

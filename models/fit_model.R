@@ -8,7 +8,7 @@ source(here('models/build_training_set.R'))
 set.seed(212)
 df <- bind_rows(build_train_set(2021), 
                 build_train_set(2020),
-                build_train_set(2022) %>% filter(matchup_id <= 18))
+                build_train_set(2022))
 
 covariates <- c('score_diff', 
                 'days_left',

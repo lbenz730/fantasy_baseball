@@ -1,5 +1,5 @@
 team_id,division_id,team,location,nickname,logo,owners,abbreviation,wins,losses,ties
-1,1,Yosemite Yeshivas,Yosemite,Yeshivas,https://ssref.net/scripts/image_resize.cgi?min=200&url=https://d3k2oh6evki4b7.cloudfront.net/req/202001270/images/headshots/8/8b4db8f5_mlbam.jpg,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,6,14,0
+1,1,Yosemite Yeshivas,Yosemite,Yeshivas,https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28721.png&w=350&h=254,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,6,14,0
 2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},Fvos,16,4,0
 4,1,All That is Wright,All,That is Wright,https://g.espncdn.com/lm-static/logo-packs/flb/Letter-and-Number-Caps-ESPN/caps5.svg,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,8,12,0
 5,1,The Traveling Secretaries,The Traveling,Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,9,11,0
