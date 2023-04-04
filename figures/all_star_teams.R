@@ -19,7 +19,7 @@ getmode <- function(v) {
 }
 
 
-make_asg_graphics <- function(season = 2022) {
+make_asg_graphics <- function(season = 2023) {
   ### Rules
   # Only count games in active lineup
   # 67% Weight to Total Points, 33% Weight to PPG
@@ -328,7 +328,7 @@ make_asg_graphics <- function(season = 2022) {
 }
 
 
-best_lineup <- function(season = 2022, week) {
+best_lineup <- function(season = 2023, week) {
   df_daily <- read_csv(glue('data/stats/{season}/daily_stats_{season}.csv'))
   teams <- read_csv(glue('data/stats/{season}/teams_{season}.csv'))
   

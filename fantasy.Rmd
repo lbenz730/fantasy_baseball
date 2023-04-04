@@ -1,14 +1,14 @@
 ---
-title: "Fantasy Baseball 2022"
+title: "Fantasy Baseball 2023"
 author: "Luke Benz"
 date: "`r paste0('Updated: ', Sys.Date())`"
 params:
-  matchup_id: 22
-  nsims: 100000
+  matchup_id: 1
+  nsims: 10000
   midweek: FALSE
-  season: 2022
-  current_season: 2022
-  opening_day: '2022-04-07'
+  season: 2023
+  current_season: 2023
+  opening_day: '2023-03-30'
 output: 
    html_document: default
 ---
@@ -42,7 +42,7 @@ library(lubridate)
 library(here)
 library(patchwork)
 library(truncnorm)
-plan(multiprocess(workers = parallel::detectCores() - 1))
+plan(multiprocess(workers = 12))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
 theme_set(theme_bw() + 
@@ -162,7 +162,7 @@ for(i in 1:max(reg_season, params$matchup_id)) {
     )
   sp_points <- bind_rows(sp_points, sp_points_)
   
-  schedule_ <- bind_cols(schedule_, home_schedule_, away_schedule_) %>% 
+  schedule_ <- bind_cols(schedule_, home_schedule_, away_schedule_) %>%
     mutate_if(is.numeric, function(x) replace(x, x == 0, NA))
   
   
@@ -174,6 +174,7 @@ for(i in 1:max(reg_season, params$matchup_id)) {
   
   schedule <- bind_rows(schedule, schedule_)
 }
+write_csv(schedule, glue('data/stats/{params$season}/schedule_{params$season}.csv'))
 
 
 ### Update Daily Stats
@@ -241,7 +242,6 @@ for(i in 1:nrow(relief_starts)) {
   sp_points$n_games[ix_sp] <- relief_starts$sp_games[i]
 }
 
-write_csv(schedule, glue('data/stats/{params$season}/schedule_{params$season}.csv'))
 write_csv(batter_points, glue('data/stats/{params$season}/batting_weekly_{params$season}.csv'))
 write_csv(sp_points, glue('data/stats/{params$season}/sp_weekly_{params$season}.csv'))
 write_csv(rp_points, glue('data/stats/{params$season}/rp_weekly_{params$season}.csv'))
@@ -258,9 +258,10 @@ if(params$season == params$current_season) {
   }
   write_csv(df_trades, glue('data/stats/{params$season}/trades_{params$season}.csv'))
   
-  
-  traded_players <- get_trade_players(df_trades)
-  write_csv(traded_players, glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
+  if(nrow(df_trades) > 0) {
+    traded_players <- get_trade_players(df_trades)
+    write_csv(traded_players, glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
+  }
 }
 ```
 
@@ -305,7 +306,9 @@ team_points <-
   team_points %>% 
   left_join(team_points, 
             by = c('matchup_id', 'game_id'),
-            suffix = c("", "_opp")) %>% 
+            suffix = c("", "_opp"),
+            relationship = 'many-to-many'
+  ) %>% 
   filter(team != team_opp) 
 
 total_team_points <- 
@@ -325,9 +328,9 @@ total_team_points <-
 ### Summary Stats mean points by week
 mean_pts_by_week <- 
   group_by(team_points, matchup_id) %>%
-  summarise("adj_pts" = mean(adj_pts),
-            "adj_batting_pts" = mean(adj_batting_pts),
-            "adj_pitching_pts" = mean(adj_pitching_pts))
+  summarise("adj_pts" = mean(adj_pts, na.rm = T),
+            "adj_batting_pts" = mean(adj_batting_pts, na.rm = T),
+            "adj_pitching_pts" = mean(adj_pitching_pts, na.rm = T))
 
 ### Weekly ranks
 team_points <- 
@@ -392,25 +395,47 @@ qs_pct <-
 
 
 ### Exp Record
-exp_standings <- 
-  team_points %>% 
-  filter(matchup_id < min(reg_season+1, (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id)) %>% 
-  group_by(team) %>% 
-  summarise(
-    "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
-    "exp_win_pct" = mean((12 - overall_rank)/11, na.rm = T),
-    'win' = sum(total_points > total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
-    'loss' = sum(total_points < total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
-    "exp_win" = sum((12 - overall_rank)/11, na.rm = T),
-    "exp_loss" = sum(1 - (12 - overall_rank)/11, na.rm = T)) %>% 
-  inner_join(select(teams, team, division_id, logo)) %>% 
-  inner_join(total_team_points) %>% 
-  left_join(batter_ppg %>% select(-n_games, -total)) %>% 
-  left_join(rp_ppg %>% select(-n_games, -total)) %>% 
-  left_join(sp_ppg %>% select(-n_games, -total)) %>% 
-  left_join(qs_pct %>% select(-n_games, -n_qs)) %>% 
-  arrange(-win_pct, -total_points) %>% 
-  mutate('rank' = 1:12)
+if(params$matchup_id > 1) {
+  exp_standings <- 
+    team_points %>% 
+    filter(matchup_id < min(reg_season+1, (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id)) %>% 
+    group_by(team) %>% 
+    summarise(
+      "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
+      "exp_win_pct" = mean((12 - overall_rank)/11, na.rm = T),
+      'win' = sum(total_points > total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
+      'loss' = sum(total_points < total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
+      "exp_win" = sum((12 - overall_rank)/11, na.rm = T),
+      "exp_loss" = sum(1 - (12 - overall_rank)/11, na.rm = T)) %>% 
+    inner_join(select(teams, team, division_id, logo)) %>% 
+    inner_join(total_team_points) %>% 
+    left_join(batter_ppg %>% select(-n_games, -total)) %>% 
+    left_join(rp_ppg %>% select(-n_games, -total)) %>% 
+    left_join(sp_ppg %>% select(-n_games, -total)) %>% 
+    left_join(qs_pct %>% select(-n_games, -n_qs)) %>% 
+    arrange(-win_pct, -total_points) %>% 
+    mutate('rank' = 1:12)
+} else {
+  exp_standings <- 
+    team_points %>% 
+    filter(matchup_id <= min(reg_season+1, (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id)) %>% 
+    group_by(team) %>% 
+    summarise(
+      "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
+      "exp_win_pct" = mean((12 - overall_rank)/11, na.rm = T),
+      'win' = sum(total_points > total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
+      'loss' = sum(total_points < total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
+      "exp_win" = sum((12 - overall_rank)/11, na.rm = T),
+      "exp_loss" = sum(1 - (12 - overall_rank)/11, na.rm = T)) %>% 
+    inner_join(select(teams, team, division_id, logo)) %>% 
+    inner_join(total_team_points) %>% 
+    left_join(batter_ppg %>% select(-n_games, -total)) %>% 
+    left_join(rp_ppg %>% select(-n_games, -total)) %>% 
+    left_join(sp_ppg %>% select(-n_games, -total)) %>% 
+    left_join(qs_pct %>% select(-n_games, -n_qs)) %>% 
+    arrange(-win_pct, -total_points) %>% 
+    mutate('rank' = 1:12)
+}
 
 league_avg <-  
   tibble('team' = 'League Average',
@@ -442,23 +467,35 @@ df_wp <-
   filter(day_of_matchup == max(day_of_matchup))
 
 ### playoff simulations
-mu <- mean(team_points$adj_pts, na.rm = T)
-sigma <- sd(team_points$adj_pts, na.rm = T)
-
-team_mus <- 
-  group_by(team_points, team) %>% 
-  summarise("mean_pts" = mean(adj_pts, na.rm = T),
-            "games_played" = max(matchup_id[!is.na(total_points)])) %>% 
-  mutate("team_mu" = min(1, games_played/reg_season) * mean_pts  + max(0, (1 - games_played/reg_season)) * mu) %>% 
-  pull(team_mu)
-
-team_sigmas <- 
-  group_by(team_points, team) %>% 
-  summarise("sd_pts" = sd(adj_pts, na.rm = T),
-            "games_played" = max(matchup_id[!is.na(total_points)])) %>% 
-  mutate("team_sigma" = min(1, games_played/reg_season) * sd_pts  + max(0, (1 - games_played/reg_season)) * sigma) %>% 
-  pull(team_sigma)
-team_sigmas[is.na(team_sigmas)] <- sigma
+if(params$matchup_id > 1) {
+  mu <- mean(team_points$adj_pts, na.rm = T)
+  sigma <- sd(team_points$adj_pts, na.rm = T)
+  
+  team_mus <- 
+    group_by(team_points, team) %>% 
+    summarise("mean_pts" = mean(adj_pts, na.rm = T),
+              "games_played" = max(matchup_id[!is.na(total_points)])) %>% 
+    mutate("team_mu" = min(1, games_played/reg_season) * mean_pts  + max(0, (1 - games_played/reg_season)) * mu) %>% 
+    pull(team_mu)
+  
+  team_sigmas <- 
+    group_by(team_points, team) %>% 
+    summarise("sd_pts" = sd(adj_pts, na.rm = T),
+              "games_played" = max(matchup_id[!is.na(total_points)])) %>% 
+    mutate("team_sigma" = min(1, games_played/reg_season) * sd_pts  + max(0, (1 - games_played/reg_season)) * sigma) %>% 
+    pull(team_sigma)
+  team_sigmas[is.na(team_sigmas)] <- sigma
+} else {
+  tmp <- 
+    read_csv('data/stats/2022/schedule_2022.csv') %>% 
+    filter(matchup_id %in% c(2:13, 15:20))
+  
+  mu <-  mean(c(tmp$home_total_points, tmp$away_total_points, na.rm = T))
+  sigma <-  sd(c(tmp$home_total_points, tmp$away_total_points, na.rm = T))
+  team_mus <- rep(mu, 12)
+  team_sigmas <- rep(sigma, 12)
+  
+}
 
 names(team_mus) <- sort(unique(team_points$team))
 names(team_sigmas) <- sort(unique(team_points$team))
@@ -491,7 +528,8 @@ df_sims <-
   select(-contains('batting'), -contains('pitching')) %>% 
   left_join(df_sims %>% select(-contains('batting'), -contains('pitching')),
             by = c('matchup_id', 'game_id', 'sim_id'),
-            suffix = c("", "_opp")) %>% 
+            suffix = c("", "_opp"),
+            relationship = 'many-to-many') %>% 
   filter(team != team_opp)  %>% 
   left_join(select(teams, team_id, division_id), by  = 'team_id')
 
@@ -533,6 +571,19 @@ sim_results <-
             "playoffs" = mean(playoffs),
             'last_place' = mean(last_place),
             'champ' = mean(champions == team))
+
+if(params$matchup_id == 1) {
+  df_sims0 <- 
+    tibble('team' = teams$team,
+           'playoffs' = 4/12,
+           'last_place' = 1/12,
+           'champ' = 1/12,
+           'matchup_id' = 0,
+           'mean_pts' = NA)
+  
+  write_csv(df_sims0, glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
+  
+}
 
 read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
   filter(matchup_id != params$matchup_id) %>%
@@ -1020,19 +1071,21 @@ best_lineup(params$season, params$matchup_id)
 
 ### Season All Stars
 ```{r, include = F}
-make_asg_graphics(params$season)
+if(params$matchup_id > 6) {
+  make_asg_graphics(params$season)
+}
 ```
 
-<img src="figures/top_performers/2022/all_stars/asg_2022.png" width="1600px" />
+<!-- <img src="figures/top_performers/2023/all_stars/asg_2023.png" width="1600px" /> -->
 
-<img src="figures/top_performers/2022/all_stars/asg_2022_count.png" class="center" />
+<!-- <img src="figures/top_performers/2023/all_stars/asg_2023_count.png" class="center" /> -->
 
 ### Best Free Agent Pick Ups
 ```{r, include = F}
 scale_factors <- 
   df_daily %>% 
   filter(in_lineup) %>% 
-  filter(matchup_id < params$matchup_id) %>% 
+  filter(matchup_id <= params$matchup_id) %>% 
   group_by(team_id, matchup_id) %>% 
   summarise('n_bat' = sum(played),
             'n_rp' = sum(relief & !start)) %>% 
@@ -1044,147 +1097,148 @@ scale_factors <-
             'n_rp' = mean(n_rp)/3,
             'n_bat' = mean(n_bat)/13)
 
-trans_log <- get_trans_log(params$season)
-df_fa <- 
-  trans_log %>% 
-  filter(transaction_type == 'Free Agent') %>% 
-  filter(w_bat * n_games >= 20 | w_sp * n_games >= 5 | w_rp * n_games >= 5) %>% 
-  mutate('ppg_vs_avg' = 
-           (ppg - df$batting_ppg[13]) * scale_factors$n_bat * w_bat + 
-           (ppg - df$rp_ppg[13]) * scale_factors$n_rp * w_rp + 
-           (ppg - df$sp_ppg[13]) * scale_factors$n_sp * w_sp) %>% 
-  mutate('total_value' = n_points - (end - start + 1)/7 * 
-           (df$batting_ppg[13] * scale_factors$n_bat * w_bat + 
-              df$rp_ppg[13] * scale_factors$n_rp * w_rp + 
-              df$sp_ppg[13] * scale_factors$n_sp * w_sp)) %>% 
-  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-  inner_join(select(teams, team, team_id, logo)) %>% 
-  mutate('added' = as.character(format.Date(as.Date(params$opening_day) - 1 + start, "%b, %d")),
-         'dropped' = ifelse(end == max(end), NA, as.character(format.Date(as.Date(params$opening_day) - 1 + end, "%b, %d")))) %>% 
-  select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) 
-
-df1 <- 
-  df_fa %>% 
-  arrange(-total_value) %>% 
-  head(20)
-names(df1) <- paste0(names(df1), '_1')
-
-df2 <- 
-  df_fa %>% 
-  arrange(-n_points) %>% 
-  head(20)
-names(df2) <- paste0(names(df2), '_2')
-
-df_fa <- bind_cols(df1, df2)
-
-gt_fa <- 
+if(params$matchup_id > 5) {
+  trans_log <- get_trans_log(params$season)
+  df_fa <- 
+    trans_log %>% 
+    filter(transaction_type == 'Free Agent') %>% 
+    filter(w_bat * n_games >= 20 | w_sp * n_games >= 5 | w_rp * n_games >= 5) %>% 
+    mutate('ppg_vs_avg' = 
+             (ppg - df$batting_ppg[13]) * scale_factors$n_bat * w_bat + 
+             (ppg - df$rp_ppg[13]) * scale_factors$n_rp * w_rp + 
+             (ppg - df$sp_ppg[13]) * scale_factors$n_sp * w_sp) %>% 
+    mutate('total_value' = n_points - (end - start + 1)/7 * 
+             (df$batting_ppg[13] * scale_factors$n_bat * w_bat + 
+                df$rp_ppg[13] * scale_factors$n_rp * w_rp + 
+                df$sp_ppg[13] * scale_factors$n_sp * w_sp)) %>% 
+    mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+    inner_join(select(teams, team, team_id, logo)) %>% 
+    mutate('added' = as.character(format.Date(as.Date(params$opening_day) - 1 + start, "%b, %d")),
+           'dropped' = ifelse(end == max(end), NA, as.character(format.Date(as.Date(params$opening_day) - 1 + end, "%b, %d")))) %>% 
+    select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) 
   
-  gt(df_fa) %>% 
-  ### Align Columns
-  cols_align(align = "center", columns = everything()) %>%
+  df1 <- 
+    df_fa %>% 
+    arrange(-total_value) %>% 
+    head(20)
+  names(df1) <- paste0(names(df1), '_1')
   
-  ### Round Numbers
-  fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
-  fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-  fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
-  sub_missing(columns = everything(), missing_text = "---") %>%
+  df2 <- 
+    df_fa %>% 
+    arrange(-n_points) %>% 
+    head(20)
+  names(df2) <- paste0(names(df2), '_2')
   
-  tab_spanner(label = 'Top 20 by Value ', columns = contains('_1')) %>%
-  tab_spanner(label = 'Top 20 by Points', columns = contains('_2')) %>%
+  df_fa <- bind_cols(df1, df2)
   
-  
-  ### Align Columns
-  cols_align(align = "center", columns = everything()) %>%
-  
-  
-  ### Borders
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "bottom",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_column_labels(
-        columns = gt::everything()
-      )
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "right",
-        color = "black",
-        weight = px(6)
-      )
-    ),
-    locations = list(
-      cells_body(
-        columns = contains('total_value_1')
-      )
-    )
-  ) %>%
-  
-  ### Logos
-  text_transform(
-    locations = cells_body(columns = contains(c('logo', 'player_url'))),
-    fn = function(x) {
-      web_image(
-        url = x,
-        height = 50
-      )
-    }
-  ) %>% 
-  
-  ### Names
-  cols_label(
-    'player_1' = 'Player',
-    'player_url_1' = '',
-    'logo_1' = '',
-    'n_points_1' = 'Points',
-    'ppg_1' = 'PPG',
-    'team_1' = 'Team',
-    'total_value_1' = 'Total Value',
-    'added_1' = 'Added',
-    'dropped_1' = 'Dropped/Traded',
-    'n_games_1' = '# of Games',
+  gt_fa <- 
     
-    'player_2' = 'Player',
-    'player_url_2' = '',
-    'logo_2' = '',
-    'n_points_2' = 'Points',
-    'ppg_2' = 'PPG',
-    'team_2' = 'Team',
-    'total_value_2' = 'Total Value',
-    'added_2' = 'Added',
-    'dropped_2' = 'Dropped/Traded',
-    'n_games_2' = '# of Games'
-  ) %>% 
+    gt(df_fa) %>% 
+    ### Align Columns
+    cols_align(align = "center", columns = everything()) %>%
+    
+    ### Round Numbers
+    fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+    fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+    fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
+    sub_missing(columns = everything(), missing_text = "---") %>%
+    
+    tab_spanner(label = 'Top 20 by Value ', columns = contains('_1')) %>%
+    tab_spanner(label = 'Top 20 by Points', columns = contains('_2')) %>%
+    
+    
+    ### Align Columns
+    cols_align(align = "center", columns = everything()) %>%
+    
+    
+    ### Borders
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "bottom",
+          color = "black",
+          weight = px(3)
+        )
+      ),
+      locations = list(
+        cells_column_labels(
+          columns = gt::everything()
+        )
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "right",
+          color = "black",
+          weight = px(6)
+        )
+      ),
+      locations = list(
+        cells_body(
+          columns = contains('total_value_1')
+        )
+      )
+    ) %>%
+    
+    ### Logos
+    text_transform(
+      locations = cells_body(columns = contains(c('logo', 'player_url'))),
+      fn = function(x) {
+        web_image(
+          url = x,
+          height = 50
+        )
+      }
+    ) %>% 
+    
+    ### Names
+    cols_label(
+      'player_1' = 'Player',
+      'player_url_1' = '',
+      'logo_1' = '',
+      'n_points_1' = 'Points',
+      'ppg_1' = 'PPG',
+      'team_1' = 'Team',
+      'total_value_1' = 'Total Value',
+      'added_1' = 'Added',
+      'dropped_1' = 'Dropped/Traded',
+      'n_games_1' = '# of Games',
+      
+      'player_2' = 'Player',
+      'player_url_2' = '',
+      'logo_2' = '',
+      'n_points_2' = 'Points',
+      'ppg_2' = 'PPG',
+      'team_2' = 'Team',
+      'total_value_2' = 'Total Value',
+      'added_2' = 'Added',
+      'dropped_2' = 'Dropped/Traded',
+      'n_games_2' = '# of Games'
+    ) %>% 
+    
+    tab_header(title = 'Free Agent Analysis') %>%
+    tab_footnote(footnote = "Total value= points scored vs. points that league average player at position would be expected to score in time since acquisition",
+                 locations = cells_column_labels(columns = contains('value'))) %>% 
+    tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', df$sp_ppg[13]))) %>% 
+    tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', df$rp_ppg[13]))) %>% 
+    tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', df$batting_ppg[13]))) %>% 
+    tab_source_note('Min Games for Inclusion: Batter (20), SP (5), RP (5)') %>% 
+    tab_options(column_labels.font.size = 16,
+                heading.title.font.size = 40,
+                heading.subtitle.font.size = 40,
+                heading.title.font.weight = 'bold',
+                heading.subtitle.font.weight = 'bold',
+                column_labels.font.weight = 'bold',
+                row_group.font.weight = 'bold',
+                row_group.font.size  = 22)
   
-  tab_header(title = 'Free Agent Analysis') %>%
-  tab_footnote(footnote = "Total value= points scored vs. points that league average player at position would be expected to score in time since acquisition",
-               locations = cells_column_labels(columns = contains('value'))) %>% 
-  tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', df$sp_ppg[13]))) %>% 
-  tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', df$rp_ppg[13]))) %>% 
-  tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', df$batting_ppg[13]))) %>% 
-  tab_source_note('Min Games for Inclusion: Batter (20), SP (5), RP (5)') %>% 
-  tab_options(column_labels.font.size = 16,
-              heading.title.font.size = 40,
-              heading.subtitle.font.size = 40,
-              heading.title.font.weight = 'bold',
-              heading.subtitle.font.weight = 'bold',
-              column_labels.font.weight = 'bold',
-              row_group.font.weight = 'bold',
-              row_group.font.size  = 22)
-
-gtExtras::gtsave_extra(gt_fa , glue('figures/top_performers/{params$season}/best_free_agents.png'), vwidth = 3000, selector = 'table')
-
+  gtExtras::gtsave_extra(gt_fa , glue('figures/top_performers/{params$season}/best_free_agents.png'), vwidth = 3000, selector = 'table')
+}
 ```
 
-<img src="figures/top_performers/2022/best_free_agents.png" width="1600px" />
+<!-- <img src="figures/top_performers/2023/best_free_agents.png" width="1600px" /> -->
 
 ### Win Probability Charts
 ```{r,  fig.height = 9, fig.width = 16}
@@ -1354,585 +1408,591 @@ ggsave('figures/points_bump.png', height = 9/1.2, width = 16/1.2)
 
 # Rolling Trends
 ```{r, fig.height=9, fig.width=16}
-scale_factors <- 
-  df_daily %>% 
-  filter(in_lineup) %>% 
-  filter(matchup_id < params$matchup_id) %>% 
-  group_by(team_id, matchup_id) %>% 
-  summarise('n_bat' = sum(played),
-            'n_rp' = sum(relief & !start)) %>% 
-  inner_join(df_start) %>% 
-  mutate('n_rp' = n_rp/duration * 7,
-         'n_bat' = n_bat/duration * 7) %>% 
-  ungroup() %>% 
-  summarise('n_sp' = 8/6,
-            'n_rp' = mean(n_rp)/3,
-            'n_bat' = mean(n_bat)/13)
-
-
-df_bat_stocks <- 
-  df_daily %>% 
-  filter(in_lineup) %>% 
-  filter(batter) %>% 
-  group_by(team_id, scoring_period_id) %>% 
-  summarise('n_points' = sum(points),
-            'n_games' = sum(played) + sum(start),
-            'ppg' = n_points/n_games) %>% 
-  mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
-         'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
-         'roll_ppg' = roll_points/roll_games) %>% 
-  group_split() %>% 
-  map_dfr(~{
-    x <- .x$scoring_period_id
-    y <- .x$roll_ppg
-    y[x >= 10 & is.na(y)] <- 0
-    tmp <- approx(x, y, n = 500)
-    tibble('team_id' = .x$team_id[1],
-           'scoring_period_id' = tmp$x,
-           'roll_ppg' = tmp$y)
-  }) %>% 
-  ungroup() %>% 
-  inner_join(teams)
-
-
-
-df_pitch_stocks <- 
-  df_daily %>% 
-  filter(in_lineup) %>% 
-  filter(pitcher) %>% 
-  filter(!relief) %>% 
-  group_by(team_id, scoring_period_id) %>% 
-  summarise('n_points' = sum(points),
-            'n_games' =  sum(start),
-            'n_qs' = sum(qs),
-            'ppg' = n_points/n_games) %>% 
-  mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
-         'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
-         'roll_qs' = zoo::rollsum(n_qs, k = 10, na.pad = T, align = 'right'),
-         'roll_ppg' = roll_points/roll_games,
-         'roll_qs_pct' = roll_qs/roll_games) %>% 
-  group_split() %>% 
-  map_dfr(~{
-    x <- .x$scoring_period_id
-    y <- .x$roll_ppg
-    z <- .x$roll_qs_pct
-    y[x >= 10 & is.na(y)] <- 0
-    z[x >= 10 & is.na(z)] <- 0
-    tmp <- approx(x, y, n = 500)
-    tmp2 <- approx(x, z, n = 500)
-    tibble('team_id' = .x$team_id[1],
-           'scoring_period_id' = tmp$x,
-           'roll_ppg' = tmp$y,
-           'roll_qs_pct' = tmp2$y)
-  }) %>% 
-  ungroup() %>% 
-  inner_join(teams) 
-
-df_rp_stocks <- 
-  df_daily %>% 
-  filter(in_lineup) %>% 
-  filter(pitcher) %>% 
-  filter(!start) %>% 
-  group_by(team_id, scoring_period_id) %>% 
-  summarise('n_points' = sum(points),
-            'n_games' =  sum(relief),
-            'n_qs' = sum(qs),
-            'ppg' = n_points/n_games) %>% 
-  mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
-         'cum_points' = cumsum(n_points),
-         'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
-         'roll_ppg' = roll_points/roll_games) %>% 
-  filter(scoring_period_id >= 10) %>% 
-  group_split() %>% 
-  map_dfr(~{
-    x <- .x$scoring_period_id
-    y <- .x$roll_points
-    y[x >= 10 & is.na(y)] <- 0
-    tmp <- approx(x, y, n = 500)
-    tibble('team_id' = .x$team_id[1],
-           'scoring_period_id' = tmp$x,
-           'roll_points' = tmp$y)
-  }) %>% 
-  ungroup() %>%
-  inner_join(teams) 
-
-p1 <- 
-  ggplot(df_bat_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
-  facet_wrap(~team) +
-  geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) +
-  geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
-  scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$batting_ppg[13]) +
-  theme(strip.text = element_text(size = 10)) + 
-  labs(x = 'Day of Season',
-       y = 'Batting Points/Game',
-       title = 'Batting PPG 10 Day Rolling Average') 
-
-ggsave('figures/stock_charts/bat_stocks.png', height = 9/1.2, width = 16/1.2)
-
-p2 <- 
-  ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
-  facet_wrap(~team) +
-  geom_hline(yintercept = df$sp_ppg[13], lty = 2, alpha = 0.3) + 
-  geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
-  scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$sp_ppg[13]) +
-  theme(strip.text = element_text(size = 10)) + 
-  labs(x = 'Day of Season',
-       y = 'SP Points/Game',
-       title = 'Starting Pitching PPG 10 Day Rolling Average') 
-ggsave('figures/stock_charts/sp_stocks.png', height = 9/1.2, width = 16/1.2)
-
-p3 <- 
-  ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_qs_pct)) + 
-  facet_wrap(~team) +
-  geom_hline(yintercept = df$qs_pct[13], lty = 2, alpha = 0.3) + 
-  geom_line(aes(col = roll_qs_pct), lwd = 1.2, lineend = 'round') + 
-  scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$qs_pct[13]) +
-  theme(strip.text = element_text(size = 10)) + 
-  labs(x = 'Day of Season',
-       y = 'QS %',
-       title = 'QS% 10 Day Rolling Average') +
-  scale_y_continuous(labels = scales::percent)
-ggsave('figures/stock_charts/qs_stocks.png', height = 9/1.2, width = 16/1.2)
-
-p4 <- 
-  ggplot(df_rp_stocks, aes(x = scoring_period_id, y = roll_points)) + 
-  facet_wrap(~team) +
-  geom_hline(yintercept = scale_factors$n_rp/7 * 10 * 3 * df$rp_ppg[13], lty = 2, alpha = 0.3) + 
-  geom_line(aes(col = roll_points), lwd = 1.2, lineend = 'round') + 
-  scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = scale_factors$n_rp/7 * 10 * 3 * df$rp_ppg[13]) +
-  theme(strip.text = element_text(size = 10)) + 
-  labs(x = 'Day of Season',
-       y = 'RP Points/10 Days',
-       title = 'RP Points in Prev. 10 Days') 
-ggsave('figures/stock_charts/rp_stocks.png', height = 9/1.2, width = 16/1.2)
-
-(p1 + p2)/(p3 + p4)
-ggsave('figures/stock_charts/stocks.png', height = 9, width = 16)
-
-### My own batters
-hot_take_batters <- 
-  df_daily %>% 
-  filter(team_id == 12) %>% 
-  filter(!pitcher) %>% 
-  group_by(player) %>% 
-  mutate('cum_games' = cumsum(played),
-         'cum_points' = cumsum(points),
-         'roll_ppg' = zoo::rollsum(points, 10, fill = NA, align = 'right')/(0.00000000001 + zoo::rollsum(played, 10, fill = NA, align = 'right'))) %>% 
-  mutate('cum_ppg' = cum_points/cum_games,
-         'max_sp' = max(scoring_period_id)) %>% 
-  mutate('form' = last(roll_ppg[!is.na(roll_ppg)])) %>% 
-  ungroup() %>% 
-  filter(max_sp == max(scoring_period_id),
-         cum_games > 10) %>% 
-  group_by(player) %>% 
-  group_split() %>% 
-  map_dfr(~{
-    x <- .x$scoring_period_id
-    y <- .x$roll_ppg
-    if(nrow(.x) > 1) {
+if(params$matchup_id > 1) {
+  scale_factors <- 
+    df_daily %>% 
+    filter(in_lineup) %>% 
+    filter(matchup_id <= params$matchup_id) %>% 
+    group_by(team_id, matchup_id) %>% 
+    summarise('n_bat' = sum(played),
+              'n_rp' = sum(relief & !start)) %>% 
+    inner_join(df_start) %>% 
+    mutate('n_rp' = n_rp/duration * 7,
+           'n_bat' = n_bat/duration * 7) %>% 
+    ungroup() %>% 
+    summarise('n_sp' = 8/6,
+              'n_rp' = mean(n_rp)/3,
+              'n_bat' = mean(n_bat)/13)
+  
+  
+  df_bat_stocks <- 
+    df_daily %>% 
+    filter(in_lineup) %>% 
+    filter(batter) %>% 
+    group_by(team_id, scoring_period_id) %>% 
+    summarise('n_points' = sum(points),
+              'n_games' = sum(played) + sum(start),
+              'ppg' = n_points/(n_games + 0.000001)) %>% 
+    mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
+           'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
+           'roll_ppg' = roll_points/roll_games) %>% 
+    group_split() %>% 
+    map_dfr(~{
+      x <- .x$scoring_period_id
+      y <- .x$roll_ppg
+      y[x >= 10 & is.na(y)] <- 0
       tmp <- approx(x, y, n = 500)
-      tibble('player' = .x$player[1],
-             'form' = .x$form[1],
+      tibble('team_id' = .x$team_id[1],
              'scoring_period_id' = tmp$x,
              'roll_ppg' = tmp$y)
-    } else {
-      tibble('player' = .x$player[1],
-             'form' = .x$form[1],
-             'scoring_period_id' = .x$scoring_period_id,
-             'roll_ppg' = .x$roll_ppg)
-    }
-  }) %>% 
-  ungroup()
-
-p5 <- 
-  ggplot(hot_take_batters, aes(x = scoring_period_id, y = roll_ppg)) + 
-  facet_wrap(~fct_reorder(paste0(player, ' (', sprintf('%0.2f', form), ')'), -form)) + 
-  geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) + 
-  geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
-  scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$batting_ppg[13]) +
-  labs(x = 'Day of Season',
-       y = 'Batter Points/Game',
-       title = 'Batting PPG 10 Day Rolling Average',
-       subtitle = 'Blasphemous Hot Takes')
-ggsave('figures/stock_charts/bht_stocks.png', height = 9/1.2, width = 16/1.2)
+    }) %>% 
+    ungroup() %>% 
+    inner_join(teams)
+  
+  
+  
+  df_pitch_stocks <- 
+    df_daily %>% 
+    filter(in_lineup) %>% 
+    filter(pitcher) %>% 
+    filter(!relief) %>% 
+    group_by(team_id, scoring_period_id) %>% 
+    summarise('n_points' = sum(points),
+              'n_games' =  sum(start),
+              'n_qs' = sum(qs),
+              'ppg' = n_points/n_games) %>% 
+    mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
+           'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
+           'roll_qs' = zoo::rollsum(n_qs, k = 10, na.pad = T, align = 'right'),
+           'roll_ppg' = roll_points/roll_games,
+           'roll_qs_pct' = roll_qs/roll_games) %>% 
+    group_split() %>% 
+    map_dfr(~{
+      x <- .x$scoring_period_id
+      y <- .x$roll_ppg
+      z <- .x$roll_qs_pct
+      y[x >= 10 & is.na(y)] <- 0
+      z[x >= 10 & is.na(z)] <- 0
+      tmp <- approx(x, y, n = 500)
+      tmp2 <- approx(x, z, n = 500)
+      tibble('team_id' = .x$team_id[1],
+             'scoring_period_id' = tmp$x,
+             'roll_ppg' = tmp$y,
+             'roll_qs_pct' = tmp2$y)
+    }) %>% 
+    ungroup() %>% 
+    inner_join(teams) 
+  
+  df_rp_stocks <- 
+    df_daily %>% 
+    filter(in_lineup) %>% 
+    filter(pitcher) %>% 
+    filter(!start) %>% 
+    group_by(team_id, scoring_period_id) %>% 
+    summarise('n_points' = sum(points),
+              'n_games' =  sum(relief),
+              'n_qs' = sum(qs),
+              'ppg' = n_points/n_games) %>% 
+    mutate('roll_points' = zoo::rollsum(n_points, k = 10, na.pad = T, align = 'right'),
+           'cum_points' = cumsum(n_points),
+           'roll_games' = zoo::rollsum(n_games, k = 10, na.pad = T, align = 'right'),
+           'roll_ppg' = roll_points/roll_games) %>% 
+    filter(scoring_period_id >= 10) %>% 
+    group_split() %>% 
+    map_dfr(~{
+      x <- .x$scoring_period_id
+      y <- .x$roll_points
+      y[x >= 10 & is.na(y)] <- 0
+      tmp <- approx(x, y, n = 500)
+      tibble('team_id' = .x$team_id[1],
+             'scoring_period_id' = tmp$x,
+             'roll_points' = tmp$y)
+    }) %>% 
+    ungroup() %>%
+    inner_join(teams) 
+  
+  p1 <- 
+    ggplot(df_bat_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
+    facet_wrap(~team) +
+    geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) +
+    geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
+    scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$batting_ppg[13]) +
+    theme(strip.text = element_text(size = 10)) + 
+    labs(x = 'Day of Season',
+         y = 'Batting Points/Game',
+         title = 'Batting PPG 10 Day Rolling Average') 
+  
+  ggsave('figures/stock_charts/bat_stocks.png', height = 9/1.2, width = 16/1.2)
+  
+  p2 <- 
+    ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_ppg)) + 
+    facet_wrap(~team) +
+    geom_hline(yintercept = df$sp_ppg[13], lty = 2, alpha = 0.3) + 
+    geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
+    scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$sp_ppg[13]) +
+    theme(strip.text = element_text(size = 10)) + 
+    labs(x = 'Day of Season',
+         y = 'SP Points/Game',
+         title = 'Starting Pitching PPG 10 Day Rolling Average') 
+  ggsave('figures/stock_charts/sp_stocks.png', height = 9/1.2, width = 16/1.2)
+  
+  p3 <- 
+    ggplot(df_pitch_stocks, aes(x = scoring_period_id, y = roll_qs_pct)) + 
+    facet_wrap(~team) +
+    geom_hline(yintercept = df$qs_pct[13], lty = 2, alpha = 0.3) + 
+    geom_line(aes(col = roll_qs_pct), lwd = 1.2, lineend = 'round') + 
+    scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$qs_pct[13]) +
+    theme(strip.text = element_text(size = 10)) + 
+    labs(x = 'Day of Season',
+         y = 'QS %',
+         title = 'QS% 10 Day Rolling Average') +
+    scale_y_continuous(labels = scales::percent)
+  ggsave('figures/stock_charts/qs_stocks.png', height = 9/1.2, width = 16/1.2)
+  
+  p4 <- 
+    ggplot(df_rp_stocks, aes(x = scoring_period_id, y = roll_points)) + 
+    facet_wrap(~team) +
+    geom_hline(yintercept = scale_factors$n_rp/7 * 10 * 3 * df$rp_ppg[13], lty = 2, alpha = 0.3) + 
+    geom_line(aes(col = roll_points), lwd = 1.2, lineend = 'round') + 
+    scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = scale_factors$n_rp/7 * 10 * 3 * df$rp_ppg[13]) +
+    theme(strip.text = element_text(size = 10)) + 
+    labs(x = 'Day of Season',
+         y = 'RP Points/10 Days',
+         title = 'RP Points in Prev. 10 Days') 
+  ggsave('figures/stock_charts/rp_stocks.png', height = 9/1.2, width = 16/1.2)
+  
+  (p1 + p2)/(p3 + p4)
+  ggsave('figures/stock_charts/stocks.png', height = 9, width = 16)
+  
+  ### My own batters
+  hot_take_batters <- 
+    df_daily %>% 
+    filter(team_id == 12) %>% 
+    filter(!pitcher) %>% 
+    group_by(player) %>% 
+    mutate('cum_games' = cumsum(played),
+           'cum_points' = cumsum(points),
+           'roll_ppg' = zoo::rollsum(points, 10, fill = NA, align = 'right')/(0.00000000001 + zoo::rollsum(played, 10, fill = NA, align = 'right'))) %>% 
+    mutate('cum_ppg' = cum_points/cum_games,
+           'max_sp' = max(scoring_period_id)) %>% 
+    mutate('form' = last(roll_ppg[!is.na(roll_ppg)])) %>% 
+    ungroup() %>% 
+    filter(max_sp == max(scoring_period_id),
+           cum_games > 10) %>% 
+    group_by(player) %>% 
+    group_split() %>% 
+    map_dfr(~{
+      x <- .x$scoring_period_id
+      y <- .x$roll_ppg
+      if(nrow(.x) > 1) {
+        tmp <- approx(x, y, n = 500)
+        tibble('player' = .x$player[1],
+               'form' = .x$form[1],
+               'scoring_period_id' = tmp$x,
+               'roll_ppg' = tmp$y)
+      } else {
+        tibble('player' = .x$player[1],
+               'form' = .x$form[1],
+               'scoring_period_id' = .x$scoring_period_id,
+               'roll_ppg' = .x$roll_ppg)
+      }
+    }) %>% 
+    ungroup()
+  
+  p5 <- 
+    ggplot(hot_take_batters, aes(x = scoring_period_id, y = roll_ppg)) + 
+    facet_wrap(~fct_reorder(paste0(player, ' (', sprintf('%0.2f', form), ')'), -form)) + 
+    geom_hline(yintercept = df$batting_ppg[13], lty = 2, alpha = 0.3) + 
+    geom_line(aes(col = roll_ppg), lwd = 1.2, lineend = 'round') + 
+    scale_color_gradient2(low = 'blue', mid = 'grey', high = 'red', midpoint = df$batting_ppg[13]) +
+    labs(x = 'Day of Season',
+         y = 'Batter Points/Game',
+         title = 'Batting PPG 10 Day Rolling Average',
+         subtitle = 'Blasphemous Hot Takes')
+  ggsave('figures/stock_charts/bht_stocks.png', height = 9/1.2, width = 16/1.2)
+}
 ```
 
 # Trades
 ```{r}
-scale_factors <- 
-  df_daily %>% 
-  filter(in_lineup) %>% 
-  filter(matchup_id < params$matchup_id) %>% 
-  group_by(team_id, matchup_id) %>% 
-  summarise('n_bat' = sum(played),
-            'n_rp' = sum(relief & !start)) %>% 
-  inner_join(df_start) %>% 
-  mutate('n_rp' = n_rp/duration * 7,
-         'n_bat' = n_bat/duration * 7) %>% 
-  ungroup() %>% 
-  summarise('n_sp' = 8/6,
-            'n_rp' = mean(n_rp)/3,
-            'n_bat' = mean(n_bat)/13)
-
-traded_players <- 
-  trans_log %>%
-  filter(transaction_type == 'Trade')
-trade_stats <- NULL
-
-for(i in 1:nrow(traded_players)) {
-  old_team <- traded_players$team_from[i]
-  new_team <- traded_players$team_id[i]
-  scoring_period <- traded_players$start[i]
-  end_period <- traded_players$end[i]
-  
-  tmp_before <- 
+if(nrow(df_trades) > 1) {
+  scale_factors <- 
     df_daily %>% 
-    filter(player_id == traded_players$player_id[i]) %>% 
-    filter(team_id == old_team) %>% 
-    filter(scoring_period_id < scoring_period) %>% 
-    summarise('points' = sum(points),
-              'played' = sum(start) + sum(relief) + sum(played),
-              'batter' = sum(played),
-              'sp' = sum(start),
-              'rp' = sum(relief)) %>% 
-    mutate('ppg' = points/played) %>% 
-    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
-                                    rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
-                                    sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
-    select(points, played, ppg, ppg_vs_avg)
-  names(tmp_before) <- paste0(names(tmp_before), '_before')
+    filter(in_lineup) %>% 
+    filter(matchup_id < params$matchup_id) %>% 
+    group_by(team_id, matchup_id) %>% 
+    summarise('n_bat' = sum(played),
+              'n_rp' = sum(relief & !start)) %>% 
+    inner_join(df_start) %>% 
+    mutate('n_rp' = n_rp/duration * 7,
+           'n_bat' = n_bat/duration * 7) %>% 
+    ungroup() %>% 
+    summarise('n_sp' = 8/6,
+              'n_rp' = mean(n_rp)/3,
+              'n_bat' = mean(n_bat)/13)
   
-  tmp_after <- 
-    df_daily %>% 
-    filter(player_id == traded_players$player_id[i]) %>% 
-    filter(team_id == new_team) %>% 
-    filter(scoring_period_id >= scoring_period) %>%
-    filter(scoring_period_id <= end_period) %>% 
-    summarise('points' = sum(points),
-              'played' = sum(start) + sum(relief) + sum(played),
-              'batter' = sum(played),
-              'pitcher' = sum(pitcher),
-              'sp' = sum(start),
-              'rp' = sum(relief),
-              'n_days' = n()) %>% 
-    mutate('ppg' =  points/played) %>% 
-    mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
-                                    rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
-                                    sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
-    mutate('total_value' = points - n_days/7 * 
-             case_when(rp == 0 & sp == 0 & pitcher == 0 ~ df$batting_ppg[13] * scale_factors$n_bat,
-                       rp > 0 & sp == 0 ~ df$rp_ppg[13] * scale_factors$n_rp,
-                       sp > 0 | pitcher > 0 ~ df$sp_ppg[13] *scale_factors$n_sp)
+  traded_players <- 
+    trans_log %>%
+    filter(transaction_type == 'Trade')
+  trade_stats <- NULL
+  
+  for(i in 1:nrow(traded_players)) {
+    old_team <- traded_players$team_from[i]
+    new_team <- traded_players$team_id[i]
+    scoring_period <- traded_players$start[i]
+    end_period <- traded_players$end[i]
+    
+    tmp_before <- 
+      df_daily %>% 
+      filter(player_id == traded_players$player_id[i]) %>% 
+      filter(team_id == old_team) %>% 
+      filter(scoring_period_id < scoring_period) %>% 
+      summarise('points' = sum(points),
+                'played' = sum(start) + sum(relief) + sum(played),
+                'batter' = sum(played),
+                'sp' = sum(start),
+                'rp' = sum(relief)) %>% 
+      mutate('ppg' = points/played) %>% 
+      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
+                                      rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
+                                      sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
+      select(points, played, ppg, ppg_vs_avg)
+    names(tmp_before) <- paste0(names(tmp_before), '_before')
+    
+    tmp_after <- 
+      df_daily %>% 
+      filter(player_id == traded_players$player_id[i]) %>% 
+      filter(team_id == new_team) %>% 
+      filter(scoring_period_id >= scoring_period) %>%
+      filter(scoring_period_id <= end_period) %>% 
+      summarise('points' = sum(points),
+                'played' = sum(start) + sum(relief) + sum(played),
+                'batter' = sum(played),
+                'pitcher' = sum(pitcher),
+                'sp' = sum(start),
+                'rp' = sum(relief),
+                'n_days' = n()) %>% 
+      mutate('ppg' =  points/played) %>% 
+      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
+                                      rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
+                                      sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
+      mutate('total_value' = points - n_days/7 * 
+               case_when(rp == 0 & sp == 0 & pitcher == 0 ~ df$batting_ppg[13] * scale_factors$n_bat,
+                         rp > 0 & sp == 0 ~ df$rp_ppg[13] * scale_factors$n_rp,
+                         sp > 0 | pitcher > 0 ~ df$sp_ppg[13] *scale_factors$n_sp)
+      ) %>% 
+      select(points, played, ppg, ppg_vs_avg, total_value)
+    names(tmp_after) <- paste0(names(tmp_after), '_after')
+    
+    trade_stats <- 
+      trade_stats %>% bind_rows(
+        bind_cols(tmp_before, tmp_after) %>% 
+          mutate('player_id' = traded_players$player_id[i],
+                 'team_from' = old_team,
+                 'team_to' = new_team)
+      )
+    
+  }
+  
+  tmp_stats <- 
+    traded_players %>%
+    inner_join(trade_stats) %>% 
+    inner_join(select(teams, team_id, team, logo), by = c('team_to' = 'team_id')) %>% 
+    mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+    group_by(trade_id) %>% 
+    mutate('n_rec' = map_dbl(team_to, ~sum(team_to == .x)))  %>% 
+    mutate('n_given' = map_dbl(team_from, ~sum(team_to == .x)))  %>% 
+    group_by(trade_id, team_to) %>% 
+    group_split() %>% 
+    map(~{ 
+      if(.x$n_given[1]  > .x$n_rec[1]) {
+        tmp <- .x[1,]
+        tmp[1,] <- NA
+        tmp$trade_id <- .x$trade_id
+        bind_rows(.x, tmp)
+      } else {
+        .x 
+      }
+    })
+  
+  
+  df_trades <- 
+    map_dfr(1:(length(tmp_stats)/2),  ~{
+      x <- tmp_stats[[2 * .x -1]]
+      names(x) <- paste0(names(x), '_1')
+      y <- tmp_stats[[2 * .x]]
+      names(y) <- paste0(names(y), '_2')
+      bind_cols(x, y)
+    }) %>% 
+    select(trade_id_1, 
+           player_1, player_url_1, team_1, logo_1,
+           points_before_1, played_before_1, ppg_before_1, ppg_vs_avg_before_1,
+           points_after_1, played_after_1, ppg_after_1, ppg_vs_avg_after_1, total_value_after_1,
+           player_2, player_url_2, team_2, logo_2,
+           points_before_2, played_before_2, ppg_before_2, ppg_vs_avg_before_2,
+           points_after_2, played_after_2, ppg_after_2, ppg_vs_avg_after_2, total_value_after_2) %>% 
+    group_by(trade_id_1) %>% 
+    mutate('total_value_after_1' = c(sum(total_value_after_1, na.rm = T), rep(NA, n() - 1)),
+           'total_value_after_2' = c(sum(total_value_after_2, na.rm = T), rep(NA, n() - 1))) %>% 
+    ungroup() %>% 
+    mutate('trade_id_1' = fct_reorder(factor(paste0('Trade #', trade_id_1)), trade_id_1)) %>% 
+    group_by(trade_id_1)
+  
+  
+  
+  m <- 
+    df_trades %>% 
+    ungroup() %>% 
+    select(contains('avg')) %>% 
+    abs() %>% 
+    max(na.rm = T)
+  
+  gt_trades <-
+    df_trades %>% 
+    select(-trade_id_1) %>% 
+    gt() %>% 
+    ### Align Columns
+    cols_align(align = "center", columns = everything()) %>%
+    
+    tab_spanner(label = 'Before Trade ', columns = contains('_before_1')) %>%
+    tab_spanner(label = 'Before Trade', columns = contains('_before_2')) %>%
+    tab_spanner(label = 'After Trade ', columns = contains('_after_1')) %>%
+    tab_spanner(label = 'After Trade', columns = contains('_after_2')) %>% 
+    
+    data_color(columns = contains('avg'),
+               colors = scales::col_quantile(palette = ggsci::rgb_gsea(), 
+                                             domain = c(-m, m),
+                                             probs = c(0, seq(0.05, 0.95, 0.01), 1))
+    ) %>%
+    
+    ### Round Numbers
+    fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+    fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+    fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
+    sub_missing(columns = everything(), missing_text = "---") %>%
+    
+    
+    
+    ### Align Columns
+    cols_align(align = "center", columns = everything()) %>%
+    
+    
+    ### Borders
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "bottom",
+          color = "black",
+          weight = px(3)
+        )
+      ),
+      locations = list(
+        cells_column_labels(
+          columns = gt::everything()
+        )
+      )
+    ) %>%
+    
+    ### Logos
+    text_transform(
+      locations = cells_body(columns = contains(c('logo_1', 'player_url_1')),
+                             rows = (!is.na(logo_1) & !is.na(player_url_1))),
+      fn = function(x) {
+        web_image(
+          url = x,
+          height = 50
+        )
+      }
     ) %>% 
-    select(points, played, ppg, ppg_vs_avg, total_value)
-  names(tmp_after) <- paste0(names(tmp_after), '_after')
-  
-  trade_stats <- 
-    trade_stats %>% bind_rows(
-      bind_cols(tmp_before, tmp_after) %>% 
-        mutate('player_id' = traded_players$player_id[i],
-               'team_from' = old_team,
-               'team_to' = new_team)
-    )
-  
+    text_transform(
+      locations = cells_body(columns = contains(c('logo_2', 'player_url_2')),
+                             rows = (!is.na(logo_2) & !is.na(player_url_2))),
+      fn = function(x) {
+        web_image(
+          url = x,
+          height = 50
+        )
+      }
+    ) %>% 
+    
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "right",
+          color = "black",
+          weight = px(8)
+        )
+      ),
+      locations = list(
+        cells_body(
+          columns = contains('total_value_after_1')
+        )
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "right",
+          color = "black",
+          weight = px(4)
+        )
+      ),
+      locations = list(
+        cells_body(
+          columns = c(contains('ppg_vs_avg_before'), contains('logo'))
+        )
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "right",
+          color = "black",
+          weight = px(2)
+        )
+      ),
+      locations = list(
+        cells_body(
+          columns = c(contains('ppg_vs_avg_after'))
+        )
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(cell_fill(color = "white")),
+      locations = cells_body(
+        columns = contains('avg_after_1'),
+        rows = (is.na(points_after_1) | played_after_1 == 0)
+      )
+    ) %>%
+    tab_style(
+      style = list(cell_fill(color = "white")),
+      locations = cells_body(
+        columns = contains('avg_after_2'),
+        rows = (is.na(points_after_2) | played_after_2 == 0)
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(cell_fill(color = "springgreen")),
+      locations = cells_body(
+        columns = total_value_after_1,
+        rows = total_value_after_1 > total_value_after_2
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(cell_fill(color = "tomato")),
+      locations = cells_body(
+        columns = total_value_after_1,
+        rows = total_value_after_1 < total_value_after_2
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(cell_fill(color = "springgreen")),
+      locations = cells_body(
+        columns = total_value_after_2,
+        rows = total_value_after_1 < total_value_after_2
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(cell_fill(color = "tomato")),
+      locations = cells_body(
+        columns = total_value_after_2,
+        rows = total_value_after_1 > total_value_after_2
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(cell_fill(color = "white")),
+      locations = cells_body(
+        columns = contains('avg_before_1'),
+        rows = (is.na(points_before_1) | played_before_1 == 0)
+      )
+    ) %>%
+    tab_style(
+      style = list(cell_fill(color = "white")),
+      locations = cells_body(
+        columns = contains('avg_before_2'),
+        rows = (is.na(points_before_2) | played_before_2 == 0)
+      )
+    ) %>%
+    
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "bottom",
+          color = "black",
+          weight = px(2)
+        )
+      ),
+      locations = list(
+        cells_body(
+          rows = which(df_trades$trade_id_1 != lead(df_trades$trade_id_1) | is.na(lead(df_trades$trade_id_1)))
+        )
+      )
+    ) %>%
+    
+    ### Names
+    cols_label(
+      'player_1' = 'Player',
+      'player_2' = 'Player',
+      'player_url_1' = '',
+      'player_url_2' = '',
+      'team_1' = 'New Team',
+      'team_2' = 'New Team',
+      'logo_1' = '',
+      'logo_2' = '',
+      'points_before_1' = 'Points',
+      'points_before_2' = 'Points',
+      'points_after_1' = 'Points',
+      'points_after_2' = 'Points',
+      'played_before_1' = 'Games',
+      'played_before_2' = 'Games',
+      'played_after_1' = 'Games',
+      'played_after_2' = 'Games',
+      'ppg_before_1' = 'PPG',
+      'ppg_before_2' = 'PPG',
+      'ppg_after_1' = 'PPG',
+      'ppg_after_2' = 'PPG',
+      'total_value_after_1' = 'Total Trade Value',
+      'total_value_after_2' = 'Total Trade Value',
+      'ppg_vs_avg_before_1' = 'Value/Matchup',
+      'ppg_vs_avg_before_2' = 'Value/Matchup',
+      'ppg_vs_avg_after_1' = 'Value/Matchup',
+      'ppg_vs_avg_after_2' = 'Value/Matchup') %>% 
+    
+    tab_header(title = 'Trade Analysis') %>%
+    tab_footnote(footnote = "Value = Points/Week vs. League Average at Position (Only includes games played)",
+                 locations = cells_column_labels(columns = contains('avg'))) %>% 
+    tab_footnote(footnote = "Total value accumulated of all players in trade (points scored vs. points that league average players at position(s) would be expected to score in time since trade)",
+                 locations = cells_column_labels(columns = contains('value'))) %>% 
+    tab_source_note('Includes games until player dropped/traded in first stint with new team') %>% 
+    tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', df$sp_ppg[13]))) %>% 
+    tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', df$rp_ppg[13]))) %>% 
+    tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', df$batting_ppg[13]))) %>% 
+    tab_options(column_labels.font.size = 16,
+                heading.title.font.size = 40,
+                heading.subtitle.font.size = 40,
+                heading.title.font.weight = 'bold',
+                heading.subtitle.font.weight = 'bold',
+                column_labels.font.weight = 'bold',
+                row_group.font.weight = 'bold',
+                row_group.font.size  = 22)
 }
-
-tmp_stats <- 
-  traded_players %>%
-  inner_join(trade_stats) %>% 
-  inner_join(select(teams, team_id, team, logo), by = c('team_to' = 'team_id')) %>% 
-  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-  group_by(trade_id) %>% 
-  mutate('n_rec' = map_dbl(team_to, ~sum(team_to == .x)))  %>% 
-  mutate('n_given' = map_dbl(team_from, ~sum(team_to == .x)))  %>% 
-  group_by(trade_id, team_to) %>% 
-  group_split() %>% 
-  map(~{ 
-    if(.x$n_given[1]  > .x$n_rec[1]) {
-      tmp <- .x[1,]
-      tmp[1,] <- NA
-      tmp$trade_id <- .x$trade_id
-      bind_rows(.x, tmp)
-    } else {
-      .x 
-    }
-  })
-
-
-df_trades <- 
-  map_dfr(1:(length(tmp_stats)/2),  ~{
-    x <- tmp_stats[[2 * .x -1]]
-    names(x) <- paste0(names(x), '_1')
-    y <- tmp_stats[[2 * .x]]
-    names(y) <- paste0(names(y), '_2')
-    bind_cols(x, y)
-  }) %>% 
-  select(trade_id_1, 
-         player_1, player_url_1, team_1, logo_1,
-         points_before_1, played_before_1, ppg_before_1, ppg_vs_avg_before_1,
-         points_after_1, played_after_1, ppg_after_1, ppg_vs_avg_after_1, total_value_after_1,
-         player_2, player_url_2, team_2, logo_2,
-         points_before_2, played_before_2, ppg_before_2, ppg_vs_avg_before_2,
-         points_after_2, played_after_2, ppg_after_2, ppg_vs_avg_after_2, total_value_after_2) %>% 
-  group_by(trade_id_1) %>% 
-  mutate('total_value_after_1' = c(sum(total_value_after_1, na.rm = T), rep(NA, n() - 1)),
-         'total_value_after_2' = c(sum(total_value_after_2, na.rm = T), rep(NA, n() - 1))) %>% 
-  ungroup() %>% 
-  mutate('trade_id_1' = fct_reorder(factor(paste0('Trade #', trade_id_1)), trade_id_1)) %>% 
-  group_by(trade_id_1)
-
-
-
-m <- 
-  df_trades %>% 
-  ungroup() %>% 
-  select(contains('avg')) %>% 
-  abs() %>% 
-  max(na.rm = T)
-
-gt_trades <-
-  df_trades %>% 
-  select(-trade_id_1) %>% 
-  gt() %>% 
-  ### Align Columns
-  cols_align(align = "center", columns = everything()) %>%
-  
-  tab_spanner(label = 'Before Trade ', columns = contains('_before_1')) %>%
-  tab_spanner(label = 'Before Trade', columns = contains('_before_2')) %>%
-  tab_spanner(label = 'After Trade ', columns = contains('_after_1')) %>%
-  tab_spanner(label = 'After Trade', columns = contains('_after_2')) %>% 
-  
-  data_color(columns = contains('avg'),
-             colors = scales::col_quantile(palette = ggsci::rgb_gsea(), 
-                                           domain = c(-m, m),
-                                           probs = c(0, seq(0.05, 0.95, 0.01), 1))
-  ) %>%
-  
-  ### Round Numbers
-  fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
-  fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-  fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
-  sub_missing(columns = everything(), missing_text = "---") %>%
-  
-  
-  
-  ### Align Columns
-  cols_align(align = "center", columns = everything()) %>%
-  
-  
-  ### Borders
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "bottom",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_column_labels(
-        columns = gt::everything()
-      )
-    )
-  ) %>%
-  
-  ### Logos
-  text_transform(
-    locations = cells_body(columns = contains(c('logo_1', 'player_url_1')),
-                           rows = (!is.na(logo_1) & !is.na(player_url_1))),
-    fn = function(x) {
-      web_image(
-        url = x,
-        height = 50
-      )
-    }
-  ) %>% 
-  text_transform(
-    locations = cells_body(columns = contains(c('logo_2', 'player_url_2')),
-                           rows = (!is.na(logo_2) & !is.na(player_url_2))),
-    fn = function(x) {
-      web_image(
-        url = x,
-        height = 50
-      )
-    }
-  ) %>% 
-  
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "right",
-        color = "black",
-        weight = px(8)
-      )
-    ),
-    locations = list(
-      cells_body(
-        columns = contains('total_value_after_1')
-      )
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "right",
-        color = "black",
-        weight = px(4)
-      )
-    ),
-    locations = list(
-      cells_body(
-        columns = c(contains('ppg_vs_avg_before'), contains('logo'))
-      )
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "right",
-        color = "black",
-        weight = px(2)
-      )
-    ),
-    locations = list(
-      cells_body(
-        columns = c(contains('ppg_vs_avg_after'))
-      )
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(cell_fill(color = "white")),
-    locations = cells_body(
-      columns = contains('avg_after_1'),
-      rows = (is.na(points_after_1) | played_after_1 == 0)
-    )
-  ) %>%
-  tab_style(
-    style = list(cell_fill(color = "white")),
-    locations = cells_body(
-      columns = contains('avg_after_2'),
-      rows = (is.na(points_after_2) | played_after_2 == 0)
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(cell_fill(color = "springgreen")),
-    locations = cells_body(
-      columns = total_value_after_1,
-      rows = total_value_after_1 > total_value_after_2
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(cell_fill(color = "tomato")),
-    locations = cells_body(
-      columns = total_value_after_1,
-      rows = total_value_after_1 < total_value_after_2
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(cell_fill(color = "springgreen")),
-    locations = cells_body(
-      columns = total_value_after_2,
-      rows = total_value_after_1 < total_value_after_2
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(cell_fill(color = "tomato")),
-    locations = cells_body(
-      columns = total_value_after_2,
-      rows = total_value_after_1 > total_value_after_2
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(cell_fill(color = "white")),
-    locations = cells_body(
-      columns = contains('avg_before_1'),
-      rows = (is.na(points_before_1) | played_before_1 == 0)
-    )
-  ) %>%
-  tab_style(
-    style = list(cell_fill(color = "white")),
-    locations = cells_body(
-      columns = contains('avg_before_2'),
-      rows = (is.na(points_before_2) | played_before_2 == 0)
-    )
-  ) %>%
-  
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "bottom",
-        color = "black",
-        weight = px(2)
-      )
-    ),
-    locations = list(
-      cells_body(
-        rows = which(df_trades$trade_id_1 != lead(df_trades$trade_id_1) | is.na(lead(df_trades$trade_id_1)))
-      )
-    )
-  ) %>%
-  
-  ### Names
-  cols_label(
-    'player_1' = 'Player',
-    'player_2' = 'Player',
-    'player_url_1' = '',
-    'player_url_2' = '',
-    'team_1' = 'New Team',
-    'team_2' = 'New Team',
-    'logo_1' = '',
-    'logo_2' = '',
-    'points_before_1' = 'Points',
-    'points_before_2' = 'Points',
-    'points_after_1' = 'Points',
-    'points_after_2' = 'Points',
-    'played_before_1' = 'Games',
-    'played_before_2' = 'Games',
-    'played_after_1' = 'Games',
-    'played_after_2' = 'Games',
-    'ppg_before_1' = 'PPG',
-    'ppg_before_2' = 'PPG',
-    'ppg_after_1' = 'PPG',
-    'ppg_after_2' = 'PPG',
-    'total_value_after_1' = 'Total Trade Value',
-    'total_value_after_2' = 'Total Trade Value',
-    'ppg_vs_avg_before_1' = 'Value/Matchup',
-    'ppg_vs_avg_before_2' = 'Value/Matchup',
-    'ppg_vs_avg_after_1' = 'Value/Matchup',
-    'ppg_vs_avg_after_2' = 'Value/Matchup') %>% 
-  
-  tab_header(title = 'Trade Analysis') %>%
-  tab_footnote(footnote = "Value = Points/Week vs. League Average at Position (Only includes games played)",
-               locations = cells_column_labels(columns = contains('avg'))) %>% 
-  tab_footnote(footnote = "Total value accumulated of all players in trade (points scored vs. points that league average players at position(s) would be expected to score in time since trade)",
-               locations = cells_column_labels(columns = contains('value'))) %>% 
-  tab_source_note('Includes games until player dropped/traded in first stint with new team') %>% 
-  tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', df$sp_ppg[13]))) %>% 
-  tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', df$rp_ppg[13]))) %>% 
-  tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', df$batting_ppg[13]))) %>% 
-  tab_options(column_labels.font.size = 16,
-              heading.title.font.size = 40,
-              heading.subtitle.font.size = 40,
-              heading.title.font.weight = 'bold',
-              heading.subtitle.font.weight = 'bold',
-              column_labels.font.weight = 'bold',
-              row_group.font.weight = 'bold',
-              row_group.font.size  = 22)
 ```
 
 ```{r, include = F}
-gtExtras::gtsave_extra(gt_trades , 'figures/trades.png', vwidth = 3000, selector = 'table')
-# gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
+if(nrow(df_trades) > 1) {
+  gtExtras::gtsave_extra(gt_trades , 'figures/trades.png', vwidth = 3000, selector = 'table')
+  # gtsave(gt_trades , 'figures/trades.png', vwidth = 3000)
+}
 ```
-<img src="figures/trades.png" />
+<!-- <img src="figures/trades.png" /> -->
 
 
 

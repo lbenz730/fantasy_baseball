@@ -53,7 +53,7 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
 }
 
 
-get_matchup_stats <- function(week, season = 2022) {
+get_matchup_stats <- function(week, season = 2023) {
 
   df_schedule <- read_csv(glue('data/stats/{season}/schedule_{season}.csv'))
   df_start <- read_csv('data/df_start.csv')

@@ -41,7 +41,8 @@ df_start_19 <-
          'playoffs' = matchup_id > 21)
 
 df_start <-
-  bind_rows(df_start_21_22 %>% mutate('season' = 2022),
+  bind_rows(df_start_21_22 %>% mutate('season' = 2023),
+            df_start_21_22 %>% mutate('season' = 2022),
             df_start_21_22 %>% mutate('season' = 2021),
             df_start_20 %>% mutate('season' = 2020),
             df_start_19 %>% mutate('season' = 2019))

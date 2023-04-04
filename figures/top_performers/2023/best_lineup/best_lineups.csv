@@ -1,0 +1,23 @@
+lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
+0,C,Adley Rutschman,42178,4,16,8,1
+1,1B,C.J. Cron,32155,7,28,9.333333333333334,1
+2,2B,Andres Gimenez,37729,14,13,4.333333333333333,1
+3,3B,Yandy Diaz,33481,2,14,7,1
+4,SS,Wander Franco,40929,2,16.5,8.25,1
+5,OF,Adam Duvall,32664,9,23.5,11.75,1
+5,OF,Charlie Blackmon,31084,8,18,6,1
+5,OF,Yordan Alvarez,36018,7,17.5,5.833333333333333,1
+5,OF,Kyle Tucker,34967,6,16,5.333333333333333,1
+5,OF,Cedric Mullins,35578,11,15.5,7.75,1
+6,2B/SS,Xander Bogaerts,31606,6,16,5.333333333333333,1
+7,1B/3B,Matt Olson,32767,12,16.5,8.25,1
+12,UTIL,Pete Alonso,37498,2,14.5,4.833333333333333,1
+14,SP,Gerrit Cole,32081,12,30,30,1
+14,SP,Dylan Cease,34943,14,29.5,29.5,1
+14,SP,Shohei Ohtani,39832,2,29.5,29.5,1
+14,SP,Luis Castillo,35124,12,28,28,1
+14,SP,Justin Steele,41022,8,27.5,27.5,1
+14,SP,Spencer Strider,4307825,7,27,27,1
+15,RP,Emmanuel Clase,41743,8,12,6,1
+15,RP,Jorge Lopez,33833,1,12,6,1
+15,RP,Jordan Romano,36380,5,8,8,1

@@ -4,7 +4,7 @@ library(furrr)
 
 source(here('helpers.R'))
 
-get_trades <- function(week, season_ = 2022, proposed = F) {
+get_trades <- function(week, season_ = 2023, proposed = F) {
   df_start <- 
     read_csv(here('data/df_start.csv')) %>% 
     filter(season == season_)
