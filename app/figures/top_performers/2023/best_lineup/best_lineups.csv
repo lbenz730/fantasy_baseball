@@ -1,17 +1,17 @@
 lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 0,C,Will Smith,38309,8,39,6.5,1
-1,1B,Matt Olson,32767,12,39.5,4.9375,1
+1,1B,Matt Olson,32767,12,39.5,4.388888888888889,1
 2,2B,Gleyber Torres,33804,9,37,5.285714285714286,1
-3,3B,Austin Riley,34982,6,29,3.625,1
-4,SS,Wander Franco,40929,2,38.5,5.5,1
-5,OF,Bryan Reynolds,38980,13,54,7.714285714285714,1
-5,OF,Adam Duvall,32664,9,47.5,7.916666666666667,1
-5,OF,Ronald Acuna Jr.,36185,1,39,4.875,1
+3,3B,Austin Riley,34982,6,29,3.2222222222222223,1
+4,SS,Wander Franco,40929,2,38.5,4.8125,1
+5,OF,Bryan Reynolds,38980,13,54,6.75,1
+5,OF,Adam Duvall,32664,9,47.5,6.785714285714286,1
+5,OF,Yordan Alvarez,36018,7,41,5.125,1
+5,OF,Ronald Acuna Jr.,36185,1,39,4.333333333333333,1
 5,OF,Kyle Tucker,34967,6,37,4.111111111111111,1
-5,OF,Luis Robert Jr.,39631,12,37,4.625,1
 6,2B/SS,Xander Bogaerts,31606,6,36.5,4.5625,1
-7,1B/3B,Pete Alonso,37498,2,35.5,4.4375,1
-12,UTIL,Vladimir Guerrero Jr.,35002,13,35.5,4.4375,1
+7,1B/3B,Pete Alonso,37498,2,35.5,3.9444444444444446,1
+12,UTIL,Luis Robert Jr.,39631,12,37,4.111111111111111,1
 14,SP,Gerrit Cole,32081,12,56.5,28.25,1
 14,SP,Shohei Ohtani,39832,2,52,26,1
 14,SP,Sandy Alcantara,35241,9,51.5,25.75,1

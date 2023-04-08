@@ -83,8 +83,10 @@ pitch_stats <-
 
 df_trades <- read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv'))
 if(nrow(df_trades) > 0) {
-  traded_players <- read_csv('data/stats/2022/traded_players_{params$season}.csv') 
+  traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
 }
+
+trans_log <- read_csv(glue('data/stats/{params$season}/transaction_log_{params$season}.csv'))
 
 
 distributions <- 
@@ -271,25 +273,15 @@ plot_k_avg <- function(k) {
 }
 
 ### Trades
-if(nrow(df_trades) > 1) {
-  scale_factors <- 
-    df_daily %>% 
-    filter(in_lineup) %>% 
-    filter(matchup_id < params$matchup_id) %>% 
-    group_by(team_id, matchup_id) %>% 
-    summarise('n_bat' = sum(played),
-              'n_rp' = sum(relief & !start)) %>% 
-    inner_join(df_start) %>% 
-    mutate('n_rp' = n_rp/duration * 7,
-           'n_bat' = n_bat/duration * 7) %>% 
-    ungroup() %>% 
-    summarise('n_sp' = 8/6,
-              'n_rp' = mean(n_rp)/3,
-              'n_bat' = mean(n_bat)/13)
-  
+if(nrow(df_trades) > 0) {
   traded_players <- 
     trans_log %>%
     filter(transaction_type == 'Trade')
+} else {
+  traded_players <- df_trades
+}
+
+if(nrow(traded_players) > 0) {
   trade_stats <- NULL
   
   for(i in 1:nrow(traded_players)) {
@@ -309,9 +301,9 @@ if(nrow(df_trades) > 1) {
                 'sp' = sum(start),
                 'rp' = sum(relief)) %>% 
       mutate('ppg' = points/played) %>% 
-      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
-                                      rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
-                                      sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
+      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat,
+                                      rp > 0 & sp == 0 ~ (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp,
+                                      sp > 0 ~ (ppg - exp_standings$sp_ppg[13]) * scale_factors$n_sp)) %>% 
       select(points, played, ppg, ppg_vs_avg)
     names(tmp_before) <- paste0(names(tmp_before), '_before')
     
@@ -329,13 +321,13 @@ if(nrow(df_trades) > 1) {
                 'rp' = sum(relief),
                 'n_days' = n()) %>% 
       mutate('ppg' =  points/played) %>% 
-      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - df$batting_ppg[13]) * scale_factors$n_bat,
-                                      rp > 0 & sp == 0 ~ (ppg - df$rp_ppg[13]) * scale_factors$n_rp,
-                                      sp > 0 ~ (ppg - df$sp_ppg[13]) * scale_factors$n_sp)) %>% 
+      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat,
+                                      rp > 0 & sp == 0 ~ (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp,
+                                      sp > 0 ~ (ppg - exp_standings$sp_ppg[13]) * scale_factors$n_sp)) %>% 
       mutate('total_value' = points - n_days/7 * 
-               case_when(rp == 0 & sp == 0 & pitcher == 0 ~ df$batting_ppg[13] * scale_factors$n_bat,
-                         rp > 0 & sp == 0 ~ df$rp_ppg[13] * scale_factors$n_rp,
-                         sp > 0 | pitcher > 0 ~ df$sp_ppg[13] *scale_factors$n_sp)
+               case_when(rp == 0 & sp == 0 & pitcher == 0 ~ exp_standings$batting_ppg[13] * scale_factors$n_bat,
+                         rp > 0 & sp == 0 ~ exp_standings$rp_ppg[13] * scale_factors$n_rp,
+                         sp > 0 | pitcher > 0 ~ exp_standings$sp_ppg[13] *scale_factors$n_sp)
       ) %>% 
       select(points, played, ppg, ppg_vs_avg, total_value)
     names(tmp_after) <- paste0(names(tmp_after), '_after')
@@ -641,7 +633,7 @@ if(nrow(df_trades) > 1) {
                 row_group.font.size  = 22)
 } else {
   gt_trades <-
-    gt(df_trades) %>% 
+    gt(df_trades %>%dplyr::slice(0)) %>% 
     cols_label('team_id' = '',
                'scoring_period_id' = '',
                'matchup_id' = '') %>% 
@@ -665,8 +657,8 @@ if(nrow(df_trades) > 1) {
   
 }
 
-### Free Agents
-trans_log <- read_csv(glue('data/stats/{params$season}/transaction_log_{params$season}.csv'))
+
+
 
 threshold <- pmin(20, period/2)
 threshold_p <- pmin(5, period/5)

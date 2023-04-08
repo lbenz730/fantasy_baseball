@@ -28,7 +28,7 @@ get_trans_log <- function(season, trades = T) {
     group_by(player, player_id) %>% 
     arrange(start)
   
-  if(trades) {
+  if(nrow(df_trades) > 0) {
     trans_log <- 
       trans_log %>% 
       left_join(df_trades, by = c('player_id', 'player', 'start' = 'scoring_period_id', 'team_id' = 'team_to')) %>% 

@@ -1,8 +1,8 @@
 matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitching_points,away_team_id,away_total_points,away_batting_points,away_pitching_points,home_team,away_team
-1,1,5,301.5,195.5,106,12,493,300,193,The Traveling Secretaries,Blasphemous Hot Takes
-1,2,8,375.5,250,125.5,7,432,247.5,184.5,Mt. Everest Taquito Farmers,Cron's Disease
-1,3,13,340,253.5,86.5,11,392,223.5,168.5,Ketel of Fish,The West Bank Occupiers
-1,4,4,311,203.5,107.5,6,335.5,240,95.5,All That is Wright,The Novaks
+1,1,5,301.5,194.5,107,12,493,300,193,The Traveling Secretaries,Blasphemous Hot Takes
+1,2,8,375.5,250,125.5,7,432,256.5,175.5,Mt. Everest Taquito Farmers,Cron's Disease
+1,3,13,340,257.5,82.5,11,392,223.5,168.5,Ketel of Fish,The West Bank Occupiers
+1,4,4,311,204.5,106.5,6,335.5,238.5,97,All That is Wright,The Novaks
 1,5,2,472,250.5,221.5,1,357,236,121,Framber Valdez Oil Spill,Yosemite Yeshivas
 1,6,14,399.5,219.5,180,9,527,267,260,Freedom of the Pressly,Don Julios
 2,7,12,NA,NA,NA,7,NA,NA,NA,Blasphemous Hot Takes,Cron's Disease

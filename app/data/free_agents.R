@@ -3,7 +3,7 @@ library(here)
 library(furrr)
 library(glue)
 source(here('helpers.R'))
-plan(multiprocess(workers = parallel::detectCores() - 1))
+plan(multiprocess(workers = min(parallel::detectCores(), 12)))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
 get_trans_log <- function(season, trades = T) {
@@ -17,16 +17,18 @@ get_trans_log <- function(season, trades = T) {
     group_by(player, player_id) %>% 
     mutate('rostered_prev' = lag(scoring_period_id, 1) == scoring_period_id - 1) %>% 
     mutate('rostered_prev' = ifelse(is.na(rostered_prev), scoring_period_id == 1, rostered_prev)) %>% 
-    mutate('free_agent_add' = !rostered_prev) %>% 
+    mutate('free_agent_add' = !rostered_prev,
+           'rp_eligible' = grepl('15', eligible_slots)) %>% 
     mutate('stint' = cumsum(free_agent_add)) %>% 
     group_by(player, player_id, team_id, stint) %>% 
     summarise('start' = min(scoring_period_id),
-              'end' = max(scoring_period_id)) %>% 
+              'end' = max(scoring_period_id),
+              'rp_eligible' = rp_eligible[scoring_period_id == min(scoring_period_id)]) %>% 
     ungroup() %>% 
     group_by(player, player_id) %>% 
     arrange(start)
   
-  if(trades) {
+  if(nrow(df_trades) > 0) {
     trans_log <- 
       trans_log %>% 
       left_join(df_trades, by = c('player_id', 'player', 'start' = 'scoring_period_id', 'team_id' = 'team_to')) %>% 

@@ -299,7 +299,7 @@ shinyServer(function(input, output, session) {
         locations = cells_column_spanners(spanners = "Points Per Matchup")
       ) %>%
       tab_footnote(
-        footnote = "100,000 simulations of remainder of season",
+        footnote = "10,000 simulations of remainder of season",
         locations = cells_column_spanners(spanners = "Season Simulations")
       )
     
@@ -846,7 +846,7 @@ shinyServer(function(input, output, session) {
       labs(x = "# of Wins",
            y = "Team",
            title = "Distribution of Wins",
-           subtitle = 'Across 100,000 Season Simulation') +
+           subtitle = 'Across 10,000 Season Simulation') +
       theme(legend.position = "none",
             axis.text = element_text(size = 12))
 
