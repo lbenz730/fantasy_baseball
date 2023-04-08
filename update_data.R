@@ -9,7 +9,7 @@ library(patchwork)
 library(truncnorm)
 library(fs)
 
-plan(multiprocess(workers = 12))
+plan(multisession(workers = min(parallel::detectCores(), 12)))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
 source('helpers.R')
@@ -22,7 +22,7 @@ source('figures/all_star_teams.R')
 params <- 
   list('season' = 2023,
        'opening_day' = as.Date('2023-03-30'),
-       'nsims' = 100000)
+       'nsims' = 10000)
 
 period <- as.numeric(Sys.Date() - params$opening_day) + 1
 
@@ -599,3 +599,5 @@ write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
 
 dir_copy('data/', 'app/data', overwrite = T)
 dir_copy('figures/', 'app/figures', overwrite = T)
+dir_copy('models/', 'app/models', overwrite = T)
+file.remove('app/data/raw_sims.csv')

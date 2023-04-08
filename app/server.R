@@ -840,29 +840,29 @@ shinyServer(function(input, output, session) {
   })
   
   output$win_dist <- renderPlot({
-    ggplot(distributions, aes(x = wins, y = fct_reorder(team, mean_wins), fill = team)) + 
+    ggplot(distributions, aes(x = wins, y = fct_reorder(team, mean_wins), fill = team)) +
       geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) +
       scale_x_continuous(breaks = 0:20) +
-      labs(x = "# of Wins", 
+      labs(x = "# of Wins",
            y = "Team",
            title = "Distribution of Wins",
            subtitle = 'Across 100,000 Season Simulation') +
       theme(legend.position = "none",
             axis.text = element_text(size = 12))
-    
+
   })
-  
+
   output$points_dist <- renderPlot({
-    
-    ggplot(distributions, aes(x = points, y = fct_reorder(team, mean_pts), fill = team)) + 
-      geom_density_ridges(scale = 0.9, quantiles = 2, quantile_lines = T) + 
-      labs(x = "# of Points", 
+
+    ggplot(distributions, aes(x = points, y = fct_reorder(team, mean_pts), fill = team)) +
+      geom_density_ridges(scale = 0.9, quantiles = 2, quantile_lines = T) +
+      labs(x = "# of Points",
            y = "Team",
            title = "Distribution of Points",
            subtitle = 'Across 100,000 Season Simulation') +
       theme(legend.position = "none",
             axis.text = element_text(size = 12))
-    
+
   })
   
   

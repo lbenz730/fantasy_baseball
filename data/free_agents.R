@@ -3,7 +3,7 @@ library(here)
 library(furrr)
 library(glue)
 source(here('helpers.R'))
-plan(multiprocess(workers = parallel::detectCores() - 1))
+plan(multiprocess(workers = min(parallel::detectCores(), 12)))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
 get_trans_log <- function(season, trades = T) {
