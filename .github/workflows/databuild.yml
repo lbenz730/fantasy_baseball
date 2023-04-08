@@ -23,7 +23,7 @@ jobs:
       - name: execute
         run: >
           docker run 
-          -e SHINY_ACC_NAME=${{ secrets.NAME}} 
+          -e NAME=${{ secrets.NAME}} 
           -e TOKEN=${{secrets.TOKEN}} 
           -e SECRET=${{secrets.SECRET}} 
           main          
