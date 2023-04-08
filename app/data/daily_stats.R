@@ -31,7 +31,17 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)),
                'qs' = as.logical(sum(.x$stats$`63`, na.rm = T)),
                'save' = as.logical(sum(.x$stats$`57`, na.rm = T)),
-               'home_runs' = sum(.x$stats$`5`, na.rm = T))
+               'home_runs' = sum(.x$stats$`5`, na.rm = T),
+               'blue_balls' = as.logical(sum(.x$stats$`34` == 17 & .x$stats$`45` <= 3)),
+               'hr_allowed' = sum(.x$stats$`46`),
+               'p_walks' = sum(.x$stats$`39`),
+               'p_ibb' = sum(.x$stats$`40`),
+               'p_hbp' = sum(.x$stats$`42`),
+               'p_outs' = sum(.x$stats$`34`),
+               'p_er' = sum(.x$stats$`45`),
+               'p_k' = sum(.x$stats$`48`),
+               'p_cg' = sum(.x$stats$`62`)
+        )
       } else {
         tibble('points' = 0,
                'played' = 0,
@@ -40,14 +50,23 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'relief_start' = F,
                'qs' = F,
                'save' = F,
-               'home_runs' = 0)
-
+               'home_runs' = 0,
+               'hr_allowed' = 0,
+               'blue_balls' = F,  
+               'p_walks' = 0,
+               'p_ibb' = 0,
+               'p_hbp' = 0,
+               'p_outs' = 0,
+               'p_er' = 0,
+               'p_k' = 0,
+               'p_cg' = 0)
+        
       } }) %>%
     mutate('player' = y$entries[[index]]$playerPoolEntry$player$fullName,
            'player_id' = y$entries[[index]]$playerPoolEntry$player$id) %>%
     mutate('team_id' = ifelse(team == 'home', df_schedule$home_team_id[index], df_schedule$away_team_id[index])) %>%
     mutate('game_id' = index)
-
+  
   return(df)
 
 }

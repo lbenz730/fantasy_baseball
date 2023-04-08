@@ -21,7 +21,8 @@ source('figures/all_star_teams.R')
 
 params <- 
   list('season' = 2023,
-       'opening_day' = as.Date('2023-03-30'))
+       'opening_day' = as.Date('2023-03-30'),
+       'nsims' = 100000)
 
 period <- as.numeric(Sys.Date() - params$opening_day) + 1
 
@@ -153,6 +154,32 @@ if(params$matchup_id == 1) {
 
 
 df_daily <- read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
+
+### Advanced pitching stats
+pitch_stats <- 
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(pitcher) %>% 
+  group_by(team_id) %>% 
+  summarise('qs' = sum(qs),
+            'k' = sum(p_k),
+            'bb' = sum(p_walks + p_ibb),
+            'outs' = sum(p_outs),
+            'earned_runs' = sum(p_er),
+            'hr_allowed' = sum(hr_allowed),
+            'hpb' = sum(p_hbp),
+            'blue_balls' = sum(blue_balls)) %>% 
+  mutate('era' = earned_runs/outs * 27,
+         'k9' = k/outs * 27,
+         'bb9' = bb/outs * 27,
+         'k_per_bb' = k/bb,
+         'hr9' = hr_allowed/outs * 27,
+         'fip' = (13 * hr_allowed + 3 * (bb + hpb) - 2 * k)/(outs/3),
+         'fip_constant' = weighted.mean(era, outs/3) - (13 * sum(hr_allowed) + 3 * sum(bb + hpb) - 2 * sum(k))/(sum(outs)/3)) %>% 
+  mutate('fip' = fip + fip_constant)
+
+write_csv(pitch_stats, glue('data/stats/{params$season}/pitch_stats.csv'))
+
 
 ### Penalties for Relief Starts
 relief_starts <- 
@@ -419,6 +446,7 @@ league_avg <-
 
 exp_standings <- bind_rows(exp_standings, league_avg)
 write_csv(exp_standings, glue('data/stats/{params$season}/exp_standings.csv'))
+write_csv(team_points, glue('data/stats/{params$season}/team_points.csv'))
 
 ### WP for Current Week 
 df_wp <- 
@@ -459,11 +487,8 @@ if(params$matchup_id > 1) {
 names(team_mus) <- sort(unique(team_points$team))
 names(team_sigmas) <- sort(unique(team_points$team))
 
-if(params$midweek) {
-  na_ix <- is.na(schedule$home_total_points)
-} else {
-  na_ix <- schedule$matchup_id > params$matchup_id 
-}
+na_ix <- schedule$matchup_id > params$matchup_id 
+
 
 
 df_sims <- future_map_dfr(1:params$nsims, sim_season)
@@ -501,6 +526,7 @@ x <-
   summarise('wins' = sum(total_points > total_points_opp),
             'points' = sum(total_points)) %>% 
   ungroup() 
+write_csv(x, 'data/playoff_odds/distributions.csv')
 
 x <- 
   group_by(x, sim_id) %>% 
@@ -549,5 +575,27 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
   bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
+### Best Line-up
+best_lineup(params$season, params$matchup_id, save = F)
 
-dir_copy('data/', 'app/data')
+### Transaction Log
+trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
+
+### RP Penalties
+df_rp_penalty <- 
+  trans_log %>% 
+  inner_join(teams %>% select(team, team_id, logo)) %>% 
+  filter(transaction_type == 'Free Agent') %>%
+  mutate('matchup_id' = map_dbl(start, ~min(df_start$matchup_id[df_start$end_period >= .x]))) %>% 
+  group_by(team, matchup_id) %>% 
+  filter(rp_eligible) %>% 
+  mutate('rp_add' = cumsum(rp_eligible)) %>% 
+  summarise('n_rp' = sum(rp_eligible),
+            'penalty' = sum(n_points[rp_add > 2])) %>% 
+  ungroup() %>% 
+  filter(penalty > 0)
+
+write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
+
+dir_copy('data/', 'app/data', overwrite = T)
+dir_copy('figures/', 'app/figures', overwrite = T)

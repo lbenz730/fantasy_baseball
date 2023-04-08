@@ -6,9 +6,11 @@ source(here('helpers.R'))
 plan(multiprocess(workers = parallel::detectCores() - 1))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
-get_trans_log <- function(season) {
+get_trans_log <- function(season, trades = T) {
   df_daily <- read_csv(glue('data/stats/{season}/daily_stats_{season}.csv'))
-  df_trades <- read_csv(glue('data/stats/{season}/traded_players_{season}.csv'))
+  if(trades) {
+    df_trades <- read_csv(glue('data/stats/{season}/traded_players_{season}.csv'))
+  }
   
   trans_log <- 
     df_daily %>% 
@@ -22,12 +24,24 @@ get_trans_log <- function(season) {
               'end' = max(scoring_period_id)) %>% 
     ungroup() %>% 
     group_by(player, player_id) %>% 
-    arrange(start) %>% 
-    left_join(df_trades, by = c('player_id', 'player', 'start' = 'scoring_period_id', 'team_id' = 'team_to')) %>% 
-    mutate('transaction_type' = case_when(stint == 0 & start == 1 ~ 'Draft',
-                                          !is.na(trade_id) ~ 'Trade',
-                                          T ~ 'Free Agent')) %>% 
-    ungroup() %>% 
+    arrange(start)
+  
+  if(trades) {
+    trans_log <- 
+      trans_log %>% 
+      left_join(df_trades, by = c('player_id', 'player', 'start' = 'scoring_period_id', 'team_id' = 'team_to')) %>% 
+      mutate('transaction_type' = case_when(stint == 0 & start == 1 ~ 'Draft',
+                                            !is.na(trade_id) ~ 'Trade',
+                                            T ~ 'Free Agent')) %>% 
+      ungroup()
+  } else {
+    trans_log <- 
+      trans_log %>% 
+      mutate('transaction_type' = case_when(stint == 0 & start == 1 ~ 'Draft',
+                                            T ~ 'Free Agent'))
+  }
+  trans_log <- 
+    trans_log %>% 
     mutate('nest_df' = 
              future_pmap(.l = list(player_id, start, end), ~{
                df_daily %>% 
