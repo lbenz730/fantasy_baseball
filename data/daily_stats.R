@@ -6,7 +6,7 @@ library(furrr)
 library(glue)
 library(lubridate)
 library(here)
-plan(multiprocess(workers = parallel::detectCores() - 1))
+plan(multisession(workers = parallel::detectCores() - 1))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 source(here('helpers.R'))
 
