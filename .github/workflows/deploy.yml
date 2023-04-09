@@ -2,7 +2,7 @@ name: Deploy
 # Controls when the action will run. 
 on:
   schedule:
-    - cron: "0 17 45 * *"
+    - cron: "0 19 45 * *"
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
