@@ -194,65 +194,65 @@ shinyServer(function(input, output, session) {
       ) %>%
       
       ### Check
-      text_transform(
-        locations = cells_body(
-          columns = c(playoffs),
-          rows = playoffs == 1
-        ),
-        fn = function(x) {
-          emo::ji('check')
-        }
-      ) %>%
-      
-      text_transform(
-        locations = cells_body(
-          columns = c(playoffs),
-          rows = playoffs == 0
-        ),
-        fn = function(x) {
-          emo::ji('x')
-        }
-      ) %>%
-      
-      text_transform(
-        locations = cells_body(
-          columns = c(last_place),
-          rows = last_place == 0
-        ),
-        fn = function(x) {
-          emo::ji('x')
-        }
-      ) %>%
-      
-      text_transform(
-        locations = cells_body(
-          columns = c(last_place),
-          rows = last_place == 1
-        ),
-        fn = function(x) {
-          emo::ji('check')
-        }
-      ) %>%
-      
-      text_transform(
-        locations = cells_body(
-          columns = c(champ),
-          rows = champ == 0
-        ),
-        fn = function(x) {
-          emo::ji('x')
-        }
-      ) %>%
-      
-      text_transform(
-        locations = cells_body(
-          columns = c(champ),
-          rows = champ == 1
-        ),
-        fn = function(x) {
-          emo::ji('check')
-        }
-      ) %>%
+      # text_transform(
+      #   locations = cells_body(
+      #     columns = c(playoffs),
+      #     rows = playoffs == 1
+      #   ),
+      #   fn = function(x) {
+      #     emo::ji('check')
+      #   }
+      # ) %>%
+      # 
+      # text_transform(
+      #   locations = cells_body(
+      #     columns = c(playoffs),
+      #     rows = playoffs == 0
+      #   ),
+      #   fn = function(x) {
+      #     emo::ji('x')
+      #   }
+      # ) %>%
+      # 
+      # text_transform(
+      #   locations = cells_body(
+      #     columns = c(last_place),
+      #     rows = last_place == 0
+      #   ),
+      #   fn = function(x) {
+      #     emo::ji('x')
+      #   }
+      # ) %>%
+      # 
+      # text_transform(
+      #   locations = cells_body(
+      #     columns = c(last_place),
+      #     rows = last_place == 1
+      #   ),
+      #   fn = function(x) {
+      #     emo::ji('check')
+      #   }
+      # ) %>%
+      # 
+      # text_transform(
+      #   locations = cells_body(
+      #     columns = c(champ),
+      #     rows = champ == 0
+      #   ),
+      #   fn = function(x) {
+      #     emo::ji('x')
+      #   }
+      # ) %>%
+      # 
+      # text_transform(
+      #   locations = cells_body(
+      #     columns = c(champ),
+      #     rows = champ == 1
+      #   ),
+      #   fn = function(x) {
+      #     emo::ji('check')
+      #   }
+      # ) %>%
       
       ### Names
       cols_label(

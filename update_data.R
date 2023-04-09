@@ -593,7 +593,7 @@ df_rp_penalty <-
   summarise('n_rp' = sum(rp_eligible),
             'penalty' = sum(n_points[rp_add > 2])) %>% 
   ungroup() %>% 
-  filter(penalty > 0)
+  filter(penalty != 0)
 
 write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
 
