@@ -11,7 +11,6 @@ on:
       - uses: r-lib/actions/setup-r@v3
         with:
           use-public-rspm: true
-          
       - name: Install dependencies
         run: |
           install.packages(c('jsonlite', 'tidyverse', 'gt', 'furrr', 'glue', 'lubridate', 'patchwork', 'truncnorm', 'fs', 'ggimage', 'xgboost', 'tidymodels', 'plyr', 'ggsci', 'scales'))
