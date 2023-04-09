@@ -1,7 +1,7 @@
 name: Databuild
 on:
   schedule:
-    - cron: "0 19 31 * *"
+    - cron: "35 19 * * *"
   workflow_dispatch:
     
 jobs:
