@@ -1,0 +1,23 @@
+name: Update data
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-r@v3
+        with:
+          use-public-rspm: true
+          
+      - name: Install dependencies
+        run: |
+          install.packages(c('jsonlite', 'tidyverse', 'gt', 'furrr', 'glue', 'lubridate', 'patchwork', 'truncnorm', 'fs', 'ggimage', 'xgboost', 'tidymodels', 'plyr', 'ggsci', 'scales'))
+        shell: Rscript {0}
+        
+        - name: Update data
+        run: |
+          source("update_data.R")
+        shell: Rscript {0}
