@@ -1,4 +1,4 @@
-name: Update data
+name: Databuild
 on:
   schedule:
     - cron: "0 6 * * *"
@@ -14,7 +14,7 @@ jobs:
           use-public-rspm: true
       - name: Install dependencies
         run: |
-          install.packages(c('here', 'jsonlite', 'tidyverse', 'gt', 'furrr', 'glue', 'lubridate', 'patchwork', 'truncnorm', 'fs', 'ggimage', 'xgboost', 'tidymodels', 'plyr', 'ggsci', 'scales'))
+          install.packages(c('here', 'jsonlite', 'tidyverse', 'gt', 'furrr', 'glue', 'lubridate', 'patchwork', 'truncnorm', 'fs', 'xgboost', 'tidymodels', 'plyr', 'ggsci', 'scales'))
         shell: Rscript {0}
       - name: Update data
         run: |
