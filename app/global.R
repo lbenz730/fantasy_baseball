@@ -44,7 +44,9 @@ params <-
   list('season' = 2023,
        'opening_day' = as.Date('2023-03-30'))
 
-period <- as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST"), 1, 10)) - params$opening_day) + 1
+period <- as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1
+print(period)
+
 
 df_start <- 
   read_csv('data/df_start.csv') %>% 
