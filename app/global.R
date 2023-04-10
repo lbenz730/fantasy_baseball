@@ -123,7 +123,7 @@ df_points <-
 scale_factors <- 
   df_daily %>% 
   filter(in_lineup) %>% 
-  filter(matchup_id <= params$current_matchup) %>% 
+  filter(matchup_id < params$current_matchup) %>% 
   group_by(team_id, matchup_id) %>% 
   summarise('n_bat' = sum(played),
             'n_rp' = sum(relief & !start)) %>% 
@@ -445,7 +445,7 @@ if(nrow(traded_players) > 0) {
     
     ### Logos
     text_transform(
-      locations = cells_body(columns = contains(c('logo_1', 'player_url_1')),
+      locations = cells_body(columns = contains(c('player_url_1')),
                              rows = (!is.na(logo_1) & !is.na(player_url_1))),
       fn = function(x) {
         web_image(
@@ -455,7 +455,7 @@ if(nrow(traded_players) > 0) {
       }
     ) %>% 
     text_transform(
-      locations = cells_body(columns = contains(c('logo_2', 'player_url_2')),
+      locations = cells_body(columns = contains(c('player_url_2')),
                              rows = (!is.na(logo_2) & !is.na(player_url_2))),
       fn = function(x) {
         web_image(
@@ -464,6 +464,28 @@ if(nrow(traded_players) > 0) {
         )
       }
     ) %>% 
+    
+    text_transform(
+      locations = cells_body(columns = contains(c('logo_2')),
+                             rows = (!is.na(logo_2) & !is.na(player_url_2))),
+      fn = function(x) {
+        local_image(
+          filename = x,
+          height = 50
+        )
+      }
+    ) %>% 
+    
+    text_transform(
+      locations = cells_body(columns = contains(c('logo_1')),
+                             rows = (!is.na(logo_1) & !is.na(player_url_1))),
+      fn = function(x) {
+        local_image(
+          filename = x,
+          height = 50
+        )
+      }
+    ) %>%
     
     tab_style(
       style = list(

@@ -382,23 +382,25 @@ best_lineup <- function(season = 2023, week, save = T) {
            'points' = NA,
            'ppg' = NA)
   
-  for(pos_id in df_constraints$lineup_id) {
-    if(pos_id < 14) {
-      df_stat <- 
-        df_bat %>% 
-        filter(map_lgl(eligible_slots, ~{pos_id %in% .x})) 
-    } else if(pos_id == 14) {
-      df_stat <- df_sp 
-    } else {
-      df_stat <- df_rp
+  if(!all(df_bat$n_games == 0)) {
+    for(pos_id in df_constraints$lineup_id) {
+      if(pos_id < 14) {
+        df_stat <- 
+          df_bat %>% 
+          filter(map_lgl(eligible_slots, ~{pos_id %in% .x})) 
+      } else if(pos_id == 14) {
+        df_stat <- df_sp 
+      } else {
+        df_stat <- df_rp
+      }
+      
+      df_best[df_best$lineup_id == pos_id, setdiff(names(df_best), c('lineup_id', 'position', 'asg_team'))] <- 
+        df_stat %>% 
+        filter(!player_id %in% c(df_best$player_id)) %>% 
+        arrange(-n_points) %>% 
+        head(df_constraints$quantity[df_constraints$lineup_id == pos_id]) %>% 
+        select(player, player_id, team_id, 'points' = n_points, ppg)
     }
-    
-    df_best[df_best$lineup_id == pos_id, setdiff(names(df_best), c('lineup_id', 'position', 'asg_team'))] <- 
-      df_stat %>% 
-      filter(!player_id %in% c(df_best$player_id)) %>% 
-      arrange(-n_points) %>% 
-      head(df_constraints$quantity[df_constraints$lineup_id == pos_id]) %>% 
-      select(player, player_id, team_id, 'points' = n_points, ppg)
   }
   
   file_ <- glue('figures/top_performers/{season}/best_lineup/best_lineups.csv')
@@ -427,90 +429,90 @@ best_lineup <- function(season = 2023, week, save = T) {
     arrange(lineup_id)  %>% 
     select(position, player, player_url, team, logo, points, ppg)
   
-  
-  gt_best <- 
-    gt(df_best) %>%
-    
-    ### Align Columns
-    cols_align(align = "center", columns = everything()) %>%
-    
-    fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
-    fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-    
-    
-    
-    ### Borders
-    tab_style(
-      style = list(
-        cell_borders(
-          sides = "bottom",
-          color = "black",
-          weight = px(3)
-        )
-      ),
-      locations = list(
-        cells_column_labels(
-          columns = gt::everything()
-        )
-      )
-    ) %>%
-    
-    ### Logos
-    text_transform(
-      locations = cells_body(contains(c('logo', 'player_url'))),
-      fn = function(x) {
-        web_image(
-          url = x,
-          height = 50
-        )
-      }
-    ) %>%
-    
-    tab_style(
-      style = list(
-        cell_borders(
-          sides = "bottom",
-          color = "black",
-          weight = px(3)
-        )
-      ),
-      locations = list(
-        cells_body(
-          rows = c(13, 19)
-        )
-      )
-    ) %>%
-    
-    
-    
-    ### Names
-    cols_label(
-      'position' = 'Position',
-      'player' = 'Player',
-      'player_url' = '', 
-      'team' = 'Team',
-      'logo' = '',
-      'points' = 'Points',
-      'ppg' = 'PPG'
-      
-    ) %>%
-    tab_header(
-      title = md('**Lineup of the Week**'),
-      subtitle = md(glue('**Week: {week}**'))
-    ) %>%
-    tab_options(column_labels.font.size = 20,
-                heading.title.font.size = 40,
-                heading.subtitle.font.size = 40,
-                heading.title.font.weight = 'bold',
-                heading.subtitle.font.weight = 'bold',
-                column_labels.font.weight = 'bold'
-                
-    ) %>% 
-    tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
-    tab_footnote(footnote = "Only includes games players in starting fantasy lineup") %>% 
-    tab_footnote(footnote = 'Numbers in parenthesis indicate # of times a player was in best lineup')
-  
   if(save) {
+    gt_best <- 
+      gt(df_best) %>%
+      
+      ### Align Columns
+      cols_align(align = "center", columns = everything()) %>%
+      
+      fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+      fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+      
+      
+      
+      ### Borders
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_column_labels(
+            columns = gt::everything()
+          )
+        )
+      ) %>%
+      
+      ### Logos
+      text_transform(
+        locations = cells_body(contains(c('logo', 'player_url'))),
+        fn = function(x) {
+          web_image(
+            url = x,
+            height = 50
+          )
+        }
+      ) %>%
+      
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_body(
+            rows = c(13, 19)
+          )
+        )
+      ) %>%
+      
+      
+      
+      ### Names
+      cols_label(
+        'position' = 'Position',
+        'player' = 'Player',
+        'player_url' = '', 
+        'team' = 'Team',
+        'logo' = '',
+        'points' = 'Points',
+        'ppg' = 'PPG'
+        
+      ) %>%
+      tab_header(
+        title = md('**Lineup of the Week**'),
+        subtitle = md(glue('**Week: {week}**'))
+      ) %>%
+      tab_options(column_labels.font.size = 20,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold'
+                  
+      ) %>% 
+      tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
+      tab_footnote(footnote = "Only includes games players in starting fantasy lineup") %>% 
+      tab_footnote(footnote = 'Numbers in parenthesis indicate # of times a player was in best lineup')
+    
+    
     gtExtras::gtsave_extra(gt_best , glue('figures/top_performers/{season}/best_lineup/week_{week}.png'), vwidth = 3000, selector = 'table')
     gtExtras::gtsave_extra(gt_best , glue('figures/best_lineup.png'), vwidth = 3000, selector = 'table')
   }

@@ -55,7 +55,7 @@ get_trade_players <- function(df_trades) {
                  scoring_period_id <= scoring_period_accept + 2) %>% 
           select(player, player_id, team_id, scoring_period_id)  %>% 
           group_by(player, player_id) %>% 
-          summarise('n_app' = n(),
+          reframe('n_app' = n(),
                     'n_team' = n_distinct(team_id),
                     'team_from' = first(team_id),
                     'team_to' = last(team_id), 

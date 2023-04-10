@@ -577,7 +577,7 @@ shinyServer(function(input, output, session) {
       filter(matchup_id == input$matchup_id) %>% 
       mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
       mutate('lineup_id' = ifelse(lineup_id == 5, 11, lineup_id)) %>% 
-      mutate('n_times' = map_dbl(player_id, ~sum(.x == df_log$player_id))) %>% 
+      mutate('n_times' = map_dbl(player_id, ~sum(.x == df_log$player_id, na.rm = T))) %>% 
       mutate('player' = paste0(player, ' (', n_times, ')')) %>% 
       inner_join(select(teams, team, team_id, logo)) %>% 
       arrange(lineup_id)  %>% 
@@ -598,9 +598,9 @@ shinyServer(function(input, output, session) {
       tab_spanner(label = 'Relief Pitching', columns = contains('_rp')) %>%
       tab_spanner(label = 'Starting Pitching', columns = contains('_sp')) %>%
       tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
-      sub_missing(columns = everything(), missing_text = "---") %>%
+      sub_missing(columns = everything(), missing_text = "---") %>% 
       
-      
+
       
       ### Borders
       tab_style(
@@ -616,7 +616,7 @@ shinyServer(function(input, output, session) {
             columns = gt::everything()
           )
         )
-      ) %>%
+      )  %>% 
       
       ### Logos
       text_transform(
@@ -713,6 +713,8 @@ shinyServer(function(input, output, session) {
   
   output$best_lineup <- render_gt({
     
+    if(nrow(df_best()) > 0) {
+    
     gt_best <- 
       gt(df_best()) %>%
       
@@ -804,6 +806,41 @@ shinyServer(function(input, output, session) {
       tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
       tab_footnote(footnote = "Only includes games players in starting fantasy lineup") %>% 
       tab_footnote(footnote = 'Numbers in parenthesis indicate # of times a player was in best lineup')
+    } else {
+      gt_best <- 
+        gt(df_best()) %>%
+        
+        ### Align Columns
+        cols_align(align = "center", columns = everything()) %>%
+        
+        ### Names
+        cols_label(
+          'position' = 'Position',
+          'player' = 'Player',
+          'player_url' = '', 
+          'team' = 'Team',
+          'logo' = '',
+          'points' = 'Points',
+          'ppg' = 'PPG'
+          
+        ) %>%
+        tab_header(
+          title = md('**Lineup of the Week**'),
+          subtitle = md(glue('**Week: {week()}**'))
+        ) %>%
+        tab_options(column_labels.font.size = 20,
+                    heading.title.font.size = 40,
+                    heading.subtitle.font.size = 40,
+                    heading.title.font.weight = 'bold',
+                    heading.subtitle.font.weight = 'bold',
+                    column_labels.font.weight = 'bold'
+                    
+        ) %>% 
+        tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
+        tab_footnote(footnote = "Only includes games players in starting fantasy lineup") %>% 
+        tab_footnote(footnote = 'Numbers in parenthesis indicate # of times a player was in best lineup')
+      
+    }
     
     gt_best
   })
@@ -872,9 +909,9 @@ shinyServer(function(input, output, session) {
   df_wp <- eventReactive(input$matchup_id_wp, {
     
     plot_wp(season = params$season, 
-            week = 1,
+            week = input$matchup_id_wp,
             plot = F,
-            all = wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12 | input$matchup_id_wp < params$current_matchup) %>% 
+            all =  hour(Sys.Date()) > 17 | input$matchup_id_wp < params$current_matchup) %>% 
       mutate('start_factor' = factor(case_when(start_advantage >= 4 ~ '> +3',
                                                start_advantage <= -4 ~ '< -3',
                                                start_advantage > 0 ~ paste0('+', start_advantage),

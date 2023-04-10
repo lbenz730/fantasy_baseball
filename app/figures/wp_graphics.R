@@ -48,7 +48,7 @@ plot_wp <- function(season, week, plot = T, all = F) {
   
   df$win_prob[df$day_of_matchup == 0 & df$matchup_id == 1] <- 0.5
   
-  if(hour(Sys.time()) < 12 & hour(Sys.time()) > 2 & !all) {
+  if(!all) {
     df <- filter(df, days_left > min(days_left)) 
   } else if(!(wday(Sys.Date()) == 1 & hour(Sys.time()) < 20) | all) {
     df$win_prob[df$days_left == 0 & df$score_diff > 0] <- 1

@@ -385,7 +385,7 @@ qs_pct <-
 if(params$matchup_id > 1) {
   exp_standings <- 
     team_points %>% 
-    filter(matchup_id < min(reg_season+1, (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id)) %>% 
+    filter(matchup_id < min(reg_season+1, params$matchup_id)) %>% 
     group_by(team) %>% 
     summarise(
       "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
@@ -450,7 +450,7 @@ write_csv(team_points, glue('data/stats/{params$season}/team_points.csv'))
 
 ### WP for Current Week 
 df_wp <- 
-  plot_wp(params$season, params$matchup_id, plot = F, all = wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12) %>% 
+  plot_wp(params$season, params$matchup_id, plot = F, all = hour(Sys.Date()) > 12) %>% 
   filter(day_of_matchup == max(day_of_matchup))
 
 ### playoff simulations
@@ -487,11 +487,11 @@ if(params$matchup_id > 1) {
 names(team_mus) <- sort(unique(team_points$team))
 names(team_sigmas) <- sort(unique(team_points$team))
 
-na_ix <- schedule$matchup_id > params$matchup_id 
+na_ix <- 
+  (schedule$matchup_id > params$matchup_id) | (wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12 & (schedule$matchup_id >= params$matchup_id))
 
 
-
-df_sims <- future_map_dfr(1:params$nsims, sim_season)
+df_sims <- future_map_dfr(1:params$nsims, sim_season, .options = furrr_options(seed = 12))
 
 ### Edit Current Week
 if(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12)) {
