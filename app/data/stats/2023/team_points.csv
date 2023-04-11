@@ -1,241 +1,241 @@
 team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,adj_pts,adj_batting_pts,adj_pitching_pts,team_id_opp,total_points_opp,batting_points_opp,pitching_points_opp,team_opp,adj_pts_opp,adj_batting_pts_opp,adj_pitching_pts_opp,overall_rank,batting_rank,pitching_rank
 5,388.5,255.5,133,The Traveling Secretaries,1,1,247.22727272727272,162.5909090909091,84.63636363636364,12,564.5,360,204.5,Blasphemous Hot Takes,359.22727272727275,229.0909090909091,130.13636363636363,12,12,10
-8,511.5,310,201.5,Mt. Everest Taquito Farmers,1,2,325.5,197.27272727272728,128.22727272727272,7,521,303.5,217.5,Cron's Disease,331.54545454545456,193.13636363636363,138.4090909090909,5,5.5,7
+8,511.5,310,201.5,Mt. Everest Taquito Farmers,1,2,325.5,197.27272727272728,128.22727272727272,7,522,304.5,217.5,Cron's Disease,332.1818181818182,193.77272727272728,138.4090909090909,5,5.5,7
 13,458.5,310,148.5,Ketel of Fish,1,3,291.77272727272725,197.27272727272728,94.5,11,491,283.5,207.5,The West Bank Occupiers,312.45454545454544,180.4090909090909,132.04545454545453,9,5.5,9
 4,435.5,259.5,176,All That is Wright,1,4,277.1363636363636,165.13636363636363,112,6,452.5,335.5,117,The Novaks,287.95454545454544,213.5,74.45454545454545,11,11,8
-2,544,304,240,Framber Valdez Oil Spill,1,5,346.1818181818182,193.45454545454547,152.72727272727272,1,472,339.5,132.5,Yosemite Yeshivas,300.3636363636364,216.04545454545453,84.31818181818181,3,7,2
-14,494,287,207,Freedom of the Pressly,1,6,314.3636363636364,182.63636363636363,131.72727272727272,9,649.5,352.5,297,Don Julios,413.3181818181818,224.3181818181818,189,6,9,5
-12,NA,NA,NA,Blasphemous Hot Takes,2,7,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,1,1,1
-11,NA,NA,NA,The West Bank Occupiers,2,8,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,2,2,2
-6,NA,NA,NA,The Novaks,2,9,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,3,3,3
-1,NA,NA,NA,Yosemite Yeshivas,2,10,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,4,4,4
-9,NA,NA,NA,Don Julios,2,11,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,5,5,5
-14,NA,NA,NA,Freedom of the Pressly,2,12,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,6,6,6
+2,544,304,240,Framber Valdez Oil Spill,1,5,346.1818181818182,193.45454545454547,152.72727272727272,1,473,340.5,132.5,Yosemite Yeshivas,301,216.6818181818182,84.31818181818181,3,8,2
+14,494,287,207,Hader Better Faster Stronger,1,6,314.3636363636364,182.63636363636363,131.72727272727272,9,649.5,352.5,297,Don Julios,413.3181818181818,224.3181818181818,189,6,9,5
+12,41,24,17,Blasphemous Hot Takes,2,7,NA,NA,NA,7,29.5,31,-1.5,Cron's Disease,NA,NA,NA,8,7,7
+11,73,35,38,The West Bank Occupiers,2,8,NA,NA,NA,5,69,29,40,The Traveling Secretaries,NA,NA,NA,2,2,3
+6,26,21,5,The Novaks,2,9,NA,NA,NA,8,42,29,13,Mt. Everest Taquito Farmers,NA,NA,NA,10,8,9.5
+1,16,16,NA,Yosemite Yeshivas,2,10,NA,NA,NA,13,25.5,20.5,5,Ketel of Fish,NA,NA,NA,12,10,12
+9,60.5,26.5,34,Don Julios,2,11,NA,NA,NA,4,77.5,46,31.5,All That is Wright,NA,NA,NA,4,6,4
+14,52.5,9,43.5,Hader Better Faster Stronger,2,12,NA,NA,NA,2,42.5,14.5,28,Framber Valdez Oil Spill,NA,NA,NA,5,12,1
 11,NA,NA,NA,The West Bank Occupiers,3,13,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 7,NA,NA,NA,Cron's Disease,3,14,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,3,15,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,3,3,3
 8,NA,NA,NA,Mt. Everest Taquito Farmers,3,16,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,4,4,4
-13,NA,NA,NA,Ketel of Fish,3,17,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,5,5,5
+13,NA,NA,NA,Ketel of Fish,3,17,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,5,5,5
 4,NA,NA,NA,All That is Wright,3,18,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,4,19,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,1,1,1
 1,NA,NA,NA,Yosemite Yeshivas,4,20,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,2,2,2
 9,NA,NA,NA,Don Julios,4,21,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,3,3,3
-14,NA,NA,NA,Freedom of the Pressly,4,22,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,4,4,4
+14,NA,NA,NA,Hader Better Faster Stronger,4,22,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,4,4,4
 2,NA,NA,NA,Framber Valdez Oil Spill,4,23,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,5,5,5
 4,NA,NA,NA,All That is Wright,4,24,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,6,6,6
 1,NA,NA,NA,Yosemite Yeshivas,5,25,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 6,NA,NA,NA,The Novaks,5,26,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,2,2,2
-11,NA,NA,NA,The West Bank Occupiers,5,27,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,3,3,3
+11,NA,NA,NA,The West Bank Occupiers,5,27,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,3,3,3
 7,NA,NA,NA,Cron's Disease,5,28,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,4,4,4
 5,NA,NA,NA,The Traveling Secretaries,5,29,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,5,5,5
 8,NA,NA,NA,Mt. Everest Taquito Farmers,5,30,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,6,31,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,1,1,1
-14,NA,NA,NA,Freedom of the Pressly,6,32,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,2,2,2
+14,NA,NA,NA,Hader Better Faster Stronger,6,32,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,2,2,2
 2,NA,NA,NA,Framber Valdez Oil Spill,6,33,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,3,3,3
 4,NA,NA,NA,All That is Wright,6,34,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,4,4,4
 13,NA,NA,NA,Ketel of Fish,6,35,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,5,5,5
 8,NA,NA,NA,Mt. Everest Taquito Farmers,6,36,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,6,6,6
-14,NA,NA,NA,Freedom of the Pressly,7,37,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
+14,NA,NA,NA,Hader Better Faster Stronger,7,37,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 9,NA,NA,NA,Don Julios,7,38,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,2,2,2
 1,NA,NA,NA,Yosemite Yeshivas,7,39,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,3,3,3
 6,NA,NA,NA,The Novaks,7,40,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,4,4,4
 11,NA,NA,NA,The West Bank Occupiers,7,41,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,5,5,5
 7,NA,NA,NA,Cron's Disease,7,42,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,8,43,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,1,1,1
-4,NA,NA,NA,All That is Wright,8,44,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,2,2,2
+4,NA,NA,NA,All That is Wright,8,44,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,2,2,2
 13,NA,NA,NA,Ketel of Fish,8,45,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,3,3,3
 8,NA,NA,NA,Mt. Everest Taquito Farmers,8,46,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,4,4,4
 5,NA,NA,NA,The Traveling Secretaries,8,47,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,5,5,5
 7,NA,NA,NA,Cron's Disease,8,48,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,9,49,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 2,NA,NA,NA,Framber Valdez Oil Spill,9,50,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,2,2,2
-14,NA,NA,NA,Freedom of the Pressly,9,51,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,3,3,3
+14,NA,NA,NA,Hader Better Faster Stronger,9,51,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,3,3,3
 9,NA,NA,NA,Don Julios,9,52,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,4,4,4
 1,NA,NA,NA,Yosemite Yeshivas,9,53,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,5,5,5
 6,NA,NA,NA,The Novaks,9,54,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,10,55,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,1,1,1
 8,NA,NA,NA,Mt. Everest Taquito Farmers,10,56,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,10,57,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,3,3,3
-7,NA,NA,NA,Cron's Disease,10,58,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,4,4,4
+7,NA,NA,NA,Cron's Disease,10,58,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,4,4,4
 11,NA,NA,NA,The West Bank Occupiers,10,59,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,5,5,5
 6,NA,NA,NA,The Novaks,10,60,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,6,6,6
 8,NA,NA,NA,Mt. Everest Taquito Farmers,11,61,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 13,NA,NA,NA,Ketel of Fish,11,62,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,2,2,2
 4,NA,NA,NA,All That is Wright,11,63,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,3,3,3
 2,NA,NA,NA,Framber Valdez Oil Spill,11,64,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,4,4,4
-14,NA,NA,NA,Freedom of the Pressly,11,65,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,5,5,5
+14,NA,NA,NA,Hader Better Faster Stronger,11,65,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,5,5,5
 9,NA,NA,NA,Don Julios,11,66,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,12,67,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,1,1,1
 7,NA,NA,NA,Cron's Disease,12,68,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,2,2,2
 11,NA,NA,NA,The West Bank Occupiers,12,69,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,3,3,3
 6,NA,NA,NA,The Novaks,12,70,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,4,4,4
 1,NA,NA,NA,Yosemite Yeshivas,12,71,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,5,5,5
-9,NA,NA,NA,Don Julios,12,72,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,6,6,6
+9,NA,NA,NA,Don Julios,12,72,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,6,6,6
 7,NA,NA,NA,Cron's Disease,13,73,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 5,NA,NA,NA,The Traveling Secretaries,13,74,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,2,2,2
 8,NA,NA,NA,Mt. Everest Taquito Farmers,13,75,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,3,3,3
 13,NA,NA,NA,Ketel of Fish,13,76,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,4,4,4
 4,NA,NA,NA,All That is Wright,13,77,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,5,5,5
-2,NA,NA,NA,Framber Valdez Oil Spill,13,78,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,6,6,6
+2,NA,NA,NA,Framber Valdez Oil Spill,13,78,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,14,79,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,1,1,1
 6,NA,NA,NA,The Novaks,14,80,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,2,2,2
 1,NA,NA,NA,Yosemite Yeshivas,14,81,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,3,3,3
 9,NA,NA,NA,Don Julios,14,82,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,4,4,4
-14,NA,NA,NA,Freedom of the Pressly,14,83,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,5,5,5
+14,NA,NA,NA,Hader Better Faster Stronger,14,83,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,5,5,5
 2,NA,NA,NA,Framber Valdez Oil Spill,14,84,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,6,6,6
 6,NA,NA,NA,The Novaks,15,85,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 11,NA,NA,NA,The West Bank Occupiers,15,86,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,2,2,2
 7,NA,NA,NA,Cron's Disease,15,87,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,3,3,3
-5,NA,NA,NA,The Traveling Secretaries,15,88,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,4,4,4
+5,NA,NA,NA,The Traveling Secretaries,15,88,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,4,4,4
 8,NA,NA,NA,Mt. Everest Taquito Farmers,15,89,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,5,5,5
 13,NA,NA,NA,Ketel of Fish,15,90,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,16,91,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,1,1,1
 9,NA,NA,NA,Don Julios,16,92,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,2,2,2
-14,NA,NA,NA,Freedom of the Pressly,16,93,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,3,3,3
+14,NA,NA,NA,Hader Better Faster Stronger,16,93,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,3,3,3
 2,NA,NA,NA,Framber Valdez Oil Spill,16,94,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,4,4,4
 4,NA,NA,NA,All That is Wright,16,95,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,5,5,5
 13,NA,NA,NA,Ketel of Fish,16,96,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,6,6,6
 9,NA,NA,NA,Don Julios,17,97,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
-1,NA,NA,NA,Yosemite Yeshivas,17,98,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,2,2,2
+1,NA,NA,NA,Yosemite Yeshivas,17,98,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,2,2,2
 6,NA,NA,NA,The Novaks,17,99,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,3,3,3
 11,NA,NA,NA,The West Bank Occupiers,17,100,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,4,4,4
 7,NA,NA,NA,Cron's Disease,17,101,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,5,5,5
 5,NA,NA,NA,The Traveling Secretaries,17,102,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,6,6,6
-12,NA,NA,NA,Blasphemous Hot Takes,18,103,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,1,1,1
+12,NA,NA,NA,Blasphemous Hot Takes,18,103,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,1,1,1
 2,NA,NA,NA,Framber Valdez Oil Spill,18,104,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,2,2,2
 4,NA,NA,NA,All That is Wright,18,105,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,3,3,3
 13,NA,NA,NA,Ketel of Fish,18,106,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,4,4,4
 8,NA,NA,NA,Mt. Everest Taquito Farmers,18,107,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,5,5,5
 5,NA,NA,NA,The Traveling Secretaries,18,108,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,6,6,6
 2,NA,NA,NA,Framber Valdez Oil Spill,19,109,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
-14,NA,NA,NA,Freedom of the Pressly,19,110,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,2,2,2
+14,NA,NA,NA,Hader Better Faster Stronger,19,110,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,2,2,2
 9,NA,NA,NA,Don Julios,19,111,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,3,3,3
 1,NA,NA,NA,Yosemite Yeshivas,19,112,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,4,4,4
 6,NA,NA,NA,The Novaks,19,113,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,5,5,5
 11,NA,NA,NA,The West Bank Occupiers,19,114,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,20,115,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,1,1,1
 13,NA,NA,NA,Ketel of Fish,20,116,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,2,2,2
-8,NA,NA,NA,Mt. Everest Taquito Farmers,20,117,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,3,3,3
+8,NA,NA,NA,Mt. Everest Taquito Farmers,20,117,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,3,3,3
 5,NA,NA,NA,The Traveling Secretaries,20,118,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,4,4,4
 7,NA,NA,NA,Cron's Disease,20,119,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,5,5,5
 11,NA,NA,NA,The West Bank Occupiers,20,120,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,6,6,6
 12,564.5,360,204.5,Blasphemous Hot Takes,1,1,359.22727272727275,229.0909090909091,130.13636363636363,5,388.5,255.5,133,The Traveling Secretaries,247.22727272727272,162.5909090909091,84.63636363636364,2,1,6
-7,521,303.5,217.5,Cron's Disease,1,2,331.54545454545456,193.13636363636363,138.4090909090909,8,511.5,310,201.5,Mt. Everest Taquito Farmers,325.5,197.27272727272728,128.22727272727272,4,8,3
+7,522,304.5,217.5,Cron's Disease,1,2,332.1818181818182,193.77272727272728,138.4090909090909,8,511.5,310,201.5,Mt. Everest Taquito Farmers,325.5,197.27272727272728,128.22727272727272,4,7,3
 11,491,283.5,207.5,The West Bank Occupiers,1,3,312.45454545454544,180.4090909090909,132.04545454545453,13,458.5,310,148.5,Ketel of Fish,291.77272727272725,197.27272727272728,94.5,7,10,4
 6,452.5,335.5,117,The Novaks,1,4,287.95454545454544,213.5,74.45454545454545,4,435.5,259.5,176,All That is Wright,277.1363636363636,165.13636363636363,112,10,4,12
-1,472,339.5,132.5,Yosemite Yeshivas,1,5,300.3636363636364,216.04545454545453,84.31818181818181,2,544,304,240,Framber Valdez Oil Spill,346.1818181818182,193.45454545454547,152.72727272727272,8,3,11
-9,649.5,352.5,297,Don Julios,1,6,413.3181818181818,224.3181818181818,189,14,494,287,207,Freedom of the Pressly,314.3636363636364,182.63636363636363,131.72727272727272,1,2,1
-7,NA,NA,NA,Cron's Disease,2,7,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
-5,NA,NA,NA,The Traveling Secretaries,2,8,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,8,8,8
-8,NA,NA,NA,Mt. Everest Taquito Farmers,2,9,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,9,9,9
-13,NA,NA,NA,Ketel of Fish,2,10,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,10,10,10
-4,NA,NA,NA,All That is Wright,2,11,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,11,11,11
-2,NA,NA,NA,Framber Valdez Oil Spill,2,12,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,12,12,12
+1,473,340.5,132.5,Yosemite Yeshivas,1,5,301,216.6818181818182,84.31818181818181,2,544,304,240,Framber Valdez Oil Spill,346.1818181818182,193.45454545454547,152.72727272727272,8,3,11
+9,649.5,352.5,297,Don Julios,1,6,413.3181818181818,224.3181818181818,189,14,494,287,207,Hader Better Faster Stronger,314.3636363636364,182.63636363636363,131.72727272727272,1,2,1
+7,29.5,31,-1.5,Cron's Disease,2,7,NA,NA,NA,12,41,24,17,Blasphemous Hot Takes,NA,NA,NA,9,3,11
+5,69,29,40,The Traveling Secretaries,2,8,NA,NA,NA,11,73,35,38,The West Bank Occupiers,NA,NA,NA,3,4.5,2
+8,42,29,13,Mt. Everest Taquito Farmers,2,9,NA,NA,NA,6,26,21,5,The Novaks,NA,NA,NA,7,4.5,8
+13,25.5,20.5,5,Ketel of Fish,2,10,NA,NA,NA,1,16,16,NA,Yosemite Yeshivas,NA,NA,NA,11,9,9.5
+4,77.5,46,31.5,All That is Wright,2,11,NA,NA,NA,9,60.5,26.5,34,Don Julios,NA,NA,NA,1,1,5
+2,42.5,14.5,28,Framber Valdez Oil Spill,2,12,NA,NA,NA,14,52.5,9,43.5,Hader Better Faster Stronger,NA,NA,NA,6,11,6
 12,NA,NA,NA,Blasphemous Hot Takes,3,13,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,7,7,7
 6,NA,NA,NA,The Novaks,3,14,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,8,8,8
 1,NA,NA,NA,Yosemite Yeshivas,3,15,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,9,9,9
 9,NA,NA,NA,Don Julios,3,16,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,10,10,10
-14,NA,NA,NA,Freedom of the Pressly,3,17,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,11,11,11
+14,NA,NA,NA,Hader Better Faster Stronger,3,17,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,11,11,11
 2,NA,NA,NA,Framber Valdez Oil Spill,3,18,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,12,12,12
 6,NA,NA,NA,The Novaks,4,19,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
 11,NA,NA,NA,The West Bank Occupiers,4,20,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,8,8,8
 7,NA,NA,NA,Cron's Disease,4,21,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,9,9,9
-5,NA,NA,NA,The Traveling Secretaries,4,22,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,10,10,10
+5,NA,NA,NA,The Traveling Secretaries,4,22,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,10,10,10
 8,NA,NA,NA,Mt. Everest Taquito Farmers,4,23,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,11,11,11
 13,NA,NA,NA,Ketel of Fish,4,24,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,5,25,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,7,7,7
 9,NA,NA,NA,Don Julios,5,26,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,8,8,8
-14,NA,NA,NA,Freedom of the Pressly,5,27,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,9,9,9
+14,NA,NA,NA,Hader Better Faster Stronger,5,27,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,9,9,9
 2,NA,NA,NA,Framber Valdez Oil Spill,5,28,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,10,10,10
 4,NA,NA,NA,All That is Wright,5,29,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,11,11,11
 13,NA,NA,NA,Ketel of Fish,5,30,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,12,12,12
 9,NA,NA,NA,Don Julios,6,31,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
-1,NA,NA,NA,Yosemite Yeshivas,6,32,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,8,8,8
+1,NA,NA,NA,Yosemite Yeshivas,6,32,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,8,8,8
 6,NA,NA,NA,The Novaks,6,33,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,9,9,9
 11,NA,NA,NA,The West Bank Occupiers,6,34,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,10,10,10
 7,NA,NA,NA,Cron's Disease,6,35,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,11,11,11
 5,NA,NA,NA,The Traveling Secretaries,6,36,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,12,12,12
-12,NA,NA,NA,Blasphemous Hot Takes,7,37,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,7,7,7
+12,NA,NA,NA,Blasphemous Hot Takes,7,37,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,7,7,7
 2,NA,NA,NA,Framber Valdez Oil Spill,7,38,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,8,8,8
 4,NA,NA,NA,All That is Wright,7,39,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,9,9,9
 13,NA,NA,NA,Ketel of Fish,7,40,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,10,10,10
 8,NA,NA,NA,Mt. Everest Taquito Farmers,7,41,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,11,11,11
 5,NA,NA,NA,The Traveling Secretaries,7,42,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,12,12,12
 2,NA,NA,NA,Framber Valdez Oil Spill,8,43,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
-14,NA,NA,NA,Freedom of the Pressly,8,44,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,8,8,8
+14,NA,NA,NA,Hader Better Faster Stronger,8,44,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,8,8,8
 9,NA,NA,NA,Don Julios,8,45,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,9,9,9
 1,NA,NA,NA,Yosemite Yeshivas,8,46,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,10,10,10
 6,NA,NA,NA,The Novaks,8,47,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,11,11,11
 11,NA,NA,NA,The West Bank Occupiers,8,48,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,9,49,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,7,7,7
 13,NA,NA,NA,Ketel of Fish,9,50,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,8,8,8
-8,NA,NA,NA,Mt. Everest Taquito Farmers,9,51,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,9,9,9
+8,NA,NA,NA,Mt. Everest Taquito Farmers,9,51,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,9,9,9
 5,NA,NA,NA,The Traveling Secretaries,9,52,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,10,10,10
 7,NA,NA,NA,Cron's Disease,9,53,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,11,11,11
 11,NA,NA,NA,The West Bank Occupiers,9,54,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,12,12,12
 13,NA,NA,NA,Ketel of Fish,10,55,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
 4,NA,NA,NA,All That is Wright,10,56,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,8,8,8
 2,NA,NA,NA,Framber Valdez Oil Spill,10,57,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,9,9,9
-14,NA,NA,NA,Freedom of the Pressly,10,58,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,10,10,10
+14,NA,NA,NA,Hader Better Faster Stronger,10,58,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,10,10,10
 9,NA,NA,NA,Don Julios,10,59,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,11,11,11
 1,NA,NA,NA,Yosemite Yeshivas,10,60,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,11,61,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,7,7,7
 5,NA,NA,NA,The Traveling Secretaries,11,62,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,8,8,8
 7,NA,NA,NA,Cron's Disease,11,63,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,9,9,9
 11,NA,NA,NA,The West Bank Occupiers,11,64,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,10,10,10
-6,NA,NA,NA,The Novaks,11,65,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,11,11,11
+6,NA,NA,NA,The Novaks,11,65,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,11,11,11
 1,NA,NA,NA,Yosemite Yeshivas,11,66,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,12,12,12
 5,NA,NA,NA,The Traveling Secretaries,12,67,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
 8,NA,NA,NA,Mt. Everest Taquito Farmers,12,68,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,8,8,8
 13,NA,NA,NA,Ketel of Fish,12,69,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,9,9,9
 4,NA,NA,NA,All That is Wright,12,70,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,10,10,10
 2,NA,NA,NA,Framber Valdez Oil Spill,12,71,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,11,11,11
-14,NA,NA,NA,Freedom of the Pressly,12,72,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,12,12,12
+14,NA,NA,NA,Hader Better Faster Stronger,12,72,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,13,73,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,7,7,7
 11,NA,NA,NA,The West Bank Occupiers,13,74,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,8,8,8
 6,NA,NA,NA,The Novaks,13,75,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,9,9,9
 1,NA,NA,NA,Yosemite Yeshivas,13,76,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,10,10,10
 9,NA,NA,NA,Don Julios,13,77,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,11,11,11
-14,NA,NA,NA,Freedom of the Pressly,13,78,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,12,12,12
+14,NA,NA,NA,Hader Better Faster Stronger,13,78,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,12,12,12
 11,NA,NA,NA,The West Bank Occupiers,14,79,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
 7,NA,NA,NA,Cron's Disease,14,80,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,8,8,8
 5,NA,NA,NA,The Traveling Secretaries,14,81,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,9,9,9
 8,NA,NA,NA,Mt. Everest Taquito Farmers,14,82,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,10,10,10
-13,NA,NA,NA,Ketel of Fish,14,83,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,11,11,11
+13,NA,NA,NA,Ketel of Fish,14,83,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,11,11,11
 4,NA,NA,NA,All That is Wright,14,84,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,15,85,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,7,7,7
 1,NA,NA,NA,Yosemite Yeshivas,15,86,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,8,8,8
 9,NA,NA,NA,Don Julios,15,87,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,9,9,9
-14,NA,NA,NA,Freedom of the Pressly,15,88,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,10,10,10
+14,NA,NA,NA,Hader Better Faster Stronger,15,88,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,10,10,10
 2,NA,NA,NA,Framber Valdez Oil Spill,15,89,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,11,11,11
 4,NA,NA,NA,All That is Wright,15,90,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,12,12,12
 1,NA,NA,NA,Yosemite Yeshivas,16,91,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
 6,NA,NA,NA,The Novaks,16,92,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,8,8,8
-11,NA,NA,NA,The West Bank Occupiers,16,93,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,9,9,9
+11,NA,NA,NA,The West Bank Occupiers,16,93,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,9,9,9
 7,NA,NA,NA,Cron's Disease,16,94,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,10,10,10
 5,NA,NA,NA,The Traveling Secretaries,16,95,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,11,11,11
 8,NA,NA,NA,Mt. Everest Taquito Farmers,16,96,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,17,97,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,7,7,7
-14,NA,NA,NA,Freedom of the Pressly,17,98,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,8,8,8
+14,NA,NA,NA,Hader Better Faster Stronger,17,98,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,8,8,8
 2,NA,NA,NA,Framber Valdez Oil Spill,17,99,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,9,9,9
 4,NA,NA,NA,All That is Wright,17,100,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,10,10,10
 13,NA,NA,NA,Ketel of Fish,17,101,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,11,11,11
 8,NA,NA,NA,Mt. Everest Taquito Farmers,17,102,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,12,12,12
-14,NA,NA,NA,Freedom of the Pressly,18,103,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
+14,NA,NA,NA,Hader Better Faster Stronger,18,103,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
 9,NA,NA,NA,Don Julios,18,104,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,8,8,8
 1,NA,NA,NA,Yosemite Yeshivas,18,105,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,9,9,9
 6,NA,NA,NA,The Novaks,18,106,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,10,10,10
 11,NA,NA,NA,The West Bank Occupiers,18,107,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,11,11,11
 7,NA,NA,NA,Cron's Disease,18,108,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,19,109,NA,NA,NA,2,NA,NA,NA,Framber Valdez Oil Spill,NA,NA,NA,7,7,7
-4,NA,NA,NA,All That is Wright,19,110,NA,NA,NA,14,NA,NA,NA,Freedom of the Pressly,NA,NA,NA,8,8,8
+4,NA,NA,NA,All That is Wright,19,110,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,8,8,8
 13,NA,NA,NA,Ketel of Fish,19,111,NA,NA,NA,9,NA,NA,NA,Don Julios,NA,NA,NA,9,9,9
 8,NA,NA,NA,Mt. Everest Taquito Farmers,19,112,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,10,10,10
 5,NA,NA,NA,The Traveling Secretaries,19,113,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,11,11,11
 7,NA,NA,NA,Cron's Disease,19,114,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,20,115,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,7,7,7
 2,NA,NA,NA,Framber Valdez Oil Spill,20,116,NA,NA,NA,13,NA,NA,NA,Ketel of Fish,NA,NA,NA,8,8,8
-14,NA,NA,NA,Freedom of the Pressly,20,117,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,9,9,9
+14,NA,NA,NA,Hader Better Faster Stronger,20,117,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,9,9,9
 9,NA,NA,NA,Don Julios,20,118,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,10,10,10
 1,NA,NA,NA,Yosemite Yeshivas,20,119,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,11,11,11
 6,NA,NA,NA,The Novaks,20,120,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,12,12,12
