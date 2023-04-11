@@ -6,10 +6,10 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 1,5,2,544,304,240,1,472,339.5,132.5,Framber Valdez Oil Spill,Yosemite Yeshivas
 1,6,14,494,287,207,9,649.5,352.5,297,Freedom of the Pressly,Don Julios
 2,7,12,NA,NA,NA,7,NA,NA,NA,Blasphemous Hot Takes,Cron's Disease
-2,8,11,NA,NA,NA,5,NA,NA,NA,The West Bank Occupiers,The Traveling Secretaries
-2,9,6,NA,NA,NA,8,NA,NA,NA,The Novaks,Mt. Everest Taquito Farmers
-2,10,1,NA,NA,NA,13,NA,NA,NA,Yosemite Yeshivas,Ketel of Fish
-2,11,9,NA,NA,NA,4,NA,NA,NA,Don Julios,All That is Wright
+2,8,11,NA,1,-1,5,NA,NA,NA,The West Bank Occupiers,The Traveling Secretaries
+2,9,6,NA,2,-2,8,NA,NA,NA,The Novaks,Mt. Everest Taquito Farmers
+2,10,1,NA,1,-1,13,NA,-0.5,0.5,Yosemite Yeshivas,Ketel of Fish
+2,11,9,NA,NA,NA,4,NA,0.5,-0.5,Don Julios,All That is Wright
 2,12,14,NA,NA,NA,2,NA,NA,NA,Freedom of the Pressly,Framber Valdez Oil Spill
 3,13,11,NA,NA,NA,12,NA,NA,NA,The West Bank Occupiers,Blasphemous Hot Takes
 3,14,7,NA,NA,NA,6,NA,NA,NA,Cron's Disease,The Novaks

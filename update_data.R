@@ -582,16 +582,28 @@ best_lineup(params$season, params$matchup_id, save = F)
 trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
 
 ### RP Penalties
+# df_rp_penalty <- 
+#   trans_log %>% 
+#   inner_join(teams %>% select(team, team_id, logo)) %>% 
+#   filter(transaction_type == 'Free Agent') %>%
+#   mutate('matchup_id' = map_dbl(start, ~min(df_start$matchup_id[df_start$end_period >= .x]))) %>% 
+#   group_by(team, matchup_id) %>% 
+#   filter(rp_eligible) %>% 
+#   mutate('rp_add' = cumsum(rp_eligible)) %>% 
+#   summarise('n_rp' = sum(rp_eligible),
+#             'penalty' = sum(n_points[rp_add > 2])) %>% 
+#   ungroup() %>% 
+#   filter(penalty != 0)
+
 df_rp_penalty <- 
-  trans_log %>% 
-  inner_join(teams %>% select(team, team_id, logo)) %>% 
-  filter(transaction_type == 'Free Agent') %>%
-  mutate('matchup_id' = map_dbl(start, ~min(df_start$matchup_id[df_start$end_period >= .x]))) %>% 
-  group_by(team, matchup_id) %>% 
-  filter(rp_eligible) %>% 
-  mutate('rp_add' = cumsum(rp_eligible)) %>% 
-  summarise('n_rp' = sum(rp_eligible),
-            'penalty' = sum(n_points[rp_add > 2])) %>% 
+  df_daily %>% 
+  filter(lineup_id == 15) %>% 
+  mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
+  group_by(team_id, matchup_id) %>% 
+  arrange(scoring_period_id) %>% 
+  mutate('rp_id' = map_dbl(player_id, ~which(unique(player_id) == .x))) %>% 
+  summarise('n_rp' = n_distinct(paste(stint, player_id)),
+            'penalty' = sum(points[rp_id > 5])) %>% 
   ungroup() %>% 
   filter(penalty != 0)
 

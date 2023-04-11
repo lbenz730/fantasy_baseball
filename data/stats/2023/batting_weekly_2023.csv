@@ -564,12 +564,30 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 4,NA,NA,NA,NA,NA,4
 5,NA,NA,NA,NA,NA,2
 6,NA,NA,NA,NA,NA,14
-7,NA,NA,NA,NA,NA,12
-8,NA,NA,NA,NA,NA,11
-9,NA,NA,NA,NA,NA,6
-10,NA,NA,NA,NA,NA,1
+7,2,Orlando Arcia,32530,1,0,12
+7,2,Nick Castellanos,31187,1,0,12
+7,2,Josh Naylor,35066,1,0,12
+7,2,Masataka Yoshida,4872598,1,0,12
+7,2,Luis Robert Jr.,39631,1,0,12
+7,2,Matt Olson,32767,1,0,12
+8,2,Kyle Schwarber,33712,1,0,11
+8,2,Alec Bohm,41169,1,0,11
+8,2,Andrew Benintendi,34986,1,1,11
+8,2,Cedric Mullins,35578,1,0,11
+9,2,Austin Riley,34982,1,0,6
+9,2,Brandon Lowe,39961,1,0,6
+9,2,Andrew Vaughn,42394,1,2,6
+10,2,Oscar Colas,4987420,1,1,1
+10,2,Sean Murphy,33557,1,0,1
+10,2,Ozzie Albies,33783,1,0,1
+10,2,Ronald Acuna Jr.,36185,1,0,1
 11,NA,NA,NA,NA,NA,9
-12,NA,NA,NA,NA,NA,14
+12,2,Andres Gimenez,37729,1,0,14
+12,2,Josh Bell,32517,1,0,14
+12,2,Jorge Mateo,33832,1,0,14
+12,2,Steven Kwan,41996,1,0,14
+12,2,Tyler Stephenson,34975,1,0,14
+12,2,Dylan Cease,34943,NA,10,14
 13,NA,NA,NA,NA,NA,11
 14,NA,NA,NA,NA,NA,7
 15,NA,NA,NA,NA,NA,5
@@ -684,12 +702,29 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 4,NA,NA,NA,NA,NA,6
 5,NA,NA,NA,NA,NA,1
 6,NA,NA,NA,NA,NA,9
-7,NA,NA,NA,NA,NA,7
-8,NA,NA,NA,NA,NA,5
-9,NA,NA,NA,NA,NA,8
-10,NA,NA,NA,NA,NA,13
-11,NA,NA,NA,NA,NA,4
-12,NA,NA,NA,NA,NA,2
+7,2,Ryan Mountcastle,34940,1,0,7
+8,2,Austin Hays,36928,1,0,5
+8,2,Jose Ramirez,32801,1,0,5
+8,2,Anthony Santander,36084,1,0,5
+8,2,Justin Turner,29607,1,0,5
+8,2,Randy Arozarena,36488,1,0,5
+8,2,Triston Casas,41180,1,0,5
+9,2,Rafael Devers,33859,1,0,8
+9,2,Trea Turner,33710,1,0,8
+10,2,Tim Anderson,33184,1,-0.5,13
+10,2,Ramon Laureano,35142,1,0,13
+11,2,Esteury Ruiz,39680,1,0,4
+11,2,Adley Rutschman,42178,1,0,4
+11,2,Jose Miranda,41000,1,0.5,4
+11,2,Adam Frazier,33546,1,0,4
+11,2,Isaac Paredes,39706,1,0,4
+11,2,Alex Verdugo,33786,1,0,4
+11,2,Amed Rosario,33215,1,0,4
+12,2,Myles Straw,39105,1,0,2
+12,2,Wander Franco,40929,1,0,2
+12,2,Jonathan India,41171,1,0,2
+12,2,Yandy Diaz,33481,1,0,2
+12,2,Manuel Margot,33599,1,0,2
 13,NA,NA,NA,NA,NA,12
 14,NA,NA,NA,NA,NA,6
 15,NA,NA,NA,NA,NA,1
