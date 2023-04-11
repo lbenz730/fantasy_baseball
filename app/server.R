@@ -630,7 +630,30 @@ shinyServer(function(input, output, session) {
       ) %>%
       
       text_transform(
-        locations = cells_body(contains(c('logo'))),
+        locations = cells_body(columns = contains(c('logo_rp')), 
+                               rows = (logo_rp != '---')),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>%
+      
+      text_transform(
+        locations = cells_body(columns = contains(c('logo_sp')), 
+                               rows = (logo_sp != '---')),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>%
+      
+      text_transform(
+        locations = cells_body(columns = contains(c('logo_bat')), 
+                               rows = (logo_bat != '---')),
         fn = function(x) {
           local_image(
             filename = x,

@@ -926,7 +926,7 @@ df_penalty <-
 
 df_rp_penalty <- 
   df_rp_penalty %>% 
-  inner_join(select(teams, team, logo))
+  inner_join(select(teams, team,logo)) 
 
 gt_start_cap <- 
   df_penalty %>% 
