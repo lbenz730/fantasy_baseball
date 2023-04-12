@@ -5,12 +5,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,adj_
 4,435.5,259.5,176,All That is Wright,1,4,277.1363636363636,165.13636363636363,112,6,452.5,335.5,117,The Novaks,287.95454545454544,213.5,74.45454545454545,11,11,8
 2,544,304,240,Framber Valdez Oil Spill,1,5,346.1818181818182,193.45454545454547,152.72727272727272,1,473,340.5,132.5,Yosemite Yeshivas,301,216.6818181818182,84.31818181818181,3,8,2
 14,494,287,207,Hader Better Faster Stronger,1,6,314.3636363636364,182.63636363636363,131.72727272727272,9,649.5,352.5,297,Don Julios,413.3181818181818,224.3181818181818,189,6,9,5
-12,41,24,17,Blasphemous Hot Takes,2,7,NA,NA,NA,7,29.5,31,-1.5,Cron's Disease,NA,NA,NA,8,7,7
-11,73,35,38,The West Bank Occupiers,2,8,NA,NA,NA,5,69,29,40,The Traveling Secretaries,NA,NA,NA,2,2,3
-6,26,21,5,The Novaks,2,9,NA,NA,NA,8,42,29,13,Mt. Everest Taquito Farmers,NA,NA,NA,10,8,9.5
-1,16,16,NA,Yosemite Yeshivas,2,10,NA,NA,NA,13,25.5,20.5,5,Ketel of Fish,NA,NA,NA,12,10,12
-9,60.5,26.5,34,Don Julios,2,11,NA,NA,NA,4,77.5,46,31.5,All That is Wright,NA,NA,NA,4,6,4
-14,52.5,9,43.5,Hader Better Faster Stronger,2,12,NA,NA,NA,2,42.5,14.5,28,Framber Valdez Oil Spill,NA,NA,NA,5,12,1
+12,113,68,45,Blasphemous Hot Takes,2,7,NA,NA,NA,7,96.5,64.5,32,Cron's Disease,NA,NA,NA,5,4,4
+11,140.5,81.5,59,The West Bank Occupiers,2,8,NA,NA,NA,5,101,56.5,44.5,The Traveling Secretaries,NA,NA,NA,2,3,3
+6,155.5,84.5,71,The Novaks,2,9,NA,NA,NA,8,71.5,46,25.5,Mt. Everest Taquito Farmers,NA,NA,NA,1,2,1
+1,83,64,19,Yosemite Yeshivas,2,10,NA,NA,NA,13,80,47,33,Ketel of Fish,NA,NA,NA,9,6,12
+9,90,55,35,Don Julios,2,11,NA,NA,NA,4,129.5,93.5,36,All That is Wright,NA,NA,NA,8,8,8
+14,81,40,41,Hader Better Faster Stronger,2,12,NA,NA,NA,2,119.5,53.5,66,Framber Valdez Oil Spill,NA,NA,NA,10,12,6
 11,NA,NA,NA,The West Bank Occupiers,3,13,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,1,1,1
 7,NA,NA,NA,Cron's Disease,3,14,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,3,15,NA,NA,NA,1,NA,NA,NA,Yosemite Yeshivas,NA,NA,NA,3,3,3
@@ -125,12 +125,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,adj_
 6,452.5,335.5,117,The Novaks,1,4,287.95454545454544,213.5,74.45454545454545,4,435.5,259.5,176,All That is Wright,277.1363636363636,165.13636363636363,112,10,4,12
 1,473,340.5,132.5,Yosemite Yeshivas,1,5,301,216.6818181818182,84.31818181818181,2,544,304,240,Framber Valdez Oil Spill,346.1818181818182,193.45454545454547,152.72727272727272,8,3,11
 9,649.5,352.5,297,Don Julios,1,6,413.3181818181818,224.3181818181818,189,14,494,287,207,Hader Better Faster Stronger,314.3636363636364,182.63636363636363,131.72727272727272,1,2,1
-7,29.5,31,-1.5,Cron's Disease,2,7,NA,NA,NA,12,41,24,17,Blasphemous Hot Takes,NA,NA,NA,9,3,11
-5,69,29,40,The Traveling Secretaries,2,8,NA,NA,NA,11,73,35,38,The West Bank Occupiers,NA,NA,NA,3,4.5,2
-8,42,29,13,Mt. Everest Taquito Farmers,2,9,NA,NA,NA,6,26,21,5,The Novaks,NA,NA,NA,7,4.5,8
-13,25.5,20.5,5,Ketel of Fish,2,10,NA,NA,NA,1,16,16,NA,Yosemite Yeshivas,NA,NA,NA,11,9,9.5
-4,77.5,46,31.5,All That is Wright,2,11,NA,NA,NA,9,60.5,26.5,34,Don Julios,NA,NA,NA,1,1,5
-2,42.5,14.5,28,Framber Valdez Oil Spill,2,12,NA,NA,NA,14,52.5,9,43.5,Hader Better Faster Stronger,NA,NA,NA,6,11,6
+7,96.5,64.5,32,Cron's Disease,2,7,NA,NA,NA,12,113,68,45,Blasphemous Hot Takes,NA,NA,NA,7,5,10
+5,101,56.5,44.5,The Traveling Secretaries,2,8,NA,NA,NA,11,140.5,81.5,59,The West Bank Occupiers,NA,NA,NA,6,7,5
+8,71.5,46,25.5,Mt. Everest Taquito Farmers,2,9,NA,NA,NA,6,155.5,84.5,71,The Novaks,NA,NA,NA,12,11,11
+13,80,47,33,Ketel of Fish,2,10,NA,NA,NA,1,83,64,19,Yosemite Yeshivas,NA,NA,NA,11,10,9
+4,129.5,93.5,36,All That is Wright,2,11,NA,NA,NA,9,90,55,35,Don Julios,NA,NA,NA,3,1,7
+2,119.5,53.5,66,Framber Valdez Oil Spill,2,12,NA,NA,NA,14,81,40,41,Hader Better Faster Stronger,NA,NA,NA,4,9,2
 12,NA,NA,NA,Blasphemous Hot Takes,3,13,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,7,7,7
 6,NA,NA,NA,The Novaks,3,14,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,8,8,8
 1,NA,NA,NA,Yosemite Yeshivas,3,15,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,9,9,9
