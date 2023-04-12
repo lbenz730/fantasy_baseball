@@ -567,7 +567,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 7,2,Daulton Varsho,40963,1,5,12
 7,2,Merrill Kelly,32968,NA,20.5,12
 7,2,DJ LeMahieu,30765,2,5.5,12
-7,2,Luis Robert Jr.,39631,2,7.5,12
+7,2,Luis Robert Jr.,39631,3,7.5,12
 7,2,Gerrit Cole,32081,NA,19,12
 7,2,Orlando Arcia,32530,2,7.5,12
 7,2,Trent Grisham,34995,1,-1.5,12
@@ -589,7 +589,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 8,2,Tommy Edman,39907,2,10,11
 8,2,Matt Carpenter,31015,1,-2,11
 8,2,Aroldis Chapman,30442,NA,4,11
-8,2,Andrew Benintendi,34986,2,3.5,11
+8,2,Andrew Benintendi,34986,3,3.5,11
 8,2,Taylor Ward,34923,2,5.5,11
 8,2,Brandon Drury,32269,1,0,11
 8,2,Josh Rojas,40718,2,2.5,11
@@ -619,7 +619,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 9,2,Kyle Tucker,34967,1,6,6
 9,2,Jeremy Pena,41273,1,2.5,6
 9,2,Brandon Lowe,39961,2,14,6
-9,2,Andrew Vaughn,42394,2,5,6
+9,2,Andrew Vaughn,42394,3,5,6
 9,2,Ryan McMahon,33247,2,6.5,6
 10,2,Matt Chapman,33857,1,7.5,1
 10,2,Carlos Santana,30280,1,2.5,1

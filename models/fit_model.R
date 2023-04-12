@@ -164,3 +164,6 @@ write_rds(log_reg, here('models/log_reg.rds'))
 
 prior <- glm(win ~ -1 + points_per_day_spread,  data = df %>% filter(day_of_matchup == 0), family = 'binomial')
 write_rds(prior, here('models/prior.rds')) 
+
+# model <- glm(win ~ -1 + score_diff * splines::ns(start_advantage, df = 3), data = df, family = 'binomial', offset = rep(0.5, nrow(df)))
+
