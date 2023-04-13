@@ -187,9 +187,17 @@ pitch_stats <-
          'era_rp' = earned_runs_rp/outs_rp * 27,
          
          'k9' = k/outs * 27,
+         'k9_sp' = k_sp/outs_sp * 27,
+         'k9_rp' = k_rp/outs_rp * 27,
          'bb9' = bb/outs * 27,
+         'bb9_sp' = bb_sp/outs_sp * 27,
+         'bb9_rp' = bb_rp/outs_rp * 27,
          'k_per_bb' = k/bb,
+         'k_per_bb_sp' = k_sp/bb_sp,
+         'k_per_bb_rp' = k_rp/bb_rp,
          'hr9' = hr_allowed/outs * 27,
+         'hr9_sp' = hr_allowed_sp/outs_sp * 27,
+         'hr9_rp' = hr_allowed_rp/outs_rp * 27,
          
          'fip' = (13 * hr_allowed + 3 * (bb + hpb) - 2 * k)/(outs/3),
          'fip_sp' = (13 * hr_allowed_sp + 3 * (bb_sp + hpb_sp) - 2 * k_sp)/(outs_sp/3),

@@ -313,7 +313,12 @@ shinyServer(function(input, output, session) {
       gt() %>% 
       
       ### Round Numbers
-      fmt_number(columns = c(era, era_sp, era_rp, fip, fip_sp, fip_rp, k9, bb9, k_per_bb, hr9), decimals = 2, sep_mark = '') %>% 
+      fmt_number(columns = c(era, era_sp, era_rp, 
+                             fip, fip_sp, fip_rp, 
+                             k9, k9_sp, k9_rp, 
+                             bb9, bb9_sp, bb9_rp, 
+                             k_per_bb, k_per_bb_sp, k_per_bb_rp,
+                             hr9, hr9_sp, hr9_rp), decimals = 2, sep_mark = '') %>% 
       fmt_number(columns = c(qs, blue_balls), decimals = 2, drop_trailing_zeros = T) %>% 
       sub_missing(columns = everything(), missing_text = "---") %>%
       
@@ -321,9 +326,9 @@ shinyServer(function(input, output, session) {
       cols_align(align = "center", columns = everything()) %>% 
       
       ### Headers
-      tab_spanner(columns = c('era', 'fip'), label = 'All Pitchers') %>% 
-      tab_spanner(columns = c('era_sp', 'fip_sp'), label = 'Starting Pitchers') %>% 
-      tab_spanner(columns = c('era_rp', 'fip_rp'), label = 'Relief Pitchers') %>% 
+      tab_spanner(columns = c('era', 'fip', 'k9', 'bb9', 'k_per_bb', 'hr9'), label = 'All Pitchers') %>% 
+      tab_spanner(columns = c('era_sp', 'fip_sp', 'k9_sp', 'bb9_sp', 'k_per_bb_sp', 'hr9_sp'), label = 'Starting Pitchers') %>% 
+      tab_spanner(columns = c('era_rp', 'fip_rp', 'k9_rp', 'bb9_rp', 'k_per_bb_rp', 'hr9_rp'), label = 'Relief Pitchers') %>% 
       
       ### Colors
       data_color(columns = c(era, fip),
@@ -347,6 +352,33 @@ shinyServer(function(input, output, session) {
       data_color(columns = c(k_per_bb),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k_per_bb)),
                  autocolor_text = F) %>% 
+      
+      data_color(columns = c(k9_sp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k9_sp)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(bb9_sp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$bb9_sp)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(hr9_sp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$hr9_sp)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(k_per_bb_sp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k_per_bb_sp)),
+                 autocolor_text = F) %>% 
+      
+      data_color(columns = c(k9_rp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k9_rp)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(bb9_rp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$bb9_rp)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(hr9_rp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$hr9_rp)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(k_per_bb_rp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k_per_bb_rp)),
+                 autocolor_text = F) %>% 
+      
       data_color(columns = c(qs),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$qs)),
                  autocolor_text = F) %>% 
@@ -379,7 +411,7 @@ shinyServer(function(input, output, session) {
         ),
         locations = list(
           cells_body(
-            columns = c(logo, fip_rp, hr9)
+            columns = c(logo, contains('hr9'))
           )
         )
       ) %>%
@@ -418,9 +450,17 @@ shinyServer(function(input, output, session) {
         era_rp = 'ERA',
         fip_rp = 'FIP',
         k9 = 'K/9',
+        k9_sp = 'K/9',
+        k9_rp = 'K/9',
         bb9 = 'BB/9',
+        bb9_sp = 'BB/9',
+        bb9_rp = 'BB/9',
         k_per_bb = 'K/BB',
+        k_per_bb_sp = 'K/BB',
+        k_per_bb_rp = 'K/BB',
         hr9 = 'HR/9',
+        hr9_sp = 'HR/9',
+        hr9_rp = 'HR/9',
         qs = 'QS',
         blue_balls = 'Blue Balls'
       ) %>%
