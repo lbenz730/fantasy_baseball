@@ -45,7 +45,6 @@ params <-
        'opening_day' = as.Date('2023-03-30'))
 
 period <- as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1
-print(period)
 
 
 df_start <- 
@@ -358,7 +357,7 @@ if(nrow(traded_players) > 0) {
       if(.x$n_given[1]  > .x$n_rec[1]) {
         tmp <- .x[1,]
         tmp[1,] <- NA
-        tmp$trade_id <- .x$trade_id
+        tmp$trade_id <- .x$trade_id[1]
         bind_rows(.x, tmp)
       } else {
         .x 
