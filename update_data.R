@@ -147,11 +147,11 @@ if(params$matchup_id == 1) {
             glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
 } else {
   read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>%
-    filter(matchup_id < params$matchup_id) %>%
+    filter(matchup_id < params$matchup_id - 1) %>%
+    bind_rows(get_matchup_stats(params$matchup_id - 1, season = params$season)) %>%
     bind_rows(get_matchup_stats(params$matchup_id, season = params$season)) %>%
     write_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
 }
-
 
 df_daily <- read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
 
