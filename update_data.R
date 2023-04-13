@@ -163,20 +163,42 @@ pitch_stats <-
   group_by(team_id) %>% 
   summarise('qs' = sum(qs),
             'k' = sum(p_k),
+            'k_sp' = sum(p_k[start]),
+            'k_rp' = sum(p_k[relief]),
             'bb' = sum(p_walks + p_ibb),
+            'bb_sp' = sum(p_walks[start] + p_ibb[start]),
+            'bb_rp' = sum(p_walks[relief] + p_ibb[relief]),
             'outs' = sum(p_outs),
+            'outs_sp' = sum(p_outs[start]),
+            'outs_rp' = sum(p_outs[relief]),
             'earned_runs' = sum(p_er),
+            'earned_runs_sp' = sum(p_er[start]),
+            'earned_runs_rp' = sum(p_er[relief]),
+            'hr_allowed_sp' = sum(hr_allowed[start]),
+            'hr_allowed_rp' = sum(hr_allowed[relief]),
             'hr_allowed' = sum(hr_allowed),
+            
             'hpb' = sum(p_hbp),
+            'hpb_sp' = sum(p_hbp[start]),
+            'hpb_rp' = sum(p_hbp[relief]),
             'blue_balls' = sum(blue_balls)) %>% 
   mutate('era' = earned_runs/outs * 27,
+         'era_sp' = earned_runs_sp/outs_sp * 27,
+         'era_rp' = earned_runs_rp/outs_rp * 27,
+         
          'k9' = k/outs * 27,
          'bb9' = bb/outs * 27,
          'k_per_bb' = k/bb,
          'hr9' = hr_allowed/outs * 27,
+         
          'fip' = (13 * hr_allowed + 3 * (bb + hpb) - 2 * k)/(outs/3),
+         'fip_sp' = (13 * hr_allowed_sp + 3 * (bb_sp + hpb_sp) - 2 * k_sp)/(outs_sp/3),
+         'fip_rp' = (13 * hr_allowed_rp + 3 * (bb_rp + hpb_rp) - 2 * k_rp)/(outs_rp
+                                                                            /3),
          'fip_constant' = weighted.mean(era, outs/3) - (13 * sum(hr_allowed) + 3 * sum(bb + hpb) - 2 * sum(k))/(sum(outs)/3)) %>% 
-  mutate('fip' = fip + fip_constant)
+  mutate('fip' = fip + fip_constant,
+         'fip_sp' = fip_sp + fip_constant,
+         'fip_rp' = fip_rp + fip_constant)
 
 write_csv(pitch_stats, glue('data/stats/{params$season}/pitch_stats.csv'))
 

@@ -313,16 +313,27 @@ shinyServer(function(input, output, session) {
       gt() %>% 
       
       ### Round Numbers
-      fmt_number(columns = c(era, fip, k9, bb9, k_per_bb, hr9), decimals = 2, sep_mark = '') %>% 
+      fmt_number(columns = c(era, era_sp, era_rp, fip, fip_sp, fip_rp, k9, bb9, k_per_bb, hr9), decimals = 2, sep_mark = '') %>% 
       fmt_number(columns = c(qs, blue_balls), decimals = 2, drop_trailing_zeros = T) %>% 
       sub_missing(columns = everything(), missing_text = "---") %>%
       
       ### Align Columns
       cols_align(align = "center", columns = everything()) %>% 
       
+      ### Headers
+      tab_spanner(columns = c('era', 'fip'), label = 'All Pitchers') %>% 
+      tab_spanner(columns = c('era_sp', 'fip_sp'), label = 'Starting Pitchers') %>% 
+      tab_spanner(columns = c('era_rp', 'fip_rp'), label = 'Relief Pitchers') %>% 
+      
       ### Colors
       data_color(columns = c(era, fip),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps$era, df_ps$fip))),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(era_sp, fip_sp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps$era_sp, df_ps$fip_sp))),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(era_rp, fip_rp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps$era_rp, df_ps$fip_rp))),
                  autocolor_text = F) %>% 
       data_color(columns = c(k9),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k9)),
@@ -368,7 +379,7 @@ shinyServer(function(input, output, session) {
         ),
         locations = list(
           cells_body(
-            columns = c(logo, fip, hr9)
+            columns = c(logo, fip_rp, hr9)
           )
         )
       ) %>%
@@ -402,6 +413,10 @@ shinyServer(function(input, output, session) {
         logo = '',
         era = 'ERA',
         fip = 'FIP',
+        era_sp = 'ERA',
+        fip_sp = 'FIP',
+        era_rp = 'ERA',
+        fip_rp = 'FIP',
         k9 = 'K/9',
         bb9 = 'BB/9',
         k_per_bb = 'K/BB',

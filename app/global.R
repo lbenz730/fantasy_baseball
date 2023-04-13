@@ -906,11 +906,15 @@ pitch_matrix <-
 df_ps <- 
   pitch_stats %>% 
   arrange(era) %>% 
-  select(team, logo, era, fip, k9, bb9, k_per_bb, hr9, qs, blue_balls) %>% 
+  select(team, logo, era, fip, era_sp, fip_sp, era_rp, fip_rp, k9, bb9, k_per_bb, hr9, qs, blue_balls) %>% 
   bind_rows(tibble('team' = 'League Average',
                    'logo' = 'www/League.png',
                    'era' = weighted.mean(pitch_stats$era, pitch_stats$outs),
                    'fip' = weighted.mean(pitch_stats$fip, pitch_stats$outs),
+                   'era_sp' = weighted.mean(pitch_stats$era_sp, pitch_stats$outs_rp),
+                   'fip_sp' = weighted.mean(pitch_stats$fip_sp, pitch_stats$outs_rp),
+                   'era_rp' = weighted.mean(pitch_stats$era_rp, pitch_stats$outs_rp),
+                   'fip_rp' = weighted.mean(pitch_stats$fip_rp, pitch_stats$outs_rp),
                    'k9' = weighted.mean(pitch_stats$k9, pitch_stats$outs),
                    'bb9' = weighted.mean(pitch_stats$bb9, pitch_stats$outs),
                    'hr9' = weighted.mean(pitch_stats$hr9, pitch_stats$outs),

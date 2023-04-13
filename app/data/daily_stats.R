@@ -29,7 +29,7 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'start' = as.logical(sum(.x$stats$`33` > 0 | .x$stats$`34` >= 12, na.rm = T)),
                'relief' = as.logical(sum(.x$stats$`32` > 0 & .x$stats$`33` == 0, na.rm = T)),
                'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)),
-               'qs' = as.logical(sum(.x$stats$`63`, na.rm = T)),
+               'qs' = as.logical(sum(.x$stats$`34` >= 18 & .x$stats$`45` <= 3)),
                'save' = as.logical(sum(.x$stats$`57`, na.rm = T)),
                'home_runs' = sum(.x$stats$`5`, na.rm = T),
                'blue_balls' = as.logical(sum(.x$stats$`34` == 17 & .x$stats$`45` <= 3)),
