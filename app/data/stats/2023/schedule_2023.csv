@@ -5,12 +5,12 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 1,4,4,436.5,260.5,176,6,452.5,335.5,117,All That is Wright,The Novaks
 1,5,2,544,304,240,1,473,340.5,132.5,Framber Valdez Oil Spill,Yosemite Yeshivas
 1,6,14,494,287,207,9,649.5,352.5,297,Hader Better Faster Stronger,Don Julios
-2,7,12,203,121.5,81.5,7,258,144,114,Blasphemous Hot Takes,Cron's Disease
-2,8,11,216.5,152,64.5,5,216,133.5,82.5,The West Bank Occupiers,The Traveling Secretaries
-2,9,6,284.5,146,138.5,8,222.5,149.5,73,The Novaks,Mt. Everest Taquito Farmers
-2,10,1,208.5,157,51.5,13,241.5,131,110.5,Yosemite Yeshivas,Ketel of Fish
-2,11,9,234,133.5,100.5,4,315,201.5,113.5,Don Julios,All That is Wright
-2,12,14,203,116,87,2,244,138,106,Hader Better Faster Stronger,Framber Valdez Oil Spill
+2,7,12,251.5,139.5,112,7,286,178,108,Blasphemous Hot Takes,Cron's Disease
+2,8,11,260.5,169,91.5,5,272.5,162,110.5,The West Bank Occupiers,The Traveling Secretaries
+2,9,6,321.5,176.5,145,8,290,172.5,117.5,The Novaks,Mt. Everest Taquito Farmers
+2,10,1,280.5,214.5,66,13,275.5,160.5,115,Yosemite Yeshivas,Ketel of Fish
+2,11,9,257.5,158,99.5,4,344,224.5,119.5,Don Julios,All That is Wright
+2,12,14,257,159,98,2,288,174.5,113.5,Hader Better Faster Stronger,Framber Valdez Oil Spill
 3,13,11,NA,NA,NA,12,NA,NA,NA,The West Bank Occupiers,Blasphemous Hot Takes
 3,14,7,NA,NA,NA,6,NA,NA,NA,Cron's Disease,The Novaks
 3,15,5,NA,NA,NA,1,NA,NA,NA,The Traveling Secretaries,Yosemite Yeshivas
