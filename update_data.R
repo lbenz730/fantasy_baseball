@@ -608,6 +608,9 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
 
 ### Best Line-up
 best_lineup(params$season, params$matchup_id, save = F)
+if(params$matchup_id > 1) {
+  best_lineup(params$season, params$matchup_id-1, save = F)
+}
 
 ### Transaction Log
 trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)

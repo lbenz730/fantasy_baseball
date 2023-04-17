@@ -1108,8 +1108,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 12,NA,NA,NA,NA,NA,14
 13,NA,NA,NA,NA,NA,11
 14,NA,NA,NA,NA,NA,7
-15,NA,NA,NA,NA,NA,5
-16,NA,NA,NA,NA,NA,8
+15,3,Triston Casas,41180,NA,0,5
+16,3,Rafael Devers,33859,NA,0,8
 17,NA,NA,NA,NA,NA,13
 18,NA,NA,NA,NA,NA,4
 19,NA,NA,NA,NA,NA,12
@@ -1226,7 +1226,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 10,NA,NA,NA,NA,NA,13
 11,NA,NA,NA,NA,NA,4
 12,NA,NA,NA,NA,NA,2
-13,NA,NA,NA,NA,NA,12
+13,3,Masataka Yoshida,4872598,NA,0,12
 14,NA,NA,NA,NA,NA,6
 15,NA,NA,NA,NA,NA,1
 16,NA,NA,NA,NA,NA,9
