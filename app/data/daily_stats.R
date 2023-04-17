@@ -67,6 +67,9 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
     mutate('team_id' = ifelse(team == 'home', df_schedule$home_team_id[index], df_schedule$away_team_id[index])) %>%
     mutate('game_id' = index)
   
+  ### Christian Javier Rule
+  df$points[df$relief_start & df$qs] <- df$points[df$relief_start & df$qs] + 5
+  
   return(df)
 
 }

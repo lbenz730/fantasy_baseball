@@ -634,7 +634,7 @@ shinyServer(function(input, output, session) {
       mutate('lineup_id' = ifelse(lineup_id == 5, 11, lineup_id)) %>% 
       mutate('n_times' = map_dbl(player_id, ~sum(.x == df_log$player_id, na.rm = T))) %>% 
       mutate('player' = paste0(player, ' (', n_times, ')')) %>% 
-      inner_join(select(teams, team, team_id, logo)) %>% 
+      left_join(select(teams, team, team_id, logo)) %>% 
       arrange(lineup_id)  %>% 
       select(position, player, player_url, team, logo, points, ppg)
     
@@ -793,7 +793,7 @@ shinyServer(function(input, output, session) {
     
     if(nrow(df_best()) > 0) {
     
-    gt_best <- 
+    gt_best <-
       gt(df_best()) %>%
       
       ### Align Columns
@@ -832,7 +832,8 @@ shinyServer(function(input, output, session) {
       ) %>%
       
       text_transform(
-        locations = cells_body(contains(c('logo'))),
+        locations = cells_body(columns = contains(c('logo')), 
+                               rows = !is.na(logo)),
         fn = function(x) {
           local_image(
             filename = x,
@@ -989,7 +990,7 @@ shinyServer(function(input, output, session) {
     plot_wp(season = params$season, 
             week = input$matchup_id_wp,
             plot = F,
-            all =  hour(Sys.Date()) > 17 | input$matchup_id_wp < params$current_matchup) %>% 
+            all =  hour(Sys.time()) > 17 | input$matchup_id_wp < params$current_matchup) %>% 
       mutate('start_factor' = factor(case_when(start_advantage >= 4 ~ '> +3',
                                                start_advantage <= -4 ~ '< -3',
                                                start_advantage > 0 ~ paste0('+', start_advantage),

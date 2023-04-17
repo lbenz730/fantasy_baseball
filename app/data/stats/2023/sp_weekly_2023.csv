@@ -1106,13 +1106,52 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 10,NA,NA,NA,NA,NA,NA,1
 11,NA,NA,NA,NA,NA,NA,9
 12,NA,NA,NA,NA,NA,NA,14
-13,3,Taylor Ward,34923,NA,0,NA,11
-13,3,Brandon Drury,32269,NA,0,NA,11
-14,NA,NA,NA,NA,NA,NA,7
-15,3,Triston Casas,41180,NA,0,NA,5
-16,3,Rafael Devers,33859,NA,0,NA,8
-17,NA,NA,NA,NA,NA,NA,13
-18,NA,NA,NA,NA,NA,NA,4
+13,3,Wilmer Flores,30627,NA,1,NA,11
+13,3,Tommy Edman,39907,NA,0,NA,11
+13,3,Luis Arraez,39572,NA,0,NA,11
+13,3,Taylor Ward,34923,NA,0.5,NA,11
+13,3,Brandon Drury,32269,NA,2,NA,11
+13,3,Josh Rojas,40718,NA,0,NA,11
+14,3,Freddie Freeman,30193,NA,0,NA,7
+14,3,Yordan Alvarez,36018,NA,0,NA,7
+14,3,Bobby Witt Jr.,42403,NA,0,NA,7
+14,3,Kris Bryant,33172,NA,0,NA,7
+14,3,Nolan Gorman,41174,NA,0,NA,7
+14,3,Vaughn Grissom,42503,NA,0,NA,7
+14,3,Elias Diaz,33594,NA,0,NA,7
+14,3,C.J. Cron,32155,NA,0,NA,7
+14,3,Andrew McCutchen,28701,NA,0,NA,7
+15,3,Ian Happ,34945,NA,0,NA,5
+15,3,MJ Melendez,40948,NA,0,NA,5
+15,3,Justin Turner,29607,NA,0,NA,5
+15,3,Jose Abreu,33095,NA,0,NA,5
+15,3,Randy Arozarena,36488,NA,0,NA,5
+15,3,Triston Casas,41180,NA,4,NA,5
+16,3,Teoscar Hernandez,33377,NA,0,NA,8
+16,3,Jesus Luzardo,39667,1,5,0,8
+16,3,Rafael Devers,33859,NA,4,NA,8
+16,3,Thairo Estrada,36485,NA,0,NA,8
+16,3,Garrett Cooper,33398,NA,-0.5,NA,8
+16,3,Christian Walker,32758,NA,0,NA,8
+16,3,Tyler O'Neill,34168,NA,0,NA,8
+16,3,Jazz Chisholm Jr.,41433,NA,-0.5,NA,8
+16,3,Charlie Blackmon,31084,NA,0,NA,8
+16,3,Brendan Donovan,41773,NA,0,NA,8
+17,3,Ketel Marte,32512,NA,0,NA,13
+17,3,Hunter Greene,39635,1,4,0,13
+17,3,Bryan Reynolds,38980,NA,0,NA,13
+17,3,Alex Bregman,34886,NA,0,NA,13
+17,3,Seiya Suzuki,4142424,NA,0,NA,13
+17,3,Vladimir Guerrero Jr.,35002,NA,0,NA,13
+18,3,Logan Webb,41216,1,7,0,4
+18,3,Marcus Semien,32146,NA,0,NA,4
+18,3,Kyle Tucker,34967,NA,0,NA,4
+18,3,Max Muncy,33303,NA,0,NA,4
+18,3,Jeremy Pena,41273,NA,0,NA,4
+18,3,Isaac Paredes,39706,NA,1,NA,4
+18,3,Alex Verdugo,33786,NA,2,NA,4
+18,3,Jarred Kelenic,41150,NA,0,NA,4
+18,3,Mookie Betts,33039,NA,0,NA,4
 19,NA,NA,NA,NA,NA,NA,12
 20,NA,NA,NA,NA,NA,NA,1
 21,NA,NA,NA,NA,NA,NA,9
@@ -1227,12 +1266,52 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 10,NA,NA,NA,NA,NA,NA,13
 11,NA,NA,NA,NA,NA,NA,4
 12,NA,NA,NA,NA,NA,NA,2
-13,3,Masataka Yoshida,4872598,NA,0,NA,12
-14,NA,NA,NA,NA,NA,NA,6
-15,NA,NA,NA,NA,NA,NA,1
-16,3,Hunter Renfroe,33205,NA,0,NA,9
-17,3,Logan O'Hoppe,42047,NA,0,NA,14
-18,3,Shohei Ohtani,39832,NA,0,NA,2
+13,3,Daulton Varsho,40963,NA,0,NA,12
+13,3,J.D. Davis,33796,NA,-0.5,NA,12
+13,3,Mauricio Dubon,35304,NA,0,NA,12
+13,3,Bo Bichette,38904,NA,0,NA,12
+13,3,Masataka Yoshida,4872598,NA,0.5,NA,12
+13,3,Kutter Crawford,41277,1,28,0,12
+13,3,Mike Yastrzemski,33341,NA,-0.5,NA,12
+13,3,Brent Rooker,40926,NA,0,NA,12
+13,3,Matt Olson,32767,NA,0,NA,12
+14,3,Esteury Ruiz,39680,NA,0,NA,6
+14,3,Josh Jung,42437,NA,0,NA,6
+14,3,Miguel Vargas,42453,NA,0,NA,6
+14,3,Austin Riley,34982,NA,0,NA,6
+14,3,Salvador Perez,31127,NA,0,NA,6
+14,3,Lourdes Gurriel Jr.,36040,NA,0,NA,6
+14,3,Brandon Lowe,39961,NA,0,NA,6
+14,3,Jurickson Profar,31117,NA,0,NA,6
+14,3,George Springer,32078,NA,0,NA,6
+14,3,Ryan McMahon,33247,NA,0,NA,6
+15,3,Matt Chapman,33857,NA,0,NA,1
+15,3,Sean Murphy,33557,NA,0,NA,1
+15,3,Ozzie Albies,33783,NA,0,NA,1
+15,3,J.D. Martinez,31065,NA,0,NA,1
+15,3,Ronald Acuna Jr.,36185,NA,0,NA,1
+15,3,Harold Ramirez,33259,NA,0,NA,1
+15,3,Eugenio Suarez,32367,NA,0,NA,1
+15,3,Dansby Swanson,34895,NA,0,NA,1
+16,3,Lars Nootbaar,4448736,NA,0,NA,9
+16,3,Nico Hoerner,41219,NA,0,NA,9
+16,3,Julio Rodriguez,41044,NA,0,NA,9
+16,3,Hunter Renfroe,33205,NA,8,NA,9
+16,3,Cody Bellinger,33912,NA,0,NA,9
+16,3,Nathaniel Lowe,40538,NA,0,NA,9
+16,3,Patrick Wisdom,32861,NA,0,NA,9
+16,3,Nolan Arenado,31261,NA,0,NA,9
+17,3,Corbin Carroll,42404,NA,0,NA,14
+17,3,Vinnie Pasquantino,4109109,NA,0,NA,14
+17,3,Jordan Walker,4684778,NA,0,NA,14
+17,3,Logan O'Hoppe,42047,NA,0.5,NA,14
+17,3,Tyler Stephenson,34975,NA,0,NA,14
+18,3,Wander Franco,40929,NA,-1,NA,2
+18,3,Jonathan India,41171,NA,1,NA,2
+18,3,Ty France,35591,NA,0,NA,2
+18,3,Shohei Ohtani,39832,1,5.5,0,2
+18,3,Yandy Diaz,33481,NA,0,NA,2
+18,3,Manuel Margot,33599,NA,0,NA,2
 19,NA,NA,NA,NA,NA,NA,6
 20,NA,NA,NA,NA,NA,NA,11
 21,NA,NA,NA,NA,NA,NA,7

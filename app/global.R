@@ -202,7 +202,7 @@ plot_k_avg <- function(k) {
     filter(!start) %>% 
     group_by(team_id, scoring_period_id) %>% 
     summarise('n_points' = sum(points),
-              'n_games' =  sum(relief),
+              'n_games' =  sum(relief & !relief_start),
               'n_qs' = sum(qs),
               'ppg' = n_points/n_games) %>% 
     mutate('roll_points' = zoo::rollsum(n_points, k = k, na.pad = T, align = 'right'),

@@ -394,12 +394,17 @@ best_lineup <- function(season = 2023, week, save = T) {
         df_stat <- df_rp
       }
       
-      df_best[df_best$lineup_id == pos_id, setdiff(names(df_best), c('lineup_id', 'position', 'asg_team'))] <- 
+      tmp_stat <- 
         df_stat %>% 
         filter(!player_id %in% c(df_best$player_id)) %>% 
         arrange(-n_points) %>% 
         head(df_constraints$quantity[df_constraints$lineup_id == pos_id]) %>% 
         select(player, player_id, team_id, 'points' = n_points, ppg)
+      
+      if(nrow(tmp_stat) > 0) {
+        df_best[which(df_best$lineup_id == pos_id)[1:nrow(tmp_stat)], setdiff(names(df_best), c('lineup_id', 'position', 'asg_team'))] <- tmp_stat
+      }
+      
     }
   }
   

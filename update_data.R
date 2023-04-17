@@ -164,23 +164,23 @@ pitch_stats <-
   summarise('qs' = sum(qs),
             'k' = sum(p_k),
             'k_sp' = sum(p_k[start]),
-            'k_rp' = sum(p_k[relief]),
+            'k_rp' = sum(p_k[relief & !relief_start]),
             'bb' = sum(p_walks + p_ibb),
             'bb_sp' = sum(p_walks[start] + p_ibb[start]),
-            'bb_rp' = sum(p_walks[relief] + p_ibb[relief]),
+            'bb_rp' = sum(p_walks[relief & !relief_start] + p_ibb[relief & !relief_start]),
             'outs' = sum(p_outs),
             'outs_sp' = sum(p_outs[start]),
-            'outs_rp' = sum(p_outs[relief]),
+            'outs_rp' = sum(p_outs[relief & !relief_start]),
             'earned_runs' = sum(p_er),
             'earned_runs_sp' = sum(p_er[start]),
-            'earned_runs_rp' = sum(p_er[relief]),
+            'earned_runs_rp' = sum(p_er[relief & !relief_start]),
             'hr_allowed_sp' = sum(hr_allowed[start]),
-            'hr_allowed_rp' = sum(hr_allowed[relief]),
+            'hr_allowed_rp' = sum(hr_allowed[relief & !relief_start]),
             'hr_allowed' = sum(hr_allowed),
             
             'hpb' = sum(p_hbp),
             'hpb_sp' = sum(p_hbp[start]),
-            'hpb_rp' = sum(p_hbp[relief]),
+            'hpb_rp' = sum(p_hbp[relief & !relief_start]),
             'blue_balls' = sum(blue_balls)) %>% 
   mutate('era' = earned_runs/outs * 27,
          'era_sp' = earned_runs_sp/outs_sp * 27,
@@ -638,12 +638,6 @@ df_rp_penalty <-
   filter(penalty != 0)
 
 write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
-
-dir_copy('data/', 'app/data', overwrite = T)
-dir_copy('figures/', 'app/figures', overwrite = T)
-dir_copy('models/', 'app/models', overwrite = T)
-file.remove('app/data/playoff_odds/raw_sims.csv')
-file.remove('data/playoff_odds/raw_sims.csv')
 
 ### Best Line-up
 best_lineup(params$season, params$matchup_id, save = F)
