@@ -219,6 +219,7 @@ relief_starts <-
   group_by(player, player_id, team_id, matchup_id) %>% 
   summarise('sp_games' = sum(start),
             'rp_games' = sum(relief) - sum(relief_start),
+            'n_qs' = sum(qs),
             'relief_starts' = sum(relief_start),
             'sp_points' = sum(points[start], na.rm = T),
             'rp_points' = sum(points[relief & !relief_start], na.rm = T)) %>% 
@@ -262,6 +263,7 @@ for(i in 1:nrow(relief_starts)) {
   rp_points$n_games[ix_rp] <- relief_starts$rp_games[i]
   sp_points$n_points[ix_sp] <- relief_starts$sp_points[i]
   sp_points$n_games[ix_sp] <- relief_starts$sp_games[i]
+  sp_points$n_qs[ix_sp] <- relief_starts$n_qs[i]
 }
 
 write_csv(batter_points, glue('data/stats/{params$season}/batting_weekly_{params$season}.csv'))

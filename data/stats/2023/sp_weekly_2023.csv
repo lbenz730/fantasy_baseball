@@ -1106,7 +1106,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 10,NA,NA,NA,NA,NA,NA,1
 11,NA,NA,NA,NA,NA,NA,9
 12,NA,NA,NA,NA,NA,NA,14
-13,3,Wilmer Flores,30627,NA,1,NA,11
+13,3,Wilmer Flores,30627,NA,3,NA,11
 13,3,Tommy Edman,39907,NA,0,NA,11
 13,3,Luis Arraez,39572,NA,0,NA,11
 13,3,Taylor Ward,34923,NA,0.5,NA,11
@@ -1128,7 +1128,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 15,3,Randy Arozarena,36488,NA,0,NA,5
 15,3,Triston Casas,41180,NA,4,NA,5
 16,3,Teoscar Hernandez,33377,NA,0,NA,8
-16,3,Jesus Luzardo,39667,1,5,0,8
+16,3,Jesus Luzardo,39667,1,1.5,0,8
 16,3,Rafael Devers,33859,NA,4,NA,8
 16,3,Thairo Estrada,36485,NA,0,NA,8
 16,3,Garrett Cooper,33398,NA,-0.5,NA,8
@@ -1138,12 +1138,12 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 16,3,Charlie Blackmon,31084,NA,0,NA,8
 16,3,Brendan Donovan,41773,NA,0,NA,8
 17,3,Ketel Marte,32512,NA,0,NA,13
-17,3,Hunter Greene,39635,1,4,0,13
+17,3,Hunter Greene,39635,1,7,0,13
 17,3,Bryan Reynolds,38980,NA,0,NA,13
 17,3,Alex Bregman,34886,NA,0,NA,13
 17,3,Seiya Suzuki,4142424,NA,0,NA,13
 17,3,Vladimir Guerrero Jr.,35002,NA,0,NA,13
-18,3,Logan Webb,41216,1,7,0,4
+18,3,Logan Webb,41216,1,10,0,4
 18,3,Marcus Semien,32146,NA,0,NA,4
 18,3,Kyle Tucker,34967,NA,0,NA,4
 18,3,Max Muncy,33303,NA,0,NA,4
@@ -1281,7 +1281,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 14,3,Austin Riley,34982,NA,0,NA,6
 14,3,Salvador Perez,31127,NA,0,NA,6
 14,3,Lourdes Gurriel Jr.,36040,NA,0,NA,6
-14,3,Brandon Lowe,39961,NA,0,NA,6
+14,3,Brandon Lowe,39961,NA,-0.5,NA,6
 14,3,Jurickson Profar,31117,NA,0,NA,6
 14,3,George Springer,32078,NA,0,NA,6
 14,3,Ryan McMahon,33247,NA,0,NA,6
