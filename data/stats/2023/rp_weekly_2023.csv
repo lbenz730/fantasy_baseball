@@ -1106,7 +1106,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 10,NA,NA,NA,NA,NA,1
 11,NA,NA,NA,NA,NA,9
 12,NA,NA,NA,NA,NA,14
-13,NA,NA,NA,NA,NA,11
+13,3,Taylor Ward,34923,NA,0,11
+13,3,Brandon Drury,32269,NA,0,11
 14,NA,NA,NA,NA,NA,7
 15,3,Triston Casas,41180,NA,0,5
 16,3,Rafael Devers,33859,NA,0,8
@@ -1229,9 +1230,9 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 13,3,Masataka Yoshida,4872598,NA,0,12
 14,NA,NA,NA,NA,NA,6
 15,NA,NA,NA,NA,NA,1
-16,NA,NA,NA,NA,NA,9
-17,NA,NA,NA,NA,NA,14
-18,NA,NA,NA,NA,NA,2
+16,3,Hunter Renfroe,33205,NA,0,9
+17,3,Logan O'Hoppe,42047,NA,0,14
+18,3,Shohei Ohtani,39832,NA,NA,2
 19,NA,NA,NA,NA,NA,6
 20,NA,NA,NA,NA,NA,11
 21,NA,NA,NA,NA,NA,7

@@ -1,26 +1,26 @@
 lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
-0,C,Will Smith,38309,8,42.5,6.071428571428571,1
-1,1B,Matt Olson,32767,12,44,4.4,1
-2,2B,Andres Gimenez,37729,14,40,4,1
-3,3B,Rafael Devers,33859,8,43,4.777777777777778,1
+0,C,Will Smith,38309,8,43.5,5.4375,1
+1,1B,Matt Olson,32767,12,47,4.7,1
+2,2B,Andres Gimenez,37729,14,41,4.1,1
+3,3B,Matt Chapman,33857,1,50.5,5.05,1
 4,SS,Wander Franco,40929,2,45.5,5.055555555555555,1
 5,OF,Adam Duvall,32664,9,61,7.625,1
 5,OF,Bryan Reynolds,38980,13,58.5,6.5,1
-5,OF,Mike Trout,30836,1,46.5,5.166666666666667,1
+5,OF,Mike Trout,30836,1,47.5,5.277777777777778,1
 5,OF,Randy Arozarena,36488,5,44.5,4.944444444444445,1
-5,OF,Luis Robert Jr.,39631,12,41.5,4.611111111111111,1
-6,2B/SS,Xander Bogaerts,31606,6,39.5,3.95,1
-7,1B/3B,Pete Alonso,37498,2,43.5,4.35,1
-12,UTIL,Yordan Alvarez,36018,7,41.5,4.611111111111111,1
+5,OF,Ronald Acuna Jr.,36185,1,44.5,4.45,1
+6,2B/SS,Xander Bogaerts,31606,6,43.5,4.35,1
+7,1B/3B,Vladimir Guerrero Jr.,35002,13,44.5,4.45,1
+12,UTIL,Pete Alonso,37498,2,43.5,4.35,1
 14,SP,Jeffrey Springs,35397,4,63,31.5,1
 14,SP,Drew Rasmussen,42584,5,61,30.5,1
 14,SP,Gerrit Cole,32081,12,56.5,28.25,1
 14,SP,Shohei Ohtani,39832,2,52,26,1
 14,SP,Sandy Alcantara,35241,9,51.5,25.75,1
 14,SP,Marcus Stroman,32815,9,51,25.5,1
-15,RP,Jordan Romano,36380,5,27,6.75,1
 15,RP,Josh Hader,32760,14,26,6.5,1
 15,RP,Jorge Lopez,33833,1,25,5,1
+15,RP,Aroldis Chapman,30442,11,23.5,5.875,1
 0,C,Sean Murphy,33557,1,39.5,6.583333333333333,2
 1,1B,Rowdy Tellez,34287,1,32,4.571428571428571,2
 2,2B,Max Muncy,33303,4,37.5,6.25,2

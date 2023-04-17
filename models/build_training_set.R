@@ -8,8 +8,12 @@ build_train_set <- function(season) {
   df_stats <- read_csv(here(glue('data/stats/{season}/daily_stats_{season}.csv')))
   df_teams <- read_csv(here(glue('data/stats/{season}/teams_{season}.csv')))
   df_start <- read_csv(here('data/df_start.csv'))
+  df_rp_penalty <- 
+    read_csv(here('data/red_flags/rp_penalties.csv')) %>% 
+    left_join(df_teams, by = 'team') %>% 
+    select(team_id, 'rp_penalty' = penalty, matchup_id, scoring_period_id)  
   df_start <- df_start[df_start$season == season,]
- 
+  
   df_features <- 
     df_stats %>%
     filter(in_lineup) %>%
@@ -22,10 +26,14 @@ build_train_set <- function(season) {
               'starts' = sum(start),
               'batting_points' = sum(points[batter]),
               'pitching_points' = sum(points[pitcher])) %>%
+    inner_join(df_start %>% select(matchup_id, start_period)) %>% 
+    mutate('scoring_period_id' = start_period -1 + day_of_matchup) %>% 
     group_by(matchup_id, team_id) %>%
     mutate('total_starts' = cumsum(starts)) %>% 
     mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) <= start_cap ) %>% 
     mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points), 0.5, ceiling))) %>% 
+    left_join(df_rp_penalty, by = c('team_id', 'matchup_id', 'scoring_period_id')) %>%
+    mutate('penalty' = ifelse(!is.na(rp_penalty), penalty + rp_penalty, penalty)) %>% 
     mutate('total_points' = cumsum(day_points - penalty),
            'total_batting_points' = cumsum(batting_points),
            'total_pitching_points' = cumsum(pitching_points)) %>% 
@@ -95,9 +103,9 @@ build_train_set <- function(season) {
            'pitch_spread_per_start' = (pitch_points_per_day_home - pitch_points_per_day_away) * exp(starts_left_home + starts_left_away - 2 * start_cap),
            'points_per_bat_spread' = (bat_points_per_day_home - bat_points_per_day_away) * matchup_id/20 * exp(-(7 - pmin(days_left, 7))),
            'points_per_day_spread' = points_per_day_home - points_per_day_away)
-           
-             
-
+  
+  
+  
   df_train$points_per_bat_spread[df_train$days_left <= 4] <- 0
   df_train$points_per_day_spread[df_train$days_left <= 4] <- 0
   

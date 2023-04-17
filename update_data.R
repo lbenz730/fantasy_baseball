@@ -606,12 +606,6 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
   bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
-### Best Line-up
-best_lineup(params$season, params$matchup_id, save = F)
-if(params$matchup_id > 1) {
-  best_lineup(params$season, params$matchup_id-1, save = F)
-}
-
 ### Transaction Log
 trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
 
@@ -638,11 +632,24 @@ df_rp_penalty <-
   arrange(scoring_period_id) %>% 
   mutate('rp_id' = map_dbl(player_id, ~which(unique(player_id) == .x))) %>% 
   summarise('n_rp' = n_distinct(paste(stint, player_id)),
-            'penalty' = sum(points[rp_id > 5])) %>% 
+            'penalty' = sum(points[rp_id > 5]),
+            'scoring_period_id' = min(scoring_period_id[rp_id > 5])) %>% 
   ungroup() %>% 
   filter(penalty != 0)
 
 write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
+
+dir_copy('data/', 'app/data', overwrite = T)
+dir_copy('figures/', 'app/figures', overwrite = T)
+dir_copy('models/', 'app/models', overwrite = T)
+file.remove('app/data/playoff_odds/raw_sims.csv')
+file.remove('data/playoff_odds/raw_sims.csv')
+
+### Best Line-up
+best_lineup(params$season, params$matchup_id, save = F)
+if(params$matchup_id > 1) {
+  best_lineup(params$season, params$matchup_id-1, save = F)
+}
 
 dir_copy('data/', 'app/data', overwrite = T)
 dir_copy('figures/', 'app/figures', overwrite = T)
