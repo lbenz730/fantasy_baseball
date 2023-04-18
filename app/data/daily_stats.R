@@ -29,18 +29,18 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'start' = as.logical(sum(.x$stats$`33` > 0 | .x$stats$`34` >= 12, na.rm = T)),
                'relief' = as.logical(sum(.x$stats$`32` > 0 & .x$stats$`33` == 0, na.rm = T)),
                'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)),
-               'qs' = as.logical(sum(.x$stats$`34` >= 18 & .x$stats$`45` <= 3)),
+               'qs' = as.logical(sum(.x$stats$`34` >= 18 & .x$stats$`45` <= 3, na.rm = T)),
                'save' = as.logical(sum(.x$stats$`57`, na.rm = T)),
                'home_runs' = sum(.x$stats$`5`, na.rm = T),
-               'blue_balls' = as.logical(sum(.x$stats$`34` == 17 & .x$stats$`45` <= 3)),
-               'hr_allowed' = sum(.x$stats$`46`),
-               'p_walks' = sum(.x$stats$`39`),
-               'p_ibb' = sum(.x$stats$`40`),
-               'p_hbp' = sum(.x$stats$`42`),
-               'p_outs' = sum(.x$stats$`34`),
-               'p_er' = sum(.x$stats$`45`),
-               'p_k' = sum(.x$stats$`48`),
-               'p_cg' = sum(.x$stats$`62`)
+               'blue_balls' = as.logical(sum(.x$stats$`34` == 17 & .x$stats$`45` <= 3, na.rm = T)),
+               'hr_allowed' = sum(.x$stats$`46`, na.rm = T),
+               'p_walks' = sum(.x$stats$`39`, na.rm = T),
+               'p_ibb' = sum(.x$stats$`40`, na.rm = T),
+               'p_hbp' = sum(.x$stats$`42`, na.rm = T),
+               'p_outs' = sum(.x$stats$`34`, na.rm = T),
+               'p_er' = sum(.x$stats$`45`, na.rm = T),
+               'p_k' = sum(.x$stats$`48`, na.rm = T),
+               'p_cg' = sum(.x$stats$`62`, na.rm = T)
         )
       } else {
         tibble('points' = 0,
