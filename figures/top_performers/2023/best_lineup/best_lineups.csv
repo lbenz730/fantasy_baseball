@@ -43,25 +43,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,David Robertson,29172,14,22,5.5,2
 15,RP,Paul Sewald,35009,9,22,5.5,2
 15,RP,Emmanuel Clase,41743,8,21.5,5.375,2
-0,C,Logan O'Hoppe,42047,14,0.5,0.5,3
-1,1B,Triston Casas,41180,5,4,4,3
-2,2B,Brandon Drury,32269,11,2,2,3
-3,3B,Rafael Devers,33859,8,4,4,3
-4,SS,Amed Rosario,33215,4,0,NA,3
+0,C,William Contreras,39895,11,2.5,2.5,3
+1,1B,Freddie Freeman,30193,7,14,14,3
+2,2B,Marcus Semien,32146,4,8,8,3
+3,3B,Patrick Wisdom,32861,9,14,14,3
+4,SS,Nico Hoerner,41219,9,8,8,3
+5,OF,Kris Bryant,33172,7,11,11,3
 5,OF,Hunter Renfroe,33205,9,8,8,3
-5,OF,Alex Verdugo,33786,4,2,2,3
-5,OF,Masataka Yoshida,4872598,12,0.5,0.5,3
-5,OF,Taylor Ward,34923,11,0.5,0.5,3
-5,OF,Aaron Judge,33192,14,0,NA,3
-6,2B/SS,Isaac Paredes,39706,4,1,1,3
-7,1B/3B,Wilmer Flores,30627,11,1,1,3
-12,UTIL,Jonathan India,41171,2,1,1,3
+5,OF,Andrew McCutchen,28701,7,7,7,3
+5,OF,Cody Bellinger,33912,9,6,6,3
+5,OF,Ian Happ,34945,5,6,6,3
+6,2B/SS,Ketel Marte,32512,13,7.5,7.5,3
+7,1B/3B,Josh Jung,42437,6,7.5,7.5,3
+12,UTIL,Max Muncy,33303,4,7,7,3
 14,SP,Kutter Crawford,41277,12,28,28,3
-14,SP,Logan Webb,41216,4,7,7,3
-14,SP,Shohei Ohtani,39832,2,5.5,5.5,3
-14,SP,Jesus Luzardo,39667,8,5,5,3
-14,SP,Hunter Greene,39635,13,4,4,3
-14,SP,NA,NA,NA,NA,NA,3
-15,RP,NA,NA,NA,NA,NA,3
-15,RP,NA,NA,NA,NA,NA,3
-15,RP,NA,NA,NA,NA,NA,3
+14,SP,Merrill Kelly,32968,12,17,17,3
+14,SP,Jacob deGrom,32796,13,16.5,16.5,3
+14,SP,Max Fried,32685,8,15,15,3
+14,SP,Cristian Javier,41261,1,14,14,3
+14,SP,Corbin Burnes,39878,6,11,11,3
+15,RP,Andrew Chafin,32810,1,8,8,3
+15,RP,A.J. Minter,36133,7,7,7,3
+15,RP,Adam Ottavino,29705,13,6,6,3
