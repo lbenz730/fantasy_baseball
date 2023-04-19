@@ -1,5 +1,5 @@
 team_id,division_id,team,location,nickname,logo,owners,abbreviation,wins,losses,ties
-1,1,Yosemite Yeshivas,Yosemite,Yeshivas,https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28721.png&w=350&h=254,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,1,1,0
+1,1,Crown Heights Crusaders,Crown Heights,Crusaders,https://i.imgur.com/I68BxCy.png,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,1,1,0
 2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},FVOS,2,0,0
 4,1,All That is Wright,All,That is Wright,https://g.espncdn.com/lm-static/logo-packs/flb/Letter-and-Number-Caps-ESPN/caps5.svg,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,1,1,0
 5,1,The Traveling Secretaries,The Traveling,Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,1,1,0
@@ -9,5 +9,5 @@ team_id,division_id,team,location,nickname,logo,owners,abbreviation,wins,losses,
 9,1,Don Julios,Don,Julios,https://i.imgur.com/lcc8vL6.png,{6C6E5618-71E4-414B-AE56-1871E4314B09},WAG,1,1,0
 11,1,The West Bank Occupiers,The West Bank,Occupiers ,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,{61DEDFD6-182F-4D0B-855E-5015A1E168E2},LAMA,1,1,0
 12,1,Blasphemous Hot Takes,Blasphemous,Hot Takes,https://i.imgur.com/egcNf8O.jpg,{8A2DBF73-E806-4373-8F90-B1F92878EE00},HOT,2,0,0
-13,1,Ketel of Fish,Ketel,of Fish,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,0,2,0
+13,1,Ketel of Fish,Ketel,of Fish,https://i.imgur.com/I68BxCy.png,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,0,2,0
 14,1,Hader Better Faster Stronger,Hader Better,Faster Stronger,https://imgur.com/d4sbJBf.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,0,2,0

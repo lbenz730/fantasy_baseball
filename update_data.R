@@ -61,6 +61,8 @@ teams <-
 teams$logo[which(teams$team == "The Traveling Secretaries")] <- 'https://i.imgur.com/wll1Ubw.jpg'
 teams$logo[which(teams$team == 'Mt. Everest Taquito Farmers')] <-  'https://i.imgur.com/VW41hvO.gif'
 teams$logo[which(teams$team == 'Yosemite Yeshivas')] <- 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28721.png&w=350&h=254'
+teams$logo[which(teams$team == 'Crown Heights Crusaders')] <- 'https://i.imgur.com/I68BxCy.png' 
+teams$logo[which(teams$team == 'Ketel of Fish')] <- 'https://i.imgur.com/I68BxCy.png'
 write_csv(teams, glue('data/stats/{params$season}/teams_{params$season}.csv'))
 
 ### Schedule and Batting + Pitching Points
