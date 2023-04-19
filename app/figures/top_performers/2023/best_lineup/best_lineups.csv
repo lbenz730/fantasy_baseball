@@ -44,7 +44,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Paul Sewald,35009,9,22,5.5,2
 15,RP,Emmanuel Clase,41743,8,21.5,5.375,2
 0,C,Willson Contreras,32532,7,12.5,12.5,3
-1,1B,Freddie Freeman,30193,7,16,8,3
+1,1B,Freddie Freeman,30193,7,17,8.5,3
 2,2B,Marcus Semien,32146,4,20,10,3
 3,3B,Patrick Wisdom,32861,9,16.5,8.25,3
 4,SS,Nico Hoerner,41219,9,10,5,3
@@ -55,12 +55,12 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 5,OF,Riley Greene,42179,9,10,5,3
 6,2B/SS,Ketel Marte,32512,13,11.5,5.75,3
 7,1B/3B,Matt Chapman,33857,1,12.5,6.25,3
-12,UTIL,J.D. Martinez,31065,1,13,6.5,3
+12,UTIL,J.D. Martinez,31065,1,15,7.5,3
+14,SP,Clayton Kershaw,28963,1,32,32,3
 14,SP,Lucas Giolito,32697,6,29,29,3
 14,SP,Spencer Strider,4307825,7,29,29,3
 14,SP,Kutter Crawford,41277,12,28,28,3
 14,SP,Chris Sale,30948,6,27,27,3
-14,SP,Clayton Kershaw,28963,1,27,27,3
 14,SP,Chris Bassitt,33148,5,25.5,25.5,3
 15,RP,Dylan Floro,33852,13,12,6,3
 15,RP,Reynaldo Lopez,33860,13,10,10,3
