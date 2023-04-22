@@ -3,6 +3,7 @@ library(xgboost)
 library(lubridate)
 library(glue)
 library(here)
+library(recipes)
 source(here('models/build_training_set.R'))
 
 plot_wp <- function(season, week, plot = T, all = F) {

@@ -3,4 +3,6 @@ RUN install2.r rsconnect renv
 WORKDIR /home/millburn_savant
 COPY app app
 COPY deploy.R deploy.R
+COPY renv.lock renv.lock
+RUN R -e 'renv::restore()'
 CMD Rscript deploy.R
