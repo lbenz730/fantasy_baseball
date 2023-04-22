@@ -1,4 +1,7 @@
-library(tidyverse)
+library(readr)
+library(dplyr)
+library(purrr)
+library(tidyr)
 
 df_start_21_22 <-
   tibble('matchup_id' = 1:22) %>%
