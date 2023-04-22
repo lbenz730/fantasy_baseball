@@ -1,4 +1,7 @@
 library(rsconnect)
+library(renv)
+
+renv::restore()
 
 setAccountInfo(name = Sys.getenv('NAME'),
                token = Sys.getenv('TOKEN'),

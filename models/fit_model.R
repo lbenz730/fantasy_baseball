@@ -1,7 +1,7 @@
 library(tidyverse)
 library(xgboost)
-library(splitTools)
-library(tidymodels)
+# library(splitTools)
+# library(tidymodels)
 library(here)
 source(here('models/build_training_set.R'))
 
@@ -55,7 +55,7 @@ xgb_grid <-
     mtry(range = c(1, ncol(df))),
     min_n(),
     tree_depth(range = c(5L, 15)),
-    dials::learn_rate(range = c(-4, -1), trans = scales::log10_trans()),
+    learn_rate(range = c(-4, -1), trans = log10_trans()),
     loss_reduction(),
     sample_size = sample_prop(),
     size = 100) %>%

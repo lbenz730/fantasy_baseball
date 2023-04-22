@@ -1,6 +1,5 @@
 library(tidyverse)
 library(jsonlite)
-library(tidyverse)
 library(gt)
 library(furrr)
 library(glue)
