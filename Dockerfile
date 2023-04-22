@@ -4,6 +4,6 @@ WORKDIR /home/millburn_savant
 COPY app app
 COPY deploy.R deploy.R
 COPY renv.lock renv.lock
-RUN apt install libssl-dev
+RUN sudo apt install libssl-dev
 RUN R -e 'renv::restore()'
 CMD Rscript deploy.R
