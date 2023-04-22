@@ -595,266 +595,266 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
 
 ### Advanced Standings
 ```{r}
-df <-
-  select(exp_standings,
-         team,
-         logo,
-         win,
-         loss,
-         exp_win,
-         exp_loss,
-         batting_ppg,
-         sp_ppg,
-         rp_ppg,
-         adj_batting_pts,
-         adj_pitching_pts,
-         adj_pts,
-         batting_points,
-         pitching_points,
-         total_points,
-         qs_pct, 
-         rank) %>%
-  left_join(sim_results) %>% 
-  arrange(-exp_win, -total_points) 
-
-df$team[1:12] <-  paste0(df$team[1:12], ' (', df$rank[1:12], ')')
-df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
-df$mean_pts[13] <- mean(df$mean_pts[1:12])
-df <- select(df, -rank)
-
-
-gt1 <-
-  gt(df) %>%
-  
-  ### Round Numbers
-  fmt_number(columns = c(exp_win, exp_loss, mean_wins), decimals = 1, sep_mark = '') %>%
-  fmt_number(columns = c(win, loss), decimals = 1, sep_mark = '', drop_trailing_zeros = T, drop_trailing_dec_mark = T) %>%
-  fmt_number(columns = c(mean_pts), decimals = 0, sep_mark = '') %>%
-  fmt_number(columns = c(sp_ppg, rp_ppg, adj_pts, adj_batting_pts, adj_pitching_pts, batting_points, pitching_points, total_points), decimals = 1, sep_mark = '') %>%
-  fmt_number(columns = c(batting_ppg), decimals = 2, sep_mark = '') %>%
-  fmt_percent(columns = c(qs_pct, playoffs, last_place, champ), decimals = 1, sep_mark = '') %>%
-  sub_missing(columns = everything(), missing_text = "---") %>%
-  
-  ### Align Columns
-  cols_align(align = "center", columns = everything()) %>%
-  
-  ### Colors
-  data_color(columns = c(win, loss, exp_win, exp_loss),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0, params$matchup_id))) %>%
-  data_color(columns = c(batting_points),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$batting_points, na.rm = T))) %>%
-  data_color(columns = c(pitching_points),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$pitching_points, na.rm = T))) %>%
-  data_color(columns = c(total_points),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$total_points, na.rm = T))) %>%
-  data_color(columns = c(batting_ppg),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$batting_ppg, na.rm = T))) %>%
-  data_color(columns = c(rp_ppg),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$rp_ppg, na.rm = T))) %>%
-  data_color(columns = c(sp_ppg),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$sp_ppg, na.rm = T))) %>%
-  data_color(columns = c(adj_pts),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_pts, na.rm = T))) %>%
-  data_color(columns = c(adj_batting_pts),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_batting_pts, na.rm = T))) %>%
-  data_color(columns = c(adj_pitching_pts),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_pitching_pts, na.rm = T))) %>%
-  data_color(columns = c(qs_pct),
-             colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$qs_pct, na.rm = T))) %>%
-  data_color(columns = c(mean_pts), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(sim_results$mean_pts))) %>%
-  data_color(columns = c(mean_wins), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(sim_results$mean_wins))) %>%
-  data_color(columns = c(last_place, playoffs), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0,1))) %>%
-  data_color(columns = c(champ), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0,1))) %>%
-  
-  ### Borders
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "bottom",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_column_labels(
-        columns = gt::everything()
-      )
-    )
-  ) %>%
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "right",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_body(
-        columns = c(logo, exp_loss, qs_pct, adj_pts, loss, total_points)
-      )
-    )
-  ) %>%
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "top",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_body(
-        rows = team == 'League Average'
-      )
-    )
-  ) %>%
-  
-  tab_spanner(label = 'Season Simulations', columns = c('mean_pts', 'mean_wins', 'playoffs', 'champ', 'last_place')) %>%
-  tab_spanner(label = 'Total Points', columns = c('batting_points', 'pitching_points', 'total_points')) %>%
-  tab_spanner(label = 'Expected Record', columns = c('exp_win', 'exp_loss')) %>%
-  tab_spanner(label = 'Record', columns = c('win', 'loss')) %>%
-  tab_spanner(label = 'Points Per Player Appearance', columns = c('batting_ppg', 'rp_ppg', 'sp_ppg', 'qs_pct')) %>%
-  tab_spanner(label = 'Points Per Matchup', columns = c('adj_batting_pts', 'adj_pitching_pts', 'adj_pts')) %>% 
-  
-  ### Logos
-  text_transform(
-    locations = cells_body(c(logo)),
-    fn = function(x) {
-      web_image(
-        url = x,
-        height = 30
-      )
-    }
-  ) %>% 
-  tab_style(
-    style = list(
-      cell_fill(color = "white")
-    ),
-    locations = cells_body(
-      columns = c(team, win, loss, exp_win, exp_loss, mean_wins, playoffs, last_place, champ),
-      rows = team == 'League Average'
-    )
-  ) %>%
-  tab_style(
-    style = list(
-      cell_text(weight = "bold")
-    ),
-    locations = cells_body(
-      columns = c(team, win, loss, exp_win, exp_loss, mean_wins, playoffs, last_place),
-      rows = team == 'League Average'
-    )
-  ) %>%
-  
-  ### Check
-  text_transform(
-    locations = cells_body(
-      columns = c(playoffs),
-      rows = playoffs == 1
-    ),
-    fn = function(x) {
-      emo::ji('check')
-    }
-  ) %>% 
-  
-  text_transform(
-    locations = cells_body(
-      columns = c(playoffs),
-      rows = playoffs == 0
-    ),
-    fn = function(x) {
-      emo::ji('x')
-    }
-  ) %>% 
-  
-  text_transform(
-    locations = cells_body(
-      columns = c(last_place),
-      rows = last_place == 0
-    ),
-    fn = function(x) {
-      emo::ji('x')
-    }
-  ) %>% 
-  
-  text_transform(
-    locations = cells_body(
-      columns = c(last_place),
-      rows = last_place == 1
-    ),
-    fn = function(x) {
-      emo::ji('check')
-    }
-  ) %>% 
-  
-  text_transform(
-    locations = cells_body(
-      columns = c(champ),
-      rows = champ == 0
-    ),
-    fn = function(x) {
-      emo::ji('x')
-    }
-  ) %>% 
-  
-  text_transform(
-    locations = cells_body(
-      columns = c(champ),
-      rows = champ == 1
-    ),
-    fn = function(x) {
-      emo::ji('check')
-    }
-  ) %>% 
-  
-  ### Names
-  cols_label(
-    team = 'Team (Seed)',
-    logo = '',
-    win = 'Wins',
-    loss = 'Losses',
-    exp_win = 'Wins',
-    exp_loss = 'Losses',
-    batting_ppg = 'Batter',
-    sp_ppg = 'SP',
-    rp_ppg = 'RP',
-    adj_pts = 'Total',
-    adj_batting_pts = 'Batting',
-    adj_pitching_pts = 'Pitching',
-    batting_points = 'Batting',
-    pitching_points = 'Pitching',
-    total_points = 'Total',
-    qs_pct = 'QS %',
-    mean_wins = 'Avg. Wins',
-    mean_pts = 'Avg. Points',
-    playoffs = 'Playoffs',
-    champ = 'Champion',
-    last_place = html(ferry),
-  ) %>%
-  tab_header(
-    subtitle = md('**Millburnish Fantansy Baseball League Advanced Stats Table**'),
-    title = md('<img src=https://i.imgur.com/h3Vd6b8.png style="height:200px;">')
-  ) %>%
-  tab_options(column_labels.font.size = 20,
-              heading.title.font.size = 40,
-              heading.subtitle.font.size = 40,
-              heading.title.font.weight = 'bold',
-              heading.subtitle.font.weight = 'bold',
-              column_labels.font.weight = 'bold'
-              
-  ) %>%
-  tab_footnote(
-    footnote = "Expected Wins in a given week = (# of teams you scored higher than)/(11 teams you could've played)",
-    locations = cells_column_spanners(spanners = "Expected Record")
-  ) %>%
-  tab_footnote(
-    footnote = "Points Per Matchup adjusted as average per 7-day matchup",
-    locations = cells_column_spanners(spanners = "Points Per Matchup")
-  ) %>%
-  tab_footnote(
-    footnote = "100,000 simulations of remainder of season",
-    locations = cells_column_spanners(spanners = "Season Simulations")
-  )
+# df <-
+#   select(exp_standings,
+#          team,
+#          logo,
+#          win,
+#          loss,
+#          exp_win,
+#          exp_loss,
+#          batting_ppg,
+#          sp_ppg,
+#          rp_ppg,
+#          adj_batting_pts,
+#          adj_pitching_pts,
+#          adj_pts,
+#          batting_points,
+#          pitching_points,
+#          total_points,
+#          qs_pct, 
+#          rank) %>%
+#   left_join(sim_results) %>% 
+#   arrange(-exp_win, -total_points) 
+# 
+# df$team[1:12] <-  paste0(df$team[1:12], ' (', df$rank[1:12], ')')
+# df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
+# df$mean_pts[13] <- mean(df$mean_pts[1:12])
+# df <- select(df, -rank)
+# 
+# 
+# gt1 <-
+#   gt(df) %>%
+#   
+#   ### Round Numbers
+#   fmt_number(columns = c(exp_win, exp_loss, mean_wins), decimals = 1, sep_mark = '') %>%
+#   fmt_number(columns = c(win, loss), decimals = 1, sep_mark = '', drop_trailing_zeros = T, drop_trailing_dec_mark = T) %>%
+#   fmt_number(columns = c(mean_pts), decimals = 0, sep_mark = '') %>%
+#   fmt_number(columns = c(sp_ppg, rp_ppg, adj_pts, adj_batting_pts, adj_pitching_pts, batting_points, pitching_points, total_points), decimals = 1, sep_mark = '') %>%
+#   fmt_number(columns = c(batting_ppg), decimals = 2, sep_mark = '') %>%
+#   fmt_percent(columns = c(qs_pct, playoffs, last_place, champ), decimals = 1, sep_mark = '') %>%
+#   sub_missing(columns = everything(), missing_text = "---") %>%
+#   
+#   ### Align Columns
+#   cols_align(align = "center", columns = everything()) %>%
+#   
+#   ### Colors
+#   data_color(columns = c(win, loss, exp_win, exp_loss),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0, params$matchup_id))) %>%
+#   data_color(columns = c(batting_points),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$batting_points, na.rm = T))) %>%
+#   data_color(columns = c(pitching_points),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$pitching_points, na.rm = T))) %>%
+#   data_color(columns = c(total_points),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$total_points, na.rm = T))) %>%
+#   data_color(columns = c(batting_ppg),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$batting_ppg, na.rm = T))) %>%
+#   data_color(columns = c(rp_ppg),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$rp_ppg, na.rm = T))) %>%
+#   data_color(columns = c(sp_ppg),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$sp_ppg, na.rm = T))) %>%
+#   data_color(columns = c(adj_pts),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_pts, na.rm = T))) %>%
+#   data_color(columns = c(adj_batting_pts),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_batting_pts, na.rm = T))) %>%
+#   data_color(columns = c(adj_pitching_pts),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_pitching_pts, na.rm = T))) %>%
+#   data_color(columns = c(qs_pct),
+#              colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$qs_pct, na.rm = T))) %>%
+#   data_color(columns = c(mean_pts), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(sim_results$mean_pts))) %>%
+#   data_color(columns = c(mean_wins), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(sim_results$mean_wins))) %>%
+#   data_color(columns = c(last_place, playoffs), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0,1))) %>%
+#   data_color(columns = c(champ), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0,1))) %>%
+#   
+#   ### Borders
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = "bottom",
+#         color = "black",
+#         weight = px(3)
+#       )
+#     ),
+#     locations = list(
+#       cells_column_labels(
+#         columns = gt::everything()
+#       )
+#     )
+#   ) %>%
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = "right",
+#         color = "black",
+#         weight = px(3)
+#       )
+#     ),
+#     locations = list(
+#       cells_body(
+#         columns = c(logo, exp_loss, qs_pct, adj_pts, loss, total_points)
+#       )
+#     )
+#   ) %>%
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = "top",
+#         color = "black",
+#         weight = px(3)
+#       )
+#     ),
+#     locations = list(
+#       cells_body(
+#         rows = team == 'League Average'
+#       )
+#     )
+#   ) %>%
+#   
+#   tab_spanner(label = 'Season Simulations', columns = c('mean_pts', 'mean_wins', 'playoffs', 'champ', 'last_place')) %>%
+#   tab_spanner(label = 'Total Points', columns = c('batting_points', 'pitching_points', 'total_points')) %>%
+#   tab_spanner(label = 'Expected Record', columns = c('exp_win', 'exp_loss')) %>%
+#   tab_spanner(label = 'Record', columns = c('win', 'loss')) %>%
+#   tab_spanner(label = 'Points Per Player Appearance', columns = c('batting_ppg', 'rp_ppg', 'sp_ppg', 'qs_pct')) %>%
+#   tab_spanner(label = 'Points Per Matchup', columns = c('adj_batting_pts', 'adj_pitching_pts', 'adj_pts')) %>% 
+#   
+#   ### Logos
+#   text_transform(
+#     locations = cells_body(c(logo)),
+#     fn = function(x) {
+#       web_image(
+#         url = x,
+#         height = 30
+#       )
+#     }
+#   ) %>% 
+#   tab_style(
+#     style = list(
+#       cell_fill(color = "white")
+#     ),
+#     locations = cells_body(
+#       columns = c(team, win, loss, exp_win, exp_loss, mean_wins, playoffs, last_place, champ),
+#       rows = team == 'League Average'
+#     )
+#   ) %>%
+#   tab_style(
+#     style = list(
+#       cell_text(weight = "bold")
+#     ),
+#     locations = cells_body(
+#       columns = c(team, win, loss, exp_win, exp_loss, mean_wins, playoffs, last_place),
+#       rows = team == 'League Average'
+#     )
+#   ) %>%
+#   
+#   ### Check
+#   text_transform(
+#     locations = cells_body(
+#       columns = c(playoffs),
+#       rows = playoffs == 1
+#     ),
+#     fn = function(x) {
+#       emo::ji('check')
+#     }
+#   ) %>% 
+#   
+#   text_transform(
+#     locations = cells_body(
+#       columns = c(playoffs),
+#       rows = playoffs == 0
+#     ),
+#     fn = function(x) {
+#       emo::ji('x')
+#     }
+#   ) %>% 
+#   
+#   text_transform(
+#     locations = cells_body(
+#       columns = c(last_place),
+#       rows = last_place == 0
+#     ),
+#     fn = function(x) {
+#       emo::ji('x')
+#     }
+#   ) %>% 
+#   
+#   text_transform(
+#     locations = cells_body(
+#       columns = c(last_place),
+#       rows = last_place == 1
+#     ),
+#     fn = function(x) {
+#       emo::ji('check')
+#     }
+#   ) %>% 
+#   
+#   text_transform(
+#     locations = cells_body(
+#       columns = c(champ),
+#       rows = champ == 0
+#     ),
+#     fn = function(x) {
+#       emo::ji('x')
+#     }
+#   ) %>% 
+#   
+#   text_transform(
+#     locations = cells_body(
+#       columns = c(champ),
+#       rows = champ == 1
+#     ),
+#     fn = function(x) {
+#       emo::ji('check')
+#     }
+#   ) %>% 
+#   
+#   ### Names
+#   cols_label(
+#     team = 'Team (Seed)',
+#     logo = '',
+#     win = 'Wins',
+#     loss = 'Losses',
+#     exp_win = 'Wins',
+#     exp_loss = 'Losses',
+#     batting_ppg = 'Batter',
+#     sp_ppg = 'SP',
+#     rp_ppg = 'RP',
+#     adj_pts = 'Total',
+#     adj_batting_pts = 'Batting',
+#     adj_pitching_pts = 'Pitching',
+#     batting_points = 'Batting',
+#     pitching_points = 'Pitching',
+#     total_points = 'Total',
+#     qs_pct = 'QS %',
+#     mean_wins = 'Avg. Wins',
+#     mean_pts = 'Avg. Points',
+#     playoffs = 'Playoffs',
+#     champ = 'Champion',
+#     last_place = html(ferry),
+#   ) %>%
+#   tab_header(
+#     subtitle = md('**Millburnish Fantansy Baseball League Advanced Stats Table**'),
+#     title = md('<img src=https://i.imgur.com/h3Vd6b8.png style="height:200px;">')
+#   ) %>%
+#   tab_options(column_labels.font.size = 20,
+#               heading.title.font.size = 40,
+#               heading.subtitle.font.size = 40,
+#               heading.title.font.weight = 'bold',
+#               heading.subtitle.font.weight = 'bold',
+#               column_labels.font.weight = 'bold'
+#               
+#   ) %>%
+#   tab_footnote(
+#     footnote = "Expected Wins in a given week = (# of teams you scored higher than)/(11 teams you could've played)",
+#     locations = cells_column_spanners(spanners = "Expected Record")
+#   ) %>%
+#   tab_footnote(
+#     footnote = "Points Per Matchup adjusted as average per 7-day matchup",
+#     locations = cells_column_spanners(spanners = "Points Per Matchup")
+#   ) %>%
+#   tab_footnote(
+#     footnote = "100,000 simulations of remainder of season",
+#     locations = cells_column_spanners(spanners = "Season Simulations")
+#   )
 
 # gt1
 ```
