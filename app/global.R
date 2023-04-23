@@ -82,6 +82,10 @@ pitch_stats <-
   read_csv(glue('data/stats/{params$season}/pitch_stats.csv')) %>% 
   inner_join(select(teams, team, team_id, logo))
 
+bat_stats <- 
+  read_csv(glue('data/stats/{params$season}/bat_stats.csv')) %>% 
+  inner_join(select(teams, team, team_id, logo))
+
 df_trades <- read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv'))
 if(nrow(df_trades) > 0) {
   traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
@@ -938,10 +942,28 @@ df_ps <-
                    'qs' = mean(pitch_stats$qs),
                    'blue_balls' = mean(pitch_stats$blue_balls)))
 
+
+df_bs <- 
+  bat_stats %>% 
+  arrange(-ops) %>% 
+  select(team, logo, 
+         avg, obp, slg, ops, woba, babip, k_rate, bb_rate) %>% 
+  bind_rows(tibble('team' = 'League Average',
+                   'logo' = 'www/League.png',
+                   'avg' = weighted.mean(bat_stats$avg, bat_stats$h_pa),
+                   'obp' = weighted.mean(bat_stats$obp, bat_stats$h_pa),
+                   'slg' = weighted.mean(bat_stats$slg, bat_stats$h_pa),
+                   'ops' = weighted.mean(bat_stats$ops, bat_stats$h_pa),
+                   'woba' = weighted.mean(bat_stats$woba, bat_stats$h_pa),
+                   'babip' = weighted.mean(bat_stats$babip, bat_stats$h_pa),
+                   'k_rate' = weighted.mean(bat_stats$k_rate, bat_stats$h_pa),
+                   'bb_rate' = weighted.mean(bat_stats$bb_rate, bat_stats$h_pa)))
+                   
+
 ### GT for Penaltys
 df_penalty <- 
   df_penalty %>% 
-  inner_join(select(teams, team, logo))
+  inner_join(select(teams, team, logo)) 
 
 df_rp_penalty <- 
   df_rp_penalty %>% 

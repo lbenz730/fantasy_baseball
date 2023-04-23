@@ -482,6 +482,136 @@ shinyServer(function(input, output, session) {
     
   })
   
+  
+  output$bat_table <- render_gt({
+    
+    df_bs %>% 
+      gt() %>% 
+      
+      ### Round Numbers
+      fmt_number(columns = c(avg, obp, ops, slg, woba, babip), decimals = 3, sep_mark = '') %>% 
+      fmt_percent(columns = c(k_rate, bb_rate), decimals = 1) %>% 
+      sub_missing(columns = everything(), missing_text = "---") %>%
+      
+      ### Align Columns
+      cols_align(align = "center", columns = everything()) %>% 
+
+      ### Colors
+      data_color(columns = c(avg),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$avg)),
+                 autocolor_text = F) %>% 
+      
+      data_color(columns = c(obp),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$obp)),
+                 autocolor_text = F) %>%
+      
+      data_color(columns = c(ops),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$ops)),
+                 autocolor_text = F) %>%
+      
+      data_color(columns = c(slg),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$slg)),
+                 autocolor_text = F) %>%
+      
+      data_color(columns = c(babip),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$babip)),
+                 autocolor_text = F) %>%
+      
+      data_color(columns = c(woba),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$woba)),
+                 autocolor_text = F) %>%
+      
+      data_color(columns = c(k_rate),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_bs$k_rate)),
+                 autocolor_text = F) %>%
+      
+      data_color(columns = c(bb_rate),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$bb_rate)),
+                 autocolor_text = F) %>%
+      
+      ### Borders
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_column_labels(
+            columns = gt::everything()
+          )
+        )
+      ) %>%
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "right",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_body(
+            columns = c(logo)
+          )
+        )
+      ) %>%
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "top",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_body(
+            rows = team == 'League Average'
+          )
+        )
+      ) %>% 
+      ### Logos
+      text_transform(
+        locations = cells_body(c(logo)),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 30
+          )
+        }
+      ) %>% 
+      ### Names
+      cols_label(
+        team = 'Team',
+        logo = '',
+        avg = 'AVG',
+        obp = 'OBP',
+        ops = 'OPS',
+        slg = 'SLG',
+        babip = 'BABIP',
+        woba = 'wOBA',
+        k_rate = 'K %',
+        bb_rate = 'BB %'
+        
+      ) %>%
+      tab_header(
+        title = md('**Batting Stats**'),
+      ) %>%
+      tab_options(column_labels.font.size = 20,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold'
+                  
+      ) 
+    
+  })
+  
+  
+  
   output$sp_matrix <- renderPlot({
     
     ggplot(pitch_matrix, aes(x = ip, y = earned_runs))  + 

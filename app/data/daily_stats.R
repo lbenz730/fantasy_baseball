@@ -39,7 +39,19 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'p_outs' = sum(.x$stats$`34`, na.rm = T),
                'p_er' = sum(.x$stats$`45`, na.rm = T),
                'p_k' = sum(.x$stats$`48`, na.rm = T),
-               'p_cg' = sum(.x$stats$`62`, na.rm = T)
+               'p_cg' = sum(.x$stats$`62`, na.rm = T),
+               'h_1b' = sum(.x$stats$`7`, na.rm = T),
+               'h_2b' = sum(.x$stats$`3`, na.rm = T),
+               'h_3b' = sum(.x$stats$`4`, na.rm = T),
+               'b_ab' = sum(.x$stats$`0`, na.rm = T),
+               'b_pa' = sum(.x$stats$`16`, na.rm = T),
+               'b_walks' =  sum(.x$stats$`10`, na.rm = T),
+               'b_hpb' =  sum(.x$stats$`12`, na.rm = T),
+               'b_ibb' =  sum(.x$stats$`11`, na.rm = T),
+               'b_sf' =  sum(.x$stats$`13`, na.rm = T),
+               'b_runs' = sum(.x$stats$`20`, na.rm = T),
+               'b_rbi' = sum(.x$stats$`21`, na.rm = T),
+               'b_k' = sum(.x$stats$`27`, na.rm = T)
         )
       } else {
         tibble('points' = 0,
@@ -58,7 +70,19 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'p_outs' = 0,
                'p_er' = 0,
                'p_k' = 0,
-               'p_cg' = 0)
+               'p_cg' = 0,
+               'h_1b' = 0,
+               'h_2b' = 0,
+               'h_3b' = 0,
+               'b_ab' = 0,
+               'b_pa' = 0,
+               'b_walks' = 0,
+               'b_hpb' =  0,
+               'b_ibb' =  0,
+               'b_sf' =  0,
+               'b_runs' = 0,
+               'b_rbi' = 0,
+               'b_k' = 0)
         
       } }) %>%
     mutate('player' = y$entries[[index]]$playerPoolEntry$player$fullName,

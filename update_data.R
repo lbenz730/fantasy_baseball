@@ -212,6 +212,51 @@ pitch_stats <-
 write_csv(pitch_stats, glue('data/stats/{params$season}/pitch_stats.csv'))
 
 
+woba_factors <- 
+  list('wBB' = 0.704, 
+       'wHBP' = 0.734,
+       'w1B' = 0.894,
+       'w2B' = 1.263,
+       'w3B' = 1.595,
+       'wHR' = 2.041)
+
+bat_stats <-
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(lineup_id <= 12) %>% 
+  group_by(team_id) %>% 
+  summarise('h_1b' = sum(h_1b),
+            'h_2b' = sum(h_2b),
+            'h_3b' = sum(h_3b),
+            'h_hr' = sum(home_runs),
+            'h_bb' = sum(b_walks),
+            'h_ubb' = sum(b_walks - b_ibb),
+            'h_ab' = sum(b_ab),
+            'h_pa' = sum(b_pa),
+            'h_k' = sum(b_k),
+            'h_runs' = sum(b_runs),
+            'h_rbi' = sum(b_rbi),
+            'h_sf' = sum(b_sf),
+            'h_hbp'= sum(b_hpb)) %>% 
+  mutate('avg' = (h_1b + h_2b + h_3b + h_hr)/h_ab,
+         'obp' = (h_1b + h_2b + h_3b + h_hr + h_bb)/(h_ab + h_bb + h_sf),
+         'slg' = (h_1b + 2 * h_2b + 3 * h_3b + 4 * h_hr)/(h_ab),
+         'ops' = obp + slg,
+         'k_rate' = h_k/h_pa,
+         'bb_rate' = h_bb/h_pa,
+         'babip' = (h_1b + h_2b + h_3b)/(h_ab - h_k - h_hr + h_sf),
+         'woba' = 
+           (woba_factors$wBB * h_ubb +
+              woba_factors$wHBP * h_hbp +
+              woba_factors$w1B * h_1b + 
+              woba_factors$w2B * h_2b + 
+              woba_factors$w3B * h_3b + 
+              woba_factors$wHR * h_hr)/(h_ab + h_ubb + h_sf + h_hbp))
+
+write_csv(bat_stats, glue('data/stats/{params$season}/bat_stats.csv'))
+
+
+
 ### Penalties for Relief Starts
 relief_starts <- 
   df_daily %>% 

@@ -15,7 +15,9 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                               br(),
                               gt_output('pitch_table'),
                               br(),
-                              plotOutput('sp_matrix', width = '80%', height = '750px')
+                              gt_output('bat_table'),
+                              br(),
+                              plotOutput('sp_matrix', width = '90%', height = '850px')
                             )
                             
                    ),
