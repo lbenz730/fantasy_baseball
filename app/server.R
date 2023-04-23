@@ -1105,7 +1105,7 @@ shinyServer(function(input, output, session) {
       labs(x = "# of Points",
            y = "Team",
            title = "Distribution of Points",
-           subtitle = 'Across 100,000 Season Simulation') +
+           subtitle = 'Across 10,000 Season Simulation') +
       theme(legend.position = "none",
             axis.text = element_text(size = 12))
 
