@@ -9,14 +9,14 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 2,8,11,318.5,199.5,119,5,350.5,180.5,170,The West Bank Occupiers,The Traveling Secretaries
 2,9,6,350.5,189.5,161,8,352,185,167,The Novaks,Mt. Everest Taquito Farmers
 2,10,1,299.5,233.5,66,13,296,181,115,Crown Heights Crusaders,Ketel of Fish
-2,11,9,344.5,207,137.5,4,412,266,146,Don Julios,All That is Wright
+2,11,9,339.5,207,132.5,4,412,266,146,Don Julios,All That is Wright
 2,12,14,325.5,202.5,123,2,350.5,191,159.5,Hader Better Faster Stronger,Framber Valdez Oil Spill
-3,13,11,181.5,167.5,14,12,247,135.5,111.5,The West Bank Occupiers,Blasphemous Hot Takes
-3,14,7,307,237.5,69.5,6,259,135.5,123.5,Cron's Disease,The Novaks
-3,15,5,247.5,172,75.5,1,324.5,228.5,96,The Traveling Secretaries,Crown Heights Crusaders
-3,16,8,271,191,80,9,292.5,228.5,64,Mt. Everest Taquito Farmers,Don Julios
-3,17,13,245.5,213,32.5,14,236,142.5,93.5,Ketel of Fish,Hader Better Faster Stronger
-3,18,4,273.5,219.5,54,2,287.5,178.5,109,All That is Wright,Framber Valdez Oil Spill
+3,13,11,228.5,167,61.5,12,298.5,138.5,160,The West Bank Occupiers,Blasphemous Hot Takes
+3,14,7,338,234.5,103.5,6,289,138.5,150.5,Cron's Disease,The Novaks
+3,15,5,307.5,174,133.5,1,367,228.5,138.5,The Traveling Secretaries,Crown Heights Crusaders
+3,16,8,346.5,192.5,154,9,388.5,229.5,159,Mt. Everest Taquito Farmers,Don Julios
+3,17,13,337.5,213.5,124,14,313.5,142.5,171,Ketel of Fish,Hader Better Faster Stronger
+3,18,4,357,219.5,137.5,2,335,180,155,All That is Wright,Framber Valdez Oil Spill
 4,19,12,NA,NA,NA,6,NA,NA,NA,Blasphemous Hot Takes,The Novaks
 4,20,1,NA,NA,NA,11,NA,NA,NA,Crown Heights Crusaders,The West Bank Occupiers
 4,21,9,NA,NA,NA,7,NA,NA,NA,Don Julios,Cron's Disease
