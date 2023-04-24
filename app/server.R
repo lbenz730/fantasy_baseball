@@ -685,8 +685,6 @@ shinyServer(function(input, output, session) {
   
   df_top <- eventReactive(input$matchup_id, {
     
-    
-    
     ### Top Performers
     df_bat <-
       batter_points %>%
@@ -703,6 +701,10 @@ shinyServer(function(input, output, session) {
       mutate(player = paste0(player, ' (', n, ')')) %>% 
       filter(matchup_id == input$matchup_id) %>%
       select(player, player_url, team, logo, n_points)
+    
+    if(nrow(df_bat) < 10) {
+      df_bat[max(1, nrow(df_bat) + 1):10,] <- NA
+    }
     
     names(df_bat) <- paste0(names(df_bat), '_bat')
     
@@ -763,7 +765,7 @@ shinyServer(function(input, output, session) {
       mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
       mutate('lineup_id' = ifelse(lineup_id == 5, 11, lineup_id)) %>% 
       mutate('n_times' = map_dbl(player_id, ~sum(.x == df_log$player_id, na.rm = T))) %>% 
-      mutate('player' = paste0(player, ' (', n_times, ')')) %>% 
+      mutate('player' = ifelse(is.na(player), NA, paste0(player, ' (', n_times, ')'))) %>% 
       left_join(select(teams, team, team_id, logo)) %>% 
       arrange(lineup_id)  %>% 
       select(position, player, player_url, team, logo, points, ppg)
@@ -931,7 +933,7 @@ shinyServer(function(input, output, session) {
       
       fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
       fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-      
+      sub_missing(columns = everything(), missing_text = "---") %>% 
       
       
       ### Borders
