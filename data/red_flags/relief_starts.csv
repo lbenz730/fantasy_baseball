@@ -1,3 +1,4 @@
 player,player_id,team_id,matchup_id,sp_games,rp_games,n_qs,relief_starts,sp_points,rp_points
 Kutter Crawford,41277,12,3,1,0,1,1,28,0
 Ross Stripling,32789,5,1,1,1,0,0,2.5,-8
+Ross Stripling,32789,5,3,1,1,0,0,3,8

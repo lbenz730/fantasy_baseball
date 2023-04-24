@@ -664,7 +664,7 @@ shinyServer(function(input, output, session) {
                    'Orange Boxes = "Potential QS Zone"',
                    'Red Boxes = "Bad Start Zone"',
                    sep = '\n')) + 
-      theme(axis.text.x = element_text(size = 8),
+      theme(axis.text.x = element_text(size = 10),
             plot.caption = element_text(size = 12),
             plot.title = element_text(size = 24),
             axis.title = element_text(size = 20),
