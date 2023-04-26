@@ -20,41 +20,82 @@ shinyServer(function(input, output, session) {
   ######################
   ### Advanced Stats ###
   ######################
+  
+  df <- 
+    eventReactive({
+      input$stat_sort
+      input$stat_desc
+    },
+    {
+      league_avg <- 
+        exp_standings[13,] %>% 
+        select(
+               team,
+               logo,
+               win,
+               loss,
+               exp_win,
+               exp_loss,
+               batting_ppg,
+               sp_ppg,
+               rp_ppg,
+               adj_batting_pts,
+               adj_pitching_pts,
+               adj_pts,
+               batting_points,
+               pitching_points,
+               total_points,
+               qs_pct,
+               rank)
+      df <-
+        select(exp_standings,
+               team,
+               logo,
+               win,
+               loss,
+               exp_win,
+               exp_loss,
+               batting_ppg,
+               sp_ppg,
+               rp_ppg,
+               adj_batting_pts,
+               adj_pitching_pts,
+               adj_pts,
+               batting_points,
+               pitching_points,
+               total_points,
+               qs_pct,
+               rank) %>%
+        dplyr::slice(1:12) %>% 
+        left_join(sim_results) %>%
+        select(-matchup_id)
+      
+      ### Sorting
+      if(input$stat_desc) {
+        df <- 
+          df  %>% 
+          arrange(across(all_of(input$stat_sort), desc))
+      } else {
+        df <- 
+          df  %>% 
+          arrange(across(all_of(input$stat_sort)))
+      }
+      
+      df <- bind_rows(df, league_avg)
+      
+      df$team[1:12] <-  paste0(df$team[1:12], ' (', df$rank[1:12], ')')
+      # df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
+      df$logo[13] <- 'www/League.png'
+      df$mean_pts[13] <- mean(df$mean_pts[1:12])
+      df <- select(df, -rank)
+      
+      df
+      
+    })
+  
   output$stats_table <- render_gt({
-    
-    df <-
-      select(exp_standings,
-             team,
-             logo,
-             win,
-             loss,
-             exp_win,
-             exp_loss,
-             batting_ppg,
-             sp_ppg,
-             rp_ppg,
-             adj_batting_pts,
-             adj_pitching_pts,
-             adj_pts,
-             batting_points,
-             pitching_points,
-             total_points,
-             qs_pct,
-             rank) %>%
-      left_join(sim_results) %>%
-      select(-matchup_id) %>% 
-      arrange(-exp_win, -total_points)
-    
-    df$team[1:12] <-  paste0(df$team[1:12], ' (', df$rank[1:12], ')')
-    # df$logo[13] <- 'https://i.imgur.com/h3Vd6b8.png'
-    df$logo[13] <- 'www/League.png'
-    df$mean_pts[13] <- mean(df$mean_pts[1:12])
-    df <- select(df, -rank)
-    
-    
-    
     gt1 <-
-      gt(df) %>%
+      gt(df()) %>%
       
       ### Round Numbers
       fmt_number(columns = c(exp_win, exp_loss, mean_wins), decimals = 1, sep_mark = '') %>%
@@ -70,43 +111,43 @@ shinyServer(function(input, output, session) {
       
       ### Colors
       data_color(columns = c(win, loss, exp_win, exp_loss),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0, max(df$win + df$loss, na.rm = T))),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0, max(df()$win + df()$loss, na.rm = T))),
                  autocolor_text = F) %>%
       data_color(columns = c(batting_points),
-                 fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$batting_points, na.rm = T)),
+                 fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$batting_points, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(pitching_points),
-                 fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$pitching_points, na.rm = T)),
+                 fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$pitching_points, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(total_points),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$total_points, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$total_points, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(batting_ppg),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$batting_ppg, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$batting_ppg, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(rp_ppg),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$rp_ppg, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$rp_ppg, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(sp_ppg),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$sp_ppg, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$sp_ppg, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(adj_pts),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_pts, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$adj_pts, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(adj_batting_pts),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_batting_pts, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$adj_batting_pts, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(adj_pitching_pts),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$adj_pitching_pts, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$adj_pitching_pts, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(qs_pct),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$qs_pct, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$qs_pct, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(mean_pts), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), 
-                                                                     domain = range(df$mean_pts, na.rm = T)),
+                                                                     domain = range(df()$mean_pts, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(mean_wins), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), 
-                                                                      domain = range(df$mean_wins, na.rm = T)),
+                                                                      domain = range(df()$mean_wins, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(last_place, playoffs), colors = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = c(0,1)),
                  autocolor_text = F) %>%
@@ -203,81 +244,81 @@ shinyServer(function(input, output, session) {
       #     emo::ji('check')
       #   }
       # ) %>%
-      # 
-      # text_transform(
-      #   locations = cells_body(
-      #     columns = c(playoffs),
-      #     rows = playoffs == 0
-      #   ),
-      #   fn = function(x) {
-      #     emo::ji('x')
-      #   }
-      # ) %>%
-      # 
-      # text_transform(
-      #   locations = cells_body(
-      #     columns = c(last_place),
-      #     rows = last_place == 0
-      #   ),
-      #   fn = function(x) {
-      #     emo::ji('x')
-      #   }
-      # ) %>%
-      # 
-      # text_transform(
-      #   locations = cells_body(
-      #     columns = c(last_place),
-      #     rows = last_place == 1
-      #   ),
-      #   fn = function(x) {
-      #     emo::ji('check')
-      #   }
-      # ) %>%
-      # 
-      # text_transform(
-      #   locations = cells_body(
-      #     columns = c(champ),
-      #     rows = champ == 0
-      #   ),
-      #   fn = function(x) {
-      #     emo::ji('x')
-      #   }
-      # ) %>%
-      # 
-      # text_transform(
-      #   locations = cells_body(
-      #     columns = c(champ),
-      #     rows = champ == 1
-      #   ),
-      #   fn = function(x) {
-      #     emo::ji('check')
-      #   }
-      # ) %>%
-      
-      ### Names
-      cols_label(
-        team = 'Team (Seed)',
-        logo = '',
-        win = 'Wins',
-        loss = 'Losses',
-        exp_win = 'Wins',
-        exp_loss = 'Losses',
-        batting_ppg = 'Batter',
-        sp_ppg = 'SP',
-        rp_ppg = 'RP',
-        adj_pts = 'Total',
-        adj_batting_pts = 'Batting',
-        adj_pitching_pts = 'Pitching',
-        batting_points = 'Batting',
-        pitching_points = 'Pitching',
-        total_points = 'Total',
-        qs_pct = 'QS %',
-        mean_wins = 'Avg. Wins',
-        mean_pts = 'Avg. Points',
-        playoffs = 'Playoffs',
-        champ = 'Champion',
-        last_place = html(ferry),
-      ) %>%
+    # 
+    # text_transform(
+    #   locations = cells_body(
+    #     columns = c(playoffs),
+    #     rows = playoffs == 0
+    #   ),
+    #   fn = function(x) {
+    #     emo::ji('x')
+    #   }
+    # ) %>%
+    # 
+    # text_transform(
+    #   locations = cells_body(
+    #     columns = c(last_place),
+    #     rows = last_place == 0
+    #   ),
+    #   fn = function(x) {
+    #     emo::ji('x')
+    #   }
+    # ) %>%
+    # 
+    # text_transform(
+    #   locations = cells_body(
+    #     columns = c(last_place),
+    #     rows = last_place == 1
+    #   ),
+    #   fn = function(x) {
+    #     emo::ji('check')
+    #   }
+    # ) %>%
+    # 
+    # text_transform(
+    #   locations = cells_body(
+    #     columns = c(champ),
+    #     rows = champ == 0
+    #   ),
+    #   fn = function(x) {
+    #     emo::ji('x')
+    #   }
+    # ) %>%
+    # 
+    # text_transform(
+    #   locations = cells_body(
+    #     columns = c(champ),
+    #     rows = champ == 1
+    #   ),
+    #   fn = function(x) {
+    #     emo::ji('check')
+    #   }
+    # ) %>%
+    
+    ### Names
+    cols_label(
+      team = 'Team (Seed)',
+      logo = '',
+      win = 'Wins',
+      loss = 'Losses',
+      exp_win = 'Wins',
+      exp_loss = 'Losses',
+      batting_ppg = 'Batter',
+      sp_ppg = 'SP',
+      rp_ppg = 'RP',
+      adj_pts = 'Total',
+      adj_batting_pts = 'Batting',
+      adj_pitching_pts = 'Pitching',
+      batting_points = 'Batting',
+      pitching_points = 'Pitching',
+      total_points = 'Total',
+      qs_pct = 'QS %',
+      mean_wins = 'Avg. Wins',
+      mean_pts = 'Avg. Points',
+      playoffs = 'Playoffs',
+      champ = 'Champion',
+      last_place = md(ferry),
+    ) %>%
       tab_header(
         subtitle = md('**Millburnish Fantansy Baseball League Advanced Stats Table**'),
         title = md('<img src="www/League.png" style="height:200px;">')
@@ -307,9 +348,118 @@ shinyServer(function(input, output, session) {
     
   })
   
+  df_ps <- eventReactive(
+    {
+      input$pitch_dates
+      input$pitch_sort
+      input$pitch_desc
+    }, {
+      pitch_stats <- 
+        df_daily %>% 
+        filter(in_lineup) %>% 
+        filter(pitcher) %>% 
+        filter(scoring_period_id >= 1 + as.numeric(as.Date(input$pitch_dates[1]) - params$opening_day),
+               scoring_period_id <= 1 + as.numeric(as.Date(input$pitch_dates[2]) - params$opening_day)) %>% 
+        group_by(team_id) %>% 
+        summarise('qs' = sum(qs),
+                  'k' = sum(p_k),
+                  'k_sp' = sum(p_k[start]),
+                  'k_rp' = sum(p_k[relief & !relief_start]),
+                  'bb' = sum(p_walks + p_ibb),
+                  'bb_sp' = sum(p_walks[start] + p_ibb[start]),
+                  'bb_rp' = sum(p_walks[relief & !relief_start] + p_ibb[relief & !relief_start]),
+                  'outs' = sum(p_outs),
+                  'outs_sp' = sum(p_outs[start]),
+                  'outs_rp' = sum(p_outs[relief & !relief_start]),
+                  'earned_runs' = sum(p_er),
+                  'earned_runs_sp' = sum(p_er[start]),
+                  'earned_runs_rp' = sum(p_er[relief & !relief_start]),
+                  'hr_allowed_sp' = sum(hr_allowed[start]),
+                  'hr_allowed_rp' = sum(hr_allowed[relief & !relief_start]),
+                  'hr_allowed' = sum(hr_allowed),
+                  
+                  'hpb' = sum(p_hbp),
+                  'hpb_sp' = sum(p_hbp[start]),
+                  'hpb_rp' = sum(p_hbp[relief & !relief_start]),
+                  'blue_balls' = sum(blue_balls)) %>% 
+        mutate('era' = earned_runs/outs * 27,
+               'era_sp' = earned_runs_sp/outs_sp * 27,
+               'era_rp' = earned_runs_rp/outs_rp * 27,
+               
+               'k9' = k/outs * 27,
+               'k9_sp' = k_sp/outs_sp * 27,
+               'k9_rp' = k_rp/outs_rp * 27,
+               'bb9' = bb/outs * 27,
+               'bb9_sp' = bb_sp/outs_sp * 27,
+               'bb9_rp' = bb_rp/outs_rp * 27,
+               'k_per_bb' = k/bb,
+               'k_per_bb_sp' = k_sp/bb_sp,
+               'k_per_bb_rp' = k_rp/bb_rp,
+               'hr9' = hr_allowed/outs * 27,
+               'hr9_sp' = hr_allowed_sp/outs_sp * 27,
+               'hr9_rp' = hr_allowed_rp/outs_rp * 27,
+               
+               'fip' = (13 * hr_allowed + 3 * (bb + hpb) - 2 * k)/(outs/3),
+               'fip_sp' = (13 * hr_allowed_sp + 3 * (bb_sp + hpb_sp) - 2 * k_sp)/(outs_sp/3),
+               'fip_rp' = (13 * hr_allowed_rp + 3 * (bb_rp + hpb_rp) - 2 * k_rp)/(outs_rp
+                                                                                  /3),
+               'fip_constant' = weighted.mean(era, outs/3) - (13 * sum(hr_allowed) + 3 * sum(bb + hpb) - 2 * sum(k))/(sum(outs)/3)) %>% 
+        mutate('fip' = fip + fip_constant,
+               'fip_sp' = fip_sp + fip_constant,
+               'fip_rp' = fip_rp + fip_constant) %>% 
+        inner_join(select(teams, team, team_id, logo)) 
+      
+      
+      ### Sorting
+      if(input$pitch_desc) {
+        pitch_stats <- 
+          pitch_stats %>% 
+          arrange(across(all_of(input$pitch_sort), desc))
+      } else {
+        pitch_stats <- 
+          pitch_stats %>% 
+          arrange(across(all_of(input$pitch_sort)))
+      }
+      
+      
+      pitch_stats %>% 
+        select(team, logo, 
+               era, fip, k9, bb9, k_per_bb, hr9, 
+               era_sp, fip_sp, k9_sp, bb9_sp, k_per_bb_sp, hr9_sp, 
+               era_rp, fip_rp, k9_rp, bb9_rp, k_per_bb_rp, hr9_rp, 
+               qs, blue_balls) %>% 
+        bind_rows(tibble('team' = 'League Average',
+                         'logo' = 'www/League.png',
+                         'era' = weighted.mean(pitch_stats$era, pitch_stats$outs),
+                         'fip' = weighted.mean(pitch_stats$fip, pitch_stats$outs),
+                         'k9' = weighted.mean(pitch_stats$k9, pitch_stats$outs),
+                         'bb9' = weighted.mean(pitch_stats$bb9, pitch_stats$outs),
+                         'hr9' = weighted.mean(pitch_stats$hr9, pitch_stats$outs),
+                         'k_per_bb' = weighted.mean(pitch_stats$k_per_bb, pitch_stats$outs),
+                         
+                         'era_sp' = weighted.mean(pitch_stats$era_sp, pitch_stats$outs_sp),
+                         'fip_sp' = weighted.mean(pitch_stats$fip_sp, pitch_stats$outs_sp),
+                         'k9_sp' = weighted.mean(pitch_stats$k9_sp, pitch_stats$outs_sp),
+                         'bb9_sp' = weighted.mean(pitch_stats$bb9_sp, pitch_stats$outs_sp),
+                         'hr9_sp' = weighted.mean(pitch_stats$hr9_sp, pitch_stats$outs_sp),
+                         'k_per_bb_sp' = weighted.mean(pitch_stats$k_per_bb_sp, pitch_stats$outs_sp),
+                         
+                         
+                         'era_rp' = weighted.mean(pitch_stats$era_rp, pitch_stats$outs_rp),
+                         'fip_rp' = weighted.mean(pitch_stats$fip_rp, pitch_stats$outs_rp),
+                         'k9_rp' = weighted.mean(pitch_stats$k9_rp, pitch_stats$outs_rp),
+                         'bb9_rp' = weighted.mean(pitch_stats$bb9_rp, pitch_stats$outs_rp),
+                         'hr9_rp' = weighted.mean(pitch_stats$hr9_rp, pitch_stats$outs_rp),
+                         'k_per_bb_rp' = weighted.mean(pitch_stats$k_per_bb_rp, pitch_stats$outs_rp),
+                         
+                         'qs' = mean(pitch_stats$qs),
+                         'blue_balls' = mean(pitch_stats$blue_balls)))
+      
+    })
+  
   output$pitch_table <- render_gt({
     
-    df_ps %>% 
+    df_ps() %>% 
       gt() %>% 
       
       ### Round Numbers
@@ -332,58 +482,58 @@ shinyServer(function(input, output, session) {
       
       ### Colors
       data_color(columns = c(era, fip),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps$era, df_ps$fip))),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps()$era, df_ps()$fip))),
                  autocolor_text = F) %>% 
       data_color(columns = c(era_sp, fip_sp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps$era_sp, df_ps$fip_sp))),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps()$era_sp, df_ps()$fip_sp))),
                  autocolor_text = F) %>% 
       data_color(columns = c(era_rp, fip_rp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps$era_rp, df_ps$fip_rp))),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(c(df_ps()$era_rp, df_ps()$fip_rp))),
                  autocolor_text = F) %>% 
       data_color(columns = c(k9),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k9)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$k9)),
                  autocolor_text = F) %>% 
       data_color(columns = c(bb9),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$bb9)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps()$bb9)),
                  autocolor_text = F) %>% 
       data_color(columns = c(hr9),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$hr9)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps()$hr9)),
                  autocolor_text = F) %>% 
       data_color(columns = c(k_per_bb),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k_per_bb)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$k_per_bb)),
                  autocolor_text = F) %>% 
       
       data_color(columns = c(k9_sp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k9_sp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$k9_sp)),
                  autocolor_text = F) %>% 
       data_color(columns = c(bb9_sp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$bb9_sp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps()$bb9_sp)),
                  autocolor_text = F) %>% 
       data_color(columns = c(hr9_sp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$hr9_sp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps()$hr9_sp)),
                  autocolor_text = F) %>% 
       data_color(columns = c(k_per_bb_sp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k_per_bb_sp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$k_per_bb_sp)),
                  autocolor_text = F) %>% 
       
       data_color(columns = c(k9_rp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k9_rp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$k9_rp)),
                  autocolor_text = F) %>% 
       data_color(columns = c(bb9_rp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$bb9_rp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps()$bb9_rp)),
                  autocolor_text = F) %>% 
       data_color(columns = c(hr9_rp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps$hr9_rp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_ps()$hr9_rp)),
                  autocolor_text = F) %>% 
       data_color(columns = c(k_per_bb_rp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$k_per_bb_rp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$k_per_bb_rp)),
                  autocolor_text = F) %>% 
       
       data_color(columns = c(qs),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$qs)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$qs)),
                  autocolor_text = F) %>% 
       data_color(columns = c(blue_balls),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$blue_balls)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps()$blue_balls)),
                  autocolor_text = F) %>% 
       
       ### Borders
@@ -483,9 +633,91 @@ shinyServer(function(input, output, session) {
   })
   
   
+  df_bs <- eventReactive(
+    {
+      input$bat_dates
+      input$bat_sort
+      input$bat_desc
+    }, {
+      
+      woba_factors <- 
+        list('wBB' = 0.704, 
+             'wHBP' = 0.734,
+             'w1B' = 0.894,
+             'w2B' = 1.263,
+             'w3B' = 1.595,
+             'wHR' = 2.041)
+      
+      bat_stats <-
+        df_daily %>% 
+        filter(in_lineup) %>% 
+        filter(lineup_id <= 12) %>% 
+        filter(scoring_period_id >= 1 + as.numeric(as.Date(input$bat_dates[1]) - params$opening_day),
+               scoring_period_id <= 1 + as.numeric(as.Date(input$bat_dates[2]) - params$opening_day)) %>% 
+        group_by(team_id) %>% 
+        summarise('h_1b' = sum(h_1b),
+                  'h_2b' = sum(h_2b),
+                  'h_3b' = sum(h_3b),
+                  'h_hr' = sum(home_runs),
+                  'h_bb' = sum(b_walks),
+                  'h_ubb' = sum(b_walks - b_ibb),
+                  'h_ab' = sum(b_ab),
+                  'h_pa' = sum(b_pa),
+                  'h_k' = sum(b_k),
+                  'h_runs' = sum(b_runs),
+                  'h_rbi' = sum(b_rbi),
+                  'h_sf' = sum(b_sf),
+                  'h_hbp'= sum(b_hpb)) %>% 
+        mutate('avg' = (h_1b + h_2b + h_3b + h_hr)/h_ab,
+               'obp' = (h_1b + h_2b + h_3b + h_hr + h_bb)/(h_ab + h_bb + h_sf),
+               'slg' = (h_1b + 2 * h_2b + 3 * h_3b + 4 * h_hr)/(h_ab),
+               'ops' = obp + slg,
+               'k_rate' = h_k/h_pa,
+               'bb_rate' = h_bb/h_pa,
+               'babip' = (h_1b + h_2b + h_3b)/(h_ab - h_k - h_hr + h_sf),
+               'woba' = 
+                 (woba_factors$wBB * h_ubb +
+                    woba_factors$wHBP * h_hbp +
+                    woba_factors$w1B * h_1b + 
+                    woba_factors$w2B * h_2b + 
+                    woba_factors$w3B * h_3b + 
+                    woba_factors$wHR * h_hr)/(h_ab + h_ubb + h_sf + h_hbp)) %>% 
+        inner_join(select(teams, team, team_id, logo))
+      
+      
+      ### Sorting
+      if(input$bat_desc) {
+        bat_stats <- 
+          bat_stats %>% 
+          arrange(across(all_of(input$bat_sort), desc))
+      } else {
+        bat_stats <- 
+          bat_stats %>% 
+          arrange(across(all_of(input$bat_sort)))
+      }
+      
+      bat_stats %>% 
+        select(team, logo, 
+               avg, obp, slg, ops, woba, babip, k_rate, bb_rate) %>% 
+        bind_rows(tibble('team' = 'League Average',
+                         'logo' = 'www/League.png',
+                         'avg' = weighted.mean(bat_stats$avg, bat_stats$h_pa),
+                         'obp' = weighted.mean(bat_stats$obp, bat_stats$h_pa),
+                         'slg' = weighted.mean(bat_stats$slg, bat_stats$h_pa),
+                         'ops' = weighted.mean(bat_stats$ops, bat_stats$h_pa),
+                         'woba' = weighted.mean(bat_stats$woba, bat_stats$h_pa),
+                         'babip' = weighted.mean(bat_stats$babip, bat_stats$h_pa),
+                         'k_rate' = weighted.mean(bat_stats$k_rate, bat_stats$h_pa),
+                         'bb_rate' = weighted.mean(bat_stats$bb_rate, bat_stats$h_pa)))
+      
+      
+      
+      
+    })
+  
   output$bat_table <- render_gt({
     
-    df_bs %>% 
+    df_bs() %>% 
       gt() %>% 
       
       ### Round Numbers
@@ -495,38 +727,38 @@ shinyServer(function(input, output, session) {
       
       ### Align Columns
       cols_align(align = "center", columns = everything()) %>% 
-
+      
       ### Colors
       data_color(columns = c(avg),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$avg)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs()$avg)),
                  autocolor_text = F) %>% 
       
       data_color(columns = c(obp),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$obp)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs()$obp)),
                  autocolor_text = F) %>%
       
       data_color(columns = c(ops),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$ops)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs()$ops)),
                  autocolor_text = F) %>%
       
       data_color(columns = c(slg),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$slg)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs()$slg)),
                  autocolor_text = F) %>%
       
       data_color(columns = c(babip),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$babip)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs()$babip)),
                  autocolor_text = F) %>%
       
       data_color(columns = c(woba),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$woba)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs()$woba)),
                  autocolor_text = F) %>%
       
       data_color(columns = c(k_rate),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_bs$k_rate)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100, reverse = T), domain = range(df_bs()$k_rate)),
                  autocolor_text = F) %>%
       
       data_color(columns = c(bb_rate),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs$bb_rate)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_bs()$bb_rate)),
                  autocolor_text = F) %>%
       
       ### Borders
@@ -647,7 +879,7 @@ shinyServer(function(input, output, session) {
                 col = 'seagreen',
                 fill = 'mediumspringgreen',
                 alpha = 0.01) +
-  
+      
       geom_label(aes(label = n, fill = start_type)) + 
       scale_x_discrete(drop = F) + 
       scale_fill_manual(values = c('salmon', 'lightskyblue', 'violet', 'seagreen3', 'orange')) + 
@@ -670,7 +902,7 @@ shinyServer(function(input, output, session) {
             axis.title = element_text(size = 20),
             strip.text = element_text(size = 14),
             legend.text = element_text(size = 12)
-            )
+      )
     
     
   })
@@ -787,7 +1019,7 @@ shinyServer(function(input, output, session) {
       tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
       sub_missing(columns = everything(), missing_text = "---") %>% 
       
-
+      
       
       ### Borders
       tab_style(
@@ -924,99 +1156,99 @@ shinyServer(function(input, output, session) {
   output$best_lineup <- render_gt({
     
     if(nrow(df_best()) > 0) {
-    
-    gt_best <-
-      gt(df_best()) %>%
       
-      ### Align Columns
-      cols_align(align = "center", columns = everything()) %>%
-      
-      fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
-      fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-      sub_missing(columns = everything(), missing_text = "---") %>% 
-      
-      
-      ### Borders
-      tab_style(
-        style = list(
-          cell_borders(
-            sides = "bottom",
-            color = "black",
-            weight = px(3)
-          )
-        ),
-        locations = list(
-          cells_column_labels(
-            columns = gt::everything()
-          )
-        )
-      ) %>%
-      
-      ### Logos
-      text_transform(
-        locations = cells_body(contains(c('player_url'))),
-        fn = function(x) {
-          web_image(
-            url = x,
-            height = 50
-          )
-        }
-      ) %>%
-      
-      text_transform(
-        locations = cells_body(columns = contains(c('logo')), 
-                               rows = !is.na(logo)),
-        fn = function(x) {
-          local_image(
-            filename = x,
-            height = 50
-          )
-        }
-      ) %>%
-      
-      tab_style(
-        style = list(
-          cell_borders(
-            sides = "bottom",
-            color = "black",
-            weight = px(3)
-          )
-        ),
-        locations = list(
-          cells_body(
-            rows = c(13, 19)
-          )
-        )
-      ) %>%
-      
-      
-      
-      ### Names
-      cols_label(
-        'position' = 'Position',
-        'player' = 'Player',
-        'player_url' = '', 
-        'team' = 'Team',
-        'logo' = '',
-        'points' = 'Points',
-        'ppg' = 'PPG'
+      gt_best <-
+        gt(df_best()) %>%
         
-      ) %>%
-      tab_header(
-        title = md('**Lineup of the Week**'),
-        subtitle = md(glue('**Week: {week()}**'))
-      ) %>%
-      tab_options(column_labels.font.size = 20,
-                  heading.title.font.size = 40,
-                  heading.subtitle.font.size = 40,
-                  heading.title.font.weight = 'bold',
-                  heading.subtitle.font.weight = 'bold',
-                  column_labels.font.weight = 'bold'
-                  
-      ) %>% 
-      tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
-      tab_footnote(footnote = "Only includes games players in starting fantasy lineup") %>% 
-      tab_footnote(footnote = 'Numbers in parenthesis indicate # of times a player was in best lineup')
+        ### Align Columns
+        cols_align(align = "center", columns = everything()) %>%
+        
+        fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+        fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+        sub_missing(columns = everything(), missing_text = "---") %>% 
+        
+        
+        ### Borders
+        tab_style(
+          style = list(
+            cell_borders(
+              sides = "bottom",
+              color = "black",
+              weight = px(3)
+            )
+          ),
+          locations = list(
+            cells_column_labels(
+              columns = gt::everything()
+            )
+          )
+        ) %>%
+        
+        ### Logos
+        text_transform(
+          locations = cells_body(contains(c('player_url'))),
+          fn = function(x) {
+            web_image(
+              url = x,
+              height = 50
+            )
+          }
+        ) %>%
+        
+        text_transform(
+          locations = cells_body(columns = contains(c('logo')), 
+                                 rows = !is.na(logo)),
+          fn = function(x) {
+            local_image(
+              filename = x,
+              height = 50
+            )
+          }
+        ) %>%
+        
+        tab_style(
+          style = list(
+            cell_borders(
+              sides = "bottom",
+              color = "black",
+              weight = px(3)
+            )
+          ),
+          locations = list(
+            cells_body(
+              rows = c(13, 19)
+            )
+          )
+        ) %>%
+        
+        
+        
+        ### Names
+        cols_label(
+          'position' = 'Position',
+          'player' = 'Player',
+          'player_url' = '', 
+          'team' = 'Team',
+          'logo' = '',
+          'points' = 'Points',
+          'ppg' = 'PPG'
+          
+        ) %>%
+        tab_header(
+          title = md('**Lineup of the Week**'),
+          subtitle = md(glue('**Week: {week()}**'))
+        ) %>%
+        tab_options(column_labels.font.size = 20,
+                    heading.title.font.size = 40,
+                    heading.subtitle.font.size = 40,
+                    heading.title.font.weight = 'bold',
+                    heading.subtitle.font.weight = 'bold',
+                    column_labels.font.weight = 'bold'
+                    
+        ) %>% 
+        tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
+        tab_footnote(footnote = "Only includes games players in starting fantasy lineup") %>% 
+        tab_footnote(footnote = 'Numbers in parenthesis indicate # of times a player was in best lineup')
     } else {
       gt_best <- 
         gt(df_best()) %>%
@@ -1097,11 +1329,11 @@ shinyServer(function(input, output, session) {
            subtitle = 'Across 10,000 Season Simulation') +
       theme(legend.position = "none",
             axis.text = element_text(size = 12))
-
+    
   })
-
+  
   output$points_dist <- renderPlot({
-
+    
     ggplot(distributions, aes(x = points, y = fct_reorder(team, mean_pts), fill = team)) +
       geom_density_ridges(scale = 0.9, quantiles = 2, quantile_lines = T) +
       labs(x = "# of Points",
@@ -1110,7 +1342,7 @@ shinyServer(function(input, output, session) {
            subtitle = 'Across 10,000 Season Simulation') +
       theme(legend.position = "none",
             axis.text = element_text(size = 12))
-
+    
   })
   
   

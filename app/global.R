@@ -37,7 +37,7 @@ theme_set(theme_bw() +
 
 
 ### Ferry Logo
-ferry <- '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Spirit_of_America_-_Staten_Island_Ferry.jpg/1280px-Spirit_of_America_-_Staten_Island_Ferry.jpg" style="height:30px;">'
+ferry <- '<img src="www/ferry.jpg" style="height:30px;">'
 
 ### Parameters
 params <- 
@@ -77,14 +77,6 @@ df_rp_penalty <-
   read_csv('data/red_flags/rp_penalties.csv') %>% 
   mutate('penalty' = as.numeric(penalty),
          'matchup_id' = as.numeric(matchup_id))
-
-pitch_stats <- 
-  read_csv(glue('data/stats/{params$season}/pitch_stats.csv')) %>% 
-  inner_join(select(teams, team, team_id, logo))
-
-bat_stats <- 
-  read_csv(glue('data/stats/{params$season}/bat_stats.csv')) %>% 
-  inner_join(select(teams, team, team_id, logo))
 
 df_trades <- read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv'))
 if(nrow(df_trades) > 0) {
@@ -907,58 +899,6 @@ pitch_matrix <-
   inner_join(teams %>% select(team, team_id))
 
 
-df_ps <- 
-  pitch_stats %>% 
-  arrange(era) %>% 
-  select(team, logo, 
-         era, fip, k9, bb9, k_per_bb, hr9, 
-         era_sp, fip_sp, k9_sp, bb9_sp, k_per_bb_sp, hr9_sp, 
-         era_rp, fip_rp, k9_rp, bb9_rp, k_per_bb_rp, hr9_rp, 
-         qs, blue_balls) %>% 
-  bind_rows(tibble('team' = 'League Average',
-                   'logo' = 'www/League.png',
-                   'era' = weighted.mean(pitch_stats$era, pitch_stats$outs),
-                   'fip' = weighted.mean(pitch_stats$fip, pitch_stats$outs),
-                   'k9' = weighted.mean(pitch_stats$k9, pitch_stats$outs),
-                   'bb9' = weighted.mean(pitch_stats$bb9, pitch_stats$outs),
-                   'hr9' = weighted.mean(pitch_stats$hr9, pitch_stats$outs),
-                   'k_per_bb' = weighted.mean(pitch_stats$k_per_bb, pitch_stats$outs),
-                   
-                   'era_sp' = weighted.mean(pitch_stats$era_sp, pitch_stats$outs_sp),
-                   'fip_sp' = weighted.mean(pitch_stats$fip_sp, pitch_stats$outs_sp),
-                   'k9_sp' = weighted.mean(pitch_stats$k9_sp, pitch_stats$outs_sp),
-                   'bb9_sp' = weighted.mean(pitch_stats$bb9_sp, pitch_stats$outs_sp),
-                   'hr9_sp' = weighted.mean(pitch_stats$hr9_sp, pitch_stats$outs_sp),
-                   'k_per_bb_sp' = weighted.mean(pitch_stats$k_per_bb_sp, pitch_stats$outs_sp),
-                   
-                   
-                   'era_rp' = weighted.mean(pitch_stats$era_rp, pitch_stats$outs_rp),
-                   'fip_rp' = weighted.mean(pitch_stats$fip_rp, pitch_stats$outs_rp),
-                   'k9_rp' = weighted.mean(pitch_stats$k9_rp, pitch_stats$outs_rp),
-                   'bb9_rp' = weighted.mean(pitch_stats$bb9_rp, pitch_stats$outs_rp),
-                   'hr9_rp' = weighted.mean(pitch_stats$hr9_rp, pitch_stats$outs_rp),
-                   'k_per_bb_rp' = weighted.mean(pitch_stats$k_per_bb_rp, pitch_stats$outs_rp),
-                   
-                   'qs' = mean(pitch_stats$qs),
-                   'blue_balls' = mean(pitch_stats$blue_balls)))
-
-
-df_bs <- 
-  bat_stats %>% 
-  arrange(-ops) %>% 
-  select(team, logo, 
-         avg, obp, slg, ops, woba, babip, k_rate, bb_rate) %>% 
-  bind_rows(tibble('team' = 'League Average',
-                   'logo' = 'www/League.png',
-                   'avg' = weighted.mean(bat_stats$avg, bat_stats$h_pa),
-                   'obp' = weighted.mean(bat_stats$obp, bat_stats$h_pa),
-                   'slg' = weighted.mean(bat_stats$slg, bat_stats$h_pa),
-                   'ops' = weighted.mean(bat_stats$ops, bat_stats$h_pa),
-                   'woba' = weighted.mean(bat_stats$woba, bat_stats$h_pa),
-                   'babip' = weighted.mean(bat_stats$babip, bat_stats$h_pa),
-                   'k_rate' = weighted.mean(bat_stats$k_rate, bat_stats$h_pa),
-                   'bb_rate' = weighted.mean(bat_stats$bb_rate, bat_stats$h_pa)))
-                   
 
 ### GT for Penaltys
 df_penalty <- 

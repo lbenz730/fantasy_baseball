@@ -699,3 +699,4 @@ dir_copy('figures/', 'app/figures', overwrite = T)
 dir_copy('models/', 'app/models', overwrite = T)
 file.remove('app/data/playoff_odds/raw_sims.csv')
 file.remove('data/playoff_odds/raw_sims.csv')
+
