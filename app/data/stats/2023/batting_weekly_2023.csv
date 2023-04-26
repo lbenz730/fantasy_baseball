@@ -1184,7 +1184,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 16,3,Reid Detmers,4326697,NA,11,8
 16,3,Charlie Blackmon,31084,6,14.5,8
 16,3,Brendan Donovan,41773,2,1.5,8
-16,3,Max Fried,32685,NA,40.5,8
+16,3,Max Fried,32685,NA,41.5,8
 16,3,Trea Turner,33710,7,15,8
 16,3,Starling Marte,30830,5,1,8
 16,3,Emmanuel Clase,41743,NA,13,8
@@ -1699,7 +1699,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 22,4,Vinnie Pasquantino,4109109,2,6,14
 22,4,Steven Kwan,41996,2,5.5,14
 22,4,Ryan Pressly,33072,NA,2,14
-22,4,Brian Anderson,33776,2,-0.5,14
+22,4,Brian Anderson,33776,2,0.5,14
 22,4,Anthony Volpe,42547,2,1,14
 22,4,Elias Diaz,33594,2,4,14
 23,4,Alejandro Kirk,42081,1,4,2
@@ -1903,7 +1903,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 21,4,C.J. Cron,32155,1,-1,7
 21,4,Ryan Mountcastle,34940,2,4,7
 21,4,Andrew McCutchen,28701,1,7,7
-22,4,Austin Hays,36928,2,2,5
+22,4,Austin Hays,36928,2,3,5
 22,4,Ian Happ,34945,1,0.5,5
 22,4,Jose Ramirez,32801,2,0.5,5
 22,4,Cal Quantrill,39875,NA,-7,5
