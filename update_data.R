@@ -673,13 +673,13 @@ trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
 
 df_rp_penalty <- 
   df_daily %>% 
-  filter(lineup_id == 15) %>% 
+  filter(lineup_id == 15 | (lineup_id == 14 & relief) ) %>% 
   filter(!start) %>%  ### for Javier Rule
   inner_join(select(teams, team, team_id)) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
   group_by(team, matchup_id) %>% 
   arrange(scoring_period_id) %>% 
-  mutate('rp_id' = map_dbl(player_id, ~which(unique(player_id) == .x))) %>% 
+  mutate('rp_id' = map2_dbl(player_id, stint, ~which(unique(paste(player_id, stint)) == paste(.x, .y)))) %>% 
   summarise('n_rp' = n_distinct(paste(stint, player_id)),
             'penalty' = sum(points[rp_id > 5]),
             'scoring_period_id' = min(scoring_period_id[rp_id > 5])) %>% 
