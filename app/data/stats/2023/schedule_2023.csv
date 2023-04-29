@@ -11,18 +11,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 2,10,1,299.5,233.5,66,13,296,181,115,Crown Heights Crusaders,Ketel of Fish
 2,11,9,339.5,207,132.5,4,412,266,146,Don Julios,All That is Wright
 2,12,14,325.5,202.5,123,2,350.5,191,159.5,Hader Better Faster Stronger,Framber Valdez Oil Spill
-3,13,11,228.5,167,61.5,12,298.5,138.5,160,The West Bank Occupiers,Blasphemous Hot Takes
+3,13,11,230.5,168,62.5,12,298.5,138.5,160,The West Bank Occupiers,Blasphemous Hot Takes
 3,14,7,338,234.5,103.5,6,289,138.5,150.5,Cron's Disease,The Novaks
 3,15,5,307.5,174,133.5,1,368,229.5,138.5,The Traveling Secretaries,Crown Heights Crusaders
 3,16,8,347.5,192.5,155,9,389.5,230.5,159,Mt. Everest Taquito Farmers,Don Julios
 3,17,13,337.5,213.5,124,14,313.5,142.5,171,Ketel of Fish,Hader Better Faster Stronger
 3,18,4,357,219.5,137.5,2,335,180,155,All That is Wright,Framber Valdez Oil Spill
-4,19,12,50.5,41.5,9,6,129.5,84.5,45,Blasphemous Hot Takes,The Novaks
-4,20,1,77.5,56.5,21,11,79,71.5,7.5,Crown Heights Crusaders,The West Bank Occupiers
-4,21,9,35.5,32.5,3,7,99,24,75,Don Julios,Cron's Disease
-4,22,14,86,53.5,32.5,5,75.5,42,33.5,Hader Better Faster Stronger,The Traveling Secretaries
-4,23,2,37,43.5,-6.5,8,58.5,42,16.5,Framber Valdez Oil Spill,Mt. Everest Taquito Farmers
-4,24,4,112,54.5,57.5,13,45,24,21,All That is Wright,Ketel of Fish
+4,19,12,260.5,127,133.5,6,267,159.5,107.5,Blasphemous Hot Takes,The Novaks
+4,20,1,185.5,114,71.5,11,208,158.5,49.5,Crown Heights Crusaders,The West Bank Occupiers
+4,21,9,203.5,109,94.5,7,162,72.5,89.5,Don Julios,Cron's Disease
+4,22,14,245,127.5,117.5,5,171.5,93.5,78,Hader Better Faster Stronger,The Traveling Secretaries
+4,23,2,147,103,44,8,241,98,143,Framber Valdez Oil Spill,Mt. Everest Taquito Farmers
+4,24,4,274.5,162.5,112,13,154.5,97,57.5,All That is Wright,Ketel of Fish
 5,25,1,NA,NA,NA,12,NA,NA,NA,Crown Heights Crusaders,Blasphemous Hot Takes
 5,26,6,NA,NA,NA,9,NA,NA,NA,The Novaks,Don Julios
 5,27,11,NA,NA,NA,14,NA,NA,NA,The West Bank Occupiers,Hader Better Faster Stronger
