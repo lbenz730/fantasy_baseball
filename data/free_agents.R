@@ -26,7 +26,7 @@ get_trans_log <- function(season, trades = T) {
               'rp_eligible' = rp_eligible[scoring_period_id == min(scoring_period_id)]) %>% 
     ungroup() %>% 
     group_by(player, player_id) %>% 
-    arrange(start)
+    mutate('stint' = 0:( n() - 1))
   
   if(nrow(df_trades) > 0) {
     trans_log <- 
