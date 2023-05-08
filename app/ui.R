@@ -19,7 +19,8 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                          'Losses' = 'loss',
                                                          'Points' = 'total_points',
                                                          'Points (Batting)' = 'batting_points',
-                                                         'Points (Pitching)' = 'pitching_points',
+                                                         'Points (SP)' = 'sp_points',
+                                                         'Points (RP)' = 'rp_points',
                                                          'PPG (Bat)' = 'batting_ppg',
                                                          'PPG (SP)' = 'sp_ppg',
                                                          'PPG (RP)' = 'rp_ppg',
@@ -30,7 +31,8 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                          'Simulated Points' = 'mean_pts',
                                                          'Points/Matchup' = 'adj_pts',
                                                          'Points/Matchup (Batting)' = 'adj_batting_pts',
-                                                         'Points/Matchup (Pitching)' = 'adj_pitching_pts'
+                                                         'Points/Matchup (SP)' = 'adj_sp_pts',
+                                                         'Points/Matchup (RP)' = 'adj_rp_pts'
                                                          
                                           )),
                               

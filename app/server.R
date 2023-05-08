@@ -40,10 +40,12 @@ shinyServer(function(input, output, session) {
                sp_ppg,
                rp_ppg,
                adj_batting_pts,
-               adj_pitching_pts,
+               adj_sp_pts,
+               adj_rp_pts,
                adj_pts,
                batting_points,
-               pitching_points,
+               sp_points,
+               rp_points,
                total_points,
                qs_pct,
                rank)
@@ -59,10 +61,12 @@ shinyServer(function(input, output, session) {
                sp_ppg,
                rp_ppg,
                adj_batting_pts,
-               adj_pitching_pts,
+               adj_sp_pts,
+               adj_rp_pts,
                adj_pts,
                batting_points,
-               pitching_points,
+               sp_points,
+               rp_points,
                total_points,
                qs_pct,
                rank) %>%
@@ -101,7 +105,7 @@ shinyServer(function(input, output, session) {
       fmt_number(columns = c(exp_win, exp_loss, mean_wins), decimals = 1, sep_mark = '') %>%
       fmt_number(columns = c(win, loss), decimals = 1, sep_mark = '', drop_trailing_zeros = T, drop_trailing_dec_mark = T) %>%
       fmt_number(columns = c(mean_pts), decimals = 0, sep_mark = '') %>%
-      fmt_number(columns = c(sp_ppg, rp_ppg, adj_pts, adj_batting_pts, adj_pitching_pts, batting_points, pitching_points, total_points), decimals = 1, sep_mark = '') %>%
+      fmt_number(columns = c(sp_ppg, rp_ppg, adj_pts, adj_batting_pts, adj_sp_pts, adj_rp_pts, batting_points, sp_points, rp_points, total_points), decimals = 1, sep_mark = '') %>%
       fmt_number(columns = c(batting_ppg), decimals = 2, sep_mark = '') %>%
       fmt_percent(columns = c(qs_pct, playoffs, last_place, champ), decimals = 1, sep_mark = '') %>%
       sub_missing(columns = everything(), missing_text = "---") %>%
@@ -116,8 +120,11 @@ shinyServer(function(input, output, session) {
       data_color(columns = c(batting_points),
                  fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$batting_points, na.rm = T)),
                  autocolor_text = F) %>%
-      data_color(columns = c(pitching_points),
-                 fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$pitching_points, na.rm = T)),
+      data_color(columns = c(sp_points),
+                 fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$sp_points, na.rm = T)),
+                 autocolor_text = F) %>%
+      data_color(columns = c(rp_points),
+                 fn= scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$rp_points, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(total_points),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$total_points, na.rm = T)),
@@ -137,8 +144,11 @@ shinyServer(function(input, output, session) {
       data_color(columns = c(adj_batting_pts),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$adj_batting_pts, na.rm = T)),
                  autocolor_text = F) %>%
-      data_color(columns = c(adj_pitching_pts),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$adj_pitching_pts, na.rm = T)),
+      data_color(columns = c(adj_sp_pts),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$adj_sp_pts, na.rm = T)),
+                 autocolor_text = F) %>%
+      data_color(columns = c(adj_rp_pts),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$adj_rp_pts, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(qs_pct),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df()$qs_pct, na.rm = T)),
@@ -199,11 +209,11 @@ shinyServer(function(input, output, session) {
       ) %>%
       
       tab_spanner(label = 'Season Simulations', columns = c('mean_pts', 'mean_wins', 'playoffs', 'champ', 'last_place')) %>%
-      tab_spanner(label = 'Total Points', columns = c('batting_points', 'pitching_points', 'total_points')) %>%
+      tab_spanner(label = 'Total Points', columns = c('batting_points', 'sp_points', 'rp_points', 'total_points')) %>%
       tab_spanner(label = 'Expected Record', columns = c('exp_win', 'exp_loss')) %>%
       tab_spanner(label = 'Record', columns = c('win', 'loss')) %>%
       tab_spanner(label = 'Points Per Player Appearance', columns = c('batting_ppg', 'rp_ppg', 'sp_ppg', 'qs_pct')) %>%
-      tab_spanner(label = 'Points Per Matchup', columns = c('adj_batting_pts', 'adj_pitching_pts', 'adj_pts')) %>%
+      tab_spanner(label = 'Points Per Matchup', columns = c('adj_batting_pts', 'adj_sp_pts', 'adj_rp_pts', 'adj_pts')) %>%
       
       ### Logos
       text_transform(
@@ -308,9 +318,11 @@ shinyServer(function(input, output, session) {
       rp_ppg = 'RP',
       adj_pts = 'Total',
       adj_batting_pts = 'Batting',
-      adj_pitching_pts = 'Pitching',
+      adj_sp_pts = 'SP',
+      adj_rp_pts = 'RP',
       batting_points = 'Batting',
-      pitching_points = 'Pitching',
+      sp_points = 'SP',
+      rp_points = 'RP',
       total_points = 'Total',
       qs_pct = 'QS %',
       mean_wins = 'Avg. Wins',

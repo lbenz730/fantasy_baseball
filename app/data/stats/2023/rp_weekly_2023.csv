@@ -2727,7 +2727,9 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 29,NA,NA,NA,NA,NA,5
 30,NA,NA,NA,NA,NA,8
 31,NA,NA,NA,NA,NA,12
-32,NA,NA,NA,NA,NA,14
+32,6,Andres Gimenez,37729,NA,0,14
+32,6,Josh Bell,32517,NA,0,14
+32,6,Steven Kwan,41996,NA,0,14
 33,NA,NA,NA,NA,NA,2
 34,NA,NA,NA,NA,NA,4
 35,NA,NA,NA,NA,NA,13
@@ -2851,7 +2853,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 33,NA,NA,NA,NA,NA,6
 34,NA,NA,NA,NA,NA,11
 35,NA,NA,NA,NA,NA,7
-36,NA,NA,NA,NA,NA,5
+36,6,Jose Ramirez,32801,NA,0,5
 37,NA,NA,NA,NA,NA,12
 38,NA,NA,NA,NA,NA,2
 39,NA,NA,NA,NA,NA,4

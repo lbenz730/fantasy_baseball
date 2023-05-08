@@ -333,6 +333,54 @@ if(nrow(df_trades) > 0) {
   write_csv(traded_players, glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
 }
 
+
+### Transaction Log
+trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
+
+### RP Penalties
+# df_rp_penalty <- 
+#   trans_log %>% 
+#   inner_join(teams %>% select(team, team_id, logo)) %>% 
+#   filter(transaction_type == 'Free Agent') %>%
+#   mutate('matchup_id' = map_dbl(start, ~min(df_start$matchup_id[df_start$end_period >= .x]))) %>% 
+#   group_by(team, matchup_id) %>% 
+#   filter(rp_eligible) %>% 
+#   mutate('rp_add' = cumsum(rp_eligible)) %>% 
+#   summarise('n_rp' = sum(rp_eligible),
+#             'penalty' = sum(n_points[rp_add > 2])) %>% 
+#   ungroup() %>% 
+#   filter(penalty != 0)
+
+df_rp_penalty <- 
+  df_daily %>% 
+  filter(lineup_id == 15 | (lineup_id == 14 & relief) ) %>% 
+  filter(!start) %>%  ### for Javier Rule
+  inner_join(select(teams, team, team_id)) %>% 
+  mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
+  group_by(team, matchup_id) %>% 
+  arrange(scoring_period_id) %>% 
+  mutate('rp_id' = map2_dbl(player_id, stint, ~which(unique(paste(player_id, stint)) == paste(.x, .y)))) %>% 
+  summarise('n_rp' = n_distinct(paste(stint, player_id)),
+            'penalty' = sum(points[rp_id > 5]),
+            'scoring_period_id' = min(scoring_period_id[rp_id > 5])) %>% 
+  ungroup() %>% 
+  filter(penalty != 0)
+
+write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
+
+
+rp_scores <- 
+  df_daily %>% 
+  filter(lineup_id == 15 | (lineup_id == 14 & relief) ) %>% 
+  filter(!start) %>%  ### for Javier Rule
+  inner_join(select(teams, team, team_id)) %>% 
+  mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
+  group_by(team, matchup_id) %>% 
+  arrange(scoring_period_id) %>% 
+  mutate('rp_id' = map2_dbl(player_id, stint, ~which(unique(paste(player_id, stint)) == paste(.x, .y)))) %>% 
+  summarise('rp_points' = sum(points[rp_id <= 5]))
+
+
 ### Expected Standings
 ### Team points by week
 team_points <- 
@@ -341,7 +389,9 @@ team_points <-
   bind_rows(
     select(schedule, contains("away"), matchup_id, game_id) %>% 
       rename_with(function(x) gsub("away_", "", x))
-  )
+  ) %>% 
+  left_join(rp_scores) %>% 
+  mutate('sp_points' = pitching_points - rp_points)
 
 team_points <- 
   team_points %>% 
@@ -366,7 +416,25 @@ team_points <-
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ pitching_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
-    T ~ pitching_points)) 
+    T ~ pitching_points)) %>% 
+  
+  mutate("adj_sp_pts" = case_when(
+    matchup_id == 1 ~ sp_points * 7/11,
+    matchup_id == 14 ~ sp_points * 7/10,
+    
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ sp_points,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
+    
+    T ~ sp_points)) %>% 
+  
+  mutate("adj_rp_pts" = case_when(
+    matchup_id == 1 ~ rp_points * 7/11,
+    matchup_id == 14 ~ rp_points * 7/10,
+    
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ rp_points,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
+    
+    T ~ rp_points))
 
 team_points <- 
   team_points %>% 
@@ -386,9 +454,13 @@ total_team_points <-
             "total_adj_points" = sum(adj_pts, na.rm = T),
             "batting_points" = sum(batting_points, na.rm = T),
             "pitching_points" = sum(pitching_points, na.rm = T),
+            'sp_points' = sum(sp_points, na.rm = T),
+            'rp_points' = sum(rp_points, na.rm = T),
             "adj_batting_pts" = mean(adj_batting_pts, na.rm = T),
             "adj_pitching_pts" = mean(adj_pitching_pts, na.rm = T),
-            'adj_pts' = mean(adj_pts, na.rm = T))
+            'adj_pts' = mean(adj_pts, na.rm = T),
+            'adj_sp_pts' = mean(adj_sp_pts, na.rm = T),
+            'adj_rp_pts' = mean(adj_rp_pts, na.rm = T))
 
 
 ### Summary Stats mean points by week
@@ -396,7 +468,9 @@ mean_pts_by_week <-
   group_by(team_points, matchup_id) %>%
   summarise("adj_pts" = mean(adj_pts, na.rm = T),
             "adj_batting_pts" = mean(adj_batting_pts, na.rm = T),
-            "adj_pitching_pts" = mean(adj_pitching_pts, na.rm = T))
+            "adj_pitching_pts" = mean(adj_pitching_pts, na.rm = T),
+            'adj_sp_pts' = mean(adj_sp_pts, na.rm = T),
+            'adj_rp_pts' = mean(adj_rp_pts, na.rm = T))
 
 ### Weekly ranks
 team_points <- 
@@ -516,8 +590,12 @@ league_avg <-
          'adj_batting_pts' = mean(exp_standings$adj_batting_pts),
          'adj_pitching_pts' = mean(exp_standings$adj_pitching_pts),
          'adj_pts' = mean(exp_standings$adj_pts),
+         'adj_sp_pts' = mean(exp_standings$adj_sp_pts),
+         'adj_rp_pts' = mean(exp_standings$adj_rp_pts),
          'batting_points' = mean(exp_standings$batting_points),
          'pitching_points' = mean(exp_standings$pitching_points),
+         'rp_points' = mean(exp_standings$rp_points),
+         'sp_points' = mean(exp_standings$sp_points),
          'total_points' = mean(exp_standings$total_points), 
          'qs_pct' = weighted.mean(qs_pct$qs_pct, qs_pct$n_games))
 
@@ -654,39 +732,6 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
   bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
-### Transaction Log
-trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
-
-### RP Penalties
-# df_rp_penalty <- 
-#   trans_log %>% 
-#   inner_join(teams %>% select(team, team_id, logo)) %>% 
-#   filter(transaction_type == 'Free Agent') %>%
-#   mutate('matchup_id' = map_dbl(start, ~min(df_start$matchup_id[df_start$end_period >= .x]))) %>% 
-#   group_by(team, matchup_id) %>% 
-#   filter(rp_eligible) %>% 
-#   mutate('rp_add' = cumsum(rp_eligible)) %>% 
-#   summarise('n_rp' = sum(rp_eligible),
-#             'penalty' = sum(n_points[rp_add > 2])) %>% 
-#   ungroup() %>% 
-#   filter(penalty != 0)
-
-df_rp_penalty <- 
-  df_daily %>% 
-  filter(lineup_id == 15 | (lineup_id == 14 & relief) ) %>% 
-  filter(!start) %>%  ### for Javier Rule
-  inner_join(select(teams, team, team_id)) %>% 
-  mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
-  group_by(team, matchup_id) %>% 
-  arrange(scoring_period_id) %>% 
-  mutate('rp_id' = map2_dbl(player_id, stint, ~which(unique(paste(player_id, stint)) == paste(.x, .y)))) %>% 
-  summarise('n_rp' = n_distinct(paste(stint, player_id)),
-            'penalty' = sum(points[rp_id > 5]),
-            'scoring_period_id' = min(scoring_period_id[rp_id > 5])) %>% 
-  ungroup() %>% 
-  filter(penalty != 0)
-
-write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
 
 ### Best Line-up
 best_lineup(params$season, params$matchup_id, save = F)
