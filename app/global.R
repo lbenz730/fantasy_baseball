@@ -884,7 +884,7 @@ pitch_matrix <-
                           p_outs < 9 ~ '< 3',
                           p_outs > 21 ~ '> 7',
                           T ~ paste(floor(p_outs/3), p_outs %% 3, sep = '.'))) %>% 
-  mutate('earned_runs' = ifelse(p_er > 5, '5+', as.character(p_er))) %>% 
+  mutate('earned_runs' = ifelse(p_er > 5, '6+', as.character(p_er))) %>% 
   group_by(team_id, ip, earned_runs) %>% 
   count() %>% 
   ungroup() %>% 

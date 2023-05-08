@@ -849,7 +849,7 @@ shinyServer(function(input, output, session) {
     ggplot(pitch_matrix, aes(x = ip, y = earned_runs))  + 
       facet_wrap(~team) + 
       geom_rect(aes(xmin = '< 3', xmax = 'CG',
-                    ymin = '4', ymax = '5+'),
+                    ymin = '4', ymax = '6+'),
                 col = NA,
                 fill = 'red',
                 alpha = 0.01) +
