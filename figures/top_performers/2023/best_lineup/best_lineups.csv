@@ -111,10 +111,10 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Michael King,40429,6,21.5,7.166666666666667,5
 0,C,MJ Melendez,40948,5,11,5.5,6
 1,1B,Vinnie Pasquantino,4109109,14,11.5,5.75,6
-2,2B,Gleyber Torres,33804,9,17.5,8.75,6
+2,2B,Gleyber Torres,33804,9,17.5,5.833333333333333,6
 3,3B,Justin Turner,29607,5,10,10,6
 4,SS,Dansby Swanson,34895,1,15.5,7.75,6
-5,OF,Jurickson Profar,31117,6,14,7,6
+5,OF,Jurickson Profar,31117,6,14,4.666666666666667,6
 5,OF,Lars Nootbaar,4448736,9,11.5,5.75,6
 5,OF,Andrew Vaughn,42394,6,10.5,5.25,6
 5,OF,Nick Castellanos,31187,12,10.5,10.5,6
