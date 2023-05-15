@@ -29,12 +29,12 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 5,28,7,338.5,198.5,140,2,320,192.5,127.5,Cron's Disease,Framber Valdez Oil Spill
 5,29,5,386,215.5,170.5,4,334,206,128,The Traveling Secretaries,All That is Wright
 5,30,8,351.5,191.5,160,13,260.5,209.5,51,Mt. Everest Taquito Farmers,Ketel of Fish
-6,31,12,258,165.5,92.5,9,306.5,176.5,130,Blasphemous Hot Takes,Don Julios
-6,32,14,261,148.5,112.5,1,302.5,163,139.5,Hader Better Faster Stronger,Crown Heights Crusaders
-6,33,2,311.5,143,168.5,6,283,134,149,Framber Valdez Oil Spill,The Novaks
-6,34,4,208.5,150,58.5,11,200,121.5,78.5,All That is Wright,The West Bank Occupiers
-6,35,13,307,168.5,138.5,7,336,159.5,176.5,Ketel of Fish,Cron's Disease
-6,36,8,254,116.5,137.5,5,337,139.5,197.5,Mt. Everest Taquito Farmers,The Traveling Secretaries
+6,31,12,326,196.5,129.5,9,360.5,214.5,146,Blasphemous Hot Takes,Don Julios
+6,32,14,262.5,156.5,106,1,360.5,180.5,180,Hader Better Faster Stronger,Crown Heights Crusaders
+6,33,2,341.5,169,172.5,6,346.5,178,168.5,Framber Valdez Oil Spill,The Novaks
+6,34,4,294,185,109,11,282,140,142,All That is Wright,The West Bank Occupiers
+6,35,13,355.5,211.5,144,7,405.5,201,204.5,Ketel of Fish,Cron's Disease
+6,36,8,312,170.5,141.5,5,355,157.5,197.5,Mt. Everest Taquito Farmers,The Traveling Secretaries
 7,37,14,NA,NA,NA,12,NA,NA,NA,Hader Better Faster Stronger,Blasphemous Hot Takes
 7,38,9,NA,NA,NA,2,NA,NA,NA,Don Julios,Framber Valdez Oil Spill
 7,39,1,NA,NA,NA,4,NA,NA,NA,Crown Heights Crusaders,All That is Wright
