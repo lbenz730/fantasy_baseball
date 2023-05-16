@@ -29,18 +29,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 5,28,7,338.5,198.5,140,2,320,192.5,127.5,Cron's Disease,Framber Valdez Oil Spill
 5,29,5,386,215.5,170.5,4,334,206,128,The Traveling Secretaries,All That is Wright
 5,30,8,351.5,191.5,160,13,260.5,209.5,51,Mt. Everest Taquito Farmers,Ketel of Fish
-6,31,12,326,196.5,129.5,9,360.5,214.5,146,Blasphemous Hot Takes,Don Julios
-6,32,14,262.5,156.5,106,1,360.5,180.5,180,Hader Better Faster Stronger,Crown Heights Crusaders
+6,31,12,326,196.5,129.5,9,361.5,215.5,146,Blasphemous Hot Takes,Don Julios
+6,32,14,262.5,156.5,106,1,361.5,181.5,180,Hader Better Faster Stronger,Crown Heights Crusaders
 6,33,2,341.5,169,172.5,6,346.5,178,168.5,Framber Valdez Oil Spill,The Novaks
-6,34,4,294,185,109,11,282,140,142,All That is Wright,The West Bank Occupiers
+6,34,4,294,185,109,11,281,139,142,All That is Wright,The West Bank Occupiers
 6,35,13,355.5,211.5,144,7,405.5,201,204.5,Ketel of Fish,Cron's Disease
-6,36,8,312,170.5,141.5,5,355,157.5,197.5,Mt. Everest Taquito Farmers,The Traveling Secretaries
-7,37,14,NA,NA,NA,12,NA,NA,NA,Hader Better Faster Stronger,Blasphemous Hot Takes
-7,38,9,NA,NA,NA,2,NA,NA,NA,Don Julios,Framber Valdez Oil Spill
-7,39,1,NA,NA,NA,4,NA,NA,NA,Crown Heights Crusaders,All That is Wright
-7,40,6,NA,NA,NA,13,NA,NA,NA,The Novaks,Ketel of Fish
-7,41,11,NA,NA,NA,8,NA,NA,NA,The West Bank Occupiers,Mt. Everest Taquito Farmers
-7,42,7,NA,NA,NA,5,NA,NA,NA,Cron's Disease,The Traveling Secretaries
+6,36,8,311,170.5,140.5,5,356,158.5,197.5,Mt. Everest Taquito Farmers,The Traveling Secretaries
+7,37,14,39.5,43.5,-4,12,42.5,14.5,28,Hader Better Faster Stronger,Blasphemous Hot Takes
+7,38,9,41.5,43,-1.5,2,71.5,43,28.5,Don Julios,Framber Valdez Oil Spill
+7,39,1,62,48,14,4,74.5,47,27.5,Crown Heights Crusaders,All That is Wright
+7,40,6,39,32,7,13,15.5,15.5,NA,The Novaks,Ketel of Fish
+7,41,11,45.5,45.5,NA,8,50,29.5,20.5,The West Bank Occupiers,Mt. Everest Taquito Farmers
+7,42,7,36,33,3,5,29,22,7,Cron's Disease,The Traveling Secretaries
 8,43,12,NA,NA,NA,2,NA,NA,NA,Blasphemous Hot Takes,Framber Valdez Oil Spill
 8,44,4,NA,NA,NA,14,NA,NA,NA,All That is Wright,Hader Better Faster Stronger
 8,45,13,NA,NA,NA,9,NA,NA,NA,Ketel of Fish,Don Julios

@@ -117,8 +117,8 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 5,OF,Christian Yelich,31283,13,34.5,5.75,6
 5,OF,Luis Robert Jr.,39631,12,34,4.857142857142857,6
 5,OF,Juan Soto,36969,1,30.5,5.083333333333333,6
+5,OF,Lars Nootbaar,4448736,9,30.5,5.083333333333333,6
 5,OF,Cedric Mullins,35578,11,29.5,4.916666666666667,6
-5,OF,Lars Nootbaar,4448736,9,29.5,4.916666666666667,6
 6,2B/SS,Gleyber Torres,33804,9,30,4.285714285714286,6
 7,1B/3B,Freddie Freeman,30193,7,32,5.333333333333333,6
 12,UTIL,Josh Naylor,35066,12,28.5,7.125,6
@@ -131,25 +131,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Alexis Diaz,4905920,7,24,8,6
 15,RP,Felix Bautista,4905859,8,23,7.666666666666667,6
 15,RP,Evan Phillips,37911,12,19,6.333333333333333,6
-0,C,NA,NA,NA,NA,NA,7
-1,1B,NA,NA,NA,NA,NA,7
-2,2B,NA,NA,NA,NA,NA,7
-3,3B,NA,NA,NA,NA,NA,7
-4,SS,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-6,2B/SS,NA,NA,NA,NA,NA,7
-7,1B/3B,NA,NA,NA,NA,NA,7
-12,UTIL,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-15,RP,NA,NA,NA,NA,NA,7
-15,RP,NA,NA,NA,NA,NA,7
-15,RP,NA,NA,NA,NA,NA,7
+0,C,Will Smith,38309,8,9.5,9.5,7
+1,1B,Joey Meneses,34534,2,10.5,10.5,7
+2,2B,Nolan Gorman,41174,7,15,15,7
+3,3B,Max Muncy,33303,4,14.5,14.5,7
+4,SS,Orlando Arcia,32530,14,13,13,7
+5,OF,Aaron Judge,33192,14,16,16,7
+5,OF,Michael Conforto,33711,6,10,10,7
+5,OF,Lane Thomas,36409,4,8.5,8.5,7
+5,OF,Lourdes Gurriel Jr.,36040,14,8,8,7
+5,OF,Anthony Santander,36084,5,7.5,7.5,7
+6,2B/SS,Tommy Edman,39907,11,13,13,7
+7,1B/3B,Nolan Arenado,31261,9,10,10,7
+12,UTIL,Jorge Polanco,32525,2,12,12,7
+14,SP,Merrill Kelly,32968,12,28.5,28.5,7
+14,SP,Charlie Morton,29155,4,27.5,27.5,7
+14,SP,George Kirby,42406,8,20.5,20.5,7
+14,SP,Shohei Ohtani,39832,2,11,11,7
+14,SP,Framber Valdez,36581,2,4,4,7
+14,SP,Pablo Lopez,39671,7,3,3,7
+15,RP,Camilo Doval,41337,5,8,8,7
+15,RP,Jhoan Duran,41109,1,8,8,7
+15,RP,Michael King,40429,6,7,7,7
