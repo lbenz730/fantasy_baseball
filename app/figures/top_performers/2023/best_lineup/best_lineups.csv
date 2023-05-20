@@ -131,25 +131,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Alexis Diaz,4905920,7,24,8,6
 15,RP,Felix Bautista,4905859,8,23,7.666666666666667,6
 15,RP,Evan Phillips,37911,12,19,6.333333333333333,6
-0,C,Willson Contreras,32532,7,20.5,5.125,7
-1,1B,Freddie Freeman,30193,7,24,6,7
-2,2B,Nolan Gorman,41174,7,30,7.5,7
-3,3B,Nolan Arenado,31261,9,26,6.5,7
-4,SS,Orlando Arcia,32530,14,23,7.666666666666667,7
-5,OF,Aaron Judge,33192,14,33.5,8.375,7
-5,OF,Ronald Acuna Jr.,36185,1,22.5,7.5,7
-5,OF,Seiya Suzuki,4142424,13,22.5,7.5,7
-5,OF,Lourdes Gurriel Jr.,36040,14,19,6.333333333333333,7
-5,OF,Byron Buxton,32655,6,18.5,6.166666666666667,7
-6,2B/SS,Max Muncy,33303,4,24.5,6.125,7
-7,1B/3B,Alex Bregman,34886,13,24,8,7
-12,UTIL,Pete Alonso,37498,2,21.5,5.375,7
+0,C,Willson Contreras,32532,7,20.5,4.1,7
+1,1B,Pete Alonso,37498,2,30,6,7
+2,2B,Nolan Gorman,41174,7,29.5,5.9,7
+3,3B,Alex Bregman,34886,13,25.5,6.375,7
+4,SS,Orlando Arcia,32530,14,24.5,6.125,7
+5,OF,Aaron Judge,33192,14,40.5,8.1,7
+5,OF,Christopher Morel,42927,2,26.5,6.625,7
+5,OF,Seiya Suzuki,4142424,13,26.5,6.625,7
+5,OF,Adolis Garcia,35537,8,25.5,6.375,7
+5,OF,Ronald Acuna Jr.,36185,1,25,6.25,7
+6,2B/SS,Max Muncy,33303,4,24,4.8,7
+7,1B/3B,Freddie Freeman,30193,7,29.5,5.9,7
+12,UTIL,Nolan Arenado,31261,9,24.5,4.9,7
+14,SP,Michael Kopech,33763,11,38,38,7
 14,SP,Chris Bassitt,33148,5,29,29,7
 14,SP,Merrill Kelly,32968,12,28.5,28.5,7
 14,SP,Kodai Senga,4142421,1,28,28,7
 14,SP,Charlie Morton,29155,4,27.5,27.5,7
-14,SP,Kevin Gausman,32667,14,26,26,7
-14,SP,Drew Smyly,31816,13,25,25,7
+14,SP,Shane McClanahan,41199,2,26.5,26.5,7
 15,RP,Camilo Doval,41337,5,17.5,5.833333333333333,7
+15,RP,Carlos Estevez,34861,7,13.5,6.75,7
 15,RP,Aroldis Chapman,30442,11,13,6.5,7
-15,RP,Nick Martinez,33372,2,11,5.5,7
