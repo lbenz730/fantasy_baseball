@@ -5,7 +5,9 @@ account: lbenz730
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8797792
-bundleId: 7099651
+bundleId: 7199651
 url: https://lbenz730.shinyapps.io/millburn_savant/
-when: 1681740427.02083
-lastSyncTime: 1681740427.02083
+when: 1683729216.75367
+lastSyncTime: 1683729216.75368
+asMultiple: FALSE
+asStatic: FALSE
