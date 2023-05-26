@@ -93,6 +93,10 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
   ### Christian Javier Rule
   df$points[df$relief_start & df$qs] <- df$points[df$relief_start & df$qs] + 5
   
+  ### Yu Darvish Rule
+  df$points[df$p_outs >= 27 & df$p_cg == 0] <- df$points[df$p_outs >= 27 & df$p_cg == 0] + 5
+  df$p_cg[df$p_outs >= 27 & df$p_cg == 0] <- 1
+  
   return(df)
 
 }
