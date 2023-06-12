@@ -3,6 +3,20 @@ library(dplyr)
 library(purrr)
 library(tidyr)
 
+df_start_23 <-
+  tibble('matchup_id' = 1:23) %>%
+  mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
+                                 matchup_id == 14 ~ 13,
+                                 matchup_id > 21 ~ 16,
+                                 T ~ 8),
+         'duration' = case_when(matchup_id == 1 ~ 11,
+                                matchup_id == 14 ~ 14,
+                                matchup_id > 21 ~ 14,
+                                T ~ 7),
+         'end_period' = cumsum(duration),
+         'start_period' = end_period - duration + 1,
+         'playoffs' = matchup_id > 21)
+
 df_start_21_22 <-
   tibble('matchup_id' = 1:22) %>%
   mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
@@ -44,7 +58,7 @@ df_start_19 <-
          'playoffs' = matchup_id > 21)
 
 df_start <-
-  bind_rows(df_start_21_22 %>% mutate('season' = 2023),
+  bind_rows(df_start_23 %>% mutate('season' = 2023),
             df_start_21_22 %>% mutate('season' = 2022),
             df_start_21_22 %>% mutate('season' = 2021),
             df_start_20 %>% mutate('season' = 2020),

@@ -53,12 +53,12 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 9,52,9,218.5,127,91.5,5,335.5,169.5,166,Don Julios,The Traveling Secretaries
 9,53,1,372,183.5,188.5,7,271,127,144,Crown Heights Crusaders,Cron's Disease
 9,54,6,256,128.5,127.5,11,273,170.5,102.5,The Novaks,The West Bank Occupiers
-10,55,12,330.5,161.5,169,13,287.5,101.5,186,Blasphemous Hot Takes,Ketel of Fish
-10,56,8,175,125,50,4,301.5,163.5,138,Mt. Everest Taquito Farmers,All That is Wright
-10,57,5,277.5,192.5,85,2,287.5,159,128.5,The Traveling Secretaries,Framber Valdez Oil Spill
-10,58,7,329,146,183,14,298.5,171,127.5,Cron's Disease,Hader Better Faster Stronger
-10,59,11,221.5,125.5,96,9,224.5,117,107.5,The West Bank Occupiers,Don Julios
-10,60,6,255.5,132,123.5,1,249.5,139,110.5,The Novaks,Crown Heights Crusaders
+10,55,12,330.5,196,134.5,13,287.5,133.5,154,Blasphemous Hot Takes,Ketel of Fish
+10,56,8,175,176.5,-1.5,4,301.5,180,121.5,Mt. Everest Taquito Farmers,All That is Wright
+10,57,5,277.5,219,58.5,2,287.5,225.5,62,The Traveling Secretaries,Framber Valdez Oil Spill
+10,58,7,329,174,155,14,298.5,213,85.5,Cron's Disease,Hader Better Faster Stronger
+10,59,11,221.5,151,70.5,9,224.5,133.5,91,The West Bank Occupiers,Don Julios
+10,60,6,255.5,170.5,85,1,249.5,166.5,83,The Novaks,Crown Heights Crusaders
 11,61,8,NA,NA,NA,12,NA,NA,NA,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
 11,62,13,NA,NA,NA,5,NA,NA,NA,Ketel of Fish,The Traveling Secretaries
 11,63,4,NA,NA,NA,7,NA,NA,NA,All That is Wright,Cron's Disease
@@ -119,3 +119,9 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 20,118,5,NA,NA,NA,9,NA,NA,NA,The Traveling Secretaries,Don Julios
 20,119,7,NA,NA,NA,1,NA,NA,NA,Cron's Disease,Crown Heights Crusaders
 20,120,11,NA,NA,NA,6,NA,NA,NA,The West Bank Occupiers,The Novaks
+21,121,13,NA,NA,NA,12,NA,NA,NA,Ketel of Fish,Blasphemous Hot Takes
+21,122,4,NA,NA,NA,8,NA,NA,NA,All That is Wright,Mt. Everest Taquito Farmers
+21,123,2,NA,NA,NA,5,NA,NA,NA,Framber Valdez Oil Spill,The Traveling Secretaries
+21,124,14,NA,NA,NA,7,NA,NA,NA,Hader Better Faster Stronger,Cron's Disease
+21,125,9,NA,NA,NA,11,NA,NA,NA,Don Julios,The West Bank Occupiers
+21,126,1,NA,NA,NA,6,NA,NA,NA,Crown Heights Crusaders,The Novaks
