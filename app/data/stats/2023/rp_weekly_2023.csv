@@ -5033,7 +5033,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 55,10,Craig Kimbrel,30653,2,8,12
 55,10,Matt Olson,32767,NA,9,12
 56,10,Teoscar Hernandez,33377,NA,19.5,8
-56,10,Rafael Devers,33859,NA,17.5,8
+56,10,Rafael Devers,33859,NA,18.5,8
 56,10,Michael Lorenzen,33252,NA,3.5,8
 56,10,Thairo Estrada,36485,NA,22.5,8
 56,10,Justin Verlander,6341,NA,-5,8
@@ -5147,7 +5147,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 60,10,Zack Wheeler,31267,NA,33,6
 60,10,Lance Lynn,30820,NA,-0.5,6
 60,10,Austin Riley,34982,NA,19,6
-60,10,Michael King,40429,1,0,6
+60,10,Michael King,40429,2,-2,6
 60,10,Brendan Donovan,41773,NA,2,6
 60,10,Aaron Nola,33709,NA,41.5,6
 60,10,Alex Cobb,31086,NA,5,6
@@ -5304,7 +5304,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 55,10,Mike Yastrzemski,33341,NA,2,13
 55,10,Will Smith,31549,3,14.5,13
 55,10,Anthony Rizzo,30782,NA,-1,13
-55,10,Enrique Hernandez,31358,NA,12.5,13
+55,10,Enrique Hernandez,31358,NA,16.5,13
 56,10,Logan Webb,41216,NA,2,4
 56,10,Adley Rutschman,42178,NA,5.5,4
 56,10,Adam Ottavino,29705,2,-3.5,4
@@ -5330,7 +5330,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 56,10,Jeremy Pena,41273,NA,5,4
 56,10,Alex Verdugo,33786,NA,8,4
 56,10,Jarred Kelenic,41150,NA,1.5,4
-56,10,Kenley Jansen,29630,2,12,4
+56,10,Kenley Jansen,29630,3,16,4
 56,10,Amed Rosario,33215,NA,18,4
 57,10,Esteury Ruiz,39680,NA,13.5,2
 57,10,Ty France,35591,NA,18.5,2
@@ -5398,7 +5398,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 59,10,Gleyber Torres,33804,NA,14,9
 59,10,Marcus Stroman,32815,NA,18,9
 59,10,Luis Severino,33263,NA,5.5,9
-59,10,Brayan Bello,4720856,NA,28.5,9
+59,10,Brayan Bello,4720856,NA,36.5,9
 59,10,Freddy Peralta,39825,NA,21.5,9
 59,10,Paul DeJong,35185,NA,1,9
 59,10,J.T. Realmuto,32177,NA,4.5,9
@@ -5433,8 +5433,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 60,10,Mike Trout,30836,NA,11.5,1
 60,10,Ozzie Albies,33783,NA,20,1
 60,10,Mitch Keller,33722,NA,24.5,1
-60,10,Clay Holmes,32827,2,12.5,1
-60,10,Josh Donaldson,29563,NA,12.5,1
+60,10,Clay Holmes,32827,3,14.5,1
+60,10,Josh Donaldson,29563,NA,12,1
 60,10,Tanner Bibee,4345278,NA,10,1
 61,NA,NA,NA,NA,NA,12
 62,NA,NA,NA,NA,NA,5

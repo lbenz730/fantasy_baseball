@@ -5026,14 +5026,14 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 55,10,Tony Gonsolin,38958,NA,7,12
 55,10,Luis Castillo,35124,NA,20,12
 55,10,Marcell Ozuna,31668,6,23.5,12
-55,10,Giancarlo Stanton,30583,4,0.5,12
+55,10,Giancarlo Stanton,30583,5,0.5,12
 55,10,Bo Bichette,38904,7,14.5,12
 55,10,Manny Machado,31097,6,19.5,12
 55,10,Josh Naylor,35066,6,25,12
 55,10,Craig Kimbrel,30653,NA,8,12
 55,10,Matt Olson,32767,6,9,12
 56,10,Teoscar Hernandez,33377,5,19.5,8
-56,10,Rafael Devers,33859,7,17.5,8
+56,10,Rafael Devers,33859,7,18.5,8
 56,10,Michael Lorenzen,33252,0,3.5,8
 56,10,Thairo Estrada,36485,4,22.5,8
 56,10,Justin Verlander,6341,NA,-5,8
@@ -5147,7 +5147,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 60,10,Zack Wheeler,31267,NA,33,6
 60,10,Lance Lynn,30820,NA,-0.5,6
 60,10,Austin Riley,34982,6,19,6
-60,10,Michael King,40429,NA,0,6
+60,10,Michael King,40429,NA,-2,6
 60,10,Brendan Donovan,41773,3,2,6
 60,10,Aaron Nola,33709,NA,41.5,6
 60,10,Alex Cobb,31086,NA,5,6
@@ -5304,7 +5304,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 55,10,Mike Yastrzemski,33341,1,2,13
 55,10,Will Smith,31549,NA,14.5,13
 55,10,Anthony Rizzo,30782,5,-1,13
-55,10,Enrique Hernandez,31358,7,12.5,13
+55,10,Enrique Hernandez,31358,7,16.5,13
 56,10,Logan Webb,41216,NA,2,4
 56,10,Adley Rutschman,42178,5,5.5,4
 56,10,Adam Ottavino,29705,NA,-3.5,4
@@ -5330,7 +5330,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 56,10,Jeremy Pena,41273,5,5,4
 56,10,Alex Verdugo,33786,6,8,4
 56,10,Jarred Kelenic,41150,3,1.5,4
-56,10,Kenley Jansen,29630,NA,12,4
+56,10,Kenley Jansen,29630,NA,16,4
 56,10,Amed Rosario,33215,5,18,4
 57,10,Esteury Ruiz,39680,5,13.5,2
 57,10,Ty France,35591,5,18.5,2
@@ -5398,7 +5398,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 59,10,Gleyber Torres,33804,6,14,9
 59,10,Marcus Stroman,32815,NA,18,9
 59,10,Luis Severino,33263,NA,5.5,9
-59,10,Brayan Bello,4720856,NA,28.5,9
+59,10,Brayan Bello,4720856,NA,36.5,9
 59,10,Freddy Peralta,39825,NA,21.5,9
 59,10,Paul DeJong,35185,3,1,9
 59,10,J.T. Realmuto,32177,5,4.5,9
@@ -5433,8 +5433,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 60,10,Mike Trout,30836,6,11.5,1
 60,10,Ozzie Albies,33783,6,20,1
 60,10,Mitch Keller,33722,NA,24.5,1
-60,10,Clay Holmes,32827,NA,12.5,1
-60,10,Josh Donaldson,29563,6,12.5,1
+60,10,Clay Holmes,32827,NA,14.5,1
+60,10,Josh Donaldson,29563,6,12,1
 60,10,Tanner Bibee,4345278,NA,10,1
 61,NA,NA,NA,NA,NA,12
 62,NA,NA,NA,NA,NA,5
