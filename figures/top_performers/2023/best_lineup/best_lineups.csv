@@ -200,7 +200,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 0,C,Francisco Alvarez,41253,2,25,4.166666666666667,10
 1,1B,Freddie Freeman,30193,7,38.5,6.416666666666667,10
 2,2B,Mookie Betts,33039,4,30,5,10
-3,3B,Jose Ramirez,32801,5,40,8,10
+3,3B,Jose Ramirez,32801,5,41,8.2,10
 4,SS,Fernando Tatis Jr.,35983,13,28,4.666666666666667,10
 5,OF,Corbin Carroll,42404,14,44.5,8.9,10
 5,OF,Bryan De La Cruz,40787,1,25,4.166666666666667,10
@@ -219,25 +219,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Alexis Diaz,4905920,7,21.5,5.375,10
 15,RP,Felix Bautista,4905859,8,20.5,6.833333333333333,10
 15,RP,Raisel Iglesias,33618,4,20,6.666666666666667,10
-0,C,NA,NA,NA,NA,NA,11
-1,1B,NA,NA,NA,NA,NA,11
-2,2B,NA,NA,NA,NA,NA,11
-3,3B,NA,NA,NA,NA,NA,11
-4,SS,NA,NA,NA,NA,NA,11
-5,OF,NA,NA,NA,NA,NA,11
-5,OF,NA,NA,NA,NA,NA,11
-5,OF,NA,NA,NA,NA,NA,11
-5,OF,NA,NA,NA,NA,NA,11
-5,OF,NA,NA,NA,NA,NA,11
-6,2B/SS,NA,NA,NA,NA,NA,11
-7,1B/3B,NA,NA,NA,NA,NA,11
-12,UTIL,NA,NA,NA,NA,NA,11
-14,SP,NA,NA,NA,NA,NA,11
-14,SP,NA,NA,NA,NA,NA,11
-14,SP,NA,NA,NA,NA,NA,11
-14,SP,NA,NA,NA,NA,NA,11
-14,SP,NA,NA,NA,NA,NA,11
-14,SP,NA,NA,NA,NA,NA,11
-15,RP,NA,NA,NA,NA,NA,11
-15,RP,NA,NA,NA,NA,NA,11
-15,RP,NA,NA,NA,NA,NA,11
+0,C,J.T. Realmuto,32177,9,27,27,11
+1,1B,Ty France,35591,2,7.5,7.5,11
+2,2B,Ketel Marte,32512,13,6,6,11
+3,3B,Ezequiel Duran,42457,12,7,7,11
+4,SS,Bobby Witt Jr.,42403,7,5,5,11
+5,OF,Michael Harris II,42470,4,10,10,11
+5,OF,Mike Trout,30836,1,8,8,11
+5,OF,Corbin Carroll,42404,14,7.5,7.5,11
+5,OF,Jurickson Profar,31117,6,7,7,11
+5,OF,Jose Siri,33954,9,6.5,6.5,11
+6,2B/SS,Ryan McMahon,33247,8,6,6,11
+7,1B/3B,Josh Jung,42437,6,6.5,6.5,11
+12,UTIL,Shohei Ohtani,39832,2,14.5,14.5,11
+14,SP,James Paxton,31980,4,26.5,26.5,11
+14,SP,Bryce Miller,4654313,9,24.5,24.5,11
+14,SP,Charlie Morton,29155,4,19.5,19.5,11
+14,SP,Logan Webb,41216,4,19,19,11
+14,SP,Zach Eflin,32804,4,6,6,11
+14,SP,Jesus Luzardo,39667,8,-2,-2,11
+15,RP,Will Smith,31549,13,8,8,11
+15,RP,Aroldis Chapman,30442,11,6,6,11
+15,RP,Camilo Doval,41337,5,4.5,4.5,11
