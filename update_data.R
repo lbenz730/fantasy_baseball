@@ -356,6 +356,8 @@ df_rp_penalty <-
   filter(lineup_id == 15 | (lineup_id == 14 & relief) ) %>% 
   filter(!start) %>%  ### for Javier Rule
   inner_join(select(teams, team, team_id)) %>% 
+  ### Ryan Helsley Week 11 on IL Days 1-2 of matchip
+  filter(!(matchup_id == 1 & player == 'Ryan Helsley')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
   group_by(team, matchup_id) %>% 
   arrange(scoring_period_id) %>% 
