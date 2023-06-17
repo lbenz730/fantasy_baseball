@@ -219,25 +219,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Alexis Diaz,4905920,7,21.5,5.375,10
 15,RP,Felix Bautista,4905859,8,20.5,6.833333333333333,10
 15,RP,Raisel Iglesias,33618,4,20,6.666666666666667,10
-0,C,J.T. Realmuto,32177,9,44.5,14.833333333333334,11
-1,1B,Spencer Torkelson,4424286,14,17,5.666666666666667,11
+0,C,J.T. Realmuto,32177,9,49,12.25,11
+1,1B,Justin Turner,29607,5,29.5,7.375,11
 2,2B,Bryson Stott,42417,5,22.5,5.625,11
-3,3B,Ryan McMahon,33247,8,19.5,4.875,11
-4,SS,Fernando Tatis Jr.,35983,13,27.5,9.166666666666666,11
-5,OF,Michael Harris II,42470,4,27.5,6.875,11
-5,OF,Ronald Acuna Jr.,36185,1,27,6.75,11
-5,OF,Ian Happ,34945,5,22,7.333333333333333,11
-5,OF,Christian Yelich,31283,13,16,8,11
-5,OF,Leody Taveras,34951,2,15.5,3.875,11
-6,2B/SS,Ozzie Albies,33783,1,22.5,5.625,11
-7,1B/3B,Christian Walker,32758,8,16.5,4.125,11
-12,UTIL,Shohei Ohtani,39832,2,41,10.25,11
+3,3B,Alec Bohm,41169,11,24,6,11
+4,SS,Fernando Tatis Jr.,35983,13,31,7.75,11
+5,OF,Ronald Acuna Jr.,36185,1,28,5.6,11
+5,OF,Michael Harris II,42470,4,27.5,5.5,11
+5,OF,Ian Happ,34945,5,27,6.75,11
+5,OF,Leody Taveras,34951,2,21.5,4.3,11
+5,OF,Christopher Morel,42927,2,21,7,11
+6,2B/SS,Corey Seager,32691,5,22,4.4,11
+7,1B/3B,Christian Walker,32758,8,21,4.2,11
+12,UTIL,Shohei Ohtani,39832,2,45.5,9.1,11
 14,SP,George Kirby,42406,8,30,30,11
 14,SP,Jose Berrios,32811,14,29,29,11
+14,SP,Taijuan Walker,31864,13,28.5,28.5,11
 14,SP,Ranger Suarez,39817,6,28,28,11
 14,SP,James Paxton,31980,4,26.5,26.5,11
 14,SP,Michael Wacha,32640,11,25.5,25.5,11
-14,SP,Framber Valdez,36581,2,25,25,11
+15,RP,Alexis Diaz,4905920,7,15,5,11
 15,RP,Evan Phillips,37911,12,13.5,6.75,11
 15,RP,Jason Adam,32145,12,13,6.5,11
-15,RP,Alexis Diaz,4905920,7,12.5,6.25,11
