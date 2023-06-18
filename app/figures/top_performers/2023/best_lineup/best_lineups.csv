@@ -219,25 +219,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Alexis Diaz,4905920,7,21.5,5.375,10
 15,RP,Felix Bautista,4905859,8,20.5,6.833333333333333,10
 15,RP,Raisel Iglesias,33618,4,20,6.666666666666667,10
-0,C,J.T. Realmuto,32177,9,49,12.25,11
+0,C,J.T. Realmuto,32177,9,51.5,10.3,11
 1,1B,Justin Turner,29607,5,29.5,7.375,11
-2,2B,Bryson Stott,42417,5,22.5,5.625,11
-3,3B,Alec Bohm,41169,11,24,6,11
-4,SS,Fernando Tatis Jr.,35983,13,31,7.75,11
-5,OF,Ronald Acuna Jr.,36185,1,28,5.6,11
-5,OF,Michael Harris II,42470,4,27.5,5.5,11
-5,OF,Ian Happ,34945,5,27,6.75,11
-5,OF,Leody Taveras,34951,2,21.5,4.3,11
-5,OF,Christopher Morel,42927,2,21,7,11
-6,2B/SS,Corey Seager,32691,5,22,4.4,11
-7,1B/3B,Christian Walker,32758,8,21,4.2,11
-12,UTIL,Shohei Ohtani,39832,2,45.5,9.1,11
+2,2B,Orlando Arcia,32530,14,29.5,4.916666666666667,11
+3,3B,Alec Bohm,41169,11,24.5,4.9,11
+4,SS,Fernando Tatis Jr.,35983,13,32.5,6.5,11
+5,OF,Ronald Acuna Jr.,36185,1,30.5,5.083333333333333,11
+5,OF,Michael Harris II,42470,4,29.5,4.916666666666667,11
+5,OF,Ian Happ,34945,5,26.5,5.3,11
+5,OF,Corbin Carroll,42404,14,24.5,4.083333333333333,11
+5,OF,LaMonte Wade Jr.,37798,14,23.5,5.875,11
+6,2B/SS,Corey Seager,32691,5,29,4.833333333333333,11
+7,1B/3B,Christian Walker,32758,8,29,4.833333333333333,11
+12,UTIL,Shohei Ohtani,39832,2,52.5,8.75,11
+14,SP,Blake Snell,33748,1,31,31,11
 14,SP,George Kirby,42406,8,30,30,11
 14,SP,Jose Berrios,32811,14,29,29,11
 14,SP,Taijuan Walker,31864,13,28.5,28.5,11
 14,SP,Ranger Suarez,39817,6,28,28,11
 14,SP,James Paxton,31980,4,26.5,26.5,11
-14,SP,Michael Wacha,32640,11,25.5,25.5,11
 15,RP,Alexis Diaz,4905920,7,15,5,11
-15,RP,Evan Phillips,37911,12,13.5,6.75,11
-15,RP,Jason Adam,32145,12,13,6.5,11
+15,RP,Josh Hader,32760,14,15,7.5,11
+15,RP,A.J. Puk,36201,11,13.5,4.5,11
