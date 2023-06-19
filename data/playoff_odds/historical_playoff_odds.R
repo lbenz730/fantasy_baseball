@@ -1,6 +1,13 @@
-# tp <- team_points 
-df_all <- NULL
-for(i in 1:14) {
+tp <- team_points
+df_all <-  
+  tibble('team' = teams$team,
+         'playoffs' = 4/12,
+         'last_place' = 1/12,
+         'champ' = 1/12,
+         'matchup_id' = 0,
+         'mean_pts' = NA)
+for(i in 1:11) {
+  cat(i)
   team_points <- 
     tp %>% 
     mutate('adj_pts' = ifelse(matchup_id > i, NA, adj_pts))
@@ -30,7 +37,7 @@ for(i in 1:14) {
   na_ix <- schedule$matchup_id > i
   
   
-  df_sims <- future_map_dfr(1:params$nsims, sim_season)
+  df_sims <- future_map_dfr(1:params$nsims, sim_season, .options = furrr_options(seed = 12))
   
   df_sims <- 
     select(df_sims, contains("home"), matchup_id, game_id, sim_id) %>% 
@@ -60,24 +67,34 @@ for(i in 1:14) {
     ungroup() 
   
   x <- 
-    group_by(x, sim_id, division_id) %>% 
-    mutate("division_winner" = get_division_winner(wins, points)) %>% 
-    ungroup() %>% 
+    group_by(x, sim_id) %>% 
     group_by(sim_id) %>% 
-    mutate("wild_card" = get_wild_card(wins, points, division_winner))
+    mutate("playoffs" = get_playoffs(wins, points)) %>% 
+    mutate('last_place' = get_last_place(wins, points)) %>% 
+    mutate('playoff_seed' = get_playoff_seed(wins, points))
   
+  champions <- 
+    x %>% 
+    group_by(sim_id) %>% 
+    arrange(playoff_seed) %>% 
+    dplyr::slice(1:4) %>% 
+    group_split() %>% 
+    future_map_chr(~{
+      if(params$matchup_id < 22) {
+        championship_sim(.x$team, team_mus, team_sigmas, matchup_id = params$matchup_id, wp = df_wp$win_prob[1:2])
+      } else {
+        championship_sim(c(df_wp$team_home[1], df_wp$team_away[1]), team_mus, team_sigmas, matchup_id = params$matchup_id, wp = df_wp$win_prob[1])
+      }
+    })
   
   sim_results <- 
-    group_by(x, team, division_id) %>% 
+    group_by(x, team) %>% 
     summarise("mean_wins" = round(mean(wins), 1),
               "mean_pts" = round(mean(points)),
-              "win_div" = mean(division_winner),
-              "wild_card" = mean(wild_card)) %>% 
-    ungroup() %>% 
-    mutate("playoffs" = win_div + wild_card,
-           'division_id' = as.character(division_id)) %>% 
-    arrange(desc(playoffs), desc(mean_wins)) %>% 
-    mutate('matchup_id' = i)
+              "playoffs" = mean(playoffs),
+              'last_place' = mean(last_place),
+              'champ' = mean(champions == team),
+              'matchup_id' = i)
   
   df_all <- bind_rows(df_all, sim_results)
 }

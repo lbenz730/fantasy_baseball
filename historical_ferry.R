@@ -15,7 +15,7 @@ df <-
   group_by(team_id) %>% 
   mutate('franchise' = team[season == 2023][1]) %>% 
   ungroup() %>% 
-  filter(matchup_id <= 12)
+  filter(matchup_id <= 11)
 
 ggplot(df, aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season) + 

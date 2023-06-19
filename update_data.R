@@ -729,9 +729,11 @@ if(params$matchup_id == 1) {
   
 }
 
+### Edit previous week if first day of matchup
+params$sim_match_id <- ifelse(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12), params$matchup_id, params$matchup_id - 1)
 read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
-  filter(matchup_id != params$matchup_id) %>%
-  bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
+  filter(matchup_id != params$sim_match_id) %>%
+  bind_rows(sim_results %>% mutate('matchup_id' = sim_match_id)) %>%
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
 
