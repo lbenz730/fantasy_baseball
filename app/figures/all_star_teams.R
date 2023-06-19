@@ -35,6 +35,9 @@ make_asg_graphics <- function(season = 2023, save = T) {
   df_bat <- 
     df_daily %>% 
     filter(in_lineup, batter) %>% 
+    group_by(player, player_id) %>% 
+    mutate(eligible_slots = last(eligible_slots)) %>% 
+    ungroup() %>% 
     group_by(player, player_id, eligible_slots) %>% 
     summarise('team_id' = getmode(team_id),
               'n_points' = sum(points),
