@@ -20,9 +20,11 @@ getmode <- function(v) {
 
 
 
-change_logo <- function(df) {
-  df$logo <- paste0('www/', df$team, str_sub(df$logo, -4, -1))
-  df$logo <- gsub('=254', '.png', df$logo) 
+change_logo <- function(df, team_cols = 'team', cols = 'logo') {
+  for(i in 1:length(cols)) {
+    df[[ cols[i] ]] <- paste0('www/', df[[ team_cols[i] ]], str_sub(df[[ cols[i] ]], -4, -1))
+    df[[ cols[i] ]] <- gsub('=254', '.png', df[[ cols[i] ]]) 
+  }
   return(df)
 }
 
@@ -965,3 +967,211 @@ gt_rp_cap <-
               row_group.font.weight = 'bold',
               row_group.font.size  = 22)
 
+### ASG 
+df_asg_lineup <- 
+  change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv')),
+              cols = c('logo_1', 'logo_2', 'logo_3'),
+              team_cols = c('team_1', 'team_2', 'team_3'))
+
+df_asg_counts <- change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv')))
+
+
+gt_asg <- 
+  gt(df_asg_lineup) %>%
+  
+  ### Align Columns
+  cols_align(align = "center", columns = everything()) %>%
+  
+  fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+  fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+  
+  
+  tab_spanner(label = 'First Team', columns = contains('_1')) %>%
+  tab_spanner(label = 'Second Team', columns = contains('_2')) %>%
+  tab_spanner(label = 'Third team', columns = contains('_3')) %>%
+  
+  
+  ### Borders
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_column_labels(
+        columns = gt::everything()
+      )
+    )
+  ) %>%
+  
+  ### Logos
+  text_transform(
+    locations = cells_body(contains(c('player_url'))),
+    fn = function(x) {
+      web_image(
+        url = x,
+        height = 50
+      )
+    }
+  ) %>%
+  
+  text_transform(
+    locations = cells_body(contains(c('logo'))),
+    fn = function(x) {
+      local_image(
+        filename = x,
+        height = 50
+      )
+    }
+  ) %>%
+  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "right",
+        color = "black",
+        weight = px(6)
+      )
+    ),
+    locations = list(
+      cells_body(
+        columns = contains('ppg')
+      )
+    )
+  ) %>%
+  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_body(
+        rows = c(13, 19)
+      )
+    )
+  ) %>%
+  
+  
+  
+  ### Names
+  cols_label(
+    'position_1' = 'Position',
+    'player_1' = 'Player',
+    'player_url_1' = '', 
+    'team_1' = 'Team',
+    'logo_1' = '',
+    'points_1' = 'Points',
+    'ppg_1' = 'PPG',
+    
+    'position_2' = 'Position',
+    'player_2' = 'Player',
+    'player_url_2' = '', 
+    'team_2' = 'Team',
+    'logo_2' = '',
+    'points_2' = 'Points',
+    'ppg_2' = 'PPG',
+    
+    'position_3' = 'Position',
+    'player_3' = 'Player',
+    'player_url_3' = '', 
+    'team_3' = 'Team',
+    'logo_3' = '',
+    'points_3' = 'Points',
+    'ppg_3' = 'PPG'
+    
+    
+  ) %>%
+  tab_header(
+    title = md(glue('**{params$season} Fantasy All-Stars**')),
+  ) %>%
+  tab_options(column_labels.font.size = 20,
+              heading.title.font.size = 40,
+              heading.subtitle.font.size = 40,
+              heading.title.font.weight = 'bold',
+              heading.subtitle.font.weight = 'bold',
+              column_labels.font.weight = 'bold'
+              
+  ) %>% 
+  tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
+  tab_footnote(footnote = "Players ranked by weighted average of Z-Scores of Points (67%) and PPG (33%) relative to position") %>% 
+  tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (8), RP (10)") %>% 
+  tab_footnote(footnote = "Only includes games players in starting fantasy lineup") 
+
+
+
+gt_stars <- 
+  gt(df_asg_counts) %>% 
+  cols_align(align = "center", columns = everything()) %>%
+  
+  ### Borders
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "bottom",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_column_labels(
+        columns = gt::everything()
+      )
+    )
+  ) %>%
+  
+  ### Logos
+  text_transform(
+    locations = cells_body(contains(c('logo'))),
+    fn = function(x) {
+      local_image(
+        filename = x,
+        height = 50
+      )
+    }
+  ) %>%
+  
+  tab_style(
+    style = list(
+      cell_borders(
+        sides = "right",
+        color = "black",
+        weight = px(3)
+      )
+    ),
+    locations = list(
+      cells_body(
+        columns = contains(c('logo', 'third_team'))
+      )
+    )
+  ) %>%
+  
+  
+  ### Names
+  cols_label(
+    'team' = 'Team',
+    'logo' = '',
+    'first_team' = '1st Team',
+    'second_team' = '2nd Team',
+    'third_team' = '3rd Team',
+    'star_points' = 'Total Points'
+    
+  ) %>%
+  tab_header(
+    title = md(glue('**{params$season} Fantasy All-Stars**')),
+  ) %>%
+  tab_options(column_labels.font.size = 20,
+              heading.title.font.size = 40,
+              heading.subtitle.font.size = 40,
+              heading.title.font.weight = 'bold',
+              heading.subtitle.font.weight = 'bold',
+              column_labels.font.weight = 'bold'
+              
+  ) %>% 
+  tab_footnote(footnote = "Star Points: 1st Team (3), 2nd Team (2), 3rd Team (1)") 

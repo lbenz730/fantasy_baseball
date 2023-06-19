@@ -1498,6 +1498,13 @@ shinyServer(function(input, output, session) {
   output$sp_pen <- render_gt(gt_start_cap)
   output$rp_pen <- render_gt(gt_rp_cap)
   
+  ##################
+  ### All Starts ###
+  ##################
+  output$asg_lineup <- render_gt(gt_asg)
+  output$asg_counts <- render_gt(gt_stars)
+
+  
 })
 
 

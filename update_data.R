@@ -357,7 +357,7 @@ df_rp_penalty <-
   filter(!start) %>%  ### for Javier Rule
   inner_join(select(teams, team, team_id)) %>% 
   ### Ryan Helsley Week 11 on IL Days 1-2 of matchip
-  filter(!(matchup_id == 1 & player == 'Ryan Helsley')) %>% 
+  filter(!(matchup_id == 11 & player == 'Ryan Helsley')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
   group_by(team, matchup_id) %>% 
   arrange(scoring_period_id) %>% 
@@ -740,6 +740,14 @@ best_lineup(params$season, params$matchup_id, save = F)
 if(params$matchup_id > 1) {
   best_lineup(params$season, params$matchup_id-1, save = F)
 }
+
+### ASG
+if(params$matchup_id > 6) {
+  pkg <- make_asg_graphics(params$season, save = F)
+  write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
+  write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
+}
+
 
 dir_copy('data/', 'app/data', overwrite = T)
 dir_copy('figures/', 'app/figures', overwrite = T)

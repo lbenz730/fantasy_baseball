@@ -19,7 +19,7 @@ getmode <- function(v) {
 }
 
 
-make_asg_graphics <- function(season = 2023) {
+make_asg_graphics <- function(season = 2023, save = T) {
   ### Rules
   # Only count games in active lineup
   # 67% Weight to Total Points, 33% Weight to PPG
@@ -253,7 +253,7 @@ make_asg_graphics <- function(season = 2023) {
     tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (8), RP (10)") %>% 
     tab_footnote(footnote = "Only includes games players in starting fantasy lineup") 
   
-  gtExtras::gtsave_extra(gt_asg , glue('figures/top_performers/{season}/all_stars/asg_{season}.png'), vwidth = 3000, selector = 'table')
+  
   
   gt_stars <- 
     gt(df_stars) %>% 
@@ -324,7 +324,15 @@ make_asg_graphics <- function(season = 2023) {
                 
     ) %>% 
     tab_footnote(footnote = "Star Points: 1st Team (3), 2nd Team (2), 3rd Team (1)") 
-  gtExtras::gtsave_extra(gt_stars , glue('figures/top_performers/{season}/all_stars/asg_{season}_count.png'), vwidth = 3000, selector = 'table')
+  
+  if(save) {
+    gtExtras::gtsave_extra(gt_asg , glue('figures/top_performers/{season}/all_stars/asg_{season}.png'), vwidth = 3000, selector = 'table')
+    gtExtras::gtsave_extra(gt_stars , glue('figures/top_performers/{season}/all_stars/asg_{season}_count.png'), vwidth = 3000, selector = 'table')
+  }
+  
+  pkg <- 
+    list('stars' = df_stars,
+         'lineups' = df_asg_wide)
 }
 
 

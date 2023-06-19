@@ -75,7 +75,7 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                          
                                                          'QS' = 'qs',
                                                          'Blue Balls' = 'blue_balls'
-                                                         )),
+                                          )),
                               
                               checkboxInput(inputId = 'pitch_desc',
                                             label = 'Sort Descending',
@@ -100,7 +100,7 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                          'BABIP' = 'babip',
                                                          'K %' = 'k_rate',
                                                          'BB %' = 'bb_rate')),
-
+                              
                               checkboxInput(inputId = 'bat_desc',
                                             label = 'Sort Descending',
                                             value = T,
@@ -137,6 +137,21 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                               )
                               
                             )
+                   ),
+                   
+                   tabPanel("All-Stars",
+                            value = 'all_stars',
+                            
+                            ### Render Table
+                            mainPanel(
+                              width = 12,
+                              gt_output('asg_lineup'),
+                              br(),
+                              br(),
+                              gt_output('asg_counts')
+                            )
+                            
+                            
                    ),
                    
                    tabPanel("Win Probability Charts",
