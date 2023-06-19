@@ -733,9 +733,15 @@ if(params$matchup_id == 1) {
 params$sim_match_id <- ifelse(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12), params$matchup_id, params$matchup_id - 1)
 read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
   filter(matchup_id != params$sim_match_id) %>%
-  bind_rows(sim_results %>% mutate('matchup_id' = sim_match_id)) %>%
+  bind_rows(sim_results %>% mutate('matchup_id' = params$sim_match_id)) %>%
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
+if(params$matchup_id != params$sim_match_id) {
+  read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
+    filter(matchup_id != params$matchup_id) %>%
+    bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
+    write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
+}
 
 ### Best Line-up
 best_lineup(params$season, params$matchup_id, save = F)

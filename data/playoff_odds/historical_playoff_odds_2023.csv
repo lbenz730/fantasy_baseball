@@ -83,9 +83,9 @@ Mt. Everest Taquito Farmers,0.3811,0.0116,0.0932,6,7203,11
 The Novaks,0.5582,0.0042,0.1373,6,7188,12
 The Traveling Secretaries,0.2046,0.0409,0.046,6,6955,10.3
 The West Bank Occupiers,0.0813,0.1252,0.0151,6,6676,9.3
-All That is Wright,0.6984,0.0012000000000000001,0.1819,7,7335,12.7
+All That is Wright,0.6984,0.0012,0.1819,7,7335,12.7
 Blasphemous Hot Takes,0.4928,0.0074,0.1288,7,7318,11.5
-Cron's Disease,0.5433,0.0034000000000000002,0.1243,7,7137,12.2
+Cron's Disease,0.5433,0.0034,0.1243,7,7137,12.2
 Crown Heights Crusaders,0.2099,0.0279,0.0525,7,7170,10.1
 Don Julios,0.5233,0.0067,0.1324,7,7342,11.6
 Framber Valdez Oil Spill,0.1424,0.0634,0.0311,7,7015,9.8
@@ -131,15 +131,27 @@ Mt. Everest Taquito Farmers,0.2885,0.0123,0.0679,10,7161,10.7
 The Novaks,0.7819,4e-4,0.2097,10,7282,13
 The Traveling Secretaries,0.0522,0.1213,0.0106,10,6867,9.1
 The West Bank Occupiers,0.15310000000000001,0.0354,0.0206,10,6611,10.4
-All That is Wright,0.8968,0,0.2454,11,7341,13.6
-Blasphemous Hot Takes,0.6965,6.000000000000001e-4,0.1975,11,7518,11.9
-Cron's Disease,0.2085,0.02,0.0421,11,6901,10.6
-Crown Heights Crusaders,0.2227,0.0159,0.0528,11,7194,10.2
-Don Julios,0.145,0.0373,0.0313,11,7084,9.9
-Framber Valdez Oil Spill,0.6597,7e-4,0.1653,11,7257,12.2
-Hader Better Faster Stronger,0.0577,0.0953,0.0122,11,7061,9
-Ketel of Fish,0.0011,0.708,2e-4,11,6868,6.5
-Mt. Everest Taquito Farmers,0.2509,0.0141,0.0543,11,7219,10.4
-The Novaks,0.6786,9e-4,0.1673,11,7241,12.3
-The Traveling Secretaries,0.0915,0.0477,0.0179,11,6921,9.6
-The West Bank Occupiers,0.091,0.0595,0.0137,11,6593,9.8
+All That is Wright,0.8949,0,0.251,11,7337,13.6
+Blasphemous Hot Takes,0.6858,6.000000000000001e-4,0.1982,11,7511,11.9
+Cron's Disease,0.2143,0.0205,0.0399,11,6904,10.6
+Crown Heights Crusaders,0.2221,0.0172,0.0528,11,7192,10.2
+Don Julios,0.1476,0.0385,0.0305,11,7086,9.9
+Framber Valdez Oil Spill,0.6602,6.000000000000001e-4,0.1646,11,7255,12.2
+Hader Better Faster Stronger,0.059,0.0962,0.0103,11,7061,9
+Ketel of Fish,0.0012,0.7045,2e-4,11,6872,6.5
+Mt. Everest Taquito Farmers,0.2477,0.0146,0.0592,11,7217,10.3
+The Novaks,0.6754,9e-4,0.1585,11,7239,12.3
+The Traveling Secretaries,0.0953,0.0479,0.0193,11,6923,9.7
+The West Bank Occupiers,0.0965,0.0585,0.0155,11,6601,9.9
+All That is Wright,0.8949,0,0.251,12,7337,13.6
+Blasphemous Hot Takes,0.6858,6.000000000000001e-4,0.1982,12,7511,11.9
+Cron's Disease,0.2143,0.0205,0.0399,12,6904,10.6
+Crown Heights Crusaders,0.2221,0.0172,0.0528,12,7192,10.2
+Don Julios,0.1476,0.0385,0.0305,12,7086,9.9
+Framber Valdez Oil Spill,0.6602,6.000000000000001e-4,0.1646,12,7255,12.2
+Hader Better Faster Stronger,0.059,0.0962,0.0103,12,7061,9
+Ketel of Fish,0.0012,0.7045,2e-4,12,6872,6.5
+Mt. Everest Taquito Farmers,0.2477,0.0146,0.0592,12,7217,10.3
+The Novaks,0.6754,9e-4,0.1585,12,7239,12.3
+The Traveling Secretaries,0.0953,0.0479,0.0193,12,6923,9.7
+The West Bank Occupiers,0.0965,0.0585,0.0155,12,6601,9.9
