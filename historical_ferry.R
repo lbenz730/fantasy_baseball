@@ -15,14 +15,14 @@ df <-
   group_by(team_id) %>% 
   mutate('franchise' = team[season == 2023][1]) %>% 
   ungroup() %>% 
-  filter(matchup_id <= 10)
+  filter(matchup_id <= 12)
 
 ggplot(df, aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 0:params$current_matchup) +
+  scale_x_continuous(breaks = 0:12) +
   theme(legend.position = 'bottom') +
   labs(x = 'Week',
        y = 'Ferry Odds',
