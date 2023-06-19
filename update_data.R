@@ -745,7 +745,7 @@ if(params$matchup_id > 1) {
 
 ### ASG
 if(params$matchup_id > 6) {
-  pkg <- make_asg_graphics(params$season, save = T)
+  pkg <- make_asg_graphics(params$season, save = F)
   write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
   write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
 }
