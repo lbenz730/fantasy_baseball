@@ -60,17 +60,17 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 10,59,11,280.5,151,129.5,9,270.5,133.5,137,The West Bank Occupiers,Don Julios
 10,60,6,317,170.5,146.5,1,308.5,167,141.5,The Novaks,Crown Heights Crusaders
 11,61,8,365.5,219.5,146,12,393.5,208.5,185,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
-11,62,13,341,204,137,5,356,280.5,75.5,Ketel of Fish,The Traveling Secretaries
+11,62,13,341,204,137,5,356.5,280.5,76,Ketel of Fish,The Traveling Secretaries
 11,63,4,379,238,141,7,215,126.5,88.5,All That is Wright,Cron's Disease
-11,64,2,367,251,116,11,306.5,229,77.5,Framber Valdez Oil Spill,The West Bank Occupiers
+11,64,2,367,251,116,11,307.5,230,77.5,Framber Valdez Oil Spill,The West Bank Occupiers
 11,65,14,411.5,212.5,199,6,306,146.5,159.5,Hader Better Faster Stronger,The Novaks
-11,66,9,326.5,190.5,136,1,283,186,97,Don Julios,Crown Heights Crusaders
-12,67,12,NA,NA,NA,5,NA,NA,NA,Blasphemous Hot Takes,The Traveling Secretaries
-12,68,7,NA,NA,NA,8,NA,NA,NA,Cron's Disease,Mt. Everest Taquito Farmers
-12,69,11,NA,NA,NA,13,NA,NA,NA,The West Bank Occupiers,Ketel of Fish
-12,70,6,NA,NA,NA,4,NA,NA,NA,The Novaks,All That is Wright
-12,71,1,NA,NA,NA,2,NA,NA,NA,Crown Heights Crusaders,Framber Valdez Oil Spill
-12,72,9,NA,NA,NA,14,NA,NA,NA,Don Julios,Hader Better Faster Stronger
+11,66,9,325.5,189.5,136,1,283,186,97,Don Julios,Crown Heights Crusaders
+12,67,12,46.5,15,31.5,5,15,11.5,3.5,Blasphemous Hot Takes,The Traveling Secretaries
+12,68,7,50,34,16,8,19,19,NA,Cron's Disease,Mt. Everest Taquito Farmers
+12,69,11,80,30,50,13,46,26.5,19.5,The West Bank Occupiers,Ketel of Fish
+12,70,6,18,18.5,-0.5,4,57,22.5,34.5,The Novaks,All That is Wright
+12,71,1,16,16,NA,2,27.5,24.5,3,Crown Heights Crusaders,Framber Valdez Oil Spill
+12,72,9,19,19,NA,14,23.5,26.5,-3,Don Julios,Hader Better Faster Stronger
 13,73,7,NA,NA,NA,12,NA,NA,NA,Cron's Disease,Blasphemous Hot Takes
 13,74,5,NA,NA,NA,11,NA,NA,NA,The Traveling Secretaries,The West Bank Occupiers
 13,75,8,NA,NA,NA,6,NA,NA,NA,Mt. Everest Taquito Farmers,The Novaks

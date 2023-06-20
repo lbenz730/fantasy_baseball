@@ -5714,7 +5714,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 66,11,Luis Severino,33263,1,-3,0,9
 66,11,Brayan Bello,4720856,1,27.5,1,9
 66,11,Freddy Peralta,39825,1,24.5,1,9
-66,11,J.T. Realmuto,32177,NA,52,NA,9
+66,11,J.T. Realmuto,32177,NA,51,NA,9
 66,11,Sonny Gray,32082,1,6,0,9
 66,11,Zach McKinstry,38420,NA,7,NA,9
 66,11,Julio Rodriguez,41044,NA,16,NA,9
@@ -5938,7 +5938,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 64,11,Ryan O'Hearn,35183,NA,8,NA,11
 64,11,Max Scherzer,28976,1,-8,0,11
 64,11,Kyle Schwarber,33712,NA,30,NA,11
-64,11,TJ Friedl,36020,NA,18,NA,11
+64,11,TJ Friedl,36020,NA,19,NA,11
 64,11,Gary Sanchez,31095,NA,7,NA,11
 64,11,Zack Greinke,5883,1,2,0,11
 64,11,Domingo German,33660,1,-16,0,11
@@ -6123,12 +6123,64 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 64,NA,NA,NA,NA,NA,NA,2
 65,NA,NA,NA,NA,NA,NA,14
 66,NA,NA,NA,NA,NA,NA,9
-67,NA,NA,NA,NA,NA,NA,12
-68,NA,NA,NA,NA,NA,NA,7
-69,NA,NA,NA,NA,NA,NA,11
-70,NA,NA,NA,NA,NA,NA,6
-71,NA,NA,NA,NA,NA,NA,1
-72,NA,NA,NA,NA,NA,NA,9
+67,12,Jack Suwinski,36754,NA,-0.5,NA,12
+67,12,Daulton Varsho,40963,NA,0.5,NA,12
+67,12,Merrill Kelly,32968,1,27.5,1,12
+67,12,Bo Bichette,38904,NA,1,NA,12
+67,12,Ezequiel Duran,42457,NA,3.5,NA,12
+67,12,Manny Machado,31097,NA,0.5,NA,12
+67,12,Hunter Brown,4717803,1,4,0,12
+67,12,Masataka Yoshida,4872598,NA,-2,NA,12
+67,12,Kevin Newman,35022,NA,5,NA,12
+67,12,Luis Robert Jr.,39631,NA,7,NA,12
+68,12,Francisco Lindor,32129,NA,12,NA,7
+68,12,Bobby Witt Jr.,42403,NA,9,NA,7
+68,12,Willson Contreras,32532,NA,0.5,NA,7
+68,12,Jake Fraley,37974,NA,0.5,NA,7
+68,12,Nolan Gorman,41174,NA,-0.5,NA,7
+68,12,Pablo Lopez,39671,1,10,0,7
+68,12,Alexis Diaz,4905920,NA,6,0,7
+68,12,Jake Cronenworth,36364,NA,2,NA,7
+68,12,Brendan Donovan,41773,NA,9,NA,7
+68,12,Andrew McCutchen,28701,NA,1.5,NA,7
+69,12,Alex Lange,40976,NA,6,0,11
+69,12,Michael Wacha,32640,1,14,1,11
+69,12,Max Scherzer,28976,1,30.5,1,11
+69,12,Spencer Steer,4722857,NA,2.5,NA,11
+69,12,Tommy Edman,39907,NA,10,NA,11
+69,12,Nick Senzel,36180,NA,6,NA,11
+69,12,TJ Friedl,36020,NA,1,NA,11
+69,12,Luis Arraez,39572,NA,8,NA,11
+69,12,Brad Hand,31077,NA,-0.5,0,11
+69,12,Henry Davis,4418683,NA,2.5,NA,11
+70,12,Bryan Reynolds,38980,NA,3,NA,6
+70,12,Luis Matos,4722941,NA,0,NA,6
+70,12,Josh Jung,42437,NA,8,NA,6
+70,12,Xander Bogaerts,31606,NA,-1,NA,6
+70,12,Salvador Perez,31127,NA,0.5,NA,6
+70,12,Andrew Vaughn,42394,NA,7,NA,6
+70,12,Alex Kirilloff,40636,NA,-1,NA,6
+70,12,Nolan Jones,37340,NA,1,NA,6
+70,12,Josiah Gray,41165,1,-0.5,0,6
+70,12,Jurickson Profar,31117,NA,1,NA,6
+70,12,George Springer,32078,NA,0,NA,6
+70,12,Michael Conforto,33711,NA,0,NA,6
+71,12,Matt Chapman,33857,NA,-1.5,NA,1
+71,12,Adam Duvall,32664,NA,2.5,NA,1
+71,12,Juan Soto,36969,NA,13,NA,1
+71,12,Willy Adames,33675,NA,0.5,NA,1
+71,12,Jordan Walker,4684778,NA,1,NA,1
+71,12,Byron Buxton,32655,NA,0,NA,1
+71,12,Rowdy Tellez,34287,NA,-1.5,NA,1
+71,12,Dansby Swanson,34895,NA,2,NA,1
+72,12,Joc Pederson,31392,NA,1,NA,9
+72,12,Mitch Garver,33667,NA,1.5,NA,9
+72,12,Lars Nootbaar,4448736,NA,2,NA,9
+72,12,Nico Hoerner,41219,NA,2.5,NA,9
+72,12,Zach McKinstry,38420,NA,5,NA,9
+72,12,Elly De La Cruz,4917694,NA,1.5,NA,9
+72,12,Nathaniel Lowe,40538,NA,3,NA,9
+72,12,Nolan Arenado,31261,NA,2.5,NA,9
 73,NA,NA,NA,NA,NA,NA,7
 74,NA,NA,NA,NA,NA,NA,5
 75,NA,NA,NA,NA,NA,NA,8
@@ -6249,12 +6301,70 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 64,NA,NA,NA,NA,NA,NA,11
 65,NA,NA,NA,NA,NA,NA,6
 66,NA,NA,NA,NA,NA,NA,1
-67,NA,NA,NA,NA,NA,NA,5
-68,NA,NA,NA,NA,NA,NA,8
-69,NA,NA,NA,NA,NA,NA,13
-70,NA,NA,NA,NA,NA,NA,4
-71,NA,NA,NA,NA,NA,NA,2
-72,NA,NA,NA,NA,NA,NA,14
+67,12,Ian Happ,34945,NA,0.5,NA,5
+67,12,Corey Seager,32691,NA,0,NA,5
+67,12,MJ Melendez,40948,NA,0.5,NA,5
+67,12,Jose Abreu,33095,NA,-0.5,NA,5
+67,12,Camilo Doval,41337,NA,3.5,0,5
+67,12,Triston Casas,41180,NA,9,NA,5
+67,12,Jeff McNeil,33900,NA,3.5,NA,5
+67,12,Jose Altuve,31662,NA,-1.5,NA,5
+68,12,Adolis Garcia,35537,NA,4,NA,8
+68,12,Jonah Heim,33842,NA,2.5,NA,8
+68,12,Rafael Devers,33859,NA,0,NA,8
+68,12,Thairo Estrada,36485,NA,1.5,NA,8
+68,12,Christian Walker,32758,NA,5,NA,8
+68,12,Starling Marte,30830,NA,5,NA,8
+68,12,Ryan McMahon,33247,NA,1,NA,8
+69,12,Ketel Marte,32512,NA,3,NA,13
+69,12,Owen Miller,41187,NA,-1,NA,13
+69,12,Corbin Burnes,39878,1,-5,0,13
+69,12,Alex Bregman,34886,NA,0.5,NA,13
+69,12,Seiya Suzuki,4142424,NA,2,NA,13
+69,12,Drew Smyly,31816,1,14.5,0,13
+69,12,Keibert Ruiz,38827,NA,-0.5,NA,13
+69,12,Eloy Jimenez,33867,NA,0,NA,13
+69,12,Jake McCarthy,41197,NA,4,NA,13
+69,12,Carlos Correa,32653,NA,0,NA,13
+69,12,Fernando Tatis Jr.,35983,NA,0,NA,13
+69,12,Giovanny Gallegos,36050,NA,5,0,13
+69,12,Christian Yelich,31283,NA,3.5,NA,13
+69,12,Vladimir Guerrero Jr.,35002,NA,-1,NA,13
+69,12,Mike Yastrzemski,33341,NA,16,NA,13
+69,12,Will Smith,31549,NA,5,0,13
+70,12,Andrew Heaney,32672,1,13.5,0,4
+70,12,Marcus Semien,32146,NA,1.5,NA,4
+70,12,Paul Goldschmidt,31027,NA,8,NA,4
+70,12,Kyle Tucker,34967,NA,-0.5,NA,4
+70,12,Lane Thomas,36409,NA,6.5,NA,4
+70,12,Jeremy Pena,41273,NA,0.5,NA,4
+70,12,Edouard Julien,3985190,NA,-2,NA,4
+70,12,Alex Verdugo,33786,NA,8,NA,4
+70,12,Ke'Bryan Hayes,35020,NA,0.5,NA,4
+70,12,James Paxton,31980,1,21,1,4
+71,12,Jonathan India,41171,NA,1.5,NA,2
+71,12,Kendall Graveman,33636,NA,3,0,2
+71,12,Francisco Alvarez,41253,NA,2.5,NA,2
+71,12,Joey Meneses,34534,NA,2,NA,2
+71,12,Leody Taveras,34951,NA,0,NA,2
+71,12,Jake Burger,39882,NA,1,NA,2
+71,12,Pete Alonso,37498,NA,3.5,NA,2
+71,12,Geraldo Perdomo,41355,NA,6,NA,2
+71,12,Jorge Soler,32558,NA,8,NA,2
+71,12,Christopher Morel,42927,NA,1.5,NA,2
+71,12,Brandon Nimmo,32159,NA,-1.5,NA,2
+72,12,Brian Anderson,33776,NA,4,NA,14
+72,12,Matt McLain,4422899,NA,-0.5,NA,14
+72,12,Jeimer Candelario,32531,NA,3,NA,14
+72,12,Corbin Carroll,42404,NA,8,NA,14
+72,12,LaMonte Wade Jr.,37798,NA,1,NA,14
+72,12,Carlos Santana,30280,NA,0,NA,14
+72,12,Mauricio Dubon,35304,NA,1,NA,14
+72,12,Cody Bellinger,33912,NA,0,NA,14
+72,12,Lourdes Gurriel Jr.,36040,NA,2.5,NA,14
+72,12,Elias Diaz,33594,NA,8.5,NA,14
+72,12,Jose Berrios,32811,1,-3,0,14
+72,12,Spencer Torkelson,4424286,NA,-1,NA,14
 73,NA,NA,NA,NA,NA,NA,12
 74,NA,NA,NA,NA,NA,NA,11
 75,NA,NA,NA,NA,NA,NA,6
