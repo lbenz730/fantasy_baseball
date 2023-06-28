@@ -244,16 +244,16 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 0,C,Elias Diaz,33594,14,20.5,4.1,12
 1,1B,Matt Olson,32767,12,39.5,7.9,12
 2,2B,Ketel Marte,32512,13,42.5,6.071428571428571,12
-3,3B,Austin Riley,34982,6,29.5,5.9,12
-4,SS,Elly De La Cruz,4917694,9,43.5,7.25,12
+3,3B,Elly De La Cruz,4917694,9,43.5,7.25,12
+4,SS,Francisco Lindor,32129,7,30.5,5.083333333333333,12
 5,OF,Juan Soto,36969,1,39.5,5.642857142857143,12
 5,OF,Luis Robert Jr.,39631,12,30,6,12
 5,OF,Anthony Santander,36084,5,29.5,5.9,12
 5,OF,Jake Fraley,37974,7,28.5,4.75,12
 5,OF,Ian Happ,34945,5,27,5.4,12
-6,2B/SS,Francisco Lindor,32129,7,30.5,5.083333333333333,12
-7,1B/3B,Jeimer Candelario,32531,14,28.5,4.071428571428571,12
-12,UTIL,Alex Bregman,34886,13,28,4.666666666666667,12
+6,2B/SS,Luis Arraez,39572,11,27,3.857142857142857,12
+7,1B/3B,Austin Riley,34982,6,29.5,5.9,12
+12,UTIL,Jeimer Candelario,32531,14,28.5,4.071428571428571,12
 14,SP,Eury Perez,4917854,9,56,28,12
 14,SP,Yusei Kikuchi,41415,13,56,28,12
 14,SP,Max Scherzer,28976,11,50,25,12
@@ -263,25 +263,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Scott McGough,34834,2,24,8,12
 15,RP,Ryan Pressly,33072,14,21.5,7.166666666666667,12
 15,RP,Emmanuel Clase,41743,8,20,5,12
-0,C,Adley Rutschman,42178,4,5,5,13
-1,1B,Spencer Steer,4722857,11,11,11,13
-2,2B,Marcus Semien,32146,4,7.5,7.5,13
-3,3B,Ezequiel Duran,42457,12,2.5,2.5,13
-4,SS,J.P. Crawford,33210,13,8.5,8.5,13
-5,OF,Ronald Acuna Jr.,36185,1,8,8,13
-5,OF,Lane Thomas,36409,4,7.5,7.5,13
-5,OF,Austin Hays,36928,5,6.5,6.5,13
-5,OF,Julio Rodriguez,41044,9,6.5,6.5,13
-5,OF,Joey Gallo,32818,6,6,6,13
-6,2B/SS,Jordan Westburg,4298641,12,3,3,13
-7,1B/3B,Nathaniel Lowe,40538,9,2.5,2.5,13
-12,UTIL,Shohei Ohtani,39832,2,7,7,13
+0,C,Keibert Ruiz,38827,13,8,4,13
+1,1B,Spencer Steer,4722857,11,11,5.5,13
+2,2B,Marcus Semien,32146,4,10.5,5.25,13
+3,3B,Austin Riley,34982,6,11,5.5,13
+4,SS,Francisco Lindor,32129,7,9,4.5,13
+5,OF,Ronald Acuna Jr.,36185,1,19.5,9.75,13
+5,OF,Adolis Garcia,35537,8,14.5,7.25,13
+5,OF,Lane Thomas,36409,4,14.5,7.25,13
+5,OF,Brandon Nimmo,32159,2,11.5,5.75,13
+5,OF,Michael Harris II,42470,4,11,5.5,13
+6,2B/SS,Ezequiel Duran,42457,12,8.5,4.25,13
+7,1B/3B,Carlos Santana,30280,14,10,10,13
+12,UTIL,Shohei Ohtani,39832,2,21,10.5,13
 14,SP,Reid Detmers,4326697,2,31,31,13
+14,SP,Gavin Williams,4345076,2,30,30,13
 14,SP,Spencer Strider,4307825,7,30,30,13
+14,SP,Kevin Gausman,32667,14,28.5,28.5,13
+14,SP,Ranger Suarez,39817,9,28,28,13
 14,SP,Dylan Cease,34943,14,26,26,13
-14,SP,Luis Castillo,35124,12,21.5,21.5,13
-14,SP,Justin Verlander,6341,8,13.5,13.5,13
-14,SP,Andrew Heaney,32672,4,2.5,2.5,13
-15,RP,Andres Munoz,40939,12,6.5,6.5,13
-15,RP,Devin Williams,33224,9,6,6,13
-15,RP,Jacob Webb,40384,2,5,5,13
+15,RP,Andres Munoz,40939,12,11.5,5.75,13
+15,RP,Camilo Doval,41337,5,10,10,13
+15,RP,Jacob Webb,40384,2,8,4,13
