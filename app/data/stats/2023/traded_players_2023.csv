@@ -1,30 +1,30 @@
-player,player_id,team_from,team_to,scoring_period_id,trade_id
-Jhoan Duran,41109,6,1,12,1
-Kendall Graveman,33636,1,6,12,1
-Lance Lynn,30820,1,6,12,1
-Rowdy Tellez,34287,6,1,12,1
-Aaron Nola,33709,4,6,13,2
-Jeremy Pena,41273,6,4,13,2
-John Schreiber,39949,4,6,13,2
-Kenley Jansen,29630,6,4,13,2
-Kyle Tucker,34967,6,4,13,2
-Bryan Reynolds,38980,13,6,40,3
-Corbin Burnes,39878,6,13,40,3
-Nick Lodolo,42433,13,6,40,3
-Byron Buxton,32655,6,1,75,4
-Josh Lowe,40557,1,6,75,4
-Lucas Giolito,32697,6,1,75,4
-Mitch Keller,33722,1,6,75,4
-Yennier Cano,35536,6,1,75,4
-Chris Sale,30948,6,11,89,5
-Royce Lewis,40635,6,11,89,5
-Tommy Edman,39907,11,6,89,5
-Nolan Jones,37340,6,9,90,6
-Sandy Alcantara,35241,9,6,90,6
-Alex Verdugo,33786,4,2,93,7
-Bryce Harper,30951,11,4,92,7
-Chris Sale,30948,11,4,92,7
-Kyle Tucker,34967,4,2,93,7
-Logan Webb,41216,4,11,92,7
-Shane McClanahan,41199,2,4,93,7
-Tyler Glasnow,33190,2,4,93,7
+player,player_id,team_from,team_to,scoring_period_id,"paste(pmin(team_to, team_from), pmax(team_to, team_from))",trade_id
+Jhoan Duran,41109,6,1,12,1 6,1
+Kendall Graveman,33636,1,6,12,1 6,1
+Lance Lynn,30820,1,6,12,1 6,1
+Rowdy Tellez,34287,6,1,12,1 6,1
+Aaron Nola,33709,4,6,13,4 6,3
+Jeremy Pena,41273,6,4,13,4 6,3
+John Schreiber,39949,4,6,13,4 6,3
+Kenley Jansen,29630,6,4,13,4 6,3
+Kyle Tucker,34967,6,4,13,4 6,3
+Bryan Reynolds,38980,13,6,40,6 13,3
+Corbin Burnes,39878,6,13,40,6 13,3
+Nick Lodolo,42433,13,6,40,6 13,3
+Byron Buxton,32655,6,1,75,1 6,4
+Josh Lowe,40557,1,6,75,1 6,4
+Lucas Giolito,32697,6,1,75,1 6,4
+Mitch Keller,33722,1,6,75,1 6,4
+Yennier Cano,35536,6,1,75,1 6,4
+Chris Sale,30948,6,11,89,6 11,5
+Royce Lewis,40635,6,11,89,6 11,5
+Tommy Edman,39907,11,6,89,6 11,5
+Nolan Jones,37340,6,9,90,6 9,6
+Sandy Alcantara,35241,9,6,90,6 9,6
+Alex Verdugo,33786,4,2,93,2 4,7
+Kyle Tucker,34967,4,2,93,2 4,7
+Shane McClanahan,41199,2,4,93,2 4,7
+Tyler Glasnow,33190,2,4,93,2 4,7
+Bryce Harper,30951,11,4,92,4 11,8
+Chris Sale,30948,11,4,92,4 11,8
+Logan Webb,41216,4,11,92,4 11,8

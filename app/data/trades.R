@@ -65,11 +65,16 @@ get_trade_players <- function(df_trades) {
                   'scoring_period_id' = scoring_period_id[which(team_id != lag(team_id))]) %>% 
           filter(n_team > 1) %>% 
           filter(n_app == max(n_app)) %>% 
-          filter(team_to == df_trades$team_id[i] | team_from == df_trades$team_id[i]) %>% 
+          filter( (team_to == df_trades$team_id[i] | team_from == df_trades$team_id[i])) %>% 
           select(player, player_id, team_from, team_to, scoring_period_id) %>% 
-          mutate('trade_id' = i)
+          group_by(paste(pmin(team_to, team_from), pmax(team_to, team_from))) %>% 
+          mutate('trade_id' = i + cur_group_id() - 1) %>% 
+          ungroup()
       ) %>% 
-      filter(!duplicated(paste(player, player_id, team_from, team_to, scoring_period_id)))
+      filter(!duplicated(paste(player, player_id, team_from, team_to, scoring_period_id))) %>% 
+      arrange(trade_id) %>% 
+      ungroup()
   }
+  
   return(ungroup(df_players))
 }
