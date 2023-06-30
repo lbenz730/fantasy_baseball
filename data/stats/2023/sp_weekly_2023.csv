@@ -6708,7 +6708,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 74,13,Jose Altuve,31662,NA,20,NA,5
 74,13,Bryson Stott,42417,NA,1,NA,5
 74,13,Corey Seager,32691,NA,10,NA,5
-74,13,MJ Melendez,40948,NA,3.5,NA,5
+74,13,MJ Melendez,40948,NA,4.5,NA,5
 74,13,Anthony Santander,36084,NA,3.5,NA,5
 74,13,Harrison Bader,35062,NA,11,NA,5
 74,13,Camilo Doval,41337,NA,10,0,5
@@ -6957,7 +6957,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 74,13,Taylor Ward,34923,NA,1.5,NA,11
 74,13,Brandon Drury,32269,NA,13,NA,11
 74,13,Alex Lange,40976,NA,-4,0,11
-74,13,Shane Bieber,40912,1,28.5,1,11
+74,13,Shane Bieber,40912,1,29.5,1,11
 74,13,Max Scherzer,28976,1,20,1,11
 74,13,Kyle Schwarber,33712,NA,10.5,NA,11
 74,13,Alec Bohm,41169,NA,1,NA,11
@@ -6977,11 +6977,11 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 75,13,Sandy Alcantara,35241,1,22,1,6
 75,13,Josh Lowe,40557,NA,5.5,NA,6
 75,13,Aaron Nola,33709,1,2.5,0,6
-75,13,Jurickson Profar,31117,NA,8.5,NA,6
+75,13,Jurickson Profar,31117,NA,9.5,NA,6
 75,13,George Springer,32078,NA,7,NA,6
 75,13,Michael Conforto,33711,NA,-0.5,NA,6
 75,13,Joey Gallo,32818,NA,6,NA,6
-75,13,Miguel Vargas,42453,NA,6.5,NA,6
+75,13,Miguel Vargas,42453,NA,6,NA,6
 75,13,Luis Matos,4722941,NA,-1,NA,6
 75,13,Xander Bogaerts,31606,NA,6.5,NA,6
 75,13,Salvador Perez,31127,NA,-1.5,NA,6
@@ -7009,7 +7009,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 76,13,Ozzie Albies,33783,NA,3.5,NA,1
 76,13,Taijuan Walker,31864,1,20.5,1,1
 76,13,Lucas Giolito,32697,1,16,0,1
-76,13,J.D. Martinez,31065,NA,25.5,NA,1
+76,13,J.D. Martinez,31065,NA,26.5,NA,1
 76,13,Ronald Acuna Jr.,36185,NA,24,NA,1
 77,13,Joc Pederson,31392,NA,1,NA,9
 77,13,Paul Sewald,35009,NA,3,0,9
