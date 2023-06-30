@@ -62,6 +62,8 @@ teams$logo[which(teams$team == "The Traveling Secretaries")] <- 'https://i.imgur
 teams$logo[which(teams$team == 'Mt. Everest Taquito Farmers')] <-  'https://i.imgur.com/VW41hvO.gif'
 teams$logo[which(teams$team == 'Yosemite Yeshivas')] <- 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28721.png&w=350&h=254'
 teams$logo[which(teams$team == 'Ketel of Fish')] <- 'https://i.imgur.com/I68BxCy.png'
+teams$team[teams$team == 'Ketel of Fish'] <- 'Ketel Bells'
+teams$team[teams$team == 'Don Julios'] <- 'The Greatest Stroman'
 write_csv(teams, glue('data/stats/{params$season}/teams_{params$season}.csv'))
 
 ### Schedule and Batting + Pitching Points
@@ -735,7 +737,8 @@ params$sim_match_id <- ifelse(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12), 
 read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
   filter(matchup_id != params$sim_match_id) %>%
   bind_rows(sim_results %>% mutate('matchup_id' = params$sim_match_id)) %>%
-  mutate('team' = case_when('Ketel Bells' %in% teams$team & team == 'Ketel of Fish' ~ 'Ketel Bells',
+  mutate('team' = case_when(team == 'Ketel of Fish' ~ 'Ketel Bells',
+                            team == 'Don Julios' ~ 'The Greatest Stroman',
                             T ~ team)) %>% 
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
@@ -743,7 +746,8 @@ if(params$matchup_id != params$sim_match_id) {
   read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
     filter(matchup_id != params$matchup_id) %>%
     bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
-    mutate('team' = case_when('Ketel Bells' %in% teams$team & team == 'Ketel of Fish' ~ 'Ketel Bells',
+    mutate('team' = case_when(team == 'Ketel of Fish' ~ 'Ketel Bells',
+                              team == 'Don Julios' ~ 'The Greatest Stroman',
                               T ~ team)) %>% 
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 }
