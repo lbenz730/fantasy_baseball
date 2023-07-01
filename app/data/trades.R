@@ -67,11 +67,12 @@ get_trade_players <- function(df_trades) {
           filter(n_app == max(n_app)) %>% 
           filter( (team_to == df_trades$team_id[i] | team_from == df_trades$team_id[i])) %>% 
           select(player, player_id, team_from, team_to, scoring_period_id) %>% 
-          group_by(paste(pmin(team_to, team_from), pmax(team_to, team_from))) %>% 
-          mutate('trade_id' = i + cur_group_id() - 1) %>% 
+          group_by('teams_involved' = paste(pmin(team_to, team_from), pmax(team_to, team_from))) %>% 
           ungroup()
       ) %>% 
       filter(!duplicated(paste(player, player_id, team_from, team_to, scoring_period_id))) %>% 
+      group_by(scoring_period_id, teams_involved) %>% 
+      mutate('trade_id' = cur_group_id()) %>% 
       arrange(trade_id) %>% 
       ungroup()
   }
