@@ -263,25 +263,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Scott McGough,34834,2,24,8,12
 15,RP,Ryan Pressly,33072,14,21.5,7.166666666666667,12
 15,RP,Emmanuel Clase,41743,8,20,5,12
-0,C,Sean Murphy,33557,1,15,7.5,13
-1,1B,Carlos Santana,30280,14,32.5,8.125,13
-2,2B,Mookie Betts,33039,4,40.5,10.125,13
-3,3B,Jose Ramirez,32801,5,24.5,6.125,13
-4,SS,Ezequiel Duran,42457,12,23.5,4.7,13
-5,OF,Ronald Acuna Jr.,36185,1,33.5,8.375,13
-5,OF,Adolis Garcia,35537,8,28,5.6,13
-5,OF,Luis Robert Jr.,39631,12,26,5.2,13
-5,OF,Tommy Pham,31208,9,23.5,4.7,13
-5,OF,TJ Friedl,36020,11,23,5.75,13
-6,2B/SS,Jose Altuve,31662,5,25.5,8.5,13
-7,1B/3B,Matt Olson,32767,12,29,7.25,13
-12,UTIL,Shohei Ohtani,39832,2,44,8.8,13
+0,C,Sean Murphy,33557,1,19,6.333333333333333,13
+1,1B,Matt Olson,32767,12,34,6.8,13
+2,2B,Mookie Betts,33039,4,45.5,9.1,13
+3,3B,Austin Riley,34982,6,28,5.6,13
+4,SS,Ezequiel Duran,42457,12,22.5,3.75,13
+5,OF,Ronald Acuna Jr.,36185,1,39.5,7.9,13
+5,OF,Luis Robert Jr.,39631,12,30.5,5.083333333333333,13
+5,OF,Adolis Garcia,35537,8,30,5,13
+5,OF,Christian Yelich,31283,13,30,5,13
+5,OF,Kyle Tucker,34967,4,28.5,5.7,13
+6,2B/SS,Jose Altuve,31662,5,25,6.25,13
+7,1B/3B,Carlos Santana,30280,14,32,6.4,13
+12,UTIL,Shohei Ohtani,39832,2,43,7.166666666666667,13
 14,SP,Domingo German,33660,11,96,96,13
+14,SP,Justin Verlander,6341,8,39.5,19.75,13
+14,SP,Dylan Cease,34943,14,33.5,16.75,13
 14,SP,Dane Dunning,36080,13,33,33,13
+14,SP,Bailey Ober,3107919,14,31.5,31.5,13
 14,SP,Reid Detmers,4326697,2,31,31,13
-14,SP,Chris Bassitt,33148,5,30,30,13
-14,SP,Gavin Williams,4345076,2,30,30,13
-14,SP,Spencer Strider,4307825,7,30,30,13
 15,RP,Devin Williams,33224,9,19,6.333333333333333,13
 15,RP,Camilo Doval,41337,5,16.5,8.25,13
 15,RP,Ryan Pressly,33072,14,15,7.5,13
