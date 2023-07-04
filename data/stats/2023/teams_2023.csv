@@ -1,6 +1,6 @@
 team_id,division_id,team,location,nickname,logo,owners,abbreviation,wins,losses,ties
 1,1,Crown Heights Crusaders,Crown Heights,Crusaders,https://i.imgur.com/dbAqQbk.jpg,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,7,6,0
-2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},FVOS,7,5,1
+2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},FVOS,7,6,0
 4,1,All That is Wright,All,That is Wright,https://g.espncdn.com/lm-static/logo-packs/flb/Letter-and-Number-Caps-ESPN/caps5.svg,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,10,3,0
 5,1,The Traveling Secretaries,The Traveling,Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,5,8,0
 6,1,The Novaks,The,Novaks,https://www.nydailynews.com/resizer/38DQJPp-rriVrUFvzd0Ueuernmc=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/F252QGGEFUQCSQOOIOFXLFS7UA.jpg,{2E1702EE-0B65-47A2-A7D9-3AE216FF000A},NVKS,7,6,0
@@ -10,4 +10,4 @@ team_id,division_id,team,location,nickname,logo,owners,abbreviation,wins,losses,
 11,1,The West Bank Occupiers,The West Bank,Occupiers ,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,{61DEDFD6-182F-4D0B-855E-5015A1E168E2},LAMA,7,6,0
 12,1,Blasphemous Hot Takes,Blasphemous,Hot Takes,https://i.imgur.com/egcNf8O.jpg,{8A2DBF73-E806-4373-8F90-B1F92878EE00},HOT,8,5,0
 13,1,Ketel Bells,Ketel,of Fish,https://i.imgur.com/I68BxCy.png,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,3,10,0
-14,1,Hader Better Faster Stronger,Hader Better,Faster Stronger,https://imgur.com/d4sbJBf.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,4,8,1
+14,1,Hader Better Faster Stronger,Hader Better,Faster Stronger,https://imgur.com/d4sbJBf.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,5,8,0
