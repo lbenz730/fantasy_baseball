@@ -71,18 +71,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 12,70,6,325,186,139,4,355.5,172,183.5,The Novaks,All That is Wright
 12,71,1,373,200.5,172.5,2,318.5,150.5,168,Crown Heights Crusaders,Framber Valdez Oil Spill
 12,72,9,334,184.5,149.5,14,296,141,155,The Greatest Stroman,Hader Better Faster Stronger
-13,73,7,277,155.5,121.5,12,362,281,81,Cron's Disease,Blasphemous Hot Takes
+13,73,7,277,155.5,121.5,12,365,281,84,Cron's Disease,Blasphemous Hot Takes
 13,74,5,313,193,120,11,415.5,161.5,254,The Traveling Secretaries,The West Bank Occupiers
 13,75,8,333.5,172.5,161,6,280,172,108,Mt. Everest Taquito Farmers,The Novaks
 13,76,13,266,188.5,77.5,1,345.5,225.5,120,Ketel Bells,Crown Heights Crusaders
-13,77,4,336.5,255,81.5,9,330.5,173.5,157,All That is Wright,The Greatest Stroman
+13,77,4,336.5,255,81.5,9,329.5,172.5,157,All That is Wright,The Greatest Stroman
 13,78,2,370,224.5,145.5,14,371,205,166,Framber Valdez Oil Spill,Hader Better Faster Stronger
-14,79,12,28.5,18,10.5,11,63.5,24.5,39,Blasphemous Hot Takes,The West Bank Occupiers
-14,80,6,21.5,16.5,5,7,66,20.5,45.5,The Novaks,Cron's Disease
-14,81,1,33.5,24.5,9,5,21.5,29.5,-8,Crown Heights Crusaders,The Traveling Secretaries
-14,82,9,22,15.5,6.5,8,27,17.5,9.5,The Greatest Stroman,Mt. Everest Taquito Farmers
-14,83,14,41.5,16,25.5,13,43.5,39,4.5,Hader Better Faster Stronger,Ketel Bells
-14,84,2,71,49,22,4,42,35,7,Framber Valdez Oil Spill,All That is Wright
+14,79,12,112,58.5,53.5,11,112,59,53,Blasphemous Hot Takes,The West Bank Occupiers
+14,80,6,67.5,31,36.5,7,107,61.5,45.5,The Novaks,Cron's Disease
+14,81,1,96.5,69.5,27,5,79,55,24,Crown Heights Crusaders,The Traveling Secretaries
+14,82,9,55.5,49,6.5,8,82.5,43,39.5,The Greatest Stroman,Mt. Everest Taquito Farmers
+14,83,14,115.5,56,59.5,13,109,78,31,Hader Better Faster Stronger,Ketel Bells
+14,84,2,142,88,54,4,77,66,11,Framber Valdez Oil Spill,All That is Wright
 15,85,6,NA,NA,NA,12,NA,NA,NA,The Novaks,Blasphemous Hot Takes
 15,86,11,NA,NA,NA,1,NA,NA,NA,The West Bank Occupiers,Crown Heights Crusaders
 15,87,7,NA,NA,NA,9,NA,NA,NA,Cron's Disease,The Greatest Stroman
