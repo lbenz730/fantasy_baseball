@@ -724,7 +724,7 @@
     },
     "ggimage": {
       "Package": "ggimage",
-      "Version": "0.3.2",
+      "Version": "0.3.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -742,7 +742,7 @@
         "utils",
         "withr"
       ],
-      "Hash": "624c4de6f05d232d2c4bab9d98d5fa8c"
+      "Hash": "18c57347f13a654ef8683a6676042624"
     },
     "ggplot2": {
       "Package": "ggplot2",

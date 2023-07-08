@@ -1,3 +1,16 @@
+library(tidyverse)
+
+### Custom ggplot theme
+theme_set(theme_bw() +
+            theme(plot.title = element_text(hjust = 0.5, size = 24),
+                  plot.subtitle = element_text(hjust = 0.5, size = 18),
+                  axis.title = element_text(size = 20),
+                  strip.text = element_text(size = 12),
+                  strip.text.y = element_text(size = 8),
+                  plot.caption = element_text(size = 10),
+                  legend.text = element_text(size = 12),
+                  legend.position = "bottom"))
+
 teams2022 <- read_csv('data/stats/2022/teams_2022.csv')
 teams2023 <- read_csv('data/stats/2023/teams_2023.csv')
 
@@ -15,14 +28,14 @@ df <-
   group_by(team_id) %>% 
   mutate('franchise' = team[season == 2023][1]) %>% 
   ungroup() %>% 
-  filter(matchup_id <= 11)
+  filter(matchup_id <= 13)
 
 ggplot(df, aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 0:12) +
+  scale_x_continuous(breaks = 0:13) +
   theme(legend.position = 'bottom') +
   labs(x = 'Week',
        y = 'Ferry Odds',
