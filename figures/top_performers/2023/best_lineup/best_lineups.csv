@@ -293,9 +293,9 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 5,OF,Adolis Garcia,35537,8,47.5,5.277777777777778,14
 5,OF,Whit Merrifield,32422,11,43,5.375,14
 5,OF,Giancarlo Stanton,30583,12,40.5,5.785714285714286,14
-5,OF,Christian Yelich,31283,13,38.5,4.277777777777778,14
-5,OF,Anthony Santander,36084,5,36,4,14
-6,2B/SS,Willy Adames,33675,1,39,4.333333333333333,14
+5,OF,Christian Yelich,31283,13,38.5,3.85,14
+5,OF,Anthony Santander,36084,5,36,3.6,14
+6,2B/SS,Willy Adames,33675,1,39,3.9,14
 7,1B/3B,Nolan Arenado,31261,9,43,4.777777777777778,14
 12,UTIL,Freddie Freeman,30193,7,39.5,4.9375,14
 14,SP,Logan Gilbert,41221,12,70.5,35.25,14
