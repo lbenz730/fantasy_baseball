@@ -21,8 +21,10 @@ get_trades <- function(week, season_ = 2023, proposed = F) {
         robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season_}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2')) %>% 
         pluck('transactions') 
       
-      if(!is.null(w) & !is.list(w)) {
-        w <- filter(w, (grepl('TRADE', type) & proposed) | (!proposed & type == 'TRADE_ACCEPT'))
+      if(!is.null(w)) {
+        if(is.data.frame(w)) {
+          w <- filter(w, (grepl('TRADE', type) & proposed) | (!proposed & type == 'TRADE_ACCEPT'))
+        }
       }
       
       w
