@@ -83,12 +83,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 9,485.5,281,204.5,The Greatest Stroman,14,82,53,151.5,339.85,196.7,143.15,106.05,37.1,8,444,257,187,Mt. Everest Taquito Farmers,63,124,310.8,179.9,130.9,86.8,44.1,7,9,6
 14,473.5,269.5,204,Hader Better Faster Stronger,14,83,66.5,137.5,331.45,188.65,142.8,96.25,46.55,13,563,305.5,257.5,Ketel Bells,63,194.5,394.1,213.85,180.25,136.15,44.1,11,10,7
 2,478.5,293,185.5,Framber Valdez Oil Spill,14,84,37.5,148,334.95,205.1,129.85,103.6,26.25,4,520.5,323.5,197,All That is Wright,49.5,147.5,364.35,226.45,137.9,103.25,34.65,9,8,11
-6,88,74,14,The Novaks,15,85,-2.5,16.5,NA,NA,NA,NA,NA,12,85.5,55,30.5,Blasphemous Hot Takes,13.5,17,NA,NA,NA,NA,NA,5,3,7
-11,82.5,41.5,41,The West Bank Occupiers,15,86,5.5,35.5,NA,NA,NA,NA,NA,1,44,48,-4,Crown Heights Crusaders,6,-10,NA,NA,NA,NA,NA,8,12,3
-7,55.5,55,0.5,Cron's Disease,15,87,11,-10.5,NA,NA,NA,NA,NA,9,64.5,55.5,9,The Greatest Stroman,5,4,NA,NA,NA,NA,NA,11,8.5,11
-5,126,70,56,The Traveling Secretaries,15,88,18.5,37.5,NA,NA,NA,NA,NA,14,104.5,94,10.5,Hader Better Faster Stronger,2,8.5,NA,NA,NA,NA,NA,2,4,2
-8,70.5,62,8.5,Mt. Everest Taquito Farmers,15,89,5,3.5,NA,NA,NA,NA,NA,2,97.5,68,29.5,Framber Valdez Oil Spill,13.5,16,NA,NA,NA,NA,NA,9,6,10
-13,160,95.5,64.5,Ketel Bells,15,90,9,55.5,NA,NA,NA,NA,NA,4,84.5,48.5,36,All That is Wright,-5,41,NA,NA,NA,NA,NA,1,1,1
+6,128,99,29,The Novaks,15,85,4.5,24.5,NA,NA,NA,NA,NA,12,150,102,48,Blasphemous Hot Takes,18.5,29.5,NA,NA,NA,NA,NA,7,5,10
+11,108.5,68.5,40,The West Bank Occupiers,15,86,5.5,34.5,NA,NA,NA,NA,NA,1,55,52.5,2.5,Crown Heights Crusaders,12.5,-10,NA,NA,NA,NA,NA,10,10.5,6.5
+7,85,76.5,8.5,Cron's Disease,15,87,19,-10.5,NA,NA,NA,NA,NA,9,116.5,80.5,36,The Greatest Stroman,11,25,NA,NA,NA,NA,NA,11,9,11
+5,195,91,104,The Traveling Secretaries,15,88,18.5,85.5,NA,NA,NA,NA,NA,14,163,123,40,Hader Better Faster Stronger,10.5,29.5,NA,NA,NA,NA,NA,2,7,1
+8,164.5,92,72.5,Mt. Everest Taquito Farmers,15,89,18,54.5,NA,NA,NA,NA,NA,2,135,105,30,Framber Valdez Oil Spill,16.5,13.5,NA,NA,NA,NA,NA,3,6,3
+13,214.5,123.5,91,Ketel Bells,15,90,16.5,74.5,NA,NA,NA,NA,NA,4,113.5,68.5,45,All That is Wright,-1.5,46.5,NA,NA,NA,NA,NA,1,1,2
 12,NA,NA,NA,Blasphemous Hot Takes,16,91,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,Crown Heights Crusaders,NA,NA,NA,NA,NA,NA,NA,1,1,1
 9,NA,NA,NA,The Greatest Stroman,16,92,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,2,2,2
 14,NA,NA,NA,Hader Better Faster Stronger,16,93,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,3,3,3
@@ -209,12 +209,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 8,444,257,187,Mt. Everest Taquito Farmers,14,82,63,124,310.8,179.9,130.9,86.8,44.1,9,485.5,281,204.5,The Greatest Stroman,53,151.5,339.85,196.7,143.15,106.05,37.1,12,11,10
 13,563,305.5,257.5,Ketel Bells,14,83,63,194.5,394.1,213.85,180.25,136.15,44.1,14,473.5,269.5,204,Hader Better Faster Stronger,66.5,137.5,331.45,188.65,142.8,96.25,46.55,3,7,2
 4,520.5,323.5,197,All That is Wright,14,84,49.5,147.5,364.35,226.45,137.9,103.25,34.65,2,478.5,293,185.5,Framber Valdez Oil Spill,37.5,148,334.95,205.1,129.85,103.6,26.25,6,4,9
-12,85.5,55,30.5,Blasphemous Hot Takes,15,85,13.5,17,NA,NA,NA,NA,NA,6,88,74,14,The Novaks,-2.5,16.5,NA,NA,NA,NA,NA,6,8.5,5
-1,44,48,-4,Crown Heights Crusaders,15,86,6,-10,NA,NA,NA,NA,NA,11,82.5,41.5,41,The West Bank Occupiers,5.5,35.5,NA,NA,NA,NA,NA,12,11,12
-9,64.5,55.5,9,The Greatest Stroman,15,87,5,4,NA,NA,NA,NA,NA,7,55.5,55,0.5,Cron's Disease,11,-10.5,NA,NA,NA,NA,NA,10,7,9
-14,104.5,94,10.5,Hader Better Faster Stronger,15,88,2,8.5,NA,NA,NA,NA,NA,5,126,70,56,The Traveling Secretaries,18.5,37.5,NA,NA,NA,NA,NA,3,2,8
-2,97.5,68,29.5,Framber Valdez Oil Spill,15,89,13.5,16,NA,NA,NA,NA,NA,8,70.5,62,8.5,Mt. Everest Taquito Farmers,5,3.5,NA,NA,NA,NA,NA,4,5,6
-4,84.5,48.5,36,All That is Wright,15,90,-5,41,NA,NA,NA,NA,NA,13,160,95.5,64.5,Ketel Bells,9,55.5,NA,NA,NA,NA,NA,7,10,4
+12,150,102,48,Blasphemous Hot Takes,15,85,18.5,29.5,NA,NA,NA,NA,NA,6,128,99,29,The Novaks,4.5,24.5,NA,NA,NA,NA,NA,5,4,4
+1,55,52.5,2.5,Crown Heights Crusaders,15,86,12.5,-10,NA,NA,NA,NA,NA,11,108.5,68.5,40,The West Bank Occupiers,5.5,34.5,NA,NA,NA,NA,NA,12,12,12
+9,116.5,80.5,36,The Greatest Stroman,15,87,11,25,NA,NA,NA,NA,NA,7,85,76.5,8.5,Cron's Disease,19,-10.5,NA,NA,NA,NA,NA,8,8,8
+14,163,123,40,Hader Better Faster Stronger,15,88,10.5,29.5,NA,NA,NA,NA,NA,5,195,91,104,The Traveling Secretaries,18.5,85.5,NA,NA,NA,NA,NA,4,2,6.5
+2,135,105,30,Framber Valdez Oil Spill,15,89,16.5,13.5,NA,NA,NA,NA,NA,8,164.5,92,72.5,Mt. Everest Taquito Farmers,18,54.5,NA,NA,NA,NA,NA,6,3,9
+4,113.5,68.5,45,All That is Wright,15,90,-1.5,46.5,NA,NA,NA,NA,NA,13,214.5,123.5,91,Ketel Bells,16.5,74.5,NA,NA,NA,NA,NA,9,10.5,5
 1,NA,NA,NA,Crown Heights Crusaders,16,91,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,7,7,7
 6,NA,NA,NA,The Novaks,16,92,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,The Greatest Stroman,NA,NA,NA,NA,NA,NA,NA,8,8,8
 11,NA,NA,NA,The West Bank Occupiers,16,93,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,9,9,9
