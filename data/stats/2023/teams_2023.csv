@@ -1,13 +1,13 @@
 team_id,division_id,team,location,nickname,logo,owners,abbreviation,wins,losses,ties
-1,1,Crown Heights Crusaders,Crown Heights,Crusaders,https://i.imgur.com/dbAqQbk.jpg,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,8,6,0
-2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},FVOS,7,7,0
-4,1,All That is Wright,All,That is Wright,https://g.espncdn.com/lm-static/logo-packs/flb/Letter-and-Number-Caps-ESPN/caps5.svg,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,11,3,0
-5,1,The Traveling Secretaries,The Traveling,Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,5,9,0
-6,1,The Novaks,The,Novaks,https://www.nydailynews.com/resizer/38DQJPp-rriVrUFvzd0Ueuernmc=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/F252QGGEFUQCSQOOIOFXLFS7UA.jpg,{2E1702EE-0B65-47A2-A7D9-3AE216FF000A},NVKS,7,7,0
-7,1,Cron's Disease,Cron's,Disease,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,{4CBB5F84-22CB-4FE7-B40C-22F318D4DB4F},CD,7,7,0
-8,1,Mt. Everest Taquito Farmers,Mt. Everest,Taquito Farmers,https://i.imgur.com/VW41hvO.gif,"{47171099-0ED9-4805-925D-64CE3F03A213}, {C423324F-615C-495E-905C-A604D9892983}",TACO,7,7,0
-9,1,The Greatest Stroman,Don,Julios,https://i.imgur.com/02Dc1qo.png,{6C6E5618-71E4-414B-AE56-1871E4314B09},WAG,7,7,0
-11,1,The West Bank Occupiers,The West Bank,Occupiers ,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,{61DEDFD6-182F-4D0B-855E-5015A1E168E2},LAMA,7,7,0
-12,1,Blasphemous Hot Takes,Blasphemous,Hot Takes,https://i.imgur.com/egcNf8O.jpg,{8A2DBF73-E806-4373-8F90-B1F92878EE00},HOT,9,5,0
-13,1,Ketel Bells,Ketel,of Fish,https://i.imgur.com/I68BxCy.png,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,4,10,0
-14,1,Hader Better Faster Stronger,Hader Better,Faster Stronger,https://imgur.com/d4sbJBf.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,5,9,0
+1,1,Crown Heights Crusaders,Crown Heights,Crusaders,https://i.imgur.com/dbAqQbk.jpg,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,9,6,0
+2,1,Framber Valdez Oil Spill,Framber Valdez,Oil Spill,https://i.imgur.com/rdkD18L.png,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},FVOS,7,8,0
+4,1,All That is Wright,All,That is Wright,https://g.espncdn.com/lm-static/logo-packs/flb/Letter-and-Number-Caps-ESPN/caps5.svg,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,11,4,0
+5,1,The Traveling Secretaries,The Traveling,Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,5,10,0
+6,1,The Novaks,The,Novaks,https://www.nydailynews.com/resizer/38DQJPp-rriVrUFvzd0Ueuernmc=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/F252QGGEFUQCSQOOIOFXLFS7UA.jpg,{2E1702EE-0B65-47A2-A7D9-3AE216FF000A},NVKS,8,7,0
+7,1,Cron's Disease,Cron's,Disease,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,{4CBB5F84-22CB-4FE7-B40C-22F318D4DB4F},CD,7,8,0
+8,1,Mt. Everest Taquito Farmers,Mt. Everest,Taquito Farmers,https://i.imgur.com/VW41hvO.gif,"{47171099-0ED9-4805-925D-64CE3F03A213}, {C423324F-615C-495E-905C-A604D9892983}",TACO,8,7,0
+9,1,The Greatest Stroman,Don,Julios,https://i.imgur.com/02Dc1qo.png,{6C6E5618-71E4-414B-AE56-1871E4314B09},WAG,8,7,0
+11,1,The West Bank Occupiers,The West Bank,Occupiers ,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,{61DEDFD6-182F-4D0B-855E-5015A1E168E2},LAMA,7,8,0
+12,1,Blasphemous Hot Takes,Blasphemous,Hot Takes,https://i.imgur.com/egcNf8O.jpg,{8A2DBF73-E806-4373-8F90-B1F92878EE00},HOT,9,6,0
+13,1,Ketel Bells,Ketel,of Fish,https://i.imgur.com/I68BxCy.png,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,5,10,0
+14,1,Hader Better Faster Stronger,Hader Better,Faster Stronger,https://imgur.com/d4sbJBf.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,6,9,0
