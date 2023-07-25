@@ -84,17 +84,17 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 14,83,14,473.5,269.5,204,13,563,305.5,257.5,Hader Better Faster Stronger,Ketel Bells
 14,84,2,478.5,293,185.5,4,520.5,323.5,197,Framber Valdez Oil Spill,All That is Wright
 15,85,6,301,194.5,106.5,12,285.5,170.5,115,The Novaks,Blasphemous Hot Takes
-15,86,11,271,175,96,1,273.5,186,87.5,The West Bank Occupiers,Crown Heights Crusaders
-15,87,7,274,177,97,9,318,213,105,Cron's Disease,The Greatest Stroman
-15,88,5,367,208,159,14,452,255,197,The Traveling Secretaries,Hader Better Faster Stronger
+15,86,11,272,176,96,1,273.5,186,87.5,The West Bank Occupiers,Crown Heights Crusaders
+15,87,7,275,178,97,9,318,213,105,Cron's Disease,The Greatest Stroman
+15,88,5,368,208,160,14,452,255,197,The Traveling Secretaries,Hader Better Faster Stronger
 15,89,8,366.5,175,191.5,2,289.5,215,74.5,Mt. Everest Taquito Farmers,Framber Valdez Oil Spill
-15,90,13,469.5,294,175.5,4,337.5,205,132.5,Ketel Bells,All That is Wright
-16,91,12,NA,NA,NA,1,NA,NA,NA,Blasphemous Hot Takes,Crown Heights Crusaders
-16,92,9,NA,NA,NA,6,NA,NA,NA,The Greatest Stroman,The Novaks
-16,93,14,NA,NA,NA,11,NA,NA,NA,Hader Better Faster Stronger,The West Bank Occupiers
-16,94,2,NA,NA,NA,7,NA,NA,NA,Framber Valdez Oil Spill,Cron's Disease
-16,95,4,NA,NA,NA,5,NA,NA,NA,All That is Wright,The Traveling Secretaries
-16,96,13,NA,NA,NA,8,NA,NA,NA,Ketel Bells,Mt. Everest Taquito Farmers
+15,90,13,469.5,294,175.5,4,338.5,206,132.5,Ketel Bells,All That is Wright
+16,91,12,53,25.5,27.5,1,12,9.5,2.5,Blasphemous Hot Takes,Crown Heights Crusaders
+16,92,9,41.5,37.5,4,6,46,23,23,The Greatest Stroman,The Novaks
+16,93,14,55.5,45.5,10,11,7,12,-5,Hader Better Faster Stronger,The West Bank Occupiers
+16,94,2,18,17,1,7,24,24.5,-0.5,Framber Valdez Oil Spill,Cron's Disease
+16,95,4,28.5,28.5,NA,5,-1,NA,-1,All That is Wright,The Traveling Secretaries
+16,96,13,46,40,6,8,22,22,NA,Ketel Bells,Mt. Everest Taquito Farmers
 17,97,9,NA,NA,NA,12,NA,NA,NA,The Greatest Stroman,Blasphemous Hot Takes
 17,98,1,NA,NA,NA,14,NA,NA,NA,Crown Heights Crusaders,Hader Better Faster Stronger
 17,99,6,NA,NA,NA,2,NA,NA,NA,The Novaks,Framber Valdez Oil Spill
