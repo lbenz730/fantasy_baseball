@@ -86,15 +86,15 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 15,85,6,301,194.5,106.5,12,285.5,170.5,115,The Novaks,Blasphemous Hot Takes
 15,86,11,272,176,96,1,273.5,186,87.5,The West Bank Occupiers,Crown Heights Crusaders
 15,87,7,275,178,97,9,318,213,105,Cron's Disease,The Greatest Stroman
-15,88,5,368,208,160,14,452,255,197,The Traveling Secretaries,Hader Better Faster Stronger
+15,88,5,368,208,160,14,434,255,179,The Traveling Secretaries,Hader Better Faster Stronger
 15,89,8,366.5,175,191.5,2,289.5,215,74.5,Mt. Everest Taquito Farmers,Framber Valdez Oil Spill
 15,90,13,469.5,294,175.5,4,338.5,206,132.5,Ketel Bells,All That is Wright
-16,91,12,149.5,83.5,66,1,130,65,65,Blasphemous Hot Takes,Crown Heights Crusaders
-16,92,9,177,116,61,6,166,64,102,The Greatest Stroman,The Novaks
-16,93,14,151.5,111.5,40,11,95,66,29,Hader Better Faster Stronger,The West Bank Occupiers
-16,94,2,132.5,80.5,52,7,165,92,73,Framber Valdez Oil Spill,Cron's Disease
-16,95,4,130,106.5,23.5,5,119,89.5,29.5,All That is Wright,The Traveling Secretaries
-16,96,13,186.5,115,71.5,8,142,77.5,64.5,Ketel Bells,Mt. Everest Taquito Farmers
+16,91,12,165.5,99.5,66,1,154,67.5,86.5,Blasphemous Hot Takes,Crown Heights Crusaders
+16,92,9,196.5,135.5,61,6,193,91,102,The Greatest Stroman,The Novaks
+16,93,14,168,124,44,11,120.5,91.5,29,Hader Better Faster Stronger,The West Bank Occupiers
+16,94,2,155,103,52,7,185.5,90,95.5,Framber Valdez Oil Spill,Cron's Disease
+16,95,4,156,113.5,42.5,5,123,93.5,29.5,All That is Wright,The Traveling Secretaries
+16,96,13,224.5,133,91.5,8,166,78,88,Ketel Bells,Mt. Everest Taquito Farmers
 17,97,9,NA,NA,NA,12,NA,NA,NA,The Greatest Stroman,Blasphemous Hot Takes
 17,98,1,NA,NA,NA,14,NA,NA,NA,Crown Heights Crusaders,Hader Better Faster Stronger
 17,99,6,NA,NA,NA,2,NA,NA,NA,The Novaks,Framber Valdez Oil Spill
