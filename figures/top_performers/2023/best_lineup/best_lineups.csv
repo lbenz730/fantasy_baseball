@@ -352,7 +352,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,David Bednar,38303,8,16.5,5.5,16
 15,RP,Raisel Iglesias,33618,4,16,8,16
 0,C,Gary Sanchez,31095,13,25,6.25,17
-1,1B,Cody Bellinger,33912,14,42,6,17
+1,1B,Cody Bellinger,33912,14,43,6.142857142857143,17
 2,2B,Marcus Semien,32146,4,37,6.166666666666667,17
 3,3B,Jeimer Candelario,32531,14,33,5.5,17
 4,SS,Dansby Swanson,34895,1,39.5,5.642857142857143,17
@@ -373,25 +373,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Andres Munoz,40939,12,24,6,17
 15,RP,Bryan Abreu,41208,7,17,5.666666666666667,17
 15,RP,Camilo Doval,41337,5,17,5.666666666666667,17
-0,C,NA,NA,NA,NA,NA,18
-1,1B,NA,NA,NA,NA,NA,18
-2,2B,NA,NA,NA,NA,NA,18
-3,3B,NA,NA,NA,NA,NA,18
-4,SS,NA,NA,NA,NA,NA,18
-5,OF,NA,NA,NA,NA,NA,18
-5,OF,NA,NA,NA,NA,NA,18
-5,OF,NA,NA,NA,NA,NA,18
-5,OF,NA,NA,NA,NA,NA,18
-5,OF,NA,NA,NA,NA,NA,18
-6,2B/SS,NA,NA,NA,NA,NA,18
-7,1B/3B,NA,NA,NA,NA,NA,18
-12,UTIL,NA,NA,NA,NA,NA,18
-14,SP,NA,NA,NA,NA,NA,18
-14,SP,NA,NA,NA,NA,NA,18
-14,SP,NA,NA,NA,NA,NA,18
-14,SP,NA,NA,NA,NA,NA,18
-14,SP,NA,NA,NA,NA,NA,18
-14,SP,NA,NA,NA,NA,NA,18
-15,RP,NA,NA,NA,NA,NA,18
-15,RP,NA,NA,NA,NA,NA,18
-15,RP,NA,NA,NA,NA,NA,18
+0,C,William Contreras,39895,2,8.5,8.5,18
+1,1B,Pete Alonso,37498,2,17.5,17.5,18
+2,2B,Mookie Betts,33039,4,8,8,18
+3,3B,Christian Encarnacion-Strand,5012106,1,6.5,6.5,18
+4,SS,Carlos Correa,32653,13,11,11,18
+5,OF,Sal Frelick,4417795,6,14,14,18
+5,OF,James Outman,41802,7,8,8,18
+5,OF,TJ Friedl,36020,9,8,8,18
+5,OF,Christian Yelich,31283,13,7,7,18
+5,OF,Jazz Chisholm Jr.,41433,8,6,6,18
+6,2B/SS,Ozzie Albies,33783,1,8,8,18
+7,1B/3B,Cody Bellinger,33912,14,5,5,18
+12,UTIL,Francisco Lindor,32129,7,7,7,18
+14,SP,Freddy Peralta,39825,9,36,36,18
+14,SP,Pablo Lopez,39671,7,28.5,28.5,18
+14,SP,Brayan Bello,4720856,9,18,18,18
+14,SP,Dylan Cease,34943,14,17.5,17.5,18
+14,SP,Kodai Senga,4142421,1,17,17,18
+14,SP,Dane Dunning,36080,8,16.5,16.5,18
+15,RP,Aroldis Chapman,30442,11,7.5,7.5,18
+15,RP,Will Smith,31549,13,6.5,6.5,18
+15,RP,Alexis Diaz,4905920,7,6,6,18
