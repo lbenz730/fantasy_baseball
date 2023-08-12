@@ -98,15 +98,15 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 17,97,9,307.5,199.5,108,12,380,214.5,165.5,The Greatest Stroman,Blasphemous Hot Takes
 17,98,1,336,227,109,14,310.5,228.5,82,Crown Heights Crusaders,Hader Better Faster Stronger
 17,99,6,351,217.5,133.5,2,368,225.5,142.5,The Novaks,Framber Valdez Oil Spill
-17,100,11,318.5,200,118.5,4,359.5,271,88.5,The West Bank Occupiers,All That is Wright
-17,101,7,367.5,218.5,149,13,332,167,165,Cron's Disease,Ketel Bells
-17,102,5,355,218,137,8,336,202.5,133.5,The Traveling Secretaries,Mt. Everest Taquito Farmers
-18,103,12,194.5,84.5,110,14,187,82,105,Blasphemous Hot Takes,Hader Better Faster Stronger
-18,104,2,175.5,143,32.5,9,204,82.5,121.5,Framber Valdez Oil Spill,The Greatest Stroman
-18,105,4,244.5,144.5,100,1,172.5,74.5,98,All That is Wright,Crown Heights Crusaders
-18,106,13,214.5,96,118.5,6,190.5,112,78.5,Ketel Bells,The Novaks
-18,107,8,90,54,36,11,161,72.5,88.5,Mt. Everest Taquito Farmers,The West Bank Occupiers
-18,108,5,167,110.5,56.5,7,106,88.5,17.5,The Traveling Secretaries,Cron's Disease
+17,100,11,318.5,200,118.5,4,360.5,272,88.5,The West Bank Occupiers,All That is Wright
+17,101,7,367.5,218.5,149,13,327,167,160,Cron's Disease,Ketel Bells
+17,102,5,356,219,137,8,336,202.5,133.5,The Traveling Secretaries,Mt. Everest Taquito Farmers
+18,103,12,249,108,141,14,217,113,104,Blasphemous Hot Takes,Hader Better Faster Stronger
+18,104,2,185.5,169,16.5,9,285,141,144,Framber Valdez Oil Spill,The Greatest Stroman
+18,105,4,308,180,128,1,232.5,108.5,124,All That is Wright,Crown Heights Crusaders
+18,106,13,319.5,160.5,159,6,301,202,99,Ketel Bells,The Novaks
+18,107,8,123.5,82,41.5,11,202,89,113,Mt. Everest Taquito Farmers,The West Bank Occupiers
+18,108,5,225,164,61,7,131.5,126.5,5,The Traveling Secretaries,Cron's Disease
 19,109,2,NA,NA,NA,12,NA,NA,NA,Framber Valdez Oil Spill,Blasphemous Hot Takes
 19,110,14,NA,NA,NA,4,NA,NA,NA,Hader Better Faster Stronger,All That is Wright
 19,111,9,NA,NA,NA,13,NA,NA,NA,The Greatest Stroman,Ketel Bells
