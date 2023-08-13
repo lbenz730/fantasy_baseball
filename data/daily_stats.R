@@ -95,6 +95,7 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
   
   ### Yu Darvish Rule
   df$points[df$p_outs >= 27 & df$p_cg == 0] <- df$points[df$p_outs >= 27 & df$p_cg == 0] + 5
+  df$points[df$p_outs >= 27 & df$p_cg == 0 & df$p_er == 0] <- df$points[df$p_outs >= 27 & df$p_cg == 0 & df$p_er == 0] + 5
   df$p_cg[df$p_outs >= 27 & df$p_cg == 0] <- 1
   
   return(df)
