@@ -931,8 +931,12 @@ shinyServer(function(input, output, session) {
     
     ### Top Performers
     df_bat <-
-      batter_points %>%
-      filter(!is.na(n_games)) %>%
+      df_daily %>%
+      filter(in_lineup, batter) %>%
+      group_by(player_id, team_id, player, matchup_id) %>%
+      summarise('n_games' = sum(played),
+                'n_points' = sum(points)) %>%
+      ungroup() %>% 
       mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
              'ppg' = n_points/n_games) %>%
       group_by(matchup_id) %>% 
@@ -955,8 +959,13 @@ shinyServer(function(input, output, session) {
     
     ### Top Performers
     df_sp <-
-      sp_points %>%
-      filter(!is.na(n_games)) %>%
+      df_daily %>%
+      filter(in_lineup, pitcher) %>%
+      group_by(player_id, team_id, player, matchup_id) %>%
+      summarise('n_games' = sum(start),
+                'n_points' = sum(points)) %>%
+      filter(n_games > 0) %>% 
+      ungroup() %>% 
       mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
              'ppg' = n_points/n_games) %>%
       group_by(matchup_id) %>% 
@@ -977,7 +986,12 @@ shinyServer(function(input, output, session) {
     
     ### Top Performers
     df_rp <-
-      rp_points %>%
+      df_daily %>%
+      filter(in_lineup, pitcher) %>%
+      group_by(player_id, team_id, player, matchup_id) %>%
+      summarise('n_games' = sum(relief),
+                'n_points' = sum(points)) %>%
+      filter(n_games > 0) %>% 
       filter(!is.na(n_games)) %>%
       mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
              'ppg' = n_points/n_games) %>%
