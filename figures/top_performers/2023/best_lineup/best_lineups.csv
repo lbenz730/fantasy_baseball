@@ -395,25 +395,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Devin Williams,33224,9,21.5,5.375,18
 15,RP,Kenley Jansen,29630,4,20.5,5.125,18
 15,RP,Raisel Iglesias,33618,4,19.5,4.875,18
-0,C,NA,NA,NA,NA,NA,19
-1,1B,NA,NA,NA,NA,NA,19
-2,2B,NA,NA,NA,NA,NA,19
-3,3B,NA,NA,NA,NA,NA,19
-4,SS,NA,NA,NA,NA,NA,19
-5,OF,NA,NA,NA,NA,NA,19
-5,OF,NA,NA,NA,NA,NA,19
-5,OF,NA,NA,NA,NA,NA,19
-5,OF,NA,NA,NA,NA,NA,19
-5,OF,NA,NA,NA,NA,NA,19
-6,2B/SS,NA,NA,NA,NA,NA,19
-7,1B/3B,NA,NA,NA,NA,NA,19
-12,UTIL,NA,NA,NA,NA,NA,19
-14,SP,NA,NA,NA,NA,NA,19
-14,SP,NA,NA,NA,NA,NA,19
-14,SP,NA,NA,NA,NA,NA,19
-14,SP,NA,NA,NA,NA,NA,19
-14,SP,NA,NA,NA,NA,NA,19
-14,SP,NA,NA,NA,NA,NA,19
-15,RP,NA,NA,NA,NA,NA,19
-15,RP,NA,NA,NA,NA,NA,19
-15,RP,NA,NA,NA,NA,NA,19
+0,C,Salvador Perez,31127,6,9,9,19
+1,1B,Paul Goldschmidt,31027,4,13,13,19
+2,2B,Marcus Semien,32146,4,13,13,19
+3,3B,Bobby Witt Jr.,42403,6,11,11,19
+4,SS,Ezequiel Tovar,4905919,2,9.5,9.5,19
+5,OF,Eddie Rosario,31944,1,14,14,19
+5,OF,Jordan Walker,4684778,13,10,10,19
+5,OF,Adolis Garcia,35537,8,9.5,9.5,19
+5,OF,Harold Ramirez,33259,2,9,9,19
+5,OF,Julio Rodriguez,41044,9,8.5,8.5,19
+6,2B/SS,Francisco Lindor,32129,7,7,7,19
+7,1B/3B,Christian Walker,32758,8,9.5,9.5,19
+12,UTIL,Brandon Nimmo,32159,2,8,8,19
+14,SP,Max Scherzer,28976,11,35.5,35.5,19
+14,SP,Brady Singer,41172,5,28,28,19
+14,SP,Merrill Kelly,32968,12,24.5,24.5,19
+14,SP,Tyler Glasnow,33190,4,23.5,23.5,19
+14,SP,Framber Valdez,36581,2,19.5,19.5,19
+14,SP,Max Fried,32685,8,13,13,19
+15,RP,Adam Ottavino,29705,13,5,5,19
+15,RP,Felix Bautista,4905859,8,5,5,19
+15,RP,Tanner Scott,35135,9,3,3,19
