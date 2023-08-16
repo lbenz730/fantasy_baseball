@@ -361,6 +361,7 @@ df_rp_penalty <-
   ### Ryan Helsley Week 11 on IL Days 1-2 of matchip
   filter(!(matchup_id == 11 & player == 'Ryan Helsley')) %>% 
   filter(!(matchup_id == 12 & player == 'Jordan Hicks')) %>% 
+  filter(!(matchup_id == 19 & player == 'Hunter Brown')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
   group_by(team, matchup_id) %>% 
   arrange(scoring_period_id) %>% 
