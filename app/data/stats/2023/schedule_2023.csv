@@ -102,17 +102,17 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 17,101,7,367.5,218.5,149,13,327,167,160,Cron's Disease,Ketel Bells
 17,102,5,356,219,137,8,336,202.5,133.5,The Traveling Secretaries,Mt. Everest Taquito Farmers
 18,103,12,417,212.5,204.5,14,302,184.5,117.5,Blasphemous Hot Takes,Hader Better Faster Stronger
-18,104,2,270,229.5,40.5,9,372.5,182,190.5,Framber Valdez Oil Spill,The Greatest Stroman
-18,105,4,404,218.5,185.5,1,306,189,117,All That is Wright,Crown Heights Crusaders
-18,106,13,407,246,161,6,388.5,271,117.5,Ketel Bells,The Novaks
+18,104,2,270,229.5,40.5,9,371.5,181,190.5,Framber Valdez Oil Spill,The Greatest Stroman
+18,105,4,407,218.5,188.5,1,306,189,117,All That is Wright,Crown Heights Crusaders
+18,106,13,407,246,161,6,387.5,270,117.5,Ketel Bells,The Novaks
 18,107,8,259.5,126.5,133,11,328.5,149.5,179,Mt. Everest Taquito Farmers,The West Bank Occupiers
 18,108,5,389.5,243.5,146,7,287,174.5,112.5,The Traveling Secretaries,Cron's Disease
-19,109,2,186,136.5,49.5,12,109.5,78.5,31,Framber Valdez Oil Spill,Blasphemous Hot Takes
-19,110,14,144,88,56,4,197.5,88.5,109,Hader Better Faster Stronger,All That is Wright
-19,111,9,124.5,95.5,29,13,159,84.5,74.5,The Greatest Stroman,Ketel Bells
-19,112,1,138,76,62,8,126,102.5,23.5,Crown Heights Crusaders,Mt. Everest Taquito Farmers
-19,113,6,178.5,124,54.5,5,108.5,63,45.5,The Novaks,The Traveling Secretaries
-19,114,11,137,60.5,76.5,7,96,62,34,The West Bank Occupiers,Cron's Disease
+19,109,2,203,153.5,49.5,12,115,76.5,38.5,Framber Valdez Oil Spill,Blasphemous Hot Takes
+19,110,14,164.5,108.5,56,4,227,91,136,Hader Better Faster Stronger,All That is Wright
+19,111,9,147.5,118.5,29,13,201,96,105,The Greatest Stroman,Ketel Bells
+19,112,1,143,81,62,8,133.5,106,27.5,Crown Heights Crusaders,Mt. Everest Taquito Farmers
+19,113,6,224.5,145.5,79,5,147,80,67,The Novaks,The Traveling Secretaries
+19,114,11,147,65.5,81.5,7,101.5,67.5,34,The West Bank Occupiers,Cron's Disease
 20,115,12,NA,NA,NA,4,NA,NA,NA,Blasphemous Hot Takes,All That is Wright
 20,116,13,NA,NA,NA,2,NA,NA,NA,Ketel Bells,Framber Valdez Oil Spill
 20,117,8,NA,NA,NA,14,NA,NA,NA,Mt. Everest Taquito Farmers,Hader Better Faster Stronger
