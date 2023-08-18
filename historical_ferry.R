@@ -26,16 +26,16 @@ odds2023 <- read_csv('data/playoff_odds/historical_playoff_odds_2023.csv') %>%
 df <- 
   bind_rows(odds2022, odds2023) %>% 
   group_by(team_id) %>% 
-  mutate('franchise' = team[season == 2023][1]) %>% 
+  mutate('franchise' = last(team[season == 2023])) %>% 
   ungroup() %>% 
-  filter(matchup_id <= 13)
+  filter(matchup_id <= 19)
 
 ggplot(df, aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 0:13) +
+  scale_x_continuous(breaks = 0:19) +
   theme(legend.position = 'bottom') +
   labs(x = 'Week',
        y = 'Ferry Odds',

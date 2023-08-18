@@ -78,7 +78,7 @@ for(i in 1:max(reg_season, params$matchup_id)) {
   x <- robust_scrape(glue("http://fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?scoringPeriodId={sp_id}&view=mBoxscore"))
   
   
-  schedule_ <- x$schedules
+  schedule_ <- x$schedule
   home <- schedule_$home %>% dplyr::slice(1:n_match) 
   away <- schedule_$away %>% dplyr::slice(1:n_match)
   
