@@ -64,6 +64,7 @@ teams$logo[which(teams$team == 'Yosemite Yeshivas')] <- 'https://a.espncdn.com/c
 teams$logo[which(teams$team == 'Ketel of Fish')] <- 'https://i.imgur.com/I68BxCy.png'
 teams$team[teams$team == 'Ketel of Fish'] <- 'Ketel Bells'
 teams$team[teams$team == 'Don Julios'] <- 'The Greatest Stroman'
+teams$team[teams$team == 'The Greatest Stroman'] <- 'It\'s Gonna Be Gley'
 write_csv(teams, glue('data/stats/{params$season}/teams_{params$season}.csv'))
 
 ### Schedule and Batting + Pitching Points
@@ -77,7 +78,7 @@ for(i in 1:max(reg_season, params$matchup_id)) {
   x <- robust_scrape(glue("http://fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?scoringPeriodId={sp_id}&view=mBoxscore"))
   
   
-  schedule_ <- x$schedule
+  schedule_ <- x$schedules
   home <- schedule_$home %>% dplyr::slice(1:n_match) 
   away <- schedule_$away %>% dplyr::slice(1:n_match)
   
@@ -740,6 +741,7 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
   bind_rows(sim_results %>% mutate('matchup_id' = params$sim_match_id)) %>%
   mutate('team' = case_when(team == 'Ketel of Fish' ~ 'Ketel Bells',
                             team == 'Don Julios' ~ 'The Greatest Stroman',
+                            team == 'The Greatest Stroman' ~ 'It\'s Gonna Be Gley',
                             T ~ team)) %>% 
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
@@ -749,8 +751,9 @@ if(params$matchup_id != params$sim_match_id) {
     bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
     mutate('team' = case_when(team == 'Ketel of Fish' ~ 'Ketel Bells',
                               team == 'Don Julios' ~ 'The Greatest Stroman',
+                              team == 'The Greatest Stroman' ~ 'It\'s Gonna Be Gley',
                               T ~ team)) %>% 
-  write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
+    write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 }
 
 ### Best Line-up

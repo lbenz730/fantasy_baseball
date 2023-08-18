@@ -10067,7 +10067,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 109,19,Jack Flaherty,33837,NA,-8,2
 109,19,Jorge Soler,32558,3,14,2
 109,19,Kyle Isbel,41263,1,-1.5,2
-109,19,Christopher Morel,42927,2,7.5,2
+109,19,Christopher Morel,42927,3,7.5,2
 109,19,Anthony Volpe,42547,2,0.5,2
 109,19,Ezequiel Tovar,4905919,1,9.5,2
 109,19,Henry Davis,4418683,1,1.5,2
@@ -10089,15 +10089,15 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 110,19,Matt McLain,4422899,2,14,14
 110,19,Ryan Pressly,33072,NA,7,14
 110,19,Orlando Arcia,32530,3,1,14
-110,19,Jeimer Candelario,32531,2,2,14
+110,19,Jeimer Candelario,32531,3,2,14
 110,19,Bryan De La Cruz,40787,2,3.5,14
 110,19,David Robertson,29172,NA,2.5,14
 110,19,Josh Hader,32760,NA,7,14
-110,19,Cody Bellinger,33912,2,4,14
+110,19,Cody Bellinger,33912,3,4,14
 110,19,Kevin Gausman,32667,NA,1.5,14
 110,19,Amed Rosario,33215,1,1,14
 111,19,Paul Sewald,35009,NA,11,9
-111,19,Nico Hoerner,41219,2,4,9
+111,19,Nico Hoerner,41219,3,4,9
 111,19,Lars Nootbaar,4448736,3,8,9
 111,19,Tommy Pham,31208,3,18.5,9
 111,19,Gleyber Torres,33804,3,-2.5,9
@@ -10123,7 +10123,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 112,19,Willy Adames,33675,3,-1.5,1
 112,19,Graham Ashcraft,4084179,NA,13.5,1
 112,19,Cristian Javier,41261,NA,1.5,1
-112,19,Dansby Swanson,34895,2,2,1
+112,19,Dansby Swanson,34895,3,2,1
 112,19,Joey Gallo,32818,1,0.5,1
 112,19,Blake Snell,33748,NA,19.5,1
 112,19,Matthew Liberatore,41173,NA,-3.5,1
@@ -10145,12 +10145,12 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 113,19,Jorge Polanco,32525,2,10.5,6
 113,19,George Springer,32078,2,3,6
 113,19,Jason Adam,32145,NA,3.5,6
-113,19,Salvador Perez,31127,3,15,6
+113,19,Salvador Perez,31127,4,15,6
 113,19,Andrew Vaughn,42394,2,1,6
 113,19,Kerry Carpenter,42714,2,10,6
 113,19,Joc Pederson,31392,1,1.5,6
 113,19,Zack Wheeler,31267,NA,24,6
-113,19,Bobby Witt Jr.,42403,4,27,6
+113,19,Bobby Witt Jr.,42403,5,27,6
 113,19,Tommy Edman,39907,4,9.5,6
 113,19,Lance Lynn,30820,NA,24.5,6
 113,19,Austin Riley,34982,3,6.5,6
@@ -10173,7 +10173,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 114,19,Andruw Monasterio,36950,1,0,11
 114,19,Nelson Velazquez,41047,1,0.5,11
 114,19,Ildemaro Vargas,32985,1,0,11
-114,19,Michael Massey,4109223,1,2.5,11
+114,19,Michael Massey,4109223,2,2.5,11
 114,19,Nicky Lopez,38106,2,-1.5,11
 114,19,Brice Turang,41179,1,1,11
 114,19,Spencer Steer,4722857,2,3.5,11
@@ -10349,6 +10349,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 110,19,Mike Tauchman,33956,2,3,4
 110,19,Tyler Glasnow,33190,NA,23.5,4
 110,19,Michael Harris II,42470,3,3.5,4
+110,19,Seiya Suzuki,4142424,1,0,4
 110,19,Bryce Harper,30951,2,14,4
 110,19,Aaron Judge,33192,3,2.5,4
 110,19,Jose Quintana,32106,NA,19,4
@@ -10410,7 +10411,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 112,19,Ryan McMahon,33247,3,9.5,8
 113,19,Austin Hays,36928,3,7.5,5
 113,19,Andres Gimenez,37729,1,-0.5,5
-113,19,Ian Happ,34945,2,6,5
+113,19,Ian Happ,34945,3,6,5
 113,19,Jose Ramirez,32801,2,5.5,5
 113,19,Francisco Alvarez,41253,4,2,5
 113,19,Zac Gallen,39910,NA,21.5,5
