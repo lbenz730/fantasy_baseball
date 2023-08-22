@@ -1,3 +1,4 @@
+devtools::install_version('rsconnect', version = '1.0.2')
 library(rsconnect)
 
 setAccountInfo(name = Sys.getenv('NAME'),
