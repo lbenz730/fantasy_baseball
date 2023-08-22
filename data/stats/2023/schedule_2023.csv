@@ -107,18 +107,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 18,106,13,407,246,161,6,387.5,270,117.5,Ketel Bells,The Novaks
 18,107,8,259.5,126.5,133,11,328.5,149.5,179,Mt. Everest Taquito Farmers,The West Bank Occupiers
 18,108,5,389.5,243.5,146,7,287,174.5,112.5,The Traveling Secretaries,Cron's Disease
-19,109,2,413.5,282,131.5,12,280.5,198,82.5,Framber Valdez Oil Spill,Blasphemous Hot Takes
+19,109,2,407,282,125,12,281.5,198,83.5,Framber Valdez Oil Spill,Blasphemous Hot Takes
 19,110,14,325,191,134,4,412.5,238,174.5,Hader Better Faster Stronger,All That is Wright
 19,111,9,433,232.5,200.5,13,304.5,201,103.5,It's Gonna Be Gley,Ketel Bells
 19,112,1,260.5,154,106.5,8,280,212.5,67.5,Crown Heights Crusaders,Mt. Everest Taquito Farmers
 19,113,6,389.5,269.5,120,5,305,200.5,104.5,The Novaks,The Traveling Secretaries
 19,114,11,251,130.5,120.5,7,267,158,109,The West Bank Occupiers,Cron's Disease
-20,115,12,NA,NA,NA,4,NA,NA,NA,Blasphemous Hot Takes,All That is Wright
-20,116,13,NA,NA,NA,2,NA,NA,NA,Ketel Bells,Framber Valdez Oil Spill
-20,117,8,NA,NA,NA,14,NA,NA,NA,Mt. Everest Taquito Farmers,Hader Better Faster Stronger
-20,118,5,NA,NA,NA,9,NA,NA,NA,The Traveling Secretaries,It's Gonna Be Gley
-20,119,7,NA,NA,NA,1,NA,NA,NA,Cron's Disease,Crown Heights Crusaders
-20,120,11,NA,NA,NA,6,NA,NA,NA,The West Bank Occupiers,The Novaks
+20,115,12,65.5,37.5,28,4,49,25.5,23.5,Blasphemous Hot Takes,All That is Wright
+20,116,13,55,61.5,-6.5,2,27,27,NA,Ketel Bells,Framber Valdez Oil Spill
+20,117,8,26,26,NA,14,34,31,3,Mt. Everest Taquito Farmers,Hader Better Faster Stronger
+20,118,5,19,19,NA,9,25,21,4,The Traveling Secretaries,It's Gonna Be Gley
+20,119,7,34,30,4,1,23.5,20.5,3,Cron's Disease,Crown Heights Crusaders
+20,120,11,38.5,21,17.5,6,46,21.5,24.5,The West Bank Occupiers,The Novaks
 21,121,13,NA,NA,NA,12,NA,NA,NA,Ketel Bells,Blasphemous Hot Takes
 21,122,4,NA,NA,NA,8,NA,NA,NA,All That is Wright,Mt. Everest Taquito Farmers
 21,123,2,NA,NA,NA,5,NA,NA,NA,Framber Valdez Oil Spill,The Traveling Secretaries
