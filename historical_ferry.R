@@ -25,10 +25,13 @@ odds2023 <- read_csv('data/playoff_odds/historical_playoff_odds_2023.csv') %>%
 
 df <- 
   bind_rows(odds2022, odds2023) %>% 
+  filter(matchup_id <= 19) %>% 
   group_by(team_id) %>% 
   mutate('franchise' = last(team[season == 2023])) %>% 
-  ungroup() %>% 
-  filter(matchup_id <= 19)
+  group_by(team_id, season) %>% 
+  filter(last(last_place) > 0.001) %>% 
+  ungroup() 
+  
 
 ggplot(df, aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season) + 
@@ -42,4 +45,28 @@ ggplot(df, aes(x = matchup_id, y = last_place)) +
        col = '',
        title = 'Ferry Odds Over Time')
 
-ggsave('~/Desktop/test.png', height = 9/1.4, width =16/1.4)
+ggsave('~/Desktop/historical_ferry.png', height = 9/1.4, width =16/1.4)
+
+df <- 
+  bind_rows(odds2022, odds2023) %>% 
+  filter(matchup_id <= 19) %>% 
+  group_by(team_id) %>% 
+  mutate('franchise' = last(team[season == 2023])) %>% 
+  group_by(team_id, season) %>% 
+  filter(last(playoffs) > 0.05) %>% 
+  ungroup() 
+
+
+ggplot(df, aes(x = matchup_id, y = playoffs)) + 
+  facet_wrap(~season) + 
+  geom_point(aes(col = franchise)) + 
+  geom_line(aes(col = franchise)) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_x_continuous(breaks = 0:19) +
+  theme(legend.position = 'bottom') +
+  labs(x = 'Week',
+       y = 'Playoff Odds',
+       col = '',
+       title = 'Playoff Odds Over Time')
+
+ggsave('~/Desktop/historical_playoffs.png', height = 9/1.4, width =16/1.4)
