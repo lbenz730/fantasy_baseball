@@ -1,4 +1,7 @@
-devtools::install_version('rsconnect', version = '1.0.1', repos='http://cran.rstudio.com/')
+devtools::install_version('rsconnect', 
+                          version = '1.0.1', 
+                          repos='http://cran.rstudio.com/', 
+                          upgrade = F)
 library(rsconnect)
 
 setAccountInfo(name = Sys.getenv('NAME'),
