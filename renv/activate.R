@@ -8,21 +8,6 @@ local({
   # the project directory
   project <- getwd()
 
-  # use start-up diagnostics if enabled
-  diagnostics <- Sys.getenv("RENV_STARTUP_DIAGNOSTICS", unset = "FALSE")
-  if (diagnostics) {
-    start <- Sys.time()
-    profile <- tempfile("renv-startup-", fileext = ".Rprof")
-    utils::Rprof(profile)
-    on.exit({
-      utils::Rprof(NULL)
-      elapsed <- signif(difftime(Sys.time(), start, units = "auto"), digits = 2L)
-      writeLines(sprintf("- renv took %s to run the autoloader.", format(elapsed)))
-      writeLines(sprintf("- Profile: %s", profile))
-      print(utils::summaryRprof(profile))
-    }, add = TRUE)
-  }
-
   # figure out whether the autoloader is enabled
   enabled <- local({
 
@@ -856,7 +841,7 @@ local({
     hooks <- getHook("renv::autoload")
     for (hook in hooks)
       if (is.function(hook))
-        tryCatch(hook(), error = warnify)
+        tryCatch(hook(), error = warning)
   
     # load the project
     renv::load(project)
