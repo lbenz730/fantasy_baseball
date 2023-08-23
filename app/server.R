@@ -1477,10 +1477,10 @@ shinyServer(function(input, output, session) {
   
   output$bump <- renderPlot({
     ggplot(df_points, aes(x = scoring_period_id, y = rank)) + 
-      facet_wrap(~team) + 
-      geom_vline(data = df_start %>% filter(matchup_id <= params$current_matchup), aes(xintercept = end_period), lty = 2) + 
-      geom_bump(data = rename(df_points, 'team2' = team), aes(group = team2), col = 'grey', alpha = 0.5) +
-      geom_bump(aes(col = team), lwd = 1.2) + 
+      facet_wrap(~team) +
+      geom_vline(data = df_start %>% filter(matchup_id <= params$current_matchup), aes(xintercept = end_period), lty = 2) +
+      # geom_line(data = rename(df_points, 'team2' = team), aes(group = team2), col = 'grey', alpha = 0.5, lineend = 'round') +
+      geom_bump(aes(col = team), lwd = 1.2, lineend = 'round') +
       scale_y_reverse(limits = c(12, 1), breaks = 12:1) + 
       labs(x = 'Day of Season', 
            y = 'Rank by Points Scored', 

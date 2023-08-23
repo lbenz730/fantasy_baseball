@@ -63,9 +63,9 @@ sim_results <-
   read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>% 
   filter(matchup_id == params$current_matchup)
 
-batter_points <- read_csv(glue('data/stats/{params$season}/batting_weekly_{params$season}.csv'))
-sp_points <- read_csv(glue('data/stats/{params$season}/sp_weekly_{params$season}.csv'))
-rp_points <- read_csv(glue('data/stats/{params$season}/rp_weekly_{params$season}.csv'))
+# batter_points <- read_csv(glue('data/stats/{params$season}/batting_weekly_{params$season}.csv'))
+# sp_points <- read_csv(glue('data/stats/{params$season}/sp_weekly_{params$season}.csv'))
+# rp_points <- read_csv(glue('data/stats/{params$season}/rp_weekly_{params$season}.csv'))
 df_daily <- read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
 df_log <- read_csv(glue('figures/top_performers/{params$season}/best_lineup/best_lineups.csv'))
 team_points <- read_csv(glue('data/stats/{params$season}/team_points.csv'))
