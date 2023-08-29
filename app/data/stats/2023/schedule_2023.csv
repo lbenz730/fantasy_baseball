@@ -119,9 +119,9 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 20,118,5,302,235.5,66.5,9,354.5,192,162.5,The Traveling Secretaries,It's Gonna Be Gley
 20,119,7,306.5,191,115.5,1,303,152.5,150.5,Cron's Disease,Crown Heights Crusaders
 20,120,11,343,206.5,136.5,6,387,191.5,195.5,The West Bank Occupiers,The Novaks
-21,121,13,NA,NA,NA,12,NA,NA,NA,Ketel Bells,Blasphemous Hot Takes
-21,122,4,NA,NA,NA,8,NA,NA,NA,All That is Wright,Mt. Everest Taquito Farmers
-21,123,2,NA,NA,NA,5,NA,NA,NA,Framber Valdez Oil Spill,The Traveling Secretaries
-21,124,14,NA,NA,NA,7,NA,NA,NA,Hader Better Faster Stronger,Cron's Disease
-21,125,9,NA,NA,NA,11,NA,NA,NA,It's Gonna Be Gley,The West Bank Occupiers
-21,126,1,NA,NA,NA,6,NA,NA,NA,Crown Heights Crusaders,The Novaks
+21,121,13,89,43,46,12,73,45.5,27.5,Ketel Bells,Blasphemous Hot Takes
+21,122,4,59,53.5,5.5,8,36,36,NA,All That is Wright,Mt. Everest Taquito Farmers
+21,123,2,28.5,28.5,NA,5,58,55.5,2.5,Framber Valdez Oil Spill,The Traveling Secretaries
+21,124,14,47.5,32,15.5,7,91.5,41.5,50,Hader Better Faster Stronger,Cron's Disease
+21,125,9,35.5,35.5,NA,11,29,22,7,It's Gonna Be Gley,The West Bank Occupiers
+21,126,1,81.5,40.5,41,6,42,46.5,-4.5,Crown Heights Crusaders,The Novaks
