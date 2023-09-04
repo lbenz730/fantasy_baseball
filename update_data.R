@@ -706,7 +706,7 @@ champions <-
   dplyr::slice(1:4) %>% 
   group_split() %>% 
   future_map_chr(~{
-    if(params$matchup_id < 22) {
+    if(params$matchup_id < max(df_start$matchup_id)) {
       championship_sim(.x$team, team_mus, team_sigmas, matchup_id = params$matchup_id, wp = df_wp$win_prob[1:2])
     } else {
       championship_sim(c(df_wp$team_home[1], df_wp$team_away[1]), team_mus, team_sigmas, matchup_id = params$matchup_id, wp = df_wp$win_prob[1])
