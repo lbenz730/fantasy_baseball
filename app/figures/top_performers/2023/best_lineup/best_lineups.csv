@@ -483,25 +483,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Pete Fairbanks,42180,6,46,6.571428571428571,22
 15,RP,Tanner Scott,35135,9,41,6.833333333333333,22
 15,RP,David Bednar,38303,8,36,6,22
-0,C,MJ Melendez,40948,5,17,8.5,23
-1,1B,Ryan O'Hearn,35183,11,18,9,23
-2,2B,Jeff McNeil,33900,5,12,6,23
-3,3B,Gunnar Henderson,42507,12,9.5,4.75,23
-4,SS,Xander Bogaerts,31606,6,18,9,23
-5,OF,Ronald Acuna Jr.,36185,1,17,8.5,23
-5,OF,Luis Robert Jr.,39631,12,16.5,8.25,23
-5,OF,Cedric Mullins,35578,11,16,8,23
-5,OF,Nolan Jones,37340,9,15.5,7.75,23
-5,OF,Austin Hays,36928,5,15,7.5,23
-6,2B/SS,J.P. Crawford,33210,12,16,8,23
-7,1B/3B,Bryce Harper,30951,4,13.5,6.75,23
-12,UTIL,Kyle Tucker,34967,2,14.5,7.25,23
+0,C,MJ Melendez,40948,5,21,7,23
+1,1B,Nolan Jones,37340,9,21,7,23
+2,2B,Marcus Semien,32146,4,20,6.666666666666667,23
+3,3B,Ke'Bryan Hayes,35020,7,11.5,5.75,23
+4,SS,Xander Bogaerts,31606,6,24,8,23
+5,OF,Corbin Carroll,42404,14,21,10.5,23
+5,OF,Nick Castellanos,31187,12,19.5,6.5,23
+5,OF,Ronald Acuna Jr.,36185,1,18.5,6.166666666666667,23
+5,OF,Brandon Nimmo,32159,2,18,6,23
+5,OF,Ryan O'Hearn,35183,11,18,6,23
+6,2B/SS,CJ Abrams,42402,11,17.5,5.833333333333333,23
+7,1B/3B,Joey Meneses,34534,14,17,5.666666666666667,23
+12,UTIL,Jonah Heim,33842,8,17,5.666666666666667,23
 14,SP,Mike Clevinger,32769,8,37,37,23
 14,SP,Blake Snell,33748,1,33.5,33.5,23
+14,SP,Kevin Gausman,32667,14,28.5,28.5,23
+14,SP,Kyle Bradish,4311625,9,28.5,28.5,23
 14,SP,Jordan Montgomery,38173,4,26.5,26.5,23
 14,SP,Spencer Strider,4307825,7,26.5,26.5,23
-14,SP,Braxton Garrett,40971,2,25,25,23
-14,SP,Luis Castillo,35124,12,23.5,23.5,23
-15,RP,Ryan Helsley,39909,1,9,9,23
-15,RP,Aroldis Chapman,30442,11,8,8,23
-15,RP,Jordan Hicks,37909,1,6,6,23
+15,RP,Jordan Hicks,37909,1,12,6,23
+15,RP,Scott Barlow,32156,11,12,6,23
+15,RP,Matt Strahm,34862,4,10,5,23
