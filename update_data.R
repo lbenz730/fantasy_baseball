@@ -45,15 +45,13 @@ teams <-
   select(teams, 
          'team_id' = id,
          'division_id' = divisionId,
-         location,
-         nickname,
+         'team' = name,
          logo,
          'owners' = owners,
          'abbreviation' = abbrev,
          'wins' = record.overall.wins,
          'losses' = record.overall.losses,
          'ties' = record.overall.ties) %>% 
-  mutate('team' = paste(location, nickname)) %>% 
   mutate('owners' = map_chr(teams$owners, ~paste0(.x, collapse = ', '))) %>% 
   mutate('team' = stripwhite(team)) %>% 
   select(team_id, division_id, team, everything())
