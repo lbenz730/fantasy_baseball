@@ -2,7 +2,6 @@ library(lubridate)
 library(ggridges)
 library(ggimage)
 library(rsvg)
-library(purrr)
 
 
 screen <-
