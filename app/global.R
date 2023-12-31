@@ -8,6 +8,7 @@ library(rsvg)
 library(gt)
 library(patchwork)
 library(stringr)
+library(purrr)
 
 options(readr.show_col_types = F)
 options(dplyr.summarise.inform = F)
