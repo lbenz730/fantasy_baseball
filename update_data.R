@@ -616,6 +616,15 @@ df_wp <-
   plot_wp(params$season, params$matchup_id, plot = F, all = hour(Sys.Date()) > 12) %>% 
   filter(day_of_matchup == max(day_of_matchup))
 
+write_csv(df_wp, glue('data/win_prob/{params$season}/week_{params$matchup_id}.csv'))
+if(params$matchup_id> 1) {
+  df_wp_old <- 
+    plot_wp(params$season, params$matchup_id, plot = F, all = T) %>% 
+    filter(day_of_matchup == max(day_of_matchup))
+  
+  write_csv(df_wp_old, glue('data/win_prob/{params$season}/week_{params$matchup_id - 1}.csv'))
+}
+
 ### playoff simulations
 if(params$matchup_id > 1) {
   mu <- mean(team_points$adj_pts, na.rm = T)

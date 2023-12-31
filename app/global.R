@@ -4,14 +4,13 @@ library(readr)
 library(ggplot2)
 library(glue)
 library(lubridate)
-# library(rsvg)
+library(rsvg)
 library(gt)
 library(patchwork)
 
 options(readr.show_col_types = F)
 options(dplyr.summarise.inform = F)
 
-source('figures/wp_graphics.R')
 source('helpers.R')
 
 
@@ -81,7 +80,7 @@ trans_log <- read_csv(glue('data/stats/{params$season}/transaction_log_{params$s
 
 distributions <-
   read_csv('data/playoff_odds/distributions.csv') %>%
-  filter(sim_id <= 10000) %>% 
+  filter(sim_id <= 1000) %>% 
   select(-division_id, -sim_id)
   
 
