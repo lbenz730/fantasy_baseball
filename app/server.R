@@ -3,7 +3,7 @@ library(ggridges)
 library(ggimage)
 library(rsvg)
 library(purrr)
-library(stringr)
+
 
 screen <-
   div(
