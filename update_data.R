@@ -8,6 +8,7 @@ library(here)
 library(patchwork)
 library(truncnorm)
 library(fs)
+library(stringr)
 
 plan(multisession(workers = min(parallel::detectCores(), 12)))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
@@ -613,17 +614,18 @@ write_csv(team_points, glue('data/stats/{params$season}/team_points.csv'))
 
 ### WP for Current Week 
 df_wp <- 
-  plot_wp(params$season, params$matchup_id, plot = F, all = hour(Sys.Date()) > 12) %>% 
-  filter(day_of_matchup == max(day_of_matchup))
+  plot_wp(params$season, params$matchup_id, plot = F, all = hour(Sys.time()) > 12) 
 
 write_csv(df_wp, glue('data/win_prob/{params$season}/week_{params$matchup_id}.csv'))
 if(params$matchup_id> 1) {
   df_wp_old <- 
-    plot_wp(params$season, params$matchup_id, plot = F, all = T) %>% 
-    filter(day_of_matchup == max(day_of_matchup))
-  
+    plot_wp(params$season, params$matchup_id, plot = F, all = T)
   write_csv(df_wp_old, glue('data/win_prob/{params$season}/week_{params$matchup_id - 1}.csv'))
 }
+
+df_wp <- 
+  df_wp %>% 
+  filter(day_of_matchup == max(day_of_matchup))
 
 ### playoff simulations
 if(params$matchup_id > 1) {

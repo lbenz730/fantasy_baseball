@@ -1184,7 +1184,7 @@ shinyServer(function(input, output, session) {
   ##############################
   df_wp <- eventReactive(input$matchup_id_wp, {
     cat('Computing WP\n')
-    read_csv(gglue('data/win_prob/{params$season}/{input$matchup_id_wp}.csv')) %>% 
+    read_csv(glue('data/win_prob/{params$season}/week_{input$matchup_id_wp}.csv')) %>% 
       mutate('start_factor' = factor(case_when(start_advantage >= 4 ~ '> +3',
                                                start_advantage <= -4 ~ '< -3',
                                                start_advantage > 0 ~ paste0('+', start_advantage),

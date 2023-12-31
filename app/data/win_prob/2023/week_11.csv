@@ -1,7 +1,49 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,0,7,0,8,8,0,0.41436497623040475,0.4746598257190957
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,1,6,-2.5,7,8,-1,0.39913343731959733,0.41508296325953536
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,2,5,-32,6,6,0,0.1778892412856033,0.1930427072851377
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,3,4,-63,3,3,0,0.0773151477484362,0.061934494402811006
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,4,3,-77.5,3,3,0,0.047319435328786845,0.034894587304391274
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,5,2,-68,3,3,0,0.04891017148464127,0.05091286603816118
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,6,1,-17.5,0,2,-2,0.18937059047849145,0.23378267588501495
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,7,0,-28,0,0,0,0,0.2202439464803494
+Ketel Bells,The Traveling Secretaries,0,7,0,8,8,0,0.47970671957194416,0.4746598257190957
+Ketel Bells,The Traveling Secretaries,1,6,-11.5,8,8,0,0.4212606408004244,0.3591569143727211
+Ketel Bells,The Traveling Secretaries,2,5,-20.5,7,5,2,0.3572940691647527,0.3748961080016504
+Ketel Bells,The Traveling Secretaries,3,4,-6,6,5,1,0.447970906758011,0.4663535427676928
+Ketel Bells,The Traveling Secretaries,4,3,-27,5,4,1,0.2813583553240731,0.2754336063928179
+Ketel Bells,The Traveling Secretaries,5,2,-19.5,2,2,0,0.2778303745705757,0.28674346791554345
 Ketel Bells,The Traveling Secretaries,6,1,-2.5,1,2,-1,0.4267652980561223,0.41508296325953536
+Ketel Bells,The Traveling Secretaries,7,0,-15.5,0,0,0,0,0.3218813635249176
+All That is Wright,Cron's Disease,0,7,0,8,8,0,0.5812648321578461,0.4746598257190957
+All That is Wright,Cron's Disease,1,6,68,4,8,-4,0.8318344602431802,0.7993602456004778
+All That is Wright,Cron's Disease,2,5,51,4,7,-3,0.7389707304853732,0.7584413439994313
+All That is Wright,Cron's Disease,3,4,86,3,5,-2,0.9418115757463246,0.9428376948465813
+All That is Wright,Cron's Disease,4,3,84,2,3,-1,0.9397221738117074,0.8995331580040237
+All That is Wright,Cron's Disease,5,2,90,2,2,0,0.976540570702418,0.97432223161990406
 All That is Wright,Cron's Disease,6,1,104.5,2,1,1,0.9848717719256573,0.985872670776763
+All That is Wright,Cron's Disease,7,0,164,0,1,-1,1,0.9894036589002921
+Framber Valdez Oil Spill,The West Bank Occupiers,0,7,0,8,8,0,0.6907837326174102,0.4746598257190957
+Framber Valdez Oil Spill,The West Bank Occupiers,1,6,-4.5,8,8,0,0.5771115907083314,0.4284137836762034
+Framber Valdez Oil Spill,The West Bank Occupiers,2,5,7,6,7,-1,0.6450858277083236,0.48386139941962014
+Framber Valdez Oil Spill,The West Bank Occupiers,3,4,67,4,6,-2,0.8743755678898313,0.8880049094305553
+Framber Valdez Oil Spill,The West Bank Occupiers,4,3,68.5,4,6,-2,0.9109058758771008,0.8936282080699658
+Framber Valdez Oil Spill,The West Bank Occupiers,5,2,86.5,2,3,-1,0.9303801636772961,0.9059634322665834
 Framber Valdez Oil Spill,The West Bank Occupiers,6,1,62.5,2,2,0,0.9412543378809017,0.9237259757665441
+Framber Valdez Oil Spill,The West Bank Occupiers,7,0,59.5,0,0,0,1,0.9144715709487669
+Hader Better Faster Stronger,The Novaks,0,7,0,8,8,0,0.3723446959803604,0.4746598257190957
+Hader Better Faster Stronger,The Novaks,1,6,-9.5,8,8,0,0.3508189611294189,0.37848860707497334
+Hader Better Faster Stronger,The Novaks,2,5,-33,8,5,3,0.20210243415761148,0.26747109257597373
+Hader Better Faster Stronger,The Novaks,3,4,-5,6,4,2,0.4649937420076667,0.5078421141723607
+Hader Better Faster Stronger,The Novaks,4,3,18.5,4,3,1,0.6437792004267138,0.6977037881118366
+Hader Better Faster Stronger,The Novaks,5,2,74.5,1,3,-2,0.9327243965531897,0.9136988404475503
 Hader Better Faster Stronger,The Novaks,6,1,136,0,2,-2,0.9875642639322318,0.9912557059145741
+Hader Better Faster Stronger,The Novaks,7,0,105.5,0,0,0,1,0.9863437563911376
+It's Gonna Be Gley,Crown Heights Crusaders,0,7,0,8,8,0,0.41395292038211046,0.4746598257190957
+It's Gonna Be Gley,Crown Heights Crusaders,1,6,46.5,7,8,-1,0.654099350954972,0.748954208769829
+It's Gonna Be Gley,Crown Heights Crusaders,2,5,67.5,6,6,0,0.854901895723376,0.9371283837088233
+It's Gonna Be Gley,Crown Heights Crusaders,3,4,17.5,6,5,1,0.5722739322928986,0.6892782889075956
+It's Gonna Be Gley,Crown Heights Crusaders,4,3,8.5,4,4,0,0.5187834710284618,0.5625566317591243
+It's Gonna Be Gley,Crown Heights Crusaders,5,2,37,3,3,0,0.7984367321962897,0.8076957249277836
 It's Gonna Be Gley,Crown Heights Crusaders,6,1,-33.5,3,0,3,0.18574956326518616,0.263834299879669
+It's Gonna Be Gley,Crown Heights Crusaders,7,0,42.5,0,0,0,1,0.8407090477953101

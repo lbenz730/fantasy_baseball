@@ -1,7 +1,49 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Blasphemous Hot Takes,Crown Heights Crusaders,0,7,0,8,8,0,0.5818644811538536,0.4746598257190957
+Blasphemous Hot Takes,Crown Heights Crusaders,1,6,42,7,8,-1,0.6907291561105806,0.7233543575830407
+Blasphemous Hot Takes,Crown Heights Crusaders,2,5,41,5,6,-1,0.7197993240359498,0.7174514705493817
+Blasphemous Hot Takes,Crown Heights Crusaders,3,4,19.5,5,4,1,0.6019507515329754,0.7059982707701054
+Blasphemous Hot Takes,Crown Heights Crusaders,4,3,11.5,5,3,2,0.547227451214674,0.6477172203421677
+Blasphemous Hot Takes,Crown Heights Crusaders,5,2,39,3,1,2,0.8495789138785803,0.8280355483014493
 Blasphemous Hot Takes,Crown Heights Crusaders,6,1,65,2,1,1,0.9510613691548958,0.9358145754343916
+Blasphemous Hot Takes,Crown Heights Crusaders,7,0,119,0,0,0,1,0.992158422159417
+It's Gonna Be Gley,The Novaks,0,7,0,8,8,0,0.4710451260358644,0.4746598257190957
+It's Gonna Be Gley,The Novaks,1,6,-4.5,8,7,1,0.44888297821990775,0.481176468335984
+It's Gonna Be Gley,The Novaks,2,5,-19,7,6,1,0.3603167292633124,0.34296523716668514
+It's Gonna Be Gley,The Novaks,3,4,11,2,4,-2,0.4602415648835546,0.4779248501729623
+It's Gonna Be Gley,The Novaks,4,3,3.5,2,4,-2,0.46946540056205033,0.40673150614464637
+It's Gonna Be Gley,The Novaks,5,2,-18,1,2,-1,0.27254670216759763,0.31061465770036906
 It's Gonna Be Gley,The Novaks,6,1,-43.5,1,1,0,0.10354485048854306,0.12921280390148665
+It's Gonna Be Gley,The Novaks,7,0,-23,0,0,0,0,0.25795918224893705
+Hader Better Faster Stronger,The West Bank Occupiers,0,7,0,8,8,0,0.6355041858123418,0.4746598257190957
+Hader Better Faster Stronger,The West Bank Occupiers,1,6,48.5,7,8,-1,0.8206754897410894,0.7598132847460908
+Hader Better Faster Stronger,The West Bank Occupiers,2,5,54,6,6,0,0.8729477620081363,0.8948333118769428
+Hader Better Faster Stronger,The West Bank Occupiers,3,4,56.5,5,6,-1,0.773503744890604,0.7999706078367812
+Hader Better Faster Stronger,The West Bank Occupiers,4,3,47.5,4,6,-2,0.7490503308210925,0.7889768743256598
+Hader Better Faster Stronger,The West Bank Occupiers,5,2,-4,3,3,0,0.4330538892044211,0.4335058228135679
 Hader Better Faster Stronger,The West Bank Occupiers,6,1,7.5,1,2,-1,0.508081443101364,0.48752173527882126
+Hader Better Faster Stronger,The West Bank Occupiers,7,0,4,0,0,0,1,0.516160955716294
+Framber Valdez Oil Spill,Cron's Disease,0,7,0,8,8,0,0.605053827789647,0.4746598257190957
+Framber Valdez Oil Spill,Cron's Disease,1,6,-6,8,8,0,0.5672894835814521,0.41323243137100923
+Framber Valdez Oil Spill,Cron's Disease,2,5,-28,8,7,1,0.4180660880165453,0.26759349774747065
+Framber Valdez Oil Spill,Cron's Disease,3,4,-32.5,4,4,0,0.20458828778966187,0.1898287115345073
+Framber Valdez Oil Spill,Cron's Disease,4,3,-30.5,4,3,1,0.250503988587241,0.24862365296206287
+Framber Valdez Oil Spill,Cron's Disease,5,2,-3.5,2,1,1,0.4730348769146432,0.4910784822373587
 Framber Valdez Oil Spill,Cron's Disease,6,1,9,0,0,0,0.5930257446122082,0.5676596238162686
+Framber Valdez Oil Spill,Cron's Disease,7,0,37.5,0,0,0,1,0.8109003074114667
+All That is Wright,The Traveling Secretaries,0,7,0,8,8,0,0.6072558772282353,0.4746598257190957
+All That is Wright,The Traveling Secretaries,1,6,29.5,8,6,2,0.7496829837746473,0.7754216899134448
+All That is Wright,The Traveling Secretaries,2,5,25.5,6,4,2,0.7896218792904796,0.7501001352942898
+All That is Wright,The Traveling Secretaries,3,4,11,5,3,2,0.5416248469264175,0.6437127947538992
+All That is Wright,The Traveling Secretaries,4,3,33,4,3,1,0.7310382147973166,0.8039496891261911
+All That is Wright,The Traveling Secretaries,5,2,38.5,1,3,-2,0.7378232995296512,0.7254794014071045
 All That is Wright,The Traveling Secretaries,6,1,34,0,2,-2,0.7098809861157784,0.6896160535254356
+All That is Wright,The Traveling Secretaries,7,0,37,0,1,-1,1,0.693094764397832
+Ketel Bells,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.4428424286450445,0.4746598257190957
+Ketel Bells,Mt. Everest Taquito Farmers,1,6,24,6,8,-2,0.5179301036516639,0.6017616150715774
+Ketel Bells,Mt. Everest Taquito Farmers,2,5,48,4,4,0,0.7963226803169209,0.8689742834958036
+Ketel Bells,Mt. Everest Taquito Farmers,3,4,44.5,4,4,0,0.7917615937169211,0.8515196818823216
+Ketel Bells,Mt. Everest Taquito Farmers,4,3,58.5,2,3,-1,0.8763391211087078,0.8091851715049874
+Ketel Bells,Mt. Everest Taquito Farmers,5,2,64.5,2,3,-1,0.8804866380705587,0.8348730653100571
 Ketel Bells,Mt. Everest Taquito Farmers,6,1,76.5,1,3,-2,0.9388774935465805,0.919587891205886
+Ketel Bells,Mt. Everest Taquito Farmers,7,0,74.5,0,0,0,1,0.9522307339349223
