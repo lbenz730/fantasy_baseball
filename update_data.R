@@ -24,7 +24,7 @@ params <-
        'opening_day' = as.Date('2023-03-30'),
        'nsims' = 10000)
 
-period <- as.numeric(Sys.Date() - params$opening_day) + 1
+period <- max(186, as.numeric(Sys.Date() - params$opening_day) + 1)
 
 df_start <- 
   read_csv('data/df_start.csv') %>% 
@@ -403,13 +403,14 @@ team_points <-
   mutate("adj_pts" = case_when(
     matchup_id == 1 ~ total_points * 7/11,
     matchup_id == 14 ~ total_points * 7/10,
+    matchup_id > 21 ~ total_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ total_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     T ~ total_points)) %>% 
   mutate("adj_batting_pts" = case_when(
     matchup_id == 1 ~ batting_points * 7/11,
     matchup_id == 14 ~ batting_points * 7/10,
-    
+    matchup_id > 21 ~ batting_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ batting_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
@@ -417,7 +418,7 @@ team_points <-
   mutate("adj_pitching_pts" = case_when(
     matchup_id == 1 ~ pitching_points * 7/11,
     matchup_id == 14 ~ pitching_points * 7/10,
-    
+    matchup_id > 21 ~ pitching_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ pitching_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
@@ -426,7 +427,7 @@ team_points <-
   mutate("adj_sp_pts" = case_when(
     matchup_id == 1 ~ sp_points * 7/11,
     matchup_id == 14 ~ sp_points * 7/10,
-    
+    matchup_id > 21 ~ sp_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ sp_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
@@ -435,7 +436,7 @@ team_points <-
   mutate("adj_rp_pts" = case_when(
     matchup_id == 1 ~ rp_points * 7/11,
     matchup_id == 14 ~ rp_points * 7/10,
-    
+    matchup_id > 21 ~ rp_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ rp_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
@@ -766,6 +767,29 @@ if(params$matchup_id > 6) {
   write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
   write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
 }
+
+### Pitch Matrix
+df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(start | relief_start) %>% 
+  mutate('ip' = case_when(p_cg > 0 ~ 'CG', 
+                          p_outs < 9 ~ '< 3',
+                          p_outs > 21 ~ '> 7',
+                          T ~ paste(floor(p_outs/3), p_outs %% 3, sep = '.'))) %>% 
+  mutate('earned_runs' = ifelse(p_er > 5, '6+', as.character(p_er))) %>% 
+  group_by(team_id, ip, earned_runs) %>% 
+  count() %>% 
+  ungroup() %>% 
+  mutate('ip' = factor(ip, levels = c('< 3', '3.0', '3.1', '3.2', '4.0', '4.1', '4.2', '5.0', '5.1', '5.2', '6.0', 
+                                      '6.1', '6.2', '7.0', '> 7', 'CG'))) %>% 
+  mutate('start_type' = case_when(ip == 'CG' ~ 'CG',
+                                  ip %in% c('6.0', '6.1', '6.2', '7.0', '> 7') & earned_runs %in% as.character(0:3) ~ 'QS',
+                                  ip == '5.2' & earned_runs %in% as.character(0:3) ~ 'Blue Balls',
+                                  ip %in% c('5.0', '5.1') & earned_runs %in% as.character(0:3) ~ 'QS Potential',
+                                  ip %in% c('6.0', '6.1', '6.2', '7.0', '> 7') & earned_runs %in% as.character(4) ~ 'QS Potential',
+                                  T ~ 'Bad Start')) %>% 
+  inner_join(teams %>% select(team, team_id), by = 'team_id') %>% 
+  write_csv(glue('data/stats/{params$season}/pitch_matrix.csv'))
 
 
 dir_copy('data/', 'app/data', overwrite = T)

@@ -1,9 +1,10 @@
-library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(ggplot2)
 library(xgboost)
-library(lubridate)
 library(glue)
 library(here)
-library(recipes)
 source(here('models/build_training_set.R'))
 
 plot_wp <- function(season, week, plot = T, all = F) {
@@ -13,6 +14,7 @@ plot_wp <- function(season, week, plot = T, all = F) {
   preprocessing_recipe <- read_rds(here('models/recipe.rds'))
   df <- 
     build_train_set(season) %>% 
+    filter(matchup_id == week) %>% 
     mutate('start_factor' = factor(case_when(start_advantage >= 4 ~ '> +3',
                                              start_advantage <= -4 ~ '< -3',
                                              start_advantage > 0 ~ paste0('+', start_advantage),
@@ -28,12 +30,11 @@ plot_wp <- function(season, week, plot = T, all = F) {
   df <- 
     df %>% 
     left_join(teams, by = c('home_team_id' = 'team_id')) %>% 
-    left_join(teams, by = c('away_team_id' = 'team_id'), suffix = c('_home', '_away')) %>% 
-    filter(matchup_id == week)
+    left_join(teams, by = c('away_team_id' = 'team_id'), suffix = c('_home', '_away')) 
   
   df_image <- distinct(df, team_home, team_away, logo_home, logo_away)
   
-  df$win_prob <- predict(xgb_model, as.matrix(bake(preprocessing_recipe, df)))
+  df$win_prob <- predict(xgb_model, as.matrix(recipes::bake(preprocessing_recipe, df)))
   df$win_prob_lr <- predict(log_reg, newdata = df, type = 'response')
   df$win_prob[df$day_of_matchup == 0] <- predict(prior, newdata = df[df$day_of_matchup == 0,], type = 'response')
   
@@ -50,7 +51,7 @@ plot_wp <- function(season, week, plot = T, all = F) {
   
   if(!all) {
     df <- filter(df, days_left > min(days_left)) 
-  } else if(!(wday(Sys.Date()) == 1 & hour(Sys.time()) < 20) | all) {
+  } else if(!(lubridate::wday(Sys.Date()) == 1 & lubridate::hour(Sys.time()) < 20) | all) {
     df$win_prob[df$days_left == 0 & df$score_diff > 0] <- 1
     df$win_prob[df$days_left == 0 & df$score_diff < 0] <- 0
   }
