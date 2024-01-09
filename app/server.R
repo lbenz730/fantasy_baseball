@@ -4,12 +4,12 @@ library(ggimage)
 library(rsvg)
 
 
-screen <-
-  div(
-    waiter::spin_3(),
-    h1("Millburnish Fantasy Baseball"),
-    h3("Site Loading")
-  )
+# screen <-
+#   div(
+#     waiter::spin_3(),
+#     h1("Millburnish Fantasy Baseball"),
+#     h3("Site Loading")
+#   )
 
 shinyServer(function(input, output, session) {
   
