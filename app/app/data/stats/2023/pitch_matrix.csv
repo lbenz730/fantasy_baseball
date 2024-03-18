@@ -1,0 +1,793 @@
+team_id,ip,earned_runs,n,start_type,team
+1,3.0,4,1,Bad Start,Crown Heights Crusaders
+1,3.0,6+,2,Bad Start,Crown Heights Crusaders
+1,3.1,2,1,Bad Start,Crown Heights Crusaders
+1,3.1,3,1,Bad Start,Crown Heights Crusaders
+1,3.1,4,1,Bad Start,Crown Heights Crusaders
+1,3.1,5,1,Bad Start,Crown Heights Crusaders
+1,3.2,4,3,Bad Start,Crown Heights Crusaders
+1,3.2,5,1,Bad Start,Crown Heights Crusaders
+1,3.2,6+,2,Bad Start,Crown Heights Crusaders
+1,4.0,2,2,Bad Start,Crown Heights Crusaders
+1,4.0,3,2,Bad Start,Crown Heights Crusaders
+1,4.0,4,2,Bad Start,Crown Heights Crusaders
+1,4.0,6+,3,Bad Start,Crown Heights Crusaders
+1,4.1,3,3,Bad Start,Crown Heights Crusaders
+1,4.1,5,1,Bad Start,Crown Heights Crusaders
+1,4.1,6+,4,Bad Start,Crown Heights Crusaders
+1,4.2,3,2,Bad Start,Crown Heights Crusaders
+1,4.2,4,5,Bad Start,Crown Heights Crusaders
+1,5.0,0,4,QS Potential,Crown Heights Crusaders
+1,5.0,1,10,QS Potential,Crown Heights Crusaders
+1,5.0,2,10,QS Potential,Crown Heights Crusaders
+1,5.0,3,10,QS Potential,Crown Heights Crusaders
+1,5.0,4,3,Bad Start,Crown Heights Crusaders
+1,5.0,5,2,Bad Start,Crown Heights Crusaders
+1,5.1,0,1,QS Potential,Crown Heights Crusaders
+1,5.1,1,2,QS Potential,Crown Heights Crusaders
+1,5.1,2,2,QS Potential,Crown Heights Crusaders
+1,5.1,3,2,QS Potential,Crown Heights Crusaders
+1,5.1,4,2,Bad Start,Crown Heights Crusaders
+1,5.1,5,1,Bad Start,Crown Heights Crusaders
+1,5.2,1,1,Blue Balls,Crown Heights Crusaders
+1,5.2,2,4,Blue Balls,Crown Heights Crusaders
+1,5.2,3,3,Blue Balls,Crown Heights Crusaders
+1,5.2,5,1,Bad Start,Crown Heights Crusaders
+1,6.0,0,13,QS,Crown Heights Crusaders
+1,6.0,1,21,QS,Crown Heights Crusaders
+1,6.0,2,20,QS,Crown Heights Crusaders
+1,6.0,3,5,QS,Crown Heights Crusaders
+1,6.0,4,5,QS Potential,Crown Heights Crusaders
+1,6.0,5,1,Bad Start,Crown Heights Crusaders
+1,6.0,6+,2,Bad Start,Crown Heights Crusaders
+1,6.2,2,2,QS,Crown Heights Crusaders
+1,6.2,4,1,QS Potential,Crown Heights Crusaders
+1,7.0,0,10,QS,Crown Heights Crusaders
+1,7.0,1,5,QS,Crown Heights Crusaders
+1,7.0,2,1,QS,Crown Heights Crusaders
+1,7.0,3,3,QS,Crown Heights Crusaders
+1,7.0,4,3,QS Potential,Crown Heights Crusaders
+1,< 3,1,1,Bad Start,Crown Heights Crusaders
+1,< 3,2,1,Bad Start,Crown Heights Crusaders
+1,< 3,4,1,Bad Start,Crown Heights Crusaders
+1,< 3,5,1,Bad Start,Crown Heights Crusaders
+1,< 3,6+,1,Bad Start,Crown Heights Crusaders
+1,> 7,0,1,QS,Crown Heights Crusaders
+1,> 7,1,1,QS,Crown Heights Crusaders
+1,> 7,3,2,QS,Crown Heights Crusaders
+1,CG,0,1,CG,Crown Heights Crusaders
+2,3.0,5,1,Bad Start,Framber Valdez Oil Spill
+2,3.0,6+,1,Bad Start,Framber Valdez Oil Spill
+2,3.1,6+,4,Bad Start,Framber Valdez Oil Spill
+2,3.2,2,1,Bad Start,Framber Valdez Oil Spill
+2,3.2,3,2,Bad Start,Framber Valdez Oil Spill
+2,3.2,4,1,Bad Start,Framber Valdez Oil Spill
+2,3.2,5,1,Bad Start,Framber Valdez Oil Spill
+2,3.2,6+,2,Bad Start,Framber Valdez Oil Spill
+2,4.0,0,1,Bad Start,Framber Valdez Oil Spill
+2,4.0,2,1,Bad Start,Framber Valdez Oil Spill
+2,4.0,3,1,Bad Start,Framber Valdez Oil Spill
+2,4.0,4,4,Bad Start,Framber Valdez Oil Spill
+2,4.0,5,3,Bad Start,Framber Valdez Oil Spill
+2,4.0,6+,3,Bad Start,Framber Valdez Oil Spill
+2,4.1,1,1,Bad Start,Framber Valdez Oil Spill
+2,4.1,3,1,Bad Start,Framber Valdez Oil Spill
+2,4.1,5,1,Bad Start,Framber Valdez Oil Spill
+2,4.1,6+,3,Bad Start,Framber Valdez Oil Spill
+2,4.2,0,1,Bad Start,Framber Valdez Oil Spill
+2,4.2,2,3,Bad Start,Framber Valdez Oil Spill
+2,4.2,3,1,Bad Start,Framber Valdez Oil Spill
+2,4.2,6+,1,Bad Start,Framber Valdez Oil Spill
+2,5.0,0,5,QS Potential,Framber Valdez Oil Spill
+2,5.0,1,10,QS Potential,Framber Valdez Oil Spill
+2,5.0,2,5,QS Potential,Framber Valdez Oil Spill
+2,5.0,3,8,QS Potential,Framber Valdez Oil Spill
+2,5.0,4,8,Bad Start,Framber Valdez Oil Spill
+2,5.0,6+,2,Bad Start,Framber Valdez Oil Spill
+2,5.1,0,1,QS Potential,Framber Valdez Oil Spill
+2,5.1,1,2,QS Potential,Framber Valdez Oil Spill
+2,5.1,2,4,QS Potential,Framber Valdez Oil Spill
+2,5.1,3,2,QS Potential,Framber Valdez Oil Spill
+2,5.1,4,1,Bad Start,Framber Valdez Oil Spill
+2,5.1,6+,1,Bad Start,Framber Valdez Oil Spill
+2,5.2,0,1,Blue Balls,Framber Valdez Oil Spill
+2,5.2,1,2,Blue Balls,Framber Valdez Oil Spill
+2,5.2,2,3,Blue Balls,Framber Valdez Oil Spill
+2,5.2,3,2,Blue Balls,Framber Valdez Oil Spill
+2,5.2,4,2,Bad Start,Framber Valdez Oil Spill
+2,5.2,5,1,Bad Start,Framber Valdez Oil Spill
+2,6.0,0,13,QS,Framber Valdez Oil Spill
+2,6.0,1,22,QS,Framber Valdez Oil Spill
+2,6.0,2,19,QS,Framber Valdez Oil Spill
+2,6.0,3,5,QS,Framber Valdez Oil Spill
+2,6.0,4,3,QS Potential,Framber Valdez Oil Spill
+2,6.0,5,1,Bad Start,Framber Valdez Oil Spill
+2,6.0,6+,1,Bad Start,Framber Valdez Oil Spill
+2,6.1,1,1,QS,Framber Valdez Oil Spill
+2,6.1,3,1,QS,Framber Valdez Oil Spill
+2,6.1,5,1,Bad Start,Framber Valdez Oil Spill
+2,6.2,1,1,QS,Framber Valdez Oil Spill
+2,6.2,2,1,QS,Framber Valdez Oil Spill
+2,6.2,4,1,QS Potential,Framber Valdez Oil Spill
+2,6.2,6+,1,Bad Start,Framber Valdez Oil Spill
+2,7.0,0,7,QS,Framber Valdez Oil Spill
+2,7.0,1,6,QS,Framber Valdez Oil Spill
+2,7.0,2,4,QS,Framber Valdez Oil Spill
+2,7.0,3,6,QS,Framber Valdez Oil Spill
+2,7.0,4,1,QS Potential,Framber Valdez Oil Spill
+2,7.0,5,1,Bad Start,Framber Valdez Oil Spill
+2,7.0,6+,1,Bad Start,Framber Valdez Oil Spill
+2,< 3,0,2,Bad Start,Framber Valdez Oil Spill
+2,< 3,1,2,Bad Start,Framber Valdez Oil Spill
+2,< 3,5,2,Bad Start,Framber Valdez Oil Spill
+2,< 3,6+,1,Bad Start,Framber Valdez Oil Spill
+2,> 7,0,1,QS,Framber Valdez Oil Spill
+2,> 7,1,1,QS,Framber Valdez Oil Spill
+2,> 7,2,1,QS,Framber Valdez Oil Spill
+2,> 7,3,1,QS,Framber Valdez Oil Spill
+2,CG,0,2,CG,Framber Valdez Oil Spill
+4,3.0,1,1,Bad Start,All That is Wright
+4,3.0,3,1,Bad Start,All That is Wright
+4,3.0,4,2,Bad Start,All That is Wright
+4,3.0,5,1,Bad Start,All That is Wright
+4,3.0,6+,2,Bad Start,All That is Wright
+4,3.1,3,1,Bad Start,All That is Wright
+4,3.2,0,1,Bad Start,All That is Wright
+4,3.2,4,2,Bad Start,All That is Wright
+4,3.2,5,1,Bad Start,All That is Wright
+4,3.2,6+,2,Bad Start,All That is Wright
+4,4.0,0,1,Bad Start,All That is Wright
+4,4.0,1,1,Bad Start,All That is Wright
+4,4.0,4,1,Bad Start,All That is Wright
+4,4.0,5,2,Bad Start,All That is Wright
+4,4.0,6+,5,Bad Start,All That is Wright
+4,4.1,1,1,Bad Start,All That is Wright
+4,4.1,2,2,Bad Start,All That is Wright
+4,4.1,4,2,Bad Start,All That is Wright
+4,4.1,5,2,Bad Start,All That is Wright
+4,4.2,2,1,Bad Start,All That is Wright
+4,4.2,3,1,Bad Start,All That is Wright
+4,4.2,4,2,Bad Start,All That is Wright
+4,4.2,6+,3,Bad Start,All That is Wright
+4,5.0,0,6,QS Potential,All That is Wright
+4,5.0,1,5,QS Potential,All That is Wright
+4,5.0,2,10,QS Potential,All That is Wright
+4,5.0,3,9,QS Potential,All That is Wright
+4,5.0,4,4,Bad Start,All That is Wright
+4,5.0,5,1,Bad Start,All That is Wright
+4,5.0,6+,2,Bad Start,All That is Wright
+4,5.1,0,3,QS Potential,All That is Wright
+4,5.1,1,1,QS Potential,All That is Wright
+4,5.1,2,1,QS Potential,All That is Wright
+4,5.1,3,3,QS Potential,All That is Wright
+4,5.1,4,3,Bad Start,All That is Wright
+4,5.2,0,3,Blue Balls,All That is Wright
+4,5.2,1,1,Blue Balls,All That is Wright
+4,5.2,2,2,Blue Balls,All That is Wright
+4,5.2,3,1,Blue Balls,All That is Wright
+4,5.2,4,1,Bad Start,All That is Wright
+4,5.2,5,1,Bad Start,All That is Wright
+4,5.2,6+,1,Bad Start,All That is Wright
+4,6.0,0,10,QS,All That is Wright
+4,6.0,1,14,QS,All That is Wright
+4,6.0,2,16,QS,All That is Wright
+4,6.0,3,8,QS,All That is Wright
+4,6.0,4,6,QS Potential,All That is Wright
+4,6.0,5,5,Bad Start,All That is Wright
+4,6.1,1,1,QS,All That is Wright
+4,6.1,2,1,QS,All That is Wright
+4,6.1,3,2,QS,All That is Wright
+4,6.1,4,1,QS Potential,All That is Wright
+4,6.2,0,3,QS,All That is Wright
+4,6.2,1,1,QS,All That is Wright
+4,6.2,2,2,QS,All That is Wright
+4,6.2,3,2,QS,All That is Wright
+4,6.2,4,1,QS Potential,All That is Wright
+4,7.0,0,9,QS,All That is Wright
+4,7.0,1,12,QS,All That is Wright
+4,7.0,2,7,QS,All That is Wright
+4,7.0,3,6,QS,All That is Wright
+4,< 3,0,1,Bad Start,All That is Wright
+4,< 3,6+,2,Bad Start,All That is Wright
+4,> 7,0,1,QS,All That is Wright
+4,> 7,2,1,QS,All That is Wright
+5,3.0,2,2,Bad Start,The Traveling Secretaries
+5,3.0,3,1,Bad Start,The Traveling Secretaries
+5,3.0,6+,3,Bad Start,The Traveling Secretaries
+5,3.1,2,1,Bad Start,The Traveling Secretaries
+5,3.1,5,1,Bad Start,The Traveling Secretaries
+5,3.1,6+,4,Bad Start,The Traveling Secretaries
+5,3.2,3,1,Bad Start,The Traveling Secretaries
+5,3.2,4,1,Bad Start,The Traveling Secretaries
+5,3.2,5,1,Bad Start,The Traveling Secretaries
+5,4.0,1,1,Bad Start,The Traveling Secretaries
+5,4.0,2,1,Bad Start,The Traveling Secretaries
+5,4.0,3,2,Bad Start,The Traveling Secretaries
+5,4.0,4,3,Bad Start,The Traveling Secretaries
+5,4.0,5,1,Bad Start,The Traveling Secretaries
+5,4.0,6+,3,Bad Start,The Traveling Secretaries
+5,4.1,5,2,Bad Start,The Traveling Secretaries
+5,4.1,6+,2,Bad Start,The Traveling Secretaries
+5,4.2,0,1,Bad Start,The Traveling Secretaries
+5,4.2,4,2,Bad Start,The Traveling Secretaries
+5,4.2,5,2,Bad Start,The Traveling Secretaries
+5,5.0,0,6,QS Potential,The Traveling Secretaries
+5,5.0,1,1,QS Potential,The Traveling Secretaries
+5,5.0,2,8,QS Potential,The Traveling Secretaries
+5,5.0,3,6,QS Potential,The Traveling Secretaries
+5,5.0,4,7,Bad Start,The Traveling Secretaries
+5,5.0,5,1,Bad Start,The Traveling Secretaries
+5,5.0,6+,4,Bad Start,The Traveling Secretaries
+5,5.1,3,1,QS Potential,The Traveling Secretaries
+5,5.1,4,5,Bad Start,The Traveling Secretaries
+5,5.1,5,2,Bad Start,The Traveling Secretaries
+5,5.1,6+,1,Bad Start,The Traveling Secretaries
+5,5.2,0,1,Blue Balls,The Traveling Secretaries
+5,5.2,1,3,Blue Balls,The Traveling Secretaries
+5,5.2,2,4,Blue Balls,The Traveling Secretaries
+5,5.2,3,2,Blue Balls,The Traveling Secretaries
+5,5.2,4,1,Bad Start,The Traveling Secretaries
+5,5.2,5,1,Bad Start,The Traveling Secretaries
+5,6.0,0,13,QS,The Traveling Secretaries
+5,6.0,1,6,QS,The Traveling Secretaries
+5,6.0,2,11,QS,The Traveling Secretaries
+5,6.0,3,8,QS,The Traveling Secretaries
+5,6.0,4,9,QS Potential,The Traveling Secretaries
+5,6.0,5,1,Bad Start,The Traveling Secretaries
+5,6.0,6+,1,Bad Start,The Traveling Secretaries
+5,6.1,0,2,QS,The Traveling Secretaries
+5,6.1,1,1,QS,The Traveling Secretaries
+5,6.1,2,3,QS,The Traveling Secretaries
+5,6.1,4,1,QS Potential,The Traveling Secretaries
+5,6.1,5,2,Bad Start,The Traveling Secretaries
+5,6.1,6+,1,Bad Start,The Traveling Secretaries
+5,6.2,0,1,QS,The Traveling Secretaries
+5,6.2,1,1,QS,The Traveling Secretaries
+5,6.2,2,2,QS,The Traveling Secretaries
+5,6.2,3,1,QS,The Traveling Secretaries
+5,7.0,0,8,QS,The Traveling Secretaries
+5,7.0,1,6,QS,The Traveling Secretaries
+5,7.0,2,4,QS,The Traveling Secretaries
+5,7.0,3,3,QS,The Traveling Secretaries
+5,7.0,4,2,QS Potential,The Traveling Secretaries
+5,< 3,3,1,Bad Start,The Traveling Secretaries
+5,< 3,4,1,Bad Start,The Traveling Secretaries
+5,< 3,6+,2,Bad Start,The Traveling Secretaries
+5,> 7,0,6,QS,The Traveling Secretaries
+5,> 7,1,1,QS,The Traveling Secretaries
+5,> 7,2,4,QS,The Traveling Secretaries
+5,CG,0,3,CG,The Traveling Secretaries
+5,CG,1,1,CG,The Traveling Secretaries
+6,3.0,6+,1,Bad Start,The Novaks
+6,3.1,2,1,Bad Start,The Novaks
+6,3.2,1,2,Bad Start,The Novaks
+6,3.2,2,2,Bad Start,The Novaks
+6,3.2,4,1,Bad Start,The Novaks
+6,3.2,6+,1,Bad Start,The Novaks
+6,4.0,0,1,Bad Start,The Novaks
+6,4.0,1,1,Bad Start,The Novaks
+6,4.0,2,1,Bad Start,The Novaks
+6,4.0,3,1,Bad Start,The Novaks
+6,4.0,5,1,Bad Start,The Novaks
+6,4.0,6+,4,Bad Start,The Novaks
+6,4.1,4,2,Bad Start,The Novaks
+6,4.1,5,2,Bad Start,The Novaks
+6,4.1,6+,3,Bad Start,The Novaks
+6,4.2,2,1,Bad Start,The Novaks
+6,4.2,4,2,Bad Start,The Novaks
+6,4.2,5,1,Bad Start,The Novaks
+6,4.2,6+,3,Bad Start,The Novaks
+6,5.0,0,4,QS Potential,The Novaks
+6,5.0,1,5,QS Potential,The Novaks
+6,5.0,2,5,QS Potential,The Novaks
+6,5.0,3,5,QS Potential,The Novaks
+6,5.0,4,13,Bad Start,The Novaks
+6,5.0,5,3,Bad Start,The Novaks
+6,5.0,6+,6,Bad Start,The Novaks
+6,5.1,2,3,QS Potential,The Novaks
+6,5.1,3,1,QS Potential,The Novaks
+6,5.1,4,2,Bad Start,The Novaks
+6,5.1,5,4,Bad Start,The Novaks
+6,5.2,1,1,Blue Balls,The Novaks
+6,5.2,2,1,Blue Balls,The Novaks
+6,5.2,3,1,Blue Balls,The Novaks
+6,5.2,4,2,Bad Start,The Novaks
+6,5.2,6+,1,Bad Start,The Novaks
+6,6.0,0,9,QS,The Novaks
+6,6.0,1,18,QS,The Novaks
+6,6.0,2,9,QS,The Novaks
+6,6.0,3,8,QS,The Novaks
+6,6.0,4,6,QS Potential,The Novaks
+6,6.0,5,2,Bad Start,The Novaks
+6,6.0,6+,1,Bad Start,The Novaks
+6,6.1,1,2,QS,The Novaks
+6,6.1,3,1,QS,The Novaks
+6,6.1,4,1,QS Potential,The Novaks
+6,6.1,6+,1,Bad Start,The Novaks
+6,6.2,1,3,QS,The Novaks
+6,6.2,2,2,QS,The Novaks
+6,6.2,3,1,QS,The Novaks
+6,6.2,4,2,QS Potential,The Novaks
+6,6.2,6+,1,Bad Start,The Novaks
+6,7.0,0,9,QS,The Novaks
+6,7.0,1,11,QS,The Novaks
+6,7.0,2,6,QS,The Novaks
+6,7.0,3,8,QS,The Novaks
+6,7.0,4,2,QS Potential,The Novaks
+6,7.0,5,1,Bad Start,The Novaks
+6,< 3,5,1,Bad Start,The Novaks
+6,< 3,6+,1,Bad Start,The Novaks
+6,> 7,0,7,QS,The Novaks
+6,> 7,1,3,QS,The Novaks
+6,> 7,2,1,QS,The Novaks
+6,CG,0,1,CG,The Novaks
+6,CG,1,2,CG,The Novaks
+7,3.0,1,1,Bad Start,Cron's Disease
+7,3.0,3,3,Bad Start,Cron's Disease
+7,3.0,4,1,Bad Start,Cron's Disease
+7,3.0,5,2,Bad Start,Cron's Disease
+7,3.0,6+,1,Bad Start,Cron's Disease
+7,3.1,5,1,Bad Start,Cron's Disease
+7,3.2,3,1,Bad Start,Cron's Disease
+7,3.2,4,1,Bad Start,Cron's Disease
+7,3.2,5,1,Bad Start,Cron's Disease
+7,3.2,6+,1,Bad Start,Cron's Disease
+7,4.0,0,1,Bad Start,Cron's Disease
+7,4.0,2,1,Bad Start,Cron's Disease
+7,4.0,4,3,Bad Start,Cron's Disease
+7,4.0,5,3,Bad Start,Cron's Disease
+7,4.0,6+,5,Bad Start,Cron's Disease
+7,4.1,3,2,Bad Start,Cron's Disease
+7,4.1,4,3,Bad Start,Cron's Disease
+7,4.1,5,1,Bad Start,Cron's Disease
+7,4.2,2,1,Bad Start,Cron's Disease
+7,4.2,3,2,Bad Start,Cron's Disease
+7,4.2,5,1,Bad Start,Cron's Disease
+7,4.2,6+,1,Bad Start,Cron's Disease
+7,5.0,1,7,QS Potential,Cron's Disease
+7,5.0,2,5,QS Potential,Cron's Disease
+7,5.0,3,7,QS Potential,Cron's Disease
+7,5.0,4,5,Bad Start,Cron's Disease
+7,5.0,5,5,Bad Start,Cron's Disease
+7,5.0,6+,4,Bad Start,Cron's Disease
+7,5.1,0,1,QS Potential,Cron's Disease
+7,5.1,2,2,QS Potential,Cron's Disease
+7,5.1,3,1,QS Potential,Cron's Disease
+7,5.1,5,1,Bad Start,Cron's Disease
+7,5.1,6+,1,Bad Start,Cron's Disease
+7,5.2,2,1,Blue Balls,Cron's Disease
+7,5.2,3,2,Blue Balls,Cron's Disease
+7,5.2,4,6,Bad Start,Cron's Disease
+7,5.2,5,1,Bad Start,Cron's Disease
+7,5.2,6+,3,Bad Start,Cron's Disease
+7,6.0,0,10,QS,Cron's Disease
+7,6.0,1,9,QS,Cron's Disease
+7,6.0,2,15,QS,Cron's Disease
+7,6.0,3,10,QS,Cron's Disease
+7,6.0,4,8,QS Potential,Cron's Disease
+7,6.0,5,2,Bad Start,Cron's Disease
+7,6.0,6+,3,Bad Start,Cron's Disease
+7,6.1,0,1,QS,Cron's Disease
+7,6.1,1,1,QS,Cron's Disease
+7,6.1,2,2,QS,Cron's Disease
+7,6.1,4,2,QS Potential,Cron's Disease
+7,6.2,1,2,QS,Cron's Disease
+7,6.2,2,4,QS,Cron's Disease
+7,6.2,4,1,QS Potential,Cron's Disease
+7,6.2,5,1,Bad Start,Cron's Disease
+7,7.0,0,6,QS,Cron's Disease
+7,7.0,1,9,QS,Cron's Disease
+7,7.0,2,5,QS,Cron's Disease
+7,7.0,3,1,QS,Cron's Disease
+7,7.0,5,1,Bad Start,Cron's Disease
+7,7.0,6+,1,Bad Start,Cron's Disease
+7,< 3,0,1,Bad Start,Cron's Disease
+7,< 3,2,1,Bad Start,Cron's Disease
+7,< 3,3,1,Bad Start,Cron's Disease
+7,< 3,4,2,Bad Start,Cron's Disease
+7,< 3,5,1,Bad Start,Cron's Disease
+7,< 3,6+,2,Bad Start,Cron's Disease
+7,> 7,0,3,QS,Cron's Disease
+7,> 7,2,3,QS,Cron's Disease
+7,CG,0,3,CG,Cron's Disease
+7,CG,1,1,CG,Cron's Disease
+8,3.0,0,1,Bad Start,Mt. Everest Taquito Farmers
+8,3.0,3,1,Bad Start,Mt. Everest Taquito Farmers
+8,3.0,4,1,Bad Start,Mt. Everest Taquito Farmers
+8,3.0,6+,1,Bad Start,Mt. Everest Taquito Farmers
+8,3.1,1,1,Bad Start,Mt. Everest Taquito Farmers
+8,3.1,4,1,Bad Start,Mt. Everest Taquito Farmers
+8,3.1,6+,1,Bad Start,Mt. Everest Taquito Farmers
+8,3.2,5,3,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,0,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,2,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,3,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,4,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,5,3,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,6+,2,Bad Start,Mt. Everest Taquito Farmers
+8,4.1,3,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.1,4,3,Bad Start,Mt. Everest Taquito Farmers
+8,4.2,2,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.2,4,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.2,5,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.2,6+,2,Bad Start,Mt. Everest Taquito Farmers
+8,5.0,0,4,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,1,6,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,2,3,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,3,8,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,4,5,Bad Start,Mt. Everest Taquito Farmers
+8,5.0,5,4,Bad Start,Mt. Everest Taquito Farmers
+8,5.0,6+,4,Bad Start,Mt. Everest Taquito Farmers
+8,5.1,0,2,QS Potential,Mt. Everest Taquito Farmers
+8,5.1,1,1,QS Potential,Mt. Everest Taquito Farmers
+8,5.1,3,1,QS Potential,Mt. Everest Taquito Farmers
+8,5.1,4,1,Bad Start,Mt. Everest Taquito Farmers
+8,5.1,5,1,Bad Start,Mt. Everest Taquito Farmers
+8,5.2,0,2,Blue Balls,Mt. Everest Taquito Farmers
+8,5.2,1,1,Blue Balls,Mt. Everest Taquito Farmers
+8,5.2,2,2,Blue Balls,Mt. Everest Taquito Farmers
+8,5.2,3,4,Blue Balls,Mt. Everest Taquito Farmers
+8,5.2,4,3,Bad Start,Mt. Everest Taquito Farmers
+8,6.0,0,14,QS,Mt. Everest Taquito Farmers
+8,6.0,1,16,QS,Mt. Everest Taquito Farmers
+8,6.0,2,12,QS,Mt. Everest Taquito Farmers
+8,6.0,3,10,QS,Mt. Everest Taquito Farmers
+8,6.0,4,2,QS Potential,Mt. Everest Taquito Farmers
+8,6.0,5,3,Bad Start,Mt. Everest Taquito Farmers
+8,6.0,6+,2,Bad Start,Mt. Everest Taquito Farmers
+8,6.1,0,2,QS,Mt. Everest Taquito Farmers
+8,6.1,1,1,QS,Mt. Everest Taquito Farmers
+8,6.1,2,6,QS,Mt. Everest Taquito Farmers
+8,6.1,3,2,QS,Mt. Everest Taquito Farmers
+8,6.1,4,1,QS Potential,Mt. Everest Taquito Farmers
+8,6.2,0,2,QS,Mt. Everest Taquito Farmers
+8,6.2,1,2,QS,Mt. Everest Taquito Farmers
+8,6.2,2,1,QS,Mt. Everest Taquito Farmers
+8,6.2,6+,2,Bad Start,Mt. Everest Taquito Farmers
+8,7.0,0,7,QS,Mt. Everest Taquito Farmers
+8,7.0,1,12,QS,Mt. Everest Taquito Farmers
+8,7.0,2,3,QS,Mt. Everest Taquito Farmers
+8,7.0,3,5,QS,Mt. Everest Taquito Farmers
+8,7.0,4,1,QS Potential,Mt. Everest Taquito Farmers
+8,7.0,5,3,Bad Start,Mt. Everest Taquito Farmers
+8,< 3,4,1,Bad Start,Mt. Everest Taquito Farmers
+8,< 3,6+,1,Bad Start,Mt. Everest Taquito Farmers
+8,> 7,0,3,QS,Mt. Everest Taquito Farmers
+8,> 7,1,4,QS,Mt. Everest Taquito Farmers
+8,CG,0,2,CG,Mt. Everest Taquito Farmers
+8,CG,1,2,CG,Mt. Everest Taquito Farmers
+8,CG,2,1,CG,Mt. Everest Taquito Farmers
+9,3.0,2,1,Bad Start,It's Gonna Be Gley
+9,3.0,4,1,Bad Start,It's Gonna Be Gley
+9,3.0,5,1,Bad Start,It's Gonna Be Gley
+9,3.0,6+,2,Bad Start,It's Gonna Be Gley
+9,3.1,2,1,Bad Start,It's Gonna Be Gley
+9,3.1,3,1,Bad Start,It's Gonna Be Gley
+9,3.1,5,1,Bad Start,It's Gonna Be Gley
+9,3.1,6+,1,Bad Start,It's Gonna Be Gley
+9,3.2,0,1,Bad Start,It's Gonna Be Gley
+9,3.2,4,1,Bad Start,It's Gonna Be Gley
+9,4.0,1,3,Bad Start,It's Gonna Be Gley
+9,4.0,2,2,Bad Start,It's Gonna Be Gley
+9,4.0,3,1,Bad Start,It's Gonna Be Gley
+9,4.0,5,1,Bad Start,It's Gonna Be Gley
+9,4.0,6+,3,Bad Start,It's Gonna Be Gley
+9,4.1,3,1,Bad Start,It's Gonna Be Gley
+9,4.2,0,1,Bad Start,It's Gonna Be Gley
+9,4.2,2,1,Bad Start,It's Gonna Be Gley
+9,4.2,3,3,Bad Start,It's Gonna Be Gley
+9,4.2,4,3,Bad Start,It's Gonna Be Gley
+9,4.2,5,1,Bad Start,It's Gonna Be Gley
+9,4.2,6+,1,Bad Start,It's Gonna Be Gley
+9,5.0,0,4,QS Potential,It's Gonna Be Gley
+9,5.0,1,6,QS Potential,It's Gonna Be Gley
+9,5.0,2,6,QS Potential,It's Gonna Be Gley
+9,5.0,3,4,QS Potential,It's Gonna Be Gley
+9,5.0,4,5,Bad Start,It's Gonna Be Gley
+9,5.0,5,2,Bad Start,It's Gonna Be Gley
+9,5.0,6+,2,Bad Start,It's Gonna Be Gley
+9,5.1,1,2,QS Potential,It's Gonna Be Gley
+9,5.1,2,1,QS Potential,It's Gonna Be Gley
+9,5.1,3,4,QS Potential,It's Gonna Be Gley
+9,5.1,4,1,Bad Start,It's Gonna Be Gley
+9,5.1,5,2,Bad Start,It's Gonna Be Gley
+9,5.1,6+,1,Bad Start,It's Gonna Be Gley
+9,5.2,1,2,Blue Balls,It's Gonna Be Gley
+9,5.2,2,3,Blue Balls,It's Gonna Be Gley
+9,5.2,3,2,Blue Balls,It's Gonna Be Gley
+9,5.2,4,2,Bad Start,It's Gonna Be Gley
+9,5.2,5,2,Bad Start,It's Gonna Be Gley
+9,5.2,6+,3,Bad Start,It's Gonna Be Gley
+9,6.0,0,16,QS,It's Gonna Be Gley
+9,6.0,1,16,QS,It's Gonna Be Gley
+9,6.0,2,17,QS,It's Gonna Be Gley
+9,6.0,3,12,QS,It's Gonna Be Gley
+9,6.0,4,1,QS Potential,It's Gonna Be Gley
+9,6.0,5,1,Bad Start,It's Gonna Be Gley
+9,6.0,6+,1,Bad Start,It's Gonna Be Gley
+9,6.1,0,1,QS,It's Gonna Be Gley
+9,6.1,1,1,QS,It's Gonna Be Gley
+9,6.1,2,1,QS,It's Gonna Be Gley
+9,6.1,3,2,QS,It's Gonna Be Gley
+9,6.1,4,1,QS Potential,It's Gonna Be Gley
+9,6.2,1,5,QS,It's Gonna Be Gley
+9,6.2,2,1,QS,It's Gonna Be Gley
+9,6.2,3,1,QS,It's Gonna Be Gley
+9,6.2,4,1,QS Potential,It's Gonna Be Gley
+9,6.2,5,1,Bad Start,It's Gonna Be Gley
+9,7.0,0,9,QS,It's Gonna Be Gley
+9,7.0,1,10,QS,It's Gonna Be Gley
+9,7.0,2,6,QS,It's Gonna Be Gley
+9,7.0,3,1,QS,It's Gonna Be Gley
+9,7.0,4,1,QS Potential,It's Gonna Be Gley
+9,7.0,5,1,Bad Start,It's Gonna Be Gley
+9,< 3,0,1,Bad Start,It's Gonna Be Gley
+9,< 3,4,1,Bad Start,It's Gonna Be Gley
+9,< 3,6+,2,Bad Start,It's Gonna Be Gley
+9,> 7,0,3,QS,It's Gonna Be Gley
+9,> 7,1,1,QS,It's Gonna Be Gley
+9,> 7,2,2,QS,It's Gonna Be Gley
+9,> 7,6+,1,Bad Start,It's Gonna Be Gley
+9,CG,0,1,CG,It's Gonna Be Gley
+11,3.0,0,2,Bad Start,The West Bank Occupiers
+11,3.0,4,1,Bad Start,The West Bank Occupiers
+11,3.0,6+,1,Bad Start,The West Bank Occupiers
+11,3.1,2,1,Bad Start,The West Bank Occupiers
+11,3.1,3,1,Bad Start,The West Bank Occupiers
+11,3.1,4,1,Bad Start,The West Bank Occupiers
+11,3.1,6+,3,Bad Start,The West Bank Occupiers
+11,3.2,3,1,Bad Start,The West Bank Occupiers
+11,3.2,5,1,Bad Start,The West Bank Occupiers
+11,4.0,2,2,Bad Start,The West Bank Occupiers
+11,4.0,3,3,Bad Start,The West Bank Occupiers
+11,4.0,6+,3,Bad Start,The West Bank Occupiers
+11,4.1,1,1,Bad Start,The West Bank Occupiers
+11,4.1,2,1,Bad Start,The West Bank Occupiers
+11,4.1,4,2,Bad Start,The West Bank Occupiers
+11,4.1,6+,2,Bad Start,The West Bank Occupiers
+11,4.2,1,1,Bad Start,The West Bank Occupiers
+11,4.2,2,5,Bad Start,The West Bank Occupiers
+11,4.2,3,4,Bad Start,The West Bank Occupiers
+11,4.2,4,2,Bad Start,The West Bank Occupiers
+11,4.2,5,2,Bad Start,The West Bank Occupiers
+11,5.0,0,5,QS Potential,The West Bank Occupiers
+11,5.0,1,5,QS Potential,The West Bank Occupiers
+11,5.0,2,9,QS Potential,The West Bank Occupiers
+11,5.0,3,5,QS Potential,The West Bank Occupiers
+11,5.0,4,5,Bad Start,The West Bank Occupiers
+11,5.0,5,3,Bad Start,The West Bank Occupiers
+11,5.1,0,2,QS Potential,The West Bank Occupiers
+11,5.1,1,3,QS Potential,The West Bank Occupiers
+11,5.1,2,1,QS Potential,The West Bank Occupiers
+11,5.1,3,1,QS Potential,The West Bank Occupiers
+11,5.1,4,2,Bad Start,The West Bank Occupiers
+11,5.1,5,2,Bad Start,The West Bank Occupiers
+11,5.2,0,1,Blue Balls,The West Bank Occupiers
+11,5.2,1,3,Blue Balls,The West Bank Occupiers
+11,5.2,2,2,Blue Balls,The West Bank Occupiers
+11,5.2,3,1,Blue Balls,The West Bank Occupiers
+11,5.2,5,2,Bad Start,The West Bank Occupiers
+11,5.2,6+,1,Bad Start,The West Bank Occupiers
+11,6.0,0,14,QS,The West Bank Occupiers
+11,6.0,1,9,QS,The West Bank Occupiers
+11,6.0,2,8,QS,The West Bank Occupiers
+11,6.0,3,9,QS,The West Bank Occupiers
+11,6.0,4,7,QS Potential,The West Bank Occupiers
+11,6.0,5,2,Bad Start,The West Bank Occupiers
+11,6.0,6+,2,Bad Start,The West Bank Occupiers
+11,6.1,1,1,QS,The West Bank Occupiers
+11,6.1,2,2,QS,The West Bank Occupiers
+11,6.1,4,3,QS Potential,The West Bank Occupiers
+11,6.2,0,2,QS,The West Bank Occupiers
+11,6.2,1,2,QS,The West Bank Occupiers
+11,6.2,2,2,QS,The West Bank Occupiers
+11,6.2,3,1,QS,The West Bank Occupiers
+11,7.0,0,9,QS,The West Bank Occupiers
+11,7.0,1,4,QS,The West Bank Occupiers
+11,7.0,2,9,QS,The West Bank Occupiers
+11,< 3,3,1,Bad Start,The West Bank Occupiers
+11,< 3,5,1,Bad Start,The West Bank Occupiers
+11,< 3,6+,3,Bad Start,The West Bank Occupiers
+11,> 7,0,2,QS,The West Bank Occupiers
+11,> 7,1,5,QS,The West Bank Occupiers
+11,> 7,2,1,QS,The West Bank Occupiers
+11,> 7,3,1,QS,The West Bank Occupiers
+11,> 7,5,1,Bad Start,The West Bank Occupiers
+11,CG,0,3,CG,The West Bank Occupiers
+11,CG,1,1,CG,The West Bank Occupiers
+11,CG,2,1,CG,The West Bank Occupiers
+12,3.0,1,1,Bad Start,Blasphemous Hot Takes
+12,3.0,5,1,Bad Start,Blasphemous Hot Takes
+12,3.0,6+,1,Bad Start,Blasphemous Hot Takes
+12,3.2,0,1,Bad Start,Blasphemous Hot Takes
+12,3.2,4,1,Bad Start,Blasphemous Hot Takes
+12,4.0,1,2,Bad Start,Blasphemous Hot Takes
+12,4.0,3,3,Bad Start,Blasphemous Hot Takes
+12,4.0,4,1,Bad Start,Blasphemous Hot Takes
+12,4.0,5,1,Bad Start,Blasphemous Hot Takes
+12,4.0,6+,1,Bad Start,Blasphemous Hot Takes
+12,4.1,2,2,Bad Start,Blasphemous Hot Takes
+12,4.1,3,1,Bad Start,Blasphemous Hot Takes
+12,4.1,4,2,Bad Start,Blasphemous Hot Takes
+12,4.2,3,1,Bad Start,Blasphemous Hot Takes
+12,4.2,4,3,Bad Start,Blasphemous Hot Takes
+12,4.2,5,1,Bad Start,Blasphemous Hot Takes
+12,4.2,6+,2,Bad Start,Blasphemous Hot Takes
+12,5.0,0,5,QS Potential,Blasphemous Hot Takes
+12,5.0,1,6,QS Potential,Blasphemous Hot Takes
+12,5.0,2,8,QS Potential,Blasphemous Hot Takes
+12,5.0,3,6,QS Potential,Blasphemous Hot Takes
+12,5.0,4,3,Bad Start,Blasphemous Hot Takes
+12,5.0,5,8,Bad Start,Blasphemous Hot Takes
+12,5.0,6+,4,Bad Start,Blasphemous Hot Takes
+12,5.1,2,2,QS Potential,Blasphemous Hot Takes
+12,5.1,3,3,QS Potential,Blasphemous Hot Takes
+12,5.1,4,1,Bad Start,Blasphemous Hot Takes
+12,5.1,6+,1,Bad Start,Blasphemous Hot Takes
+12,5.2,0,2,Blue Balls,Blasphemous Hot Takes
+12,5.2,1,2,Blue Balls,Blasphemous Hot Takes
+12,5.2,2,3,Blue Balls,Blasphemous Hot Takes
+12,5.2,3,5,Blue Balls,Blasphemous Hot Takes
+12,5.2,6+,2,Bad Start,Blasphemous Hot Takes
+12,6.0,0,13,QS,Blasphemous Hot Takes
+12,6.0,1,12,QS,Blasphemous Hot Takes
+12,6.0,2,17,QS,Blasphemous Hot Takes
+12,6.0,3,8,QS,Blasphemous Hot Takes
+12,6.0,4,6,QS Potential,Blasphemous Hot Takes
+12,6.0,5,4,Bad Start,Blasphemous Hot Takes
+12,6.0,6+,2,Bad Start,Blasphemous Hot Takes
+12,6.1,0,2,QS,Blasphemous Hot Takes
+12,6.1,1,3,QS,Blasphemous Hot Takes
+12,6.1,2,2,QS,Blasphemous Hot Takes
+12,6.1,3,1,QS,Blasphemous Hot Takes
+12,6.2,1,3,QS,Blasphemous Hot Takes
+12,6.2,2,2,QS,Blasphemous Hot Takes
+12,6.2,3,1,QS,Blasphemous Hot Takes
+12,6.2,4,1,QS Potential,Blasphemous Hot Takes
+12,7.0,0,10,QS,Blasphemous Hot Takes
+12,7.0,1,12,QS,Blasphemous Hot Takes
+12,7.0,2,7,QS,Blasphemous Hot Takes
+12,7.0,3,2,QS,Blasphemous Hot Takes
+12,7.0,4,4,QS Potential,Blasphemous Hot Takes
+12,< 3,4,1,Bad Start,Blasphemous Hot Takes
+12,< 3,6+,2,Bad Start,Blasphemous Hot Takes
+12,> 7,0,1,QS,Blasphemous Hot Takes
+12,> 7,1,3,QS,Blasphemous Hot Takes
+12,> 7,2,1,QS,Blasphemous Hot Takes
+12,> 7,3,1,QS,Blasphemous Hot Takes
+12,CG,0,3,CG,Blasphemous Hot Takes
+13,3.0,0,2,Bad Start,Ketel Bells
+13,3.0,2,1,Bad Start,Ketel Bells
+13,3.0,3,1,Bad Start,Ketel Bells
+13,3.0,4,1,Bad Start,Ketel Bells
+13,3.0,5,1,Bad Start,Ketel Bells
+13,3.0,6+,2,Bad Start,Ketel Bells
+13,3.1,2,1,Bad Start,Ketel Bells
+13,3.1,3,1,Bad Start,Ketel Bells
+13,3.1,6+,2,Bad Start,Ketel Bells
+13,3.2,0,1,Bad Start,Ketel Bells
+13,3.2,3,3,Bad Start,Ketel Bells
+13,3.2,5,4,Bad Start,Ketel Bells
+13,3.2,6+,1,Bad Start,Ketel Bells
+13,4.0,0,2,Bad Start,Ketel Bells
+13,4.0,2,1,Bad Start,Ketel Bells
+13,4.0,5,2,Bad Start,Ketel Bells
+13,4.0,6+,1,Bad Start,Ketel Bells
+13,4.1,0,1,Bad Start,Ketel Bells
+13,4.1,1,1,Bad Start,Ketel Bells
+13,4.1,3,1,Bad Start,Ketel Bells
+13,4.1,5,2,Bad Start,Ketel Bells
+13,4.1,6+,1,Bad Start,Ketel Bells
+13,4.2,1,1,Bad Start,Ketel Bells
+13,4.2,2,1,Bad Start,Ketel Bells
+13,4.2,3,1,Bad Start,Ketel Bells
+13,4.2,5,1,Bad Start,Ketel Bells
+13,4.2,6+,3,Bad Start,Ketel Bells
+13,5.0,0,3,QS Potential,Ketel Bells
+13,5.0,1,5,QS Potential,Ketel Bells
+13,5.0,2,11,QS Potential,Ketel Bells
+13,5.0,3,5,QS Potential,Ketel Bells
+13,5.0,4,4,Bad Start,Ketel Bells
+13,5.0,5,2,Bad Start,Ketel Bells
+13,5.0,6+,2,Bad Start,Ketel Bells
+13,5.1,2,2,QS Potential,Ketel Bells
+13,5.1,3,2,QS Potential,Ketel Bells
+13,5.1,4,2,Bad Start,Ketel Bells
+13,5.1,5,1,Bad Start,Ketel Bells
+13,5.2,0,1,Blue Balls,Ketel Bells
+13,5.2,1,2,Blue Balls,Ketel Bells
+13,5.2,2,2,Blue Balls,Ketel Bells
+13,5.2,3,4,Blue Balls,Ketel Bells
+13,5.2,4,3,Bad Start,Ketel Bells
+13,5.2,5,2,Bad Start,Ketel Bells
+13,6.0,0,9,QS,Ketel Bells
+13,6.0,1,9,QS,Ketel Bells
+13,6.0,2,11,QS,Ketel Bells
+13,6.0,3,9,QS,Ketel Bells
+13,6.0,4,4,QS Potential,Ketel Bells
+13,6.0,5,3,Bad Start,Ketel Bells
+13,6.0,6+,1,Bad Start,Ketel Bells
+13,6.1,0,2,QS,Ketel Bells
+13,6.1,2,1,QS,Ketel Bells
+13,6.1,4,1,QS Potential,Ketel Bells
+13,6.2,2,1,QS,Ketel Bells
+13,7.0,0,9,QS,Ketel Bells
+13,7.0,1,9,QS,Ketel Bells
+13,7.0,2,6,QS,Ketel Bells
+13,7.0,4,3,QS Potential,Ketel Bells
+13,< 3,0,1,Bad Start,Ketel Bells
+13,< 3,1,2,Bad Start,Ketel Bells
+13,< 3,3,1,Bad Start,Ketel Bells
+13,< 3,4,2,Bad Start,Ketel Bells
+13,< 3,6+,4,Bad Start,Ketel Bells
+13,> 7,0,5,QS,Ketel Bells
+13,> 7,1,3,QS,Ketel Bells
+13,> 7,2,2,QS,Ketel Bells
+13,CG,0,1,CG,Ketel Bells
+13,CG,1,1,CG,Ketel Bells
+14,3.0,0,1,Bad Start,Hader Better Faster Stronger
+14,3.0,4,1,Bad Start,Hader Better Faster Stronger
+14,3.0,5,1,Bad Start,Hader Better Faster Stronger
+14,3.0,6+,1,Bad Start,Hader Better Faster Stronger
+14,3.1,3,1,Bad Start,Hader Better Faster Stronger
+14,3.1,5,1,Bad Start,Hader Better Faster Stronger
+14,3.1,6+,1,Bad Start,Hader Better Faster Stronger
+14,3.2,2,2,Bad Start,Hader Better Faster Stronger
+14,3.2,4,1,Bad Start,Hader Better Faster Stronger
+14,3.2,5,1,Bad Start,Hader Better Faster Stronger
+14,4.0,0,1,Bad Start,Hader Better Faster Stronger
+14,4.0,2,1,Bad Start,Hader Better Faster Stronger
+14,4.0,3,2,Bad Start,Hader Better Faster Stronger
+14,4.0,4,3,Bad Start,Hader Better Faster Stronger
+14,4.0,5,4,Bad Start,Hader Better Faster Stronger
+14,4.0,6+,3,Bad Start,Hader Better Faster Stronger
+14,4.1,2,2,Bad Start,Hader Better Faster Stronger
+14,4.1,3,3,Bad Start,Hader Better Faster Stronger
+14,4.1,4,1,Bad Start,Hader Better Faster Stronger
+14,4.1,5,2,Bad Start,Hader Better Faster Stronger
+14,4.1,6+,1,Bad Start,Hader Better Faster Stronger
+14,4.2,3,3,Bad Start,Hader Better Faster Stronger
+14,4.2,4,2,Bad Start,Hader Better Faster Stronger
+14,4.2,6+,2,Bad Start,Hader Better Faster Stronger
+14,5.0,0,2,QS Potential,Hader Better Faster Stronger
+14,5.0,1,3,QS Potential,Hader Better Faster Stronger
+14,5.0,2,13,QS Potential,Hader Better Faster Stronger
+14,5.0,3,5,QS Potential,Hader Better Faster Stronger
+14,5.0,4,3,Bad Start,Hader Better Faster Stronger
+14,5.0,5,3,Bad Start,Hader Better Faster Stronger
+14,5.0,6+,3,Bad Start,Hader Better Faster Stronger
+14,5.1,0,1,QS Potential,Hader Better Faster Stronger
+14,5.1,1,4,QS Potential,Hader Better Faster Stronger
+14,5.1,2,1,QS Potential,Hader Better Faster Stronger
+14,5.1,3,3,QS Potential,Hader Better Faster Stronger
+14,5.1,4,3,Bad Start,Hader Better Faster Stronger
+14,5.1,5,3,Bad Start,Hader Better Faster Stronger
+14,5.2,0,4,Blue Balls,Hader Better Faster Stronger
+14,5.2,2,2,Blue Balls,Hader Better Faster Stronger
+14,5.2,3,2,Blue Balls,Hader Better Faster Stronger
+14,5.2,4,1,Bad Start,Hader Better Faster Stronger
+14,5.2,6+,2,Bad Start,Hader Better Faster Stronger
+14,6.0,0,9,QS,Hader Better Faster Stronger
+14,6.0,1,16,QS,Hader Better Faster Stronger
+14,6.0,2,19,QS,Hader Better Faster Stronger
+14,6.0,3,7,QS,Hader Better Faster Stronger
+14,6.0,4,4,QS Potential,Hader Better Faster Stronger
+14,6.0,5,4,Bad Start,Hader Better Faster Stronger
+14,6.0,6+,1,Bad Start,Hader Better Faster Stronger
+14,6.1,0,2,QS,Hader Better Faster Stronger
+14,6.1,1,2,QS,Hader Better Faster Stronger
+14,6.1,3,1,QS,Hader Better Faster Stronger
+14,6.2,0,1,QS,Hader Better Faster Stronger
+14,6.2,1,1,QS,Hader Better Faster Stronger
+14,6.2,2,2,QS,Hader Better Faster Stronger
+14,7.0,0,15,QS,Hader Better Faster Stronger
+14,7.0,1,7,QS,Hader Better Faster Stronger
+14,7.0,2,7,QS,Hader Better Faster Stronger
+14,< 3,1,1,Bad Start,Hader Better Faster Stronger
+14,< 3,3,2,Bad Start,Hader Better Faster Stronger
+14,< 3,5,1,Bad Start,Hader Better Faster Stronger
+14,< 3,6+,2,Bad Start,Hader Better Faster Stronger
+14,> 7,0,1,QS,Hader Better Faster Stronger
+14,> 7,1,2,QS,Hader Better Faster Stronger
+14,> 7,2,1,QS,Hader Better Faster Stronger
+14,> 7,3,1,QS,Hader Better Faster Stronger

@@ -33,10 +33,10 @@ ferry <- '<img src="www/ferry.jpg" style="height:30px;">'
 
 ### Parameters
 params <- 
-  list('season' = 2023,
-       'opening_day' = as.Date('2023-03-30'))
+  list('season' = 2024,
+       'opening_day' = as.Date('2024-03-20'))
 
-period <- max(186, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1)
+period <- min(187, max(1, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1))
 
 
 ### Load in All Data
@@ -85,7 +85,7 @@ distributions <-
   read_csv('data/playoff_odds/distributions.csv') %>%
   filter(sim_id <= 1000) %>% 
   select(-division_id, -sim_id)
-  
+
 
 ### Summary Stats mean points by week
 mean_pts_by_week <- 
@@ -276,16 +276,18 @@ if(nrow(traded_players) > 0) {
     mutate('trade_id_1' = fct_reorder(factor(paste0('Trade #', trade_id_1)), trade_id_1)) %>% 
     group_by(trade_id_1)
   
+  m <- 
+    df_trades %>% 
+    ungroup() %>% 
+    select(contains('avg')) %>% 
+    abs() %>% 
+    max(na.rm = T)
+  
 }
 
 
 
-m <- 
-  df_trades %>% 
-  ungroup() %>% 
-  select(contains('avg')) %>% 
-  abs() %>% 
-  max(na.rm = T)
+
 
 ### GT for Penalties
 df_penalty <- 
@@ -299,12 +301,14 @@ df_rp_penalty <-
 
 
 ### ASG 
-df_asg_lineup <- 
-  change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv')),
-              cols = c('logo_1', 'logo_2', 'logo_3'),
-              team_cols = c('team_1', 'team_2', 'team_3'))
-
-df_asg_counts <- change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv')))
+if(params$current_matchup > 6) {
+  df_asg_lineup <- 
+    change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv')),
+                cols = c('logo_1', 'logo_2', 'logo_3'),
+                team_cols = c('team_1', 'team_2', 'team_3'))
+  
+  df_asg_counts <- change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv')))
+}
 
 
 ### Clear useless stuff

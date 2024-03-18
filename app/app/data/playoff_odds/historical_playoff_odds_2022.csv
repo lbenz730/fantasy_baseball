@@ -1,0 +1,277 @@
+team,mean_wins,mean_pts,playoffs,last_place,matchup_id,champ
+All That is Wright,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+All Walshed Up,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+Blasphemous Hot Takes,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+Framber Valdez Oil Spill,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+Freedom of the Pressly,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+Mt. Everest Taquito Farmers,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+Of Bryce and Men,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+Springer Bell,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+The Novaks,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+The Traveling Secretaries,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+The West Bank Occupiers,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+Yosemite Yeshivas,10,NA,0.3333333333333333,0.08333333333333333,0,NA
+All That is Wright,10.8,5958,0.47117,0.03199,1,NA
+All Walshed Up,10.6,5856,0.41373,0.04581,1,NA
+Blasphemous Hot Takes,9,5633,0.15856,0.17154,1,NA
+Framber Valdez Oil Spill,10.9,6003,0.50959,0.02762,1,NA
+Freedom of the Pressly,10.6,5905,0.43634,0.03931,1,NA
+Mt. Everest Taquito Farmers,9.2,5708,0.19128,0.14127,1,NA
+Of Bryce and Men,10.7,5939,0.46103,0.03439,1,NA
+Springer Bell,9.8,5949,0.31839,0.07324,1,NA
+The Novaks,10.5,5847,0.40753,0.04612,1,NA
+The Traveling Secretaries,9.5,5828,0.25016,0.10231,1,NA
+The West Bank Occupiers,9.1,5679,0.17934,0.15459,1,NA
+Yosemite Yeshivas,9.3,5737,0.20288,0.13181,1,NA
+All That is Wright,10.5,6177,0.45081,0.02894,2,NA
+All Walshed Up,9.8,5893,0.26477,0.07719,2,NA
+Blasphemous Hot Takes,9.3,5703,0.17117,0.13615,2,NA
+Framber Valdez Oil Spill,11.5,6154,0.60282,0.01343,2,NA
+Freedom of the Pressly,10.2,6040,0.35426,0.04566,2,NA
+Mt. Everest Taquito Farmers,9.5,5771,0.20034,0.1094,2,NA
+Of Bryce and Men,10.4,6099,0.40239,0.03751,2,NA
+Springer Bell,10.6,6160,0.44956,0.02973,2,NA
+The Novaks,10.9,5943,0.44869,0.02818,2,NA
+The Traveling Secretaries,10.6,6163,0.46028,0.03007,2,NA
+The West Bank Occupiers,8.5,5773,0.11122,0.20605,2,NA
+Yosemite Yeshivas,8.2,5709,0.08369,0.25769,2,NA
+All That is Wright,9.8,6418,0.29504,0.04213,3,NA
+All Walshed Up,10.4,6217,0.34049,0.03427,3,NA
+Blasphemous Hot Takes,10.2,6120,0.28868,0.04845,3,NA
+Framber Valdez Oil Spill,12,6456,0.675,0.00481,3,NA
+Freedom of the Pressly,9.7,6321,0.25232,0.05467,3,NA
+Mt. Everest Taquito Farmers,8.9,6042,0.12433,0.12732,3,NA
+Of Bryce and Men,10.7,6363,0.43321,0.01886,3,NA
+Springer Bell,11.3,6540,0.57649,0.01027,3,NA
+The Novaks,11.7,6342,0.59987,0.00763,3,NA
+The Traveling Secretaries,10,6418,0.32813,0.04014,3,NA
+The West Bank Occupiers,7.7,5930,0.04032,0.31683,3,NA
+Yosemite Yeshivas,7.7,5974,0.04612,0.29462,3,NA
+All That is Wright,9.2,6388,0.18609,0.04545,4,NA
+All Walshed Up,10.9,6245,0.39676,0.01066,4,NA
+Blasphemous Hot Takes,9.7,6115,0.19079,0.04426,4,NA
+Framber Valdez Oil Spill,11.1,6321,0.46225,0.0088,4,NA
+Freedom of the Pressly,10.4,6416,0.36309,0.01525,4,NA
+Mt. Everest Taquito Farmers,8.6,6110,0.08467,0.10162,4,NA
+Of Bryce and Men,11.2,6352,0.4783,0.0063,4,NA
+Springer Bell,11.8,6569,0.65448,0.00262,4,NA
+The Novaks,12.6,6459,0.74244,0.00132,4,NA
+The Traveling Secretaries,10.6,6456,0.41193,0.01356,4,NA
+The West Bank Occupiers,7.1,5897,0.01621,0.34795,4,NA
+Yosemite Yeshivas,6.9,5846,0.01299,0.40221,4,NA
+All That is Wright,8.4,5650,0.09191,0.10344,5,NA
+All Walshed Up,10.5,5644,0.33037,0.01942,5,NA
+Blasphemous Hot Takes,10.4,5519,0.30423,0.02242,5,NA
+Framber Valdez Oil Spill,11.6,5749,0.5431,0.00567,5,NA
+Freedom of the Pressly,9.6,5801,0.22951,0.0383,5,NA
+Mt. Everest Taquito Farmers,8.2,5366,0.06278,0.14756,5,NA
+Of Bryce and Men,11.7,5810,0.57068,0.00477,5,NA
+Springer Bell,11.9,5979,0.63265,0.00307,5,NA
+The Novaks,12.9,5938,0.77527,8.5e-4,5,NA
+The Traveling Secretaries,10.8,5881,0.41902,0.01239,5,NA
+The West Bank Occupiers,7,5205,0.01815,0.3415,5,NA
+Yosemite Yeshivas,7.2,5295,0.02233,0.30061,5,NA
+All That is Wright,7.7,6354,0.03516,0.11312,6,NA
+All Walshed Up,10.8,6317,0.33419,0.00685,6,NA
+Blasphemous Hot Takes,9.7,6234,0.1588,0.02716,6,NA
+Framber Valdez Oil Spill,12.5,6610,0.74295,3.3e-4,6,NA
+Freedom of the Pressly,9.3,6526,0.16494,0.02323,6,NA
+Mt. Everest Taquito Farmers,7.4,6159,0.01995,0.1789,6,NA
+Of Bryce and Men,12.3,6537,0.69548,5.4e-4,6,NA
+Springer Bell,11.4,6575,0.53378,0.00171,6,NA
+The Novaks,13.9,6756,0.91845,9.99999999999999e-6,6,NA
+The Traveling Secretaries,10.5,6584,0.37428,0.00574,6,NA
+The West Bank Occupiers,6.2,6066,0.00381,0.43991,6,NA
+Yosemite Yeshivas,7.3,6136,0.01821,0.2025,6,NA
+All That is Wright,8.6,6537,0.08024,0.03674,7,NA
+All Walshed Up,11.5,6461,0.46656,0.00131,7,NA
+Blasphemous Hot Takes,10.3,6321,0.22238,0.00904,7,NA
+Framber Valdez Oil Spill,11.9,6656,0.62259,5.2e-4,7,NA
+Freedom of the Pressly,10.6,6531,0.31526,0.00314,7,NA
+Mt. Everest Taquito Farmers,6.7,6116,0.00431,0.27343,7,NA
+Of Bryce and Men,12,6694,0.66135,2.7e-4,7,NA
+Springer Bell,10.5,6490,0.29106,0.00456,7,NA
+The Novaks,13.2,6756,0.84095,9.999999999999987e-6,7,NA
+The Traveling Secretaries,11.1,6664,0.46773,0.00195,7,NA
+The West Bank Occupiers,5.6,6062,6.999999999999999e-4,0.56526,7,NA
+Yosemite Yeshivas,7.9,6210,0.02687,0.10377,7,NA
+All That is Wright,8.3,6749,0.04396,0.02461,8,NA
+All Walshed Up,12,6594,0.5144,1.3000000000000002e-4,8,NA
+Blasphemous Hot Takes,9.8,6415,0.11024,0.00647,8,NA
+Framber Valdez Oil Spill,12.7,6900,0.73402,4e-5,8,NA
+Freedom of the Pressly,9.9,6555,0.13062000000000001,0.00287,8,NA
+Mt. Everest Taquito Farmers,6,6071,4e-4,0.33281,8,NA
+Of Bryce and Men,12.8,6984,0.77173,9.999999999999987e-6,8,NA
+Springer Bell,11.2,6719,0.38769,3.5999999999999997e-4,8,NA
+The Novaks,13.5,6822,0.83347,0,8,NA
+The Traveling Secretaries,11.5,6772,0.46887,2.1000000000000004e-4,8,NA
+The West Bank Occupiers,5.1,6141,1.2e-4,0.51064,8,NA
+Yosemite Yeshivas,7.2,6179,0.00448,0.12185,8,NA
+All That is Wright,7.7,6429,0.01805,0.04506,9,NA
+All Walshed Up,12.6,6359,0.66494,9.999999999999992e-6,9,NA
+Blasphemous Hot Takes,10.4,6095,0.18696,0.00274,9,NA
+Framber Valdez Oil Spill,12.9,6692,0.77309,0,9,NA
+Freedom of the Pressly,9.5,6295,0.11349,0.00657,9,NA
+Mt. Everest Taquito Farmers,5.8,5631,3.7e-4,0.37081,9,NA
+Of Bryce and Men,11.8,6630,0.56962,8.999999999999999e-5,9,NA
+Springer Bell,11.6,6440,0.48929,2.3e-4,9,NA
+The Novaks,13.9,6623,0.88943,0,9,NA
+The Traveling Secretaries,10.7,6384,0.27901,0.00115,9,NA
+The West Bank Occupiers,5.1,5807,8e-5,0.51706,9,NA
+Yosemite Yeshivas,8,5836,0.01567,0.05628,9,NA
+All That is Wright,8.1,6526,0.02192,0.01384,10,NA
+All Walshed Up,13.2,6542,0.7855,0,10,NA
+Blasphemous Hot Takes,10.8,6149,0.21565,4.1e-4,10,NA
+Framber Valdez Oil Spill,12.5,6804,0.69918,9.999999999999994e-6,10,NA
+Freedom of the Pressly,10.1,6438,0.15366,9.8e-4,10,NA
+Mt. Everest Taquito Farmers,5.3,5690,4e-5,0.38646,10,NA
+Of Bryce and Men,11.4,6740,0.46186,5e-5,10,NA
+Springer Bell,12.1,6541,0.56705,9.999999999999992e-6,10,NA
+The Novaks,14.5,6785,0.94276,0,10,NA
+The Traveling Secretaries,10,6394,0.1482,0.0012,10,NA
+The West Bank Occupiers,4.6,5885,9.999999999999996e-6,0.53861,10,NA
+Yosemite Yeshivas,7.5,5889,0.00417,0.05843,10,NA
+All That is Wright,8.6,6825,0.02112,0.0012,11,NA
+All Walshed Up,13,6797,0.68101,0,11,NA
+Blasphemous Hot Takes,11.4,6562,0.22772,0,11,NA
+Framber Valdez Oil Spill,13.4,7108,0.85253,0,11,NA
+Freedom of the Pressly,9.5,6660,0.03838,2.3e-4,11,NA
+Mt. Everest Taquito Farmers,5.2,6001,9.999999999999992e-6,0.24293,11,NA
+Of Bryce and Men,12.2,7017,0.59634,0,11,NA
+Springer Bell,12.7,6797,0.61897,0,11,NA
+The Novaks,14.2,6969,0.91981,0,11,NA
+The Traveling Secretaries,9.6,6652,0.04404,2.8000000000000003e-4,11,NA
+The West Bank Occupiers,3.5,6134,0,0.70065,11,NA
+Yosemite Yeshivas,6.7,6183,7.000000000000001e-5,0.05471,11,NA
+All That is Wright,9,6884,0.03667,2.9999999999999997e-5,12,NA
+All Walshed Up,13.4,6814,0.8036,0,12,NA
+Blasphemous Hot Takes,10.9,6563,0.1456,0,12,NA
+Framber Valdez Oil Spill,14,7219,0.94957,0,12,NA
+Freedom of the Pressly,10.1,6791,0.09255,0,12,NA
+Mt. Everest Taquito Farmers,5.7,5983,0,0.10924,12,NA
+Of Bryce and Men,11.3,6952,0.36525,0,12,NA
+Springer Bell,12.4,6900,0.62407,0,12,NA
+The Novaks,14.7,6992,0.96568,0,12,NA
+The Traveling Secretaries,9.1,6674,0.01701,1.7e-4,12,NA
+The West Bank Occupiers,3,6150,0,0.82678,12,NA
+Yosemite Yeshivas,6.2,6189,0,0.06378,12,NA
+All That is Wright,9.4,6858,0.04305,2e-5,13,NA
+All Walshed Up,13.9,6864,0.88827,0,13,NA
+Blasphemous Hot Takes,10.4,6543,0.07041,0,13,NA
+Framber Valdez Oil Spill,14.5,7251,0.98089,0,13,NA
+Freedom of the Pressly,9.6,6788,0.04024,2e-5,13,NA
+Mt. Everest Taquito Farmers,5.1,5867,0,0.33656,13,NA
+Of Bryce and Men,11.9,7022,0.53007,0,13,NA
+Springer Bell,12,6909,0.48805,0,13,NA
+The Novaks,14.3,7105,0.95747,0,13,NA
+The Traveling Secretaries,8.3,6486,0.00153,0.00308,13,NA
+The West Bank Occupiers,3.9,6294,0,0.61542,13,NA
+Yosemite Yeshivas,6.6,6206,2e-5,0.0449,13,NA
+All That is Wright,9.9,7103,0.06499,0,14,NA
+All Walshed Up,13.4,7087,0.82446,0,14,NA
+Blasphemous Hot Takes,10.9,6821,0.10981,0,14,NA
+Framber Valdez Oil Spill,14.8,7502,0.99243,0,14,NA
+Freedom of the Pressly,10.3,7159,0.10651,0,14,NA
+Mt. Everest Taquito Farmers,4.9,6095,0,0.29431,14,NA
+Of Bryce and Men,12.2,7218,0.59547,0,14,NA
+Springer Bell,11.5,7131,0.33198,0,14,NA
+The Novaks,14.6,7269,0.97432,0,14,NA
+The Traveling Secretaries,7.9,6642,2.9999999999999997e-5,0.00254999999999999,14,NA
+The West Bank Occupiers,3.5,6569,0,0.65358,14,NA
+Yosemite Yeshivas,6.2,6332,0,0.04956,14,NA
+All That is Wright,9.5,7003,0.0783,0,15,NA
+All Walshed Up,12.6,6927,0.81051,0,15,NA
+Blasphemous Hot Takes,10.4,6598,0.11403,0,15,NA
+Framber Valdez Oil Spill,15,7419,0.99918,0,15,NA
+Freedom of the Pressly,9.5,7032,0.0804,0,15,NA
+Mt. Everest Taquito Farmers,5.9,6012,0,0.25669,15,NA
+Of Bryce and Men,11.6,7101,0.61251,0,15,NA
+Springer Bell,10.8,7032,0.30693,0,15,NA
+The Novaks,14.9,7183,0.9973,0,15,NA
+The Traveling Secretaries,8.4,6500,8.399999999999999e-4,0.00418,15,NA
+The West Bank Occupiers,4.4,6628,0,0.69196,15,NA
+Yosemite Yeshivas,7.1,6279,0,0.04717,15,NA
+All That is Wright,8.9,7082,0.02261,0,16,NA
+All Walshed Up,12.4,7014,0.77067,0,16,NA
+Blasphemous Hot Takes,10.9,6740,0.18555,0,16,NA
+Framber Valdez Oil Spill,15.5,7520,1,0,16,NA
+Freedom of the Pressly,10,7156,0.12991,0,16,NA
+Mt. Everest Taquito Farmers,5.2,6064,0,0.24739,16,NA
+Of Bryce and Men,11.1,7148,0.44836,0,16,NA
+Springer Bell,11.2,7129,0.44168,0,16,NA
+The Novaks,15.6,7365,1,0,16,NA
+The Traveling Secretaries,8.9,6643,0.00122,0,16,NA
+The West Bank Occupiers,3.8,6677,0,0.73048,16,NA
+Yosemite Yeshivas,6.5,6326,0,0.02213,16,NA
+All That is Wright,8.4,7056,0.00147,0,17,NA
+All Walshed Up,12.9,7078,0.93936,0,17,NA
+Blasphemous Hot Takes,11.4,6719,0.37107,0,17,NA
+Framber Valdez Oil Spill,15.9,7509,1,0,17,NA
+Freedom of the Pressly,10.6,7150,0.25012,0,17,NA
+Mt. Everest Taquito Farmers,5.1,5977,0,0.36633,17,NA
+Of Bryce and Men,10.6,7096,0.21211,0,17,NA
+Springer Bell,10.6,7025,0.22587,0,17,NA
+The Novaks,15.8,7406,1,0,17,NA
+The Traveling Secretaries,8.6,6580,0,0,17,NA
+The West Bank Occupiers,4.2,6713,0,0.59824,17,NA
+Yosemite Yeshivas,6,6230,0,0.03543,17,NA
+All That is Wright,8.9,7061,0,0,18,NA
+All Walshed Up,13.2,7148,0.98415,0,18,NA
+Blasphemous Hot Takes,11,6682,0.21853,0,18,NA
+Framber Valdez Oil Spill,16.3,7559,1,0,18,NA
+Freedom of the Pressly,10.9,7216,0.40994,0,18,NA
+Mt. Everest Taquito Farmers,4.7,6065,0,0.31882,18,NA
+Of Bryce and Men,10,7112,0.03636,0,18,NA
+Springer Bell,11.1,7111,0.35102,0,18,NA
+The Novaks,15.1,7349,1,0,18,NA
+The Traveling Secretaries,8.2,6649,0,0,18,NA
+The West Bank Occupiers,3.8,6679,0,0.68118,18,NA
+Yosemite Yeshivas,6.7,6264,0,0,18,NA
+All That is Wright,8.5,7025,0,0,19,NA
+All Walshed Up,13.5,7224,1,0,19,NA
+Blasphemous Hot Takes,10.6,6641,0,0,19,NA
+Framber Valdez Oil Spill,16.7,7679,1,0,19,NA
+Freedom of the Pressly,11.5,7241,0.70007,0,19,NA
+Mt. Everest Taquito Farmers,4.4,6043,0,0.75507,19,NA
+Of Bryce and Men,9.4,7111,0,0,19,NA
+Springer Bell,11.5,7144,0.29993,0,19,NA
+The Novaks,14.6,7318,1,0,19,NA
+The Traveling Secretaries,8.6,6658,0,0,19,NA
+The West Bank Occupiers,4.3,6815,0,0.24493,19,NA
+Yosemite Yeshivas,6.4,6221,0,0,19,NA
+All That is Wright,8,7020,0,0,20,0
+All Walshed Up,13,7151,1,0,20,0.21177
+Blasphemous Hot Takes,10,6580,0,0,20,0
+Framber Valdez Oil Spill,16,7614,1,0,20,0.3341
+Freedom of the Pressly,12,7202,1,0,20,0.19972
+Mt. Everest Taquito Farmers,5,6046,0,1,20,0
+Of Bryce and Men,10,7073,0,0,20,0
+Springer Bell,12,7128,0,0,20,0
+The Novaks,14,7280,1,0,20,0.25441
+The Traveling Secretaries,9,6546,0,0,20,0
+The West Bank Occupiers,5,6780,0,0,20,0
+Yosemite Yeshivas,6,6098,0,0,20,0
+All That is Wright,8,7020,0,0,21,0
+All Walshed Up,13,7151,1,0,21,0.05915
+Blasphemous Hot Takes,10,6580,0,0,21,0
+Framber Valdez Oil Spill,16,7614,1,0,21,0.02071
+Freedom of the Pressly,12,7202,1,0,21,0.45777
+Mt. Everest Taquito Farmers,5,6046,0,1,21,0
+Of Bryce and Men,10,7073,0,0,21,0
+Springer Bell,12,7128,0,0,21,0
+The Novaks,14,7280,1,0,21,0.46237
+The Traveling Secretaries,9,6546,0,0,21,0
+The West Bank Occupiers,5,6780,0,0,21,0
+Yosemite Yeshivas,6,6098,0,0,21,0
+All That is Wright,8,7020,0,0,22,0
+All Walshed Up,13,7151,1,0,22,0
+Blasphemous Hot Takes,10,6580,0,0,22,0
+Framber Valdez Oil Spill,16,7614,1,0,22,0
+Freedom of the Pressly,12,7202,1,0,22,0.57902
+Mt. Everest Taquito Farmers,5,6046,0,1,22,0
+Of Bryce and Men,10,7073,0,0,22,0
+Springer Bell,12,7128,0,0,22,0
+The Novaks,14,7280,1,0,22,0.42098
+The Traveling Secretaries,9,6546,0,0,22,0
+The West Bank Occupiers,5,6780,0,0,22,0
+Yosemite Yeshivas,6,6098,0,0,22,0

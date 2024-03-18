@@ -75,6 +75,10 @@ shinyServer(function(input, output, session) {
       left_join(sim_results, by = 'team') %>%
       select(-matchup_id)
     
+    df <- 
+      df %>% 
+      mutate_at(vars(contains('adj_')), ~replace(.x, is.na(.x), 0))
+    
     
     df <- bind_rows(df, league_avg)
     
@@ -88,7 +92,7 @@ shinyServer(function(input, output, session) {
     gt(df) %>%
       
       ### Add this once more updates have happened.
-      # opt_interactive(use_pagination = F) %>% 
+      # opt_interactive(use_pagination = F) %>%
       
       ### Round Numbers
       fmt_number(columns = c(exp_win, exp_loss, mean_wins), decimals = 1, sep_mark = '') %>%
@@ -295,6 +299,7 @@ shinyServer(function(input, output, session) {
     
     df_ps <- 
       pitch_stats %>% 
+      mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
       inner_join(teams, by = 'team_id') %>% 
       select(team, logo, 
              era, fip, k9, bb9, k_per_bb, hr9, 
@@ -326,7 +331,8 @@ shinyServer(function(input, output, session) {
                        'k_per_bb_rp' = weighted.mean(pitch_stats$k_per_bb_rp, pitch_stats$outs_rp),
                        
                        'qs' = mean(pitch_stats$qs),
-                       'blue_balls' = mean(pitch_stats$blue_balls)))
+                       'blue_balls' = mean(pitch_stats$blue_balls))) %>% 
+      mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0))
     
     df_ps %>% 
       gt() %>% 
@@ -506,6 +512,7 @@ shinyServer(function(input, output, session) {
     cat('Rendering Batting Table\n')
     df_bs <- 
       bat_stats %>% 
+      mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
       inner_join(teams, by = 'team_id') %>% 
       select(team, logo, 
              avg, obp, slg, ops, woba, babip, k_rate, bb_rate) %>% 
@@ -518,7 +525,8 @@ shinyServer(function(input, output, session) {
                        'woba' = weighted.mean(bat_stats$woba, bat_stats$h_pa),
                        'babip' = weighted.mean(bat_stats$babip, bat_stats$h_pa),
                        'k_rate' = weighted.mean(bat_stats$k_rate, bat_stats$h_pa),
-                       'bb_rate' = weighted.mean(bat_stats$bb_rate, bat_stats$h_pa))) 
+                       'bb_rate' = weighted.mean(bat_stats$bb_rate, bat_stats$h_pa)))  %>% 
+      mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0))
     df_bs %>% 
       gt() %>% 
       

@@ -11,7 +11,8 @@ build_train_set <- function(season) {
   df_rp_penalty <- 
     read_csv(here('data/red_flags/rp_penalties.csv')) %>% 
     left_join(df_teams, by = 'team') %>% 
-    select(team_id, 'rp_penalty' = penalty, matchup_id, scoring_period_id)  
+    select(team_id, 'rp_penalty' = penalty, matchup_id, scoring_period_id) %>% 
+    mutate_at(vars(everything()), as.numeric)
   df_start <- df_start[df_start$season == season,]
   
   df_features <- 

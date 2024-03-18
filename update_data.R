@@ -21,15 +21,15 @@ source('figures/wp_graphics.R')
 source('figures/all_star_teams.R')
 
 params <- 
-  list('season' = 2023,
-       'opening_day' = as.Date('2023-03-30'),
+  list('season' = 2024,
+       'opening_day' = as.Date('2024-03-20'),
        'nsims' = 10000)
-
-period <- max(186, as.numeric(Sys.Date() - params$opening_day) + 1)
 
 df_start <- 
   read_csv('data/df_start.csv') %>% 
   filter(season == params$season) 
+
+period <- min(max(df_start$end_period), max(1, as.numeric(Sys.Date() - params$opening_day) + 1))
 
 params$matchup_id <- max(df_start$matchup_id[df_start$start_period <= period])
 
@@ -59,11 +59,6 @@ teams <-
 
 teams$logo[which(teams$team == "The Traveling Secretaries")] <- 'https://i.imgur.com/wll1Ubw.jpg'
 teams$logo[which(teams$team == 'Mt. Everest Taquito Farmers')] <-  'https://i.imgur.com/VW41hvO.gif'
-teams$logo[which(teams$team == 'Yosemite Yeshivas')] <- 'https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28721.png&w=350&h=254'
-teams$logo[which(teams$team == 'Ketel of Fish')] <- 'https://i.imgur.com/I68BxCy.png'
-teams$team[teams$team == 'Ketel of Fish'] <- 'Ketel Bells'
-teams$team[teams$team == 'Don Julios'] <- 'The Greatest Stroman'
-teams$team[teams$team == 'The Greatest Stroman'] <- 'It\'s Gonna Be Gley'
 write_csv(teams, glue('data/stats/{params$season}/teams_{params$season}.csv'))
 
 ### Schedule and Batting + Pitching Points
@@ -142,7 +137,6 @@ for(i in 1:max(reg_season, params$matchup_id)) {
   schedule <- bind_rows(schedule, schedule_)
 }
 write_csv(schedule, glue('data/stats/{params$season}/schedule_{params$season}.csv'))
-
 
 ### Update Daily Stats
 if(params$matchup_id == 1) {
@@ -257,8 +251,6 @@ bat_stats <-
 
 write_csv(bat_stats, glue('data/stats/{params$season}/bat_stats.csv'))
 
-
-
 ### Penalties for Relief Starts
 relief_starts <- 
   df_daily %>% 
@@ -302,16 +294,18 @@ df_penalty <-
 write_csv(df_penalty, 'data/red_flags/penalties.csv')
 
 ### Relief Starts
-for(i in 1:nrow(relief_starts)) {
-  week <- relief_starts$matchup_id[i]
-  player <- relief_starts$player[i]
-  ix_rp <- which(rp_points$player == player & rp_points$matchup_id == week)
-  ix_sp <- which(sp_points$player == player & sp_points$matchup_id == week)
-  rp_points$n_points[ix_rp] <- relief_starts$rp_points[i]
-  rp_points$n_games[ix_rp] <- relief_starts$rp_games[i]
-  sp_points$n_points[ix_sp] <- relief_starts$sp_points[i]
-  sp_points$n_games[ix_sp] <- relief_starts$sp_games[i]
-  sp_points$n_qs[ix_sp] <- relief_starts$n_qs[i]
+if(nrow(relief_starts) > 0) {
+  for(i in 1:nrow(relief_starts)) {
+    week <- relief_starts$matchup_id[i]
+    player <- relief_starts$player[i]
+    ix_rp <- which(rp_points$player == player & rp_points$matchup_id == week)
+    ix_sp <- which(sp_points$player == player & sp_points$matchup_id == week)
+    rp_points$n_points[ix_rp] <- relief_starts$rp_points[i]
+    rp_points$n_games[ix_rp] <- relief_starts$rp_games[i]
+    sp_points$n_points[ix_sp] <- relief_starts$sp_points[i]
+    sp_points$n_games[ix_sp] <- relief_starts$sp_games[i]
+    sp_points$n_qs[ix_sp] <- relief_starts$n_qs[i]
+  }
 }
 
 write_csv(batter_points, glue('data/stats/{params$season}/batting_weekly_{params$season}.csv'))
@@ -320,7 +314,7 @@ write_csv(rp_points, glue('data/stats/{params$season}/rp_weekly_{params$season}.
 
 ### Trades
 if(params$matchup_id == 1) {
-  df_trades <- get_trades(params$matchup_id)
+  df_trades <- get_trades(params$matchup_id, season_ = params$season)
 } else {
   df_trades <-
     read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv')) %>%
@@ -402,7 +396,7 @@ team_points <-
 team_points <- 
   team_points %>% 
   mutate("adj_pts" = case_when(
-    matchup_id == 1 ~ total_points * 7/11,
+    matchup_id == 1 ~ total_points * 7/5,
     matchup_id == 14 ~ total_points * 7/10,
     matchup_id > 21 ~ total_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ total_points,
@@ -426,7 +420,7 @@ team_points <-
     T ~ pitching_points)) %>% 
   
   mutate("adj_sp_pts" = case_when(
-    matchup_id == 1 ~ sp_points * 7/11,
+    matchup_id == 1 ~ sp_points * 7/5,
     matchup_id == 14 ~ sp_points * 7/10,
     matchup_id > 21 ~ sp_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ sp_points,
@@ -435,7 +429,7 @@ team_points <-
     T ~ sp_points)) %>% 
   
   mutate("adj_rp_pts" = case_when(
-    matchup_id == 1 ~ rp_points * 7/11,
+    matchup_id == 1 ~ rp_points * 7/5,
     matchup_id == 14 ~ rp_points * 7/10,
     matchup_id > 21 ~ rp_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ rp_points,
@@ -489,56 +483,83 @@ team_points <-
 
 
 ### Batter points per game
-batter_ppg <- 
-  batter_points %>% 
-  filter(matchup_id <= params$matchup_id) %>%
-  filter(matchup_id <= reg_season) %>% 
-  filter(!is.na(n_games)) %>% 
-  inner_join(select(teams, team_id, team)) %>% 
-  group_by(team) %>% 
-  summarise("batting_ppg" = sum(n_points)/sum(n_games),
-            'n_games' = sum(n_games),
-            'total' = sum(n_points)) %>% 
-  arrange(desc(batting_ppg)) 
-
-### rp points per game
-rp_ppg <- 
-  rp_points %>% 
-  filter(matchup_id <= params$matchup_id) %>% 
-  filter(matchup_id <= reg_season) %>% 
-  filter(!is.na(n_games)) %>% 
-  inner_join(select(teams, team_id, team)) %>% 
-  group_by(team) %>% 
-  summarise("rp_ppg" = sum(n_points)/sum(n_games),
-            'n_games' = sum(n_games),
-            'total' = sum(n_points)) %>% 
-  arrange(desc(rp_ppg)) 
-
-### SP Points Per Game
-sp_ppg <- 
-  sp_points %>% 
-  filter(matchup_id <= params$matchup_id) %>% 
-  filter(matchup_id <= reg_season) %>% 
-  filter(!is.na(n_games)) %>% 
-  inner_join(select(teams, team_id, team)) %>% 
-  group_by(team) %>% 
-  summarise("sp_ppg" = sum(n_points)/sum(n_games),
-            'n_games' = sum(n_games),
-            'total' = sum(n_points)) %>% 
-  arrange(desc(sp_ppg)) 
-
-### SP Points Per Game
-qs_pct <- 
-  sp_points %>% 
-  filter(matchup_id <= params$matchup_id) %>% 
-  filter(matchup_id <= reg_season) %>% 
-  filter(!is.na(n_games)) %>% 
-  inner_join(select(teams, team_id, team)) %>% 
-  group_by(team) %>% 
-  summarise("qs_pct" = sum(n_qs)/sum(n_games),
-            'n_games' = sum(n_games),
-            'n_qs' = sum(n_qs)) %>% 
-  arrange(desc(qs_pct)) 
+if(period > 1) {
+  batter_ppg <- 
+    batter_points %>% 
+    filter(matchup_id <= params$matchup_id) %>%
+    filter(matchup_id <= reg_season) %>% 
+    filter(!is.na(n_games)) %>% 
+    inner_join(select(teams, team_id, team)) %>% 
+    group_by(team) %>% 
+    summarise("batting_ppg" = sum(n_points)/sum(n_games),
+              'n_games' = sum(n_games),
+              'total' = sum(n_points)) %>% 
+    arrange(desc(batting_ppg)) 
+  
+  ### rp points per game
+  rp_ppg <- 
+    rp_points %>% 
+    filter(matchup_id <= params$matchup_id) %>% 
+    filter(matchup_id <= reg_season) %>% 
+    filter(!is.na(n_games)) %>% 
+    inner_join(select(teams, team_id, team)) %>% 
+    group_by(team) %>% 
+    summarise("rp_ppg" = sum(n_points)/sum(n_games),
+              'n_games' = sum(n_games),
+              'total' = sum(n_points)) %>% 
+    arrange(desc(rp_ppg)) 
+  
+  ### SP Points Per Game
+  sp_ppg <- 
+    sp_points %>% 
+    filter(matchup_id <= params$matchup_id) %>% 
+    filter(matchup_id <= reg_season) %>% 
+    filter(!is.na(n_games)) %>% 
+    inner_join(select(teams, team_id, team)) %>% 
+    group_by(team) %>% 
+    summarise("sp_ppg" = sum(n_points)/sum(n_games),
+              'n_games' = sum(n_games),
+              'total' = sum(n_points)) %>% 
+    arrange(desc(sp_ppg)) 
+  
+  ### SP Points Per Game
+  qs_pct <- 
+    sp_points %>% 
+    filter(matchup_id <= params$matchup_id) %>% 
+    filter(matchup_id <= reg_season) %>% 
+    filter(!is.na(n_games)) %>% 
+    inner_join(select(teams, team_id, team)) %>% 
+    group_by(team) %>% 
+    summarise("qs_pct" = sum(n_qs)/sum(n_games),
+              'n_games' = sum(n_games),
+              'n_qs' = sum(n_qs)) %>% 
+    arrange(desc(qs_pct)) 
+} else {
+  batter_ppg <- 
+    tibble('team' = teams$team,
+           'n_games' = 0,
+           'total' = 0,
+           'batting_ppg' = 0)
+  
+ sp_ppg <- 
+    tibble('team' = teams$team,
+           'n_games' = 0,
+           'total' = 0,
+           'sp_ppg' = 0)
+  
+  rp_ppg <- 
+    tibble('team' = teams$team,
+           'n_games' = 0,
+           'total' = 0,
+           'rp_ppg' = 0)
+  
+  qs_pct <- 
+    tibble('team' = teams$team,
+           'n_games' = 0,
+           'n_qs' = 0,
+           'qs_pct' = 0)
+  
+}
 
 
 ### Exp Record
@@ -565,15 +586,16 @@ if(params$matchup_id > 1) {
 } else {
   exp_standings <- 
     team_points %>% 
-    filter(matchup_id <= min(reg_season+1, (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id)) %>% 
+    # filter(matchup_id <= min(reg_season+1, (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12) + params$matchup_id)) %>% 
+    filter(matchup_id <= params$matchup_id) %>% 
     group_by(team) %>% 
     summarise(
-      "win_pct" = mean(total_points > total_points_opp, na.rm = T) + 0.5 * mean(total_points == total_points_opp, na.rm = T),
-      "exp_win_pct" = mean((12 - overall_rank)/11, na.rm = T),
-      'win' = sum(total_points > total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
-      'loss' = sum(total_points < total_points_opp, na.rm = T) + 0.5 * sum(total_points == total_points_opp, na.rm = T),
-      "exp_win" = sum((12 - overall_rank)/11, na.rm = T),
-      "exp_loss" = sum(1 - (12 - overall_rank)/11, na.rm = T)) %>% 
+      "win_pct" = 0.5,
+      "exp_win_pct" = 0.5,
+      'win' = 0,
+      'loss' = 0,
+      "exp_win" = 0,
+      "exp_loss" = 0) %>% 
     inner_join(select(teams, team, division_id, logo)) %>% 
     inner_join(total_team_points) %>% 
     left_join(batter_ppg %>% select(-n_games, -total)) %>% 
@@ -617,7 +639,7 @@ df_wp <-
   plot_wp(params$season, params$matchup_id, plot = F, all = hour(Sys.time()) > 12) 
 
 write_csv(df_wp, glue('data/win_prob/{params$season}/week_{params$matchup_id}.csv'))
-if(params$matchup_id> 1) {
+if(params$matchup_id > 1) {
   df_wp_old <- 
     plot_wp(params$season, params$matchup_id, plot = F, all = T)
   write_csv(df_wp_old, glue('data/win_prob/{params$season}/week_{params$matchup_id - 1}.csv'))
@@ -648,7 +670,7 @@ if(params$matchup_id > 1) {
   team_sigmas[is.na(team_sigmas)] <- sigma
 } else {
   tmp <- 
-    read_csv('data/stats/2022/schedule_2022.csv') %>% 
+    read_csv('data/stats/2023/schedule_2023.csv') %>% 
     filter(matchup_id %in% c(2:13, 15:20))
   
   mu <-  mean(c(tmp$home_total_points, tmp$away_total_points, na.rm = T))

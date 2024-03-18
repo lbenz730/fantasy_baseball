@@ -1,0 +1,91 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Blasphemous Hot Takes,The West Bank Occupiers,0,14,0,11,11,0,0.7343070052457304,0.4746598257190957
+Blasphemous Hot Takes,The West Bank Occupiers,1,13,-35,11,9,2,0.4320771856469646,0.26524175338153144
+Blasphemous Hot Takes,The West Bank Occupiers,2,12,0,10,7,3,0.640643176730028,0.555501512492399
+Blasphemous Hot Takes,The West Bank Occupiers,3,11,-11.5,10,6,4,0.609546052386721,0.46459863273290697
+Blasphemous Hot Takes,The West Bank Occupiers,4,10,-13,10,6,4,0.5838837829256468,0.4571956116215187
+Blasphemous Hot Takes,The West Bank Occupiers,5,9,0,7,5,2,0.6358912569974099,0.5514215937450183
+Blasphemous Hot Takes,The West Bank Occupiers,6,8,22,6,5,1,0.7186649068748656,0.7261402000549176
+Blasphemous Hot Takes,The West Bank Occupiers,7,7,9,5,2,3,0.6995470490346486,0.6361037030033797
+Blasphemous Hot Takes,The West Bank Occupiers,8,6,9,5,2,3,0.6995470490346486,0.6361037030033797
+Blasphemous Hot Takes,The West Bank Occupiers,9,5,9,5,2,3,0.6997230430732304,0.6361037030033797
+Blasphemous Hot Takes,The West Bank Occupiers,10,4,9,5,2,3,0.563988309730106,0.6361037030033797
+Blasphemous Hot Takes,The West Bank Occupiers,11,3,9,5,2,3,0.5646344598422581,0.6361037030033797
+Blasphemous Hot Takes,The West Bank Occupiers,12,2,44.5,3,2,1,0.8843478860820868,0.866113539413068
+Blasphemous Hot Takes,The West Bank Occupiers,13,1,20.5,2,1,1,0.7734328024965351,0.7141584068065
+Blasphemous Hot Takes,The West Bank Occupiers,14,0,32.5,0,0,0,1,0.7769930242000459
+The Novaks,Cron's Disease,0,14,0,11,11,0,0.6000297796700013,0.4746598257190957
+The Novaks,Cron's Disease,1,13,-44.5,10,9,1,0.3644110066379667,0.15963793182781294
+The Novaks,Cron's Disease,2,12,-39.5,9,9,0,0.3591239645076171,0.14908153059277132
+The Novaks,Cron's Disease,3,11,-95.5,8,7,1,0.19695107589447589,0.02454112185023328
+The Novaks,Cron's Disease,4,10,-95,7,6,1,0.1857929610765251,0.02502008627047218
+The Novaks,Cron's Disease,5,9,-66.5,5,6,-1,0.2261666907400703,0.09809011808875101
+The Novaks,Cron's Disease,6,8,-94,4,4,0,0.08602740218596062,0.017895899648509912
+The Novaks,Cron's Disease,7,7,-106,3,3,0,0.0817105526475509,0.010949326960847824
+The Novaks,Cron's Disease,8,6,-106,3,3,0,0.08032351136191684,0.010949326960847824
+The Novaks,Cron's Disease,9,5,-106,3,3,0,0.0673326344041427,0.010949326960847824
+The Novaks,Cron's Disease,10,4,-106,3,3,0,0.03569280143811305,0.010949326960847824
+The Novaks,Cron's Disease,11,3,-106,3,3,0,0.02960103206320603,0.010949326960847824
+The Novaks,Cron's Disease,12,2,-96,2,3,-1,0.03933319740660599,0.0438064570123374
+The Novaks,Cron's Disease,13,1,-64.5,1,1,0,0.047752930565788956,0.058412617693885366
+The Novaks,Cron's Disease,14,0,-57,0,0,0,0,0.07809101086602462
+Crown Heights Crusaders,The Traveling Secretaries,0,14,0,11,11,0,0.592704857410186,0.4746598257190957
+Crown Heights Crusaders,The Traveling Secretaries,1,13,12,9,11,-2,0.4960421599079632,0.48755092185237886
+Crown Heights Crusaders,The Traveling Secretaries,2,12,17.5,8,10,-2,0.5179973290511846,0.5404678577572648
+Crown Heights Crusaders,The Traveling Secretaries,3,11,64.5,6,10,-4,0.8197003175498807,0.7790979603570412
+Crown Heights Crusaders,The Traveling Secretaries,4,10,59,6,7,-1,0.7890521774127184,0.8114374796050065
+Crown Heights Crusaders,The Traveling Secretaries,5,9,74.5,5,5,0,0.9071211613816832,0.9522307339349223
+Crown Heights Crusaders,The Traveling Secretaries,6,8,122,4,5,-1,0.9482877636646083,0.9646240854187601
+Crown Heights Crusaders,The Traveling Secretaries,7,7,118.5,3,4,-1,0.9487445917156572,0.960952022589588
+Crown Heights Crusaders,The Traveling Secretaries,8,6,118.5,3,4,-1,0.9583211114433641,0.960952022589588
+Crown Heights Crusaders,The Traveling Secretaries,9,5,118.5,3,4,-1,0.9645144482878083,0.960952022589588
+Crown Heights Crusaders,The Traveling Secretaries,10,4,118.5,3,4,-1,0.9660850962427492,0.960952022589588
+Crown Heights Crusaders,The Traveling Secretaries,11,3,118.5,3,4,-1,0.9708681246069306,0.960952022589588
+Crown Heights Crusaders,The Traveling Secretaries,12,2,87.5,3,2,1,0.9756873631219638,0.9726561307522451
+Crown Heights Crusaders,The Traveling Secretaries,13,1,114,0,0,0,0.9876197706596073,0.9903662309919448
+Crown Heights Crusaders,The Traveling Secretaries,14,0,84.5,0,0,0,1,0.9679446190404235
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,0,14,0,11,11,0,0.40601576319251326,0.4746598257190957
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,1,13,-5,11,10,1,0.3825510998686391,0.4762305145071727
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,2,12,-27,11,9,2,0.2841520574486185,0.32326056644047424
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,3,11,-24,9,8,1,0.2682032269533858,0.2997880849863499
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,4,10,-11.5,6,7,-1,0.344261881545869,0.3528002441401659
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,5,9,-23.5,6,5,1,0.25899615794594044,0.3039650284935414
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,6,8,-26,4,4,0,0.23446242236921583,0.2348385934525486
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,7,7,-51.5,4,1,3,0.15571300947828443,0.15482215926994436
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,8,6,-51.5,4,1,3,0.15571300947828443,0.15482215926994436
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,9,5,-51.5,4,1,3,0.15553399035496862,0.15482215926994436
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,10,4,-51.5,4,1,3,0.20048223683400304,0.15482215926994436
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,11,3,-51.5,4,1,3,0.1989143044666782,0.15482215926994436
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,12,2,-28.5,2,0,2,0.287892864451417,0.31188077039328477
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,13,1,-13,1,0,1,0.36182902705244613,0.3983682738247854
+It's Gonna Be Gley,Mt. Everest Taquito Farmers,14,0,41.5,0,0,0,1,0.8350686667546856
+Hader Better Faster Stronger,Ketel Bells,0,14,0,11,11,0,0.5508488452728197,0.4746598257190957
+Hader Better Faster Stronger,Ketel Bells,1,13,-2,9,10,-1,0.4936501917444506,0.4186450198451794
+Hader Better Faster Stronger,Ketel Bells,2,12,6.5,8,9,-1,0.5291990632736063,0.4802027943529794
+Hader Better Faster Stronger,Ketel Bells,3,11,31.5,7,8,-1,0.5556184977961849,0.6577852876117949
+Hader Better Faster Stronger,Ketel Bells,4,10,46,6,7,-1,0.7388184182092574,0.7461890103374548
+Hader Better Faster Stronger,Ketel Bells,5,9,6,4,5,-1,0.5263127930005067,0.4765463113302156
+Hader Better Faster Stronger,Ketel Bells,6,8,26.5,3,4,-1,0.6295375971695384,0.6240809176608169
+Hader Better Faster Stronger,Ketel Bells,7,7,11,2,4,-2,0.4797507456677801,0.4779248501729623
+Hader Better Faster Stronger,Ketel Bells,8,6,11,2,4,-2,0.4799741426843054,0.4779248501729623
+Hader Better Faster Stronger,Ketel Bells,9,5,11,2,4,-2,0.4799741426843054,0.4779248501729623
+Hader Better Faster Stronger,Ketel Bells,10,4,11,2,4,-2,0.4602415648835546,0.4779248501729623
+Hader Better Faster Stronger,Ketel Bells,11,3,11,2,4,-2,0.4608838612573988,0.4779248501729623
+Hader Better Faster Stronger,Ketel Bells,12,2,-23,1,0,1,0.2873844357415076,0.30817455573038216
+Hader Better Faster Stronger,Ketel Bells,13,1,-49,1,0,1,0.10764453241297366,0.1371336374942456
+Hader Better Faster Stronger,Ketel Bells,14,0,-89.5,0,0,0,0,0.021494117858003554
+Framber Valdez Oil Spill,All That is Wright,0,14,0,11,11,0,0.4630473042472369,0.4746598257190957
+Framber Valdez Oil Spill,All That is Wright,1,13,29,10,11,-1,0.5392790520191306,0.6411072512468046
+Framber Valdez Oil Spill,All That is Wright,2,12,65,8,11,-3,0.8182117145627139,0.8340206541706208
+Framber Valdez Oil Spill,All That is Wright,3,11,48,8,11,-3,0.6497554071556347,0.7395030139103135
+Framber Valdez Oil Spill,All That is Wright,4,10,42.5,8,10,-2,0.6276837650517468,0.7551021984068568
+Framber Valdez Oil Spill,All That is Wright,5,9,-21.5,8,7,1,0.338033488384004,0.32099400503200576
+Framber Valdez Oil Spill,All That is Wright,6,8,41,4,5,-1,0.6919945422414019,0.7174514705493817
+Framber Valdez Oil Spill,All That is Wright,7,7,53.5,3,5,-2,0.767005147399273,0.8249249803350623
+Framber Valdez Oil Spill,All That is Wright,8,6,53.5,3,5,-2,0.767005147399273,0.8249249803350623
+Framber Valdez Oil Spill,All That is Wright,9,5,53.5,3,5,-2,0.767005147399273,0.8249249803350623
+Framber Valdez Oil Spill,All That is Wright,10,4,53.5,3,5,-2,0.7695808822530175,0.8249249803350623
+Framber Valdez Oil Spill,All That is Wright,11,3,53.5,3,5,-2,0.7776099163907433,0.8249249803350623
+Framber Valdez Oil Spill,All That is Wright,12,2,29.5,2,4,-2,0.6424284563671436,0.6513193193672436
+Framber Valdez Oil Spill,All That is Wright,13,1,2,0,1,-1,0.4392339820752763,0.4474174146169192
+Framber Valdez Oil Spill,All That is Wright,14,0,-42,0,0,0,0,0.1363851291505602
