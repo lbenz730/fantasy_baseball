@@ -1,5 +1,4 @@
 player,player_id,team_id,stint,start,end,rp_eligible,transaction_type,n_points,n_games,w_bat,w_sp,w_rp,ppg
-A.J. Puk,36201,4,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Aaron Civale,40934,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Aaron Judge,33192,13,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Aaron Nola,33709,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
@@ -35,6 +34,7 @@ Brandon Nimmo,32159,5,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Brandon Pfaadt,4721302,6,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Braxton Garrett,40971,5,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Brayan Bello,4720856,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
+Brendan Donovan,41773,6,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Brendan Rodgers,35073,2,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Brent Rooker,40926,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Bryan Abreu,41208,4,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
@@ -73,6 +73,7 @@ Corbin Carroll,42404,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Corey Seager,32691,6,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Craig Kimbrel,30653,8,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Cristian Javier,41261,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
+DJ LeMahieu,30765,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 DL Hall,41018,13,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Dansby Swanson,34895,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Daulton Varsho,40963,5,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
@@ -87,6 +88,7 @@ Edwin Diaz,35394,4,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Elly De La Cruz,4917694,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Eloy Jimenez,33867,6,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Emmanuel Clase,41743,8,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
+Erik Swanson,36013,9,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Esteury Ruiz,39680,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Eugenio Suarez,32367,7,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Eury Perez,4917854,2,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
@@ -123,6 +125,7 @@ J.T. Realmuto,32177,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jack Suwinski,36754,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jackson Chourio,4917869,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jackson Holliday,5080633,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
+Jackson Merrill,4872691,4,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jake Burger,39882,6,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jake Cronenworth,36364,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 James Outman,41802,7,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
@@ -133,12 +136,14 @@ Jeimer Candelario,32531,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jeremy Pena,41273,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jesus Luzardo,39667,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jhoan Duran,41109,9,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
+Joe Kelly,31992,12,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Joe Musgrove,34848,2,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Joe Ryan,42450,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Joel Payamps,40021,6,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Joey Meneses,34534,5,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 John Means,39948,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jon Gray,33203,13,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
+Jonah Heim,33842,11,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jonathan India,41171,13,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jordan Montgomery,38173,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jordan Romano,36380,14,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
@@ -214,6 +219,7 @@ Merrill Kelly,32968,11,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Michael Harris II,42470,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Michael King,40429,2,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Mike Trout,30836,2,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
+Mitch Haniger,32771,7,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Mitch Keller,33722,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Mookie Betts,33039,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Nathan Eovaldi,31174,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
@@ -285,6 +291,7 @@ Will Smith,38309,6,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 William Contreras,39895,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Willson Contreras,32532,13,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Willy Adames,33675,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
+Wilmer Flores,30627,2,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Wyatt Langford,4719324,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Xander Bogaerts,31606,7,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Yainer Diaz,4781491,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
