@@ -6,9 +6,11 @@ library(here)
 source(here('models/build_training_set.R'))
 
 set.seed(212)
-df <- bind_rows(build_train_set(2021), 
-                build_train_set(2020),
-                build_train_set(2022))
+df <- bind_rows(build_train_set(2020, augment = T), 
+                build_train_set(2021, augment = T),
+                build_train_set(2022, augment = T),
+                build_train_set(2023, augment = T))
+                
 
 covariates <- c('score_diff', 
                 'days_left',
@@ -42,9 +44,8 @@ preprocessing_recipe <-
 write_rds(preprocessing_recipe, here('models/recipe.rds'))
 
 ### CV Folds
-### One fold per week
 cv_folds <- 
-  create_folds(y = df$matchup_id,
+  create_folds(y = paste0(df$season, '-', df$matchup_id),
                k = 10,
                type = "grouped",
                invert = TRUE)
@@ -58,7 +59,7 @@ xgb_grid <-
     learn_rate(range = c(-4, -1), trans = log10_trans()),
     loss_reduction(),
     sample_size = sample_prop(),
-    size = 100) %>%
+    size = 1000) %>%
   mutate('mtry' = mtry/ncol(df)) %>%
   rename('eta'= learn_rate,
          'gamma' = loss_reduction,
@@ -95,7 +96,7 @@ run_cv <- function(param_set) {
       folds = cv_folds,
       metrics = list("logloss"),
       early_stopping_rounds = 50,
-      verbose = F)
+      verbose = T)
   
   # bundle up the results together for returning
   output <- params
@@ -108,13 +109,14 @@ run_cv <- function(param_set) {
 }
 
 ### Train The Model
-n <- nrow(xgb_grid)
-df_cv <- 
-  map_dfr(1:n, ~{
-    cat('Combo:', .x, 'of', n, '\n')
-    run_cv(dplyr::slice(xgb_grid, .x))
-  })
+# n <- nrow(xgb_grid)
+# df_cv <- 
+#   map_dfr(1:n, ~{
+#     cat('Combo:', .x, 'of', n, '\n')
+#     run_cv(dplyr::slice(xgb_grid, .x))
+#   })
 
+df_cv <- read_csv('models/xgb_cv_results.csv')
 
 best_params <- 
   df_cv %>% 

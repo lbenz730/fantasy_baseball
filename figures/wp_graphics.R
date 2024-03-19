@@ -41,9 +41,9 @@ plot_wp <- function(season, week, plot = T, all = F) {
   df <- 
     df %>% 
     mutate('weight_lr' = case_when(day_of_matchup == 0 ~ 0,
-                                   days_left <= 4 & abs(win_prob_lr - 0.5) - abs(win_prob - 0.5) < -0.2 ~ 0.9,
-                                   days_left <= 2 & abs(start_advantage) <= 2 ~ 0.67,
-                                   T ~ 0.33)) %>% 
+                                   days_left <= 4 & abs(win_prob_lr - 0.5) - abs(win_prob - 0.5) < -0.2 ~ 0.5,
+                                   days_left <= 2 & abs(start_advantage) <= 2 ~ 0.25,
+                                   T ~ 0.2)) %>% 
     mutate('win_prob' = (1-weight_lr) * win_prob + weight_lr * win_prob_lr)
   
   

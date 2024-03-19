@@ -2,12 +2,45 @@ library(tidyverse)
 library(glue)
 library(here)
 
-build_train_set <- function(season) {
+build_train_set <- function(season, augment = F) {
   ### Read in Data set 
   df_schedule <- read_csv(here(glue('data/stats/{season}/schedule_{season}.csv')))
   df_stats <- read_csv(here(glue('data/stats/{season}/daily_stats_{season}.csv')))
   df_teams <- read_csv(here(glue('data/stats/{season}/teams_{season}.csv')))
   df_start <- read_csv(here('data/df_start.csv'))
+  
+  if(augment) {
+    
+    df_scores <- 
+      bind_rows(
+        df_schedule %>% 
+          select(matchup_id, contains('home')) %>% 
+          set_names(c('matchup_id', 'team_id', 'total_points', 'batting_points', 'pitching_points', 'team')),
+        
+        df_schedule %>% 
+          select(matchup_id, contains('away')) %>% 
+          set_names(c('matchup_id', 'team_id', 'total_points', 'batting_points', 'pitching_points', 'team'))
+      )
+    
+    df_augment <- 
+      crossing('matchup_id' = 1:max(df_schedule$matchup_id),
+               'home_team_id' = unique(df_scores$team_id),
+               'away_team_id' = unique(df_scores$team_id)) %>% 
+      filter(home_team_id != away_team_id)
+    
+    df_schedule <- 
+      df_augment %>% 
+      inner_join(df_scores %>% 
+                   set_names(c('matchup_id', 'team_id', 'home_total_points', 'home_batting_points', 'home_pitching_points', 'home_team')),
+                 by = c('matchup_id' = 'matchup_id','home_team_id' = 'team_id')) %>% 
+      inner_join(df_scores %>% 
+                   set_names(c('matchup_id', 'team_id', 'away_total_points', 'away_batting_points', 'away_pitching_points', 'away_team')),
+                 by = c('matchup_id' = 'matchup_id','away_team_id' = 'team_id')) 
+    
+    
+  }
+  
+  
   df_rp_penalty <- 
     read_csv(here('data/red_flags/rp_penalties.csv')) %>% 
     left_join(df_teams, by = 'team') %>% 
@@ -110,5 +143,9 @@ build_train_set <- function(season) {
   df_train$points_per_bat_spread[df_train$days_left <= 4] <- 0
   df_train$points_per_day_spread[df_train$days_left <= 4] <- 0
   
+  df_train$season <- season
+  
   return(df_train)
 }
+
+
