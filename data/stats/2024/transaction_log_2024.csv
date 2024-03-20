@@ -93,7 +93,7 @@ Esteury Ruiz,39680,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Eugenio Suarez,32367,7,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Eury Perez,4917854,2,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Evan Carter,4917921,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
-Evan Phillips,37911,6,0,1,1,TRUE,Draft,0,1,0,0,1,0
+Evan Phillips,37911,6,0,1,1,TRUE,Draft,7,1,0,0,1,7
 Ezequiel Tovar,4905919,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Fernando Tatis Jr.,35983,12,0,1,1,FALSE,Draft,-0.5,1,1,0,0,-0.5
 Framber Valdez,36581,7,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
@@ -109,7 +109,7 @@ George Springer,32078,6,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Gerrit Cole,32081,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Giancarlo Stanton,30583,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Gleyber Torres,33804,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
-Graham Pauley,4622931,13,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
+Graham Pauley,4622931,13,0,1,1,FALSE,Draft,-0.5,1,1,0,0,-0.5
 Grayson Rodriguez,41196,14,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Griffin Canning,41065,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Gunnar Henderson,42507,11,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
@@ -138,7 +138,7 @@ Jeimer Candelario,32531,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jeremy Pena,41273,12,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jesus Luzardo,39667,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Jhoan Duran,41109,9,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
-Joe Kelly,31992,12,0,1,1,TRUE,Draft,2,1,0,0,1,2
+Joe Kelly,31992,12,0,1,1,TRUE,Draft,4,1,0,0,1,4
 Joe Musgrove,34848,2,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Joe Ryan,42450,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Joel Payamps,40021,6,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
@@ -302,7 +302,7 @@ Yennier Cano,35536,12,0,1,1,TRUE,Draft,0,0,NA,NA,NA,0
 Yordan Alvarez,36018,13,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Yoshinobu Yamamoto,4872587,1,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Yu Darvish,32055,4,0,1,1,FALSE,Draft,0,0,0,1,0,0
-Yuki Matsui,4142414,2,0,1,1,TRUE,Draft,2.5,1,0,0,1,2.5
+Yuki Matsui,4142414,2,0,1,1,TRUE,Draft,4.5,1,0,0,1,4.5
 Yusei Kikuchi,41415,7,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Zac Gallen,39910,8,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
 Zach Eflin,32804,9,0,1,1,FALSE,Draft,0,0,NA,NA,NA,0
