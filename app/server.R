@@ -660,37 +660,36 @@ shinyServer(function(input, output, session) {
                     ymin = '4', ymax = '6+'),
                 col = NA,
                 fill = 'red',
-                alpha = 0.01) +
+                alpha = 0.07) +
       geom_rect(aes(xmin = '< 3', xmax = '6.0',
                     ymin = '3', ymax = '4'),
                 col = NA,
                 fill = 'red',
-                alpha = 0.01) +
+                alpha = 0.07) +
       geom_rect(aes(xmin = '< 3', xmax = '5.0',
                     ymin = '0', ymax = '3'),
                 col = NA,
                 fill = 'red',
-                alpha = 0.01) +
+                alpha = 0.07) +
       
       geom_rect(aes(xmin = '5.0', xmax = '6.0',
                     ymin = '0', ymax = '3'),
                 col = 'orange',
                 fill = 'orange',
-                alpha = 0.01) +
+                alpha = 0.07) +
       geom_rect(aes(xmin = '6.0', xmax = 'CG',
                     ymin = '3', ymax = '4'),
                 col = 'orange',
                 fill = 'orange',
-                alpha = 0.01) +
+                alpha = 0.07) +
       geom_rect(aes(xmin = '6.0', xmax = 'CG',
                     ymin = '0', ymax = '3'),
                 col = 'seagreen',
                 fill = 'mediumspringgreen',
-                alpha = 0.01) +
-      
+                alpha = 0.07) +
       geom_label(aes(label = n, fill = start_type)) + 
       scale_x_discrete(drop = F) + 
-      scale_fill_manual(values = c('salmon', 'lightskyblue', 'violet', 'seagreen3', 'orange')) + 
+      scale_fill_manual(values = c('salmon', 'lightskyblue', 'orange',  'seagreen3', 'violet'), drop = F) + 
       theme(legend.position = 'bottom') + 
       labs(x = 'Innings Pitched',
            y = 'Earned Runs',

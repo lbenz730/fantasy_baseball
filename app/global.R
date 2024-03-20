@@ -57,7 +57,22 @@ df_daily <-
   read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
   select(team_id, player, player_id, in_lineup, scoring_period_id, matchup_id, points, played, relief, start, pitcher, batter, qs, relief_start)
 pitch_matrix <- 
-  read_csv(glue('data/stats/{params$season}/pitch_matrix.csv'))
+  read_csv(glue('data/stats/{params$season}/pitch_matrix.csv')) %>% 
+  mutate_at(vars(ip), ~as.character(.x)) %>% 
+  mutate(ip = case_when(ip == '4' ~ '4.0', 
+                        ip == '5' ~ '5.0',
+                        ip == '6' ~ '6.0',
+                        ip == '7' ~ '7.0',
+                        T ~ ip)) %>% 
+  mutate('ip' = factor(ip, levels = c('< 3', '3.0', '3.1', '3.2', '4.0', '4.1', '4.2', '5.0', '5.1', '5.2', '6.0', 
+                                      '6.1', '6.2', '7.0', '> 7', 'CG'))) %>% 
+  mutate('start_type' = case_when(ip == 'CG' ~ 'CG',
+                                  ip %in% c('6.0', '6.1', '6.2', '7.0', '> 7') & earned_runs %in% as.character(0:3) ~ 'QS',
+                                  ip == '5.2' & earned_runs %in% as.character(0:3) ~ 'Blue Balls',
+                                  ip %in% c('5.0', '5.1') & earned_runs %in% as.character(0:3) ~ 'QS Potential',
+                                  ip %in% c('6.0', '6.1', '6.2', '7.0', '> 7') & earned_runs %in% as.character(4) ~ 'QS Potential',
+                                  T ~ 'Bad Start')) %>% 
+  mutate('start_type' = factor(start_type, levels = c('Bad Start', 'Blue Balls', 'QS Potential', 'QS', 'CG')))
 df_log <- read_csv(glue('figures/top_performers/{params$season}/best_lineup/best_lineups.csv'))
 team_points <- read_csv(glue('data/stats/{params$season}/team_points.csv')) %>% 
   select(team_id, team, contains('adj'), matchup_id, -ends_with('opp'), -adj_sp_pts, -adj_rp_pts)

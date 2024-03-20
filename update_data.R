@@ -85,14 +85,16 @@ for(i in 1:max(reg_season, params$matchup_id)) {
            'home_team_id' = teamId,
            'home_total_points' = totalPoints) %>% 
     mutate("home_batting_points" = map_dbl(home$rosterForMatchupPeriod$entries, get_batting_points)) %>% 
-    mutate("home_pitching_points" = home_total_points - home_batting_points) 
+    mutate("home_pitching_points" = map_dbl(home$rosterForMatchupPeriod$entries, get_pitching_points)) %>% 
+    mutate('home_pitching_points' = ifelse(home_total_points == 0, home_pitching_points, home_total_points - home_batting_points))
   
   away_schedule_ <- 
     select(away, 
            'away_team_id' = teamId,
            'away_total_points' = totalPoints) %>% 
     mutate("away_batting_points" = map_dbl(away$rosterForMatchupPeriod$entries, get_batting_points)) %>% 
-    mutate("away_pitching_points" = away_total_points - away_batting_points) 
+    mutate("away_pitching_points" = map_dbl(away$rosterForMatchupPeriod$entries, get_pitching_points)) %>% 
+    mutate('away_pitching_points' = ifelse(away_total_points == 0, away_pitching_points, away_total_points - away_batting_points))
   
   
   batter_points_ <- 
@@ -353,9 +355,9 @@ df_rp_penalty <-
   filter(!start) %>%  ### for Javier Rule
   inner_join(select(teams, team, team_id)) %>% 
   ### Ryan Helsley Week 11 on IL Days 1-2 of matchip
-  filter(!(matchup_id == 11 & player == 'Ryan Helsley')) %>% 
-  filter(!(matchup_id == 12 & player == 'Jordan Hicks')) %>% 
-  filter(!(matchup_id == 19 & player == 'Hunter Brown')) %>% 
+  # filter(!(matchup_id == 11 & player == 'Ryan Helsley')) %>% 
+  # filter(!(matchup_id == 12 & player == 'Jordan Hicks')) %>% 
+  # filter(!(matchup_id == 19 & player == 'Hunter Brown')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
   group_by(team, matchup_id) %>% 
   arrange(scoring_period_id) %>% 
@@ -483,7 +485,7 @@ team_points <-
 
 
 ### Batter points per game
-if(period > 1) {
+if(period > 0) {
   batter_ppg <- 
     batter_points %>% 
     filter(matchup_id <= params$matchup_id) %>%

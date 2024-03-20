@@ -339,7 +339,7 @@ make_asg_graphics <- function(season = 2023, save = T) {
 }
 
 
-best_lineup <- function(season = 2023, week, save = T) {
+best_lineup <- function(season = 2024, week, save = T) {
   df_daily <- read_csv(glue('data/stats/{season}/daily_stats_{season}.csv'))
   teams <- read_csv(glue('data/stats/{season}/teams_{season}.csv'))
   

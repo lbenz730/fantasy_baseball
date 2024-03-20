@@ -15,6 +15,18 @@ get_batting_points <- function(row) {
   return(sum(row$playerPoolEntry$appliedStatTotal[!pitchers]))
 }
 
+get_pitching_points <- function(row) {
+  pitchers <- map_lgl(row$playerPoolEntry$player$eligibleSlots, ~(any(13:15 %in% .x)))
+  shohei_ix <- which(row$playerPoolEntry$player$fullName == 'Shohei Ohtani')
+  if(length(shohei_ix) > 0) {
+    shohei_stats <- row$playerPoolEntry$player$stats[[shohei_ix]] 
+    shohei_batting_points <- sum(shohei_stats$appliedStats %>% select(any_of(batting_points_ix)))
+    return(sum(row$playerPoolEntry$appliedStatTotal[pitchers]) - shohei_batting_points)
+  }
+  
+  return(sum(row$playerPoolEntry$appliedStatTotal[pitchers]))
+}
+
 rp_points_by_game <- function(roster, team_ix) {
   if(length(roster) == 0) {
     return(tibble('team_ix' = team_ix))
