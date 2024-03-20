@@ -300,6 +300,7 @@ shinyServer(function(input, output, session) {
     df_ps <- 
       pitch_stats %>% 
       mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
+      mutate_at(vars(everything()), ~replace(.x, .x == Inf, 0)) %>% 
       inner_join(teams, by = 'team_id') %>% 
       select(team, logo, 
              era, fip, k9, bb9, k_per_bb, hr9, 
