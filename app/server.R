@@ -333,7 +333,8 @@ shinyServer(function(input, output, session) {
                        
                        'qs' = mean(pitch_stats$qs),
                        'blue_balls' = mean(pitch_stats$blue_balls))) %>% 
-      mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0))
+      mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
+      mutate_at(vars(everything()), ~replace(.x, .x == Inf, 0))
     
     df_ps %>% 
       gt() %>% 

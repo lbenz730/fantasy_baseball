@@ -776,6 +776,7 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
   mutate('team' = case_when(team == 'Ketel of Fish' ~ 'Ketel Bells',
                             team == 'Don Julios' ~ 'The Greatest Stroman',
                             team == 'The Greatest Stroman' ~ 'It\'s Gonna Be Gley',
+                            team == 'It\'s Gonna Be Gley' ~ 'Takin\' Care of Rizzness',
                             T ~ team)) %>% 
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 

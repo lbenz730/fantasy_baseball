@@ -1,14 +1,14 @@
 team,win_pct,exp_win_pct,win,loss,exp_win,exp_loss,division_id,logo,total_points,total_adj_points,batting_points,pitching_points,sp_points,rp_points,adj_batting_pts,adj_pitching_pts,adj_pts,adj_sp_pts,adj_rp_pts,batting_ppg,rp_ppg,sp_ppg,qs_pct,rank
-Skubal Divers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/TzPHLqL.jpg,17.5,24.5,7.5,10,5.5,4.5,4.7727272727272725,6.363636363636363,24.5,7.7,6.3,1.25,4.5,4.25,0,1
-The Novaks,0.5,0.5,0,0,0,0,1,https://i.imgur.com/DPLqmOq.jpg,8.5,11.9,4.5,4,-3,7,2.8636363636363638,2.5454545454545454,11.9,-4.2,9.8,2.25,7,NA,NA,2
-Cron's Disease,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,6,8.4,7.5,-1.5,-1.5,0,4.7727272727272725,-0.9545454545454546,8.4,-2.1,0,1.875,NA,NA,NA,3
-The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,5,7,9,-4,-4,0,5.7272727272727275,-2.5454545454545454,7,-5.6,0,2.25,NA,NA,NA,4
-The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,4,5.6,5,-1,-1,0,3.1818181818181817,-0.6363636363636364,5.6,-1.4,0,2.5,NA,-10.5,0,5
-Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,3.5,4.9,10.5,-7,-11,4,6.681818181818182,-4.454545454545454,4.9,-15.4,5.6,1.75,4,NA,NA,6
-All That is Wright,0.5,0.5,0,0,0,0,1,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,2,2.8,3.5,-1.5,-1.5,0,2.227272727272727,-0.9545454545454546,2.8,-2.1,0,0.875,NA,NA,NA,7
-Hader Better Faster Stronger,0.5,0.5,0,0,0,0,1,https://imgur.com/d4sbJBf.png,2,2.8,2.5,-0.5,-0.5,0,1.5909090909090908,-0.3181818181818182,2.8,-0.7,0,1.25,NA,NA,NA,8
-Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,2,2.8,3.5,-1.5,-1.5,0,2.227272727272727,-0.9545454545454546,2.8,-2.1,0,1.75,NA,NA,NA,9
+Skubal Divers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/TzPHLqL.jpg,17.5,24.5,13.5,4,-4,8,8.590909090909092,2.5454545454545454,24.5,-5.6,11.2,2.25,2.6666666666666665,0.75,0,1
+The Novaks,0.5,0.5,0,0,0,0,1,https://i.imgur.com/DPLqmOq.jpg,8.5,11.9,9,-0.5,-8.5,8,5.7272727272727275,-0.3181818181818182,11.9,-11.9,11.2,4.5,4,NA,NA,2
+Cron's Disease,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,6,8.4,15.5,-9.5,-9.5,0,9.863636363636363,-6.045454545454546,8.4,-13.3,0,3.875,NA,NA,NA,3
+The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,5,7,11,-6,-6,0,7,-3.8181818181818183,7,-8.4,0,2.75,NA,NA,NA,4
+The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,4,5.6,21,-17,-17,0,13.363636363636363,-10.818181818181818,5.6,-23.8,0,10.5,NA,-10.5,0,5
+Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,3.5,4.9,22,-18.5,-30,11.5,14,-11.772727272727273,4.9,-42,16.1,3.6666666666666665,5.75,NA,NA,6
+All That is Wright,0.5,0.5,0,0,0,0,1,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,2,2.8,6.5,-4.5,-4.5,0,4.136363636363637,-2.8636363636363638,2.8,-6.3,0,1.625,NA,NA,NA,7
+Hader Better Faster Stronger,0.5,0.5,0,0,0,0,1,https://imgur.com/d4sbJBf.png,2,2.8,4,-2,-2,0,2.5454545454545454,-1.2727272727272727,2.8,-2.8,0,2,NA,NA,NA,8
+Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,2,2.8,11.5,-9.5,-9.5,0,7.318181818181818,-6.045454545454546,2.8,-13.3,0,5.75,NA,NA,NA,9
 Takin' Care of Rizzness,0.5,0.5,0,0,0,0,1,https://i.imgur.com/a0H4D9d.png,0,0,0,0,0,0,NA,NA,NA,NA,0,NA,NA,NA,NA,10
 The Traveling Secretaries,0.5,0.5,0,0,0,0,1,https://i.imgur.com/wll1Ubw.jpg,0,0,0,0,0,0,NA,NA,NA,NA,0,NA,NA,NA,NA,11
 Ketel Bells,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,-0.5,-0.7,-0.5,0,0,0,-0.3181818181818182,NA,-0.7,NA,0,-0.5,NA,NA,NA,12
-League Average,NA,NA,NA,NA,NA,NA,NA,NA,4.166666666666667,NA,4.416666666666667,-0.25,-1.5416666666666667,1.2916666666666667,NA,NA,NA,NA,1.8083333333333333,1.606060606060606,5.166666666666667,-0.6666666666666666,0,NA
+League Average,NA,NA,NA,NA,NA,NA,NA,NA,4.166666666666667,NA,9.458333333333334,-5.291666666666667,-7.583333333333333,2.2916666666666665,NA,NA,NA,NA,3.2083333333333335,3.4393939393939394,3.9285714285714284,-3,0,NA

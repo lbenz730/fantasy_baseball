@@ -1,10 +1,10 @@
 team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_points,sp_points,adj_pts,adj_batting_pts,adj_pitching_pts,adj_sp_pts,adj_rp_pts,team_id_opp,total_points_opp,batting_points_opp,pitching_points_opp,team_opp,rp_points_opp,sp_points_opp,adj_pts_opp,adj_batting_pts_opp,adj_pitching_pts_opp,adj_sp_pts_opp,adj_rp_pts_opp,overall_rank,batting_rank,pitching_rank
-1,4,5,-1,The Talmudic Tunnelers,1,1,0,-1,5.6,3.1818181818181817,-0.6363636363636364,-1.4,0,4,2,3.5,-1.5,All That is Wright,0,-1.5,2.8,2.227272727272727,-0.9545454545454546,-2.1,0,5,5,4
-2,17.5,7.5,10,Skubal Divers,1,2,4.5,5.5,24.5,4.7727272727272725,6.363636363636363,7.7,6.3,12,3.5,10.5,-7,Blasphemous Hot Takes,4,-11,4.9,6.681818181818182,-4.454545454545454,-15.4,5.6,1,3.5,1
-8,2,3.5,-1.5,Mt. Everest Taquito Farmers,1,3,0,-1.5,2.8,2.227272727272727,-0.9545454545454546,-2.1,0,6,8.5,4.5,4,The Novaks,7,-3,11.9,2.8636363636363638,2.5454545454545454,-4.2,9.8,8,7.5,6
-11,5,9,-4,The West Bank Occupiers,1,4,0,-4,7,5.7272727272727275,-2.5454545454545454,-5.6,0,5,NA,NA,NA,The Traveling Secretaries,0,NA,NA,NA,NA,NA,0,4,2,8
-14,2,2.5,-0.5,Hader Better Faster Stronger,1,5,0,-0.5,2.8,1.5909090909090908,-0.3181818181818182,-0.7,0,9,NA,NA,NA,Takin' Care of Rizzness,0,NA,NA,NA,NA,NA,0,8,9,3
-13,-0.5,-0.5,NA,Ketel Bells,1,6,0,NA,-0.7,-0.3181818181818182,NA,NA,0,7,6,7.5,-1.5,Cron's Disease,0,-1.5,8.4,4.7727272727272725,-0.9545454545454546,-2.1,0,10,10,10
+1,4,21,-17,The Talmudic Tunnelers,1,1,0,-17,5.6,13.363636363636363,-10.818181818181818,-23.8,0,4,2,6.5,-4.5,All That is Wright,0,-4.5,2.8,4.136363636363637,-2.8636363636363638,-6.3,0,5,2,8
+2,17.5,13.5,4,Skubal Divers,1,2,8,-4,24.5,8.590909090909092,2.5454545454545454,-5.6,11.2,12,3.5,22,-18.5,Blasphemous Hot Takes,11.5,-30,4.9,14,-11.772727272727273,-42,16.1,1,4,1
+8,2,11.5,-9.5,Mt. Everest Taquito Farmers,1,3,0,-9.5,2.8,7.318181818181818,-6.045454545454546,-13.3,0,6,8.5,9,-0.5,The Novaks,8,-8.5,11.9,5.7272727272727275,-0.3181818181818182,-11.9,11.2,8,5,6.5
+11,5,11,-6,The West Bank Occupiers,1,4,0,-6,7,7,-3.8181818181818183,-8.4,0,5,NA,NA,NA,The Traveling Secretaries,0,NA,NA,NA,NA,NA,0,4,6,5
+14,2,4,-2,Hader Better Faster Stronger,1,5,0,-2,2.8,2.5454545454545454,-1.2727272727272727,-2.8,0,9,NA,NA,NA,Takin' Care of Rizzness,0,NA,NA,NA,NA,NA,0,8,9,3
+13,-0.5,-0.5,NA,Ketel Bells,1,6,0,NA,-0.7,-0.3181818181818182,NA,NA,0,7,6,15.5,-9.5,Cron's Disease,0,-9.5,8.4,9.863636363636363,-6.045454545454546,-13.3,0,10,10,10
 4,NA,NA,NA,All That is Wright,2,7,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,1,1,1
 6,NA,NA,NA,The Novaks,2,8,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,2,9,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,3,3,3
@@ -125,12 +125,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 13,NA,NA,NA,Ketel Bells,21,124,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,4,4,4
 7,NA,NA,NA,Cron's Disease,21,125,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,5,5,5
 9,NA,NA,NA,Takin' Care of Rizzness,21,126,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,6,6,6
-4,2,3.5,-1.5,All That is Wright,1,1,0,-1.5,2.8,2.227272727272727,-0.9545454545454546,-2.1,0,1,4,5,-1,The Talmudic Tunnelers,0,-1,5.6,3.1818181818181817,-0.6363636363636364,-1.4,0,8,7.5,6
-12,3.5,10.5,-7,Blasphemous Hot Takes,1,2,4,-11,4.9,6.681818181818182,-4.454545454545454,-15.4,5.6,2,17.5,7.5,10,Skubal Divers,4.5,5.5,24.5,4.7727272727272725,6.363636363636363,7.7,6.3,6,1,9
-6,8.5,4.5,4,The Novaks,1,3,7,-3,11.9,2.8636363636363638,2.5454545454545454,-4.2,9.8,8,2,3.5,-1.5,Mt. Everest Taquito Farmers,0,-1.5,2.8,2.227272727272727,-0.9545454545454546,-2.1,0,2,6,2
-5,NA,NA,NA,The Traveling Secretaries,1,4,0,NA,NA,NA,NA,NA,0,11,5,9,-4,The West Bank Occupiers,0,-4,7,5.7272727272727275,-2.5454545454545454,-5.6,0,11,11,11
-9,NA,NA,NA,Takin' Care of Rizzness,1,5,0,NA,NA,NA,NA,NA,0,14,2,2.5,-0.5,Hader Better Faster Stronger,0,-0.5,2.8,1.5909090909090908,-0.3181818181818182,-0.7,0,12,12,12
-7,6,7.5,-1.5,Cron's Disease,1,6,0,-1.5,8.4,4.7727272727272725,-0.9545454545454546,-2.1,0,13,-0.5,-0.5,NA,Ketel Bells,0,NA,-0.7,-0.3181818181818182,NA,NA,0,3,3.5,6
+4,2,6.5,-4.5,All That is Wright,1,1,0,-4.5,2.8,4.136363636363637,-2.8636363636363638,-6.3,0,1,4,21,-17,The Talmudic Tunnelers,0,-17,5.6,13.363636363636363,-10.818181818181818,-23.8,0,8,8,4
+12,3.5,22,-18.5,Blasphemous Hot Takes,1,2,11.5,-30,4.9,14,-11.772727272727273,-42,16.1,2,17.5,13.5,4,Skubal Divers,8,-4,24.5,8.590909090909092,2.5454545454545454,-5.6,11.2,6,1,9
+6,8.5,9,-0.5,The Novaks,1,3,8,-8.5,11.9,5.7272727272727275,-0.3181818181818182,-11.9,11.2,8,2,11.5,-9.5,Mt. Everest Taquito Farmers,0,-9.5,2.8,7.318181818181818,-6.045454545454546,-13.3,0,2,7,2
+5,NA,NA,NA,The Traveling Secretaries,1,4,0,NA,NA,NA,NA,NA,0,11,5,11,-6,The West Bank Occupiers,0,-6,7,7,-3.8181818181818183,-8.4,0,11,11,11
+9,NA,NA,NA,Takin' Care of Rizzness,1,5,0,NA,NA,NA,NA,NA,0,14,2,4,-2,Hader Better Faster Stronger,0,-2,2.8,2.5454545454545454,-1.2727272727272727,-2.8,0,12,12,12
+7,6,15.5,-9.5,Cron's Disease,1,6,0,-9.5,8.4,9.863636363636363,-6.045454545454546,-13.3,0,13,-0.5,-0.5,NA,Ketel Bells,0,NA,-0.7,-0.3181818181818182,NA,NA,0,3,3,6.5
 12,NA,NA,NA,Blasphemous Hot Takes,2,7,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 1,NA,NA,NA,The Talmudic Tunnelers,2,8,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,8,8,8
 2,NA,NA,NA,Skubal Divers,2,9,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,9,9,9

@@ -1,16 +1,17 @@
 team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 1,1,Yoshinobu Yamamoto,4872587,NA,-10.5,1
-1,1,Mookie Betts,33039,2,5,1
-2,1,Joe Musgrove,34848,NA,-1,2
+1,1,Mookie Betts,33039,2,21,1
+2,1,Joe Musgrove,34848,NA,-8,2
 2,1,Yuki Matsui,4142414,NA,4.5,2
 2,1,Tyler Glasnow,33190,NA,9.5,2
-2,1,Max Muncy,33303,2,2.5,2
-2,1,Luis Campusano,40521,2,4,2
-2,1,Jurickson Profar,31117,2,1,2
-3,1,Manny Machado,31097,2,3.5,8
-4,1,Ha-Seong Kim,4089862,2,2,11
+2,1,Max Muncy,33303,2,3.5,2
+2,1,Luis Campusano,40521,2,8,2
+2,1,Michael King,40429,NA,3.5,2
+2,1,Jurickson Profar,31117,2,2,2
+3,1,Manny Machado,31097,2,11.5,8
+4,1,Ha-Seong Kim,4089862,2,4,11
 4,1,Shohei Ohtani,39832,2,7,11
-5,1,Freddie Freeman,30193,2,2.5,14
+5,1,Freddie Freeman,30193,2,4,14
 6,1,Graham Pauley,4622931,1,-0.5,13
 7,NA,NA,NA,NA,NA,4
 8,NA,NA,NA,NA,NA,6
@@ -133,17 +134,19 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 125,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,9
 1,1,Teoscar Hernandez,33377,2,3,4
-1,1,Jackson Merrill,4872691,2,0.5,4
-2,1,Gavin Lux,40423,2,3,12
+1,1,Jackson Merrill,4872691,2,3.5,4
+2,1,Robert Suarez,4148749,NA,7.5,12
+2,1,Gavin Lux,40423,2,4.5,12
 2,1,Joe Kelly,31992,NA,4,12
-2,1,Jake Cronenworth,36364,2,4.5,12
-2,1,Fernando Tatis Jr.,35983,2,3,12
-3,1,Will Smith,38309,2,4.5,6
+2,1,Jake Cronenworth,36364,2,10.5,12
+2,1,Fernando Tatis Jr.,35983,2,7,12
+3,1,Will Smith,38309,2,9,6
 3,1,Evan Phillips,37911,NA,7,6
+3,1,Alex Vesia,42622,NA,1,6
 4,NA,NA,NA,NA,NA,5
 5,NA,NA,NA,NA,NA,9
-6,1,Xander Bogaerts,31606,2,4.5,7
-6,1,James Outman,41802,2,3,7
+6,1,Xander Bogaerts,31606,2,10,7
+6,1,James Outman,41802,2,5.5,7
 7,NA,NA,NA,NA,NA,12
 8,NA,NA,NA,NA,NA,1
 9,NA,NA,NA,NA,NA,2
