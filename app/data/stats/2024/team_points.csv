@@ -1,253 +1,253 @@
 team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_points,sp_points,adj_pts,adj_batting_pts,adj_pitching_pts,adj_sp_pts,adj_rp_pts,team_id_opp,total_points_opp,batting_points_opp,pitching_points_opp,team_opp,rp_points_opp,sp_points_opp,adj_pts_opp,adj_batting_pts_opp,adj_pitching_pts_opp,adj_sp_pts_opp,adj_rp_pts_opp,overall_rank,batting_rank,pitching_rank
-1,4,21,-17,The Talmudic Tunnelers,1,1,0,-17,5.6,13.363636363636363,-10.818181818181818,-23.8,0,4,2,6.5,-4.5,All That is Wright,0,-4.5,2.8,4.136363636363637,-2.8636363636363638,-6.3,0,5,2,8
-2,17.5,13.5,4,Skubal Divers,1,2,8,-4,24.5,8.590909090909092,2.5454545454545454,-5.6,11.2,12,3.5,22,-18.5,Blasphemous Hot Takes,11.5,-30,4.9,14,-11.772727272727273,-42,16.1,1,4,1
-8,2,11.5,-9.5,Mt. Everest Taquito Farmers,1,3,0,-9.5,2.8,7.318181818181818,-6.045454545454546,-13.3,0,6,8.5,9,-0.5,The Novaks,8,-8.5,11.9,5.7272727272727275,-0.3181818181818182,-11.9,11.2,8,5,6.5
-11,5,11,-6,The West Bank Occupiers,1,4,0,-6,7,7,-3.8181818181818183,-8.4,0,5,NA,NA,NA,The Traveling Secretaries,0,NA,NA,NA,NA,NA,0,4,6,5
-14,2,4,-2,Hader Better Faster Stronger,1,5,0,-2,2.8,2.5454545454545454,-1.2727272727272727,-2.8,0,9,NA,NA,NA,Takin' Care of Rizzness,0,NA,NA,NA,NA,NA,0,8,9,3
-13,-0.5,-0.5,NA,Ketel Bells,1,6,0,NA,-0.7,-0.3181818181818182,NA,NA,0,7,6,15.5,-9.5,Cron's Disease,0,-9.5,8.4,9.863636363636363,-6.045454545454546,-13.3,0,10,10,10
+1,10.5,21,-10.5,The Talmudic Tunnelers,1,1,0,-10.5,14.7,13.363636363636363,-6.681818181818182,-14.7,0,4,6.5,6.5,NA,All That is Wright,0,NA,9.1,4.136363636363637,NA,NA,0,7,2,4
+2,22.5,13,9.5,Skubal Divers,1,2,8,1.5,31.5,8.272727272727273,6.045454545454546,2.1,11.2,12,33.5,22,11.5,Blasphemous Hot Takes,11.5,0,46.9,14,7.318181818181818,0,16.1,2,4,2
+8,11.5,11.5,NA,Mt. Everest Taquito Farmers,1,3,0,NA,16.1,7.318181818181818,NA,NA,0,6,17,9,8,The Novaks,8,0,23.8,5.7272727272727275,5.090909090909091,0,11.2,5,5,5
+11,11,11,NA,The West Bank Occupiers,1,4,0,NA,15.4,7,NA,NA,0,5,NA,NA,NA,The Traveling Secretaries,0,NA,NA,NA,NA,NA,0,6,6,6
+14,4,4,NA,Hader Better Faster Stronger,1,5,0,NA,5.6,2.5454545454545454,NA,NA,0,9,NA,NA,NA,Takin' Care of Rizzness,0,NA,NA,NA,NA,NA,0,9,9,7
+13,-0.5,-0.5,NA,Ketel Bells,1,6,0,NA,-0.7,-0.3181818181818182,NA,NA,0,7,15.5,15.5,NA,FVOS Re-imagined,0,NA,21.7,9.863636363636363,NA,NA,0,10,10,8
 4,NA,NA,NA,All That is Wright,2,7,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,1,1,1
 6,NA,NA,NA,The Novaks,2,8,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,2,9,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 9,NA,NA,NA,Takin' Care of Rizzness,2,10,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,4,4,4
-7,NA,NA,NA,Cron's Disease,2,11,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,5,5,5
+7,NA,NA,NA,FVOS Re-imagined,2,11,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 13,NA,NA,NA,Ketel Bells,2,12,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,6,6,6
 6,NA,NA,NA,The Novaks,3,13,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 12,NA,NA,NA,Blasphemous Hot Takes,3,14,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,2,2,2
 1,NA,NA,NA,The Talmudic Tunnelers,3,15,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,3,3,3
-2,NA,NA,NA,Skubal Divers,3,16,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,4,4,4
+2,NA,NA,NA,Skubal Divers,3,16,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,4,4,4
 8,NA,NA,NA,Mt. Everest Taquito Farmers,3,17,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,5,5,5
 11,NA,NA,NA,The West Bank Occupiers,3,18,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,4,19,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,1,1,1
 9,NA,NA,NA,Takin' Care of Rizzness,4,20,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,2,2,2
-7,NA,NA,NA,Cron's Disease,4,21,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,3,3,3
+7,NA,NA,NA,FVOS Re-imagined,4,21,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,3,3,3
 13,NA,NA,NA,Ketel Bells,4,22,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 14,NA,NA,NA,Hader Better Faster Stronger,4,23,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 11,NA,NA,NA,The West Bank Occupiers,4,24,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 9,NA,NA,NA,Takin' Care of Rizzness,5,25,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
-5,NA,NA,NA,The Traveling Secretaries,5,26,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,2,2,2
+5,NA,NA,NA,The Traveling Secretaries,5,26,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,2,2,2
 6,NA,NA,NA,The Novaks,5,27,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,3,3,3
 12,NA,NA,NA,Blasphemous Hot Takes,5,28,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,4,4,4
 1,NA,NA,NA,The Talmudic Tunnelers,5,29,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 2,NA,NA,NA,Skubal Divers,5,30,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,6,6,6
-4,NA,NA,NA,All That is Wright,6,31,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,1,1,1
+4,NA,NA,NA,All That is Wright,6,31,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,1,1,1
 13,NA,NA,NA,Ketel Bells,6,32,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,2,2,2
 14,NA,NA,NA,Hader Better Faster Stronger,6,33,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,3,3,3
 11,NA,NA,NA,The West Bank Occupiers,6,34,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,4,4,4
 8,NA,NA,NA,Mt. Everest Taquito Farmers,6,35,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,5,5,5
 2,NA,NA,NA,Skubal Divers,6,36,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 13,NA,NA,NA,Ketel Bells,7,37,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
-7,NA,NA,NA,Cron's Disease,7,38,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,2,2,2
+7,NA,NA,NA,FVOS Re-imagined,7,38,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,2,2,2
 9,NA,NA,NA,Takin' Care of Rizzness,7,39,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 5,NA,NA,NA,The Traveling Secretaries,7,40,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 6,NA,NA,NA,The Novaks,7,41,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 12,NA,NA,NA,Blasphemous Hot Takes,7,42,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,8,43,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,1,1,1
 11,NA,NA,NA,The West Bank Occupiers,8,44,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,2,2,2
-8,NA,NA,NA,Mt. Everest Taquito Farmers,8,45,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,3,3,3
+8,NA,NA,NA,Mt. Everest Taquito Farmers,8,45,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,3,3,3
 2,NA,NA,NA,Skubal Divers,8,46,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,4,4,4
 1,NA,NA,NA,The Talmudic Tunnelers,8,47,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,5,5,5
 12,NA,NA,NA,Blasphemous Hot Takes,8,48,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,6,6,6
 11,NA,NA,NA,The West Bank Occupiers,9,49,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 14,NA,NA,NA,Hader Better Faster Stronger,9,50,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 13,NA,NA,NA,Ketel Bells,9,51,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,3,3,3
-7,NA,NA,NA,Cron's Disease,9,52,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,4,4,4
+7,NA,NA,NA,FVOS Re-imagined,9,52,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 9,NA,NA,NA,Takin' Care of Rizzness,9,53,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,5,5,5
 5,NA,NA,NA,The Traveling Secretaries,9,54,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,10,55,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,1,1,1
 2,NA,NA,NA,Skubal Divers,10,56,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 1,NA,NA,NA,The Talmudic Tunnelers,10,57,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,3,3,3
 12,NA,NA,NA,Blasphemous Hot Takes,10,58,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,4,4,4
-6,NA,NA,NA,The Novaks,10,59,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,5,5,5
+6,NA,NA,NA,The Novaks,10,59,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,5,5,5
 5,NA,NA,NA,The Traveling Secretaries,10,60,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,6,6,6
 2,NA,NA,NA,Skubal Divers,11,61,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 8,NA,NA,NA,Mt. Everest Taquito Farmers,11,62,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 11,NA,NA,NA,The West Bank Occupiers,11,63,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,3,3,3
 14,NA,NA,NA,Hader Better Faster Stronger,11,64,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,4,4,4
 13,NA,NA,NA,Ketel Bells,11,65,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,5,5,5
-7,NA,NA,NA,Cron's Disease,11,66,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,6,6,6
+7,NA,NA,NA,FVOS Re-imagined,11,66,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,12,67,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,1,1,1
 12,NA,NA,NA,Blasphemous Hot Takes,12,68,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 6,NA,NA,NA,The Novaks,12,69,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 5,NA,NA,NA,The Traveling Secretaries,12,70,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 9,NA,NA,NA,Takin' Care of Rizzness,12,71,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,5,5,5
-7,NA,NA,NA,Cron's Disease,12,72,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,6,6,6
+7,NA,NA,NA,FVOS Re-imagined,12,72,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,13,73,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 1,NA,NA,NA,The Talmudic Tunnelers,13,74,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,2,2,2
 2,NA,NA,NA,Skubal Divers,13,75,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,3,3,3
 8,NA,NA,NA,Mt. Everest Taquito Farmers,13,76,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,4,4,4
-11,NA,NA,NA,The West Bank Occupiers,13,77,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,5,5,5
+11,NA,NA,NA,The West Bank Occupiers,13,77,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,5,5,5
 14,NA,NA,NA,Hader Better Faster Stronger,13,78,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,14,79,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,1,1,1
 5,NA,NA,NA,The Traveling Secretaries,14,80,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,2,2,2
 9,NA,NA,NA,Takin' Care of Rizzness,14,81,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,3,3,3
-7,NA,NA,NA,Cron's Disease,14,82,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,4,4,4
+7,NA,NA,NA,FVOS Re-imagined,14,82,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 13,NA,NA,NA,Ketel Bells,14,83,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 14,NA,NA,NA,Hader Better Faster Stronger,14,84,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 5,NA,NA,NA,The Traveling Secretaries,15,85,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 6,NA,NA,NA,The Novaks,15,86,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,2,2,2
-12,NA,NA,NA,Blasphemous Hot Takes,15,87,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,3,3,3
+12,NA,NA,NA,Blasphemous Hot Takes,15,87,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,3,3,3
 1,NA,NA,NA,The Talmudic Tunnelers,15,88,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,4,4,4
 2,NA,NA,NA,Skubal Divers,15,89,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,5,5,5
 8,NA,NA,NA,Mt. Everest Taquito Farmers,15,90,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,16,91,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,1,1,1
-7,NA,NA,NA,Cron's Disease,16,92,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,2,2,2
+7,NA,NA,NA,FVOS Re-imagined,16,92,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,2,2,2
 13,NA,NA,NA,Ketel Bells,16,93,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,3,3,3
 14,NA,NA,NA,Hader Better Faster Stronger,16,94,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,4,4,4
 11,NA,NA,NA,The West Bank Occupiers,16,95,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 8,NA,NA,NA,Mt. Everest Taquito Farmers,16,96,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,6,6,6
-7,NA,NA,NA,Cron's Disease,17,97,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
+7,NA,NA,NA,FVOS Re-imagined,17,97,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 9,NA,NA,NA,Takin' Care of Rizzness,17,98,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,17,99,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,3,3,3
 6,NA,NA,NA,The Novaks,17,100,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 12,NA,NA,NA,Blasphemous Hot Takes,17,101,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 1,NA,NA,NA,The Talmudic Tunnelers,17,102,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,18,103,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,1,1,1
-14,NA,NA,NA,Hader Better Faster Stronger,18,104,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,2,2,2
+14,NA,NA,NA,Hader Better Faster Stronger,18,104,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,2,2,2
 11,NA,NA,NA,The West Bank Occupiers,18,105,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,3,3,3
 8,NA,NA,NA,Mt. Everest Taquito Farmers,18,106,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,4,4,4
 2,NA,NA,NA,Skubal Divers,18,107,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,5,5,5
 1,NA,NA,NA,The Talmudic Tunnelers,18,108,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,6,6,6
 14,NA,NA,NA,Hader Better Faster Stronger,19,109,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 13,NA,NA,NA,Ketel Bells,19,110,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,2,2,2
-7,NA,NA,NA,Cron's Disease,19,111,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,3,3,3
+7,NA,NA,NA,FVOS Re-imagined,19,111,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 9,NA,NA,NA,Takin' Care of Rizzness,19,112,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 5,NA,NA,NA,The Traveling Secretaries,19,113,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 6,NA,NA,NA,The Novaks,19,114,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,20,115,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,1,1,1
 8,NA,NA,NA,Mt. Everest Taquito Farmers,20,116,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,2,2,2
 2,NA,NA,NA,Skubal Divers,20,117,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,3,3,3
-1,NA,NA,NA,The Talmudic Tunnelers,20,118,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,4,4,4
+1,NA,NA,NA,The Talmudic Tunnelers,20,118,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,4,4,4
 12,NA,NA,NA,Blasphemous Hot Takes,20,119,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,5,5,5
 6,NA,NA,NA,The Novaks,20,120,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,6,6,6
 8,NA,NA,NA,Mt. Everest Taquito Farmers,21,121,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 11,NA,NA,NA,The West Bank Occupiers,21,122,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 14,NA,NA,NA,Hader Better Faster Stronger,21,123,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 13,NA,NA,NA,Ketel Bells,21,124,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,4,4,4
-7,NA,NA,NA,Cron's Disease,21,125,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,5,5,5
+7,NA,NA,NA,FVOS Re-imagined,21,125,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,5,5,5
 9,NA,NA,NA,Takin' Care of Rizzness,21,126,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,6,6,6
-4,2,6.5,-4.5,All That is Wright,1,1,0,-4.5,2.8,4.136363636363637,-2.8636363636363638,-6.3,0,1,4,21,-17,The Talmudic Tunnelers,0,-17,5.6,13.363636363636363,-10.818181818181818,-23.8,0,8,8,4
-12,3.5,22,-18.5,Blasphemous Hot Takes,1,2,11.5,-30,4.9,14,-11.772727272727273,-42,16.1,2,17.5,13.5,4,Skubal Divers,8,-4,24.5,8.590909090909092,2.5454545454545454,-5.6,11.2,6,1,9
-6,8.5,9,-0.5,The Novaks,1,3,8,-8.5,11.9,5.7272727272727275,-0.3181818181818182,-11.9,11.2,8,2,11.5,-9.5,Mt. Everest Taquito Farmers,0,-9.5,2.8,7.318181818181818,-6.045454545454546,-13.3,0,2,7,2
-5,NA,NA,NA,The Traveling Secretaries,1,4,0,NA,NA,NA,NA,NA,0,11,5,11,-6,The West Bank Occupiers,0,-6,7,7,-3.8181818181818183,-8.4,0,11,11,11
-9,NA,NA,NA,Takin' Care of Rizzness,1,5,0,NA,NA,NA,NA,NA,0,14,2,4,-2,Hader Better Faster Stronger,0,-2,2.8,2.5454545454545454,-1.2727272727272727,-2.8,0,12,12,12
-7,6,15.5,-9.5,Cron's Disease,1,6,0,-9.5,8.4,9.863636363636363,-6.045454545454546,-13.3,0,13,-0.5,-0.5,NA,Ketel Bells,0,NA,-0.7,-0.3181818181818182,NA,NA,0,3,3,6.5
+4,6.5,6.5,NA,All That is Wright,1,1,0,NA,9.1,4.136363636363637,NA,NA,0,1,10.5,21,-10.5,The Talmudic Tunnelers,0,-10.5,14.7,13.363636363636363,-6.681818181818182,-14.7,0,8,8,9
+12,33.5,22,11.5,Blasphemous Hot Takes,1,2,11.5,0,46.9,14,7.318181818181818,0,16.1,2,22.5,13,9.5,Skubal Divers,8,1.5,31.5,8.272727272727273,6.045454545454546,2.1,11.2,1,1,1
+6,17,9,8,The Novaks,1,3,8,0,23.8,5.7272727272727275,5.090909090909091,0,11.2,8,11.5,11.5,NA,Mt. Everest Taquito Farmers,0,NA,16.1,7.318181818181818,NA,NA,0,3,7,3
+5,NA,NA,NA,The Traveling Secretaries,1,4,0,NA,NA,NA,NA,NA,0,11,11,11,NA,The West Bank Occupiers,0,NA,15.4,7,NA,NA,0,11,11,10
+9,NA,NA,NA,Takin' Care of Rizzness,1,5,0,NA,NA,NA,NA,NA,0,14,4,4,NA,Hader Better Faster Stronger,0,NA,5.6,2.5454545454545454,NA,NA,0,12,12,11
+7,15.5,15.5,NA,FVOS Re-imagined,1,6,0,NA,21.7,9.863636363636363,NA,NA,0,13,-0.5,-0.5,NA,Ketel Bells,0,NA,-0.7,-0.3181818181818182,NA,NA,0,4,3,12
 12,NA,NA,NA,Blasphemous Hot Takes,2,7,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 1,NA,NA,NA,The Talmudic Tunnelers,2,8,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,8,8,8
 2,NA,NA,NA,Skubal Divers,2,9,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,9,9,9
 8,NA,NA,NA,Mt. Everest Taquito Farmers,2,10,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,10,10,10
-11,NA,NA,NA,The West Bank Occupiers,2,11,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,11,11,11
+11,NA,NA,NA,The West Bank Occupiers,2,11,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,11,11,11
 14,NA,NA,NA,Hader Better Faster Stronger,2,12,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,3,13,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,7,7,7
 5,NA,NA,NA,The Traveling Secretaries,3,14,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,8,8,8
 9,NA,NA,NA,Takin' Care of Rizzness,3,15,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,9,9,9
-7,NA,NA,NA,Cron's Disease,3,16,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,10,10,10
+7,NA,NA,NA,FVOS Re-imagined,3,16,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 13,NA,NA,NA,Ketel Bells,3,17,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 14,NA,NA,NA,Hader Better Faster Stronger,3,18,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 5,NA,NA,NA,The Traveling Secretaries,4,19,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 6,NA,NA,NA,The Novaks,4,20,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,8,8,8
-12,NA,NA,NA,Blasphemous Hot Takes,4,21,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,9,9,9
+12,NA,NA,NA,Blasphemous Hot Takes,4,21,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,9,9,9
 1,NA,NA,NA,The Talmudic Tunnelers,4,22,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,10,10,10
 2,NA,NA,NA,Skubal Divers,4,23,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,11,11,11
 8,NA,NA,NA,Mt. Everest Taquito Farmers,4,24,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,5,25,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,7,7,7
-7,NA,NA,NA,Cron's Disease,5,26,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,8,8,8
+7,NA,NA,NA,FVOS Re-imagined,5,26,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,8,8,8
 13,NA,NA,NA,Ketel Bells,5,27,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,9,9,9
 14,NA,NA,NA,Hader Better Faster Stronger,5,28,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,10,10,10
 11,NA,NA,NA,The West Bank Occupiers,5,29,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 8,NA,NA,NA,Mt. Everest Taquito Farmers,5,30,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,12,12,12
-7,NA,NA,NA,Cron's Disease,6,31,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
+7,NA,NA,NA,FVOS Re-imagined,6,31,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 9,NA,NA,NA,Takin' Care of Rizzness,6,32,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,8,8,8
 5,NA,NA,NA,The Traveling Secretaries,6,33,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,9,9,9
 6,NA,NA,NA,The Novaks,6,34,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 12,NA,NA,NA,Blasphemous Hot Takes,6,35,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 1,NA,NA,NA,The Talmudic Tunnelers,6,36,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,7,37,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,7,7,7
-14,NA,NA,NA,Hader Better Faster Stronger,7,38,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,8,8,8
+14,NA,NA,NA,Hader Better Faster Stronger,7,38,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,8,8,8
 11,NA,NA,NA,The West Bank Occupiers,7,39,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,9,9,9
 8,NA,NA,NA,Mt. Everest Taquito Farmers,7,40,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,10,10,10
 2,NA,NA,NA,Skubal Divers,7,41,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,11,11,11
 1,NA,NA,NA,The Talmudic Tunnelers,7,42,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,12,12,12
 14,NA,NA,NA,Hader Better Faster Stronger,8,43,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 13,NA,NA,NA,Ketel Bells,8,44,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,8,8,8
-7,NA,NA,NA,Cron's Disease,8,45,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,9,9,9
+7,NA,NA,NA,FVOS Re-imagined,8,45,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 9,NA,NA,NA,Takin' Care of Rizzness,8,46,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 5,NA,NA,NA,The Traveling Secretaries,8,47,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 6,NA,NA,NA,The Novaks,8,48,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,9,49,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,7,7,7
 8,NA,NA,NA,Mt. Everest Taquito Farmers,9,50,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,8,8,8
 2,NA,NA,NA,Skubal Divers,9,51,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,9,9,9
-1,NA,NA,NA,The Talmudic Tunnelers,9,52,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,10,10,10
+1,NA,NA,NA,The Talmudic Tunnelers,9,52,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,10,10,10
 12,NA,NA,NA,Blasphemous Hot Takes,9,53,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,11,11,11
 6,NA,NA,NA,The Novaks,9,54,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,12,12,12
 8,NA,NA,NA,Mt. Everest Taquito Farmers,10,55,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 11,NA,NA,NA,The West Bank Occupiers,10,56,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 14,NA,NA,NA,Hader Better Faster Stronger,10,57,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 13,NA,NA,NA,Ketel Bells,10,58,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,10,10,10
-7,NA,NA,NA,Cron's Disease,10,59,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,11,11,11
+7,NA,NA,NA,FVOS Re-imagined,10,59,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,11,11,11
 9,NA,NA,NA,Takin' Care of Rizzness,10,60,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,11,61,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,7,7,7
 1,NA,NA,NA,The Talmudic Tunnelers,11,62,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 12,NA,NA,NA,Blasphemous Hot Takes,11,63,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 6,NA,NA,NA,The Novaks,11,64,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,10,10,10
 5,NA,NA,NA,The Traveling Secretaries,11,65,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,11,11,11
-9,NA,NA,NA,Takin' Care of Rizzness,11,66,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,12,12,12
+9,NA,NA,NA,Takin' Care of Rizzness,11,66,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,12,12,12
 1,NA,NA,NA,The Talmudic Tunnelers,12,67,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 2,NA,NA,NA,Skubal Divers,12,68,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,8,8,8
 8,NA,NA,NA,Mt. Everest Taquito Farmers,12,69,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,9,9,9
 11,NA,NA,NA,The West Bank Occupiers,12,70,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,10,10,10
 14,NA,NA,NA,Hader Better Faster Stronger,12,71,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,11,11,11
-13,NA,NA,NA,Ketel Bells,12,72,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,12,12,12
+13,NA,NA,NA,Ketel Bells,12,72,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,13,73,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,7,7,7
 6,NA,NA,NA,The Novaks,13,74,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 5,NA,NA,NA,The Traveling Secretaries,13,75,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 9,NA,NA,NA,Takin' Care of Rizzness,13,76,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,10,10,10
-7,NA,NA,NA,Cron's Disease,13,77,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,11,11,11
+7,NA,NA,NA,FVOS Re-imagined,13,77,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 13,NA,NA,NA,Ketel Bells,13,78,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,12,12,12
 6,NA,NA,NA,The Novaks,14,79,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 12,NA,NA,NA,Blasphemous Hot Takes,14,80,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,8,8,8
 1,NA,NA,NA,The Talmudic Tunnelers,14,81,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,9,9,9
-2,NA,NA,NA,Skubal Divers,14,82,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,10,10,10
+2,NA,NA,NA,Skubal Divers,14,82,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,10,10,10
 8,NA,NA,NA,Mt. Everest Taquito Farmers,14,83,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,11,11,11
 11,NA,NA,NA,The West Bank Occupiers,14,84,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,15,85,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,7,7,7
 9,NA,NA,NA,Takin' Care of Rizzness,15,86,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,8,8,8
-7,NA,NA,NA,Cron's Disease,15,87,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,9,9,9
+7,NA,NA,NA,FVOS Re-imagined,15,87,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,9,9,9
 13,NA,NA,NA,Ketel Bells,15,88,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 14,NA,NA,NA,Hader Better Faster Stronger,15,89,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 11,NA,NA,NA,The West Bank Occupiers,15,90,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 9,NA,NA,NA,Takin' Care of Rizzness,16,91,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
-5,NA,NA,NA,The Traveling Secretaries,16,92,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,8,8,8
+5,NA,NA,NA,The Traveling Secretaries,16,92,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,8,8,8
 6,NA,NA,NA,The Novaks,16,93,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,9,9,9
 12,NA,NA,NA,Blasphemous Hot Takes,16,94,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,10,10,10
 1,NA,NA,NA,The Talmudic Tunnelers,16,95,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 2,NA,NA,NA,Skubal Divers,16,96,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,12,12,12
-4,NA,NA,NA,All That is Wright,17,97,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,7,7,7
+4,NA,NA,NA,All That is Wright,17,97,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,7,7,7
 13,NA,NA,NA,Ketel Bells,17,98,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,8,8,8
 14,NA,NA,NA,Hader Better Faster Stronger,17,99,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,9,9,9
 11,NA,NA,NA,The West Bank Occupiers,17,100,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,10,10,10
 8,NA,NA,NA,Mt. Everest Taquito Farmers,17,101,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,11,11,11
 2,NA,NA,NA,Skubal Divers,17,102,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 13,NA,NA,NA,Ketel Bells,18,103,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
-7,NA,NA,NA,Cron's Disease,18,104,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,8,8,8
+7,NA,NA,NA,FVOS Re-imagined,18,104,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,8,8,8
 9,NA,NA,NA,Takin' Care of Rizzness,18,105,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 5,NA,NA,NA,The Traveling Secretaries,18,106,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 6,NA,NA,NA,The Novaks,18,107,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 12,NA,NA,NA,Blasphemous Hot Takes,18,108,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,19,109,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,7,7,7
 11,NA,NA,NA,The West Bank Occupiers,19,110,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,8,8,8
-8,NA,NA,NA,Mt. Everest Taquito Farmers,19,111,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,9,9,9
+8,NA,NA,NA,Mt. Everest Taquito Farmers,19,111,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,9,9,9
 2,NA,NA,NA,Skubal Divers,19,112,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,10,10,10
 1,NA,NA,NA,The Talmudic Tunnelers,19,113,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,11,11,11
 12,NA,NA,NA,Blasphemous Hot Takes,19,114,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,12,12,12
 11,NA,NA,NA,The West Bank Occupiers,20,115,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 14,NA,NA,NA,Hader Better Faster Stronger,20,116,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 13,NA,NA,NA,Ketel Bells,20,117,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Skubal Divers,NA,NA,NA,NA,NA,NA,NA,9,9,9
-7,NA,NA,NA,Cron's Disease,20,118,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,10,10,10
+7,NA,NA,NA,FVOS Re-imagined,20,118,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 9,NA,NA,NA,Takin' Care of Rizzness,20,119,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,11,11,11
 5,NA,NA,NA,The Traveling Secretaries,20,120,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,21,121,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,7,7,7
 2,NA,NA,NA,Skubal Divers,21,122,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 1,NA,NA,NA,The Talmudic Tunnelers,21,123,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Hader Better Faster Stronger,NA,NA,NA,NA,NA,NA,NA,9,9,9
 12,NA,NA,NA,Blasphemous Hot Takes,21,124,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,10,10,10
-6,NA,NA,NA,The Novaks,21,125,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,Cron's Disease,NA,NA,NA,NA,NA,NA,NA,11,11,11
+6,NA,NA,NA,The Novaks,21,125,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,11,11,11
 5,NA,NA,NA,The Traveling Secretaries,21,126,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,12,12,12
