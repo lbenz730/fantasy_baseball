@@ -14,7 +14,7 @@ library(rsvg)
 shinyServer(function(input, output, session) {
   
   # waiter::waiter_show(html = screen,
-                      # image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Spirit_of_America_-_Staten_Island_Ferry.jpg/800px-Spirit_of_America_-_Staten_Island_Ferry.jpg')
+  # image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Spirit_of_America_-_Staten_Island_Ferry.jpg/800px-Spirit_of_America_-_Staten_Island_Ferry.jpg')
   
   
   
@@ -658,37 +658,54 @@ shinyServer(function(input, output, session) {
     cat('Rendering Plot Matrix\n')
     ggplot(pitch_matrix, aes(x = ip, y = earned_runs))  + 
       facet_wrap(~team) + 
-      geom_rect(aes(xmin = '< 3', xmax = 'CG',
-                    ymin = '4', ymax = '6+'),
-                col = NA,
-                fill = 'red',
-                alpha = 0.07) +
-      geom_rect(aes(xmin = '< 3', xmax = '6.0',
-                    ymin = '3', ymax = '4'),
-                col = NA,
-                fill = 'red',
-                alpha = 0.07) +
-      geom_rect(aes(xmin = '< 3', xmax = '5.0',
-                    ymin = '0', ymax = '3'),
-                col = NA,
-                fill = 'red',
-                alpha = 0.07) +
-      
-      geom_rect(aes(xmin = '5.0', xmax = '6.0',
-                    ymin = '0', ymax = '3'),
-                col = 'orange',
-                fill = 'orange',
-                alpha = 0.07) +
-      geom_rect(aes(xmin = '6.0', xmax = 'CG',
-                    ymin = '3', ymax = '4'),
-                col = 'orange',
-                fill = 'orange',
-                alpha = 0.07) +
-      geom_rect(aes(xmin = '6.0', xmax = 'CG',
-                    ymin = '0', ymax = '3'),
-                col = 'seagreen',
-                fill = 'mediumspringgreen',
-                alpha = 0.07) +
+      annotate(geom = 'rect', 
+               xmin = '< 3', 
+               xmax = 'CG',
+               ymin = '4',
+               ymax = '6+',
+               col = NA,
+               fill = 'red',
+               alpha = 0.1) +
+      annotate(geom = 'rect', 
+               xmin = '< 3',
+               xmax = '5.0',
+               ymin = '0', 
+               ymax = '3',
+               col = NA,
+               fill = 'red',
+               alpha = 0.1) +
+      annotate(geom = 'rect', 
+               xmin = '< 3', 
+               xmax = '6.0',
+               ymin = '3',
+               ymax = '4',
+               col = NA,
+               fill = 'red',
+               alpha = 0.1) +
+      annotate(geom = 'rect', 
+               xmin = '5.0', 
+               xmax = '6.0',
+               ymin = '0',
+               ymax = '3',
+               col = 'orange',
+               fill = 'orange',
+               alpha = 0.1) +
+      annotate(geom = 'rect', 
+               xmin = '6.0', 
+               xmax = 'CG',
+               ymin = '3', 
+               ymax = '4',
+               col = 'orange',
+               fill = 'orange',
+               alpha = 0.1) +
+      annotate(geom = 'rect', 
+               xmin = '6.0', 
+               xmax = 'CG',
+               ymin = '0', 
+               ymax = '3',
+               col = 'seagreen',
+               fill = 'mediumspringgreen',
+               alpha = 0.1) +
       geom_label(aes(label = n, fill = start_type)) + 
       scale_x_discrete(drop = F) + 
       scale_fill_manual(values = c('salmon', 'lightskyblue', 'orange',  'seagreen3', 'violet'), drop = F) + 

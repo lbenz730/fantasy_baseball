@@ -58,7 +58,7 @@ df_daily <-
   select(team_id, player, player_id, in_lineup, scoring_period_id, matchup_id, points, played, relief, start, pitcher, batter, qs, relief_start)
 pitch_matrix <- 
   read_csv(glue('data/stats/{params$season}/pitch_matrix.csv')) %>% 
-  mutate_at(vars(ip), ~as.character(.x)) %>% 
+  mutate_at(vars(ip, earned_runs), ~as.character(.x)) %>% 
   mutate(ip = case_when(ip == '4' ~ '4.0', 
                         ip == '5' ~ '5.0',
                         ip == '6' ~ '6.0',
