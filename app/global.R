@@ -127,7 +127,7 @@ df_points <-
 scale_factors <- 
   df_daily %>% 
   filter(in_lineup) %>% 
-  filter(matchup_id < params$current_matchup) %>% 
+  filter(matchup_id < max(2, params$current_matchup)) %>% 
   group_by(team_id, matchup_id) %>% 
   summarise('n_bat' = sum(played),
             'n_rp' = sum(relief & !start)) %>% 
