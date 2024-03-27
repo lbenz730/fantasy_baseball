@@ -4,7 +4,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 2,1,Joe Musgrove,34848,NA,-8,2
 2,1,Yuki Matsui,4142414,NA,4.5,2
 2,1,Tyler Glasnow,33190,NA,9.5,2
-2,1,Max Muncy,33303,2,3.5,2
+2,1,Max Muncy,33303,2,4.5,2
 2,1,Luis Campusano,40521,2,8,2
 2,1,Michael King,40429,NA,3.5,2
 2,1,Jurickson Profar,31117,1,1.5,2
@@ -139,7 +139,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 2,1,Gavin Lux,40423,2,4.5,12
 2,1,Joe Kelly,31992,NA,4,12
 2,1,Jake Cronenworth,36364,2,10.5,12
-2,1,Fernando Tatis Jr.,35983,2,7,12
+2,1,Fernando Tatis Jr.,35983,2,8,12
 3,1,Will Smith,38309,2,9,6
 3,1,Evan Phillips,37911,NA,7,6
 3,1,Alex Vesia,42622,NA,1,6
