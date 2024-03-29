@@ -1,14 +1,14 @@
 team,win_pct,exp_win_pct,win,loss,exp_win,exp_loss,division_id,logo,total_points,total_adj_points,batting_points,pitching_points,sp_points,rp_points,adj_batting_pts,adj_pitching_pts,adj_pts,adj_sp_pts,adj_rp_pts,batting_ppg,rp_ppg,sp_ppg,qs_pct,rank
-Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,34.5,48.3,23,11.5,0,11.5,14.636363636363637,7.318181818181818,48.3,0,16.1,3.8333333333333335,5.75,NA,NA,1
-Skubal Divers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/TzPHLqL.jpg,23.5,32.9,14,9.5,1.5,8,8.909090909090908,6.045454545454546,32.9,2.1,11.2,2.8,2.6666666666666665,0.75,0,2
-The Novaks,0.5,0.5,0,0,0,0,1,https://i.imgur.com/DPLqmOq.jpg,17,23.8,9,8,0,8,5.7272727272727275,5.090909090909091,23.8,0,11.2,4.5,4,NA,NA,3
-FVOS Re-imagined,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,15.5,21.7,15.5,0,0,0,9.863636363636363,NA,21.7,NA,0,3.875,NA,NA,NA,4
-Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,11.5,16.1,11.5,0,0,0,7.318181818181818,NA,16.1,NA,0,5.75,NA,NA,NA,5
-The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,11,15.4,11,0,0,0,7,NA,15.4,NA,0,2.75,NA,NA,NA,6
-The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,10.5,14.7,21,-10.5,-10.5,0,13.363636363636363,-6.681818181818182,14.7,-14.7,0,10.5,NA,-10.5,0,7
-All That is Wright,0.5,0.5,0,0,0,0,1,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,6.5,9.1,6.5,0,0,0,4.136363636363637,NA,9.1,NA,0,1.625,NA,NA,NA,8
-Hader Better Faster Stronger,0.5,0.5,0,0,0,0,1,https://imgur.com/d4sbJBf.png,4,5.6,4,0,0,0,2.5454545454545454,NA,5.6,NA,0,2,NA,NA,NA,9
-Takin' Care of Rizzness,0.5,0.5,0,0,0,0,1,https://i.imgur.com/a0H4D9d.png,0,0,0,0,0,0,NA,NA,NA,NA,0,NA,NA,NA,NA,10
-The Traveling Secretaries,0.5,0.5,0,0,0,0,1,https://i.imgur.com/wll1Ubw.jpg,0,0,0,0,0,0,NA,NA,NA,NA,0,NA,NA,NA,NA,11
-Ketel Bells,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,-0.5,-0.7,-0.5,0,0,0,-0.3181818181818182,NA,-0.7,NA,0,-0.5,NA,NA,NA,12
-League Average,NA,NA,NA,NA,NA,NA,NA,NA,11.125,NA,9.583333333333334,1.5416666666666667,-0.75,2.2916666666666665,NA,NA,NA,NA,3.2083333333333335,3.59375,3.9285714285714284,-3,0,NA
+Skubal Divers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/TzPHLqL.jpg,104,145.6,39,65,51,14,24.818181818181817,41.36363636363637,145.6,71.4,19.6,2.6,2.8,12.75,0.5,1
+Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,87,121.8,51,36,20.5,15.5,32.45454545454545,22.90909090909091,121.8,28.7,21.7,2.8333333333333335,5.166666666666667,10.25,0.5,2
+The Traveling Secretaries,0.5,0.5,0,0,0,0,1,https://i.imgur.com/wll1Ubw.jpg,78,109.2,30.5,47.5,44,3.5,19.40909090909091,30.227272727272727,109.2,61.6,4.9,2.772727272727273,1.75,14.666666666666666,0.6666666666666666,3
+FVOS Re-imagined,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,74,103.6,48.5,25.5,23,2.5,30.863636363636363,16.227272727272727,103.6,32.2,3.5,3.2333333333333334,2.5,11.5,0.5,4
+The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,72.5,101.5,40,32.5,29.5,3,25.454545454545453,20.681818181818183,101.5,41.3,4.2,2.857142857142857,3,29.5,1,5
+The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,71,99.4,51,20,12.5,7.5,32.45454545454545,12.727272727272727,99.4,17.5,10.5,3.642857142857143,7.5,6.25,0.5,6
+The Novaks,0.5,0.5,0,0,0,0,1,https://i.imgur.com/DPLqmOq.jpg,69.5,97.3,47,22.5,14.5,8,29.90909090909091,14.318181818181818,97.3,20.3,11.2,3.1333333333333333,4,14.5,0,7
+Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,60.5,84.7,37.5,23,19,4,23.863636363636363,14.636363636363637,84.7,26.6,5.6,3.125,4,9.5,0,8
+All That is Wright,0.5,0.5,0,0,0,0,1,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,57.5,80.5,16.5,41,41,0,10.5,26.09090909090909,80.5,57.4,0,1.1785714285714286,NA,13.666666666666666,0.3333333333333333,9
+Elly De La Snooze,0.5,0.5,0,0,0,0,1,https://imgur.com/d4sbJBf.png,56,78.4,29,27,27,0,18.454545454545453,17.181818181818183,78.4,37.8,0,2.4166666666666665,NA,27,1,10
+Takin' Care of Rizzness,0.5,0.5,0,0,0,0,1,https://i.imgur.com/a0H4D9d.png,52.5,73.5,30,22.5,19,3.5,19.09090909090909,14.318181818181818,73.5,26.6,4.9,2.5,1.75,9.5,0,11
+Ketel Bells,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,42.5,59.5,32.5,10,6,4,20.681818181818183,6.363636363636363,59.5,8.4,5.6,2.3214285714285716,4,6,0,12
+League Average,NA,NA,NA,NA,NA,NA,NA,NA,68.75,NA,37.708333333333336,31.041666666666668,25.583333333333332,5.458333333333333,23.99621212121212,19.75378787878788,96.25,35.81666666666667,7.641666666666667,2.7259036144578315,3.4473684210526314,12.791666666666666,0.4166666666666667,NA
