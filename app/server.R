@@ -656,6 +656,7 @@ shinyServer(function(input, output, session) {
   
   output$sp_matrix <- renderPlot({
     cat('Rendering Plot Matrix\n')
+    print(pitch_matrix$ip)
     ggplot(pitch_matrix, aes(x = ip, y = earned_runs))  + 
       facet_wrap(~team) + 
       annotate(geom = 'rect', 
