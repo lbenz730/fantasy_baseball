@@ -656,7 +656,6 @@ shinyServer(function(input, output, session) {
   
   output$sp_matrix <- renderPlot({
     cat('Rendering Plot Matrix\n')
-    print(pitch_matrix$ip)
     ggplot(pitch_matrix, aes(x = ip, y = earned_runs))  + 
       facet_wrap(~team) + 
       annotate(geom = 'rect', 
@@ -708,7 +707,9 @@ shinyServer(function(input, output, session) {
                fill = 'mediumspringgreen',
                alpha = 0.1) +
       geom_label(aes(label = n, fill = start_type)) + 
-      scale_x_discrete(drop = F) + 
+      scale_x_discrete(limits = c('< 3', '3.0', '3.1', '3.2', '4.0', '4.1', '4.2', '5.0', '5.1', '5.2', '6.0', 
+                                  '6.1', '6.2', '7.0', '> 7', 'CG')) +
+        # drop = F) + 
       scale_fill_manual(values = c('salmon', 'lightskyblue', 'orange',  'seagreen3', 'violet'), drop = F) + 
       theme(legend.position = 'bottom') + 
       labs(x = 'Innings Pitched',
