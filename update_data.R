@@ -157,6 +157,7 @@ df_daily <- read_csv(glue('data/stats/{params$season}/daily_stats_{params$season
 ### Advanced pitching stats
 pitch_stats <- 
   df_daily %>% 
+  remove_postcap() %>%
   filter(in_lineup) %>% 
   filter(pitcher) %>% 
   group_by(team_id) %>% 
@@ -514,6 +515,7 @@ if(period > 0) {
   ### SP Points Per Game
   sp_ppg <- 
     sp_points %>% 
+    sp_remove_postcap() %>%
     filter(matchup_id <= params$matchup_id) %>% 
     filter(matchup_id <= reg_season) %>% 
     filter(!is.na(n_games)) %>% 
@@ -527,6 +529,7 @@ if(period > 0) {
   ### SP Points Per Game
   qs_pct <- 
     sp_points %>% 
+    sp_remove_postcap() %>% 
     filter(matchup_id <= params$matchup_id) %>% 
     filter(matchup_id <= reg_season) %>% 
     filter(!is.na(n_games)) %>% 

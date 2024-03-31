@@ -289,3 +289,70 @@ publish <- function() {
                          originalDoc = 'fantasy.Rmd',
                          id = 'https://api.rpubs.com/api/v1/document/905951/1f88063ceeae401cb4bf80f1450a6961') 
 }
+
+remove_postcap <- function(df_daily) {
+  df_cap <- 
+    df_daily %>%
+    filter(in_lineup) %>%
+    inner_join(df_start, by = 'matchup_id') %>%
+    mutate('day_of_matchup' = scoring_period_id - start_period + 1) %>%
+    mutate('days_left' = end_period - scoring_period_id) %>%
+    group_by(matchup_id, team_id, day_of_matchup, days_left, start_cap, scoring_period_id) %>%
+    summarise('day_points' = sum(points),
+              'start_points' = sum(points[start], na.rm = T),
+              'starts' = sum(start),
+              'batting_points' = sum(points[batter]),
+              'pitching_points' = sum(points[pitcher])) %>%
+    group_by(matchup_id, team_id) %>%
+    mutate('total_starts' = cumsum(starts)) %>% 
+    mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) >= start_cap & lag(total_starts, 2) < start_cap ) %>% 
+    filter(over_start_cap) %>% 
+    ungroup() %>% 
+    select(matchup_id, team_id, scoring_period_id) %>% 
+    mutate('lineup_id' = 14,
+           'start' = T)
+  
+  df_daily <- 
+    df_daily %>% 
+    anti_join(df_cap)
+  
+  return(df_daily)
+  
+}
+
+sp_remove_postcap <- function(sp_points) {
+  df_cap <- 
+    df_daily %>%
+    filter(in_lineup) %>%
+    inner_join(df_start, by = 'matchup_id') %>%
+    mutate('day_of_matchup' = scoring_period_id - start_period + 1) %>%
+    mutate('days_left' = end_period - scoring_period_id) %>%
+    group_by(matchup_id, team_id, day_of_matchup, days_left, start_cap, scoring_period_id) %>%
+    summarise('day_points' = sum(points),
+              'start_points' = sum(points[start], na.rm = T),
+              'starts' = sum(start),
+              'batting_points' = sum(points[batter]),
+              'pitching_points' = sum(points[pitcher])) %>%
+    group_by(matchup_id, team_id) %>%
+    mutate('total_starts' = cumsum(starts)) %>% 
+    mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) >= start_cap & lag(total_starts, 2) < start_cap ) %>% 
+    filter(over_start_cap) %>% 
+    ungroup() %>% 
+    select(matchup_id, team_id, scoring_period_id) %>% 
+    mutate('lineup_id' = 14,
+           'start' = T)
+  
+  df_edit <- 
+    df_daily %>% 
+    inner_join(df_cap) %>% 
+    select(matchup_id, player, player_id, 'n_points' = points, 'n_qs' = qs)
+  
+  for(i in 1:nrow(df_edit)) {
+    ix <- which(sp_points$player_id == df_edit$player_id[i] & sp_points$matchup_id == df_edit$matchup_id[i])
+    sp_points$n_games[ix] <- sp_points$n_games[ix] - 1
+    sp_points$n_points[ix] <- sp_points$n_points[ix] - df_edit$n_points[i]
+    sp_points$n_qs[ix] <- sp_points$n_qs[ix] - as.numeric(df_edit$n_qs[i])
+  }
+  return(sp_points)
+  
+}
