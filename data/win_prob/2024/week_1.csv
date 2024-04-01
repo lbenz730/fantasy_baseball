@@ -1,13 +1,79 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-All That is Wright,Blasphemous Hot Takes,0,7,0,8,8,0,0.6111528673880816,0.49786793224474063
-All That is Wright,Blasphemous Hot Takes,1,6,0,8,8,0,0.5604122381060527,0.49786793224474063
-The Novaks,The Talmudic Tunnelers,0,7,0,8,8,0,0.6354494976850725,0.49786793224474063
-The Novaks,The Talmudic Tunnelers,1,6,0,8,8,0,0.5893902044146464,0.49786793224474063
-The Traveling Secretaries,Skubal Divers,0,7,0,8,8,0,0.40843349428028924,0.49786793224474063
-The Traveling Secretaries,Skubal Divers,1,6,0,8,8,0,0.4343207340090678,0.49786793224474063
-Takin' Care of Rizzness,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.37726098083133197,0.49786793224474063
-Takin' Care of Rizzness,Mt. Everest Taquito Farmers,1,6,0,8,8,0,0.4343207340090678,0.49786793224474063
-FVOS Re-imagined,The West Bank Occupiers,0,7,0,8,8,0,0.34583827888885854,0.49786793224474063
-FVOS Re-imagined,The West Bank Occupiers,1,6,0,8,8,0,0.3964519958346293,0.49786793224474063
-Ketel Bells,Elly De La Snooze,0,7,0,8,8,0,0.33120147349816353,0.49786793224474063
-Ketel Bells,Elly De La Snooze,1,6,0,8,8,0,0.3964519958346293,0.49786793224474063
+The Talmudic Tunnelers,All That is Wright,0,12,0,5,5,0,0.5,0.49786793224474063
+The Talmudic Tunnelers,All That is Wright,1,11,2,5,5,0,0.5022991811086975,0.5220344835769345
+The Talmudic Tunnelers,All That is Wright,2,10,4,4,5,-1,0.43264483499022693,0.4401001476989371
+The Talmudic Tunnelers,All That is Wright,3,9,4,4,5,-1,0.43632158326598375,0.4401001476989371
+The Talmudic Tunnelers,All That is Wright,4,8,4,4,5,-1,0.43632158326598375,0.4401001476989371
+The Talmudic Tunnelers,All That is Wright,5,7,4,4,5,-1,0.4394655852267381,0.4401001476989371
+The Talmudic Tunnelers,All That is Wright,6,6,4,4,5,-1,0.4393653302142259,0.4401001476989371
+The Talmudic Tunnelers,All That is Wright,7,5,4,4,5,-1,0.4398445992419359,0.4401001476989371
+The Talmudic Tunnelers,All That is Wright,8,4,4,4,5,-1,0.43522905396910877,0.4401001476989371
+The Talmudic Tunnelers,All That is Wright,9,3,11.5,3,2,1,0.7307978765759066,0.6965759478972325
+The Talmudic Tunnelers,All That is Wright,10,2,21.5,0,1,-1,0.5649411306876158,0.6094098989559074
+The Talmudic Tunnelers,All That is Wright,11,1,-11,0,0,0,0.27693297471149003,0.3680696688311592
+The Talmudic Tunnelers,All That is Wright,12,0,-30,0,0,0,0,0.18856231955200944
+Skubal Divers,Blasphemous Hot Takes,0,12,0,5,5,0,0.5,0.49786793224474063
+Skubal Divers,Blasphemous Hot Takes,1,11,14,4,5,-1,0.5093213164837802,0.5376806676544962
+Skubal Divers,Blasphemous Hot Takes,2,10,-11,3,5,-2,0.27806344203344074,0.24884808918789464
+Skubal Divers,Blasphemous Hot Takes,3,9,-11,3,5,-2,0.27806344203344074,0.24884808918789464
+Skubal Divers,Blasphemous Hot Takes,4,8,-11,3,5,-2,0.27806344203344074,0.24884808918789464
+Skubal Divers,Blasphemous Hot Takes,5,7,-11,3,5,-2,0.27806344203344074,0.24884808918789464
+Skubal Divers,Blasphemous Hot Takes,6,6,-11,3,5,-2,0.2778732316910335,0.24884808918789464
+Skubal Divers,Blasphemous Hot Takes,7,5,-11,3,5,-2,0.2776501672684261,0.24884808918789464
+Skubal Divers,Blasphemous Hot Takes,8,4,-11,3,5,-2,0.27486086062780113,0.24884808918789464
+Skubal Divers,Blasphemous Hot Takes,9,3,17,1,3,-2,0.4343509848369894,0.48958179128852347
+Skubal Divers,Blasphemous Hot Takes,10,2,12,0,3,-3,0.3351804151393933,0.34528774731256695
+Skubal Divers,Blasphemous Hot Takes,11,1,-2,0,1,-1,0.20228364170848806,0.38324098295268816
+Skubal Divers,Blasphemous Hot Takes,12,0,-28,0,0,0,0,0.20380902886711252
+Mt. Everest Taquito Farmers,The Novaks,0,12,0,5,5,0,0.5,0.49786793224474063
+Mt. Everest Taquito Farmers,The Novaks,1,11,-6.5,5,5,0,0.4463444930254993,0.41997419890740345
+Mt. Everest Taquito Farmers,The Novaks,2,10,-5.5,5,5,0,0.448709326074447,0.4317983641521422
+Mt. Everest Taquito Farmers,The Novaks,3,9,-5.5,5,5,0,0.448709326074447,0.4317983641521422
+Mt. Everest Taquito Farmers,The Novaks,4,8,-5.5,5,5,0,0.44802840261253296,0.4317983641521422
+Mt. Everest Taquito Farmers,The Novaks,5,7,-5.5,5,5,0,0.44802840261253296,0.4317983641521422
+Mt. Everest Taquito Farmers,The Novaks,6,6,-5.5,5,5,0,0.4477973034838098,0.4317983641521422
+Mt. Everest Taquito Farmers,The Novaks,7,5,-5.5,5,5,0,0.44752619771751345,0.4317983641521422
+Mt. Everest Taquito Farmers,The Novaks,8,4,-5.5,5,5,0,0.45147517232688844,0.4317983641521422
+Mt. Everest Taquito Farmers,The Novaks,9,3,-9,3,4,-1,0.3082105268002555,0.3208104913239704
+Mt. Everest Taquito Farmers,The Novaks,10,2,-61.5,2,1,1,0.11548033587525106,0.11642036765375997
+Mt. Everest Taquito Farmers,The Novaks,11,1,-59.5,0,1,-1,0.018487050043735895,0.061314688378349906
+Mt. Everest Taquito Farmers,The Novaks,12,0,-28,0,0,0,0,0.20380902886711252
+The West Bank Occupiers,The Traveling Secretaries,0,12,0,5,5,0,0.5,0.49786793224474063
+The West Bank Occupiers,The Traveling Secretaries,1,11,5,5,5,0,0.5405824489658722,0.5580569839803619
+The West Bank Occupiers,The Traveling Secretaries,2,10,11,5,5,0,0.5616185099314448,0.6279542001241427
+The West Bank Occupiers,The Traveling Secretaries,3,9,11,5,5,0,0.5616185099314448,0.6279542001241427
+The West Bank Occupiers,The Traveling Secretaries,4,8,11,5,5,0,0.5616185099314448,0.6279542001241427
+The West Bank Occupiers,The Traveling Secretaries,5,7,11,5,5,0,0.5613761336039301,0.6279542001241427
+The West Bank Occupiers,The Traveling Secretaries,6,6,11,5,5,0,0.5611655623148676,0.6279542001241427
+The West Bank Occupiers,The Traveling Secretaries,7,5,11,5,5,0,0.5611230284403559,0.6279542001241427
+The West Bank Occupiers,The Traveling Secretaries,8,4,11,5,5,0,0.5650301844309565,0.6279542001241427
+The West Bank Occupiers,The Traveling Secretaries,9,3,-5.5,4,2,2,0.6244724337050842,0.6131148655163874
+The West Bank Occupiers,The Traveling Secretaries,10,2,13,3,1,2,0.8413431759178587,0.7627224785089287
+The West Bank Occupiers,The Traveling Secretaries,11,1,50,1,0,1,0.9699568088360355,0.9119958621294203
+The West Bank Occupiers,The Traveling Secretaries,12,0,79.5,0,0,0,1,0.9788807741351271
+Elly De La Snooze,Takin' Care of Rizzness,0,12,0,5,5,0,0.5,0.49786793224474063
+Elly De La Snooze,Takin' Care of Rizzness,1,11,2,5,5,0,0.5022991811086975,0.5220344835769345
+Elly De La Snooze,Takin' Care of Rizzness,2,10,4,5,5,0,0.5216781322759743,0.5460983239622684
+Elly De La Snooze,Takin' Care of Rizzness,3,9,4,5,5,0,0.5216781322759743,0.5460983239622684
+Elly De La Snooze,Takin' Care of Rizzness,4,8,4,5,5,0,0.5216781322759743,0.5460983239622684
+Elly De La Snooze,Takin' Care of Rizzness,5,7,4,5,5,0,0.5244586174291724,0.5460983239622684
+Elly De La Snooze,Takin' Care of Rizzness,6,6,4,5,5,0,0.5243570034307594,0.5460983239622684
+Elly De La Snooze,Takin' Care of Rizzness,7,5,4,5,5,0,0.5240837280553932,0.5460983239622684
+Elly De La Snooze,Takin' Care of Rizzness,8,4,4,5,5,0,0.5252978985113258,0.5460983239622684
+Elly De La Snooze,Takin' Care of Rizzness,9,3,3.5,4,3,1,0.6473737132543711,0.6266471803160447
+Elly De La Snooze,Takin' Care of Rizzness,10,2,-11,4,2,2,0.5655455035921404,0.5622168950066841
+Elly De La Snooze,Takin' Care of Rizzness,11,1,-13.5,2,0,2,0.5878881123751601,0.5385710227847899
+Elly De La Snooze,Takin' Care of Rizzness,12,0,10.5,0,0,0,1,0.6222876278539281
+Ketel Bells,FVOS Re-imagined,0,12,0,5,5,0,0.5,0.49786793224474063
+Ketel Bells,FVOS Re-imagined,1,11,-6.5,5,5,0,0.4463444930254993,0.41997419890740345
+Ketel Bells,FVOS Re-imagined,2,10,-16,5,5,0,0.3600519198366442,0.313821086381097
+Ketel Bells,FVOS Re-imagined,3,9,-16,5,5,0,0.3600519198366442,0.313821086381097
+Ketel Bells,FVOS Re-imagined,4,8,-16,5,5,0,0.3600519198366442,0.313821086381097
+Ketel Bells,FVOS Re-imagined,5,7,-16,5,5,0,0.3580379504152575,0.313821086381097
+Ketel Bells,FVOS Re-imagined,6,6,-16,5,5,0,0.3548871773668566,0.313821086381097
+Ketel Bells,FVOS Re-imagined,7,5,-16,5,5,0,0.3546334523149767,0.313821086381097
+Ketel Bells,FVOS Re-imagined,8,4,-16,5,5,0,0.3599584120699206,0.313821086381097
+Ketel Bells,FVOS Re-imagined,9,3,-31.5,4,3,1,0.3531927804270847,0.29894482101970066
+Ketel Bells,FVOS Re-imagined,10,2,-25,3,3,0,0.24091258456190653,0.22836426635107307
+Ketel Bells,FVOS Re-imagined,11,1,0.5,1,1,0,0.49808757896566624,0.5039130507049654
+Ketel Bells,FVOS Re-imagined,12,0,-24.5,0,0,0,0,0.2326532330584561

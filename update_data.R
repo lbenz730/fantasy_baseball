@@ -321,7 +321,7 @@ if(params$matchup_id == 1) {
 } else {
   df_trades <-
     read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv')) %>%
-    mutate_at(vars(everything()), as.numeric()) %>% 
+    mutate_at(vars(everything()), as.numeric) %>% 
     filter(matchup_id < params$matchup_id - 1) %>%
     bind_rows(get_trades(params$matchup_id - 1, season_ = params$season)) %>% 
     bind_rows(get_trades(params$matchup_id, season_ = params$season))
@@ -647,7 +647,7 @@ df_wp <-
 write_csv(df_wp, glue('data/win_prob/{params$season}/week_{params$matchup_id}.csv'))
 if(params$matchup_id > 1) {
   df_wp_old <- 
-    plot_wp(params$season, params$matchup_id, plot = F, all = T)
+    plot_wp(params$season, params$matchup_id - 1, plot = F, all = T)
   write_csv(df_wp_old, glue('data/win_prob/{params$season}/week_{params$matchup_id - 1}.csv'))
 }
 
