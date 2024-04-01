@@ -321,9 +321,10 @@ if(params$matchup_id == 1) {
 } else {
   df_trades <-
     read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv')) %>%
+    mutate_at(vars(everything()), as.numeric()) %>% 
     filter(matchup_id < params$matchup_id - 1) %>%
-    bind_rows(get_trades(params$matchup_id - 1)) %>% 
-    bind_rows(get_trades(params$matchup_id))
+    bind_rows(get_trades(params$matchup_id - 1, season_ = params$season)) %>% 
+    bind_rows(get_trades(params$matchup_id, season_ = params$season))
 }
 write_csv(df_trades, glue('data/stats/{params$season}/trades_{params$season}.csv'))
 

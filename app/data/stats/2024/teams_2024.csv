@@ -1,13 +1,13 @@
 team_id,division_id,team,logo,owners,abbreviation,wins,losses,ties
-1,1,The Talmudic Tunnelers,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,0,0,0
-2,1,Skubal Divers,https://i.imgur.com/TzPHLqL.jpg,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},Dive,0,0,0
-4,1,All That is Wright,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,0,0,0
-5,1,The Traveling Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,0,0,0
-6,1,The Novaks,https://i.imgur.com/DPLqmOq.jpg,{2E1702EE-0B65-47A2-A7D9-3AE216FF000A},NVKS,0,0,0
-7,1,FVOS Re-imagined,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,{4CBB5F84-22CB-4FE7-B40C-22F318D4DB4F},FUDG,0,0,0
-8,1,Mt. Everest Taquito Farmers,https://i.imgur.com/VW41hvO.gif,"{47171099-0ED9-4805-925D-64CE3F03A213}, {C423324F-615C-495E-905C-A604D9892983}",TACO,0,0,0
-9,1,Takin' Care of Rizzness,https://i.imgur.com/a0H4D9d.png,{6C6E5618-71E4-414B-AE56-1871E4314B09},WAG,0,0,0
-11,1,The West Bank Occupiers,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,{61DEDFD6-182F-4D0B-855E-5015A1E168E2},LAMA,0,0,0
-12,1,Blasphemous Hot Takes,https://i.imgur.com/8kDpq7D.png,{8A2DBF73-E806-4373-8F90-B1F92878EE00},HOT,0,0,0
-13,1,Ketel Bells,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,0,0,0
-14,1,Elly De La Snooze,https://imgur.com/d4sbJBf.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,0,0,0
+1,1,The Talmudic Tunnelers,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,{0A0579CA-D83B-413F-9406-C96B12E613B1},JEWS,0,1,0
+2,1,Skubal Divers,https://i.imgur.com/TzPHLqL.jpg,{06FAF5C1-8FF6-4FA1-BAF5-C18FF6EFA164},Dive,0,1,0
+4,1,All That is Wright,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,"{96E6BFD7-4235-41D9-BDF3-D0BB766EF934}, {DDEC6630-63D1-4147-8AD9-8735B08BE95A}",ATiW,1,0,0
+5,1,The Traveling Secretaries,https://i.imgur.com/wll1Ubw.jpg,{AEB597BF-E666-4173-96C6-1E8BC741281A},HUBE,0,1,0
+6,1,The Novaks,https://i.imgur.com/DPLqmOq.jpg,{2E1702EE-0B65-47A2-A7D9-3AE216FF000A},NVKS,1,0,0
+7,1,FVOS Re-imagined,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,{4CBB5F84-22CB-4FE7-B40C-22F318D4DB4F},FUDG,1,0,0
+8,1,Mt. Everest Taquito Farmers,https://i.imgur.com/VW41hvO.gif,"{47171099-0ED9-4805-925D-64CE3F03A213}, {C423324F-615C-495E-905C-A604D9892983}",TACO,0,1,0
+9,1,Takin' Care of Rizzness,https://i.imgur.com/a0H4D9d.png,{6C6E5618-71E4-414B-AE56-1871E4314B09},WAG,0,1,0
+11,1,The West Bank Occupiers,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,{61DEDFD6-182F-4D0B-855E-5015A1E168E2},LAMA,1,0,0
+12,1,Blasphemous Hot Takes,https://i.imgur.com/8kDpq7D.png,{8A2DBF73-E806-4373-8F90-B1F92878EE00},HOT,1,0,0
+13,1,Ketel Bells,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,{A544F97C-A308-4F8A-AC06-48F49CBAF29F},BOGA,0,1,0
+14,1,Elly De La Snooze,https://imgur.com/d4sbJBf.png,{99F4E406-8BD3-485A-B4E4-068BD3C85A64},PRAT,1,0,0

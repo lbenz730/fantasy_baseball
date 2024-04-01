@@ -7,7 +7,7 @@ library(furrr)
 
 source(here('helpers.R'))
 
-get_trades <- function(week, season_ = 2023, proposed = F) {
+get_trades <- function(week, season_ = 2024, proposed = F) {
   df_start <- 
     read_csv(here('data/df_start.csv')) %>% 
     filter(season == season_)
@@ -30,6 +30,16 @@ get_trades <- function(week, season_ = 2023, proposed = F) {
       w
       
     })
+  
+  if(nrow(df) == 0) {
+    df <- 
+      tibble('team_id' = NA_real_,
+             'scoring_period_id' = NA_real_,
+             'matchup_id' = week) %>% 
+      head(0)
+    
+    return(df)
+  }
   
   if('relatedTransactionId' %in% names(df)) {
     df <- 
