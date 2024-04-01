@@ -759,6 +759,7 @@ shinyServer(function(input, output, session) {
         ungroup() %>% 
         mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
                'ppg' = n_points/n_games) %>%
+        filter(n_games > 0) %>% 
         group_by(matchup_id) %>% 
         arrange(-n_points, n_games) %>%
         dplyr::slice(1:10) %>% 
