@@ -1,19 +1,25 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-All That is Wright,Blasphemous Hot Takes,0,7,0,8,8,0,0.6111528673880816,0.49786793224474063
+All That is Wright,Blasphemous Hot Takes,0,7,0,8,8,0,0.6033574964348044,0.49786793224474063
 All That is Wright,Blasphemous Hot Takes,1,6,-18,7,7,0,0.4427756730517358,0.2933770139021725
 All That is Wright,Blasphemous Hot Takes,2,5,24,5,7,-2,0.5896793290287776,0.5557899099143956
-The Novaks,The Talmudic Tunnelers,0,7,0,8,8,0,0.6354494976850725,0.49786793224474063
+All That is Wright,Blasphemous Hot Takes,3,4,19.5,4,5,-1,0.5442365946894244,0.5906080318119903
+The Novaks,The Talmudic Tunnelers,0,7,0,8,8,0,0.6329218259264265,0.49786793224474063
 The Novaks,The Talmudic Tunnelers,1,6,-7,8,8,0,0.5323026390999523,0.4140955071300109
 The Novaks,The Talmudic Tunnelers,2,5,-15.5,8,8,0,0.48123644077808236,0.3190514189020083
+The Novaks,The Talmudic Tunnelers,3,4,-67,6,4,2,0.1807797948995768,0.13116826637563048
 The Traveling Secretaries,Skubal Divers,0,7,0,8,8,0,0.40843349428028913,0.49786793224474063
 The Traveling Secretaries,Skubal Divers,1,6,-16.5,8,7,1,0.37100596726703555,0.4341093451166108
 The Traveling Secretaries,Skubal Divers,2,5,-34.5,7,7,0,0.21667477420392794,0.1574922467978379
-Takin' Care of Rizzness,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.37726098083133197,0.49786793224474063
+The Traveling Secretaries,Skubal Divers,3,4,-67,5,5,0,0.05868481146045092,0.03737141424157036
+Takin' Care of Rizzness,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.39533950700892107,0.49786793224474063
 Takin' Care of Rizzness,Mt. Everest Taquito Farmers,1,6,-31.5,8,8,0,0.225265962544279,0.1777127120057577
 Takin' Care of Rizzness,Mt. Everest Taquito Farmers,2,5,-27,6,6,0,0.24520065253501383,0.21176919666554753
-FVOS Re-imagined,The West Bank Occupiers,0,7,0,8,8,0,0.34583827888885854,0.49786793224474063
+Takin' Care of Rizzness,Mt. Everest Taquito Farmers,3,4,-4,5,5,0,0.46856814937676194,0.44967718506282556
+FVOS Re-imagined,The West Bank Occupiers,0,7,0,8,8,0,0.3483073227507496,0.49786793224474063
 FVOS Re-imagined,The West Bank Occupiers,1,6,-21.5,7,5,2,0.36645464314507303,0.462261409237328
-FVOS Re-imagined,The West Bank Occupiers,2,5,12,4,4,0,0.5185278481837332,0.6391811701636612
-Ketel Bells,Elly De La Snooze,0,7,0,8,8,0,0.33120147349816353,0.49786793224474063
+FVOS Re-imagined,The West Bank Occupiers,2,5,13,4,4,0,0.5216526939595837,0.6502580414837096
+FVOS Re-imagined,The West Bank Occupiers,3,4,-36.5,4,3,1,0.3187306717401431,0.25959614682479987
+Ketel Bells,Elly De La Snooze,0,7,0,8,8,0,0.33361931353446195,0.49786793224474063
 Ketel Bells,Elly De La Snooze,1,6,25,7,7,0,0.5722859376751978,0.7686161965546996
 Ketel Bells,Elly De La Snooze,2,5,38.5,5,7,-2,0.5520265249050633,0.6845193642561512
+Ketel Bells,Elly De La Snooze,3,4,83,5,7,-2,0.9259447715481616,0.9215913523239375

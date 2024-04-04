@@ -1,16 +1,16 @@
 matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitching_points,away_team_id,away_total_points,away_batting_points,away_pitching_points,home_team,away_team
-1,1,1,222,140.5,81.5,4,252,150,102,The Talmudic Tunnelers,All That is Wright
-1,2,2,182.5,113,69.5,12,210.5,131,79.5,Skubal Divers,Blasphemous Hot Takes
+1,1,1,223,141.5,81.5,4,252,150,102,The Talmudic Tunnelers,All That is Wright
+1,2,2,182.5,113,69.5,12,213.5,131,82.5,Skubal Divers,Blasphemous Hot Takes
 1,3,8,245,168.5,76.5,6,273,149.5,123.5,Mt. Everest Taquito Farmers,The Novaks
-1,4,11,228,143.5,84.5,5,148.5,97.5,51,The West Bank Occupiers,The Traveling Secretaries
-1,5,14,209.5,128.5,81,9,199,127.5,71.5,Elly De La Snooze,Takin' Care of Rizzness
+1,4,11,227,142.5,84.5,5,148.5,97.5,51,The West Bank Occupiers,The Traveling Secretaries
+1,5,14,208.5,127.5,81,9,206,127.5,78.5,Elly De La Snooze,Takin' Care of Rizzness
 1,6,13,145,104,41,7,169.5,137.5,32,Ketel Bells,FVOS Re-imagined
-2,7,4,117,55.5,61.5,12,93,57.5,35.5,All That is Wright,Blasphemous Hot Takes
-2,8,6,51.5,38.5,13,1,67,58.5,8.5,The Novaks,The Talmudic Tunnelers
-2,9,5,44,42.5,1.5,2,78.5,65,13.5,The Traveling Secretaries,Skubal Divers
-2,10,9,82.5,44.5,38,8,109.5,71.5,38,Takin' Care of Rizzness,Mt. Everest Taquito Farmers
-2,11,7,125,43.5,81.5,11,113,57.5,55.5,FVOS Re-imagined,The West Bank Occupiers
-2,12,13,92,53,39,14,53.5,44.5,9,Ketel Bells,Elly De La Snooze
+2,7,4,171,77,94,12,151.5,70.5,81,All That is Wright,Blasphemous Hot Takes
+2,8,6,97,73.5,23.5,1,164,91,73,The Novaks,The Talmudic Tunnelers
+2,9,5,70.5,61,9.5,2,137.5,78.5,59,The Traveling Secretaries,Skubal Divers
+2,10,9,133.5,69,64.5,8,137.5,87,50.5,Takin' Care of Rizzness,Mt. Everest Taquito Farmers
+2,11,7,145.5,57,88.5,11,182,95,87,FVOS Re-imagined,The West Bank Occupiers
+2,12,13,145.5,106.5,39,14,62.5,53.5,9,Ketel Bells,Elly De La Snooze
 3,13,6,NA,NA,NA,4,NA,NA,NA,The Novaks,All That is Wright
 3,14,12,NA,NA,NA,5,NA,NA,NA,Blasphemous Hot Takes,The Traveling Secretaries
 3,15,1,NA,NA,NA,9,NA,NA,NA,The Talmudic Tunnelers,Takin' Care of Rizzness
