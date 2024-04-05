@@ -840,6 +840,8 @@ df_daily %>%
 dir_copy('data/', 'app/data', overwrite = T)
 dir_copy('figures/', 'app/figures', overwrite = T)
 dir_copy('models/', 'app/models', overwrite = T)
+dir_delete(glue('app/data/stats/{2020:(params$season - 1)}'))
+dir_delete(glue('app/data/win_prob/{2023:(params$season - 1)}'))
 file.remove('app/data/playoff_odds/raw_sims.csv')
 file.remove('data/playoff_odds/raw_sims.csv')
 

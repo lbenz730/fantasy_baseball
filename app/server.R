@@ -1239,8 +1239,8 @@ shinyServer(function(input, output, session) {
       facet_wrap(~paste(team_home, 'vs.', team_away)) + 
       geom_line() +
       geom_point(aes(fill = start_factor), size = 8, color = 'black', pch = 21) +
-      geom_image(data = df_image, aes(x = 0.4, y = 0.95, image = logo_home), size = 0.125) + 
-      geom_image(data = df_image, aes(x = 0.4, y = 0.05, image = logo_away), size = 0.125) +
+      geom_image(data = df_image, aes(x = 0.4, y = 0.95, image = logo_home), size = 0.1) +
+      geom_image(data = df_image, aes(x = 0.4, y = 0.05, image = logo_away), size = 0.1) +
       theme_bw() + 
       theme(plot.title = element_text(size = 24, hjust = 0.5),
             axis.title = element_text(size = 16),

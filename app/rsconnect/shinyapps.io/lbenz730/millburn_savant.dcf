@@ -1,11 +1,12 @@
 name: millburn_savant
-title: millburn_savant
-username:
+title:
+username: lbenz730
 account: lbenz730
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8797792
-bundleId: 8097151
+bundleId: 8458377
 url: https://lbenz730.shinyapps.io/millburn_savant/
+version: 1
 asMultiple: FALSE
 asStatic: FALSE
