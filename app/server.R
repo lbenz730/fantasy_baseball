@@ -1235,7 +1235,7 @@ shinyServer(function(input, output, session) {
     
     
     plot <-
-      ggplot(df_wp, aes(x = day_of_matchup, y = win_prob)) + 
+      ggplot(df_wp(), aes(x = day_of_matchup, y = win_prob)) + 
       facet_wrap(~paste(team_home, 'vs.', team_away)) + 
       geom_line() +
       geom_point(aes(fill = start_factor), size = 8, color = 'black', pch = 21) +
@@ -1257,10 +1257,10 @@ shinyServer(function(input, output, session) {
       scale_x_continuous(limits = c(0, max(df_wp()$days_left)), breaks = 0:max(df_wp()$days_left)) +
       scale_fill_brewer(palette = 'RdYlGn', drop = FALSE) + 
       guides(fill = guide_legend(nrow = 3)) + 
-      geom_label(data = filter(df_wp, day_of_matchup == max(day_of_matchup)) ,
+      geom_label(data = filter(df_wp(), day_of_matchup == max(day_of_matchup)) ,
                  aes(x = 2.5, y = 1, label = paste0(sprintf('%0.1f', 100 * (win_prob)), '%')),
                  size = 8) +
-      geom_label(data = filter(df_wp, day_of_matchup == max(day_of_matchup)) ,
+      geom_label(data = filter(df_wp(), day_of_matchup == max(day_of_matchup)) ,
                  aes(x = 2.5, y = 0, label = paste0(sprintf('%0.1f', 100 * (1-win_prob)), '%')),
                  size = 8) 
     # waiter::waiter_hide()
