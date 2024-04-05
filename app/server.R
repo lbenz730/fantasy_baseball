@@ -1234,13 +1234,13 @@ shinyServer(function(input, output, session) {
       distinct(team_home, team_away, logo_home, logo_away)
     
     
-    plot <- 
-      ggplot(df_wp(), aes(x = day_of_matchup, y = win_prob)) + 
+    plot <-
+      ggplot(df_wp, aes(x = day_of_matchup, y = win_prob)) + 
       facet_wrap(~paste(team_home, 'vs.', team_away)) + 
       geom_line() +
       geom_point(aes(fill = start_factor), size = 8, color = 'black', pch = 21) +
-      geom_image(data = df_image, aes(x = 0.4, y = 0.95, image = logo_home), size = 0.1) +
-      geom_image(data = df_image, aes(x = 0.4, y = 0.05, image = logo_away), size = 0.1) +
+      geom_image(data = df_image %>% select(team_home, team_away, logo_home), aes(x = 0.4, y = 0.95, image = logo_home), size = 0.15) +
+      geom_image(data = df_image %>% select(team_away, team_home, logo_away), aes(x = 0.4, y = 0.05, image = logo_away), size = 0.15) +
       theme_bw() + 
       theme(plot.title = element_text(size = 24, hjust = 0.5),
             axis.title = element_text(size = 16),
@@ -1253,14 +1253,14 @@ shinyServer(function(input, output, session) {
            title = 'Win Probability Charts',
            subtitle = paste('Week:', input$matchup_id_wp),
            fill = 'Start Advantage') +
-      scale_y_continuous(limits = c(0,1), labels = function(x){ paste0(100 * pmax(x, 1-x), '%') }) + 
+      scale_y_continuous(limits = c(0,1), labels = function(x){ paste0(100 * pmax(x, 1-x), '%') }) +
       scale_x_continuous(limits = c(0, max(df_wp()$days_left)), breaks = 0:max(df_wp()$days_left)) +
       scale_fill_brewer(palette = 'RdYlGn', drop = FALSE) + 
       guides(fill = guide_legend(nrow = 3)) + 
-      geom_label(data = filter(df_wp(), day_of_matchup == max(day_of_matchup)),
-                 aes(x = 2.5, y = 1, label = paste0(sprintf('%0.1f', 100 * win_prob), '%')),
-                 size = 8) + 
-      geom_label(data = filter(df_wp(), day_of_matchup == max(day_of_matchup)),
+      geom_label(data = filter(df_wp, day_of_matchup == max(day_of_matchup)) ,
+                 aes(x = 2.5, y = 1, label = paste0(sprintf('%0.1f', 100 * (win_prob)), '%')),
+                 size = 8) +
+      geom_label(data = filter(df_wp, day_of_matchup == max(day_of_matchup)) ,
                  aes(x = 2.5, y = 0, label = paste0(sprintf('%0.1f', 100 * (1-win_prob)), '%')),
                  size = 8) 
     # waiter::waiter_hide()
