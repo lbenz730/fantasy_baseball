@@ -25,14 +25,14 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 1,1B,Bryce Harper,30951,9,20,6.666666666666667,2
 2,2B,Mookie Betts,33039,1,19,6.333333333333333,2
 3,3B,Spencer Steer,4722857,11,17.5,5.833333333333333,2
-4,SS,Trevor Story,32150,1,11.5,3.8333333333333335,2
+4,SS,Bobby Witt Jr.,42403,8,13.5,3.375,2
 5,OF,Seiya Suzuki,4142424,4,24,8,2
 5,OF,Yordan Alvarez,36018,13,19.5,6.5,2
 5,OF,Jorge Soler,32558,2,19,6.333333333333333,2
 5,OF,Mike Trout,30836,2,18.5,6.166666666666667,2
-5,OF,Kyle Tucker,34967,12,16,5.333333333333333,2
+5,OF,Connor Joe,35440,14,16,8,2
 6,2B/SS,Jose Altuve,31662,11,16,5.333333333333333,2
-7,1B/3B,Jose Ramirez,32801,5,13,4.333333333333333,2
+7,1B/3B,Jake Burger,39882,6,16,4,2
 12,UTIL,Yainer Diaz,4781491,8,18.5,6.166666666666667,2
 14,SP,Shota Imanaga,5134630,4,30,30,2
 14,SP,Tanner Houck,41009,12,30,30,2
@@ -40,6 +40,6 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 14,SP,Cole Ragans,41054,4,29,29,2
 14,SP,Sean Manaea,33244,13,29,29,2
 14,SP,Zack Wheeler,31267,9,27,27,2
+15,RP,Ryan Helsley,39909,5,16,5.333333333333333,2
 15,RP,Alexis Diaz,4905920,7,15,7.5,2
-15,RP,Ian Hamilton,41127,6,12,12,2
-15,RP,Kenley Jansen,29630,1,9.5,4.75,2
+15,RP,Emmanuel Clase,41743,8,13,6.5,2
