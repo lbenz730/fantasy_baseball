@@ -324,8 +324,3 @@ if(params$current_matchup > 6) {
   
   df_asg_counts <- change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv')))
 }
-
-
-### Clear useless stuff
-# rm(list(df1, df2, df_trades, df_penalty, df_log, df_fa, df_age_counts, 
-#         df_ags_lineup, df_sp_penalty, df_rp_penalty))
