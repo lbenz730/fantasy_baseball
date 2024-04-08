@@ -407,7 +407,7 @@ team_points <-
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     T ~ total_points)) %>% 
   mutate("adj_batting_pts" = case_when(
-    matchup_id == 1 ~ batting_points * 7/11,
+    matchup_id == 1 ~ batting_points * 7/5,
     matchup_id == 14 ~ batting_points * 7/10,
     matchup_id > 21 ~ batting_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ batting_points,
@@ -415,7 +415,7 @@ team_points <-
     
     T ~ batting_points)) %>% 
   mutate("adj_pitching_pts" = case_when(
-    matchup_id == 1 ~ pitching_points * 7/11,
+    matchup_id == 1 ~ pitching_points * 7/5,
     matchup_id == 14 ~ pitching_points * 7/10,
     matchup_id > 21 ~ pitching_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ pitching_points,
