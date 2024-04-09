@@ -1,7 +1,13 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 The Novaks,All That is Wright,0,7,0,8,8,0,0.4565282695267764,0.49786793224474063
-Blasphemous Hot Takes,The Traveling Secretaries,0,7,0,8,8,0,0.8295121577154995,0.49786793224474063
+The Novaks,All That is Wright,1,6,-8,8,6,2,0.548130532691252,0.5902143547404395
+Blasphemous Hot Takes,The Traveling Secretaries,0,7,0,8,8,0,0.8308288269016627,0.49786793224474063
+Blasphemous Hot Takes,The Traveling Secretaries,1,6,11.5,7,6,1,0.8473972933086946,0.6965759478972325
 The Talmudic Tunnelers,Takin' Care of Rizzness,0,7,0,8,8,0,0.6287533607243326,0.49786793224474063
+The Talmudic Tunnelers,Takin' Care of Rizzness,1,6,6.5,7,6,1,0.6664391437616535,0.6536912517977694
 Skubal Divers,FVOS Re-imagined,0,7,0,8,8,0,0.6267529064173026,0.49786793224474063
+Skubal Divers,FVOS Re-imagined,1,6,-16,8,7,1,0.5034800747774014,0.438923944901411
 Mt. Everest Taquito Farmers,Ketel Bells,0,7,0,8,8,0,0.5707319166717026,0.49786793224474063
+Mt. Everest Taquito Farmers,Ketel Bells,1,6,-21.5,7,6,1,0.47230236606197984,0.38678527257827067
 The West Bank Occupiers,Elly De La Snooze,0,7,0,8,8,0,0.7193598215858725,0.49786793224474063
+The West Bank Occupiers,Elly De La Snooze,1,6,19.5,5,8,-3,0.6598637189864087,0.41349153041788295
