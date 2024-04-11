@@ -13,6 +13,7 @@ theme_set(theme_bw() +
 
 teams2022 <- read_csv('data/stats/2022/teams_2022.csv')
 teams2023 <- read_csv('data/stats/2023/teams_2023.csv')
+teams2024 <- read_csv('data/stats/2024/teams_2024.csv')
 
 odds2022 <- 
   read_csv('data/playoff_odds/historical_playoff_odds_2022.csv') %>% 
@@ -22,23 +23,29 @@ odds2022 <-
 odds2023 <- read_csv('data/playoff_odds/historical_playoff_odds_2023.csv') %>% 
   mutate('season' = 2023) %>% 
   left_join(teams2023)
+odds2024 <- read_csv('data/playoff_odds/historical_playoff_odds_2024.csv') %>% 
+  mutate('season' = 2024) %>% 
+  left_join(teams2024)
 
 df <- 
-  bind_rows(odds2022, odds2023) %>% 
-  filter(matchup_id <= 19) %>% 
+  bind_rows(odds2022 %>% filter(matchup_id <= 20) , 
+            odds2023 %>% filter(matchup_id <= 21) ,
+            odds2024) %>% 
+  
   group_by(team_id) %>% 
-  mutate('franchise' = last(team[season == 2023])) %>% 
-  group_by(team_id, season) %>% 
-  filter(last(last_place) > 0.001) %>% 
-  ungroup() 
+  mutate('franchise' = last(team[season == 2024])) %>% 
+  ungroup()
+  # group_by(team_id, season) %>%
+  # filter(last_place > 0.1)
+  
   
 
 ggplot(df, aes(x = matchup_id, y = last_place)) + 
-  facet_wrap(~season) + 
+  facet_wrap(~season, ncol = 1) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 0:19) +
+  scale_x_continuous(breaks = 0:21) +
   theme(legend.position = 'bottom') +
   labs(x = 'Week',
        y = 'Ferry Odds',
