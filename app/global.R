@@ -259,10 +259,16 @@ if(nrow(traded_players) > 0) {
     group_split() %>% 
     map(~{ 
       if(.x$n_given[1]  > .x$n_rec[1]) {
-        tmp <- .x[1,]
-        tmp[1,] <- NA
-        tmp$trade_id <- .x$trade_id[1]
-        bind_rows(.x, tmp)
+        tmp_z <- NULL
+        for(z in 1:(.x$n_given[1] - .x$n_rec[1])) {
+          tmp <- .x[1,]
+          tmp[1,] <- NA
+          tmp$trade_id <- .x$trade_id[1]
+          tmp_z <- bind_rows(tmp, tmp_z)
+        }
+        
+        
+        bind_rows(.x, tmp_z)
       } else {
         .x 
       }
