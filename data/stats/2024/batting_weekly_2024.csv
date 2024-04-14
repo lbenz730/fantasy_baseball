@@ -1087,7 +1087,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 12,NA,NA,NA,NA,NA,13
 13,3,Sal Frelick,4417795,1,5.5,6
 13,3,Francisco Lindor,32129,1,1.5,6
-13,3,Riley Greene,42179,5,15.5,6
+13,3,Riley Greene,42179,6,15.5,6
 13,3,Jose Leclerc,33926,NA,1,6
 13,3,Ranger Suarez,39817,NA,27,6
 13,3,Jake Burger,39882,5,7.5,6
@@ -1101,17 +1101,17 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 13,3,Nolan Gorman,41174,5,8.5,6
 13,3,Evan Phillips,37911,NA,13,6
 13,3,Adam Duvall,32664,1,3.5,6
-13,3,Spencer Torkelson,4424286,5,12,6
+13,3,Spencer Torkelson,4424286,6,12,6
 13,3,Oneil Cruz,39712,4,-3,6
 13,3,Will Smith,38309,5,12.5,6
 13,3,George Kirby,42406,NA,-4,6
 13,3,Ian Hamilton,41127,NA,7.5,6
 13,3,Reid Detmers,4326697,NA,27,6
-13,3,Charlie Blackmon,31084,4,14,6
+13,3,Charlie Blackmon,31084,5,14,6
 13,3,Bobby Miller,4326703,NA,5.5,6
 13,3,Kyle Schwarber,33712,6,15.5,6
 13,3,Corey Seager,32691,5,9.5,6
-13,3,Tyler O'Neill,34168,4,4.5,6
+13,3,Tyler O'Neill,34168,5,4.5,6
 13,3,Ryan Mountcastle,34940,4,16,6
 14,3,Sal Frelick,4417795,1,-0.5,12
 14,3,Yoan Moncada,33984,2,1,12
@@ -1129,7 +1129,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 14,3,Hunter Greene,39635,NA,7.5,12
 14,3,Joel Payamps,40021,NA,4,12
 14,3,Kyle Tucker,34967,6,31,12
-14,3,Triston Casas,41180,5,17,12
+14,3,Triston Casas,41180,6,17,12
 14,3,Chris Sale,30948,NA,10.5,12
 14,3,Andres Munoz,40939,NA,9,12
 14,3,Aaron Nola,33709,NA,17.5,12
@@ -1165,7 +1165,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 15,3,Mike Trout,30836,5,23.5,1
 15,3,Jackson Merrill,4872691,5,13,1
 15,3,Cedric Mullins,35578,5,16,1
-15,3,Alex Kirilloff,40636,5,7,1
+15,3,Alex Kirilloff,40636,6,7,1
 15,3,Kenley Jansen,29630,NA,2,1
 16,3,Michael Wacha,32640,NA,1,2
 16,3,Blaze Alexander,41345,2,3,2
@@ -1194,7 +1194,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 16,3,Luis Rengifo,37237,4,7,2
 16,3,Mason Miller,4730225,NA,16,2
 16,3,Vladimir Guerrero Jr.,35002,5,13,2
-16,3,Colt Keith,4683384,2,3.5,2
+16,3,Colt Keith,4683384,3,3.5,2
 17,3,Josh Smith,42884,6,13.5,8
 17,3,Thairo Estrada,36485,2,3,8
 17,3,Christian Encarnacion-Strand,5012106,5,7.5,8
@@ -1369,7 +1369,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 13,3,Ke'Bryan Hayes,35020,5,7,4
 13,3,George Springer,32078,4,7.5,4
 13,3,Marcus Semien,32146,6,14,4
-13,3,Edouard Julien,3985190,2,6.5,4
+13,3,Edouard Julien,3985190,3,6.5,4
 13,3,Colton Cowser,4416990,4,31.5,4
 13,3,Cole Ragans,41054,NA,3.5,4
 13,3,Teoscar Hernandez,33377,5,14.5,4
@@ -1396,7 +1396,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 14,3,Bryan De La Cruz,40787,3,1,5
 14,3,MacKenzie Gore,39636,NA,21.5,5
 14,3,Jake Fraley,37974,1,4.5,5
-14,3,Nolan Jones,37340,5,12.5,5
+14,3,Nolan Jones,37340,6,12.5,5
 14,3,Brandon Pfaadt,4721302,NA,2,5
 14,3,Brandon Nimmo,32159,5,34,5
 14,3,Andrew Heaney,32672,NA,-5,5
@@ -1406,7 +1406,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 14,3,James Paxton,31980,NA,19.5,5
 14,3,Starling Marte,30830,5,14.5,5
 14,3,Bryson Stott,42417,6,9,5
-14,3,Mark Canha,31670,3,9.5,5
+14,3,Mark Canha,31670,4,9.5,5
 14,3,Christian Walker,32758,5,15.5,5
 14,3,Josh Hader,32760,NA,8,5
 14,3,Bo Bichette,38904,5,13,5
@@ -1460,12 +1460,12 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 16,3,Paul Goldschmidt,31027,4,2.5,7
 16,3,Xander Bogaerts,31606,4,9.5,7
 16,3,Dean Kremer,38295,NA,-7.5,7
-16,3,Masataka Yoshida,4872598,5,7,7
+16,3,Masataka Yoshida,4872598,6,7,7
 17,3,Nestor Cortes,36480,NA,33,13
 17,3,Nick Lodolo,42433,NA,24.5,13
 17,3,Rafael Devers,33859,2,2.5,13
 17,3,Cavan Biggio,37639,5,9,13
-17,3,Jarren Duran,41610,5,11,13
+17,3,Jarren Duran,41610,6,11,13
 17,3,Vinnie Pasquantino,4109109,4,25,13
 17,3,Steven Kwan,41996,5,17.5,13
 17,3,Carlos Correa,32653,4,6,13
@@ -1503,12 +1503,12 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 18,3,Anthony Volpe,42547,5,19,14
 18,3,Nick Castellanos,31187,6,6.5,14
 18,3,Cody Bradford,4142539,NA,26.5,14
-18,3,Ezequiel Tovar,4905919,5,18,14
+18,3,Ezequiel Tovar,4905919,6,18,14
 18,3,Elly De La Cruz,4917694,5,36,14
 18,3,Pablo Lopez,39671,NA,1.5,14
 18,3,William Contreras,39895,5,27.5,14
 18,3,Kevin Gausman,32667,NA,-7,14
-18,3,Ryan McMahon,33247,5,17,14
+18,3,Ryan McMahon,33247,6,17,14
 19,NA,NA,NA,NA,NA,5
 20,NA,NA,NA,NA,NA,6
 21,NA,NA,NA,NA,NA,12
