@@ -43,19 +43,19 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Edwin Diaz,35394,4,24,6,2
 15,RP,Ryan Helsley,39909,5,21,5.25,2
 15,RP,Emmanuel Clase,41743,8,20,6.666666666666667,2
-0,C,William Contreras,39895,14,21,5.25,3
-1,1B,Vinnie Pasquantino,4109109,13,25,6.25,3
-2,2B,Ozzie Albies,33783,8,20.5,5.125,3
-3,3B,Elly De La Cruz,4917694,14,37,9.25,3
-4,SS,Bobby Witt Jr.,42403,8,25,6.25,3
-5,OF,Brandon Nimmo,32159,5,32.5,8.125,3
-5,OF,Colton Cowser,4416990,4,29,9.666666666666666,3
-5,OF,Mike Trout,30836,1,24,6,3
-5,OF,Yordan Alvarez,36018,13,24,4.8,3
-5,OF,Christian Yelich,31283,4,23,5.75,3
-6,2B/SS,Ezequiel Tovar,4905919,14,20.5,5.125,3
-7,1B/3B,Josh Naylor,35066,13,23,7.666666666666667,3
-12,UTIL,Shohei Ohtani,39832,11,23.5,5.875,3
+0,C,William Contreras,39895,14,27.5,5.5,3
+1,1B,Pete Alonso,37498,13,36,7.2,3
+2,2B,Jordan Westburg,4298641,2,22.5,5.625,3
+3,3B,Elly De La Cruz,4917694,14,36,7.2,3
+4,SS,Bobby Witt Jr.,42403,8,34,6.8,3
+5,OF,Brandon Nimmo,32159,5,34,6.8,3
+5,OF,Juan Soto,36969,7,32.5,6.5,3
+5,OF,Colton Cowser,4416990,4,31.5,7.875,3
+5,OF,Kyle Tucker,34967,12,31,5.166666666666667,3
+5,OF,Yordan Alvarez,36018,13,29.5,4.916666666666667,3
+6,2B/SS,Jose Altuve,31662,11,21.5,3.5833333333333335,3
+7,1B/3B,Josh Naylor,35066,13,31.5,6.3,3
+12,UTIL,Shohei Ohtani,39832,11,27.5,5.5,3
 14,SP,Tyler Glasnow,33190,2,37,37,3
 14,SP,Nestor Cortes,36480,13,33,33,3
 14,SP,Logan Gilbert,41221,12,28.5,28.5,3
