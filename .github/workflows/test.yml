@@ -1,4 +1,4 @@
-name: Databuild
+name: Databuild test
 on:
   schedule:
     - cron: "0 0 * * *"
