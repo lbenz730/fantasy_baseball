@@ -163,6 +163,11 @@
       ],
       "Hash": "543776ae6848fde2f48ff3816d0628bc"
     },
+    "baseballr": {
+      "Package": "baseballr",
+      "Version": "1.6.0",
+      "Source": "Repository"
+    },
     "bigD": {
       "Package": "bigD",
       "Version": "0.2.0",

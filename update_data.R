@@ -8,6 +8,7 @@ library(here)
 library(patchwork)
 library(truncnorm)
 library(fs)
+library(baseballr)
 
 
 plan(multisession(workers = min(parallel::detectCores(), 12)))
@@ -547,7 +548,7 @@ if(period > 0) {
            'total' = 0,
            'batting_ppg' = 0)
   
- sp_ppg <- 
+  sp_ppg <- 
     tibble('team' = teams$team,
            'n_games' = 0,
            'total' = 0,
@@ -812,6 +813,28 @@ if(params$matchup_id > 6) {
   write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
   write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
 }
+
+
+### MLB Probables
+df_probables <- 
+  mlb_schedule(params$season) %>% 
+  filter(date >= Sys.Date(),
+         date <= Sys.Date() + 2) %>% 
+  pull(game_pk) %>% 
+  map_dfr(mlb_probables) %>% 
+  select(game_date, 'player' = fullName) %>% 
+  mutate('player' = stringi::stri_trans_general(str = player, 
+                                                id = 'Latin-ASCII')) %>% 
+  inner_join(
+    df_daily %>% 
+      filter(scoring_period_id == max(scoring_period_id)) %>% 
+      distinct(player_id, player, team_id),
+    
+    by = c('player')
+  )
+
+write_csv(df_probables, glue('data/stats/{params$season}/probables.csv'))
+
 
 ### Pitch Matrix
 df_daily %>% 
