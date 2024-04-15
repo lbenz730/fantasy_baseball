@@ -1138,7 +1138,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 14,3,Tanner Houck,41009,NA,-2,12
 14,3,J.T. Realmuto,32177,5,4.5,12
 14,3,Joey Gallo,32818,1,0,12
-14,3,Robert Suarez,4148749,NA,13,12
+14,3,Robert Suarez,4148749,NA,17.5,12
 14,3,Jared Triolo,42933,1,2,12
 14,3,Giancarlo Stanton,30583,5,17.5,12
 14,3,Jeremy Pena,41273,7,20.5,12
@@ -1458,7 +1458,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 16,3,Yusei Kikuchi,41415,NA,26,7
 16,3,Juan Soto,36969,6,36.5,7
 16,3,Alexis Diaz,4905920,NA,9.5,7
-16,3,James Outman,41802,6,17.5,7
+16,3,James Outman,41802,6,18.5,7
 16,3,Keibert Ruiz,38827,1,2,7
 16,3,Jose Berrios,32811,NA,55.5,7
 16,3,Max Fried,32685,NA,21,7
@@ -1490,7 +1490,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 17,3,Hunter Brown,4717803,NA,-27.5,13
 17,3,Yordan Alvarez,36018,7,32.5,13
 17,3,Jon Gray,33203,NA,18.5,13
-17,3,MJ Melendez,40948,4,4,13
+17,3,MJ Melendez,40948,4,5,13
 17,3,Martin Perez,31098,NA,28,13
 17,3,Josh Naylor,35066,6,35.5,13
 17,3,Pete Alonso,37498,6,38.5,13
@@ -1500,7 +1500,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 18,3,Michael Harris II,42470,6,10,14
 18,3,Javier Assad,5002950,NA,14.5,14
 18,3,Jose Quintana,32106,NA,7.5,14
-18,3,Evan Carter,4917921,6,25.5,14
+18,3,Evan Carter,4917921,6,26.5,14
 18,3,Grayson Rodriguez,41196,NA,11,14
 18,3,Brendan Donovan,41773,6,18,14
 18,3,Jordan Wicks,4420749,NA,2,14
