@@ -101,6 +101,81 @@ distributions <-
   filter(sim_id <= 1000) %>% 
   select(-division_id, -sim_id)
 
+### Probable Pitchers
+df_probables <- 
+  read_csv(glue('data/stats/{params$season}/probables.csv')) %>% 
+  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+  select(game_date, player, player_url, team_id) %>% 
+  inner_join(select(teams, team_id, logo)) %>% 
+  select(-team_id)
+  
+
+# gt_probables <- 
+# df_probables %>% 
+#   group_by(game_date) %>% 
+#   gt() %>% 
+#   
+#   ### Align Columns
+#   cols_align(align = "center", columns = everything()) %>%
+#   
+#   ### Borders
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = "bottom",
+#         color = "black",
+#         weight = px(3)
+#       )
+#     ),
+#     locations = list(
+#       cells_column_labels(
+#         columns = gt::everything()
+#       )
+#     )
+#   )  %>% 
+#   
+#   ### Logos
+#   text_transform(
+#     locations = cells_body(contains(c('player_url'))),
+#     fn = function(x) {
+#       web_image(
+#         url = x,
+#         height = 50
+#       )
+#     }
+#   ) %>%
+#   
+#   text_transform(
+#     locations = cells_body(columns = contains(c('logo'))), 
+#     fn = function(x) {
+#       local_image(
+#         filename = x,
+#         height = 50
+#       )
+#     }
+#   ) %>%
+#   
+#   
+#   
+#   ### Names
+#   cols_label(
+#     'player' = 'Pitcher',
+#     'player_url' = '',
+#     'logo' = 'Team',
+#   ) %>%
+#   tab_header(
+#     title = md('**Probable Starters**'),
+#     subtitle = md('**Next 3 Days**')
+#   ) %>%
+#   tab_options(column_labels.font.size = 20,
+#               heading.title.font.size = 40,
+#               heading.subtitle.font.size = 40,
+#               heading.title.font.weight = 'bold',
+#               heading.subtitle.font.weight = 'bold',
+#               column_labels.font.weight = 'bold'
+#               
+#   )
+
 
 ### Summary Stats mean points by week
 mean_pts_by_week <- 
