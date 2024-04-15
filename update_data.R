@@ -642,7 +642,7 @@ write_csv(team_points, glue('data/stats/{params$season}/team_points.csv'))
 
 ### WP for Current Week 
 df_wp <- 
-  plot_wp(params$season, params$matchup_id, plot = F, all = hour(Sys.time()) > 12) 
+  plot_wp(params$season, params$matchup_id, plot = F, all = hour(Sys.time()) >= 20) 
 
 write_csv(df_wp, glue('data/win_prob/{params$season}/week_{params$matchup_id}.csv'))
 if(params$matchup_id > 1) {
@@ -696,7 +696,7 @@ na_ix <-
 df_sims <- future_map_dfr(1:params$nsims, sim_season, .options = furrr_options(seed = 12))
 
 ### Edit Current Week
-if(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12)) {
+if(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 20)) {
   df_sims[df_sims$matchup_id == params$matchup_id,] <- edit_wp(df_sims, df_wp, team_mus, team_sigmas)
 }
 
