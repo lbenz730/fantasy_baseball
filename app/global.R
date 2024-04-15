@@ -34,9 +34,11 @@ ferry <- '<img src="www/ferry.jpg" style="height:30px;">'
 ### Parameters
 params <- 
   list('season' = 2024,
-       'opening_day' = as.Date('2024-03-20'))
+       'opening_day' = as.Date('2024-03-20'),
+       'opening_day_chart' = as.Date('2024-03-28'))
 
 period <- min(187, max(1, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1))
+
 
 
 ### Load in All Data

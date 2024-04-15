@@ -211,9 +211,9 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                 sliderInput("k",
                                             label = "Select # of Days Rolling Average",
                                             min = min(period, 5),
-                                            max = min(period - 3, 50),
+                                            max = min(period - 3 - as.numeric(params$opening_day_chart - params$opening_day), 50),
                                             step = 5,
-                                            value = min(period - 3, 10)
+                                            value = min(period - 3 - as.numeric(params$opening_day_chart - params$opening_day), 10)
                                             
                                 )
                               ),

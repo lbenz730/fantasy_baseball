@@ -31,8 +31,10 @@ html_clean <- function(html) {
 
 ### Rolling K avg on plots
 plot_k_avg <- function(k) {
+  offset <- as.numeric(params$opening_day_chart - params$opening_day)
   df_bat_stocks <- 
-    df_daily %>% 
+    df_daily %>%
+    filter(scoring_period_id >= offset + 1) %>%
     filter(in_lineup) %>% 
     filter(batter) %>% 
     select(team_id, scoring_period_id, points, played, start) %>% 
@@ -47,7 +49,7 @@ plot_k_avg <- function(k) {
     map_dfr(~{
       x <- .x$scoring_period_id
       y <- .x$roll_ppg
-      y[x >= k & is.na(y)] <- 0
+      y[x >= (k + offset) & is.na(y)] <- 0
       tmp <- approx(x, y, n = 500)
       tibble('team_id' = .x$team_id[1],
              'scoring_period_id' = tmp$x,
@@ -60,6 +62,7 @@ plot_k_avg <- function(k) {
   
   df_pitch_stocks <- 
     df_daily %>% 
+    filter(scoring_period_id >= offset + 1) %>%
     filter(in_lineup) %>% 
     filter(pitcher) %>% 
     filter(!relief) %>% 
@@ -79,8 +82,8 @@ plot_k_avg <- function(k) {
       x <- .x$scoring_period_id
       y <- .x$roll_ppg
       z <- .x$roll_qs_pct
-      y[x >= k & is.na(y)] <- 0
-      z[x >= k & is.na(z)] <- 0
+      y[x >= (k + offset) & is.na(y)] <- 0
+      z[x >= (k + offset) & is.na(z)] <- 0
       tmp <- approx(x, y, n = 500)
       tmp2 <- approx(x, z, n = 500)
       tibble('team_id' = .x$team_id[1],
@@ -93,6 +96,7 @@ plot_k_avg <- function(k) {
   
   df_rp_stocks <- 
     df_daily %>% 
+    filter(scoring_period_id >= offset + 1) %>% 
     filter(in_lineup) %>% 
     filter(pitcher) %>% 
     filter(!start) %>% 
@@ -111,7 +115,7 @@ plot_k_avg <- function(k) {
     map_dfr(~{
       x <- .x$scoring_period_id
       y <- .x$roll_points
-      y[x >= k & is.na(y)] <- 0
+      y[x >= (k + offset) & is.na(y)] <- 0
       tmp <- approx(x, y, n = 500)
       tibble('team_id' = .x$team_id[1],
              'scoring_period_id' = tmp$x,
