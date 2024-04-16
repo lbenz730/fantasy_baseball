@@ -1,17 +1,5 @@
 game_date,player,player_id,team_id
-2024-04-15,Kutter Crawford,41277,4
-2024-04-15,Aaron Nola,33709,12
-2024-04-15,Kyle Harrison,4683375,2
-2024-04-15,Zach Eflin,32804,9
-2024-04-15,Luis Gil,40626,9
-2024-04-15,Chris Bassitt,33148,5
-2024-04-15,Martin Perez,31098,13
-2024-04-15,Seth Lugo,34873,9
-2024-04-15,Joe Musgrove,34848,2
-2024-04-15,Merrill Kelly,32968,11
-2024-04-15,Sonny Gray,32082,7
-2024-04-15,George Kirby,42406,6
-2024-04-15,Tyler Glasnow,33190,2
+2024-04-16,Jon Gray,33203,13
 2024-04-16,Grayson Rodriguez,41196,14
 2024-04-16,Ranger Suarez,39817,6
 2024-04-16,Jordan Hicks,37909,1
@@ -20,6 +8,7 @@ game_date,player,player_id,team_id
 2024-04-16,Yusei Kikuchi,41415,7
 2024-04-16,Tanner Bibee,4345278,8
 2024-04-16,Garrett Whitlock,39674,11
+2024-04-16,Jared Jones,4918156,4
 2024-04-16,Brady Singer,41172,6
 2024-04-16,Dylan Cease,34943,13
 2024-04-16,Reynaldo Lopez,33860,7
@@ -31,7 +20,6 @@ game_date,player,player_id,team_id
 2024-04-17,Tarik Skubal,42409,2
 2024-04-17,Michael King,40429,2
 2024-04-17,Max Fried,32685,7
-2024-04-17,Michael Wacha,32640,2
 2024-04-17,Marcus Stroman,32815,9
 2024-04-17,Kevin Gausman,32667,14
 2024-04-17,Paul Blackburn,32776,1
@@ -42,3 +30,4 @@ game_date,player,player_id,team_id
 2024-04-17,Reid Detmers,4326697,6
 2024-04-17,Zack Littell,36052,8
 2024-04-17,Tanner Houck,41009,12
+2024-04-18,Ryan Pepiot,4208281,2

@@ -47,7 +47,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 1,1B,Pete Alonso,37498,13,38.5,6.416666666666667,3
 2,2B,Jose Altuve,31662,11,35.5,5.071428571428571,3
 3,3B,Elly De La Cruz,4917694,14,35,5.833333333333333,3
-4,SS,Bobby Witt Jr.,42403,8,35.5,5.916666666666667,3
+4,SS,Bobby Witt Jr.,42403,8,34.5,5.75,3
 5,OF,Colton Cowser,4416990,4,38,7.6,3
 5,OF,Brandon Nimmo,32159,5,37.5,6.25,3
 5,OF,Juan Soto,36969,7,36.5,6.083333333333333,3
@@ -65,25 +65,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Mason Miller,4730225,2,25,8.333333333333334,3
 15,RP,Craig Kimbrel,30653,8,19,6.333333333333333,3
 15,RP,Clay Holmes,32827,9,17.5,5.833333333333333,3
-0,C,NA,NA,NA,NA,NA,4
-1,1B,NA,NA,NA,NA,NA,4
-2,2B,NA,NA,NA,NA,NA,4
-3,3B,NA,NA,NA,NA,NA,4
-4,SS,NA,NA,NA,NA,NA,4
-5,OF,NA,NA,NA,NA,NA,4
-5,OF,NA,NA,NA,NA,NA,4
-5,OF,NA,NA,NA,NA,NA,4
-5,OF,NA,NA,NA,NA,NA,4
-5,OF,NA,NA,NA,NA,NA,4
-6,2B/SS,NA,NA,NA,NA,NA,4
-7,1B/3B,NA,NA,NA,NA,NA,4
-12,UTIL,NA,NA,NA,NA,NA,4
-14,SP,NA,NA,NA,NA,NA,4
-14,SP,NA,NA,NA,NA,NA,4
-14,SP,NA,NA,NA,NA,NA,4
-14,SP,NA,NA,NA,NA,NA,4
-14,SP,NA,NA,NA,NA,NA,4
-14,SP,NA,NA,NA,NA,NA,4
-15,RP,NA,NA,NA,NA,NA,4
-15,RP,NA,NA,NA,NA,NA,4
-15,RP,NA,NA,NA,NA,NA,4
+0,C,Willson Contreras,32532,13,6,6,4
+1,1B,Vinnie Pasquantino,4109109,13,9,9,4
+2,2B,Jordan Westburg,4298641,2,7,7,4
+3,3B,Gunnar Henderson,42507,11,7.5,7.5,4
+4,SS,CJ Abrams,42402,7,8.5,8.5,4
+5,OF,Mitch Haniger,32771,7,12,12,4
+5,OF,Cedric Mullins,35578,1,8,8,4
+5,OF,Mike Trout,30836,1,8,8,4
+5,OF,Taylor Ward,34923,11,8,8,4
+5,OF,Jake Fraley,37974,5,7.5,7.5,4
+6,2B/SS,Jackson Merrill,4872691,1,6,6,4
+7,1B/3B,Michael Busch,42415,9,7,7,4
+12,UTIL,Bryson Stott,42417,5,5,5,4
+14,SP,Aaron Nola,33709,12,29.5,29.5,4
+14,SP,Seth Lugo,34873,9,25.5,25.5,4
+14,SP,Sonny Gray,32082,7,25,25,4
+14,SP,Chris Bassitt,33148,5,22,22,4
+14,SP,Kutter Crawford,41277,4,21,21,4
+14,SP,George Kirby,42406,6,20,20,4
+15,RP,Camilo Doval,41337,11,8,8,4
+15,RP,Craig Kimbrel,30653,8,8,8,4
+15,RP,Ryan Helsley,39909,5,8,8,4
