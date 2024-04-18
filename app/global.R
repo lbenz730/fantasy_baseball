@@ -104,13 +104,13 @@ distributions <-
   select(-division_id, -sim_id)
 
 ### Probable Pitchers
-df_probables <- 
-  read_csv(glue('data/stats/{params$season}/probables.csv')) %>% 
-  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-  select(game_date, player, player_url, team_id) %>% 
-  inner_join(select(teams, team_id, logo)) %>% 
-  select(-team_id)
-  
+# df_probables <- 
+#   read_csv(glue('data/stats/{params$season}/probables.csv')) %>% 
+#   mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+#   select(game_date, player, player_url, team_id) %>% 
+#   inner_join(select(teams, team_id, logo)) %>% 
+#   select(-team_id)
+#   
 
 # gt_probables <- 
 # df_probables %>% 
@@ -238,7 +238,12 @@ df_fa <-
            (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat * w_bat + 
            (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp * w_rp + 
            (ppg - exp_standings$sp_ppg[13]) * scale_factors$n_sp * w_sp) %>% 
-  mutate('total_value' = n_points - (end - start + 1)/7 * 
+  mutate('total_value' = n_points - (end - 
+                                       case_when(start <= 2 ~ start,
+                                                 start >= as.numeric(params$opening_day_chart - params$opening_day) ~ start,
+                                                 start < as.numeric(params$opening_day_chart - params$opening_day) ~  as.numeric(params$opening_day_chart - params$opening_day)
+                                       )
+                                     + 1)/7 * 
            (exp_standings$batting_ppg[13] * scale_factors$n_bat * w_bat + 
               exp_standings$rp_ppg[13] * scale_factors$n_rp * w_rp + 
               exp_standings$sp_ppg[13] * scale_factors$n_sp * w_sp)) %>% 
