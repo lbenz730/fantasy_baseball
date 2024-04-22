@@ -1178,7 +1178,7 @@ shinyServer(function(input, output, session) {
       select(team, team_, wins) %>% 
       ggplot(aes(x = wins, y = team_, fill = team)) +
       ggridges::geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1, rel_min_height = 0.02) +
-      scale_x_continuous(breaks = 0:20) +
+      scale_x_continuous(breaks = 0:21) +
       labs(x = "# of Wins",
            y = "Team",
            title = "Distribution of Wins",
