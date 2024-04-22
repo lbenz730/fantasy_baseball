@@ -784,7 +784,7 @@ shinyServer(function(input, output, session) {
         filter(in_lineup, pitcher) %>%
         group_by(player_id, team_id, player, matchup_id) %>%
         summarise('n_games' = sum(start),
-                  'n_points' = sum(points)) %>%
+                  'n_points' = sum(points[start])) %>%
         filter(n_games > 0) %>% 
         ungroup() %>% 
         mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
@@ -812,7 +812,7 @@ shinyServer(function(input, output, session) {
         filter(in_lineup, pitcher) %>%
         group_by(player_id, team_id, player, matchup_id) %>%
         summarise('n_games' = sum(relief),
-                  'n_points' = sum(points)) %>%
+                  'n_points' = sum(points[relief])) %>%
         filter(n_games > 0) %>% 
         filter(!is.na(n_games)) %>%
         mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
