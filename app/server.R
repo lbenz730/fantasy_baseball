@@ -1177,7 +1177,7 @@ shinyServer(function(input, output, session) {
       mutate('team_' = fct_relevel(team, sim_results$team[order(sim_results$mean_wins)])) %>% 
       select(team, team_, wins) %>% 
       ggplot(aes(x = wins, y = team_, fill = team)) +
-      ggridges::geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) +
+      ggridges::geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1, rel_min_height = 0.02) +
       scale_x_continuous(breaks = 0:20) +
       labs(x = "# of Wins",
            y = "Team",
@@ -1196,7 +1196,7 @@ shinyServer(function(input, output, session) {
       mutate('team_' = fct_relevel(team, sim_results$team[order(sim_results$mean_pts)])) %>% 
       select(team, team_, points) %>% 
       ggplot(aes(x = points, y = team_, fill = team)) +
-      ggridges::geom_density_ridges(scale = 0.9, quantiles = 2, quantile_lines = T) +
+      ggridges::geom_density_ridges(scale = 0.9, quantiles = 2, quantile_lines = T, rel_min_height = 0.02) +
       labs(x = "# of Points",
            y = "Team",
            title = "Distribution of Points",
