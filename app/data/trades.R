@@ -18,7 +18,7 @@ get_trades <- function(week, season_ = 2024, proposed = F) {
   df <- 
     map_dfr(start:end, ~{
       w <- 
-        robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season_}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2')) %>% 
+        robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season_}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mTransactions2')) %>% 
         pluck('transactions') 
       
       if(!is.null(w)) {

@@ -39,7 +39,7 @@ n_games <- max(params$matchup_id, reg_season)
 n_match <- n_games * 6
 
 ### Get data
-y <- robust_scrape(glue('http://fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?view=mTeam'))
+y <- robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?view=mTeam'))
 
 ### Teams
 teams <- jsonlite::flatten(y$teams)
@@ -70,7 +70,7 @@ batter_points <- sp_points <- rp_points <-  NULL
 
 for(i in 1:max(reg_season, params$matchup_id)) {
   sp_id <- df_start$end_period[i]
-  x <- robust_scrape(glue("http://fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?scoringPeriodId={sp_id}&view=mBoxscore"))
+  x <- robust_scrape(glue("https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?scoringPeriodId={sp_id}&view=mBoxscore"))
   
   
   schedule_ <- x$schedule
