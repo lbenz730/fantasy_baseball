@@ -87,25 +87,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Camilo Doval,41337,11,21,7,4
 15,RP,Alexis Diaz,4905920,7,18.5,6.166666666666667,4
 15,RP,Craig Kimbrel,30653,8,18,6,4
-0,C,Travis d'Arnaud,29951,9,11,5.5,5
-1,1B,Christian Walker,32758,5,12,6,5
-2,2B,Edouard Julien,3985190,4,10.5,5.25,5
-3,3B,Gunnar Henderson,42507,11,11.5,5.75,5
-4,SS,Elly De La Cruz,4917694,14,9.5,4.75,5
-5,OF,Mark Canha,31670,5,18.5,9.25,5
-5,OF,Riley Greene,42179,6,14.5,7.25,5
-5,OF,Adam Duvall,32664,9,10.5,5.25,5
-5,OF,Daulton Varsho,40963,5,10.5,5.25,5
-5,OF,Michael Conforto,33711,4,10.5,5.25,5
-6,2B/SS,Nolan Gorman,41174,6,8.5,4.25,5
-7,1B/3B,Maikel Garcia,4905884,6,11,5.5,5
-12,UTIL,Pete Alonso,37498,13,11,5.5,5
+0,C,Travis d'Arnaud,29951,9,12,4,5
+1,1B,Alec Bohm,41169,11,16,5.333333333333333,5
+2,2B,Edouard Julien,3985190,4,12,4,5
+3,3B,Gunnar Henderson,42507,11,26.5,8.833333333333334,5
+4,SS,Elly De La Cruz,4917694,14,17.5,5.833333333333333,5
+5,OF,Mark Canha,31670,5,21,7,5
+5,OF,Riley Greene,42179,6,15.5,5.166666666666667,5
+5,OF,Michael Harris II,42470,14,14.5,4.833333333333333,5
+5,OF,Daulton Varsho,40963,5,14,4.666666666666667,5
+5,OF,Max Kepler,31870,2,13,4.333333333333333,5
+6,2B/SS,Francisco Lindor,32129,6,14,4.666666666666667,5
+7,1B/3B,Maikel Garcia,4905884,6,16,5.333333333333333,5
+12,UTIL,Shohei Ohtani,39832,11,15.5,7.75,5
 14,SP,Max Fried,32685,7,45,45,5
 14,SP,Dylan Cease,34943,13,31,31,5
 14,SP,Tarik Skubal,42409,2,29,29,5
 14,SP,Ranger Suarez,39817,9,28.5,28.5,5
 14,SP,Carlos Rodon,33696,1,28,28,5
 14,SP,Logan Gilbert,41221,12,27,27,5
-15,RP,Emmanuel Clase,41743,8,9,9,5
-15,RP,Mason Miller,4730225,2,9,9,5
-15,RP,Carlos Estevez,34861,1,8,8,5
+15,RP,James McArthur,3960883,12,14.5,7.25,5
+15,RP,Craig Kimbrel,30653,8,11.5,5.75,5
+15,RP,Jason Adam,32145,4,10,10,5

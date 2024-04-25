@@ -211,6 +211,29 @@ pitch_stats <-
 
 write_csv(pitch_stats, glue('data/stats/{params$season}/pitch_stats.csv'))
 
+start_buckets <- 
+  df_daily %>% 
+  remove_postcap() %>%
+  filter(in_lineup) %>% 
+  filter(pitcher) %>% 
+  group_by(team_id) %>%
+  filter(start) %>% 
+  summarise('<= 0' = sum(points <= 0),
+            '1-5' = sum(points <= 5 & points > 0),
+            '6-10'= sum(points <= 10 & points > 5),
+            '11-15' = sum(points <= 15 & points > 10),
+            '16-20' = sum(points <= 20 & points > 15),
+            '21-25' = sum(points <= 25 & points > 20),
+            '26-30' = sum(points <= 30 & points > 25),
+            '> 30' = sum(points > 30)) %>% 
+  pivot_longer(cols = -team_id,
+               names_to = 'start_bucket',
+               values_to = 'n_start') %>% 
+  group_by(team_id) %>% 
+  mutate('pct_start' = n_start/sum(n_start))
+
+write_csv(start_buckets, glue('data/stats/{params$season}/start_buckets.csv'))
+
 
 woba_factors <- 
   list('wBB' = 0.704, 

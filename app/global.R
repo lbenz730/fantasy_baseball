@@ -85,6 +85,17 @@ df_penalty <- read_csv('data/red_flags/penalties.csv') %>%
          'penalty' = as.numeric(penalty),
          'matchup_id' = as.numeric(matchup_id))
 
+start_buckets <- 
+  read_csv(glue('data/stats/{params$season}/start_buckets.csv')) %>% 
+  inner_join(select(teams, team, team_id)) %>% 
+  select(team, start_bucket, pct_start)
+
+start_buckets_avg <- 
+  read_csv(glue('data/stats/{params$season}/start_buckets.csv')) %>% 
+  group_by(start_bucket) %>% 
+  summarise('n' = sum(n_start)) %>% 
+  mutate('league_avg' = n/sum(n))
+
 df_rp_penalty <- 
   read_csv('data/red_flags/rp_penalties.csv') %>% 
   mutate('penalty' = as.numeric(penalty),

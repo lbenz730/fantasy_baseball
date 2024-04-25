@@ -709,7 +709,7 @@ shinyServer(function(input, output, session) {
       geom_label(aes(label = n, fill = start_type)) + 
       scale_x_discrete(limits = c('< 3', '3.0', '3.1', '3.2', '4.0', '4.1', '4.2', '5.0', '5.1', '5.2', '6.0', 
                                   '6.1', '6.2', '7.0', '> 7', 'CG')) +
-        # drop = F) + 
+      # drop = F) + 
       scale_fill_manual(values = c('salmon', 'lightskyblue', 'orange',  'seagreen3', 'violet'), drop = F) + 
       theme(legend.position = 'bottom') + 
       labs(x = 'Innings Pitched',
@@ -734,6 +734,39 @@ shinyServer(function(input, output, session) {
   },
   height = 900,
   width = 1600)
+  
+  output$start_buckets <- 
+    renderPlot({
+      ggplot(start_buckets, aes(x = start_bucket, y = pct_start)) + 
+        facet_wrap(~team) + 
+        
+        geom_col(aes(fill = start_bucket)) + 
+        geom_col(data = start_buckets_avg, aes(x = start_bucket, y = league_avg), alpha = 0, lty = 2, col = 'black') +
+        geom_label(aes(label = paste0(sprintf('%0.1f', 100 * pct_start), '%')),
+                  vjust = -0.2) + 
+        
+        labs(x = 'Points',
+             y = '% of Starts',
+             fill = 'Start Points',
+             title = 'Distribution of SP Points',
+             caption = 'Dashed Line = League Average') + 
+        scale_y_continuous(labels = scales::percent, limits = c(0, 0.3)) +
+        scale_x_discrete(limits = c('<= 0', '1-5', '6-10', '11-15', '16-20',
+                                    '21-25', '26-30', '> 30')) + 
+        scale_fill_manual(values = c('red3', 'salmon','orange', 'violet', 'lightskyblue', 'aquamarine2', 'seagreen3', 'forestgreen'), 
+                          drop = F,
+                          limits = c('<= 0', '1-5', '6-10', '11-15', '16-20',
+                                     '21-25', '26-30', '> 30')) + 
+        theme(legend.position = 'bottom',
+              plot.caption = element_text(size = 16),
+              plot.title = element_text(size = 24),
+              axis.title = element_text(size = 20),
+              strip.text = element_text(size = 14),
+              legend.text = element_text(size = 12))
+    },
+    height = 900,
+    width = 1600)
+  
   
   
   ######################
