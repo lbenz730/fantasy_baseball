@@ -2238,7 +2238,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 26,5,Bo Bichette,38904,3,7.5,5
 26,5,Lane Thomas,36409,1,2,5
 26,5,Nolan Jones,37340,1,-1,5
-26,5,Brandon Nimmo,32159,3,5.5,5
+26,5,Brandon Nimmo,32159,3,6.5,5
 27,5,Zack Gelof,4414531,1,6.5,6
 27,5,Francisco Lindor,32129,3,14,6
 27,5,Lars Nootbaar,4448736,3,6,6
@@ -2273,7 +2273,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 28,5,Tanner Houck,41009,NA,16.5,12
 28,5,J.T. Realmuto,32177,2,5.5,12
 28,5,Orlando Arcia,32530,3,2,12
-28,5,Robert Suarez,4148749,NA,6,12
+28,5,Robert Suarez,4148749,NA,11,12
 28,5,Jeimer Candelario,32531,3,-0.5,12
 28,5,Hunter Greene,39635,NA,11,12
 28,5,Kyle Tucker,34967,2,6,12
@@ -2291,7 +2291,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 29,5,Byron Buxton,32655,2,10,1
 29,5,Mookie Betts,33039,2,10,1
 29,5,Wyatt Langford,4719324,2,6,1
-29,5,Julio Rodriguez,41044,2,6,1
+29,5,Julio Rodriguez,41044,2,7,1
 29,5,Mike Trout,30836,3,11.5,1
 29,5,Salvador Perez,31127,3,9.5,1
 29,5,Jackson Merrill,4872691,3,8,1
@@ -2459,7 +2459,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 25,5,Matt Olson,32767,3,3,4
 26,5,Michael Wacha,32640,NA,3,7
 26,5,Jesse Winker,32833,2,1,7
-26,5,Ian Happ,34945,2,3.5,7
+26,5,Ian Happ,34945,2,4.5,7
 26,5,CJ Abrams,42402,2,1.5,7
 26,5,Mitch Haniger,32771,2,-0.5,7
 26,5,Nico Hoerner,41219,2,5,7
@@ -2494,7 +2494,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 27,5,Josh Naylor,35066,2,0.5,13
 27,5,Isaac Paredes,39706,2,9,13
 27,5,Pete Alonso,37498,3,11,13
-27,5,Sean Manaea,33244,NA,14,13
+27,5,Sean Manaea,33244,NA,15,13
 27,5,Dylan Cease,34943,NA,31,13
 28,5,Andres Gimenez,37729,2,-2.5,14
 28,5,Michael Harris II,42470,3,14.5,14
