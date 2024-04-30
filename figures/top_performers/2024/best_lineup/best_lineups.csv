@@ -109,25 +109,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Mason Miller,4730225,2,26,8.666666666666666,5
 15,RP,Evan Phillips,37911,6,20.5,6.833333333333333,5
 15,RP,Emmanuel Clase,41743,8,20,5,5
-0,C,NA,NA,NA,NA,NA,6
-1,1B,NA,NA,NA,NA,NA,6
-2,2B,NA,NA,NA,NA,NA,6
-3,3B,NA,NA,NA,NA,NA,6
-4,SS,NA,NA,NA,NA,NA,6
-5,OF,NA,NA,NA,NA,NA,6
-5,OF,NA,NA,NA,NA,NA,6
-5,OF,NA,NA,NA,NA,NA,6
-5,OF,NA,NA,NA,NA,NA,6
-5,OF,NA,NA,NA,NA,NA,6
-6,2B/SS,NA,NA,NA,NA,NA,6
-7,1B/3B,NA,NA,NA,NA,NA,6
-12,UTIL,NA,NA,NA,NA,NA,6
-14,SP,NA,NA,NA,NA,NA,6
-14,SP,NA,NA,NA,NA,NA,6
-14,SP,NA,NA,NA,NA,NA,6
-14,SP,NA,NA,NA,NA,NA,6
-14,SP,NA,NA,NA,NA,NA,6
-14,SP,NA,NA,NA,NA,NA,6
-15,RP,NA,NA,NA,NA,NA,6
-15,RP,NA,NA,NA,NA,NA,6
-15,RP,NA,NA,NA,NA,NA,6
+0,C,Will Smith,38309,6,7,7,6
+1,1B,Justin Turner,29607,5,12.5,12.5,6
+2,2B,Bryson Stott,42417,5,3,3,6
+3,3B,Christopher Morel,42927,9,7,7,6
+4,SS,CJ Abrams,42402,7,11,11,6
+5,OF,Brandon Nimmo,32159,5,7,7,6
+5,OF,Teoscar Hernandez,33377,4,7,7,6
+5,OF,Jazz Chisholm Jr.,41433,8,6.5,6.5,6
+5,OF,Jurickson Profar,31117,11,5.5,5.5,6
+5,OF,Andy Pages,42468,12,5,5,6
+6,2B/SS,Gunnar Henderson,42507,11,7,7,6
+7,1B/3B,Vladimir Guerrero Jr.,35002,2,6,6,6
+12,UTIL,Alec Bohm,41169,11,5,5,6
+14,SP,Nick Lodolo,42433,13,33,33,6
+14,SP,Bryce Miller,4654313,14,31.5,31.5,6
+14,SP,Luis Severino,33263,5,29.5,29.5,6
+14,SP,Max Fried,32685,7,29,29,6
+14,SP,Ryan Pepiot,4208281,2,27.5,27.5,6
+14,SP,Garrett Crochet,4297835,4,15.5,15.5,6
+15,RP,Fernando Cruz,34068,7,6,6,6
+15,RP,Jason Adam,32145,4,6,6,6
+15,RP,Evan Phillips,37911,6,4,4,6
