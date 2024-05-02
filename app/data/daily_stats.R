@@ -55,7 +55,8 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'b_sf' =  sum(.x$stats$`13`, na.rm = T),
                'b_runs' = sum(.x$stats$`20`, na.rm = T),
                'b_rbi' = sum(.x$stats$`21`, na.rm = T),
-               'b_k' = sum(.x$stats$`27`, na.rm = T)
+               'b_k' = sum(.x$stats$`27`, na.rm = T),
+               'b_gidp' = sum(.x$stats$`26`, na.rm = T)
         )
       } else {
         tibble('points' = 0,
@@ -90,7 +91,8 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
                'b_sf' =  0,
                'b_runs' = 0,
                'b_rbi' = 0,
-               'b_k' = 0)
+               'b_k' = 0,
+               'b_gidp' = 0)
         
       } }) %>%
     mutate('player' = y$entries[[index]]$playerPoolEntry$player$fullName,
