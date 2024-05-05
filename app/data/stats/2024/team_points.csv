@@ -29,12 +29,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 12,402.5,193.5,209,Blasphemous Hot Takes,5,28,47.5,161.5,402.5,193.5,209,161.5,47.5,14,329.5,209.5,120,Elly De La Snooze,35,85,329.5,209.5,120,85,35,1,7,1
 1,364.5,210,154.5,The Talmudic Tunnelers,5,29,24.5,130,364.5,210,154.5,130,24.5,11,356,237.5,118.5,The West Bank Occupiers,34,84.5,356,237.5,118.5,84.5,34,2,2,5
 2,339.5,176,163.5,Skubal Divers,5,30,44,119.5,339.5,176,163.5,119.5,44,8,288,144,144,Mt. Everest Taquito Farmers,16.5,127.5,288,144,144,127.5,16.5,6,8,4
-4,228,65,163,All That is Wright,6,31,24,139,NA,NA,NA,NA,NA,7,211,100.5,110.5,FVOS Re-imagined,4,106.5,NA,NA,NA,NA,NA,3,12,1
-13,234.5,113.5,121,Ketel Bells,6,32,22,99,NA,NA,NA,NA,NA,9,232,80,152,Takin' Care of Rizzness,26,126,NA,NA,NA,NA,NA,1,3,3
-14,154.5,105.5,49,Elly De La Snooze,6,33,4.5,44.5,NA,NA,NA,NA,NA,5,213,100,113,The Traveling Secretaries,34,79,NA,NA,NA,NA,NA,10.5,5,12
-11,194.5,118,76.5,The West Bank Occupiers,6,34,4,72.5,NA,NA,NA,NA,NA,6,201.5,112,89.5,The Novaks,24.5,65,NA,NA,NA,NA,NA,8,2,9
-8,143.5,87.5,56,Mt. Everest Taquito Farmers,6,35,27,29,NA,NA,NA,NA,NA,12,224.5,124.5,100,Blasphemous Hot Takes,26.5,73.5,NA,NA,NA,NA,NA,12,10,10
-2,190,96.5,93.5,Skubal Divers,6,36,20,73.5,NA,NA,NA,NA,NA,1,154.5,101,53.5,The Talmudic Tunnelers,7,46.5,NA,NA,NA,NA,NA,9,9,7
+4,280,78,202,All That is Wright,6,31,28,174,NA,NA,NA,NA,NA,7,253.5,122,131.5,FVOS Re-imagined,4,127.5,NA,NA,NA,NA,NA,4,12,1
+13,257.5,131.5,126,Ketel Bells,6,32,27,99,NA,NA,NA,NA,NA,9,325,123.5,201.5,Takin' Care of Rizzness,40,161.5,NA,NA,NA,NA,NA,6,7,6
+14,223,131,92,Elly De La Snooze,6,33,4,88,NA,NA,NA,NA,NA,5,256,138.5,117.5,The Traveling Secretaries,38.5,79,NA,NA,NA,NA,NA,10,8,10
+11,262.5,168,94.5,The West Bank Occupiers,6,34,-5.5,100,NA,NA,NA,NA,NA,6,242.5,138,104.5,The Novaks,25.5,79,NA,NA,NA,NA,NA,5,1,9
+8,150.5,110.5,40,Mt. Everest Taquito Farmers,6,35,26.5,13.5,NA,NA,NA,NA,NA,12,311,146,165,Blasphemous Hot Takes,26.5,138.5,NA,NA,NA,NA,NA,12,11,12
+2,290,147,143,Skubal Divers,6,36,20,123,NA,NA,NA,NA,NA,1,196.5,133.5,63,The Talmudic Tunnelers,7,56,NA,NA,NA,NA,NA,3,2,4
 13,NA,NA,NA,Ketel Bells,7,37,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 7,NA,NA,NA,FVOS Re-imagined,7,38,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,2,2,2
 9,NA,NA,NA,Takin' Care of Rizzness,7,39,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,3,3,3
@@ -155,12 +155,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 14,329.5,209.5,120,Elly De La Snooze,5,28,35,85,329.5,209.5,120,85,35,12,402.5,193.5,209,Blasphemous Hot Takes,47.5,161.5,402.5,193.5,209,161.5,47.5,9,3,11
 11,356,237.5,118.5,The West Bank Occupiers,5,29,34,84.5,356,237.5,118.5,84.5,34,1,364.5,210,154.5,The Talmudic Tunnelers,24.5,130,364.5,210,154.5,130,24.5,3,1,12
 8,288,144,144,Mt. Everest Taquito Farmers,5,30,16.5,127.5,288,144,144,127.5,16.5,2,339.5,176,163.5,Skubal Divers,44,119.5,339.5,176,163.5,119.5,44,11,12,8
-7,211,100.5,110.5,FVOS Re-imagined,6,31,4,106.5,NA,NA,NA,NA,NA,4,228,65,163,All That is Wright,24,139,NA,NA,NA,NA,NA,6,7,5
-9,232,80,152,Takin' Care of Rizzness,6,32,26,126,NA,NA,NA,NA,NA,13,234.5,113.5,121,Ketel Bells,22,99,NA,NA,NA,NA,NA,2,11,2
-5,213,100,113,The Traveling Secretaries,6,33,34,79,NA,NA,NA,NA,NA,14,154.5,105.5,49,Elly De La Snooze,4.5,44.5,NA,NA,NA,NA,NA,5,8,4
-6,201.5,112,89.5,The Novaks,6,34,24.5,65,NA,NA,NA,NA,NA,11,194.5,118,76.5,The West Bank Occupiers,4,72.5,NA,NA,NA,NA,NA,7,4,8
-12,224.5,124.5,100,Blasphemous Hot Takes,6,35,26.5,73.5,NA,NA,NA,NA,NA,8,143.5,87.5,56,Mt. Everest Taquito Farmers,27,29,NA,NA,NA,NA,NA,4,1,6
-1,154.5,101,53.5,The Talmudic Tunnelers,6,36,7,46.5,NA,NA,NA,NA,NA,2,190,96.5,93.5,Skubal Divers,20,73.5,NA,NA,NA,NA,NA,10.5,6,11
+7,253.5,122,131.5,FVOS Re-imagined,6,31,4,127.5,NA,NA,NA,NA,NA,4,280,78,202,All That is Wright,28,174,NA,NA,NA,NA,NA,8,10,5
+9,325,123.5,201.5,Takin' Care of Rizzness,6,32,40,161.5,NA,NA,NA,NA,NA,13,257.5,131.5,126,Ketel Bells,27,99,NA,NA,NA,NA,NA,1,9,2
+5,256,138.5,117.5,The Traveling Secretaries,6,33,38.5,79,NA,NA,NA,NA,NA,14,223,131,92,Elly De La Snooze,4,88,NA,NA,NA,NA,NA,7,4,7
+6,242.5,138,104.5,The Novaks,6,34,25.5,79,NA,NA,NA,NA,NA,11,262.5,168,94.5,The West Bank Occupiers,-5.5,100,NA,NA,NA,NA,NA,9,5,8
+12,311,146,165,Blasphemous Hot Takes,6,35,26.5,138.5,NA,NA,NA,NA,NA,8,150.5,110.5,40,Mt. Everest Taquito Farmers,26.5,13.5,NA,NA,NA,NA,NA,2,3,3
+1,196.5,133.5,63,The Talmudic Tunnelers,6,36,7,56,NA,NA,NA,NA,NA,2,290,147,143,Skubal Divers,20,123,NA,NA,NA,NA,NA,11,6,11
 4,NA,NA,NA,All That is Wright,7,37,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,7,7,7
 14,NA,NA,NA,Elly De La Snooze,7,38,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,8,8,8
 11,NA,NA,NA,The West Bank Occupiers,7,39,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Takin' Care of Rizzness,NA,NA,NA,NA,NA,NA,NA,9,9,9
