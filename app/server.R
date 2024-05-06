@@ -2036,7 +2036,7 @@ shinyServer(function(input, output, session) {
       ) %>% 
       tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
       tab_footnote(footnote = "Players ranked by weighted average of Z-Scores of Points (67%) and PPG (33%) relative to position") %>% 
-      tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (8), RP (10)") %>% 
+      tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (6), RP (10)") %>% 
       tab_footnote(footnote = "Only includes games players in starting fantasy lineup") 
     
     
