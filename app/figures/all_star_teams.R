@@ -19,7 +19,7 @@ getmode <- function(v) {
 }
 
 
-make_asg_graphics <- function(season = 2023, save = T) {
+make_asg_graphics <- function(season = 2024, save = T) {
   ### Rules
   # Only count games in active lineup
   # 67% Weight to Total Points, 33% Weight to PPG
@@ -72,7 +72,7 @@ make_asg_graphics <- function(season = 2023, save = T) {
               'ppg' = n_points/n_games,
               'qs_rate' = n_qs/n_games) %>% 
     ungroup() %>% 
-    filter(n_games >= 8)
+    filter(n_games >= 6)
   
   
   ### Make All Star Teams
@@ -253,7 +253,7 @@ make_asg_graphics <- function(season = 2023, save = T) {
     ) %>% 
     tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
     tab_footnote(footnote = "Players ranked by weighted average of Z-Scores of Points (67%) and PPG (33%) relative to position") %>% 
-    tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (8), RP (10)") %>% 
+    tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (6), RP (10)") %>% 
     tab_footnote(footnote = "Only includes games players in starting fantasy lineup") 
   
   
