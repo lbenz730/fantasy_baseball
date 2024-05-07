@@ -15,7 +15,7 @@ theme_set(theme_bw() +
 df_start <- 
   read_csv('data/df_start.csv') %>% 
   filter(season > 2019) %>% 
-  filter(season <= 2023 | matchup_id <= 5)
+  filter(season <= 2023 | matchup_id <= 6)
 
 df_wp <- 
   map2_dfr(df_start$season, df_start$matchup_id, ~{
