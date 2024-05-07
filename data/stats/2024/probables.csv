@@ -1,25 +1,17 @@
 game_date,player,player_id,team_id
-2024-05-06,Zack Wheeler,31267,9
-2024-05-06,Jack Flaherty,33837,9
-2024-05-06,Triston McKenzie,34954,11
-2024-05-06,Tyler Anderson,32151,11
-2024-05-06,Mitch Keller,33722,12
-2024-05-06,Yu Darvish,32055,4
-2024-05-06,Justin Steele,41022,6
-2024-05-06,Luis Castillo,35124,4
-2024-05-06,Cole Ragans,41054,4
-2024-05-06,Walker Buehler,39251,9
 2024-05-07,Logan Allen,4683350,13
 2024-05-07,Zac Gallen,39910,8
 2024-05-07,Jose Berrios,32811,7
 2024-05-07,Corbin Burnes,39878,5
 2024-05-07,Zach Eflin,32804,9
 2024-05-07,Justin Verlander,6341,1
+2024-05-07,Luis Gil,40626,5
 2024-05-07,Kutter Crawford,41277,4
 2024-05-07,Reynaldo Lopez,33860,7
 2024-05-07,Shota Imanaga,5134630,4
 2024-05-07,Bailey Ober,3107919,5
-2024-05-07,Seth Lugo,34873,9
+2024-05-07,Seth Lugo,34873,1
+2024-05-07,Jose Butto,4905900,14
 2024-05-07,Kyle Harrison,4683375,2
 2024-05-07,Yoshinobu Yamamoto,4872587,8
 2024-05-08,Martin Perez,31098,13
@@ -29,6 +21,7 @@ game_date,player,player_id,team_id
 2024-05-08,Sonny Gray,32082,7
 2024-05-08,Brady Singer,41172,6
 2024-05-08,Dylan Cease,34943,13
+2024-05-08,Gavin Stone,4417230,6
 2024-05-08,Jordan Montgomery,38173,14
 2024-05-08,Kyle Bradish,4311625,11
 2024-05-08,Aaron Civale,40934,6
@@ -36,3 +29,9 @@ game_date,player,player_id,team_id
 2024-05-08,Chris Sale,30948,12
 2024-05-08,George Kirby,42406,6
 2024-05-08,Jordan Hicks,37909,1
+2024-05-09,Hunter Greene,39635,12
+2024-05-09,Logan Gilbert,41221,12
+2024-05-09,Pablo Lopez,39671,14
+2024-05-09,Keaton Winn,5116843,8
+2024-05-09,Ronel Blanco,41829,8
+2024-05-09,Lance Lynn,30820,11

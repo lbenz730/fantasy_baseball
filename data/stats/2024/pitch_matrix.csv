@@ -20,7 +20,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.2,3,1,Blue Balls,The Talmudic Tunnelers
 1,6.0,0,6,QS,The Talmudic Tunnelers
 1,6.0,1,5,QS,The Talmudic Tunnelers
-1,6.0,2,2,QS,The Talmudic Tunnelers
+1,6.0,2,3,QS,The Talmudic Tunnelers
 1,6.0,3,2,QS,The Talmudic Tunnelers
 1,6.0,4,1,QS Potential,The Talmudic Tunnelers
 1,6.1,0,1,QS,The Talmudic Tunnelers
@@ -63,7 +63,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,4.0,5,1,Bad Start,All That is Wright
 4,4.2,1,1,Bad Start,All That is Wright
 4,4.2,5,1,Bad Start,All That is Wright
-4,5.0,0,2,QS Potential,All That is Wright
+4,5.0,0,3,QS Potential,All That is Wright
 4,5.0,1,1,QS Potential,All That is Wright
 4,5.0,2,3,QS Potential,All That is Wright
 4,5.0,3,2,QS Potential,All That is Wright
@@ -74,12 +74,13 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.2,4,2,Bad Start,All That is Wright
 4,6.0,0,3,QS,All That is Wright
 4,6.0,1,4,QS,All That is Wright
-4,6.0,2,5,QS,All That is Wright
+4,6.0,2,6,QS,All That is Wright
 4,6.0,3,1,QS,All That is Wright
 4,6.1,0,1,QS,All That is Wright
 4,6.1,1,1,QS,All That is Wright
 4,6.1,3,1,QS,All That is Wright
 4,6.2,1,1,QS,All That is Wright
+4,6.2,3,1,QS,All That is Wright
 4,7.0,0,4,QS,All That is Wright
 4,7.0,2,1,QS,All That is Wright
 4,7.0,3,1,QS,All That is Wright
@@ -201,7 +202,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,< 3,5,1,Bad Start,Mt. Everest Taquito Farmers
 8,> 7,2,1,QS,Mt. Everest Taquito Farmers
 9,3.0,5,1,Bad Start,Takin' Care of Rizzness
-9,4.0,3,1,Bad Start,Takin' Care of Rizzness
+9,4.0,3,2,Bad Start,Takin' Care of Rizzness
 9,4.1,2,2,Bad Start,Takin' Care of Rizzness
 9,4.2,6+,1,Bad Start,Takin' Care of Rizzness
 9,5.0,1,1,QS Potential,Takin' Care of Rizzness
@@ -217,7 +218,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.2,6+,1,Bad Start,Takin' Care of Rizzness
 9,6.0,0,5,QS,Takin' Care of Rizzness
 9,6.0,1,2,QS,Takin' Care of Rizzness
-9,6.0,2,2,QS,Takin' Care of Rizzness
+9,6.0,2,3,QS,Takin' Care of Rizzness
 9,6.0,3,1,QS,Takin' Care of Rizzness
 9,6.0,4,1,QS Potential,Takin' Care of Rizzness
 9,6.0,6+,1,Bad Start,Takin' Care of Rizzness
@@ -226,7 +227,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.1,3,1,QS,Takin' Care of Rizzness
 9,6.2,0,1,QS,Takin' Care of Rizzness
 9,6.2,1,1,QS,Takin' Care of Rizzness
-9,7.0,0,3,QS,Takin' Care of Rizzness
+9,7.0,0,4,QS,Takin' Care of Rizzness
 9,7.0,1,1,QS,Takin' Care of Rizzness
 9,7.0,3,1,QS,Takin' Care of Rizzness
 9,< 3,0,1,Bad Start,Takin' Care of Rizzness
@@ -243,7 +244,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,4.2,4,1,Bad Start,The West Bank Occupiers
 11,4.2,5,1,Bad Start,The West Bank Occupiers
 11,5.0,0,1,QS Potential,The West Bank Occupiers
-11,5.0,1,4,QS Potential,The West Bank Occupiers
+11,5.0,1,5,QS Potential,The West Bank Occupiers
 11,5.0,2,2,QS Potential,The West Bank Occupiers
 11,5.0,3,1,QS Potential,The West Bank Occupiers
 11,5.0,4,1,Bad Start,The West Bank Occupiers
@@ -259,6 +260,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,6.0,2,5,QS,The West Bank Occupiers
 11,6.0,3,1,QS,The West Bank Occupiers
 11,6.0,5,1,Bad Start,The West Bank Occupiers
+11,6.1,4,1,QS Potential,The West Bank Occupiers
 11,6.2,1,1,QS,The West Bank Occupiers
 11,7.0,0,2,QS,The West Bank Occupiers
 11,7.0,1,3,QS,The West Bank Occupiers
@@ -297,6 +299,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,> 7,2,1,QS,Blasphemous Hot Takes
 12,> 7,3,1,QS,Blasphemous Hot Takes
 12,CG,0,1,CG,Blasphemous Hot Takes
+12,CG,1,1,CG,Blasphemous Hot Takes
 13,3.2,0,1,Bad Start,Ketel Bells
 13,3.2,5,1,Bad Start,Ketel Bells
 13,3.2,6+,1,Bad Start,Ketel Bells

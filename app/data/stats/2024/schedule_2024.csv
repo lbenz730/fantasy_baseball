@@ -29,18 +29,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 5,28,12,402.5,193.5,209,14,329.5,209.5,120,Blasphemous Hot Takes,Elly De La Snooze
 5,29,1,364.5,210,154.5,11,356,237.5,118.5,The Talmudic Tunnelers,The West Bank Occupiers
 5,30,2,339.5,176,163.5,8,288,144,144,Skubal Divers,Mt. Everest Taquito Farmers
-6,31,4,328,99,229,7,296,153,143,All That is Wright,FVOS Re-imagined
-6,32,13,375,180,195,9,372.5,163.5,209,Ketel Bells,Takin' Care of Rizzness
-6,33,14,260.5,140.5,120,5,326,198.5,127.5,Elly De La Snooze,The Traveling Secretaries
+6,31,4,329,100,229,7,296,153,143,All That is Wright,FVOS Re-imagined
+6,32,13,376,180,196,9,372.5,163.5,209,Ketel Bells,Takin' Care of Rizzness
+6,33,14,260.5,140.5,120,5,327,199.5,127.5,Elly De La Snooze,The Traveling Secretaries
 6,34,11,311.5,208,103.5,6,272,160.5,111.5,The West Bank Occupiers,The Novaks
 6,35,8,213.5,137.5,76,12,341,170.5,170.5,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
-6,36,2,370.5,206,164.5,1,239.5,143,96.5,Skubal Divers,The Talmudic Tunnelers
-7,37,13,NA,NA,NA,4,NA,NA,NA,Ketel Bells,All That is Wright
-7,38,7,NA,NA,NA,14,NA,NA,NA,FVOS Re-imagined,Elly De La Snooze
-7,39,9,NA,NA,NA,11,NA,NA,NA,Takin' Care of Rizzness,The West Bank Occupiers
-7,40,5,NA,NA,NA,8,NA,NA,NA,The Traveling Secretaries,Mt. Everest Taquito Farmers
-7,41,6,NA,NA,NA,2,NA,NA,NA,The Novaks,Skubal Divers
-7,42,12,NA,NA,NA,1,NA,NA,NA,Blasphemous Hot Takes,The Talmudic Tunnelers
+6,36,2,369.5,205,164.5,1,239.5,143,96.5,Skubal Divers,The Talmudic Tunnelers
+7,37,13,11.5,11.5,NA,4,76.5,7.5,69,Ketel Bells,All That is Wright
+7,38,7,17,11,6,14,16.5,16.5,NA,FVOS Re-imagined,Elly De La Snooze
+7,39,9,88,21.5,66.5,11,42.5,19.5,23,Takin' Care of Rizzness,The West Bank Occupiers
+7,40,5,21.5,21.5,NA,8,26,19,7,The Traveling Secretaries,Mt. Everest Taquito Farmers
+7,41,6,36,36,NA,2,8.5,14.5,-6,The Novaks,Skubal Divers
+7,42,12,63,19,44,1,28,13,15,Blasphemous Hot Takes,The Talmudic Tunnelers
 8,43,4,NA,NA,NA,14,NA,NA,NA,All That is Wright,Elly De La Snooze
 8,44,11,NA,NA,NA,13,NA,NA,NA,The West Bank Occupiers,Ketel Bells
 8,45,8,NA,NA,NA,7,NA,NA,NA,Mt. Everest Taquito Farmers,FVOS Re-imagined

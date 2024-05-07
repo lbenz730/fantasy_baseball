@@ -124,32 +124,32 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 12,UTIL,Shohei Ohtani,39832,11,34.5,6.9,6
 14,SP,Jon Gray,33203,13,49,24.5,6
 14,SP,Max Fried,32685,7,43,21.5,6
-14,SP,Nick Lodolo,42433,13,40.5,20.25,6
+14,SP,Nick Lodolo,42433,13,41.5,20.75,6
 14,SP,Garrett Crochet,4297835,4,39,19.5,6
 14,SP,Bryce Miller,4654313,14,38,19,6
 14,SP,Jack Flaherty,33837,9,36.5,36.5,6
 15,RP,Clay Holmes,32827,9,20,6.666666666666667,6
 15,RP,Jhoan Duran,41109,9,20,6.666666666666667,6
 15,RP,Emmanuel Clase,41743,8,17,5.666666666666667,6
-0,C,NA,NA,NA,NA,NA,7
-1,1B,NA,NA,NA,NA,NA,7
-2,2B,NA,NA,NA,NA,NA,7
-3,3B,NA,NA,NA,NA,NA,7
-4,SS,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-5,OF,NA,NA,NA,NA,NA,7
-6,2B/SS,NA,NA,NA,NA,NA,7
-7,1B/3B,NA,NA,NA,NA,NA,7
-12,UTIL,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-14,SP,NA,NA,NA,NA,NA,7
-15,RP,NA,NA,NA,NA,NA,7
-15,RP,NA,NA,NA,NA,NA,7
-15,RP,NA,NA,NA,NA,NA,7
+0,C,Luis Campusano,40521,2,5,5,7
+1,1B,Bryce Harper,30951,9,8.5,8.5,7
+2,2B,Michael Massey,4109223,12,6,6,7
+3,3B,Christopher Morel,42927,9,9,9,7
+4,SS,Corey Seager,32691,6,8,8,7
+5,OF,Brandon Nimmo,32159,5,8.5,8.5,7
+5,OF,Kyle Schwarber,33712,6,8.5,8.5,7
+5,OF,Nick Castellanos,31187,14,7,7,7
+5,OF,Teoscar Hernandez,33377,4,7,7,7
+5,OF,Max Kepler,31870,2,6,6,7
+6,2B/SS,Carlos Correa,32653,13,5.5,5.5,7
+7,1B/3B,Freddie Freeman,30193,14,6,6,7
+12,UTIL,Shohei Ohtani,39832,11,10.5,10.5,7
+14,SP,Mitch Keller,33722,12,34.5,34.5,7
+14,SP,Zack Wheeler,31267,9,32,32,7
+14,SP,Cole Ragans,41054,4,24,24,7
+14,SP,Luis Castillo,35124,4,21.5,21.5,7
+14,SP,Jack Flaherty,33837,9,18.5,18.5,7
+14,SP,Yu Darvish,32055,4,16.5,16.5,7
+15,RP,Robert Suarez,4148749,12,11,11,7
+15,RP,Edwin Diaz,35394,4,7,7,7
+15,RP,Emmanuel Clase,41743,8,7,7,7
