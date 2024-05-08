@@ -1,19 +1,4 @@
 game_date,player,player_id,team_id
-2024-05-07,Logan Allen,4683350,13
-2024-05-07,Zac Gallen,39910,8
-2024-05-07,Jose Berrios,32811,7
-2024-05-07,Corbin Burnes,39878,5
-2024-05-07,Zach Eflin,32804,9
-2024-05-07,Justin Verlander,6341,1
-2024-05-07,Luis Gil,40626,5
-2024-05-07,Kutter Crawford,41277,4
-2024-05-07,Reynaldo Lopez,33860,7
-2024-05-07,Shota Imanaga,5134630,4
-2024-05-07,Bailey Ober,3107919,5
-2024-05-07,Seth Lugo,34873,1
-2024-05-07,Jose Butto,4905900,14
-2024-05-07,Kyle Harrison,4683375,2
-2024-05-07,Yoshinobu Yamamoto,4872587,8
 2024-05-08,Martin Perez,31098,13
 2024-05-08,Chris Bassitt,33148,5
 2024-05-08,Aaron Nola,33709,12
@@ -26,6 +11,7 @@ game_date,player,player_id,team_id
 2024-05-08,Kyle Bradish,4311625,11
 2024-05-08,Aaron Civale,40934,6
 2024-05-08,Carlos Rodon,33696,1
+2024-05-08,Nick Pivetta,36071,8
 2024-05-08,Chris Sale,30948,12
 2024-05-08,George Kirby,42406,6
 2024-05-08,Jordan Hicks,37909,1
@@ -35,3 +21,7 @@ game_date,player,player_id,team_id
 2024-05-09,Keaton Winn,5116843,8
 2024-05-09,Ronel Blanco,41829,8
 2024-05-09,Lance Lynn,30820,11
+2024-05-10,Christian Scott,4414215,2
+2024-05-10,Garrett Crochet,4297835,4
+2024-05-10,Michael King,40429,2
+2024-05-10,Andrew Abbott,4414528,11
