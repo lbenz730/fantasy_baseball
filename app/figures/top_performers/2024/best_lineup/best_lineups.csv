@@ -120,7 +120,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 5,OF,Brandon Nimmo,32159,5,23,3.2857142857142856,6
 5,OF,Bryan De La Cruz,40787,5,23,3.2857142857142856,6
 6,2B/SS,Willy Adames,33675,1,25.5,4.25,6
-7,1B/3B,Max Muncy,33303,2,24,6,6
+7,1B/3B,Bryce Harper,30951,9,24,4,6
 12,UTIL,Shohei Ohtani,39832,11,34.5,6.9,6
 14,SP,Jon Gray,33203,13,49,24.5,6
 14,SP,Max Fried,32685,7,43,21.5,6
@@ -134,22 +134,22 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 0,C,Shea Langeliers,42598,13,24,12,7
 1,1B,Bryce Harper,30951,9,21.5,7.166666666666667,7
 2,2B,Marcus Semien,32146,4,30,7.5,7
-3,3B,Abraham Toro,40754,9,16,4,7
-4,SS,Bobby Witt Jr.,42403,8,20.5,6.833333333333333,7
+3,3B,Jose Ramirez,32801,5,19,4.75,7
+4,SS,Bobby Witt Jr.,42403,8,20.5,5.125,7
+5,OF,Max Kepler,31870,2,22,5.5,7
 5,OF,Brent Rooker,40926,2,21.5,5.375,7
-5,OF,Teoscar Hernandez,33377,4,18,6,7
-5,OF,Brandon Nimmo,32159,5,17.5,8.75,7
-5,OF,Juan Soto,36969,7,17.5,8.75,7
-5,OF,Aaron Judge,33192,13,16.5,8.25,7
-6,2B/SS,Anthony Volpe,42547,14,13,6.5,7
-7,1B/3B,Nathaniel Lowe,40538,2,18,4.5,7
-12,UTIL,Jonah Heim,33842,1,18,6,7
+5,OF,Aaron Judge,33192,13,21,7,7
+5,OF,Michael Conforto,33711,4,20,5,7
+5,OF,Juan Soto,36969,7,19.5,6.5,7
+6,2B/SS,Anthony Volpe,42547,14,20,6.666666666666667,7
+7,1B/3B,Josh Naylor,35066,13,19,4.75,7
+12,UTIL,Ryan Jeffers,41587,7,19.5,6.5,7
 14,SP,Dylan Cease,34943,13,35.5,35.5,7
 14,SP,Mitch Keller,33722,12,34.5,34.5,7
 14,SP,Zack Wheeler,31267,9,32,32,7
+14,SP,Pablo Lopez,39671,14,27.5,27.5,7
 14,SP,Chris Sale,30948,12,26.5,26.5,7
 14,SP,Zac Gallen,39910,8,26,26,7
-14,SP,Yoshinobu Yamamoto,4872587,8,25,25,7
 15,RP,Robert Suarez,4148749,12,18,9,7
 15,RP,David Robertson,29172,7,16.5,8.25,7
 15,RP,Jhoan Duran,41109,9,14,7,7
