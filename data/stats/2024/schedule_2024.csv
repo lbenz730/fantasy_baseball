@@ -35,12 +35,12 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 6,34,11,308.5,208,100.5,6,272,160.5,111.5,The West Bank Occupiers,The Novaks
 6,35,8,213.5,137.5,76,12,341,170.5,170.5,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
 6,36,2,369.5,205,164.5,1,239.5,143,96.5,Skubal Divers,The Talmudic Tunnelers
-7,37,13,190.5,147.5,43,4,192.5,95,97.5,Ketel Bells,All That is Wright
-7,38,7,93.5,71.5,22,14,166,92,74,FVOS Re-imagined,Elly De La Snooze
-7,39,9,186.5,90.5,96,11,107.5,75,32.5,Takin' Care of Rizzness,The West Bank Occupiers
-7,40,5,163,96.5,66.5,8,172,106,66,The Traveling Secretaries,Mt. Everest Taquito Farmers
-7,41,6,161,86,75,2,167.5,143,24.5,The Novaks,Skubal Divers
-7,42,12,175.5,90,85.5,1,152,89,63,Blasphemous Hot Takes,The Talmudic Tunnelers
+7,37,13,190.5,172,18.5,4,192.5,115.5,77,Ketel Bells,All That is Wright
+7,38,7,93.5,78.5,15,14,166,107,59,FVOS Re-imagined,Elly De La Snooze
+7,39,9,186.5,117,69.5,11,107.5,101,6.5,Takin' Care of Rizzness,The West Bank Occupiers
+7,40,5,163,118,45,8,172,133,39,The Traveling Secretaries,Mt. Everest Taquito Farmers
+7,41,6,161,115,46,2,167.5,169.5,-2,The Novaks,Skubal Divers
+7,42,12,175.5,107.5,68,1,152,113,39,Blasphemous Hot Takes,The Talmudic Tunnelers
 8,43,4,NA,NA,NA,14,NA,NA,NA,All That is Wright,Elly De La Snooze
 8,44,11,NA,NA,NA,13,NA,NA,NA,The West Bank Occupiers,Ketel Bells
 8,45,8,NA,NA,NA,7,NA,NA,NA,Mt. Everest Taquito Farmers,FVOS Re-imagined
