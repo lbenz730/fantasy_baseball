@@ -138,9 +138,9 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 4,SS,Willy Adames,33675,1,22,4.4,7
 5,OF,Aaron Judge,33192,13,24,6,7
 5,OF,Brent Rooker,40926,2,22,4.4,7
-5,OF,Max Kepler,31870,2,22,5.5,7
 5,OF,Kyle Tucker,34967,12,21.5,5.375,7
 5,OF,Michael Conforto,33711,4,21,4.2,7
+5,OF,Max Kepler,31870,2,20,5,7
 6,2B/SS,Corey Seager,32691,6,20.5,5.125,7
 7,1B/3B,Josh Naylor,35066,13,19.5,3.9,7
 12,UTIL,Bobby Witt Jr.,42403,8,20,4,7
