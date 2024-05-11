@@ -883,6 +883,17 @@ df_daily %>%
   write_csv(glue('data/stats/{params$season}/pitch_matrix.csv'))
 
 
+### Draft
+draft <- robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?view=mDraftDetail'))
+df_draft <- 
+  draft$draftDetail$picks %>% 
+  select('team_id' = teamId,
+         'player_id' = playerId,
+         'round_id' = roundId,
+         'pick_id' = overallPickNumber)
+write_csv(df_draft, glue('data/stats/{params$season}/draft.csv'))
+
+
 dir_copy('data/', 'app/data', overwrite = T)
 dir_copy('figures/', 'app/figures', overwrite = T)
 dir_copy('models/', 'app/models', overwrite = T)

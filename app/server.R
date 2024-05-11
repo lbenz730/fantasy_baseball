@@ -743,7 +743,7 @@ shinyServer(function(input, output, session) {
         geom_col(aes(fill = start_bucket)) + 
         geom_col(data = start_buckets_avg, aes(x = start_bucket, y = league_avg), alpha = 0, lty = 2, col = 'black') +
         geom_label(aes(label = paste0(sprintf('%0.1f', 100 * pct_start), '%')),
-                  vjust = -0.2) + 
+                   vjust = -0.2) + 
         
         labs(x = 'Points',
              y = '% of Starts',
@@ -2116,45 +2116,223 @@ shinyServer(function(input, output, session) {
   })
   
   
-  
-  outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
-  outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
-  outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)
-  # outputOptions(output, "top_performers", suspendWhenHidden = FALSE, priority = 2)
-  # outputOptions(output, "best_lineup", suspendWhenHidden = FALSE, priority = 2)
-  # outputOptions(output, 'trade_chart', suspendWhenHidden = FALSE, priority = 2)
-  # outputOptions(output, 'fa_chart', suspendWhenHidden = FALSE, priority = 2)
-  # outputOptions(output, 'fs_chart', suspendWhenHidden = FALSE, priority = 2)
-  outputOptions(output, 'wp_plot', suspendWhenHidden = FALSE, priority = 1)
-  
-  
-  #   outputOptions(output, 'win_dist', suspendWhenHidden = FALSE)
-  #   outputOptions(output, 'points_dist', suspendWhenHidden = FALSE)
-  #   outputOptions(output, 'playoff_history', suspendWhenHidden = FALSE)
-  #   
-  #   outputOptions(output, 'bump', suspendWhenHidden = FALSE)
-  #   outputOptions(output, 'ppw_1', suspendWhenHidden = FALSE)
-  #   outputOptions(output, 'ppw_2', suspendWhenHidden = FALSE)
-  #   outputOptions(output, 'ppw_3', suspendWhenHidden = FALSE)
-  #   outputOptions(output, 'roll_k', suspendWhenHidden = FALSE)
-  # 
-  #   outputOptions(output, 'asg_lineup', suspendWhenHidden = FALSE)
-  #   outputOptions(output, 'asg_counts', suspendWhenHidden = FALSE)
-  
-  
-  #   
-  #   outputOptions(output, "sp_pen", suspendWhenHidden = FALSE)
-  #   outputOptions(output, "rp_pen", suspendWhenHidden = FALSE)
+  ### Draft 
+  output$draft_plot <- 
+    plotly::renderPlotly({
+      p <-
+        ggplot(draft_analysis, aes(x = pick_id, y = points_total)) + 
+        facet_wrap(~team) +
+        geom_smooth(data = select(draft_analysis, -team), alpha = 0.2, se = F) +
+        geom_hline(yintercept = 0, lty = 2, col = 'grey') + 
+        geom_point(aes(color = player_type, text = text), size = 5) + 
+        theme(legend.position = 'bottom') + 
+        labs(x = 'Pick Number',
+             y = 'Points Scoring for Drafting Team',
+             title = 'Draft Curves',
+             color = 'Player Type'
+        )
+      
+      plotly::ggplotly(p, tooltip = 'text') %>% 
+        plotly::layout('legend' = list(
+          xanchor='center',
+          x = 0.5,
+          yanchor='bottom',
+          orientation='h'),
+          'height' = 900,
+          'width' = 1600
+        )
+    })
   
   
-  
-  
-  
-  
-  
+  output$gt_draft <- 
+    render_gt({
+      dfd <- 
+        draft_analysis %>% 
+        arrange(-residual) %>% 
+        mutate('pitcher' = player_type == 'batter') %>% 
+        inner_join(teams %>% select(team, logo)) %>% 
+        change_logo() %>% 
+        mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'))
+      
+      dfd_bat <- 
+        dfd %>% 
+        filter(player_type == 'Batter') %>% 
+        head(20) %>% 
+        select(player, player_url, team, logo, pick_id, round_id, points_total, points_draft, ppg, ppg_draft, fit, residual)
+      
+      dfd_pitch <- 
+        dfd %>% 
+        filter(player_type != 'Batter') %>% 
+        head(20) %>% 
+        select(player, player_url, team, logo, pick_id, round_id, points_total, points_draft, ppg, ppg_draft, fit, residual)
+      
+      names(dfd_bat) <- paste0(names(dfd_bat), '_bat')
+      names(dfd_pitch) <- paste0(names(dfd_pitch), '_pitch')
+      
+      # gt_draft <- 
+        bind_cols(dfd_bat, dfd_pitch) %>% 
+        gt() %>% 
+        cols_align('center') %>% 
+        tab_spanner(label = 'Pitching', columns = contains('_pitch')) %>%
+        tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
+        sub_missing(columns = everything(), missing_text = "---") %>% 
+        fmt_number(contains(c('ppg', 'fit', 'residual')), decimals = 1) %>% 
+        
+        
+        ### Borders
+        tab_style(
+          style = list(
+            cell_borders(
+              sides = "bottom",
+              color = "black",
+              weight = px(3)
+            )
+          ),
+          locations = list(
+            cells_column_labels(
+              columns = gt::everything()
+            )
+          )
+        )  %>% 
+        
+        ### Logos
+        text_transform(
+          locations = cells_body(contains(c('player_url'))),
+          fn = function(x) {
+            web_image(
+              url = x,
+              height = 50
+            )
+          }
+        ) %>%
+        
+        text_transform(
+          locations = cells_body(columns = contains(c('logo_pitch')), 
+                                 rows = (logo_pitch != '---')),
+          fn = function(x) {
+            local_image(
+              filename = x,
+              height = 50
+            )
+          }
+        ) %>%
+        
+        text_transform(
+          locations = cells_body(columns = contains(c('logo_bat')), 
+                                 rows = (logo_bat != '---')),
+          fn = function(x) {
+            local_image(
+              filename = x,
+              height = 50
+            )
+          }
+        ) %>%
+        
+        
+        
+        tab_style(
+          style = list(
+            cell_borders(
+              sides = "right",
+              color = "black",
+              weight = px(3)
+            )
+          ),
+          locations = list(
+            cells_body(
+              columns = contains('residual')
+            )
+          )
+        ) %>% 
+        
+        
+        ### Names
+        cols_label(
+          'team_bat' = 'Team',
+          'logo_bat' = '',
+          'player_url_bat' = '',
+          'player_bat' = 'Player',
+          'points_total_bat' = 'Points',
+          'points_draft_bat' = 'Points (Draft Team)',
+          'ppg_bat' = 'PPG',
+          'ppg_draft_bat' = 'PPG (Draft Team)',
+          'pick_id_bat' = 'Pick',
+          'round_id_bat' = 'Round',
+          'fit_bat' = 'Exp. Pick Value',
+          'residual_bat' = 'Residual',
+          
+          'team_pitch' = 'Team',
+          'logo_pitch' = '',
+          'player_url_pitch' = '',
+          'player_pitch' = 'Player',
+          'points_total_pitch' = 'Points',
+          'points_draft_pitch' = 'Points (Draft Team)',
+          'ppg_pitch' = 'PPG',
+          'ppg_draft_pitch' = 'PPG (Draft Team)',
+          'pick_id_pitch' = 'Pick',
+          'round_id_pitch' = 'Round',
+          'fit_pitch' = 'Exp. Pick Value',
+          'residual_pitch' = 'Residual'
+          
+          
+          
+        ) %>%
+        tab_header(
+          title = md('**Top Draft Picks**')
+        ) %>%
+        tab_options(column_labels.font.size = 12,
+                    heading.title.font.size = 40,
+                    heading.subtitle.font.size = 40,
+                    heading.title.font.weight = 'bold',
+                    heading.subtitle.font.weight = 'bold',
+                    column_labels.font.weight = 'bold')
+                    
+                    
+                    
+                    
+    })
+      
+      
+      
+      outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
+      outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
+      outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)
+      # outputOptions(output, "top_performers", suspendWhenHidden = FALSE, priority = 2)
+      # outputOptions(output, "best_lineup", suspendWhenHidden = FALSE, priority = 2)
+      # outputOptions(output, 'trade_chart', suspendWhenHidden = FALSE, priority = 2)
+      # outputOptions(output, 'fa_chart', suspendWhenHidden = FALSE, priority = 2)
+      # outputOptions(output, 'fs_chart', suspendWhenHidden = FALSE, priority = 2)
+      outputOptions(output, 'wp_plot', suspendWhenHidden = FALSE, priority = 1)
+      
+      
+      #   outputOptions(output, 'win_dist', suspendWhenHidden = FALSE)
+      #   outputOptions(output, 'points_dist', suspendWhenHidden = FALSE)
+      #   outputOptions(output, 'playoff_history', suspendWhenHidden = FALSE)
+      #   
+      #   outputOptions(output, 'bump', suspendWhenHidden = FALSE)
+      #   outputOptions(output, 'ppw_1', suspendWhenHidden = FALSE)
+      #   outputOptions(output, 'ppw_2', suspendWhenHidden = FALSE)
+      #   outputOptions(output, 'ppw_3', suspendWhenHidden = FALSE)
+      #   outputOptions(output, 'roll_k', suspendWhenHidden = FALSE)
+      # 
+      #   outputOptions(output, 'asg_lineup', suspendWhenHidden = FALSE)
+      #   outputOptions(output, 'asg_counts', suspendWhenHidden = FALSE)
+      
+      
+      #   
+      #   outputOptions(output, "sp_pen", suspendWhenHidden = FALSE)
+      #   outputOptions(output, "rp_pen", suspendWhenHidden = FALSE)
+      
+      
+      
+      
+      
+      
+      
 })
-
-
-
-
-
+  
+  
+  
+  
+  
+  

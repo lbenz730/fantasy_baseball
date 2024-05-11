@@ -114,10 +114,10 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                               
                             )
                    ),
-
+                   
                    tabPanel("Season All-Stars",
                             value = 'all_stars',
-
+                            
                             ### Render Table
                             mainPanel(
                               width = 12,
@@ -130,8 +130,8 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                            image = baseball,
                                                            image.height = 100)
                             )
-
-
+                            
+                            
                    ),
                    
                    tabPanel('Trade/Free Agent Analysis',
@@ -147,6 +147,50 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                            image = baseball,
                                                            image.height = 100)
                             )
+                   ),
+                   
+                   tabPanel('Draft Analysis', 
+                            mainPanel(
+                              width = 12,
+                              shinycssloaders::withSpinner(plotly::plotlyOutput('draft_plot'),
+                                                           image = baseball,
+                                                           image.height = 100),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              br(), 
+                              br(),
+                              
+                              shinycssloaders::withSpinner(gt_output('gt_draft'),
+                                                           image = baseball,
+                                                           image.height = 100)
+                            )
+                            
+                            
+                            
                    ),
                    
                    tabPanel("Points Over Time Trends",
