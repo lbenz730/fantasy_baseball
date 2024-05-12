@@ -375,24 +375,30 @@ trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
 #   ungroup() %>% 
 #   filter(penalty != 0)
 
-df_rp_penalty <- 
+df_rp_penalty <-
   df_daily %>% 
   filter(lineup_id == 15 | (lineup_id == 14 & relief) ) %>% 
   filter(!start) %>%  ### for Javier Rule
   inner_join(select(teams, team, team_id)) %>% 
+  group_by(player_id) %>% 
+  arrange(scoring_period_id) %>% 
+  mutate('cumsum_rp' = cumsum(relief)) %>% 
   ### Ryan Helsley Week 11 on IL Days 1-2 of matchip
   # filter(!(matchup_id == 11 & player == 'Ryan Helsley')) %>% 
   # filter(!(matchup_id == 12 & player == 'Jordan Hicks')) %>% 
   # filter(!(matchup_id == 19 & player == 'Hunter Brown')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
+  group_by(team, matchup_id, scoring_period_id) %>% 
+  mutate('sp_rp' = lineup_id == 14 & sum(lineup_id == 15 & cumsum_rp >= 1) == 3 & relief) %>% 
   group_by(team, matchup_id) %>% 
   arrange(scoring_period_id) %>% 
   mutate('rp_id' = map2_dbl(player_id, stint, ~which(unique(paste(player_id, stint)) == paste(.x, .y)))) %>% 
   summarise('n_rp' = n_distinct(paste(stint, player_id)),
             'penalty' = sum(points[rp_id > 5]),
-            'scoring_period_id' = min(scoring_period_id[rp_id > 5])) %>% 
+            'penalty_sp' = sum(points[sp_rp]),
+            'scoring_period_id' = min(scoring_period_id[rp_id > 5] | scoring_period_id[rp_sp])) %>% 
   ungroup() %>% 
-  filter(penalty != 0)
+  filter(penalty != 0 | penalty_sp != 0)
 
 write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
 
