@@ -2122,7 +2122,7 @@ shinyServer(function(input, output, session) {
       p <-
         ggplot(draft_analysis, aes(x = pick_id, y = points_total)) + 
         facet_wrap(~team) +
-        geom_smooth(data = select(draft_analysis, -team), alpha = 0.2, se = F) +
+        geom_smooth(data = select(draft_analysis, -team), col = 'black', alpha = 0.2, se = F) +
         geom_hline(yintercept = 0, lty = 2, col = 'grey') + 
         geom_point(aes(color = player_type, text = text), size = 5) + 
         theme(legend.position = 'bottom') + 
