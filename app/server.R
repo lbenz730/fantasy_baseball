@@ -335,7 +335,7 @@ shinyServer(function(input, output, session) {
                        'blue_balls' = mean(pitch_stats$blue_balls),
                        'langes' = mean(pitch_stats$langes),
                        'bednars' = mean(pitch_stats$bednars),
-                       )) %>% 
+      )) %>% 
       mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
       mutate_at(vars(everything()), ~replace(.x, .x == Inf, 0))
     
@@ -522,12 +522,12 @@ shinyServer(function(input, output, session) {
         footnote = "RP appearances of -5 or worse, named after Alex \"Scrub\" Lange",
         locations = cells_column_labels('langes'),
         placement = 'left'
+      ) %>% 
+      tab_footnote(
+        footnote = "RP appearances of -10 or worse, named after David \"Shit the\" Bednar",
+        locations = cells_column_labels('langes'),
+        placement = 'left'
       ) 
-    tab_footnote(
-      footnote = "RP appearances of -10 or worse, named after David \"Shit the\" Bednar",
-      locations = cells_column_labels('langes'),
-      placement = 'left'
-    ) 
     
   })
   
@@ -2191,7 +2191,7 @@ shinyServer(function(input, output, session) {
       names(dfd_pitch) <- paste0(names(dfd_pitch), '_pitch')
       
       # gt_draft <- 
-        bind_cols(dfd_bat, dfd_pitch) %>% 
+      bind_cols(dfd_bat, dfd_pitch) %>% 
         gt() %>% 
         cols_align('center') %>% 
         tab_spanner(label = 'Pitching', columns = contains('_pitch')) %>%
@@ -2307,53 +2307,52 @@ shinyServer(function(input, output, session) {
                     heading.title.font.weight = 'bold',
                     heading.subtitle.font.weight = 'bold',
                     column_labels.font.weight = 'bold')
-                    
-                    
-                    
-                    
+      
+      
+      
+      
     })
-      
-      
-      
-      outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
-      outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
-      outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)
-      # outputOptions(output, "top_performers", suspendWhenHidden = FALSE, priority = 2)
-      # outputOptions(output, "best_lineup", suspendWhenHidden = FALSE, priority = 2)
-      # outputOptions(output, 'trade_chart', suspendWhenHidden = FALSE, priority = 2)
-      # outputOptions(output, 'fa_chart', suspendWhenHidden = FALSE, priority = 2)
-      # outputOptions(output, 'fs_chart', suspendWhenHidden = FALSE, priority = 2)
-      outputOptions(output, 'wp_plot', suspendWhenHidden = FALSE, priority = 1)
-      
-      
-      #   outputOptions(output, 'win_dist', suspendWhenHidden = FALSE)
-      #   outputOptions(output, 'points_dist', suspendWhenHidden = FALSE)
-      #   outputOptions(output, 'playoff_history', suspendWhenHidden = FALSE)
-      #   
-      #   outputOptions(output, 'bump', suspendWhenHidden = FALSE)
-      #   outputOptions(output, 'ppw_1', suspendWhenHidden = FALSE)
-      #   outputOptions(output, 'ppw_2', suspendWhenHidden = FALSE)
-      #   outputOptions(output, 'ppw_3', suspendWhenHidden = FALSE)
-      #   outputOptions(output, 'roll_k', suspendWhenHidden = FALSE)
-      # 
-      #   outputOptions(output, 'asg_lineup', suspendWhenHidden = FALSE)
-      #   outputOptions(output, 'asg_counts', suspendWhenHidden = FALSE)
-      
-      
-      #   
-      #   outputOptions(output, "sp_pen", suspendWhenHidden = FALSE)
-      #   outputOptions(output, "rp_pen", suspendWhenHidden = FALSE)
-      
-      
-      
-      
-      
-      
-      
+  
+  
+  
+  outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
+  outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
+  outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)
+  # outputOptions(output, "top_performers", suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, "best_lineup", suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, 'trade_chart', suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, 'fa_chart', suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, 'fs_chart', suspendWhenHidden = FALSE, priority = 2)
+  outputOptions(output, 'wp_plot', suspendWhenHidden = FALSE, priority = 1)
+  
+  
+  #   outputOptions(output, 'win_dist', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'points_dist', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'playoff_history', suspendWhenHidden = FALSE)
+  #   
+  #   outputOptions(output, 'bump', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'ppw_1', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'ppw_2', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'ppw_3', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'roll_k', suspendWhenHidden = FALSE)
+  # 
+  #   outputOptions(output, 'asg_lineup', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'asg_counts', suspendWhenHidden = FALSE)
+  
+  
+  #   
+  #   outputOptions(output, "sp_pen", suspendWhenHidden = FALSE)
+  #   outputOptions(output, "rp_pen", suspendWhenHidden = FALSE)
+  
+  
+  
+  
+  
+  
+  
 })
-  
-  
-  
-  
-  
-  
+
+
+
+
+
