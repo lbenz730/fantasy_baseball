@@ -161,7 +161,8 @@ pitch_stats <-
   remove_postcap() %>%
   filter(in_lineup) %>% 
   filter(pitcher) %>% 
-  mutate('lang' = relief & points <= -5) %>% 
+  mutate('lange' = relief & points <= -5,
+         'bednar' = relief & points <= -10) %>% 
   group_by(team_id) %>% 
   summarise('qs' = sum(qs),
             'k' = sum(p_k),
@@ -184,7 +185,8 @@ pitch_stats <-
             'hpb_sp' = sum(p_hbp[start]),
             'hpb_rp' = sum(p_hbp[relief & !relief_start]),
             'blue_balls' = sum(blue_balls),
-            'langs' = sum(lang)) %>% 
+            'langes' = sum(lange),
+            'bednars' = sum(bednar)) %>% 
   mutate('era' = earned_runs/outs * 27,
          'era_sp' = earned_runs_sp/outs_sp * 27,
          'era_rp' = earned_runs_rp/outs_rp * 27,

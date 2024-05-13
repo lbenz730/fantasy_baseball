@@ -333,7 +333,9 @@ shinyServer(function(input, output, session) {
                        
                        'qs' = mean(pitch_stats$qs),
                        'blue_balls' = mean(pitch_stats$blue_balls),
-                       'langs' = mean(pitch_stats$blue_balls))) %>% 
+                       'langes' = mean(pitch_stats$langes),
+                       'bednars' = mean(pitch_stats$bednars),
+                       )) %>% 
       mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
       mutate_at(vars(everything()), ~replace(.x, .x == Inf, 0))
     
@@ -347,7 +349,7 @@ shinyServer(function(input, output, session) {
                              bb9, bb9_sp, bb9_rp, 
                              k_per_bb, k_per_bb_sp, k_per_bb_rp,
                              hr9, hr9_sp, hr9_rp), decimals = 2, sep_mark = '') %>% 
-      fmt_number(columns = c(qs, blue_balls, langs), decimals = 2, drop_trailing_zeros = T) %>% 
+      fmt_number(columns = c(qs, blue_balls, langes, bednars), decimals = 2, drop_trailing_zeros = T) %>% 
       sub_missing(columns = everything(), missing_text = "---") %>%
       
       ### Align Columns
@@ -413,8 +415,11 @@ shinyServer(function(input, output, session) {
       data_color(columns = c(blue_balls),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$blue_balls)),
                  autocolor_text = F) %>% 
-      data_color(columns = c(langs),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$langs)),
+      data_color(columns = c(langes),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$langes)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(bednars),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$bednars)),
                  autocolor_text = F) %>% 
       
       ### Borders
@@ -494,7 +499,8 @@ shinyServer(function(input, output, session) {
         hr9_rp = 'HR/9',
         qs = 'QS',
         blue_balls = 'Blue Balls',
-        langs = 'Langes',
+        langes = 'Langes',
+        bednars = 'Bednars',
       ) %>%
       tab_header(
         title = md('**Pitching Stats**'),
@@ -514,9 +520,14 @@ shinyServer(function(input, output, session) {
       ) %>% 
       tab_footnote(
         footnote = "RP appearances of -5 or worse, named after Alex \"Scrub\" Lange",
-        locations = cells_column_labels('langs'),
+        locations = cells_column_labels('langes'),
         placement = 'left'
       ) 
+    tab_footnote(
+      footnote = "RP appearances of -10 or worse, named after David \"Shit the\" Bednar",
+      locations = cells_column_labels('langes'),
+      placement = 'left'
+    ) 
     
   })
   
