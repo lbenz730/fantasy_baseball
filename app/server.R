@@ -498,9 +498,9 @@ shinyServer(function(input, output, session) {
         hr9_sp = 'HR/9',
         hr9_rp = 'HR/9',
         qs = 'QS',
-        blue_balls = 'Blue Balls',
-        langes = 'Langes',
-        bednars = 'Bednars',
+        blue_balls = html('Blue<br>Balls'),
+        langes = 'LNG',
+        bednars = 'BED',
       ) %>%
       tab_header(
         title = md('**Pitching Stats**'),
