@@ -398,8 +398,7 @@ df_rp_penalty <-
   arrange(scoring_period_id) %>% 
   mutate('rp_id' = map2_dbl(player_id, stint, ~which(unique(paste(player_id, stint)) == paste(.x, .y)))) %>% 
   summarise('n_rp' = n_distinct(paste(stint, player_id)),
-            'penalty' = sum(points[rp_id > 5]),
-            'penalty_sp' = sum(points[sp_rp]),
+            'penalty' = sum(points[rp_id > 5]) + sum(points[sp_rp]),
             'scoring_period_id' = min(scoring_period_id[rp_id > 5] | scoring_period_id[sp_rp])) %>% 
   ungroup() %>% 
   filter(penalty != 0 | penalty_sp != 0)

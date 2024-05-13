@@ -99,7 +99,8 @@ start_buckets_avg <-
 df_rp_penalty <- 
   read_csv('data/red_flags/rp_penalties.csv') %>% 
   mutate('penalty' = as.numeric(penalty),
-         'matchup_id' = as.numeric(matchup_id))
+         'matchup_id' = as.numeric(matchup_id)) %>% 
+  arrange(matchup_id) 
 
 df_trades <- read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv'))
 if(nrow(df_trades) > 0) {
