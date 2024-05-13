@@ -1,3 +1,3 @@
-team,matchup_id,n_rp,penalty,penalty_sp,scoring_period_id
-The Traveling Secretaries,7,4,0,9,Inf
-The West Bank Occupiers,6,7,3,0,Inf
+team,matchup_id,n_rp,penalty,scoring_period_id
+The Traveling Secretaries,7,4,9,Inf
+The West Bank Occupiers,6,7,3,Inf

@@ -3345,7 +3345,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 38,7,Jose Berrios,32811,NA,-6,7
 38,7,Max Fried,32685,NA,29.5,7
 38,7,Josh Lowe,40557,NA,7,7
-38,7,Blake Perkins,36974,NA,-2,7
+38,7,Blake Perkins,36974,NA,-1,7
 38,7,Eugenio Suarez,32367,NA,13.5,7
 38,7,Sonny Gray,32082,NA,0.5,7
 38,7,Ryan Jeffers,41587,NA,23.5,7
@@ -3389,7 +3389,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 40,7,Justin Turner,29607,NA,1,5
 40,7,Cal Raleigh,41292,NA,22.5,5
 40,7,Starling Marte,30830,NA,4,5
-40,7,Luis Severino,33263,NA,9,5
+40,7,Luis Severino,33263,NA,10,5
 40,7,Bryson Stott,42417,NA,27,5
 40,7,Luis Gil,40626,NA,21.5,5
 40,7,Bryan De La Cruz,40787,NA,17.5,5
@@ -3426,11 +3426,11 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 41,7,Jeff Hoffman,33841,2,6.5,6
 41,7,Corey Seager,32691,NA,23.5,6
 41,7,Trevor Larnach,41205,NA,2,6
-41,7,Tyler O'Neill,34168,NA,1.5,6
+41,7,Tyler O'Neill,34168,NA,2.5,6
 41,7,Ryan Mountcastle,34940,NA,12.5,6
 41,7,Justin Steele,41022,NA,-4,6
 41,7,Tyler Freeman,40958,NA,7.5,6
-42,7,Bryan Reynolds,38980,NA,8.5,12
+42,7,Bryan Reynolds,38980,NA,9.5,12
 42,7,Logan Gilbert,41221,NA,-10,12
 42,7,Josh Bell,32517,NA,17.5,12
 42,7,Jake Cronenworth,36364,NA,13.5,12
@@ -3586,7 +3586,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 37,7,Garrett Crochet,4297835,NA,29,4
 37,7,Ke'Bryan Hayes,35020,NA,2,4
 37,7,Jeff McNeil,33900,NA,7.5,4
-37,7,Reed Garrett,36526,2,13.5,4
+37,7,Reed Garrett,36526,2,14.5,4
 37,7,George Springer,32078,NA,1,4
 37,7,Michael Conforto,33711,NA,21.5,4
 37,7,Jason Adam,32145,2,5,4
@@ -3603,7 +3603,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 38,7,Jacob Young,4414210,NA,-1.5,14
 38,7,Paul Sewald,35009,3,11.5,14
 38,7,Javier Assad,5002950,NA,11,14
-38,7,JP Sears,39818,NA,4.5,14
+38,7,JP Sears,39818,NA,3.5,14
 38,7,Raisel Iglesias,33618,3,9,14
 38,7,Nick Castellanos,31187,NA,11.5,14
 38,7,William Contreras,39895,NA,26.5,14
@@ -3685,7 +3685,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 41,7,Jung Hoo Lee,5134621,NA,6,2
 41,7,Max Muncy,33303,NA,10.5,2
 41,7,Ronald Acuna Jr.,36185,NA,7,2
-41,7,Nathaniel Lowe,40538,NA,21,2
+41,7,Nathaniel Lowe,40538,NA,23,2
 41,7,Brice Turang,41179,NA,18,2
 41,7,Brent Rooker,40926,NA,35,2
 41,7,Oneil Cruz,39712,NA,27.5,2

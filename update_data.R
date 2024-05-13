@@ -401,7 +401,7 @@ df_rp_penalty <-
             'penalty' = sum(points[rp_id > 5]) + sum(points[sp_rp]),
             'scoring_period_id' = min(scoring_period_id[rp_id > 5] | scoring_period_id[sp_rp])) %>% 
   ungroup() %>% 
-  filter(penalty != 0 | penalty_sp != 0)
+  filter(penalty != 0)
 
 write_csv(df_rp_penalty, 'data/red_flags/rp_penalties.csv')
 
