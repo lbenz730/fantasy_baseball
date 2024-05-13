@@ -161,6 +161,7 @@ pitch_stats <-
   remove_postcap() %>%
   filter(in_lineup) %>% 
   filter(pitcher) %>% 
+  mutate('lang' = relief & points <= -5) %>% 
   group_by(team_id) %>% 
   summarise('qs' = sum(qs),
             'k' = sum(p_k),
@@ -182,7 +183,8 @@ pitch_stats <-
             'hpb' = sum(p_hbp),
             'hpb_sp' = sum(p_hbp[start]),
             'hpb_rp' = sum(p_hbp[relief & !relief_start]),
-            'blue_balls' = sum(blue_balls)) %>% 
+            'blue_balls' = sum(blue_balls),
+            'langs' = sum(lang)) %>% 
   mutate('era' = earned_runs/outs * 27,
          'era_sp' = earned_runs_sp/outs_sp * 27,
          'era_rp' = earned_runs_rp/outs_rp * 27,
@@ -396,7 +398,7 @@ df_rp_penalty <-
   summarise('n_rp' = n_distinct(paste(stint, player_id)),
             'penalty' = sum(points[rp_id > 5]),
             'penalty_sp' = sum(points[sp_rp]),
-            'scoring_period_id' = min(scoring_period_id[rp_id > 5] | scoring_period_id[rp_sp])) %>% 
+            'scoring_period_id' = min(scoring_period_id[rp_id > 5] | scoring_period_id[sp_rp])) %>% 
   ungroup() %>% 
   filter(penalty != 0 | penalty_sp != 0)
 

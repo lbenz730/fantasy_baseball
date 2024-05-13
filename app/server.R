@@ -306,7 +306,7 @@ shinyServer(function(input, output, session) {
              era, fip, k9, bb9, k_per_bb, hr9, 
              era_sp, fip_sp, k9_sp, bb9_sp, k_per_bb_sp, hr9_sp, 
              era_rp, fip_rp, k9_rp, bb9_rp, k_per_bb_rp, hr9_rp, 
-             qs, blue_balls) %>% 
+             qs, blue_balls, langs) %>% 
       bind_rows(tibble('team' = 'League Average',
                        'logo' = 'www/League.png',
                        'era' = weighted.mean(pitch_stats$era, pitch_stats$outs),
@@ -332,7 +332,8 @@ shinyServer(function(input, output, session) {
                        'k_per_bb_rp' = weighted.mean(pitch_stats$k_per_bb_rp, pitch_stats$outs_rp),
                        
                        'qs' = mean(pitch_stats$qs),
-                       'blue_balls' = mean(pitch_stats$blue_balls))) %>% 
+                       'blue_balls' = mean(pitch_stats$blue_balls),
+                       'langs' = mean(pitch_stats$blue_balls))) %>% 
       mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
       mutate_at(vars(everything()), ~replace(.x, .x == Inf, 0))
     
@@ -346,7 +347,7 @@ shinyServer(function(input, output, session) {
                              bb9, bb9_sp, bb9_rp, 
                              k_per_bb, k_per_bb_sp, k_per_bb_rp,
                              hr9, hr9_sp, hr9_rp), decimals = 2, sep_mark = '') %>% 
-      fmt_number(columns = c(qs, blue_balls), decimals = 2, drop_trailing_zeros = T) %>% 
+      fmt_number(columns = c(qs, blue_balls, langs), decimals = 2, drop_trailing_zeros = T) %>% 
       sub_missing(columns = everything(), missing_text = "---") %>%
       
       ### Align Columns
@@ -411,6 +412,9 @@ shinyServer(function(input, output, session) {
                  autocolor_text = F) %>% 
       data_color(columns = c(blue_balls),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$blue_balls)),
+                 autocolor_text = F) %>% 
+      data_color(columns = c(langs),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df_ps$langs)),
                  autocolor_text = F) %>% 
       
       ### Borders
@@ -489,7 +493,8 @@ shinyServer(function(input, output, session) {
         hr9_sp = 'HR/9',
         hr9_rp = 'HR/9',
         qs = 'QS',
-        blue_balls = 'Blue Balls'
+        blue_balls = 'Blue Balls',
+        langs = 'Langes',
       ) %>%
       tab_header(
         title = md('**Pitching Stats**'),
@@ -505,6 +510,11 @@ shinyServer(function(input, output, session) {
       tab_footnote(
         footnote = "Blue Balls = 5.2 IP and 3 or fewer earned runs",
         locations = cells_column_labels('blue_balls'),
+        placement = 'left'
+      ) %>% 
+      tab_footnote(
+        footnote = "RP appearances of -5 or worse, named after Alex \"Scrub\" Lange",
+        locations = cells_column_labels('langs'),
         placement = 'left'
       ) 
     
