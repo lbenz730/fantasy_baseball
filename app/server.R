@@ -306,7 +306,7 @@ shinyServer(function(input, output, session) {
              era, fip, k9, bb9, k_per_bb, hr9, 
              era_sp, fip_sp, k9_sp, bb9_sp, k_per_bb_sp, hr9_sp, 
              era_rp, fip_rp, k9_rp, bb9_rp, k_per_bb_rp, hr9_rp, 
-             qs, blue_balls, langs) %>% 
+             qs, blue_balls, langes) %>% 
       bind_rows(tibble('team' = 'League Average',
                        'logo' = 'www/League.png',
                        'era' = weighted.mean(pitch_stats$era, pitch_stats$outs),
