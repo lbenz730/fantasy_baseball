@@ -1,19 +1,25 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 All That is Wright,Elly De La Snooze,0,7,0,8,8,0,0.5622956213252254,0.49786793224474063
-All That is Wright,Elly De La Snooze,1,6,24.5,6,7,-1,0.660665692996574,0.6369988427141929
-All That is Wright,Elly De La Snooze,2,5,0,6,6,0,0.5488613347857402,0.49786793224474063
+All That is Wright,Elly De La Snooze,1,6,25.5,6,7,-1,0.669395476007373,0.6460081608291014
+All That is Wright,Elly De La Snooze,2,5,1,6,6,0,0.5515293975454933,0.5099570253403818
+All That is Wright,Elly De La Snooze,3,4,-10.5,5,4,1,0.5290725481465657,0.4924467861429847
 The West Bank Occupiers,Ketel Bells,0,7,0,8,8,0,0.4760040054305882,0.49786793224474063
 The West Bank Occupiers,Ketel Bells,1,6,20.5,8,8,0,0.592206117905029,0.7276805509967023
 The West Bank Occupiers,Ketel Bells,2,5,19.5,8,6,2,0.7057808321646586,0.8047346681017353
+The West Bank Occupiers,Ketel Bells,3,4,32,4,5,-1,0.6479283296368229,0.7018630322325765
 Mt. Everest Taquito Farmers,FVOS Re-imagined,0,7,0,8,8,0,0.49997220550599675,0.49786793224474063
 Mt. Everest Taquito Farmers,FVOS Re-imagined,1,6,1,6,6,0,0.4992348571402199,0.5099570253403818
 Mt. Everest Taquito Farmers,FVOS Re-imagined,2,5,19,4,5,-1,0.5394990305528213,0.5858635209129103
+Mt. Everest Taquito Farmers,FVOS Re-imagined,3,4,-20.5,4,3,1,0.464452558204749,0.39611068092395246
 Skubal Divers,Takin' Care of Rizzness,0,7,0,8,8,0,0.695072048096143,0.49786793224474063
 Skubal Divers,Takin' Care of Rizzness,1,6,13.5,8,7,1,0.7341361775140567,0.7128654788636183
 Skubal Divers,Takin' Care of Rizzness,2,5,22.5,8,7,1,0.7884738318751624,0.7793144547096742
+Skubal Divers,Takin' Care of Rizzness,3,4,-6.5,6,6,0,0.4491103392779407,0.41997419890740345
 The Talmudic Tunnelers,The Traveling Secretaries,0,7,0,8,8,0,0.4451606039170003,0.49786793224474063
-The Talmudic Tunnelers,The Traveling Secretaries,1,6,-33.5,7,6,1,0.2909186288429252,0.28279813364791445
-The Talmudic Tunnelers,The Traveling Secretaries,2,5,-11.5,6,6,0,0.3749938296777946,0.36246349786864807
+The Talmudic Tunnelers,The Traveling Secretaries,1,6,-34.5,7,6,1,0.28911623126821917,0.27492590579177933
+The Talmudic Tunnelers,The Traveling Secretaries,2,5,-12.5,6,6,0,0.37173721670521226,0.35136389133398355
+The Talmudic Tunnelers,The Traveling Secretaries,3,4,-41.5,5,5,0,0.18889560351469165,0.11758111167441038
 Blasphemous Hot Takes,The Novaks,0,7,0,8,8,0,0.6936091295212495,0.49786793224474063
-Blasphemous Hot Takes,The Novaks,1,6,-21.5,7,6,1,0.5255927570303026,0.38678527257827067
-Blasphemous Hot Takes,The Novaks,2,5,41.5,3,4,-1,0.8267905274770102,0.7735316950785321
+Blasphemous Hot Takes,The Novaks,1,6,-22.5,7,6,1,0.5229093341623328,0.3775421523027523
+Blasphemous Hot Takes,The Novaks,2,5,40.5,3,4,-1,0.8228688119500431,0.7665953033415241
+Blasphemous Hot Takes,The Novaks,3,4,70,2,4,-2,0.7767119586873096,0.8776746692300047
