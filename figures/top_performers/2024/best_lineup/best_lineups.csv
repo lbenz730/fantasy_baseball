@@ -175,25 +175,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Andres Munoz,40939,12,25,8.333333333333334,8
 15,RP,Emmanuel Clase,41743,8,19,4.75,8
 15,RP,Camilo Doval,41337,11,18.5,6.166666666666667,8
-0,C,Danny Jansen,35004,9,14,14,9
-1,1B,Freddie Freeman,30193,14,9,9,9
-2,2B,Luis Garcia Jr.,40459,13,8.5,8.5,9
-3,3B,Gunnar Henderson,42507,11,9,9,9
-4,SS,Bo Bichette,38904,5,9,9,9
-5,OF,Jesse Winker,32833,7,10.5,10.5,9
-5,OF,Ronald Acuna Jr.,36185,2,9.5,4.75,9
-5,OF,Daulton Varsho,40963,5,8.5,8.5,9
-5,OF,Alex Verdugo,33786,12,7,7,9
-5,OF,Jacob Young,4414210,14,6.5,6.5,9
-6,2B/SS,Jose Altuve,31662,11,7.5,7.5,9
-7,1B/3B,Matt Olson,32767,4,8,4,9
-12,UTIL,Marcell Ozuna,31668,2,16,8,9
+0,C,Danny Jansen,35004,9,14,7,9
+1,1B,Bryce Harper,30951,9,10,10,9
+2,2B,Dylan Moore,40593,7,16.5,8.25,9
+3,3B,Maikel Garcia,4905884,6,15,7.5,9
+4,SS,Bobby Witt Jr.,42403,8,21.5,10.75,9
+5,OF,Kyle Tucker,34967,12,19.5,9.75,9
+5,OF,Christian Yelich,31283,4,13,6.5,9
+5,OF,Jarren Duran,41610,13,12.5,6.25,9
+5,OF,Willi Castro,34230,8,12.5,6.25,9
+5,OF,Yordan Alvarez,36018,13,12,6,9
+6,2B/SS,Carlos Correa,32653,13,11.5,5.75,9
+7,1B/3B,Jose Ramirez,32801,5,11.5,5.75,9
+12,UTIL,Marcell Ozuna,31668,2,18,6,9
 14,SP,Chris Sale,30948,12,30,30,9
 14,SP,Tanner Houck,41009,12,28.5,28.5,9
+14,SP,Bryan Woo,4629089,2,28,28,9
+14,SP,Joe Ryan,42450,8,28,28,9
+14,SP,Ranger Suarez,39817,9,28,28,9
 14,SP,Marcus Stroman,32815,11,27.5,27.5,9
-14,SP,Yoshinobu Yamamoto,4872587,8,20.5,20.5,9
-14,SP,Michael Wacha,32640,13,18.5,18.5,9
-14,SP,Reynaldo Lopez,33860,7,18,18,9
-15,RP,Andres Munoz,40939,12,7,7,9
-15,RP,JoJo Romero,40456,6,7,7,9
-15,RP,Raisel Iglesias,33618,14,7,7,9
+15,RP,Andres Munoz,40939,12,12.5,6.25,9
+15,RP,Emmanuel Clase,41743,8,11,5.5,9
+15,RP,Josh Hader,32760,5,10,10,9
