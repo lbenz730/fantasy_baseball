@@ -1,19 +1,25 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 The West Bank Occupiers,All That is Wright,0,7,0,8,8,0,0.566675571544248,0.49786793224474063
 The West Bank Occupiers,All That is Wright,1,6,46,7,7,0,0.8483927601019925,0.9016868439517346
-The West Bank Occupiers,All That is Wright,2,5,44,5,6,-1,0.7883979419212543,0.7902284161950165
+The West Bank Occupiers,All That is Wright,2,5,43.5,5,6,-1,0.7839635129079785,0.7869628644513914
+The West Bank Occupiers,All That is Wright,3,4,81,2,5,-3,0.8478773638092741,0.8839771968539878
 Elly De La Snooze,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.5487043205044324,0.49786793224474063
 Elly De La Snooze,Mt. Everest Taquito Farmers,1,6,-15,6,7,-1,0.4013474290800151,0.27187934777739436
 Elly De La Snooze,Mt. Everest Taquito Farmers,2,5,-61.5,5,5,0,0.10799041937847553,0.04821026082136325
+Elly De La Snooze,Mt. Everest Taquito Farmers,3,4,-73.5,5,5,0,0.047002615292411246,0.02756885568072992
 Ketel Bells,Skubal Divers,0,7,0,8,8,0,0.4915130715873931,0.49786793224474063
 Ketel Bells,Skubal Divers,1,6,10,6,8,-2,0.4260301596588745,0.4237371716235348
-Ketel Bells,Skubal Divers,2,5,2.5,5,6,-1,0.4224132923755421,0.4256747506426638
+Ketel Bells,Skubal Divers,2,5,2,5,6,-1,0.41781061975029976,0.4208930178417698
+Ketel Bells,Skubal Divers,3,4,-11,4,2,2,0.5890866075322206,0.5622168950066841
 FVOS Re-imagined,The Talmudic Tunnelers,0,7,0,8,8,0,0.4320588178173692,0.49786793224474063
 FVOS Re-imagined,The Talmudic Tunnelers,1,6,44,4,6,-2,0.6186130390146694,0.7277902889148996
-FVOS Re-imagined,The Talmudic Tunnelers,2,5,58,3,5,-2,0.7019031248993469,0.819798570129669
+FVOS Re-imagined,The Talmudic Tunnelers,2,5,58.5,3,5,-2,0.7024606113945736,0.8225860026058025
+FVOS Re-imagined,The Talmudic Tunnelers,3,4,94,2,4,-2,0.9300201162863965,0.9469398186451168
 Takin' Care of Rizzness,Blasphemous Hot Takes,0,7,0,8,8,0,0.2803064338939191,0.49786793224474063
 Takin' Care of Rizzness,Blasphemous Hot Takes,1,6,-93.5,8,5,3,0.05242313493095468,0.07279955093078963
-Takin' Care of Rizzness,Blasphemous Hot Takes,2,5,-75,7,5,2,0.06703742299844541,0.10006507507809588
+Takin' Care of Rizzness,Blasphemous Hot Takes,2,5,-76,7,5,2,0.06836648274397976,0.0966747099626127
+Takin' Care of Rizzness,Blasphemous Hot Takes,3,4,-43,5,5,0,0.15443456738286526,0.11026069368388808
 The Traveling Secretaries,The Novaks,0,7,0,8,8,0,0.5458602098916208,0.49786793224474063
 The Traveling Secretaries,The Novaks,1,6,7.5,8,6,2,0.6849604570143047,0.7226016339027003
-The Traveling Secretaries,The Novaks,2,5,47,6,6,0,0.8566292916752065,0.9058914954548899
+The Traveling Secretaries,The Novaks,2,5,41.5,6,6,0,0.7883711696798392,0.8806375866804462
+The Traveling Secretaries,The Novaks,3,4,48.5,5,4,1,0.8974921186634137,0.907167414758719
