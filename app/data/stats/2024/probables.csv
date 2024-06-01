@@ -1,22 +1,5 @@
 game_date,player,player_id,team_id
-2024-05-31,Javier Assad,5002950,14
-2024-05-31,Aaron Nola,33709,12
-2024-05-31,Jose Berrios,32811,7
-2024-05-31,Tanner Houck,41009,12
-2024-05-31,Tanner Bibee,4345278,8
-2024-05-31,Jordan Montgomery,38173,14
-2024-05-31,Luis Severino,33263,5
-2024-05-31,Reynaldo Lopez,33860,7
-2024-05-31,Dylan Cease,34943,13
-2024-05-31,Michael Wacha,32640,13
-2024-05-31,Pablo Lopez,39671,14
-2024-05-31,Ronel Blanco,41829,8
-2024-05-31,Erick Fedde,33793,12
-2024-05-31,Walker Buehler,39251,2
-2024-05-31,Jose Soriano,40973,5
-2024-05-31,Bryan Woo,4629089,2
-2024-05-31,Marcus Stroman,32815,11
-2024-05-31,Jordan Hicks,37909,1
+2024-06-01,Mitch Keller,33722,12
 2024-06-01,Yusei Kikuchi,41415,7
 2024-06-01,Taj Bradley,42480,1
 2024-06-01,Kyle Bradish,4311625,11
@@ -26,6 +9,7 @@ game_date,player,player_id,team_id
 2024-06-01,Joe Ryan,42450,8
 2024-06-01,Framber Valdez,36581,7
 2024-06-01,Chris Sale,30948,12
+2024-06-01,Michael Lorenzen,33252,12
 2024-06-01,Ryan Weathers,41178,8
 2024-06-01,Garrett Crochet,4297835,4
 2024-06-01,Hunter Greene,39635,12
@@ -36,6 +20,7 @@ game_date,player,player_id,team_id
 2024-06-01,Ranger Suarez,39817,9
 2024-06-01,Logan Webb,41216,5
 2024-06-01,Yoshinobu Yamamoto,4872587,8
+2024-06-02,Brayan Bello,4720856,13
 2024-06-02,Zack Littell,36052,11
 2024-06-02,Charlie Morton,29155,11
 2024-06-02,Chris Bassitt,33148,5
@@ -47,3 +32,4 @@ game_date,player,player_id,team_id
 2024-06-02,Blake Snell,33748,1
 2024-06-02,Gavin Stone,4417230,5
 2024-06-02,Luis Castillo,35124,4
+2024-06-03,Andrew Abbott,4414528,11
