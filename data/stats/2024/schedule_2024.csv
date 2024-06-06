@@ -54,17 +54,17 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 9,53,9,345,169.5,175.5,12,407,177.5,229.5,Takin' Care of Rizzness,Blasphemous Hot Takes
 9,54,5,373,177.5,195.5,6,330.5,219,111.5,The Traveling Secretaries,The Novaks
 10,55,4,342.5,224,118.5,8,286.5,154.5,132,All That is Wright,Mt. Everest Taquito Farmers
-10,56,2,337,158,179,11,236,168,68,Skubal Divers,The West Bank Occupiers
-10,57,1,256.5,166.5,90,14,294.5,168,126.5,The Talmudic Tunnelers,Elly De La Snooze
+10,56,2,338,159,179,11,236,168,68,Skubal Divers,The West Bank Occupiers
+10,57,1,256.5,166.5,90,14,289.5,168,121.5,The Talmudic Tunnelers,Elly De La Snooze
 10,58,12,266.5,122.5,144,13,342,246,96,Blasphemous Hot Takes,Ketel Bells
-10,59,6,379,240.5,138.5,7,356.5,183,173.5,The Novaks,FVOS Re-imagined
+10,59,6,379,240.5,138.5,7,357.5,184,173.5,The Novaks,FVOS Re-imagined
 10,60,5,298.5,154,144.5,9,322.5,174.5,148,The Traveling Secretaries,Takin' Care of Rizzness
-11,61,2,91,33,58,4,95.5,58,37.5,Skubal Divers,All That is Wright
-11,62,8,72,61,11,1,61.5,32.5,29,Mt. Everest Taquito Farmers,The Talmudic Tunnelers
-11,63,11,77.5,36.5,41,12,84.5,56,28.5,The West Bank Occupiers,Blasphemous Hot Takes
-11,64,14,49.5,18.5,31,6,115.5,66.5,49,Elly De La Snooze,The Novaks
-11,65,13,58.5,65.5,-7,5,129,65,64,Ketel Bells,The Traveling Secretaries
-11,66,7,77,47,30,9,83,31,52,FVOS Re-imagined,Takin' Care of Rizzness
+11,61,2,103,39.5,63.5,4,130.5,93,37.5,Skubal Divers,All That is Wright
+11,62,8,142,94,48,1,148,81.5,66.5,Mt. Everest Taquito Farmers,The Talmudic Tunnelers
+11,63,11,95.5,54.5,41,12,162,80.5,81.5,The West Bank Occupiers,Blasphemous Hot Takes
+11,64,14,82,51,31,6,157,86.5,70.5,Elly De La Snooze,The Novaks
+11,65,13,145,133,12,5,145,70,75,Ketel Bells,The Traveling Secretaries
+11,66,7,126.5,62.5,64,9,100,49,51,FVOS Re-imagined,Takin' Care of Rizzness
 12,67,4,NA,NA,NA,1,NA,NA,NA,All That is Wright,The Talmudic Tunnelers
 12,68,12,NA,NA,NA,2,NA,NA,NA,Blasphemous Hot Takes,Skubal Divers
 12,69,6,NA,NA,NA,8,NA,NA,NA,The Novaks,Mt. Everest Taquito Farmers
