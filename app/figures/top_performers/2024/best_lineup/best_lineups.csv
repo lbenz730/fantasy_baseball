@@ -219,25 +219,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Andres Munoz,40939,12,20,6.666666666666667,10
 15,RP,Jhoan Duran,41109,9,18,4.5,10
 15,RP,Raisel Iglesias,33618,14,17,5.666666666666667,10
-0,C,Adley Rutschman,42178,4,20,5,11
-1,1B,Jeimer Candelario,32531,4,20,6.666666666666667,11
-2,2B,Jonathan India,41171,13,20.5,5.125,11
-3,3B,Christopher Morel,42927,9,18.5,6.166666666666667,11
-4,SS,Elly De La Cruz,4917694,14,17,4.25,11
-5,OF,Aaron Judge,33192,13,21,7,11
-5,OF,TJ Friedl,36020,13,21,5.25,11
-5,OF,Alec Burleson,4345070,7,18.5,4.625,11
-5,OF,Anthony Santander,36084,14,18,4.5,11
-5,OF,Giancarlo Stanton,30583,12,15.5,5.166666666666667,11
-6,2B/SS,Nolan Gorman,41174,6,18.5,4.625,11
-7,1B/3B,Rafael Devers,33859,13,18.5,6.166666666666667,11
-12,UTIL,Yainer Diaz,4781491,8,20,6.666666666666667,11
+0,C,Yainer Diaz,4781491,8,30,7.5,11
+1,1B,Jeimer Candelario,32531,4,20.5,5.125,11
+2,2B,Nolan Gorman,41174,6,20.5,4.1,11
+3,3B,Christopher Morel,42927,9,19.5,4.875,11
+4,SS,Bobby Witt Jr.,42403,8,23.5,7.833333333333333,11
+5,OF,Aaron Judge,33192,13,27,6.75,11
+5,OF,Anthony Santander,36084,14,26,5.2,11
+5,OF,Yordan Alvarez,36018,13,23.5,5.875,11
+5,OF,TJ Friedl,36020,13,21.5,4.3,11
+5,OF,Alec Burleson,4345070,7,21,4.2,11
+6,2B/SS,Jonathan India,41171,13,19.5,3.9,11
+7,1B/3B,Ryan Mountcastle,34940,6,20.5,4.1,11
+12,UTIL,Fernando Tatis Jr.,35983,12,21,4.2,11
+14,SP,Framber Valdez,36581,7,38.5,38.5,11
 14,SP,Nick Pivetta,36071,8,33,33,11
 14,SP,Max Fried,32685,7,30,30,11
+14,SP,Yoshinobu Yamamoto,4872587,8,30,30,11
 14,SP,Aaron Nola,33709,12,29,29,11
-14,SP,Tanner Houck,41009,12,27.5,27.5,11
-14,SP,Bryan Woo,4629089,2,27,27,11
-14,SP,Luis Gil,40626,5,26.5,26.5,11
+14,SP,Chris Bassitt,33148,5,28.5,28.5,11
+15,RP,Ryan Helsley,39909,5,16,8,11
+15,RP,David Bednar,38303,5,15,5,11
 15,RP,Jose Alvarado,36063,1,15,7.5,11
-15,RP,Pete Fairbanks,42180,6,15,7.5,11
-15,RP,Paul Sewald,35009,14,14,7,11
