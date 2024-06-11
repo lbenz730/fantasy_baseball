@@ -5863,7 +5863,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 64,11,Tyler O'Neill,34168,NA,8,6
 64,11,Ryan Mountcastle,34940,NA,23.5,6
 64,11,Tyler Freeman,40958,NA,18,6
-64,11,Justin Steele,41022,NA,21,6
+64,11,Justin Steele,41022,NA,25.5,6
 65,11,Bailey Ober,3107919,NA,3,5
 65,11,Ketel Marte,32512,NA,21,5
 65,11,Logan Webb,41216,NA,23,5
@@ -6038,12 +6038,41 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 64,NA,NA,NA,NA,NA,14
 65,NA,NA,NA,NA,NA,13
 66,NA,NA,NA,NA,NA,7
-67,NA,NA,NA,NA,NA,4
-68,NA,NA,NA,NA,NA,12
-69,NA,NA,NA,NA,NA,6
-70,NA,NA,NA,NA,NA,5
-71,NA,NA,NA,NA,NA,9
-72,NA,NA,NA,NA,NA,7
+67,12,Christian Yelich,31283,NA,-1,4
+67,12,Alex Bregman,34886,NA,1,4
+67,12,Heliot Ramos,39642,NA,1.5,4
+67,12,J.P. Crawford,33210,NA,3.5,4
+67,12,Royce Lewis,40635,NA,8,4
+67,12,George Springer,32078,NA,-0.5,4
+67,12,Michael Conforto,33711,NA,-1,4
+68,12,Yennier Cano,35536,1,6.5,12
+68,12,Robert Suarez,4148749,1,6,12
+68,12,Logan Gilbert,41221,NA,21,12
+68,12,Jeremy Pena,41273,NA,2,12
+68,12,Isaac Paredes,39706,NA,0,12
+68,12,Alex Verdugo,33786,NA,2.5,12
+68,12,Jake Cronenworth,36364,NA,9.5,12
+68,12,Luis Robert Jr.,39631,NA,7,12
+68,12,Fernando Tatis Jr.,35983,NA,5,12
+69,12,Erick Fedde,33793,NA,22.5,6
+69,12,Jeremiah Estrada,41014,1,4,6
+69,12,Maikel Garcia,4905884,NA,-0.5,6
+69,12,Nelson Velazquez,41047,NA,0.5,6
+69,12,Ryan Mountcastle,34940,NA,1,6
+69,12,Jorge Soler,32558,NA,3,6
+70,12,Abraham Toro,40754,NA,0,5
+70,12,Daulton Varsho,40963,NA,0.5,5
+70,12,Corbin Burnes,39878,NA,26,5
+70,12,Josh Hader,32760,1,2,5
+70,12,Bo Bichette,38904,NA,-0.5,5
+70,12,Cal Raleigh,41292,NA,8,5
+71,12,Davis Schneider,4997181,NA,-0.5,9
+71,12,Salvador Perez,31127,NA,1.5,9
+71,12,Brandon Lowe,39961,NA,2.5,9
+71,12,Miguel Andujar,33743,NA,4.5,9
+72,12,Carlos Santana,30280,NA,-0.5,7
+72,12,Juan Soto,36969,NA,3,7
+72,12,Jose Berrios,32811,NA,10.5,7
 73,NA,NA,NA,NA,NA,12
 74,NA,NA,NA,NA,NA,1
 75,NA,NA,NA,NA,NA,2
@@ -6164,12 +6193,54 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 64,NA,NA,NA,NA,NA,6
 65,NA,NA,NA,NA,NA,5
 66,NA,NA,NA,NA,NA,9
-67,NA,NA,NA,NA,NA,1
-68,NA,NA,NA,NA,NA,2
-69,NA,NA,NA,NA,NA,8
-70,NA,NA,NA,NA,NA,11
-71,NA,NA,NA,NA,NA,14
-72,NA,NA,NA,NA,NA,13
+67,12,Carlos Rodon,33696,NA,21.5,1
+67,12,Isiah Kiner-Falefa,33572,NA,-1,1
+67,12,Julio Rodriguez,41044,NA,2.5,1
+67,12,Seth Lugo,34873,NA,7.5,1
+67,12,Jackson Merrill,4872691,NA,6,1
+67,12,Willy Adames,33675,NA,9,1
+68,12,Jordan Westburg,4298641,NA,-2,2
+68,12,Adrian Morejon,40917,1,5.5,2
+68,12,Ryan Pepiot,4208281,NA,9.5,2
+68,12,Elias Diaz,33594,NA,-1,2
+68,12,Vladimir Guerrero Jr.,35002,NA,0,2
+68,12,Brice Turang,41179,NA,2,2
+68,12,Colton Cowser,4416990,NA,-0.5,2
+68,12,Joey Ortiz,42958,NA,2,2
+68,12,Max Kepler,31870,NA,0,2
+68,12,Ryan O'Hearn,35183,NA,6.5,2
+69,12,Bobby Witt Jr.,42403,NA,3,8
+69,12,Thairo Estrada,36485,NA,-0.5,8
+69,12,Willi Castro,34230,NA,2,8
+69,12,Randy Arozarena,36488,NA,0,8
+69,12,JJ Bleday,42410,NA,-3,8
+69,12,Rhys Hoskins,35291,NA,-1.5,8
+69,12,Gavin Sheets,40700,NA,0,8
+69,12,Craig Kimbrel,30653,1,7.5,8
+69,12,Brenton Doyle,42462,NA,-1.5,8
+70,12,Luis Arraez,39572,NA,-0.5,11
+70,12,Ha-Seong Kim,4089862,NA,6,11
+70,12,Camilo Doval,41337,1,4,11
+70,12,Yandy Diaz,33481,NA,1.5,11
+70,12,Cedric Mullins,35578,NA,-0.5,11
+70,12,Gunnar Henderson,42507,NA,10.5,11
+70,12,Jurickson Profar,31117,NA,3,11
+70,12,Jose Altuve,31662,NA,2,11
+70,12,Chris Paddack,35999,NA,24,11
+71,12,Anthony Volpe,42547,NA,0,14
+71,12,Anthony Santander,36084,NA,-1.5,14
+71,12,Ezequiel Tovar,4905919,NA,1,14
+71,12,William Contreras,39895,NA,0.5,14
+71,12,Blake Perkins,36974,NA,-0.5,14
+71,12,Brent Rooker,40926,NA,-1,14
+71,12,Ryan McMahon,33247,NA,-2,14
+72,12,Yordan Alvarez,36018,NA,3.5,13
+72,12,Shea Langeliers,42598,NA,2,13
+72,12,Vinnie Pasquantino,4109109,NA,0,13
+72,12,Charlie Blackmon,31084,NA,1.5,13
+72,12,Gleyber Torres,33804,NA,1,13
+72,12,Carlos Correa,32653,NA,3.5,13
+72,12,Dylan Cease,34943,NA,19.5,13
 73,NA,NA,NA,NA,NA,4
 74,NA,NA,NA,NA,NA,6
 75,NA,NA,NA,NA,NA,5
