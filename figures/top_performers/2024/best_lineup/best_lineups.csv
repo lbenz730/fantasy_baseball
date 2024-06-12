@@ -241,25 +241,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,David Bednar,38303,5,19,4.75,11
 15,RP,Pete Fairbanks,42180,6,18,6,11
 15,RP,Bryan Hudson,4991171,4,17.5,8.75,11
-0,C,Cal Raleigh,41292,5,8,8,12
-1,1B,Jake Cronenworth,36364,12,9.5,9.5,12
-2,2B,Ha-Seong Kim,4089862,11,6,6,12
+0,C,Will Smith,38309,6,11.5,11.5,12
+1,1B,Freddie Freeman,30193,14,10,10,12
+2,2B,Ha-Seong Kim,4089862,11,10.5,5.25,12
 3,3B,Gunnar Henderson,42507,11,10.5,10.5,12
-4,SS,Willy Adames,33675,1,9,9,12
-5,OF,Luis Robert Jr.,39631,12,7,7,12
-5,OF,Ryan O'Hearn,35183,2,6.5,6.5,12
-5,OF,Jackson Merrill,4872691,1,6,6,12
-5,OF,Fernando Tatis Jr.,35983,12,5,5,12
-5,OF,Miguel Andujar,33743,9,4.5,4.5,12
-6,2B/SS,Carlos Correa,32653,13,3.5,3.5,12
-7,1B/3B,Royce Lewis,40635,4,8,8,12
-12,UTIL,J.P. Crawford,33210,4,3.5,3.5,12
+4,SS,Willy Adames,33675,1,12,6,12
+5,OF,Kyle Schwarber,33712,13,11,11,12
+5,OF,Taylor Ward,34923,11,11,11,12
+5,OF,Corbin Carroll,42404,1,10,10,12
+5,OF,Fernando Tatis Jr.,35983,12,10,5,12
+5,OF,Aaron Judge,33192,13,9,9,12
+6,2B/SS,Brandon Lowe,39961,9,10,5,12
+7,1B/3B,Josh Naylor,35066,13,9,9,12
+12,UTIL,Shohei Ohtani,39832,11,12,12,12
+14,SP,Miles Mikolas,32116,6,30,30,12
+14,SP,Paul Skenes,4719507,7,26.5,26.5,12
 14,SP,Corbin Burnes,39878,5,26,26,12
+14,SP,Ronel Blanco,41829,8,25.5,25.5,12
+14,SP,Zack Wheeler,31267,9,24.5,24.5,12
 14,SP,Chris Paddack,35999,11,24,24,12
-14,SP,Erick Fedde,33793,6,22.5,22.5,12
-14,SP,Carlos Rodon,33696,1,21.5,21.5,12
-14,SP,Logan Gilbert,41221,12,21,21,12
-14,SP,Dylan Cease,34943,13,19.5,19.5,12
-15,RP,Craig Kimbrel,30653,8,7.5,7.5,12
-15,RP,Yennier Cano,35536,12,6.5,6.5,12
-15,RP,Robert Suarez,4148749,12,6,6,12
+15,RP,Tanner Scott,35135,8,12,12,12
+15,RP,Adrian Morejon,40917,2,10.5,5.25,12
+15,RP,Robert Suarez,4148749,12,10,5,12

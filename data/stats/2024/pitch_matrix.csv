@@ -13,7 +13,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,4.1,1,1,Bad Start,The Talmudic Tunnelers
 1,4.1,6+,1,Bad Start,The Talmudic Tunnelers
 1,4.2,2,1,Bad Start,The Talmudic Tunnelers
-1,4.2,3,1,Bad Start,The Talmudic Tunnelers
+1,4.2,3,2,Bad Start,The Talmudic Tunnelers
 1,4.2,4,1,Bad Start,The Talmudic Tunnelers
 1,4.2,5,1,Bad Start,The Talmudic Tunnelers
 1,4.2,6+,1,Bad Start,The Talmudic Tunnelers
@@ -94,6 +94,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,4.0,5,1,Bad Start,All That is Wright
 4,4.1,1,1,Bad Start,All That is Wright
 4,4.1,6+,2,Bad Start,All That is Wright
+4,4.2,0,1,Bad Start,All That is Wright
 4,4.2,1,1,Bad Start,All That is Wright
 4,4.2,5,1,Bad Start,All That is Wright
 4,5.0,0,5,QS Potential,All That is Wright
@@ -181,7 +182,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,4.0,5,3,Bad Start,The Novaks
 6,4.0,6+,2,Bad Start,The Novaks
 6,4.2,1,1,Bad Start,The Novaks
-6,4.2,2,1,Bad Start,The Novaks
+6,4.2,2,2,Bad Start,The Novaks
 6,4.2,5,1,Bad Start,The Novaks
 6,5.0,0,1,QS Potential,The Novaks
 6,5.0,1,6,QS Potential,The Novaks
@@ -204,7 +205,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,6.1,1,1,QS,The Novaks
 6,6.1,5,1,Bad Start,The Novaks
 6,6.2,0,2,QS,The Novaks
-6,7.0,0,4,QS,The Novaks
+6,7.0,0,5,QS,The Novaks
 6,7.0,1,5,QS,The Novaks
 6,7.0,4,1,QS Potential,The Novaks
 6,< 3,5,1,Bad Start,The Novaks
@@ -223,7 +224,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.0,1,1,QS Potential,FVOS Re-imagined
 7,5.0,2,1,QS Potential,FVOS Re-imagined
 7,5.0,3,3,QS Potential,FVOS Re-imagined
-7,5.0,4,1,Bad Start,FVOS Re-imagined
+7,5.0,4,2,Bad Start,FVOS Re-imagined
 7,5.0,6+,2,Bad Start,FVOS Re-imagined
 7,5.1,0,1,QS Potential,FVOS Re-imagined
 7,5.1,1,1,QS Potential,FVOS Re-imagined
@@ -237,6 +238,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.0,3,3,QS,FVOS Re-imagined
 7,6.0,4,1,QS Potential,FVOS Re-imagined
 7,6.0,5,1,Bad Start,FVOS Re-imagined
+7,6.1,0,1,QS,FVOS Re-imagined
 7,6.1,1,1,QS,FVOS Re-imagined
 7,6.1,2,2,QS,FVOS Re-imagined
 7,6.2,0,1,QS,FVOS Re-imagined
@@ -278,7 +280,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,3,1,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,4,2,Bad Start,Mt. Everest Taquito Farmers
 8,6.0,0,6,QS,Mt. Everest Taquito Farmers
-8,6.0,1,6,QS,Mt. Everest Taquito Farmers
+8,6.0,1,7,QS,Mt. Everest Taquito Farmers
 8,6.0,2,4,QS,Mt. Everest Taquito Farmers
 8,6.0,3,5,QS,Mt. Everest Taquito Farmers
 8,6.0,4,1,QS Potential,Mt. Everest Taquito Farmers
@@ -311,7 +313,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.1,2,1,QS Potential,Takin' Care of Rizzness
 9,5.1,3,2,QS Potential,Takin' Care of Rizzness
 9,5.1,5,1,Bad Start,Takin' Care of Rizzness
-9,5.2,2,1,Blue Balls,Takin' Care of Rizzness
+9,5.2,2,3,Blue Balls,Takin' Care of Rizzness
 9,5.2,3,1,Blue Balls,Takin' Care of Rizzness
 9,5.2,4,1,Bad Start,Takin' Care of Rizzness
 9,5.2,6+,1,Bad Start,Takin' Care of Rizzness
@@ -328,7 +330,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.2,1,1,QS,Takin' Care of Rizzness
 9,6.2,3,1,QS,Takin' Care of Rizzness
 9,7.0,0,5,QS,Takin' Care of Rizzness
-9,7.0,1,4,QS,Takin' Care of Rizzness
+9,7.0,1,5,QS,Takin' Care of Rizzness
 9,7.0,2,1,QS,Takin' Care of Rizzness
 9,7.0,3,1,QS,Takin' Care of Rizzness
 9,7.0,4,1,QS Potential,Takin' Care of Rizzness
@@ -358,7 +360,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.1,3,1,QS Potential,The West Bank Occupiers
 11,5.1,4,1,Bad Start,The West Bank Occupiers
 11,5.1,5,1,Bad Start,The West Bank Occupiers
-11,5.2,0,2,Blue Balls,The West Bank Occupiers
+11,5.2,0,3,Blue Balls,The West Bank Occupiers
 11,5.2,4,1,Bad Start,The West Bank Occupiers
 11,5.2,6+,2,Bad Start,The West Bank Occupiers
 11,6.0,0,5,QS,The West Bank Occupiers
@@ -496,7 +498,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.2,2,4,Blue Balls,Elly De La Snooze
 14,5.2,3,2,Blue Balls,Elly De La Snooze
 14,5.2,4,1,Bad Start,Elly De La Snooze
-14,6.0,0,4,QS,Elly De La Snooze
+14,6.0,0,5,QS,Elly De La Snooze
 14,6.0,1,7,QS,Elly De La Snooze
 14,6.0,2,3,QS,Elly De La Snooze
 14,6.0,3,1,QS,Elly De La Snooze
