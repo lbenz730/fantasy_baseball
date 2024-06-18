@@ -65,18 +65,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 11,64,14,267.5,149.5,118,6,312.5,173.5,139,Elly De La Snooze,The Novaks
 11,65,13,388,305,83,5,347.5,178.5,169,Ketel Bells,The Traveling Secretaries
 11,66,7,329,160,169,9,215,130,85,FVOS Re-imagined,Takin' Care of Rizzness
-12,67,4,418,222,196,1,341,200,141,All That is Wright,The Talmudic Tunnelers
+12,67,4,418,222,196,1,342,200,142,All That is Wright,The Talmudic Tunnelers
 12,68,12,274.5,147,127.5,2,298,146.5,151.5,Blasphemous Hot Takes,Skubal Divers
-12,69,6,343.5,207,136.5,8,345,155,190,The Novaks,Mt. Everest Taquito Farmers
+12,69,6,343.5,207,136.5,8,346,156,190,The Novaks,Mt. Everest Taquito Farmers
 12,70,5,334.5,157.5,177,11,294,202,92,The Traveling Secretaries,The West Bank Occupiers
-12,71,9,280,160,120,14,318,184,134,Takin' Care of Rizzness,Elly De La Snooze
-12,72,7,349.5,218,131.5,13,336,258,78,FVOS Re-imagined,Ketel Bells
-13,73,12,NA,NA,NA,4,NA,NA,NA,Blasphemous Hot Takes,All That is Wright
-13,74,1,NA,NA,NA,6,NA,NA,NA,The Talmudic Tunnelers,The Novaks
-13,75,2,NA,NA,NA,5,NA,NA,NA,Skubal Divers,The Traveling Secretaries
-13,76,8,NA,NA,NA,9,NA,NA,NA,Mt. Everest Taquito Farmers,Takin' Care of Rizzness
-13,77,11,NA,NA,NA,7,NA,NA,NA,The West Bank Occupiers,FVOS Re-imagined
-13,78,14,NA,NA,NA,13,NA,NA,NA,Elly De La Snooze,Ketel Bells
+12,71,9,281,161,120,14,319,185,134,Takin' Care of Rizzness,Elly De La Snooze
+12,72,7,350.5,219,131.5,13,336,258,78,FVOS Re-imagined,Ketel Bells
+13,73,12,7,2,5,4,9.5,9.5,NA,Blasphemous Hot Takes,All That is Wright
+13,74,1,26,11,15,6,65,42.5,22.5,The Talmudic Tunnelers,The Novaks
+13,75,2,12,19.5,-7.5,5,59.5,30.5,29,Skubal Divers,The Traveling Secretaries
+13,76,8,47.5,29.5,18,9,24,24,NA,Mt. Everest Taquito Farmers,Takin' Care of Rizzness
+13,77,11,37,30,7,7,81,21,60,The West Bank Occupiers,FVOS Re-imagined
+13,78,14,33.5,16.5,17,13,13,31,-18,Elly De La Snooze,Ketel Bells
 14,79,4,NA,NA,NA,6,NA,NA,NA,All That is Wright,The Novaks
 14,80,5,NA,NA,NA,12,NA,NA,NA,The Traveling Secretaries,Blasphemous Hot Takes
 14,81,9,NA,NA,NA,1,NA,NA,NA,Takin' Care of Rizzness,The Talmudic Tunnelers

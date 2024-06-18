@@ -1,14 +1,4 @@
 game_date,player,player_id,team_id
-2024-06-17,Paul Skenes,4719507,7
-2024-06-17,Cristopher Sanchez,42359,6
-2024-06-17,Sonny Gray,32082,7
-2024-06-17,Nick Pivetta,36071,8
-2024-06-17,Yusei Kikuchi,41415,7
-2024-06-17,Max Fried,32685,7
-2024-06-17,Javier Assad,5002950,14
-2024-06-17,Jon Gray,33203,13
-2024-06-17,Cal Quantrill,39875,14
-2024-06-17,Jose Soriano,40973,5
 2024-06-18,Lance Lynn,30820,13
 2024-06-18,Nick Lodolo,42433,6
 2024-06-18,Bryce Miller,4654313,14
@@ -24,6 +14,7 @@ game_date,player,player_id,team_id
 2024-06-18,Justin Steele,41022,6
 2024-06-18,Luis Severino,33263,5
 2024-06-18,Michael Lorenzen,33252,14
+2024-06-18,Framber Valdez,36581,7
 2024-06-18,Walker Buehler,39251,2
 2024-06-18,Alec Marsh,4424276,13
 2024-06-19,Tarik Skubal,42409,2
@@ -36,11 +27,17 @@ game_date,player,player_id,team_id
 2024-06-19,Brandon Pfaadt,4721302,9
 2024-06-19,Bryan Woo,4629089,2
 2024-06-19,Tanner Bibee,4345278,8
+2024-06-19,Gerrit Cole,32081,14
 2024-06-19,Kevin Gausman,32667,14
 2024-06-19,Taj Bradley,42480,4
 2024-06-19,Joe Ryan,42450,8
+2024-06-19,Hunter Brown,4717803,8
 2024-06-19,Garrett Crochet,4297835,4
 2024-06-19,Bobby Miller,4326703,6
 2024-06-19,Freddy Peralta,39825,6
 2024-06-19,Tyler Anderson,32151,11
 2024-06-19,Cole Ragans,41054,4
+2024-06-20,MacKenzie Gore,39636,2
+2024-06-20,Luis Castillo,35124,4
+2024-06-20,Seth Lugo,34873,1
+2024-06-20,Luis Gil,40626,5
