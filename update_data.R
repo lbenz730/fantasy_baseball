@@ -815,6 +815,7 @@ read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) 
                             team == 'The Greatest Stroman' ~ 'It\'s Gonna Be Gley',
                             team == 'Cron\'s Diease' ~ 'FVOS Re-imagined',
                             team == 'It\'s Gonna Be Gley' ~ 'Takin\' Care of Rizzness',
+                            team == 'Takin\' Care of Rizzness' ~ 'Shrimp Fried Bryce',
                             team == 'Hader\'s Gonna Hate' ~ 'Elly De La Snooze',
                             T ~ team)) %>% 
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
@@ -828,6 +829,7 @@ if(params$matchup_id != params$sim_match_id) {
                               team == 'The Greatest Stroman' ~ 'It\'s Gonna Be Gley',
                               team == 'Cron\'s Diease' ~ 'FVOS Re-imagined',
                               team == 'It\'s Gonna Be Gley' ~ 'Takin\' Care of Rizzness',
+                              team == 'Takin\' Care of Rizzness' ~ 'Shrimp Fried Bryce',
                               team == 'Hader\'s Gonna Hate' ~ 'Elly De La Snooze',
                               T ~ team)) %>% 
     write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
