@@ -1915,7 +1915,7 @@ shinyServer(function(input, output, session) {
                  'logo' = '',
                  'matchup_id'  = 'Matchup',
                  'penalty' = 'Penalty') %>% 
-      tab_header(title = 'RP Transaction Penalties') %>%
+      tab_header(title = 'RP Cap/Usage Penalties') %>%
       tab_options(column_labels.font.size = 16,
                   heading.title.font.size = 40,
                   heading.subtitle.font.size = 40,
