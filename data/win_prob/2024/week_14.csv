@@ -1,13 +1,13 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-All That is Wright,The Novaks,0,14,0,11,11,0,0.5348447580539308,0.49786793224474063
-All That is Wright,The Novaks,1,13,-0.5,9,9,0,0.5363140110614948,0.4918234370365996
-The Traveling Secretaries,Blasphemous Hot Takes,0,14,0,11,11,0,0.41606310117536016,0.49786793224474063
-The Traveling Secretaries,Blasphemous Hot Takes,1,13,20,9,9,0,0.5437134870680986,0.7228625460430074
-Shrimp Fried Bryce,The Talmudic Tunnelers,0,14,0,11,11,0,0.5249728675366205,0.49786793224474063
-Shrimp Fried Bryce,The Talmudic Tunnelers,1,13,-18.5,11,10,1,0.47135698370285317,0.41498360892869446
-FVOS Re-imagined,Skubal Divers,0,14,0,11,11,0,0.45629062930345793,0.49786793224474063
-FVOS Re-imagined,Skubal Divers,1,13,-3,11,10,1,0.4965345088659136,0.5654710253171166
-Ketel Bells,Mt. Everest Taquito Farmers,0,14,0,11,11,0,0.5928387502724467,0.49786793224474063
-Ketel Bells,Mt. Everest Taquito Farmers,1,13,-30.5,11,9,2,0.5216414142851494,0.37864478886349107
-Elly De La Snooze,The West Bank Occupiers,0,14,0,11,11,0,0.37795038448386326,0.49786793224474063
-Elly De La Snooze,The West Bank Occupiers,1,13,-13,10,11,-1,0.34149244948723767,0.2876642308880313
+All That is Wright,The Novaks,0,7,0,8,8,0,0.5348447580539308,0.49786793224474063
+All That is Wright,The Novaks,1,6,-0.5,6,6,0,0.5222099308612994,0.4918234370365996
+The Traveling Secretaries,Blasphemous Hot Takes,0,7,0,8,8,0,0.41606310117536016,0.49786793224474063
+The Traveling Secretaries,Blasphemous Hot Takes,1,6,20,6,6,0,0.56505524007408,0.7228625460430074
+Shrimp Fried Bryce,The Talmudic Tunnelers,0,7,0,8,8,0,0.5249728675366205,0.49786793224474063
+Shrimp Fried Bryce,The Talmudic Tunnelers,1,6,-18.5,8,7,1,0.4760164456779509,0.41498360892869446
+FVOS Re-imagined,Skubal Divers,0,7,0,8,8,0,0.45629062930345793,0.49786793224474063
+FVOS Re-imagined,Skubal Divers,1,6,-3,8,7,1,0.5085372392354814,0.5654710253171166
+Ketel Bells,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.5928387502724467,0.49786793224474063
+Ketel Bells,Mt. Everest Taquito Farmers,1,6,-30.5,8,6,2,0.5162246395353935,0.37864478886349107
+Elly De La Snooze,The West Bank Occupiers,0,7,0,8,8,0,0.37795038448386326,0.49786793224474063
+Elly De La Snooze,The West Bank Occupiers,1,6,-13,7,8,-1,0.3319391123900697,0.2876642308880313
