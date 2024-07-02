@@ -910,6 +910,53 @@ df_draft <-
 write_csv(df_draft, glue('data/stats/{params$season}/draft.csv'))
 
 
+### Record vs. others 
+df_pts <- 
+  bind_rows(
+    schedule %>% 
+      filter(matchup_id < params$matchup_id) %>% 
+      select(matchup_id, 'team_id' = home_team_id, 'points' = home_total_points, 'opp_id' = away_team_id, 'opp_pts' = away_total_points),
+    schedule %>% 
+      filter(matchup_id < params$matchup_id) %>% 
+      select(matchup_id, 'team_id' = away_team_id, 'points' = away_total_points, 'opp_id' = home_team_id,  'opp_pts' = home_total_points)
+  )
+
+df_whatif <- 
+  crossing('team_id' = teams$team_id,
+           'schedule_id' = teams$team_id) %>% 
+  mutate('n_win' = NA,
+         'n_loss' = NA)
+
+for(i in 1:nrow(df_whatif)) {
+  ### Team Results
+  df_1 <- 
+    df_pts %>% 
+    filter(team_id == df_whatif$team_id[i])  %>% 
+    arrange(matchup_id)
+  
+  ### Schedule to compare against
+  df_2 <- 
+    df_pts %>% 
+    filter(team_id == df_whatif$schedule_id[i]) %>% 
+    arrange(matchup_id)
+  
+  ### Swaps Results
+  if(df_whatif$schedule_id[i] != df_whatif$team_id[i]) {
+    df_1$opp_pts[df_1$opp_id != df_whatif$schedule_id[i]] <- 
+      df_2$opp_pts[df_1$opp_id != df_whatif$schedule_id[i]]
+  }
+  
+  ### Wins/Losses
+  df_whatif$n_win[i] <- 
+    sum((df_1$points > df_1$opp_pts) + 0.5 * (df_1$points == df_1$opp_pts))
+  
+  df_whatif$n_loss[i] <- 
+    sum((df_1$points < df_1$opp_pts) + 0.5 * (df_1$points == df_1$opp_pts))
+  
+}
+
+write_csv(df_whatif, glue('data/stats/{params$season}/whatif.csv'))
+
 dir_copy('data/', 'app/data', overwrite = T)
 dir_copy('figures/', 'app/figures', overwrite = T)
 dir_copy('models/', 'app/models', overwrite = T)

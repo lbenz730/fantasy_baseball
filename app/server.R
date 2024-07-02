@@ -2313,6 +2313,48 @@ shinyServer(function(input, output, session) {
       
     })
   
+  output$whatif_table <- render_gt({
+    gt(df_whatif) %>% 
+      cols_hide(contains('win_pct')) %>% 
+      cols_align('center') %>% 
+      data_color(columns = contains('win_pct'),
+                 target_columns = contains('record'),
+                 fn = scales::col_numeric(palette = 'RdYlGn', domain = range(df_whatif %>% select(contains('win_pct'))))) %>% 
+      text_transform(locations = cells_body(c(logo_1)),
+                     fn = function(x) {
+                       local_image(filename = x, height = 30)
+                     }) %>% 
+      cols_label_with(columns = 2:13, fn = function(x) {
+        html(local_image(filename = gsub('record_', '', x), height = 30))
+      }) %>% 
+      cols_label('logo_1' = 'Team') %>% 
+      tab_spanner(columns = contains('record'), label = 'vs. This Team\'s Schedule') %>% 
+      tab_header(title = md('**Record vs. Each Team\'s Schedule**')) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 1, columns = 2)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 2, columns = 3)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 3, columns = 4)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 4, columns = 5)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 5, columns = 6)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 6, columns = 7)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 7, columns = 8)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 8, columns = 9)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 9, columns = 10)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 10, columns = 11)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 11, columns = 12)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 12, columns = 13)) %>% 
+      tab_options(column_labels.font.size = 16,
+                  column_labels.font.weight = 'bold',
+                  heading.title.font.size = 50,
+                  heading.subtitle.font.size = 20,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold'
+      ) 
+    
+    
+    
+    
+  })
+  
   
   
   outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)

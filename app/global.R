@@ -115,6 +115,18 @@ distributions <-
   filter(sim_id <= 1000) %>% 
   select(-division_id, -sim_id)
 
+df_whatif <- 
+  read_csv(glue('data/stats/{params$season}/whatif.csv')) %>% 
+  mutate('record' = paste0(n_win, '-', n_loss),
+         'win_pct' = n_win/(n_win + n_loss)) %>%
+  inner_join(select(teams, team_id, logo), by = 'team_id') %>% 
+  inner_join(select(teams, team_id, logo), by = c('schedule_id' = 'team_id'), 
+             suffix = c('_1', '_2')) %>%
+  select(-team_id, -schedule_id, -n_win, -n_loss) %>% 
+  pivot_wider(names_from = 'logo_2', 
+              values_from = c('record', 'win_pct'))
+
+
 ### Probable Pitchers
 # df_probables <- 
 #   read_csv(glue('data/stats/{params$season}/probables.csv')) %>% 

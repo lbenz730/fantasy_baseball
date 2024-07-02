@@ -193,12 +193,19 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                             
                    ),
                    
-                   tabPanel("Points Over Time Trends",
+                   tabPanel("Points Trends",
                             value = 'trends',
                             
                             ### Render Table
                             mainPanel(
                               width = 12,
+                              shinycssloaders::withSpinner(gt_output('whatif_table'),
+                                                           image = baseball,
+                                                           image.height = 100),
+                              br(),
+                              br(),
+                              br(),
+                              
                               shinycssloaders::withSpinner(plotOutput('bump'),
                                                            image = baseball,
                                                            image.height = 100),

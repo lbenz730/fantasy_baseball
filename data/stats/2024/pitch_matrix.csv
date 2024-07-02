@@ -76,6 +76,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,5.1,1,2,QS Potential,Skubal Divers
 2,5.1,2,1,QS Potential,Skubal Divers
 2,5.1,6+,1,Bad Start,Skubal Divers
+2,5.2,1,1,Blue Balls,Skubal Divers
 2,5.2,2,1,Blue Balls,Skubal Divers
 2,5.2,3,1,Blue Balls,Skubal Divers
 2,5.2,4,1,Bad Start,Skubal Divers
@@ -308,7 +309,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,2,4,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,3,2,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,4,2,Bad Start,Mt. Everest Taquito Farmers
-8,6.0,0,8,QS,Mt. Everest Taquito Farmers
+8,6.0,0,9,QS,Mt. Everest Taquito Farmers
 8,6.0,1,10,QS,Mt. Everest Taquito Farmers
 8,6.0,2,6,QS,Mt. Everest Taquito Farmers
 8,6.0,3,5,QS,Mt. Everest Taquito Farmers

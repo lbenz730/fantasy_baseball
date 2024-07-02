@@ -34,18 +34,18 @@ df <-
   
   group_by(team_id) %>% 
   mutate('franchise' = last(team[season == 2024])) %>% 
-  ungroup()
-  # group_by(team_id, season) %>%
-  # filter(last_place > 0.1)
+  ungroup() %>% 
+  group_by(team_id, season) %>%
+  filter(last(last_place) > 0.1)
   
   
 
-ggplot(df, aes(x = matchup_id, y = last_place)) + 
+ggplot(df %>% filter(season == 2024, matchup_id <= 14), aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season, ncol = 1) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 0:21) +
+  scale_x_continuous(breaks = 0:14) +
   theme(legend.position = 'bottom') +
   labs(x = 'Week',
        y = 'Ferry Odds',
