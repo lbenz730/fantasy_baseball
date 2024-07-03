@@ -226,7 +226,8 @@ team_id,ip,earned_runs,n,start_type,team
 6,6.0,3,3,QS,The Novaks
 6,6.0,5,4,Bad Start,The Novaks
 6,6.1,0,2,QS,The Novaks
-6,6.1,1,2,QS,The Novaks
+6,6.1,1,1,QS,The Novaks
+6,6.1,2,1,QS,The Novaks
 6,6.1,5,2,Bad Start,The Novaks
 6,6.2,0,2,QS,The Novaks
 6,6.2,2,1,QS,The Novaks
@@ -552,12 +553,12 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.2,2,5,Blue Balls,Elly De La Snooze
 14,5.2,3,2,Blue Balls,Elly De La Snooze
 14,5.2,4,2,Bad Start,Elly De La Snooze
-14,6.0,0,6,QS,Elly De La Snooze
+14,6.0,0,5,QS,Elly De La Snooze
 14,6.0,1,8,QS,Elly De La Snooze
 14,6.0,2,4,QS,Elly De La Snooze
 14,6.0,3,3,QS,Elly De La Snooze
 14,6.0,4,3,QS Potential,Elly De La Snooze
-14,6.1,0,1,QS,Elly De La Snooze
+14,6.1,0,2,QS,Elly De La Snooze
 14,6.1,1,1,QS,Elly De La Snooze
 14,6.1,2,1,QS,Elly De La Snooze
 14,6.1,3,1,QS,Elly De La Snooze
