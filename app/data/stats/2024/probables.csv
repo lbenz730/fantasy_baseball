@@ -1,20 +1,4 @@
 game_date,player,player_id,team_id
-2024-07-06,Gerrit Cole,32081,14
-2024-07-06,Hunter Brown,4717803,8
-2024-07-06,Joe Ryan,42450,8
-2024-07-06,Tyler Anderson,32151,11
-2024-07-06,David Peterson,40921,4
-2024-07-06,Lance Lynn,30820,1
-2024-07-06,MacKenzie Gore,39636,2
-2024-07-06,Taj Bradley,42480,4
-2024-07-06,Andrew Heaney,32672,13
-2024-07-06,Hunter Greene,39635,12
-2024-07-06,Garrett Crochet,4297835,1
-2024-07-06,Ranger Suarez,39817,9
-2024-07-06,Freddy Peralta,39825,6
-2024-07-06,Seth Lugo,34873,1
-2024-07-06,Brandon Pfaadt,4721302,9
-2024-07-06,Matt Waldron,4020158,8
 2024-07-07,Sean Manaea,33244,13
 2024-07-07,Kyle Gibson,31053,11
 2024-07-07,DJ Herz,4917686,6
@@ -32,3 +16,6 @@ game_date,player,player_id,team_id
 2024-07-08,Christian Scott,4414215,2
 2024-07-08,Mitch Keller,33722,12
 2024-07-08,Andrew Abbott,4414528,11
+2024-07-09,Ben Lively,33194,14
+2024-07-09,Bailey Ober,3107919,5
+2024-07-09,Erick Fedde,33793,2
