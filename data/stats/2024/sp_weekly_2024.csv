@@ -8079,7 +8079,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 89,15,Luke Weaver,33770,NA,13.5,0,14
 89,15,Ben Lively,33194,1,16,1,14
 89,15,Grayson Rodriguez,41196,2,45.5,2,14
-89,15,Brendan Donovan,41773,NA,17,NA,14
+89,15,Brendan Donovan,41773,NA,18,NA,14
 89,15,Bryce Miller,4654313,1,10,0,14
 89,15,Blake Perkins,36974,NA,11.5,NA,14
 89,15,Connor Joe,35440,NA,2,NA,14
@@ -8242,12 +8242,48 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 88,NA,NA,NA,NA,NA,NA,1
 89,NA,NA,NA,NA,NA,NA,2
 90,NA,NA,NA,NA,NA,NA,8
-91,NA,NA,NA,NA,NA,NA,4
-92,NA,NA,NA,NA,NA,NA,7
-93,NA,NA,NA,NA,NA,NA,13
-94,NA,NA,NA,NA,NA,NA,14
-95,NA,NA,NA,NA,NA,NA,11
-96,NA,NA,NA,NA,NA,NA,8
+91,16,Marcus Semien,32146,NA,5.5,NA,4
+91,16,Wyatt Langford,4719324,NA,10,NA,4
+91,16,Lane Thomas,36409,NA,1,NA,4
+91,16,Mitchell Parker,4683356,1,23.5,1,4
+91,16,Colt Keith,4683384,NA,1.5,NA,4
+91,16,Matt Olson,32767,NA,1.5,NA,4
+92,16,Joc Pederson,31392,NA,2,NA,7
+92,16,Jesse Winker,32833,NA,1,NA,7
+92,16,CJ Abrams,42402,NA,-2,NA,7
+92,16,Ryan Jeffers,41587,NA,1,NA,7
+92,16,Paul Goldschmidt,31027,NA,7,NA,7
+92,16,Austin Riley,34982,NA,7.5,NA,7
+92,16,Lourdes Gurriel Jr.,36040,NA,3,NA,7
+92,16,Luis Garcia Jr.,40459,NA,0,NA,7
+92,16,Griffin Jax,42604,NA,-1,0,7
+92,16,Alec Burleson,4345070,NA,8.5,NA,7
+93,16,Jon Gray,33203,1,5.5,0,13
+93,16,Jonathan India,41171,NA,-1,NA,13
+93,16,Bryan Reynolds,38980,NA,1.5,NA,13
+93,16,Willson Contreras,32532,NA,0,NA,13
+93,16,Josh Naylor,35066,NA,-1,NA,13
+93,16,Pete Alonso,37498,NA,0,NA,13
+93,16,Steven Kwan,41996,NA,-1,NA,13
+93,16,Carlos Correa,32653,NA,4.5,NA,13
+93,16,Byron Buxton,32655,NA,7.5,NA,13
+94,16,Paul Sewald,35009,NA,-4,0,14
+94,16,Andres Gimenez,37729,NA,1,NA,14
+94,16,Raisel Iglesias,33618,NA,6,0,14
+94,16,Ezequiel Tovar,4905919,NA,-1,NA,14
+94,16,Elly De La Cruz,4917694,NA,8,NA,14
+94,16,Andrew McCutchen,28701,NA,1.5,NA,14
+94,16,Brendan Donovan,41773,NA,4,NA,14
+94,16,Ryan McMahon,33247,NA,2.5,NA,14
+95,16,Spencer Steer,4722857,NA,0.5,NA,11
+95,16,Andrew Abbott,4414528,1,30,1,11
+95,16,Tyler Freeman,40958,NA,1,NA,11
+95,16,Max Kepler,31870,NA,5,NA,11
+96,16,Josh Smith,42884,NA,0.5,NA,8
+96,16,Willi Castro,34230,NA,-0.5,NA,8
+96,16,Ozzie Albies,33783,NA,0,NA,8
+96,16,Brenton Doyle,42462,NA,2,NA,8
+96,16,Logan O'Hoppe,42047,NA,1.5,NA,8
 97,NA,NA,NA,NA,NA,NA,7
 98,NA,NA,NA,NA,NA,NA,9
 99,NA,NA,NA,NA,NA,NA,5
@@ -8368,12 +8404,43 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 88,NA,NA,NA,NA,NA,NA,13
 89,NA,NA,NA,NA,NA,NA,14
 90,NA,NA,NA,NA,NA,NA,11
-91,NA,NA,NA,NA,NA,NA,9
-92,NA,NA,NA,NA,NA,NA,5
-93,NA,NA,NA,NA,NA,NA,6
-94,NA,NA,NA,NA,NA,NA,12
-95,NA,NA,NA,NA,NA,NA,1
-96,NA,NA,NA,NA,NA,NA,2
+91,16,Nick Gonzales,4311634,NA,5,NA,9
+91,16,Jhoan Duran,41109,NA,3.5,0,9
+91,16,Jose Miranda,41000,NA,1.5,NA,9
+91,16,David Fry,41672,NA,-0.5,NA,9
+91,16,Mark Vientos,41034,NA,1.5,NA,9
+91,16,Michael Toglia,42412,NA,0.5,NA,9
+91,16,Brooks Lee,4629081,NA,4,NA,9
+92,16,Ketel Marte,32512,NA,2,NA,5
+92,16,Jose Ramirez,32801,NA,-0.5,NA,5
+92,16,Masyn Winn,4683365,NA,-1,NA,5
+92,16,Mark Canha,31670,NA,1,NA,5
+92,16,Christian Walker,32758,NA,1.5,NA,5
+92,16,Brandon Nimmo,32159,NA,7.5,NA,5
+93,16,Gabriel Moreno,42464,NA,0,NA,6
+93,16,Francisco Lindor,32129,NA,0,NA,6
+93,16,Lars Nootbaar,4448736,NA,0,NA,6
+93,16,Riley Greene,42179,NA,0,NA,6
+93,16,Corey Seager,32691,NA,9,NA,6
+93,16,Nolan Gorman,41174,NA,3.5,NA,6
+93,16,Noelvi Marte,41307,NA,-1,NA,6
+94,16,Sean Murphy,33557,NA,7.5,NA,12
+94,16,Francisco Alvarez,41253,NA,1.5,NA,12
+94,16,Andrew Vaughn,42394,NA,1.5,NA,12
+94,16,James Wood,4918256,NA,-1,NA,12
+94,16,Jarred Kelenic,41150,NA,1.5,NA,12
+94,16,Luis Robert Jr.,39631,NA,2.5,NA,12
+95,16,Adolis Garcia,35537,NA,0.5,NA,1
+95,16,Jonah Heim,33842,NA,-1.5,NA,1
+95,16,Jeimer Candelario,32531,NA,4.5,NA,1
+95,16,Lenyn Sosa,41684,NA,-0.5,NA,1
+95,16,Corbin Carroll,42404,NA,4,NA,1
+95,16,Nolan Arenado,31261,NA,0,NA,1
+96,16,Oneil Cruz,39712,NA,9,NA,2
+96,16,Marcell Ozuna,31668,NA,0.5,NA,2
+96,16,Elias Diaz,33594,NA,-3,NA,2
+96,16,Nathaniel Lowe,40538,NA,4.5,NA,2
+96,16,Charlie Blackmon,31084,NA,1,NA,2
 97,NA,NA,NA,NA,NA,NA,4
 98,NA,NA,NA,NA,NA,NA,13
 99,NA,NA,NA,NA,NA,NA,14
