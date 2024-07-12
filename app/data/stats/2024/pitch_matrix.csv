@@ -69,6 +69,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.1,5,1,Bad Start,Skubal Divers
 2,4.1,6+,1,Bad Start,Skubal Divers
 2,4.2,1,1,Bad Start,Skubal Divers
+2,4.2,4,1,Bad Start,Skubal Divers
 2,4.2,5,1,Bad Start,Skubal Divers
 2,5.0,0,3,QS Potential,Skubal Divers
 2,5.0,1,2,QS Potential,Skubal Divers
@@ -127,7 +128,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.2,3,2,Blue Balls,All That is Wright
 4,5.2,4,2,Bad Start,All That is Wright
 4,5.2,6+,1,Bad Start,All That is Wright
-4,6.0,0,8,QS,All That is Wright
+4,6.0,0,9,QS,All That is Wright
 4,6.0,1,11,QS,All That is Wright
 4,6.0,2,16,QS,All That is Wright
 4,6.0,3,5,QS,All That is Wright
@@ -238,7 +239,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,6.1,5,2,Bad Start,The Novaks
 6,6.2,0,2,QS,The Novaks
 6,6.2,2,1,QS,The Novaks
-6,7.0,0,6,QS,The Novaks
+6,7.0,0,7,QS,The Novaks
 6,7.0,1,8,QS,The Novaks
 6,7.0,2,1,QS,The Novaks
 6,7.0,4,1,QS Potential,The Novaks
@@ -273,7 +274,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,2,1,Blue Balls,FVOS Re-imagined
 7,5.2,3,1,Blue Balls,FVOS Re-imagined
 7,6.0,0,7,QS,FVOS Re-imagined
-7,6.0,1,12,QS,FVOS Re-imagined
+7,6.0,1,13,QS,FVOS Re-imagined
 7,6.0,2,10,QS,FVOS Re-imagined
 7,6.0,3,4,QS,FVOS Re-imagined
 7,6.0,4,3,QS Potential,FVOS Re-imagined
@@ -282,7 +283,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.1,1,1,QS,FVOS Re-imagined
 7,6.1,2,2,QS,FVOS Re-imagined
 7,6.2,0,1,QS,FVOS Re-imagined
-7,7.0,0,5,QS,FVOS Re-imagined
+7,7.0,0,6,QS,FVOS Re-imagined
 7,7.0,1,8,QS,FVOS Re-imagined
 7,7.0,2,7,QS,FVOS Re-imagined
 7,7.0,4,1,QS Potential,FVOS Re-imagined
@@ -346,6 +347,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,4.0,6+,1,Bad Start,Shrimp Fryed Bryce
 9,4.1,1,1,Bad Start,Shrimp Fryed Bryce
 9,4.1,2,2,Bad Start,Shrimp Fryed Bryce
+9,4.1,3,1,Bad Start,Shrimp Fryed Bryce
 9,4.1,5,1,Bad Start,Shrimp Fryed Bryce
 9,4.1,6+,2,Bad Start,Shrimp Fryed Bryce
 9,4.2,6+,2,Bad Start,Shrimp Fryed Bryce
@@ -365,8 +367,8 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.2,4,1,Bad Start,Shrimp Fryed Bryce
 9,5.2,5,1,Bad Start,Shrimp Fryed Bryce
 9,5.2,6+,1,Bad Start,Shrimp Fryed Bryce
-9,6.0,0,9,QS,Shrimp Fryed Bryce
-9,6.0,1,6,QS,Shrimp Fryed Bryce
+9,6.0,0,10,QS,Shrimp Fryed Bryce
+9,6.0,1,7,QS,Shrimp Fryed Bryce
 9,6.0,2,9,QS,Shrimp Fryed Bryce
 9,6.0,3,5,QS,Shrimp Fryed Bryce
 9,6.0,4,4,QS Potential,Shrimp Fryed Bryce
@@ -462,8 +464,8 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.2,2,2,Blue Balls,Blasphemous Hot Takes
 12,5.2,3,1,Blue Balls,Blasphemous Hot Takes
 12,5.2,4,4,Bad Start,Blasphemous Hot Takes
-12,6.0,0,6,QS,Blasphemous Hot Takes
-12,6.0,1,6,QS,Blasphemous Hot Takes
+12,6.0,0,7,QS,Blasphemous Hot Takes
+12,6.0,1,8,QS,Blasphemous Hot Takes
 12,6.0,2,8,QS,Blasphemous Hot Takes
 12,6.0,3,5,QS,Blasphemous Hot Takes
 12,6.0,4,3,QS Potential,Blasphemous Hot Takes
@@ -500,6 +502,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.0,5,1,Bad Start,Ketel Bells
 13,4.1,3,4,Bad Start,Ketel Bells
 13,4.1,4,1,Bad Start,Ketel Bells
+13,4.1,5,1,Bad Start,Ketel Bells
 13,4.1,6+,1,Bad Start,Ketel Bells
 13,4.2,0,1,Bad Start,Ketel Bells
 13,4.2,1,1,Bad Start,Ketel Bells
@@ -589,7 +592,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,6.2,1,1,QS,Elly De La Snooze
 14,7.0,0,2,QS,Elly De La Snooze
 14,7.0,1,4,QS,Elly De La Snooze
-14,7.0,2,4,QS,Elly De La Snooze
+14,7.0,2,5,QS,Elly De La Snooze
 14,7.0,3,1,QS,Elly De La Snooze
 14,< 3,5,1,Bad Start,Elly De La Snooze
 14,CG,0,1,CG,Elly De La Snooze
