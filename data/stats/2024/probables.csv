@@ -1,16 +1,4 @@
 game_date,player,player_id,team_id
-2024-07-13,Lance Lynn,30820,5
-2024-07-13,Luis Gil,40626,5
-2024-07-13,Grayson Rodriguez,41196,14
-2024-07-13,Seth Lugo,34873,1
-2024-07-13,Kutter Crawford,41277,4
-2024-07-13,Gavin Williams,4345076,6
-2024-07-13,Nathan Eovaldi,31174,12
-2024-07-13,Andrew Abbott,4414528,11
-2024-07-13,Reynaldo Lopez,33860,7
-2024-07-13,Dylan Cease,34943,13
-2024-07-13,George Kirby,42406,6
-2024-07-13,Jose Berrios,32811,7
 2024-07-14,Carlos Rodon,33696,1
 2024-07-14,Dean Kremer,38295,5
 2024-07-14,Brady Singer,41172,9
@@ -18,6 +6,7 @@ game_date,player,player_id,team_id
 2024-07-14,Ben Lively,33194,14
 2024-07-14,Ryan Pepiot,4208281,2
 2024-07-14,Nick Lodolo,42433,6
+2024-07-14,Max Scherzer,28976,1
 2024-07-14,Ronel Blanco,41829,8
 2024-07-14,Mitch Keller,33722,12
 2024-07-14,Jake Irvin,41290,9
@@ -28,3 +17,4 @@ game_date,player,player_id,team_id
 2024-07-14,Yusei Kikuchi,41415,7
 2024-07-14,Zac Gallen,39910,8
 2024-07-14,Chris Sale,30948,12
+2024-07-16,Paul Skenes,4719507,7
