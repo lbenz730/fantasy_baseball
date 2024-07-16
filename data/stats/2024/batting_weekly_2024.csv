@@ -8262,7 +8262,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 91,16,Heliot Ramos,39642,6,17.5,4
 91,16,J.P. Crawford,33210,6,21.5,4
 91,16,Mitchell Parker,4683356,NA,23.5,4
-91,16,Kutter Crawford,41277,NA,27,4
+91,16,Kutter Crawford,41277,NA,26,4
 91,16,Cole Ragans,41054,NA,26,4
 91,16,Colt Keith,4683384,6,35.5,4
 91,16,Matt Olson,32767,7,5,4
@@ -8293,13 +8293,13 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 93,16,Nestor Cortes,36480,NA,-1.5,13
 93,16,Michael Wacha,32640,NA,4.5,13
 93,16,Frankie Montas,33249,NA,9,13
-93,16,Rafael Devers,33859,6,24.5,13
+93,16,Rafael Devers,33859,6,25.5,13
 93,16,Bryan Reynolds,38980,6,26,13
 93,16,Jorge Alcala,41031,NA,12,13
 93,16,Aaron Judge,33192,6,23.5,13
 93,16,Jose Quintana,32106,NA,8.5,13
 93,16,Aroldis Chapman,30442,NA,10,13
-93,16,Vinnie Pasquantino,4109109,5,6.5,13
+93,16,Vinnie Pasquantino,4109109,5,7.5,13
 93,16,Gleyber Torres,33804,6,12.5,13
 93,16,Steven Kwan,41996,7,11,13
 93,16,Carlos Correa,32653,4,16,13
@@ -8557,7 +8557,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 92,16,Dean Kremer,38295,NA,4.5,5
 92,16,Josh Hader,32760,NA,23.5,5
 92,16,Bo Bichette,38904,1,-1.5,5
-92,16,Ceddanne Rafaela,4987382,6,9.5,5
+92,16,Ceddanne Rafaela,4987382,6,10.5,5
 92,16,Chris Bassitt,33148,NA,6.5,5
 92,16,Masataka Yoshida,4872598,5,17,5
 92,16,Brandon Nimmo,32159,7,29,5
@@ -8585,7 +8585,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 93,16,Gavin Williams,4345076,NA,11,6
 93,16,Jeremiah Estrada,41014,NA,10,6
 93,16,Cristopher Sanchez,42359,NA,18.5,6
-93,16,Tyler O'Neill,34168,5,2,6
+93,16,Tyler O'Neill,34168,5,3,6
 93,16,Ryan Mountcastle,34940,6,7.5,6
 93,16,Justin Steele,41022,NA,27,6
 94,16,Angel Martinez,42497,5,10.5,12
