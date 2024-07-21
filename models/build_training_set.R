@@ -65,7 +65,7 @@ build_train_set <- function(season, augment = F) {
     group_by(matchup_id, team_id) %>%
     mutate('total_starts' = cumsum(starts)) %>% 
     mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) <= start_cap ) %>% 
-    mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points), 0.5, ceiling))) %>% 
+    mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points + 0.00001), 0.5))) %>%
     left_join(df_rp_penalty, by = c('team_id', 'matchup_id', 'scoring_period_id')) %>%
     mutate('penalty' = ifelse(!is.na(rp_penalty), penalty + rp_penalty, penalty)) %>% 
     mutate('total_points' = cumsum(day_points - penalty),

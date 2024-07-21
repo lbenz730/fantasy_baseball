@@ -314,13 +314,13 @@ df_penalty <-
   group_by(matchup_id, team_id) %>%
   mutate('total_starts' = cumsum(starts)) %>% 
   mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) <= start_cap ) %>% 
-  mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points), 0.5, ceiling))) %>%
-  select(matchup_id, team_id, penalty, scoring_period_id) %>% 
-  inner_join(select(teams, team, team_id)) %>% 
+  mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points + 0.00001), 0.5))) %>%
+  select(matchup_id, team_id, penalty, scoring_period_id) %>%
+  inner_join(select(teams, team, team_id)) %>%
   filter(penalty != 0) %>% 
   distinct() %>% 
   ungroup() %>% 
-  select(team, matchup_id, scoring_period_id, penalty) 
+  select(team, matchup_id, scoring_period_id, penalty)
 
 write_csv(df_penalty, 'data/red_flags/penalties.csv')
 
