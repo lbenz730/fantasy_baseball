@@ -89,18 +89,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 15,88,1,277.5,162,115.5,13,391.5,271.5,120,The Talmudic Tunnelers,Ketel Bells
 15,89,2,272.5,172.5,100,14,297.5,187,110.5,Skubal Divers,Elly De La Snooze
 15,90,8,376,215.5,160.5,11,338.5,181.5,157,Mt. Everest Taquito Farmers,The West Bank Occupiers
-16,91,4,567,283,284,9,473,278.5,194.5,All That is Wright,Shrimp Fryed Bryce
+16,91,4,568,283,285,9,473,278.5,194.5,All That is Wright,Shrimp Fryed Bryce
 16,92,7,494,298,196,5,443.5,281,162.5,FVOS Re-imagined,The Traveling Secretaries
 16,93,13,495.5,328.5,167,6,497.5,290,207.5,Ketel Bells,The Novaks
-16,94,14,533,328,205,12,404.5,176.5,228,Elly De La Snooze,Blasphemous Hot Takes
+16,94,14,534,328,206,12,404.5,176.5,228,Elly De La Snooze,Blasphemous Hot Takes
 16,95,11,422.5,224,198.5,1,414.5,250.5,164,The West Bank Occupiers,The Talmudic Tunnelers
 16,96,8,486,307.5,178.5,2,444,285.5,158.5,Mt. Everest Taquito Farmers,Skubal Divers
-17,97,7,NA,NA,NA,4,NA,NA,NA,FVOS Re-imagined,All That is Wright
-17,98,9,NA,NA,NA,13,NA,NA,NA,Shrimp Fryed Bryce,Ketel Bells
-17,99,5,NA,NA,NA,14,NA,NA,NA,The Traveling Secretaries,Elly De La Snooze
-17,100,6,NA,NA,NA,11,NA,NA,NA,The Novaks,The West Bank Occupiers
-17,101,12,NA,NA,NA,8,NA,NA,NA,Blasphemous Hot Takes,Mt. Everest Taquito Farmers
-17,102,1,NA,NA,NA,2,NA,NA,NA,The Talmudic Tunnelers,Skubal Divers
+17,97,7,46,37.5,8.5,4,39.5,37.5,2,FVOS Re-imagined,All That is Wright
+17,98,9,24,16,8,13,23.5,19.5,4,Shrimp Fryed Bryce,Ketel Bells
+17,99,5,61,33.5,27.5,14,66,27,39,The Traveling Secretaries,Elly De La Snooze
+17,100,6,64,37.5,26.5,11,38.5,11,27.5,The Novaks,The West Bank Occupiers
+17,101,12,60.5,12,48.5,8,33,33,NA,Blasphemous Hot Takes,Mt. Everest Taquito Farmers
+17,102,1,85.5,25,60.5,2,74.5,31,43.5,The Talmudic Tunnelers,Skubal Divers
 18,103,4,NA,NA,NA,13,NA,NA,NA,All That is Wright,Ketel Bells
 18,104,14,NA,NA,NA,7,NA,NA,NA,Elly De La Snooze,FVOS Re-imagined
 18,105,11,NA,NA,NA,9,NA,NA,NA,The West Bank Occupiers,Shrimp Fryed Bryce
