@@ -351,25 +351,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Josh Hader,32760,5,38,7.6,16
 15,RP,Tanner Scott,35135,8,28,7,16
 15,RP,Kyle Finnegan,36543,13,27,4.5,16
-0,C,Salvador Perez,31127,9,8,8,17
-1,1B,Carlos Santana,30280,7,6,6,17
-2,2B,Jeff McNeil,33900,1,8,8,17
-3,3B,Colt Keith,4683384,4,7,7,17
-4,SS,Bobby Witt Jr.,42403,8,15.5,15.5,17
-5,OF,Juan Soto,36969,7,15.5,15.5,17
-5,OF,Teoscar Hernandez,33377,4,10,10,17
-5,OF,Bryan De La Cruz,40787,5,9,9,17
-5,OF,Charlie Blackmon,31084,2,8,8,17
-5,OF,Hunter Renfroe,33205,14,6,6,17
-6,2B/SS,Francisco Lindor,32129,6,14,14,17
-7,1B/3B,Elly De La Cruz,4917694,14,7,7,17
-12,UTIL,Willy Adames,33675,1,8,8,17
+0,C,Salvador Perez,31127,9,9,4.5,17
+1,1B,Vinnie Pasquantino,4109109,13,9,4.5,17
+2,2B,Jeff McNeil,33900,1,18,9,17
+3,3B,Jose Ramirez,32801,5,11,5.5,17
+4,SS,Bobby Witt Jr.,42403,8,19,9.5,17
+5,OF,Lawrence Butler,4917919,12,18,9,17
+5,OF,Tyler O'Neill,34168,6,16.5,8.25,17
+5,OF,Juan Soto,36969,7,16,8,17
+5,OF,Teoscar Hernandez,33377,4,13.5,6.75,17
+5,OF,Charlie Blackmon,31084,2,9.5,4.75,17
+6,2B/SS,Ketel Marte,32512,5,17.5,8.75,17
+7,1B/3B,Bryce Harper,30951,9,8.5,4.25,17
+12,UTIL,Francisco Lindor,32129,6,16.5,8.25,17
 14,SP,Carlos Rodon,33696,1,31,31,17
+14,SP,Paul Skenes,4719507,7,30,30,17
+14,SP,Zack Wheeler,31267,9,29,29,17
 14,SP,Hunter Greene,39635,12,28.5,28.5,17
 14,SP,Bryce Miller,4654313,14,27,27,17
-14,SP,Bailey Ober,3107919,5,21.5,21.5,17
-14,SP,Erick Fedde,33793,2,21,21,17
-14,SP,Andre Pallante,4109034,6,20,20,17
-15,RP,Carlos Estevez,34861,1,7,7,17
-15,RP,David Bednar,38303,5,6,6,17
-15,RP,Hector Neris,32377,1,5,5,17
+14,SP,Jon Gray,33203,13,27,27,17
+15,RP,Ryan Helsley,39909,5,9,9,17
+15,RP,Kirby Yates,32623,9,7.5,3.75,17
+15,RP,Tanner Scott,35135,8,7.5,7.5,17
