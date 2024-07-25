@@ -351,25 +351,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Josh Hader,32760,5,38,7.6,16
 15,RP,Tanner Scott,35135,8,28,7,16
 15,RP,Kyle Finnegan,36543,13,27,4.5,16
-0,C,Salvador Perez,31127,9,9,4.5,17
-1,1B,Vinnie Pasquantino,4109109,13,9,4.5,17
-2,2B,Jeff McNeil,33900,1,18,9,17
-3,3B,Jose Ramirez,32801,5,11,5.5,17
-4,SS,Bobby Witt Jr.,42403,8,19,9.5,17
-5,OF,Lawrence Butler,4917919,12,18,9,17
-5,OF,Tyler O'Neill,34168,6,16.5,8.25,17
-5,OF,Juan Soto,36969,7,16,8,17
-5,OF,Teoscar Hernandez,33377,4,13.5,6.75,17
-5,OF,Charlie Blackmon,31084,2,9.5,4.75,17
-6,2B/SS,Ketel Marte,32512,5,17.5,8.75,17
-7,1B/3B,Bryce Harper,30951,9,8.5,4.25,17
-12,UTIL,Francisco Lindor,32129,6,16.5,8.25,17
+0,C,Kyle Higashioka,30545,12,9,4.5,17
+1,1B,Vladimir Guerrero Jr.,35002,2,16.5,8.25,17
+2,2B,Ketel Marte,32512,5,28,9.333333333333334,17
+3,3B,Elly De La Cruz,4917694,14,16.5,8.25,17
+4,SS,Francisco Lindor,32129,6,32.5,10.833333333333334,17
+5,OF,Juan Soto,36969,7,25,8.333333333333334,17
+5,OF,Jeff McNeil,33900,1,24,8,17
+5,OF,Lawrence Butler,4917919,12,21,7,17
+5,OF,Jarren Duran,41610,6,19.5,6.5,17
+5,OF,Brenton Doyle,42462,8,16.5,5.5,17
+6,2B/SS,Bobby Witt Jr.,42403,8,23.5,7.833333333333333,17
+7,1B/3B,Nathaniel Lowe,40538,2,14,4.666666666666667,17
+12,UTIL,Tyler O'Neill,34168,6,16.5,8.25,17
 14,SP,Carlos Rodon,33696,1,31,31,17
 14,SP,Paul Skenes,4719507,7,30,30,17
 14,SP,Zack Wheeler,31267,9,29,29,17
 14,SP,Hunter Greene,39635,12,28.5,28.5,17
+14,SP,Nathan Eovaldi,31174,12,28,28,17
 14,SP,Bryce Miller,4654313,14,27,27,17
-14,SP,Jon Gray,33203,13,27,27,17
-15,RP,Ryan Helsley,39909,5,9,9,17
-15,RP,Kirby Yates,32623,9,7.5,3.75,17
-15,RP,Tanner Scott,35135,8,7.5,7.5,17
+15,RP,Tanner Scott,35135,8,14,7,17
+15,RP,Carlos Estevez,34861,1,13,6.5,17
+15,RP,Emmanuel Clase,41743,8,12.5,6.25,17
