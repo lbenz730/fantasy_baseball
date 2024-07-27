@@ -33,19 +33,21 @@ df <-
             odds2024) %>% 
   
   group_by(team_id) %>% 
-  mutate('franchise' = last(team[season == 2024])) %>% 
-  ungroup() %>% 
+  mutate('franchise' = last(team[season == 2024])) %>%
   group_by(team_id, season) %>%
-  filter(last(last_place) > 0.1)
+  mutate('safe' = map_lgl(matchup_id, ~{all(last_place[matchup_id >= .x-1] <= 0.01) })) %>%
+  mutate('elim' = map_lgl(matchup_id, ~{all(playoffs[matchup_id >= .x-1] <= 0.01) })) %>%
+  ungroup() 
+  
   
   
 
-ggplot(df %>% filter(season == 2024, matchup_id <= 14), aes(x = matchup_id, y = last_place)) + 
+ggplot(df %>% filter(season == 2024, matchup_id <= 16, !safe), aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season, ncol = 1) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +
   scale_y_continuous(labels = scales::percent) +
-  scale_x_continuous(breaks = 0:14) +
+  scale_x_continuous(breaks = 0:16) +
   theme(legend.position = 'bottom') +
   labs(x = 'Week',
        y = 'Ferry Odds',
@@ -64,7 +66,7 @@ df <-
   ungroup() 
 
 
-ggplot(df, aes(x = matchup_id, y = playoffs)) + 
+ggplot(df %>% filter(season == 2024, matchup_id <= 16, !elim), aes(x = matchup_id, y = playoffs)) + 
   facet_wrap(~season) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +

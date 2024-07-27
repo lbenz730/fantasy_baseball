@@ -351,25 +351,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Josh Hader,32760,5,38,7.6,16
 15,RP,Tanner Scott,35135,8,28,7,16
 15,RP,Kyle Finnegan,36543,13,27,4.5,16
-0,C,Kyle Higashioka,30545,12,9,4.5,17
-1,1B,Nathaniel Lowe,40538,2,19,4.75,17
-2,2B,Ketel Marte,32512,5,28,9.333333333333334,17
-3,3B,Elly De La Cruz,4917694,14,16.5,8.25,17
-4,SS,Francisco Lindor,32129,6,39,9.75,17
-5,OF,Lawrence Butler,4917919,12,32,8,17
-5,OF,Jeff McNeil,33900,1,27,6.75,17
-5,OF,Juan Soto,36969,7,25,8.333333333333334,17
-5,OF,Jarren Duran,41610,6,19.5,6.5,17
-5,OF,Colton Cowser,4416990,12,17,5.666666666666667,17
-6,2B/SS,Bobby Witt Jr.,42403,8,23.5,7.833333333333333,17
-7,1B/3B,Vladimir Guerrero Jr.,35002,2,17.5,5.833333333333333,17
-12,UTIL,Brandon Lowe,39961,9,22.5,5.625,17
+0,C,Salvador Perez,31127,9,16,4,17
+1,1B,Vladimir Guerrero Jr.,35002,2,22.5,5.625,17
+2,2B,Ketel Marte,32512,5,31,7.75,17
+3,3B,Rafael Devers,33859,13,19.5,4.875,17
+4,SS,Francisco Lindor,32129,6,39.5,7.9,17
+5,OF,Lawrence Butler,4917919,12,31.5,6.3,17
+5,OF,Jurickson Profar,31117,11,29.5,7.375,17
+5,OF,Jeff McNeil,33900,1,29,5.8,17
+5,OF,Jorge Soler,32558,6,28,5.6,17
+5,OF,Juan Soto,36969,7,27,6.75,17
+6,2B/SS,Bobby Witt Jr.,42403,8,25.5,6.375,17
+7,1B/3B,Nathaniel Lowe,40538,2,20.5,4.1,17
+12,UTIL,Brent Rooker,40926,14,22.5,4.5,17
 14,SP,Dylan Cease,34943,13,67.5,67.5,17
+14,SP,Kyle Harrison,4683375,13,31.5,31.5,17
 14,SP,Carlos Rodon,33696,1,31,31,17
 14,SP,Paul Skenes,4719507,7,30,30,17
 14,SP,Chris Sale,30948,12,29,29,17
-14,SP,Zack Wheeler,31267,9,29,29,17
-14,SP,Hunter Greene,39635,12,28.5,28.5,17
-15,RP,Tanner Scott,35135,8,14,7,17
+14,SP,Framber Valdez,36581,7,29,29,17
+15,RP,Emmanuel Clase,41743,8,18.5,6.166666666666667,17
+15,RP,Tanner Scott,35135,8,17.5,5.833333333333333,17
 15,RP,Carlos Estevez,34861,1,13,6.5,17
-15,RP,Emmanuel Clase,41743,8,12.5,6.25,17
