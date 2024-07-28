@@ -8842,7 +8842,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 98,17,Jhoan Duran,41109,NA,-3,9
 98,17,Tyler Fitzgerald,43030,2,5.5,9
 98,17,Salvador Perez,31127,5,17,9
-98,17,Brandon Lowe,39961,6,28,9
+98,17,Brandon Lowe,39961,7,28,9
 98,17,Brandon Pfaadt,4721302,NA,5,9
 98,17,Brooks Lee,4629081,5,7.5,9
 98,17,Zack Wheeler,31267,NA,29,9
@@ -8922,7 +8922,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 101,17,Hunter Greene,39635,NA,28.5,12
 101,17,Lawrence Butler,4917919,6,35.5,12
 101,17,Andrew Vaughn,42394,1,3,12
-101,17,Isaac Paredes,39706,6,13.5,12
+101,17,Isaac Paredes,39706,7,13.5,12
 101,17,Colton Cowser,4416990,5,21.5,12
 101,17,Andy Pages,42468,2,-0.5,12
 101,17,Chris Sale,30948,NA,29,12
@@ -8951,7 +8951,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 102,17,Dansby Swanson,34895,5,9,1
 102,17,J.T. Realmuto,32177,4,4,1
 102,17,Adolis Garcia,35537,6,23.5,1
-102,17,Jeimer Candelario,32531,4,8.5,1
+102,17,Jeimer Candelario,32531,5,8.5,1
 102,17,Nick Castellanos,31187,5,17,1
 102,17,Max Schuemann,3962127,4,2,1
 102,17,Blake Snell,33748,NA,52,1
@@ -9160,14 +9160,14 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 99,17,Anthony Santander,36084,5,16.5,14
 99,17,Hunter Renfroe,33205,3,6,14
 99,17,Ezequiel Tovar,4905919,6,18.5,14
-99,17,Elly De La Cruz,4917694,4,16,14
+99,17,Elly De La Cruz,4917694,5,16,14
 99,17,Pablo Lopez,39671,NA,22,14
 100,17,Andrew Heaney,32672,NA,3.5,11
-100,17,Spencer Steer,4722857,4,11,11
+100,17,Spencer Steer,4722857,5,11,11
 100,17,Charlie Morton,29155,NA,-7,11
 100,17,Tobias Myers,39716,NA,9.5,11
 100,17,David Fry,41672,2,-0.5,11
-100,17,Yandy Diaz,33481,2,5.5,11
+100,17,Yandy Diaz,33481,3,5.5,11
 100,17,Taylor Ward,34923,6,12,11
 100,17,Gunnar Henderson,42507,3,-1.5,11
 100,17,Jurickson Profar,31117,5,36,11
