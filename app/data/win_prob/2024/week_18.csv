@@ -1,7 +1,13 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 All That is Wright,Ketel Bells,0,7,0,8,8,0,0.4455111517746467,0.49786793224474063
+All That is Wright,Ketel Bells,1,6,-6,8,7,1,0.44673394940464134,0.5364233147188243
 Elly De La Snooze,FVOS Re-imagined,0,7,0,8,8,0,0.4139087129175523,0.49786793224474063
-The West Bank Occupiers,Shrimp Fryed Bryce,0,7,0,8,8,0,0.59767975304223675,0.49786793224474063
+Elly De La Snooze,FVOS Re-imagined,1,6,-22,8,7,1,0.3385947739901793,0.38215305200350885
+The West Bank Occupiers,Shrimp Fryed Bryce,0,7,0,8,8,0,0.5979439166014481,0.49786793224474063
+The West Bank Occupiers,Shrimp Fryed Bryce,1,6,3,7,6,1,0.6087867526195937,0.6220563789121775
 Mt. Everest Taquito Farmers,The Traveling Secretaries,0,7,0,8,8,0,0.44502492260089344,0.49786793224474063
+Mt. Everest Taquito Farmers,The Traveling Secretaries,1,6,20.5,6,7,-1,0.523406435431895,0.6000458070728051
 Skubal Divers,The Novaks,0,7,0,8,8,0,0.4293017309300162,0.49786793224474063
+Skubal Divers,The Novaks,1,6,40.5,8,8,0,0.694497217661562,0.8754597401937964
 The Talmudic Tunnelers,Blasphemous Hot Takes,0,7,0,8,8,0,0.32074148668115915,0.49786793224474063
+The Talmudic Tunnelers,Blasphemous Hot Takes,1,6,-15.5,7,6,1,0.28863980499039127,0.44375006989290483

@@ -12,7 +12,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,4.0,6+,1,Bad Start,The Talmudic Tunnelers
 1,4.1,0,1,Bad Start,The Talmudic Tunnelers
 1,4.1,1,1,Bad Start,The Talmudic Tunnelers
-1,4.1,6+,1,Bad Start,The Talmudic Tunnelers
+1,4.1,6+,2,Bad Start,The Talmudic Tunnelers
 1,4.2,2,1,Bad Start,The Talmudic Tunnelers
 1,4.2,3,2,Bad Start,The Talmudic Tunnelers
 1,4.2,4,1,Bad Start,The Talmudic Tunnelers
@@ -180,6 +180,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.0,4,3,Bad Start,The Traveling Secretaries
 5,5.0,6+,2,Bad Start,The Traveling Secretaries
 5,5.1,2,2,QS Potential,The Traveling Secretaries
+5,5.1,3,1,QS Potential,The Traveling Secretaries
 5,5.2,2,2,Blue Balls,The Traveling Secretaries
 5,5.2,3,4,Blue Balls,The Traveling Secretaries
 5,5.2,5,1,Bad Start,The Traveling Secretaries
@@ -290,7 +291,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,2,2,Blue Balls,FVOS Re-imagined
 7,5.2,3,1,Blue Balls,FVOS Re-imagined
 7,6.0,0,7,QS,FVOS Re-imagined
-7,6.0,1,13,QS,FVOS Re-imagined
+7,6.0,1,14,QS,FVOS Re-imagined
 7,6.0,2,10,QS,FVOS Re-imagined
 7,6.0,3,5,QS,FVOS Re-imagined
 7,6.0,4,4,QS Potential,FVOS Re-imagined
@@ -344,14 +345,14 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,4,2,Bad Start,Mt. Everest Taquito Farmers
 8,6.0,0,10,QS,Mt. Everest Taquito Farmers
 8,6.0,1,11,QS,Mt. Everest Taquito Farmers
-8,6.0,2,8,QS,Mt. Everest Taquito Farmers
+8,6.0,2,9,QS,Mt. Everest Taquito Farmers
 8,6.0,3,9,QS,Mt. Everest Taquito Farmers
 8,6.0,4,3,QS Potential,Mt. Everest Taquito Farmers
 8,6.0,5,1,Bad Start,Mt. Everest Taquito Farmers
 8,6.0,6+,1,Bad Start,Mt. Everest Taquito Farmers
 8,6.1,1,1,QS,Mt. Everest Taquito Farmers
 8,6.1,2,1,QS,Mt. Everest Taquito Farmers
-8,6.2,3,1,QS,Mt. Everest Taquito Farmers
+8,6.2,3,2,QS,Mt. Everest Taquito Farmers
 8,6.2,4,1,QS Potential,Mt. Everest Taquito Farmers
 8,7.0,0,7,QS,Mt. Everest Taquito Farmers
 8,7.0,1,4,QS,Mt. Everest Taquito Farmers
@@ -380,6 +381,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.0,3,3,QS Potential,Shrimp Fryed Bryce
 9,5.0,4,3,Bad Start,Shrimp Fryed Bryce
 9,5.0,5,3,Bad Start,Shrimp Fryed Bryce
+9,5.0,6+,1,Bad Start,Shrimp Fryed Bryce
 9,5.1,1,1,QS Potential,Shrimp Fryed Bryce
 9,5.1,2,2,QS Potential,Shrimp Fryed Bryce
 9,5.1,3,3,QS Potential,Shrimp Fryed Bryce
@@ -393,7 +395,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.0,0,11,QS,Shrimp Fryed Bryce
 9,6.0,1,7,QS,Shrimp Fryed Bryce
 9,6.0,2,9,QS,Shrimp Fryed Bryce
-9,6.0,3,5,QS,Shrimp Fryed Bryce
+9,6.0,3,6,QS,Shrimp Fryed Bryce
 9,6.0,4,5,QS Potential,Shrimp Fryed Bryce
 9,6.0,5,1,Bad Start,Shrimp Fryed Bryce
 9,6.0,6+,2,Bad Start,Shrimp Fryed Bryce
@@ -428,6 +430,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,4.1,3,2,Bad Start,The West Bank Occupiers
 11,4.1,4,1,Bad Start,The West Bank Occupiers
 11,4.2,1,2,Bad Start,The West Bank Occupiers
+11,4.2,2,1,Bad Start,The West Bank Occupiers
 11,4.2,3,1,Bad Start,The West Bank Occupiers
 11,4.2,4,2,Bad Start,The West Bank Occupiers
 11,4.2,5,2,Bad Start,The West Bank Occupiers
@@ -498,7 +501,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,6.0,0,7,QS,Blasphemous Hot Takes
 12,6.0,1,9,QS,Blasphemous Hot Takes
 12,6.0,2,8,QS,Blasphemous Hot Takes
-12,6.0,3,6,QS,Blasphemous Hot Takes
+12,6.0,3,7,QS,Blasphemous Hot Takes
 12,6.0,4,3,QS Potential,Blasphemous Hot Takes
 12,6.0,5,2,Bad Start,Blasphemous Hot Takes
 12,6.0,6+,1,Bad Start,Blasphemous Hot Takes
@@ -517,6 +520,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,7.0,4,1,QS Potential,Blasphemous Hot Takes
 12,7.0,5,1,Bad Start,Blasphemous Hot Takes
 12,< 3,5,1,Bad Start,Blasphemous Hot Takes
+12,< 3,6+,1,Bad Start,Blasphemous Hot Takes
 12,> 7,0,3,QS,Blasphemous Hot Takes
 12,> 7,1,2,QS,Blasphemous Hot Takes
 12,> 7,2,2,QS,Blasphemous Hot Takes
@@ -532,6 +536,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.0,3,2,Bad Start,Ketel Bells
 13,4.0,4,1,Bad Start,Ketel Bells
 13,4.0,5,1,Bad Start,Ketel Bells
+13,4.0,6+,1,Bad Start,Ketel Bells
 13,4.1,3,4,Bad Start,Ketel Bells
 13,4.1,4,1,Bad Start,Ketel Bells
 13,4.1,5,1,Bad Start,Ketel Bells
