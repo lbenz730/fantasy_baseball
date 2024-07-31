@@ -1,21 +1,5 @@
 game_date,player,player_id,team_id
-2024-07-30,Gavin Williams,4345076,6
-2024-07-30,Chris Bassitt,33148,5
-2024-07-30,Corbin Burnes,39878,5
-2024-07-30,Gerrit Cole,32081,14
-2024-07-30,Aaron Nola,33709,12
-2024-07-30,Jeffrey Springs,35397,4
-2024-07-30,Justin Steele,41022,6
-2024-07-30,Luis Castillo,35124,4
-2024-07-30,Max Scherzer,28976,1
-2024-07-30,Hunter Brown,4717803,8
-2024-07-30,Michael Wacha,32640,13
-2024-07-30,Ryne Nelson,4916269,5
-2024-07-30,Tyler Glasnow,33190,2
-2024-07-30,Matt Waldron,4020158,8
-2024-07-30,Robbie Ray,32175,6
 2024-07-31,Taj Bradley,42480,4
-2024-07-31,Yusei Kikuchi,41415,7
 2024-07-31,Grayson Rodriguez,41196,14
 2024-07-31,Nestor Cortes,36480,13
 2024-07-31,Cristopher Sanchez,42359,6
@@ -25,7 +9,6 @@ game_date,player,player_id,team_id
 2024-07-31,Chris Sale,30948,12
 2024-07-31,Freddy Peralta,39825,6
 2024-07-31,Andrew Heaney,32672,11
-2024-07-31,Sonny Gray,32082,7
 2024-07-31,Zac Gallen,39910,8
 2024-07-31,George Kirby,42406,6
 2024-07-31,Brayan Bello,4720856,13
@@ -35,3 +18,6 @@ game_date,player,player_id,team_id
 2024-07-31,Dylan Cease,34943,13
 2024-07-31,Logan Webb,41216,5
 2024-08-01,Ben Lively,33194,14
+2024-08-01,Sonny Gray,32082,7
+2024-08-02,Erick Fedde,33793,2
+2024-08-02,Andrew Abbott,4414528,11
