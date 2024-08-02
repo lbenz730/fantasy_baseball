@@ -376,22 +376,22 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 0,C,Yainer Diaz,4781491,8,14.5,4.833333333333333,18
 1,1B,Vladimir Guerrero Jr.,35002,2,32.5,8.125,18
 2,2B,Dylan Moore,40593,14,16.5,5.5,18
-3,3B,Eugenio Suarez,32367,12,29,9.666666666666666,18
-4,SS,Bobby Witt Jr.,42403,8,26,8.666666666666666,18
+3,3B,Jose Ramirez,32801,5,34,11.333333333333334,18
+4,SS,Bobby Witt Jr.,42403,8,36.5,9.125,18
 5,OF,Jazz Chisholm Jr.,41433,8,31.5,10.5,18
-5,OF,Anthony Santander,36084,14,23.5,5.875,18
-5,OF,Colton Cowser,4416990,12,21,5.25,18
+5,OF,Anthony Santander,36084,14,29,5.8,18
+5,OF,Colton Cowser,4416990,12,25,5,18
+5,OF,Cody Bellinger,33912,8,23.5,7.833333333333333,18
 5,OF,Masataka Yoshida,4872598,5,18.5,6.166666666666667,18
-5,OF,Tommy Pham,31208,9,17,8.5,18
 6,2B/SS,Jordan Westburg,4298641,2,16.5,4.125,18
-7,1B/3B,Jose Ramirez,32801,5,23,11.5,18
-12,UTIL,Rafael Devers,33859,13,21.5,7.166666666666667,18
+7,1B/3B,Eugenio Suarez,32367,12,29,9.666666666666666,18
+12,UTIL,Vinnie Pasquantino,4109109,13,28,7,18
 14,SP,Logan Webb,41216,5,42.5,42.5,18
 14,SP,Ryne Nelson,4916269,5,32,32,18
+14,SP,Seth Lugo,34873,1,25.5,25.5,18
+14,SP,Sonny Gray,32082,7,25.5,25.5,18
+14,SP,Charlie Morton,29155,11,22.5,22.5,18
 14,SP,Nick Pivetta,36071,8,22.5,22.5,18
-14,SP,Freddy Peralta,39825,6,22,22,18
-14,SP,Corbin Burnes,39878,5,21.5,21.5,18
-14,SP,Pablo Lopez,39671,14,21.5,21.5,18
+15,RP,Raisel Iglesias,33618,14,15,5,18
 15,RP,Bryan Abreu,41208,4,12.5,6.25,18
 15,RP,Edwin Diaz,35394,4,9,9,18
-15,RP,Raisel Iglesias,33618,14,8,4,18
