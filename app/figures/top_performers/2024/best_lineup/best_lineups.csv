@@ -373,25 +373,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Emmanuel Clase,41743,8,25.5,6.375,17
 15,RP,Tanner Scott,35135,8,17.5,5.833333333333333,17
 15,RP,Pete Fairbanks,42180,6,17,5.666666666666667,17
-0,C,Salvador Perez,31127,9,21,4.2,18
-1,1B,Vladimir Guerrero Jr.,35002,2,39,7.8,18
-2,2B,Ketel Marte,32512,5,26,6.5,18
-3,3B,Jose Ramirez,32801,5,36.5,9.125,18
-4,SS,Bobby Witt Jr.,42403,8,38.5,7.7,18
-5,OF,Jazz Chisholm Jr.,41433,8,30.5,7.625,18
-5,OF,Anthony Santander,36084,14,29,4.833333333333333,18
-5,OF,Colton Cowser,4416990,12,25.5,4.25,18
-5,OF,Cody Bellinger,33912,8,24.5,6.125,18
-5,OF,Aaron Judge,33192,13,23.5,5.875,18
-6,2B/SS,Anthony Volpe,42547,14,23.5,5.875,18
-7,1B/3B,Vinnie Pasquantino,4109109,13,32.5,6.5,18
-12,UTIL,Eugenio Suarez,32367,12,32,8,18
+0,C,Salvador Perez,31127,9,22,3.6666666666666665,18
+1,1B,Vladimir Guerrero Jr.,35002,2,48.5,8.083333333333334,18
+2,2B,Ketel Marte,32512,5,27,5.4,18
+3,3B,Jose Ramirez,32801,5,43.5,8.7,18
+4,SS,Bobby Witt Jr.,42403,8,38,6.333333333333333,18
+5,OF,Aaron Judge,33192,13,34.5,6.9,18
+5,OF,Jazz Chisholm Jr.,41433,8,32.5,6.5,18
+5,OF,Anthony Santander,36084,14,32,4.571428571428571,18
+5,OF,Colton Cowser,4416990,12,29,4.142857142857143,18
+5,OF,Tommy Pham,31208,9,26.5,5.3,18
+6,2B/SS,Anthony Volpe,42547,14,32.5,6.5,18
+7,1B/3B,Vinnie Pasquantino,4109109,13,40.5,6.75,18
+12,UTIL,Rafael Devers,33859,13,33.5,6.7,18
 14,SP,Blake Snell,33748,1,69.5,69.5,18
 14,SP,Logan Webb,41216,5,42.5,42.5,18
+14,SP,Hunter Greene,39635,12,32,32,18
 14,SP,Ryne Nelson,4916269,5,32,32,18
+14,SP,Zach Eflin,32804,9,31.5,15.75,18
 14,SP,Bryan Woo,4629089,2,27,27,18
-14,SP,Seth Lugo,34873,1,25.5,25.5,18
-14,SP,Sonny Gray,32082,7,25.5,25.5,18
 15,RP,Bryan Abreu,41208,4,17.5,5.833333333333333,18
+15,RP,Griffin Jax,42604,7,17,5.666666666666667,18
 15,RP,Cade Smith,4987924,7,16.5,5.5,18
-15,RP,Raisel Iglesias,33618,14,15,5,18

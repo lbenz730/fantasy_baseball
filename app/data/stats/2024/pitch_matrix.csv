@@ -4,7 +4,8 @@ team_id,ip,earned_runs,n,start_type,team
 1,3.1,6+,1,Bad Start,The Talmudic Tunnelers
 1,3.2,2,1,Bad Start,The Talmudic Tunnelers
 1,3.2,6+,1,Bad Start,The Talmudic Tunnelers
-1,4.0,1,2,Bad Start,The Talmudic Tunnelers
+1,4.0,0,1,Bad Start,The Talmudic Tunnelers
+1,4.0,1,3,Bad Start,The Talmudic Tunnelers
 1,4.0,2,3,Bad Start,The Talmudic Tunnelers
 1,4.0,3,3,Bad Start,The Talmudic Tunnelers
 1,4.0,4,2,Bad Start,The Talmudic Tunnelers
@@ -26,7 +27,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.0,5,2,Bad Start,The Talmudic Tunnelers
 1,5.0,6+,2,Bad Start,The Talmudic Tunnelers
 1,5.1,2,3,QS Potential,The Talmudic Tunnelers
-1,5.1,3,2,QS Potential,The Talmudic Tunnelers
+1,5.1,3,3,QS Potential,The Talmudic Tunnelers
 1,5.1,4,1,Bad Start,The Talmudic Tunnelers
 1,5.1,5,1,Bad Start,The Talmudic Tunnelers
 1,5.1,6+,1,Bad Start,The Talmudic Tunnelers
@@ -35,7 +36,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.2,2,1,Blue Balls,The Talmudic Tunnelers
 1,5.2,3,3,Blue Balls,The Talmudic Tunnelers
 1,6.0,0,12,QS,The Talmudic Tunnelers
-1,6.0,1,10,QS,The Talmudic Tunnelers
+1,6.0,1,11,QS,The Talmudic Tunnelers
 1,6.0,2,10,QS,The Talmudic Tunnelers
 1,6.0,3,4,QS,The Talmudic Tunnelers
 1,6.0,4,2,QS Potential,The Talmudic Tunnelers
@@ -66,7 +67,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,3.1,4,1,Bad Start,Skubal Divers
 2,3.1,5,1,Bad Start,Skubal Divers
 2,3.2,4,1,Bad Start,Skubal Divers
-2,3.2,6+,1,Bad Start,Skubal Divers
+2,3.2,6+,2,Bad Start,Skubal Divers
 2,4.0,0,1,Bad Start,Skubal Divers
 2,4.0,2,1,Bad Start,Skubal Divers
 2,4.0,3,4,Bad Start,Skubal Divers
@@ -110,6 +111,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,7.0,1,7,QS,Skubal Divers
 2,7.0,2,3,QS,Skubal Divers
 2,7.0,3,1,QS,Skubal Divers
+2,7.0,4,1,QS Potential,Skubal Divers
 2,< 3,3,2,Bad Start,Skubal Divers
 2,< 3,5,1,Bad Start,Skubal Divers
 2,> 7,0,1,QS,Skubal Divers
@@ -143,7 +145,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.2,4,3,Bad Start,All That is Wright
 4,5.2,6+,1,Bad Start,All That is Wright
 4,6.0,0,11,QS,All That is Wright
-4,6.0,1,11,QS,All That is Wright
+4,6.0,1,12,QS,All That is Wright
 4,6.0,2,16,QS,All That is Wright
 4,6.0,3,7,QS,All That is Wright
 4,6.0,4,2,QS Potential,All That is Wright
@@ -206,7 +208,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,6.2,5,2,Bad Start,The Traveling Secretaries
 5,7.0,0,7,QS,The Traveling Secretaries
 5,7.0,1,6,QS,The Traveling Secretaries
-5,7.0,2,9,QS,The Traveling Secretaries
+5,7.0,2,10,QS,The Traveling Secretaries
 5,7.0,4,1,QS Potential,The Traveling Secretaries
 5,< 3,6+,3,Bad Start,The Traveling Secretaries
 5,> 7,0,2,QS,The Traveling Secretaries
@@ -289,7 +291,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.0,2,2,QS Potential,FVOS Re-imagined
 7,5.0,3,3,QS Potential,FVOS Re-imagined
 7,5.0,4,4,Bad Start,FVOS Re-imagined
-7,5.0,5,3,Bad Start,FVOS Re-imagined
+7,5.0,5,4,Bad Start,FVOS Re-imagined
 7,5.0,6+,2,Bad Start,FVOS Re-imagined
 7,5.1,0,1,QS Potential,FVOS Re-imagined
 7,5.1,1,2,QS Potential,FVOS Re-imagined
@@ -333,11 +335,11 @@ team_id,ip,earned_runs,n,start_type,team
 8,4.1,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.1,5,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.1,6+,2,Bad Start,Mt. Everest Taquito Farmers
-8,4.2,3,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.2,3,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,4,2,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,0,3,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,1,5,QS Potential,Mt. Everest Taquito Farmers
-8,5.0,2,4,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,2,5,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,3,2,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,4,3,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,5,2,Bad Start,Mt. Everest Taquito Farmers
@@ -401,7 +403,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.2,4,1,Bad Start,Shrimp Fryed Bryce
 9,5.2,5,1,Bad Start,Shrimp Fryed Bryce
 9,5.2,6+,1,Bad Start,Shrimp Fryed Bryce
-9,6.0,0,11,QS,Shrimp Fryed Bryce
+9,6.0,0,12,QS,Shrimp Fryed Bryce
 9,6.0,1,7,QS,Shrimp Fryed Bryce
 9,6.0,2,9,QS,Shrimp Fryed Bryce
 9,6.0,3,6,QS,Shrimp Fryed Bryce
@@ -410,6 +412,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.0,6+,2,Bad Start,Shrimp Fryed Bryce
 9,6.1,0,1,QS,Shrimp Fryed Bryce
 9,6.1,1,1,QS,Shrimp Fryed Bryce
+9,6.1,2,1,QS,Shrimp Fryed Bryce
 9,6.1,3,3,QS,Shrimp Fryed Bryce
 9,6.1,4,1,QS Potential,Shrimp Fryed Bryce
 9,6.2,0,2,QS,Shrimp Fryed Bryce
@@ -500,7 +503,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.0,3,2,QS Potential,Blasphemous Hot Takes
 12,5.0,4,3,Bad Start,Blasphemous Hot Takes
 12,5.0,5,1,Bad Start,Blasphemous Hot Takes
-12,5.0,6+,1,Bad Start,Blasphemous Hot Takes
+12,5.0,6+,2,Bad Start,Blasphemous Hot Takes
 12,5.1,0,1,QS Potential,Blasphemous Hot Takes
 12,5.1,2,3,QS Potential,Blasphemous Hot Takes
 12,5.1,3,1,QS Potential,Blasphemous Hot Takes
@@ -510,7 +513,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.2,2,5,Blue Balls,Blasphemous Hot Takes
 12,5.2,3,1,Blue Balls,Blasphemous Hot Takes
 12,5.2,4,4,Bad Start,Blasphemous Hot Takes
-12,6.0,0,7,QS,Blasphemous Hot Takes
+12,6.0,0,8,QS,Blasphemous Hot Takes
 12,6.0,1,9,QS,Blasphemous Hot Takes
 12,6.0,2,8,QS,Blasphemous Hot Takes
 12,6.0,3,7,QS,Blasphemous Hot Takes
@@ -548,7 +551,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.0,2,1,Bad Start,Ketel Bells
 13,4.0,3,2,Bad Start,Ketel Bells
 13,4.0,4,1,Bad Start,Ketel Bells
-13,4.0,5,1,Bad Start,Ketel Bells
+13,4.0,5,2,Bad Start,Ketel Bells
 13,4.0,6+,1,Bad Start,Ketel Bells
 13,4.1,3,4,Bad Start,Ketel Bells
 13,4.1,4,1,Bad Start,Ketel Bells
@@ -599,6 +602,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,> 7,0,2,QS,Ketel Bells
 13,> 7,1,3,QS,Ketel Bells
 13,CG,0,2,CG,Ketel Bells
+14,3.0,1,1,Bad Start,Elly De La Snooze
 14,3.0,6+,2,Bad Start,Elly De La Snooze
 14,3.2,5,1,Bad Start,Elly De La Snooze
 14,3.2,6+,1,Bad Start,Elly De La Snooze
@@ -608,7 +612,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,4.0,5,1,Bad Start,Elly De La Snooze
 14,4.0,6+,4,Bad Start,Elly De La Snooze
 14,4.1,1,2,Bad Start,Elly De La Snooze
-14,4.1,4,3,Bad Start,Elly De La Snooze
+14,4.1,4,4,Bad Start,Elly De La Snooze
 14,4.1,6+,2,Bad Start,Elly De La Snooze
 14,4.2,1,1,Bad Start,Elly De La Snooze
 14,4.2,2,2,Bad Start,Elly De La Snooze
@@ -627,7 +631,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.1,4,1,Bad Start,Elly De La Snooze
 14,5.1,6+,1,Bad Start,Elly De La Snooze
 14,5.2,0,2,Blue Balls,Elly De La Snooze
-14,5.2,1,1,Blue Balls,Elly De La Snooze
+14,5.2,1,2,Blue Balls,Elly De La Snooze
 14,5.2,2,6,Blue Balls,Elly De La Snooze
 14,5.2,3,2,Blue Balls,Elly De La Snooze
 14,5.2,4,2,Bad Start,Elly De La Snooze
