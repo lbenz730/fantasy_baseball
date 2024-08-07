@@ -28,7 +28,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.0,6+,2,Bad Start,The Talmudic Tunnelers
 1,5.1,2,3,QS Potential,The Talmudic Tunnelers
 1,5.1,3,3,QS Potential,The Talmudic Tunnelers
-1,5.1,4,1,Bad Start,The Talmudic Tunnelers
+1,5.1,4,2,Bad Start,The Talmudic Tunnelers
 1,5.1,5,1,Bad Start,The Talmudic Tunnelers
 1,5.1,6+,1,Bad Start,The Talmudic Tunnelers
 1,5.2,0,1,Blue Balls,The Talmudic Tunnelers
@@ -132,7 +132,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.0,1,1,QS Potential,All That is Wright
 4,5.0,2,5,QS Potential,All That is Wright
 4,5.0,3,3,QS Potential,All That is Wright
-4,5.0,4,4,Bad Start,All That is Wright
+4,5.0,4,5,Bad Start,All That is Wright
 4,5.0,5,2,Bad Start,All That is Wright
 4,5.0,6+,1,Bad Start,All That is Wright
 4,5.1,0,1,QS Potential,All That is Wright
@@ -148,7 +148,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,6.0,0,11,QS,All That is Wright
 4,6.0,1,12,QS,All That is Wright
 4,6.0,2,16,QS,All That is Wright
-4,6.0,3,7,QS,All That is Wright
+4,6.0,3,8,QS,All That is Wright
 4,6.0,4,2,QS Potential,All That is Wright
 4,6.0,5,1,Bad Start,All That is Wright
 4,6.1,0,1,QS,All That is Wright
@@ -161,7 +161,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,6.2,4,1,QS Potential,All That is Wright
 4,7.0,0,13,QS,All That is Wright
 4,7.0,1,5,QS,All That is Wright
-4,7.0,2,4,QS,All That is Wright
+4,7.0,2,5,QS,All That is Wright
 4,7.0,3,3,QS,All That is Wright
 4,< 3,0,1,Bad Start,All That is Wright
 4,< 3,1,1,Bad Start,All That is Wright
@@ -254,8 +254,8 @@ team_id,ip,earned_runs,n,start_type,team
 6,5.2,4,1,Bad Start,The Novaks
 6,5.2,6+,3,Bad Start,The Novaks
 6,6.0,0,8,QS,The Novaks
-6,6.0,1,12,QS,The Novaks
-6,6.0,2,7,QS,The Novaks
+6,6.0,1,13,QS,The Novaks
+6,6.0,2,8,QS,The Novaks
 6,6.0,3,5,QS,The Novaks
 6,6.0,5,4,Bad Start,The Novaks
 6,6.1,0,2,QS,The Novaks
@@ -315,13 +315,13 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.2,0,1,QS,FVOS Re-imagined
 7,7.0,0,6,QS,FVOS Re-imagined
 7,7.0,1,9,QS,FVOS Re-imagined
-7,7.0,2,8,QS,FVOS Re-imagined
+7,7.0,2,9,QS,FVOS Re-imagined
 7,7.0,3,1,QS,FVOS Re-imagined
 7,7.0,4,1,QS Potential,FVOS Re-imagined
 7,7.0,5,1,Bad Start,FVOS Re-imagined
 7,< 3,3,1,Bad Start,FVOS Re-imagined
 7,> 7,0,2,QS,FVOS Re-imagined
-7,> 7,2,4,QS,FVOS Re-imagined
+7,> 7,2,5,QS,FVOS Re-imagined
 7,CG,0,1,CG,FVOS Re-imagined
 7,CG,1,2,CG,FVOS Re-imagined
 7,CG,2,1,CG,FVOS Re-imagined
@@ -431,6 +431,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,< 3,0,2,Bad Start,Shrimp Fryed Bryce
 9,< 3,4,1,Bad Start,Shrimp Fryed Bryce
 9,< 3,5,2,Bad Start,Shrimp Fryed Bryce
+9,< 3,6+,1,Bad Start,Shrimp Fryed Bryce
 9,> 7,0,4,QS,Shrimp Fryed Bryce
 9,> 7,1,1,QS,Shrimp Fryed Bryce
 9,> 7,2,1,QS,Shrimp Fryed Bryce
@@ -562,9 +563,9 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.1,5,1,Bad Start,Ketel Bells
 13,4.1,6+,2,Bad Start,Ketel Bells
 13,4.2,0,1,Bad Start,Ketel Bells
-13,4.2,1,1,Bad Start,Ketel Bells
+13,4.2,1,2,Bad Start,Ketel Bells
 13,4.2,2,1,Bad Start,Ketel Bells
-13,4.2,3,1,Bad Start,Ketel Bells
+13,4.2,3,2,Bad Start,Ketel Bells
 13,4.2,4,3,Bad Start,Ketel Bells
 13,4.2,5,2,Bad Start,Ketel Bells
 13,5.0,0,1,QS Potential,Ketel Bells
@@ -600,7 +601,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,7.0,2,4,QS,Ketel Bells
 13,7.0,3,5,QS,Ketel Bells
 13,7.0,5,1,Bad Start,Ketel Bells
-13,< 3,0,1,Bad Start,Ketel Bells
+13,< 3,0,2,Bad Start,Ketel Bells
 13,< 3,4,1,Bad Start,Ketel Bells
 13,< 3,6+,3,Bad Start,Ketel Bells
 13,> 7,0,2,QS,Ketel Bells
@@ -626,7 +627,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.0,1,5,QS Potential,Elly De La Snooze
 14,5.0,2,7,QS Potential,Elly De La Snooze
 14,5.0,3,3,QS Potential,Elly De La Snooze
-14,5.0,4,3,Bad Start,Elly De La Snooze
+14,5.0,4,4,Bad Start,Elly De La Snooze
 14,5.0,5,1,Bad Start,Elly De La Snooze
 14,5.0,6+,5,Bad Start,Elly De La Snooze
 14,5.1,0,1,QS Potential,Elly De La Snooze
