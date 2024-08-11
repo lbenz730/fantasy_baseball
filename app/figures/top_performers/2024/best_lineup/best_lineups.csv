@@ -395,25 +395,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Bryan Abreu,41208,4,17.5,5.833333333333333,18
 15,RP,Griffin Jax,42604,7,17,5.666666666666667,18
 15,RP,Luke Weaver,33770,14,17,4.25,18
-0,C,William Contreras,39895,14,28.5,7.125,19
-1,1B,Vladimir Guerrero Jr.,35002,2,21.5,5.375,19
-2,2B,Jose Altuve,31662,11,19,4.75,19
-3,3B,Elly De La Cruz,4917694,14,31.5,6.3,19
-4,SS,Jackson Merrill,4872691,1,38,9.5,19
-5,OF,Kyle Schwarber,33712,13,37,7.4,19
-5,OF,Jackson Chourio,4917869,5,27,6.75,19
-5,OF,TJ Friedl,36020,13,27,5.4,19
-5,OF,Michael Conforto,33711,6,24.5,4.9,19
-5,OF,Yordan Alvarez,36018,13,24,6,19
-6,2B/SS,Willy Adames,33675,1,32.5,8.125,19
-7,1B/3B,Jose Ramirez,32801,5,21.5,4.3,19
-12,UTIL,Zach Neto,4666100,8,25,6.25,19
+0,C,William Contreras,39895,14,28,5.6,19
+1,1B,Jake Burger,39882,6,27.5,4.583333333333333,19
+2,2B,Ketel Marte,32512,5,24,4,19
+3,3B,Elly De La Cruz,4917694,14,30,5,19
+4,SS,Jackson Merrill,4872691,1,45.5,9.1,19
+5,OF,Kyle Schwarber,33712,13,39.5,6.583333333333333,19
+5,OF,Yordan Alvarez,36018,13,38,7.6,19
+5,OF,Teoscar Hernandez,33377,4,32.5,6.5,19
+5,OF,James Wood,4918256,12,30.5,5.083333333333333,19
+5,OF,TJ Friedl,36020,13,27.5,4.583333333333333,19
+6,2B/SS,Zach Neto,4666100,8,33.5,6.7,19
+7,1B/3B,Alex Bregman,34886,4,27,5.4,19
+12,UTIL,Willy Adames,33675,1,31,6.2,19
+14,SP,Logan Webb,41216,5,40,20,19
+14,SP,Tobias Myers,39716,11,33,33,19
+14,SP,Spencer Arrighetti,4726080,2,32.5,32.5,19
 14,SP,Framber Valdez,36581,7,29.5,29.5,19
-14,SP,Sean Manaea,33244,9,29.5,29.5,19
 14,SP,Shota Imanaga,5134630,4,29.5,29.5,19
 14,SP,Bailey Ober,3107919,5,29,29,19
-14,SP,Ryne Nelson,4916269,1,28.5,28.5,19
-14,SP,Zach Eflin,32804,9,28.5,28.5,19
-15,RP,Josh Hader,32760,5,15,5,19
-15,RP,Bryan Abreu,41208,4,14.5,4.833333333333333,19
-15,RP,Ryan Helsley,39909,5,13.5,4.5,19
+15,RP,Josh Hader,32760,5,21,5.25,19
+15,RP,Mason Miller,4730225,11,14.5,7.25,19
+15,RP,Bryan Abreu,41208,4,13.5,3.375,19
