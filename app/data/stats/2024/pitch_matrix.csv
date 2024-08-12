@@ -76,7 +76,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.0,6+,1,Bad Start,Skubal Divers
 2,4.1,0,1,Bad Start,Skubal Divers
 2,4.1,3,1,Bad Start,Skubal Divers
-2,4.1,5,1,Bad Start,Skubal Divers
+2,4.1,5,2,Bad Start,Skubal Divers
 2,4.1,6+,1,Bad Start,Skubal Divers
 2,4.2,1,1,Bad Start,Skubal Divers
 2,4.2,4,1,Bad Start,Skubal Divers
@@ -110,7 +110,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,6.2,3,2,QS,Skubal Divers
 2,7.0,0,9,QS,Skubal Divers
 2,7.0,1,7,QS,Skubal Divers
-2,7.0,2,5,QS,Skubal Divers
+2,7.0,2,6,QS,Skubal Divers
 2,7.0,3,1,QS,Skubal Divers
 2,7.0,4,1,QS Potential,Skubal Divers
 2,< 3,3,2,Bad Start,Skubal Divers
@@ -131,7 +131,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,4.2,1,1,Bad Start,All That is Wright
 4,4.2,5,4,Bad Start,All That is Wright
 4,5.0,0,6,QS Potential,All That is Wright
-4,5.0,1,1,QS Potential,All That is Wright
+4,5.0,1,2,QS Potential,All That is Wright
 4,5.0,2,5,QS Potential,All That is Wright
 4,5.0,3,3,QS Potential,All That is Wright
 4,5.0,4,5,Bad Start,All That is Wright
@@ -148,7 +148,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.2,4,3,Bad Start,All That is Wright
 4,5.2,6+,1,Bad Start,All That is Wright
 4,6.0,0,11,QS,All That is Wright
-4,6.0,1,12,QS,All That is Wright
+4,6.0,1,13,QS,All That is Wright
 4,6.0,2,16,QS,All That is Wright
 4,6.0,3,8,QS,All That is Wright
 4,6.0,4,2,QS Potential,All That is Wright
@@ -177,7 +177,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,4.0,3,1,Bad Start,The Traveling Secretaries
 5,4.0,4,2,Bad Start,The Traveling Secretaries
 5,4.0,5,2,Bad Start,The Traveling Secretaries
-5,4.0,6+,2,Bad Start,The Traveling Secretaries
+5,4.0,6+,3,Bad Start,The Traveling Secretaries
 5,4.1,3,2,Bad Start,The Traveling Secretaries
 5,4.1,4,1,Bad Start,The Traveling Secretaries
 5,4.1,5,1,Bad Start,The Traveling Secretaries
@@ -239,6 +239,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,4.2,2,2,Bad Start,The Novaks
 6,4.2,3,1,Bad Start,The Novaks
 6,4.2,5,2,Bad Start,The Novaks
+6,4.2,6+,1,Bad Start,The Novaks
 6,5.0,0,2,QS Potential,The Novaks
 6,5.0,1,7,QS Potential,The Novaks
 6,5.0,2,6,QS Potential,The Novaks
@@ -248,7 +249,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,5.0,6+,1,Bad Start,The Novaks
 6,5.1,1,2,QS Potential,The Novaks
 6,5.1,2,3,QS Potential,The Novaks
-6,5.1,3,2,QS Potential,The Novaks
+6,5.1,3,3,QS Potential,The Novaks
 6,5.1,6+,1,Bad Start,The Novaks
 6,5.2,1,2,Blue Balls,The Novaks
 6,5.2,2,1,Blue Balls,The Novaks
@@ -352,7 +353,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.0,6+,2,Bad Start,Mt. Everest Taquito Farmers
 8,5.1,0,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,1,2,QS Potential,Mt. Everest Taquito Farmers
-8,5.1,2,1,QS Potential,Mt. Everest Taquito Farmers
+8,5.1,2,2,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,3,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,4,3,Bad Start,Mt. Everest Taquito Farmers
 8,5.1,5,1,Bad Start,Mt. Everest Taquito Farmers
@@ -455,12 +456,12 @@ team_id,ip,earned_runs,n,start_type,team
 11,4.1,6+,1,Bad Start,The West Bank Occupiers
 11,4.2,1,2,Bad Start,The West Bank Occupiers
 11,4.2,2,1,Bad Start,The West Bank Occupiers
-11,4.2,3,1,Bad Start,The West Bank Occupiers
+11,4.2,3,2,Bad Start,The West Bank Occupiers
 11,4.2,4,2,Bad Start,The West Bank Occupiers
 11,4.2,5,2,Bad Start,The West Bank Occupiers
 11,4.2,6+,1,Bad Start,The West Bank Occupiers
 11,5.0,0,4,QS Potential,The West Bank Occupiers
-11,5.0,1,10,QS Potential,The West Bank Occupiers
+11,5.0,1,11,QS Potential,The West Bank Occupiers
 11,5.0,2,6,QS Potential,The West Bank Occupiers
 11,5.0,3,5,QS Potential,The West Bank Occupiers
 11,5.0,4,8,Bad Start,The West Bank Occupiers
@@ -543,7 +544,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,7.0,0,12,QS,Blasphemous Hot Takes
 12,7.0,1,8,QS,Blasphemous Hot Takes
 12,7.0,2,9,QS,Blasphemous Hot Takes
-12,7.0,3,2,QS,Blasphemous Hot Takes
+12,7.0,3,3,QS,Blasphemous Hot Takes
 12,7.0,4,1,QS Potential,Blasphemous Hot Takes
 12,7.0,5,1,Bad Start,Blasphemous Hot Takes
 12,< 3,5,1,Bad Start,Blasphemous Hot Takes
@@ -578,9 +579,9 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.2,6+,1,Bad Start,Ketel Bells
 13,5.0,0,1,QS Potential,Ketel Bells
 13,5.0,1,4,QS Potential,Ketel Bells
-13,5.0,2,4,QS Potential,Ketel Bells
+13,5.0,2,5,QS Potential,Ketel Bells
 13,5.0,3,8,QS Potential,Ketel Bells
-13,5.0,4,4,Bad Start,Ketel Bells
+13,5.0,4,5,Bad Start,Ketel Bells
 13,5.0,5,2,Bad Start,Ketel Bells
 13,5.0,6+,1,Bad Start,Ketel Bells
 13,5.1,0,1,QS Potential,Ketel Bells
