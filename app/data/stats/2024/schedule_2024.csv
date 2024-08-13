@@ -113,12 +113,12 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 19,112,9,333.5,181.5,152,2,331,171,160,Shrimp Fryed Bryce,Skubal Divers
 19,113,5,366,233,133,1,363,278.5,84.5,The Traveling Secretaries,The Talmudic Tunnelers
 19,114,6,381.5,255,126.5,12,328.5,210,118.5,The Novaks,Blasphemous Hot Takes
-20,115,4,NA,NA,NA,11,NA,NA,NA,All That is Wright,The West Bank Occupiers
-20,116,8,NA,NA,NA,14,NA,NA,NA,Mt. Everest Taquito Farmers,Elly De La Snooze
-20,117,2,NA,NA,NA,13,NA,NA,NA,Skubal Divers,Ketel Bells
-20,118,1,NA,NA,NA,7,NA,NA,NA,The Talmudic Tunnelers,FVOS Re-imagined
-20,119,12,NA,NA,NA,9,NA,NA,NA,Blasphemous Hot Takes,Shrimp Fryed Bryce
-20,120,6,NA,NA,NA,5,NA,NA,NA,The Novaks,The Traveling Secretaries
+20,115,4,31.5,29.5,2,11,40.5,40.5,NA,All That is Wright,The West Bank Occupiers
+20,116,8,43.5,29.5,14,14,43.5,17,26.5,Mt. Everest Taquito Farmers,Elly De La Snooze
+20,117,2,5,5,NA,13,62.5,27.5,35,Skubal Divers,Ketel Bells
+20,118,1,50.5,19,31.5,7,66.5,27,39.5,The Talmudic Tunnelers,FVOS Re-imagined
+20,119,12,51.5,6.5,45,9,31,7.5,23.5,Blasphemous Hot Takes,Shrimp Fryed Bryce
+20,120,6,31.5,19.5,12,5,14,15,-1,The Novaks,The Traveling Secretaries
 21,121,8,NA,NA,NA,4,NA,NA,NA,Mt. Everest Taquito Farmers,All That is Wright
 21,122,11,NA,NA,NA,2,NA,NA,NA,The West Bank Occupiers,Skubal Divers
 21,123,14,NA,NA,NA,1,NA,NA,NA,Elly De La Snooze,The Talmudic Tunnelers
