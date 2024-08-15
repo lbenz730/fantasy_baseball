@@ -6,7 +6,7 @@ The Traveling Secretaries,0.3333333333333333,0.08333333333333333,0.0833333333333
 The Novaks,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
 FVOS Re-imagined,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
 Mt. Everest Taquito Farmers,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
-Shrimp Fryed Bryce,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
+Shrimp Fried Bryce,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
 The West Bank Occupiers,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
 Blasphemous Hot Takes,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
 Ketel Bells,0.3333333333333333,0.08333333333333333,0.08333333333333333,0,NA,NA
@@ -18,7 +18,7 @@ FVOS Re-imagined,0.3326,0.0669,0.0819,1,5918,10.7
 Ketel Bells,0.1756,0.1685,0.0418,1,5858,9.5
 Mt. Everest Taquito Farmers,0.3177,0.0789,0.0833,1,6092,10.3
 Skubal Divers,0.2276,0.116,0.0536,1,5951,9.9
-Shrimp Fryed Bryce,0.2418,0.1128,0.0598,1,5983,9.9
+Shrimp Fried Bryce,0.2418,0.1128,0.0598,1,5983,9.9
 The Novaks,0.5177,0.0257,0.1389,1,6161,11.5
 The Talmudic Tunnelers,0.2838,0.0927,0.0715,1,6035,10.2
 The Traveling Secretaries,0.1869,0.1585,0.0423,1,5865,9.5
@@ -30,7 +30,7 @@ FVOS Re-imagined,0.2139,0.1081,0.045,2,5972,10
 Ketel Bells,0.226,0.1004,0.0521,2,6011,10
 Mt. Everest Taquito Farmers,0.2316,0.0968,0.0594,2,6190,9.8
 Skubal Divers,0.2868,0.07,0.0672,2,6090,10.3
-Shrimp Fryed Bryce,0.2941,0.0668,0.0709,2,6103,10.4
+Shrimp Fried Bryce,0.2941,0.0668,0.0709,2,6103,10.4
 The Novaks,0.4656,0.0285,0.129,2,6304,11.2
 The Talmudic Tunnelers,0.4007,0.0419,0.1029,2,6229,10.9
 The Traveling Secretaries,0.0691,0.3231,0.0139,2,5809,8.4
@@ -42,7 +42,7 @@ FVOS Re-imagined,0.1466,0.1508,0.0339,3,6219,9.4
 Ketel Bells,0.3162,0.0544,0.0747,3,6316,10.7
 Mt. Everest Taquito Farmers,0.1495,0.1564,0.0349,3,6431,9.1
 Skubal Divers,0.4261,0.0348,0.1034,3,6442,11.1
-Shrimp Fryed Bryce,0.1402,0.1619,0.0304,3,6188,9.4
+Shrimp Fried Bryce,0.1402,0.1619,0.0304,3,6188,9.4
 The Novaks,0.2997,0.0635,0.076,3,6468,10.3
 The Talmudic Tunnelers,0.436,0.031,0.1057,3,6447,11.2
 The Traveling Secretaries,0.1325,0.1761,0.0265,3,6152,9.4
@@ -54,7 +54,7 @@ FVOS Re-imagined,0.1218,0.1603,0.0272,4,6409,9.1
 Ketel Bells,0.4227,0.0269,0.103,4,6498,11.3
 Mt. Everest Taquito Farmers,0.0824,0.208,0.0204,4,6505,8.5
 Skubal Divers,0.5249,0.0147,0.1334,4,6606,11.7
-Shrimp Fryed Bryce,0.0631,0.2488,0.0131,4,6229,8.6
+Shrimp Fried Bryce,0.0631,0.2488,0.0131,4,6229,8.6
 The Novaks,0.3523,0.0373,0.0792,4,6584,10.7
 The Talmudic Tunnelers,0.292,0.0455,0.0728,4,6530,10.5
 The Traveling Secretaries,0.2139,0.0923,0.0469,4,6362,10.1
@@ -66,7 +66,7 @@ FVOS Re-imagined,0.0712,0.1928,0.0149,5,6498,8.6
 Ketel Bells,0.5222,0.0092,0.1249,5,6627,11.9
 Mt. Everest Taquito Farmers,0.0309,0.3095,0.0077,5,6519,7.8
 Skubal Divers,0.5957,0.0054,0.1476,5,6707,12.2
-Shrimp Fryed Bryce,0.0716,0.1726,0.0134,5,6312,9
+Shrimp Fried Bryce,0.0716,0.1726,0.0134,5,6312,9
 The Novaks,0.2518,0.0455,0.0609,5,6673,10.2
 The Talmudic Tunnelers,0.3955,0.0199,0.0931,5,6669,11.2
 The Traveling Secretaries,0.2725,0.0469,0.0609,5,6483,10.7
@@ -78,7 +78,7 @@ FVOS Re-imagined,0.0331,0.1752,0.0066,6,6447,8.2
 Ketel Bells,0.6369,8e-4,0.1532,6,6708,12.6
 Mt. Everest Taquito Farmers,0.0073,0.4269,0.0019,6,6324,7
 Skubal Divers,0.7119,4e-4,0.1763,6,6774,12.9
-Shrimp Fryed Bryce,0.0554,0.1089,0.0115,6,6393,8.9
+Shrimp Fried Bryce,0.0554,0.1089,0.0115,6,6393,8.9
 The Novaks,0.1164,0.0562,0.0296,6,6566,9.4
 The Talmudic Tunnelers,0.1984,0.0289,0.0449,6,6520,10.4
 The Traveling Secretaries,0.3243,0.0143,0.0676,6,6476,11.2
@@ -90,7 +90,7 @@ FVOS Re-imagined,0.0068,0.3085,0.0016,7,6281,7.3
 Ketel Bells,0.533,8e-4,0.1282,7,6718,12.1
 Mt. Everest Taquito Farmers,0.0036,0.4294,6e-4,7,6351,6.5
 Skubal Divers,0.8628,0,0.2364,7,6946,13.8
-Shrimp Fryed Bryce,0.0946,0.0428,0.0194,7,6452,9.6
+Shrimp Fried Bryce,0.0946,0.0428,0.0194,7,6452,9.6
 The Novaks,0.0513,0.0725,0.0106,7,6483,8.8
 The Talmudic Tunnelers,0.1193,0.0326,0.0245,7,6483,9.9
 The Traveling Secretaries,0.4363,0.0031,0.0908,7,6533,11.9
@@ -102,7 +102,7 @@ FVOS Re-imagined,0.0012,0.4421,0,8,6198,6.6
 Ketel Bells,0.415,5e-4,0.0948,8,6722,11.6
 Mt. Everest Taquito Farmers,0.0027,0.3124,7e-4,8,6317,6.9
 Skubal Divers,0.6788,1e-4,0.1693,8,6786,12.9
-Shrimp Fryed Bryce,0.1142,0.0177,0.0243,8,6445,10.1
+Shrimp Fried Bryce,0.1142,0.0177,0.0243,8,6445,10.1
 The Novaks,0.0358,0.0666,0.0091,8,6564,8.6
 The Talmudic Tunnelers,0.0533,0.0458,0.0107,8,6435,9.3
 The Traveling Secretaries,0.5161,6.000000000000001e-4,0.1148,8,6557,12.4
@@ -114,7 +114,7 @@ FVOS Re-imagined,0.0011,0.3763,0,9,6227,7
 Ketel Bells,0.5278,4e-4,0.1151,9,6802,12.2
 Mt. Everest Taquito Farmers,0.0052,0.1964,0.0011,9,6437,7.5
 Skubal Divers,0.5344,2e-4,0.1259,9,6787,12.3
-Shrimp Fryed Bryce,0.0712,0.0264,0.0129,9,6513,9.7
+Shrimp Fried Bryce,0.0712,0.0264,0.0129,9,6513,9.7
 The Novaks,0.0126,0.106,0.0027,9,6602,8.1
 The Talmudic Tunnelers,0.0163,0.1,0.0026,9,6404,8.5
 The Traveling Secretaries,0.6413,0,0.1367,9,6668,13
@@ -126,7 +126,7 @@ FVOS Re-imagined,5e-4,0.3737,1e-4,10,6289,6.8
 Ketel Bells,0.6637,1e-4,0.1634,10,6822,12.9
 Mt. Everest Taquito Farmers,0.0011,0.2619,0,10,6388,7.1
 Skubal Divers,0.6432,2e-4,0.1582,10,6796,12.9
-Shrimp Fryed Bryce,0.0963,0.0099,0.0205,10,6516,10.3
+Shrimp Fried Bryce,0.0963,0.0099,0.0205,10,6516,10.3
 The Novaks,0.0274,0.0395,0.0066,10,6684,8.7
 The Talmudic Tunnelers,0.0032,0.1791,6e-4,10,6305,7.8
 The Traveling Secretaries,0.4952,3.0000000000000003e-4,0.1051,10,6628,12.5
@@ -138,7 +138,7 @@ FVOS Re-imagined,6.000000000000001e-4,0.2467,0,11,6318,7.3
 Ketel Bells,0.8275,0,0.2116,11,6936,13.6
 Mt. Everest Taquito Farmers,0.0027,0.1313,3e-4,11,6491,7.7
 Skubal Divers,0.5231,1e-4,0.1214,11,6801,12.4
-Shrimp Fryed Bryce,0.0275,0.0259,0.0052,11,6368,9.4
+Shrimp Fried Bryce,0.0275,0.0259,0.0052,11,6368,9.4
 The Novaks,0.032,0.027,0.0068,11,6665,9.1
 The Talmudic Tunnelers,3.0000000000000003e-4,0.3269,1e-4,11,6224,7.1
 The Traveling Secretaries,0.398,3.0000000000000003e-4,0.0833,11,6669,12.1
@@ -150,7 +150,7 @@ FVOS Re-imagined,0.0019,0.1585,2e-4,12,6373,8
 Ketel Bells,0.7351,0,0.1832,12,6943,13
 Mt. Everest Taquito Farmers,0.0072,0.0782,0.0014,12,6534,8.3
 Skubal Divers,0.6236,0,0.1419,12,6769,12.9
-Shrimp Fryed Bryce,0.0085,0.0784,0.0015,12,6320,8.7
+Shrimp Fried Bryce,0.0085,0.0784,0.0015,12,6320,8.7
 The Novaks,0.0139,0.0428,0.0026,12,6709,8.6
 The Talmudic Tunnelers,0,0.4518,0,12,6270,6.8
 The Traveling Secretaries,0.5331,0,0.1088,12,6694,12.6
@@ -161,7 +161,7 @@ Elly De La Snooze,1e-4,0.2745,0,13,6264,7.3
 FVOS Re-imagined,0.0087,0.0388,0.0017,13,6507,8.7
 Ketel Bells,0.81,0,0.2094,13,6932,13.3
 Mt. Everest Taquito Farmers,0.0177,0.0188,0.0031,13,6659,8.9
-Shrimp Fryed Bryce,0.0021,0.0923,3e-4,13,6330,8.3
+Shrimp Fried Bryce,0.0021,0.0923,3e-4,13,6330,8.3
 Skubal Divers,0.4375,2e-4,0.0948,13,6686,12.2
 The Novaks,0.036,0.0113,0.0078,13,6812,9.2
 The Talmudic Tunnelers,0,0.5638,0,13,6244,6.3
@@ -173,7 +173,7 @@ Elly De La Snooze,0,0.4623,0,14,6230,6.8
 FVOS Re-imagined,0.0113,0.0167,0.0017,14,6514,9.3
 Ketel Bells,0.931,0,0.2524,14,7071,14
 Mt. Everest Taquito Farmers,0.0055,0.0356,0.0013,14,6609,8.4
-Shrimp Fryed Bryce,0,0.1596,0,14,6304,7.6
+Shrimp Fried Bryce,0,0.1596,0,14,6304,7.6
 Skubal Divers,0.2482,2e-4,0.0543,14,6659,11.6
 The Novaks,0.0526,0.0022,0.0137,14,6820,9.7
 The Talmudic Tunnelers,0,0.3233,0,14,6327,6.9
@@ -185,7 +185,7 @@ Elly De La Snooze,1e-4,0.323,0,15,6172,7.3
 FVOS Re-imagined,0.0454,0.0026,0.0091,15,6577,10
 Ketel Bells,0.9832,0,0.2794,15,7117,14.4
 Mt. Everest Taquito Farmers,0.0133,0.0115,0.0024,15,6644,9
-Shrimp Fryed Bryce,1e-4,0.1899,0,15,6303,7.3
+Shrimp Fried Bryce,1e-4,0.1899,0,15,6303,7.3
 Skubal Divers,0.1492,3e-4,0.029,15,6553,10.9
 The Novaks,0.1221,2e-4,0.0277,15,6829,10.1
 The Talmudic Tunnelers,0,0.4725,0,15,6250,6.5
@@ -197,7 +197,7 @@ Elly De La Snooze,0,0.0948,0,16,6450,8
 FVOS Re-imagined,0.1016,1e-4,0.0186,16,6785,10.5
 Ketel Bells,0.9861,0,0.2826,16,7311,13.9
 Mt. Everest Taquito Farmers,0.0305,6.000000000000001e-4,0.0059,16,6853,9.5
-Shrimp Fryed Bryce,0,0.2015,0,16,6499,6.9
+Shrimp Fried Bryce,0,0.2015,0,16,6499,6.9
 Skubal Divers,0.0786,1e-4,0.0138,16,6722,10.4
 The Novaks,0.2673,0,0.0602,16,7038,10.7
 The Talmudic Tunnelers,0,0.7029,0,16,6384,6
@@ -209,7 +209,7 @@ Elly De La Snooze,0,0.202,0,17,6472,7.6
 FVOS Re-imagined,0.153,0,0.0254,17,6805,11.1
 Ketel Bells,0.9974,0,0.2846,17,7347,14.3
 Mt. Everest Taquito Farmers,0.0012,0.0027,4e-4,17,6890,9
-Shrimp Fryed Bryce,0,0.5731,0,17,6477,6.5
+Shrimp Fried Bryce,0,0.5731,0,17,6477,6.5
 Skubal Divers,0.014,4e-4,0.0032,17,6737,9.8
 The Novaks,0.3536,0,0.0859,17,7123,11.2
 The Talmudic Tunnelers,0,0.2218,0,17,6448,7.6
@@ -221,7 +221,7 @@ Elly De La Snooze,0,0.4215,0,18,6498,7.2
 FVOS Re-imagined,0.416,0,0.0758,18,6842,11.5
 Ketel Bells,1,0,0.3015,18,7383,14.8
 Mt. Everest Taquito Farmers,0,0.0156,0,18,6939,8.6
-Shrimp Fryed Bryce,0,0.4451,0,18,6500,7.1
+Shrimp Fried Bryce,0,0.4451,0,18,6500,7.1
 Skubal Divers,0.0445,0,0.0075,18,6709,10.4
 The Novaks,0.2136,0,0.0512,18,7041,10.5
 The Talmudic Tunnelers,0,0.1175,0,18,6512,8.3
@@ -233,21 +233,21 @@ Elly De La Snooze,0,0.731,0,19,6477,6.8
 FVOS Re-imagined,0.5936,0,0.1104,19,6868,12
 Ketel Bells,1,0,0.3142,19,7405,15.2
 Mt. Everest Taquito Farmers,0,0.0227,0,19,6952,8.1
-Shrimp Fryed Bryce,0,0.1447,0,19,6526,7.7
+Shrimp Fried Bryce,0,0.1447,0,19,6526,7.7
 Skubal Divers,0,0,0,19,6723,9.8
 The Novaks,0.3691,0,0.0831,19,7094,11.1
 The Talmudic Tunnelers,0,0.1016,0,19,6568,8
 The Traveling Secretaries,1,0,0.2465,19,7150,14.2
 The West Bank Occupiers,0,0,0,19,6722,8.9
-All That is Wright,1,0,0.2417,20,7128,14
-Blasphemous Hot Takes,0.0098,0,0.0023,20,7197,10.4
-Elly De La Snooze,0,0.6417,0,20,6463,6.9
-FVOS Re-imagined,0.6446,0,0.1154,20,6863,12.3
-Ketel Bells,1,0,0.324,20,7391,15.3
-Mt. Everest Taquito Farmers,0,0.0044,0,20,6928,8
-Shrimp Fryed Bryce,0,0.1808,0,20,6505,7.4
+All That is Wright,1,0,0.2474,20,7129,14
+Blasphemous Hot Takes,0.0104,0,0.0025,20,7197,10.4
+Elly De La Snooze,0,0.6469,0,20,6463,6.9
+FVOS Re-imagined,0.6433,0,0.1116,20,6863,12.3
+Ketel Bells,1,0,0.3173,20,7391,15.3
+Mt. Everest Taquito Farmers,0,0.0029,0,20,6928,8
+Shrimp Fried Bryce,0,0.1799,0,20,6504,7.4
 Skubal Divers,0,0,0,20,6704,9.8
-The Novaks,0.3456,0,0.0757,20,7078,11.2
-The Talmudic Tunnelers,0,0.1731,0,20,6536,7.6
-The Traveling Secretaries,1,0,0.2409,20,7124,14.1
-The West Bank Occupiers,0,0,0,20,6706,9.1
+The Novaks,0.3463,0,0.0746,20,7077,11.2
+The Talmudic Tunnelers,0,0.1703,0,20,6536,7.6
+The Traveling Secretaries,1,0,0.2466,20,7122,14.1
+The West Bank Occupiers,0,0,0,20,6707,9.1
