@@ -108,17 +108,17 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 18,107,2,297,183.5,113.5,6,260.5,171.5,89,Skubal Divers,The Novaks
 18,108,1,367,184.5,182.5,12,302.5,185.5,117,The Talmudic Tunnelers,Blasphemous Hot Takes
 19,109,14,291.5,182.5,109,4,359,221.5,137.5,Elly De La Snooze,All That is Wright
-19,110,13,362.5,262,100.5,11,305,196.5,108.5,Ketel Bells,The West Bank Occupiers
+19,110,13,362.5,262,100.5,11,304,195.5,108.5,Ketel Bells,The West Bank Occupiers
 19,111,7,345,198.5,146.5,8,338,220.5,117.5,FVOS Re-imagined,Mt. Everest Taquito Farmers
-19,112,9,333.5,181.5,152,2,331,171,160,Shrimp Fried Bryce,Skubal Divers
-19,113,5,366,233,133,1,363,278.5,84.5,The Traveling Secretaries,The Talmudic Tunnelers
+19,112,9,334.5,182.5,152,2,331,171,160,Shrimp Fried Bryce,Skubal Divers
+19,113,5,366,233,133,1,362,277.5,84.5,The Traveling Secretaries,The Talmudic Tunnelers
 19,114,6,381.5,255,126.5,12,328.5,210,118.5,The Novaks,Blasphemous Hot Takes
-20,115,4,83,60.5,22.5,11,83,58,25,All That is Wright,The West Bank Occupiers
-20,116,8,72,47,25,14,117.5,41.5,76,Mt. Everest Taquito Farmers,Elly De La Snooze
-20,117,2,81,17.5,63.5,13,129,46.5,82.5,Skubal Divers,Ketel Bells
-20,118,1,81,52.5,28.5,7,127.5,66.5,61,The Talmudic Tunnelers,FVOS Re-imagined
-20,119,12,123.5,46,77.5,9,57,33.5,23.5,Blasphemous Hot Takes,Shrimp Fried Bryce
-20,120,6,77,73.5,3.5,5,35,31,4,The Novaks,The Traveling Secretaries
+20,115,4,145,94,51,11,133.5,99,34.5,All That is Wright,The West Bank Occupiers
+20,116,8,117,67,50,14,138,62,76,Mt. Everest Taquito Farmers,Elly De La Snooze
+20,117,2,150,56.5,93.5,13,175,100,75,Skubal Divers,Ketel Bells
+20,118,1,135.5,92.5,43,7,193.5,106.5,87,The Talmudic Tunnelers,FVOS Re-imagined
+20,119,12,185,87.5,97.5,9,101.5,74,27.5,Blasphemous Hot Takes,Shrimp Fried Bryce
+20,120,6,111,107,4,5,87,74,13,The Novaks,The Traveling Secretaries
 21,121,8,NA,NA,NA,4,NA,NA,NA,Mt. Everest Taquito Farmers,All That is Wright
 21,122,11,NA,NA,NA,2,NA,NA,NA,The West Bank Occupiers,Skubal Divers
 21,123,14,NA,NA,NA,1,NA,NA,NA,Elly De La Snooze,The Talmudic Tunnelers
