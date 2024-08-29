@@ -449,7 +449,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 5,OF,Jarren Duran,41610,6,27.5,4.583333333333333,21
 5,OF,Lourdes Gurriel Jr.,36040,7,27,5.4,21
 5,OF,Seiya Suzuki,4142424,9,27,4.5,21
-6,2B/SS,Gleyber Torres,33804,13,25,4.166666666666667,21
+6,2B/SS,Corey Seager,32691,6,25.5,4.25,21
 7,1B/3B,Eugenio Suarez,32367,12,30,5,21
 12,UTIL,Shohei Ohtani,39832,11,32,5.333333333333333,21
 14,SP,Gavin Stone,4417230,5,59.5,29.75,21
@@ -461,25 +461,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Mason Miller,4730225,11,21.5,7.166666666666667,21
 15,RP,Raisel Iglesias,33618,14,21.5,7.166666666666667,21
 15,RP,A.J. Puk,36201,4,20,6.666666666666667,21
-0,C,Salvador Perez,31127,9,26.5,8.833333333333334,22
-1,1B,Matt Olson,32767,4,20,10,22
-2,2B,Nico Hoerner,41219,7,14,7,22
-3,3B,Manny Machado,31097,1,19.5,9.75,22
-4,SS,Dansby Swanson,34895,1,21.5,10.75,22
-5,OF,Seiya Suzuki,4142424,9,19,9.5,22
-5,OF,Jarren Duran,41610,6,18.5,9.25,22
-5,OF,Matt Wallner,42427,9,13.5,6.75,22
-5,OF,George Springer,32078,4,12,6,22
-5,OF,Cody Bellinger,33912,8,11.5,5.75,22
-6,2B/SS,Ezequiel Tovar,4905919,14,15.5,15.5,22
-7,1B/3B,Isaac Paredes,39706,12,12,6,22
-12,UTIL,Bobby Witt Jr.,42403,8,15,5,22
+0,C,Salvador Perez,31127,9,26,6.5,22
+1,1B,Matt Olson,32767,4,23,7.666666666666667,22
+2,2B,Nico Hoerner,41219,7,17.5,5.833333333333333,22
+3,3B,Manny Machado,31097,1,24,8,22
+4,SS,Dansby Swanson,34895,1,25.5,8.5,22
+5,OF,Yordan Alvarez,36018,13,23.5,7.833333333333333,22
+5,OF,Jarren Duran,41610,6,23,7.666666666666667,22
+5,OF,Seiya Suzuki,4142424,9,22,7.333333333333333,22
+5,OF,Pete Crow-Armstrong,4717833,9,21.5,7.166666666666667,22
+5,OF,Bryan Reynolds,38980,13,21,7,22
+6,2B/SS,Bobby Witt Jr.,42403,8,21.5,5.375,22
+7,1B/3B,Cody Bellinger,33912,8,15.5,5.166666666666667,22
+12,UTIL,Corbin Carroll,42404,1,21,10.5,22
+14,SP,Spencer Arrighetti,4726080,2,35,35,22
 14,SP,Logan Gilbert,41221,12,29,29,22
 14,SP,Aaron Nola,33709,12,27.5,27.5,22
+14,SP,Freddy Peralta,39825,6,27.5,27.5,22
+14,SP,Chris Bassitt,33148,5,26,26,22
 14,SP,Nestor Cortes,36480,13,23,23,22
-14,SP,Jeffrey Springs,35397,4,22,22,22
-14,SP,Jose Berrios,32811,7,22,22,22
-14,SP,Zack Wheeler,31267,9,18,18,22
-15,RP,Tanner Scott,35135,8,8,4,22
-15,RP,Jason Adam,32145,6,7,7,22
-15,RP,Clay Holmes,32827,9,6,6,22
+15,RP,Michael Kopech,33763,12,12,6,22
+15,RP,Jason Adam,32145,6,10,5,22
+15,RP,Emmanuel Clase,41743,8,8,4,22
