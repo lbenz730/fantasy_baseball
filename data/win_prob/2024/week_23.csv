@@ -1,7 +1,13 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 Ketel Bells,All That is Wright,0,14,0,16,16,0,0.5892225369111035,0.49786793224474063
+Ketel Bells,All That is Wright,1,13,30.5,15,15,0,0.7466518004596414,0.812525312036366
 The Traveling Secretaries,FVOS Re-imagined,0,14,0,16,16,0,0.5052883369742829,0.49786793224474063
+The Traveling Secretaries,FVOS Re-imagined,1,13,-9.5,16,15,1,0.505879923202033,0.5022332494330166
 Blasphemous Hot Takes,The West Bank Occupiers,0,14,0,16,16,0,0.6308894612669288,0.49786793224474063
+Blasphemous Hot Takes,The West Bank Occupiers,1,13,-49,16,15,1,0.3649763221040126,0.17691045726078553
 The Novaks,Elly De La Snooze,0,14,0,16,16,0,0.5694747885937966,0.49786793224474063
+The Novaks,Elly De La Snooze,1,13,0.5,15,16,-1,0.5596369059347351,0.40663994921408086
 Skubal Divers,The Talmudic Tunnelers,0,14,0,16,16,0,0.5065528084583949,0.49786793224474063
+Skubal Divers,The Talmudic Tunnelers,1,13,-2.5,16,16,0,0.5032505175237554,0.4676869614743677
 Shrimp Fried Bryce,Mt. Everest Taquito Farmers,0,14,0,16,16,0,0.4512847297820579,0.49786793224474063
+Shrimp Fried Bryce,Mt. Everest Taquito Farmers,1,13,4.5,16,16,0,0.4725937412775255,0.5520851843539359
