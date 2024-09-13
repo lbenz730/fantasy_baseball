@@ -102,7 +102,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,5.2,4,3,Bad Start,Skubal Divers
 2,5.2,6+,1,Bad Start,Skubal Divers
 2,6.0,0,12,QS,Skubal Divers
-2,6.0,1,14,QS,Skubal Divers
+2,6.0,1,15,QS,Skubal Divers
 2,6.0,2,6,QS,Skubal Divers
 2,6.0,3,12,QS,Skubal Divers
 2,6.0,4,2,QS Potential,Skubal Divers
@@ -119,6 +119,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,7.0,2,6,QS,Skubal Divers
 2,7.0,3,1,QS,Skubal Divers
 2,7.0,4,1,QS Potential,Skubal Divers
+2,< 3,2,1,Bad Start,Skubal Divers
 2,< 3,3,3,Bad Start,Skubal Divers
 2,< 3,5,1,Bad Start,Skubal Divers
 2,< 3,6+,1,Bad Start,Skubal Divers
@@ -149,7 +150,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.0,6+,2,Bad Start,All That is Wright
 4,5.1,0,1,QS Potential,All That is Wright
 4,5.1,1,1,QS Potential,All That is Wright
-4,5.1,3,1,QS Potential,All That is Wright
+4,5.1,3,2,QS Potential,All That is Wright
 4,5.1,4,4,Bad Start,All That is Wright
 4,5.1,5,1,Bad Start,All That is Wright
 4,5.2,0,1,Blue Balls,All That is Wright
@@ -327,13 +328,13 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,2,3,Blue Balls,FVOS Re-imagined
 7,5.2,3,3,Blue Balls,FVOS Re-imagined
 7,6.0,0,9,QS,FVOS Re-imagined
-7,6.0,1,19,QS,FVOS Re-imagined
+7,6.0,1,20,QS,FVOS Re-imagined
 7,6.0,2,13,QS,FVOS Re-imagined
 7,6.0,3,5,QS,FVOS Re-imagined
 7,6.0,4,8,QS Potential,FVOS Re-imagined
 7,6.0,5,3,Bad Start,FVOS Re-imagined
 7,6.1,0,2,QS,FVOS Re-imagined
-7,6.1,1,1,QS,FVOS Re-imagined
+7,6.1,1,2,QS,FVOS Re-imagined
 7,6.1,2,2,QS,FVOS Re-imagined
 7,6.2,0,1,QS,FVOS Re-imagined
 7,7.0,0,10,QS,FVOS Re-imagined
@@ -616,7 +617,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.2,5,2,Bad Start,Ketel Bells
 13,4.2,6+,1,Bad Start,Ketel Bells
 13,5.0,0,1,QS Potential,Ketel Bells
-13,5.0,1,6,QS Potential,Ketel Bells
+13,5.0,1,7,QS Potential,Ketel Bells
 13,5.0,2,6,QS Potential,Ketel Bells
 13,5.0,3,10,QS Potential,Ketel Bells
 13,5.0,4,6,Bad Start,Ketel Bells
@@ -638,7 +639,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,6.0,3,3,QS,Ketel Bells
 13,6.0,4,3,QS Potential,Ketel Bells
 13,6.0,5,1,Bad Start,Ketel Bells
-13,6.1,0,1,QS,Ketel Bells
+13,6.1,0,2,QS,Ketel Bells
 13,6.1,1,1,QS,Ketel Bells
 13,6.1,2,3,QS,Ketel Bells
 13,6.2,1,4,QS,Ketel Bells
