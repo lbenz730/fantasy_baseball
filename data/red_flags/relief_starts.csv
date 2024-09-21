@@ -1,5 +1,5 @@
 player,player_id,team_id,matchup_id,sp_games,rp_games,n_qs,relief_starts,sp_points,rp_points
-Colin Rea,33950,5,23,1,1,0,0,-18.5,9
+Colin Rea,33950,5,23,2,1,0,0,-14,9
 Colin Rea,33950,11,16,2,0,0,1,11.5,0
 Jon Gray,33203,13,4,1,1,1,0,23.5,9
 Jon Gray,33203,13,17,1,1,1,0,27,0
@@ -9,3 +9,4 @@ Osvaldo Bido,5132624,1,22,2,1,1,0,26.5,7
 Ronel Blanco,41829,8,22,2,1,0,0,23,9.5
 Tyler Holton,3983833,14,21,1,2,0,0,3,15
 Tyler Holton,3983833,14,22,1,6,0,0,6,27.5
+Tyler Holton,3983833,14,23,1,4,0,0,-2,26.5
