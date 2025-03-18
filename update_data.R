@@ -22,9 +22,20 @@ source('figures/wp_graphics.R')
 source('figures/all_star_teams.R')
 
 params <- 
-  list('season' = 2024,
-       'opening_day' = as.Date('2024-03-20'),
+  list('season' = 2025,
+       'opening_day' = as.Date('2025-03-18'),
        'nsims' = 10000)
+
+if(!dir.exists(glue('data/stats/{params$season}/'))) {
+  dir.create(glue('data/stats/{params$season}/'))
+}
+if(!dir.exists(glue('data/win_prob/{params$season}/'))) {
+  dir.create(glue('data/win_prob/{params$season}/'))
+}
+if(!dir.exists(glue('figures/top_performers/{params$season}/'))) {
+  dir.create(glue('figures/top_performers/{params$season}/'))
+  dir.create(glue('figures/top_performers/{params$season}/best_lineup'))
+}
 
 df_start <- 
   read_csv('data/df_start.csv') %>% 
@@ -282,7 +293,7 @@ bat_stats <-
 
 write_csv(bat_stats, glue('data/stats/{params$season}/bat_stats.csv'))
 
-### Penalties for Relief Starts
+### Penalties fI or Relief Starts
 relief_starts <- 
   df_daily %>% 
   filter(in_lineup) %>% 
@@ -433,7 +444,7 @@ team_points <-
 team_points <- 
   team_points %>% 
   mutate("adj_pts" = case_when(
-    matchup_id == 1 ~ total_points * 7/5,
+    matchup_id == 1 ~ total_points * 7/4,
     matchup_id == 14 & params$season != 2024 ~ total_points * 7/10,
     matchup_id == 16 & params$season == 2024 ~ total_points * 7/10,
     matchup_id > 21 ~ total_points * 7/14,
@@ -712,7 +723,7 @@ if(params$matchup_id > 1) {
   team_sigmas[is.na(team_sigmas)] <- sigma
 } else {
   tmp <- 
-    read_csv('data/stats/2023/schedule_2023.csv') %>% 
+    read_csv('data/stats/2024/schedule_2024.csv') %>% 
     filter(matchup_id %in% c(2:13, 15:20))
   
   mu <-  mean(c(tmp$home_total_points, tmp$away_total_points, na.rm = T))
@@ -760,7 +771,7 @@ write_csv(df_sims, 'data/playoff_odds/raw_sims.csv')
 x <- 
   df_sims %>% 
   filter(matchup_id <= reg_season) %>% 
-  group_by(team, division_id, sim_id) %>% 
+  group_by(team, division_id, sim_id, team_id) %>% 
   summarise('wins' = sum(total_points > total_points_opp),
             'points' = sum(total_points)) %>% 
   ungroup() 
@@ -790,7 +801,7 @@ champions <-
   })
 
 sim_results <- 
-  group_by(x, team) %>% 
+  group_by(x, team, team_id) %>% 
   summarise("mean_wins" = round(mean(wins), 1),
             "mean_pts" = round(mean(points)),
             "playoffs" = mean(playoffs),
@@ -800,6 +811,7 @@ sim_results <-
 if(params$matchup_id == 1) {
   df_sims0 <- 
     tibble('team' = teams$team,
+           'team_id' = teams$team_id,
            'playoffs' = 4/12,
            'last_place' = 1/12,
            'champ' = 1/12,
@@ -814,31 +826,19 @@ if(params$matchup_id == 1) {
 params$sim_match_id <- ifelse(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12), params$matchup_id, params$matchup_id - 1)
 read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
   filter(matchup_id != params$sim_match_id) %>%
-  bind_rows(sim_results %>% mutate('matchup_id' = params$sim_match_id)) %>%
-  mutate('team' = case_when(team == 'Ketel of Fish' ~ 'Ketel Bells',
-                            team == 'Don Julios' ~ 'The Greatest Stroman',
-                            team == 'The Greatest Stroman' ~ 'It\'s Gonna Be Gley',
-                            team == 'Cron\'s Diease' ~ 'FVOS Re-imagined',
-                            team == 'It\'s Gonna Be Gley' ~ 'Takin\' Care of Rizzness',
-                            team == 'Takin\' Care of Rizzness' ~ 'Shrimp Fried Bryce',
-                            team == 'Shrimp Fryed Bryce' ~ 'Shrimp Fried Bryce',
-                            team == 'Hader\'s Gonna Hate' ~ 'Elly De La Snooze',
-                            T ~ team)) %>% 
+  bind_rows(sim_results %>% mutate('matchup_id' = params$sim_match_id)) %>% 
+  group_by(team_id) %>% 
+  mutate('team' = team[matchup_id == max(matchup_id)]) %>% 
+  ungroup() %>% 
   write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 
 if(params$matchup_id != params$sim_match_id) {
   read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
     filter(matchup_id != params$matchup_id) %>%
     bind_rows(sim_results %>% mutate('matchup_id' = params$matchup_id)) %>%
-    mutate('team' = case_when(team == 'Ketel of Fish' ~ 'Ketel Bells',
-                              team == 'Don Julios' ~ 'The Greatest Stroman',
-                              team == 'The Greatest Stroman' ~ 'It\'s Gonna Be Gley',
-                              team == 'Cron\'s Diease' ~ 'FVOS Re-imagined',
-                              team == 'It\'s Gonna Be Gley' ~ 'Takin\' Care of Rizzness',
-                              team == 'Takin\' Care of Rizzness' ~ 'Shrimp Fried Bryce',
-                              team == 'Shrimp Fryed Bryce' ~ 'Shrimp Fried Bryce',
-                              team == 'Hader\'s Gonna Hate' ~ 'Elly De La Snooze',
-                              T ~ team)) %>% 
+    group_by(team_id) %>% 
+    mutate('team' = team[matchup_id == max(matchup_id)]) %>% 
+    ungroup() %>% 
     write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 }
 

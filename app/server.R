@@ -73,7 +73,7 @@ shinyServer(function(input, output, session) {
              rank) %>%
       dplyr::slice(1:12) %>% 
       left_join(sim_results, by = 'team') %>%
-      select(-matchup_id)
+      select(-matchup_id, -team_id)
     
     df <- 
       df %>% 
@@ -771,7 +771,7 @@ shinyServer(function(input, output, session) {
              fill = 'Start Points',
              title = 'Distribution of SP Points',
              caption = 'Dashed Line = League Average') + 
-        scale_y_continuous(labels = scales::percent, limits = c(0, 0.3)) +
+        scale_y_continuous(labels = scales::percent) +
         scale_x_discrete(limits = c('<= 0', '1-5', '6-10', '11-15', '16-20',
                                     '21-25', '26-30', '> 30')) + 
         scale_fill_manual(values = c('red3', 'salmon','orange', 'violet', 'lightskyblue', 'aquamarine2', 'seagreen3', 'forestgreen'), 

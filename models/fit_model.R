@@ -9,7 +9,8 @@ set.seed(212)
 df <- bind_rows(build_train_set(2020, augment = T), 
                 build_train_set(2021, augment = T),
                 build_train_set(2022, augment = T),
-                build_train_set(2023, augment = T))
+                build_train_set(2023, augment = T),
+                build_train_set(2024, augment = T))
                 
 
 covariates <- c('score_diff', 
@@ -41,7 +42,8 @@ preprocessing_recipe <-
   step_rm(ends_with('id')) %>% 
   step_rm(-any_of(covariates)) %>% 
   prep()
-write_rds(preprocessing_recipe, here('models/recipe.rds'))
+# preprocessing_recipe <- butcher::butcher(preprocessing_recipe)
+write_rds(recipe, here('models/recipe.rds'))
 
 ### CV Folds
 cv_folds <- 

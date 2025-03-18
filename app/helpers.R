@@ -17,6 +17,12 @@ change_logo <- function(df, team_cols = 'team', cols = 'logo') {
     df[[ cols[i] ]] <- gsub('Elly De La Snooze.png', 'Elly De La Snooze.jpg', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('All That is Wright.gif', 'All That is Wright.jpg', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('Takin\' Care of Rizzness.png', 'Takin\' Care of Rizzness.jpg', df[[ cols[i] ]])
+    
+    ### Check images that don't exist
+    ix <- df[[ cols[i] ]]  %in% dir('www', full.names = T)
+    df[[ cols[i] ]][!ix] <- 'www/error.jpg'
+    
+    
   }
   return(df)
 }
@@ -34,7 +40,7 @@ plot_k_avg <- function(k) {
   offset <- as.numeric(params$opening_day_chart - params$opening_day)
   df_bat_stocks <- 
     df_daily %>%
-    filter(scoring_period_id >= offset + 1) %>%
+    filter(scoring_period_id <= 2 | scoring_period_id >= offset + 1) %>%
     filter(in_lineup) %>% 
     filter(batter) %>% 
     select(team_id, scoring_period_id, points, played, start) %>% 
@@ -62,7 +68,7 @@ plot_k_avg <- function(k) {
   
   df_pitch_stocks <- 
     df_daily %>% 
-    filter(scoring_period_id >= offset + 1) %>%
+    filter(scoring_period_id <= 2 | scoring_period_id >= offset + 1) %>%
     filter(in_lineup) %>% 
     filter(pitcher) %>% 
     filter(!relief) %>% 
@@ -96,7 +102,7 @@ plot_k_avg <- function(k) {
   
   df_rp_stocks <- 
     df_daily %>% 
-    filter(scoring_period_id >= offset + 1) %>% 
+    filter(scoring_period_id <= 2 | scoring_period_id >= offset + 1) %>% 
     filter(in_lineup) %>% 
     filter(pitcher) %>% 
     filter(!start) %>% 

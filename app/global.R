@@ -33,18 +33,16 @@ ferry <- '<img src="www/ferry.jpg" style="height:30px;">'
 
 ### Parameters
 params <- 
-  list('season' = 2024,
-       'opening_day' = as.Date('2024-03-20'),
-       'opening_day_chart' = as.Date('2024-03-28'))
-
-period <- min(187, max(1, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1))
-
-
+  list('season' = 2025,
+       'opening_day' = as.Date('2025-03-18'),
+       'opening_day_chart' = as.Date('2025-03-27'))
 
 ### Load in All Data
 df_start <- 
   read_csv('data/df_start.csv') %>% 
   filter(season == params$season) 
+
+period <- min(max(df_start$end_period), max(1, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1))
 
 params$current_matchup <- max(df_start$matchup_id[df_start$start_period <= period])
 
@@ -413,9 +411,6 @@ if(nrow(traded_players) > 0) {
 }
 
 
-
-
-
 ### GT for Penalties
 df_penalty <- 
   df_penalty %>% 
@@ -435,64 +430,59 @@ if(params$current_matchup > 6) {
                 team_cols = c('team_1', 'team_2', 'team_3'))
   
   df_asg_counts <- change_logo(read_csv(glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv')))
-  
-  
-  
-  ### Draft
-  
-  
-  df_draft <- read_csv(glue('data/stats/{params$season}/draft.csv')) %>% 
-    rename('draft_id' = team_id)
-  
-  draft_analysis <- 
-    trans_log %>% 
-    right_join(df_draft) %>% 
-    group_by(player_id, player) %>% 
-    summarise(
-      'points_total' = sum(n_points),
-      'n_games_total' = sum(n_games),
-      'points_draft' = sum(n_points[team_id == draft_id]),
-      'n_games_draft' = sum(n_games[team_id == draft_id]),
-      'w_sp' = max(w_sp, na.rm = T),
-      'w_rp' = max(w_rp,na.rm = T),
-      'w_bat' = max(w_bat, na.rm = T),
-      'ppg' = points_total/(n_games_total + 0.001),
-      'ppg_draft' = points_draft/(n_games_draft + 0.001),
-      'team_id' = first(draft_id),) %>% 
-    right_join(df_draft) %>% 
-    inner_join(teams) %>% 
-    inner_join(
-      df_daily %>% 
-        group_by(player_id) %>% 
-        filter(scoring_period_id == max(scoring_period_id)) %>% 
-        summarise('player_type' = case_when(grepl('14', eligible_slots) ~ 'SP',
-                                            grepl('15', eligible_slots) ~ 'RP',
-                                            T ~ 'Batter'))
-    ) %>% 
-    mutate('player_type' = case_when(w_rp == 1 ~ 'RP',
-                                     w_sp >= 0.75 ~ 'SP',
-                                     w_bat == 1 ~ 'Batter',
-                                     w_bat == 0 ~ 'RP/SP',
-                                     w_bat > 0 ~ 'Ohtani',
-                                     T ~ player_type)) %>% 
-    ungroup() %>% 
-    mutate('fit' = loess(points_total ~ pick_id, data = .)$fitted) %>% 
-    mutate('residual' = points_total - fit) %>% 
-    mutate('text' = 
-             paste("Player: ", player, "<br>", 
-                   "Pick: ", pick_id, "<br>",
-                   "# of Games Played: ", n_games_total, " (Drafted Team: ", n_games_draft, ")<br>",
-                   "Points: ", points_total, " (Drafted Team: ", points_draft, ")<br>",
-                   "PPG: ", sprintf('%0.2f', ppg), " (Drafted Team: ", sprintf('%0.2f', ppg_draft), ")<br>",
-                   'Expected Points from Draft Slot: ', sprintf('%0.1f', fit), '<br>',
-                   'Points Relative to Draft Slot Expectation: ', sprintf('%0.1f', residual), '<br>',
-                   
-                   
-                   sep = "")) %>% 
-    select(team, player, player_id, player_type, contains('points'), contains('games'), contains('ppg'), pick_id, round_id, text, residual, fit)
-  
-  
-  
-  
-  
 }
+
+
+
+### Draft
+
+
+df_draft <- read_csv(glue('data/stats/{params$season}/draft.csv')) %>% 
+  rename('draft_id' = team_id)
+
+draft_analysis <- 
+  trans_log %>% 
+  right_join(df_draft) %>% 
+  group_by(player_id, player) %>% 
+  summarise(
+    'points_total' = sum(n_points),
+    'n_games_total' = sum(n_games),
+    'points_draft' = sum(n_points[team_id == draft_id]),
+    'n_games_draft' = sum(n_games[team_id == draft_id]),
+    'w_sp' = max(w_sp, na.rm = T),
+    'w_rp' = max(w_rp,na.rm = T),
+    'w_bat' = max(w_bat, na.rm = T),
+    'ppg' = points_total/(n_games_total + 0.001),
+    'ppg_draft' = points_draft/(n_games_draft + 0.001),
+    'team_id' = first(draft_id),) %>% 
+  right_join(df_draft) %>% 
+  inner_join(teams) %>% 
+  inner_join(
+    df_daily %>% 
+      group_by(player_id) %>% 
+      filter(scoring_period_id == max(scoring_period_id)) %>% 
+      summarise('player_type' = case_when(grepl('14', eligible_slots) ~ 'SP',
+                                          grepl('15', eligible_slots) ~ 'RP',
+                                          T ~ 'Batter'))
+  ) %>% 
+  mutate('player_type' = case_when(w_rp == 1 ~ 'RP',
+                                   w_sp >= 0.75 ~ 'SP',
+                                   w_bat == 1 ~ 'Batter',
+                                   w_bat == 0 ~ 'RP/SP',
+                                   w_bat > 0 ~ 'Ohtani',
+                                   T ~ player_type)) %>% 
+  ungroup() %>% 
+  mutate('fit' = loess(points_total ~ pick_id, data = .)$fitted) %>% 
+  mutate('residual' = points_total - fit) %>% 
+  mutate('text' = 
+           paste("Player: ", player, "<br>", 
+                 "Pick: ", pick_id, "<br>",
+                 "# of Games Played: ", n_games_total, " (Drafted Team: ", n_games_draft, ")<br>",
+                 "Points: ", points_total, " (Drafted Team: ", points_draft, ")<br>",
+                 "PPG: ", sprintf('%0.2f', ppg), " (Drafted Team: ", sprintf('%0.2f', ppg_draft), ")<br>",
+                 'Expected Points from Draft Slot: ', sprintf('%0.1f', fit), '<br>',
+                 'Points Relative to Draft Slot Expectation: ', sprintf('%0.1f', residual), '<br>',
+                 
+                 
+                 sep = "")) %>% 
+  select(team, player, player_id, player_type, contains('points'), contains('games'), contains('ppg'), pick_id, round_id, text, residual, fit)

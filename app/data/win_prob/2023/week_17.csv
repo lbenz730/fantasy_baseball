@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+It's Gonna Be Gley,Blasphemous Hot Takes,0,7,0,8,8,0,0.34858315754366775,0.4746598257190957
+It's Gonna Be Gley,Blasphemous Hot Takes,1,6,-20,8,8,0,0.2413370996988622,0.28251560356785776
+It's Gonna Be Gley,Blasphemous Hot Takes,2,5,21,4,8,-4,0.35985040032494253,0.43673661151402493
+It's Gonna Be Gley,Blasphemous Hot Takes,3,4,-19.5,3,5,-2,0.28081161636716134,0.2202557240654124
+It's Gonna Be Gley,Blasphemous Hot Takes,4,3,-18,2,4,-2,0.23838608537096156,0.2303475824563906
+It's Gonna Be Gley,Blasphemous Hot Takes,5,2,-70,2,0,2,0.07941912086794527,0.0958495621878376
+It's Gonna Be Gley,Blasphemous Hot Takes,6,1,-81,1,0,1,0.03701821582003386,0.042787486375697084
+It's Gonna Be Gley,Blasphemous Hot Takes,7,0,-72.5,0,0,0,0,0.04260423652886512
+Crown Heights Crusaders,Hader Better Faster Stronger,0,7,0,8,8,0,0.4894029471502824,0.4746598257190957
+Crown Heights Crusaders,Hader Better Faster Stronger,1,6,5,7,7,0,0.5244191548056216,0.5265237878148039
+Crown Heights Crusaders,Hader Better Faster Stronger,2,5,-20.5,7,6,1,0.34005175884817695,0.32969438295938314
+Crown Heights Crusaders,Hader Better Faster Stronger,3,4,15,4,5,-1,0.5009241399227882,0.542367588407856
+Crown Heights Crusaders,Hader Better Faster Stronger,4,3,-2,3,4,-1,0.4658651778303423,0.4186450198451794
+Crown Heights Crusaders,Hader Better Faster Stronger,5,2,36,2,3,-1,0.7046446193278546,0.6868257541888856
+Crown Heights Crusaders,Hader Better Faster Stronger,6,1,56.5,0,1,-1,0.853910118132258,0.7999706078367812
+Crown Heights Crusaders,Hader Better Faster Stronger,7,0,25.5,0,0,0,1,0.7226267746956603
+The Novaks,Framber Valdez Oil Spill,0,7,0,8,8,0,0.47710173767208913,0.4746598257190957
+The Novaks,Framber Valdez Oil Spill,1,6,-56.5,8,7,1,0.1707504228360558,0.10558978012327724
+The Novaks,Framber Valdez Oil Spill,2,5,-102,6,5,1,0.07464016909637079,0.01907313691058625
+The Novaks,Framber Valdez Oil Spill,3,4,-85.5,5,4,1,0.08156222916567996,0.036049075858902324
+The Novaks,Framber Valdez Oil Spill,4,3,-80.5,4,4,0,0.07626596573386814,0.030933572589575232
+The Novaks,Framber Valdez Oil Spill,5,2,-62,3,2,1,0.07723125451364016,0.08669907406651403
+The Novaks,Framber Valdez Oil Spill,6,1,-16,2,1,1,0.33866201246442107,0.3702397955095843
+The Novaks,Framber Valdez Oil Spill,7,0,-17,0,0,0,0,0.30843800211328976
+The West Bank Occupiers,All That is Wright,0,7,0,8,8,0,0.3335774079865632,0.4746598257190957
+The West Bank Occupiers,All That is Wright,1,6,-0.5,6,6,0,0.3603180902799714,0.4694850064289536
+The West Bank Occupiers,All That is Wright,2,5,-28.5,6,6,0,0.18495402010731843,0.2166986881618834
+The West Bank Occupiers,All That is Wright,3,4,-30,5,4,1,0.27410356098506516,0.25234463070660135
+The West Bank Occupiers,All That is Wright,4,3,-9,3,4,-1,0.4034197551295898,0.3697042186108928
+The West Bank Occupiers,All That is Wright,5,2,-45,3,2,1,0.1536030390961527,0.15699691760652087
+The West Bank Occupiers,All That is Wright,6,1,-41.5,1,2,-1,0.13862459814502703,0.1845292568867169
+The West Bank Occupiers,All That is Wright,7,0,-42,0,0,0,0,0.1363851291505602
+Cron's Disease,Ketel Bells,0,7,0,8,8,0,0.41486960481520707,0.4746598257190957
+Cron's Disease,Ketel Bells,1,6,-36,8,6,2,0.20406742228502162,0.2584751970368843
+Cron's Disease,Ketel Bells,2,5,77.5,3,6,-3,0.8299843258435947,0.8843468213248201
+Cron's Disease,Ketel Bells,3,4,33.5,2,6,-4,0.5725442128092679,0.5450971646473362
+Cron's Disease,Ketel Bells,4,3,2.5,2,5,-3,0.40445478815687175,0.3810961170886647
+Cron's Disease,Ketel Bells,5,2,29,2,5,-3,0.6000316473908428,0.5999368384231232
+Cron's Disease,Ketel Bells,6,1,-3,2,2,0,0.45913315672072097,0.44373109474692657
+Cron's Disease,Ketel Bells,7,0,40.5,0,0,0,1,0.8292691232289863
+The Traveling Secretaries,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.4165605721075621,0.4746598257190957
+The Traveling Secretaries,Mt. Everest Taquito Farmers,1,6,2,5,7,-2,0.35309044523498956,0.39285645832502303
+The Traveling Secretaries,Mt. Everest Taquito Farmers,2,5,16.5,4,6,-2,0.4133356221003225,0.5308793616062735
+The Traveling Secretaries,Mt. Everest Taquito Farmers,3,4,14,4,6,-2,0.46894386162605084,0.5068236414906413
+The Traveling Secretaries,Mt. Everest Taquito Farmers,4,3,55.5,3,6,-3,0.763972335431542,0.7850432973123741
+The Traveling Secretaries,Mt. Everest Taquito Farmers,5,2,18,2,2,0,0.6540772545682654,0.6561232200824302
+The Traveling Secretaries,Mt. Everest Taquito Farmers,6,1,-10.5,1,0,1,0.39109890294795935,0.4223414243264831
+The Traveling Secretaries,Mt. Everest Taquito Farmers,7,0,20,0,0,0,1,0.6746126141023495

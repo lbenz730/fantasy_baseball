@@ -1,0 +1,127 @@
+matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitching_points,away_team_id,away_total_points,away_batting_points,away_pitching_points,home_team,away_team
+1,1,13,NA,NA,NA,4,NA,-1.5,NA,Ketel Bells,All That is Wright
+1,2,6,NA,1.5,NA,14,NA,4.5,NA,The Novaks,Elly De La Snooze
+1,3,9,NA,NA,NA,7,NA,NA,NA,Shrimp Fried Bryce,FVOS Re-imagined
+1,4,12,NA,3,13.5,1,NA,NA,NA,Blasphemous Hot Takes,The Talmudic Tunnelers
+1,5,2,NA,7.5,12,8,NA,3.5,13.5,Sac Fly by the Rook,Mt. Everest Taquito Farmers
+1,6,5,NA,1,NA,11,NA,NA,NA,The Traveling Secretaries,The West Bank Occupiers
+2,7,4,NA,NA,NA,14,NA,NA,NA,All That is Wright,Elly De La Snooze
+2,8,7,NA,NA,NA,13,NA,NA,NA,FVOS Re-imagined,Ketel Bells
+2,9,1,NA,NA,NA,6,NA,NA,NA,The Talmudic Tunnelers,The Novaks
+2,10,8,NA,NA,NA,9,NA,NA,NA,Mt. Everest Taquito Farmers,Shrimp Fried Bryce
+2,11,11,NA,NA,NA,12,NA,NA,NA,The West Bank Occupiers,Blasphemous Hot Takes
+2,12,5,NA,NA,NA,2,NA,NA,NA,The Traveling Secretaries,Sac Fly by the Rook
+3,13,7,NA,NA,NA,4,NA,NA,NA,FVOS Re-imagined,All That is Wright
+3,14,14,NA,NA,NA,1,NA,NA,NA,Elly De La Snooze,The Talmudic Tunnelers
+3,15,13,NA,NA,NA,8,NA,NA,NA,Ketel Bells,Mt. Everest Taquito Farmers
+3,16,6,NA,NA,NA,11,NA,NA,NA,The Novaks,The West Bank Occupiers
+3,17,9,NA,NA,NA,5,NA,NA,NA,Shrimp Fried Bryce,The Traveling Secretaries
+3,18,12,NA,NA,NA,2,NA,NA,NA,Blasphemous Hot Takes,Sac Fly by the Rook
+4,19,4,NA,NA,NA,1,NA,NA,NA,All That is Wright,The Talmudic Tunnelers
+4,20,8,NA,NA,NA,7,NA,NA,NA,Mt. Everest Taquito Farmers,FVOS Re-imagined
+4,21,11,NA,NA,NA,14,NA,NA,NA,The West Bank Occupiers,Elly De La Snooze
+4,22,5,NA,NA,NA,13,NA,NA,NA,The Traveling Secretaries,Ketel Bells
+4,23,2,NA,NA,NA,6,NA,NA,NA,Sac Fly by the Rook,The Novaks
+4,24,12,NA,NA,NA,9,NA,NA,NA,Blasphemous Hot Takes,Shrimp Fried Bryce
+5,25,8,NA,NA,NA,4,NA,NA,NA,Mt. Everest Taquito Farmers,All That is Wright
+5,26,1,NA,NA,NA,11,NA,NA,NA,The Talmudic Tunnelers,The West Bank Occupiers
+5,27,7,NA,NA,NA,5,NA,NA,NA,FVOS Re-imagined,The Traveling Secretaries
+5,28,14,NA,NA,NA,2,NA,NA,NA,Elly De La Snooze,Sac Fly by the Rook
+5,29,13,NA,NA,NA,12,NA,NA,NA,Ketel Bells,Blasphemous Hot Takes
+5,30,6,NA,NA,NA,9,NA,NA,NA,The Novaks,Shrimp Fried Bryce
+6,31,4,NA,NA,NA,11,NA,NA,NA,All That is Wright,The West Bank Occupiers
+6,32,5,NA,NA,NA,8,NA,NA,NA,The Traveling Secretaries,Mt. Everest Taquito Farmers
+6,33,2,NA,NA,NA,1,NA,NA,NA,Sac Fly by the Rook,The Talmudic Tunnelers
+6,34,12,NA,NA,NA,7,NA,NA,NA,Blasphemous Hot Takes,FVOS Re-imagined
+6,35,9,NA,NA,NA,14,NA,NA,NA,Shrimp Fried Bryce,Elly De La Snooze
+6,36,6,NA,NA,NA,13,NA,NA,NA,The Novaks,Ketel Bells
+7,37,5,NA,NA,NA,4,NA,NA,NA,The Traveling Secretaries,All That is Wright
+7,38,11,NA,NA,NA,2,NA,NA,NA,The West Bank Occupiers,Sac Fly by the Rook
+7,39,8,NA,NA,NA,12,NA,NA,NA,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
+7,40,1,NA,NA,NA,9,NA,NA,NA,The Talmudic Tunnelers,Shrimp Fried Bryce
+7,41,7,NA,NA,NA,6,NA,NA,NA,FVOS Re-imagined,The Novaks
+7,42,14,NA,NA,NA,13,NA,NA,NA,Elly De La Snooze,Ketel Bells
+8,43,4,NA,NA,NA,2,NA,NA,NA,All That is Wright,Sac Fly by the Rook
+8,44,12,NA,NA,NA,5,NA,NA,NA,Blasphemous Hot Takes,The Traveling Secretaries
+8,45,9,NA,NA,NA,11,NA,NA,NA,Shrimp Fried Bryce,The West Bank Occupiers
+8,46,6,NA,NA,NA,8,NA,NA,NA,The Novaks,Mt. Everest Taquito Farmers
+8,47,13,NA,NA,NA,1,NA,NA,NA,Ketel Bells,The Talmudic Tunnelers
+8,48,14,NA,NA,NA,7,NA,NA,NA,Elly De La Snooze,FVOS Re-imagined
+9,49,12,NA,NA,NA,4,NA,NA,NA,Blasphemous Hot Takes,All That is Wright
+9,50,2,NA,NA,NA,9,NA,NA,NA,Sac Fly by the Rook,Shrimp Fried Bryce
+9,51,5,NA,NA,NA,6,NA,NA,NA,The Traveling Secretaries,The Novaks
+9,52,11,NA,NA,NA,13,NA,NA,NA,The West Bank Occupiers,Ketel Bells
+9,53,8,NA,NA,NA,14,NA,NA,NA,Mt. Everest Taquito Farmers,Elly De La Snooze
+9,54,1,NA,NA,NA,7,NA,NA,NA,The Talmudic Tunnelers,FVOS Re-imagined
+10,55,4,NA,NA,NA,9,NA,NA,NA,All That is Wright,Shrimp Fried Bryce
+10,56,6,NA,NA,NA,12,NA,NA,NA,The Novaks,Blasphemous Hot Takes
+10,57,13,NA,NA,NA,2,NA,NA,NA,Ketel Bells,Sac Fly by the Rook
+10,58,14,NA,NA,NA,5,NA,NA,NA,Elly De La Snooze,The Traveling Secretaries
+10,59,7,NA,NA,NA,11,NA,NA,NA,FVOS Re-imagined,The West Bank Occupiers
+10,60,1,NA,NA,NA,8,NA,NA,NA,The Talmudic Tunnelers,Mt. Everest Taquito Farmers
+11,61,6,NA,NA,NA,4,NA,NA,NA,The Novaks,All That is Wright
+11,62,9,NA,NA,NA,13,NA,NA,NA,Shrimp Fried Bryce,Ketel Bells
+11,63,12,NA,NA,NA,14,NA,NA,NA,Blasphemous Hot Takes,Elly De La Snooze
+11,64,2,NA,NA,NA,7,NA,NA,NA,Sac Fly by the Rook,FVOS Re-imagined
+11,65,5,NA,NA,NA,1,NA,NA,NA,The Traveling Secretaries,The Talmudic Tunnelers
+11,66,11,NA,NA,NA,8,NA,NA,NA,The West Bank Occupiers,Mt. Everest Taquito Farmers
+12,67,4,NA,NA,NA,13,NA,NA,NA,All That is Wright,Ketel Bells
+12,68,14,NA,NA,NA,6,NA,NA,NA,Elly De La Snooze,The Novaks
+12,69,7,NA,NA,NA,9,NA,NA,NA,FVOS Re-imagined,Shrimp Fried Bryce
+12,70,1,NA,NA,NA,12,NA,NA,NA,The Talmudic Tunnelers,Blasphemous Hot Takes
+12,71,8,NA,NA,NA,2,NA,NA,NA,Mt. Everest Taquito Farmers,Sac Fly by the Rook
+12,72,11,NA,NA,NA,5,NA,NA,NA,The West Bank Occupiers,The Traveling Secretaries
+13,73,14,NA,NA,NA,4,NA,NA,NA,Elly De La Snooze,All That is Wright
+13,74,13,NA,NA,NA,7,NA,NA,NA,Ketel Bells,FVOS Re-imagined
+13,75,6,NA,NA,NA,1,NA,NA,NA,The Novaks,The Talmudic Tunnelers
+13,76,9,NA,NA,NA,8,NA,NA,NA,Shrimp Fried Bryce,Mt. Everest Taquito Farmers
+13,77,12,NA,NA,NA,11,NA,NA,NA,Blasphemous Hot Takes,The West Bank Occupiers
+13,78,2,NA,NA,NA,5,NA,NA,NA,Sac Fly by the Rook,The Traveling Secretaries
+14,79,4,NA,NA,NA,7,NA,NA,NA,All That is Wright,FVOS Re-imagined
+14,80,1,NA,NA,NA,14,NA,NA,NA,The Talmudic Tunnelers,Elly De La Snooze
+14,81,8,NA,NA,NA,13,NA,NA,NA,Mt. Everest Taquito Farmers,Ketel Bells
+14,82,11,NA,NA,NA,6,NA,NA,NA,The West Bank Occupiers,The Novaks
+14,83,5,NA,NA,NA,9,NA,NA,NA,The Traveling Secretaries,Shrimp Fried Bryce
+14,84,2,NA,NA,NA,12,NA,NA,NA,Sac Fly by the Rook,Blasphemous Hot Takes
+15,85,1,NA,NA,NA,4,NA,NA,NA,The Talmudic Tunnelers,All That is Wright
+15,86,7,NA,NA,NA,8,NA,NA,NA,FVOS Re-imagined,Mt. Everest Taquito Farmers
+15,87,14,NA,NA,NA,11,NA,NA,NA,Elly De La Snooze,The West Bank Occupiers
+15,88,13,NA,NA,NA,5,NA,NA,NA,Ketel Bells,The Traveling Secretaries
+15,89,6,NA,NA,NA,2,NA,NA,NA,The Novaks,Sac Fly by the Rook
+15,90,9,NA,NA,NA,12,NA,NA,NA,Shrimp Fried Bryce,Blasphemous Hot Takes
+16,91,4,NA,NA,NA,8,NA,NA,NA,All That is Wright,Mt. Everest Taquito Farmers
+16,92,11,NA,NA,NA,1,NA,NA,NA,The West Bank Occupiers,The Talmudic Tunnelers
+16,93,5,NA,NA,NA,7,NA,NA,NA,The Traveling Secretaries,FVOS Re-imagined
+16,94,2,NA,NA,NA,14,NA,NA,NA,Sac Fly by the Rook,Elly De La Snooze
+16,95,12,NA,NA,NA,13,NA,NA,NA,Blasphemous Hot Takes,Ketel Bells
+16,96,9,NA,NA,NA,6,NA,NA,NA,Shrimp Fried Bryce,The Novaks
+17,97,11,NA,NA,NA,4,NA,NA,NA,The West Bank Occupiers,All That is Wright
+17,98,8,NA,NA,NA,5,NA,NA,NA,Mt. Everest Taquito Farmers,The Traveling Secretaries
+17,99,1,NA,NA,NA,2,NA,NA,NA,The Talmudic Tunnelers,Sac Fly by the Rook
+17,100,7,NA,NA,NA,12,NA,NA,NA,FVOS Re-imagined,Blasphemous Hot Takes
+17,101,14,NA,NA,NA,9,NA,NA,NA,Elly De La Snooze,Shrimp Fried Bryce
+17,102,13,NA,NA,NA,6,NA,NA,NA,Ketel Bells,The Novaks
+18,103,4,NA,NA,NA,5,NA,NA,NA,All That is Wright,The Traveling Secretaries
+18,104,2,NA,NA,NA,11,NA,NA,NA,Sac Fly by the Rook,The West Bank Occupiers
+18,105,12,NA,NA,NA,8,NA,NA,NA,Blasphemous Hot Takes,Mt. Everest Taquito Farmers
+18,106,9,NA,NA,NA,1,NA,NA,NA,Shrimp Fried Bryce,The Talmudic Tunnelers
+18,107,6,NA,NA,NA,7,NA,NA,NA,The Novaks,FVOS Re-imagined
+18,108,13,NA,NA,NA,14,NA,NA,NA,Ketel Bells,Elly De La Snooze
+19,109,2,NA,NA,NA,4,NA,NA,NA,Sac Fly by the Rook,All That is Wright
+19,110,5,NA,NA,NA,12,NA,NA,NA,The Traveling Secretaries,Blasphemous Hot Takes
+19,111,11,NA,NA,NA,9,NA,NA,NA,The West Bank Occupiers,Shrimp Fried Bryce
+19,112,8,NA,NA,NA,6,NA,NA,NA,Mt. Everest Taquito Farmers,The Novaks
+19,113,1,NA,NA,NA,13,NA,NA,NA,The Talmudic Tunnelers,Ketel Bells
+19,114,7,NA,NA,NA,14,NA,NA,NA,FVOS Re-imagined,Elly De La Snooze
+20,115,4,NA,NA,NA,12,NA,NA,NA,All That is Wright,Blasphemous Hot Takes
+20,116,9,NA,NA,NA,2,NA,NA,NA,Shrimp Fried Bryce,Sac Fly by the Rook
+20,117,6,NA,NA,NA,5,NA,NA,NA,The Novaks,The Traveling Secretaries
+20,118,13,NA,NA,NA,11,NA,NA,NA,Ketel Bells,The West Bank Occupiers
+20,119,14,NA,NA,NA,8,NA,NA,NA,Elly De La Snooze,Mt. Everest Taquito Farmers
+20,120,7,NA,NA,NA,1,NA,NA,NA,FVOS Re-imagined,The Talmudic Tunnelers
+21,121,9,NA,NA,NA,4,NA,NA,NA,Shrimp Fried Bryce,All That is Wright
+21,122,12,NA,NA,NA,6,NA,NA,NA,Blasphemous Hot Takes,The Novaks
+21,123,2,NA,NA,NA,13,NA,NA,NA,Sac Fly by the Rook,Ketel Bells
+21,124,5,NA,NA,NA,14,NA,NA,NA,The Traveling Secretaries,Elly De La Snooze
+21,125,11,NA,NA,NA,7,NA,NA,NA,The West Bank Occupiers,FVOS Re-imagined
+21,126,8,NA,NA,NA,1,NA,NA,NA,Mt. Everest Taquito Farmers,The Talmudic Tunnelers
