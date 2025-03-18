@@ -18,7 +18,7 @@ jobs:
       - name: LibMagick
         run: |
           sudo apt install libmagick++-dev
-          sudo apt-get install libtiff5-dev libharfbuzz-dev libfribidi-dev libtiff5-de
+          sudo apt-get install libtiff5-dev libharfbuzz-dev libfribidi-dev
       - name: Install dependencies
         run: |
           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
