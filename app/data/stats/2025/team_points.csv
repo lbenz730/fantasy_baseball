@@ -1,253 +1,253 @@
 team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_points,sp_points,adj_pts,adj_batting_pts,adj_pitching_pts,adj_sp_pts,adj_rp_pts,team_id_opp,total_points_opp,batting_points_opp,pitching_points_opp,team_opp,rp_points_opp,sp_points_opp,adj_pts_opp,adj_batting_pts_opp,adj_pitching_pts_opp,adj_sp_pts_opp,adj_rp_pts_opp,overall_rank,batting_rank,pitching_rank
-13,NA,NA,NA,Ketel Bells,1,1,0,NA,NA,NA,NA,NA,0,4,NA,-1.5,NA,All That is Wright,0,NA,NA,-2.1,NA,NA,0,1,8,4
-6,NA,1.5,NA,The Novaks,1,2,0,NA,NA,2.1,NA,NA,0,14,NA,4.5,NA,Elly De La Snooze,0,NA,NA,6.3,NA,NA,0,2,5,5
-9,NA,NA,NA,Shrimp Fried Bryce,1,3,0,NA,NA,NA,NA,NA,0,7,NA,NA,NA,FVOS Re-imagined,0,NA,NA,NA,NA,NA,0,3,9,6
-12,NA,3,13.5,Blasphemous Hot Takes,1,4,13.5,0,NA,4.2,18.9,0,18.9,1,NA,NA,NA,The Talmudic Tunnelers,0,NA,NA,NA,NA,NA,0,4,4,1.5
-2,NA,7.5,12,Sac Fly by the Rook,1,5,0,12,NA,10.5,16.8,16.8,0,8,NA,3.5,13.5,Mt. Everest Taquito Farmers,0,13.5,NA,4.9,18.9,18.9,0,5,1,3
-5,NA,1,NA,The Traveling Secretaries,1,6,0,NA,NA,1.4,NA,NA,0,11,NA,NA,NA,The West Bank Occupiers,0,NA,NA,NA,NA,NA,0,6,6,7
-4,NA,NA,NA,All That is Wright,2,7,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,1,1,1
+13,NA,NA,NA,Ketel Bells,1,1,0,NA,NA,NA,NA,NA,0,4,-1.5,-1,-0.5,All That is Wright,0,-0.5,-2.625,-1.4,-0.7,-0.7,0,8,8,5
+6,1.5,1.5,NA,The Novaks,1,2,0,NA,2.625,2.1,NA,NA,0,14,4.5,4.5,NA,Burnes Notice,0,NA,7.875,6.3,NA,NA,0,5,5,6
+9,NA,NA,NA,Shrimp Fried Bryce,1,3,0,NA,NA,NA,NA,NA,0,7,NA,NA,NA,FVOS Re-imagined,0,NA,NA,NA,NA,NA,0,9,9,7
+12,16.5,5.5,11,Blasphemous Hot Takes,1,4,13.5,-2.5,28.875,7.7,15.4,-3.5,18.9,1,NA,NA,NA,The Talmudic Tunnelers,0,NA,NA,NA,NA,NA,0,3,2,2
+2,19.5,9.5,10,Sac Fly by the Rook,1,5,0,10,34.125,13.3,14,14,0,8,17,3.5,13.5,Mt. Everest Taquito Farmers,0,13.5,29.75,4.9,18.9,18.9,0,1,1,3
+5,1,1,NA,The Traveling Secretaries,1,6,0,NA,1.75,1.4,NA,NA,0,11,NA,NA,NA,The West Bank Occupiers,0,NA,NA,NA,NA,NA,0,6,6,8
+4,NA,NA,NA,All That is Wright,2,7,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,1,1,1
 7,NA,NA,NA,FVOS Re-imagined,2,8,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,2,2,2
 1,NA,NA,NA,The Talmudic Tunnelers,2,9,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,3,3,3
 8,NA,NA,NA,Mt. Everest Taquito Farmers,2,10,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,4,4,4
 11,NA,NA,NA,The West Bank Occupiers,2,11,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,5,5,5
 5,NA,NA,NA,The Traveling Secretaries,2,12,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,6,6,6
 7,NA,NA,NA,FVOS Re-imagined,3,13,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
-14,NA,NA,NA,Elly De La Snooze,3,14,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,2,2,2
+14,NA,NA,NA,Burnes Notice,3,14,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 13,NA,NA,NA,Ketel Bells,3,15,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 6,NA,NA,NA,The Novaks,3,16,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 9,NA,NA,NA,Shrimp Fried Bryce,3,17,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,5,5,5
 12,NA,NA,NA,Blasphemous Hot Takes,3,18,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,4,19,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,1,1,1
 8,NA,NA,NA,Mt. Everest Taquito Farmers,4,20,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,2,2,2
-11,NA,NA,NA,The West Bank Occupiers,4,21,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,3,3,3
+11,NA,NA,NA,The West Bank Occupiers,4,21,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,3,3,3
 5,NA,NA,NA,The Traveling Secretaries,4,22,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,4,4,4
 2,NA,NA,NA,Sac Fly by the Rook,4,23,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,5,5,5
 12,NA,NA,NA,Blasphemous Hot Takes,4,24,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,6,6,6
 8,NA,NA,NA,Mt. Everest Taquito Farmers,5,25,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 1,NA,NA,NA,The Talmudic Tunnelers,5,26,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 7,NA,NA,NA,FVOS Re-imagined,5,27,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,3,3,3
-14,NA,NA,NA,Elly De La Snooze,5,28,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,4,4,4
+14,NA,NA,NA,Burnes Notice,5,28,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,4,4,4
 13,NA,NA,NA,Ketel Bells,5,29,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,5,5,5
 6,NA,NA,NA,The Novaks,5,30,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,6,31,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,1,1,1
 5,NA,NA,NA,The Traveling Secretaries,6,32,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 2,NA,NA,NA,Sac Fly by the Rook,6,33,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 12,NA,NA,NA,Blasphemous Hot Takes,6,34,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,4,4,4
-9,NA,NA,NA,Shrimp Fried Bryce,6,35,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,5,5,5
+9,NA,NA,NA,Shrimp Fried Bryce,6,35,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,5,5,5
 6,NA,NA,NA,The Novaks,6,36,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,6,6,6
 5,NA,NA,NA,The Traveling Secretaries,7,37,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 11,NA,NA,NA,The West Bank Occupiers,7,38,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,2,2,2
 8,NA,NA,NA,Mt. Everest Taquito Farmers,7,39,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,3,3,3
 1,NA,NA,NA,The Talmudic Tunnelers,7,40,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,4,4,4
 7,NA,NA,NA,FVOS Re-imagined,7,41,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,5,5,5
-14,NA,NA,NA,Elly De La Snooze,7,42,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,6,6,6
+14,NA,NA,NA,Burnes Notice,7,42,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,8,43,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,1,1,1
 12,NA,NA,NA,Blasphemous Hot Takes,8,44,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,2,2,2
 9,NA,NA,NA,Shrimp Fried Bryce,8,45,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 6,NA,NA,NA,The Novaks,8,46,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 13,NA,NA,NA,Ketel Bells,8,47,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,5,5,5
-14,NA,NA,NA,Elly De La Snooze,8,48,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,6,6,6
+14,NA,NA,NA,Burnes Notice,8,48,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,6,6,6
 12,NA,NA,NA,Blasphemous Hot Takes,9,49,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 2,NA,NA,NA,Sac Fly by the Rook,9,50,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,9,51,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,3,3,3
 11,NA,NA,NA,The West Bank Occupiers,9,52,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,4,4,4
-8,NA,NA,NA,Mt. Everest Taquito Farmers,9,53,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,5,5,5
+8,NA,NA,NA,Mt. Everest Taquito Farmers,9,53,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,5,5,5
 1,NA,NA,NA,The Talmudic Tunnelers,9,54,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,10,55,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,1,1,1
 6,NA,NA,NA,The Novaks,10,56,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,2,2,2
 13,NA,NA,NA,Ketel Bells,10,57,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,3,3,3
-14,NA,NA,NA,Elly De La Snooze,10,58,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,4,4,4
+14,NA,NA,NA,Burnes Notice,10,58,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,4,4,4
 7,NA,NA,NA,FVOS Re-imagined,10,59,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 1,NA,NA,NA,The Talmudic Tunnelers,10,60,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 6,NA,NA,NA,The Novaks,11,61,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 9,NA,NA,NA,Shrimp Fried Bryce,11,62,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,2,2,2
-12,NA,NA,NA,Blasphemous Hot Takes,11,63,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,3,3,3
+12,NA,NA,NA,Blasphemous Hot Takes,11,63,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,3,3,3
 2,NA,NA,NA,Sac Fly by the Rook,11,64,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,4,4,4
 5,NA,NA,NA,The Traveling Secretaries,11,65,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 11,NA,NA,NA,The West Bank Occupiers,11,66,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,12,67,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,1,1,1
-14,NA,NA,NA,Elly De La Snooze,12,68,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,2,2,2
+14,NA,NA,NA,Burnes Notice,12,68,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,2,2,2
 7,NA,NA,NA,FVOS Re-imagined,12,69,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,3,3,3
 1,NA,NA,NA,The Talmudic Tunnelers,12,70,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,4,4,4
 8,NA,NA,NA,Mt. Everest Taquito Farmers,12,71,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,5,5,5
 11,NA,NA,NA,The West Bank Occupiers,12,72,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,6,6,6
-14,NA,NA,NA,Elly De La Snooze,13,73,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
+14,NA,NA,NA,Burnes Notice,13,73,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 13,NA,NA,NA,Ketel Bells,13,74,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,2,2,2
 6,NA,NA,NA,The Novaks,13,75,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 9,NA,NA,NA,Shrimp Fried Bryce,13,76,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 12,NA,NA,NA,Blasphemous Hot Takes,13,77,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 2,NA,NA,NA,Sac Fly by the Rook,13,78,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,14,79,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,1,1,1
-1,NA,NA,NA,The Talmudic Tunnelers,14,80,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,2,2,2
+1,NA,NA,NA,The Talmudic Tunnelers,14,80,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,2,2,2
 8,NA,NA,NA,Mt. Everest Taquito Farmers,14,81,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,3,3,3
 11,NA,NA,NA,The West Bank Occupiers,14,82,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,4,4,4
 5,NA,NA,NA,The Traveling Secretaries,14,83,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,5,5,5
 2,NA,NA,NA,Sac Fly by the Rook,14,84,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,6,6,6
 1,NA,NA,NA,The Talmudic Tunnelers,15,85,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 7,NA,NA,NA,FVOS Re-imagined,15,86,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,2,2,2
-14,NA,NA,NA,Elly De La Snooze,15,87,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,3,3,3
+14,NA,NA,NA,Burnes Notice,15,87,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 13,NA,NA,NA,Ketel Bells,15,88,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,4,4,4
 6,NA,NA,NA,The Novaks,15,89,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,5,5,5
 9,NA,NA,NA,Shrimp Fried Bryce,15,90,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,16,91,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,1,1,1
 11,NA,NA,NA,The West Bank Occupiers,16,92,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,16,93,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,3,3,3
-2,NA,NA,NA,Sac Fly by the Rook,16,94,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,4,4,4
+2,NA,NA,NA,Sac Fly by the Rook,16,94,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,4,4,4
 12,NA,NA,NA,Blasphemous Hot Takes,16,95,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,5,5,5
 9,NA,NA,NA,Shrimp Fried Bryce,16,96,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,6,6,6
 11,NA,NA,NA,The West Bank Occupiers,17,97,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 8,NA,NA,NA,Mt. Everest Taquito Farmers,17,98,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,2,2,2
 1,NA,NA,NA,The Talmudic Tunnelers,17,99,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,3,3,3
 7,NA,NA,NA,FVOS Re-imagined,17,100,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,4,4,4
-14,NA,NA,NA,Elly De La Snooze,17,101,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,5,5,5
+14,NA,NA,NA,Burnes Notice,17,101,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,5,5,5
 13,NA,NA,NA,Ketel Bells,17,102,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,18,103,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,1,1,1
 2,NA,NA,NA,Sac Fly by the Rook,18,104,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,2,2,2
 12,NA,NA,NA,Blasphemous Hot Takes,18,105,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,3,3,3
 9,NA,NA,NA,Shrimp Fried Bryce,18,106,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,4,4,4
 6,NA,NA,NA,The Novaks,18,107,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,5,5,5
-13,NA,NA,NA,Ketel Bells,18,108,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,6,6,6
+13,NA,NA,NA,Ketel Bells,18,108,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,6,6,6
 2,NA,NA,NA,Sac Fly by the Rook,19,109,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 5,NA,NA,NA,The Traveling Secretaries,19,110,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,2,2,2
 11,NA,NA,NA,The West Bank Occupiers,19,111,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,3,3,3
 8,NA,NA,NA,Mt. Everest Taquito Farmers,19,112,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,4,4,4
 1,NA,NA,NA,The Talmudic Tunnelers,19,113,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,5,5,5
-7,NA,NA,NA,FVOS Re-imagined,19,114,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,6,6,6
+7,NA,NA,NA,FVOS Re-imagined,19,114,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,6,6,6
 4,NA,NA,NA,All That is Wright,20,115,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,1,1,1
 9,NA,NA,NA,Shrimp Fried Bryce,20,116,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,2,2,2
 6,NA,NA,NA,The Novaks,20,117,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,3,3,3
 13,NA,NA,NA,Ketel Bells,20,118,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,4,4,4
-14,NA,NA,NA,Elly De La Snooze,20,119,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,5,5,5
+14,NA,NA,NA,Burnes Notice,20,119,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,5,5,5
 7,NA,NA,NA,FVOS Re-imagined,20,120,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,6,6,6
 9,NA,NA,NA,Shrimp Fried Bryce,21,121,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 12,NA,NA,NA,Blasphemous Hot Takes,21,122,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,2,2,2
 2,NA,NA,NA,Sac Fly by the Rook,21,123,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,3,3,3
-5,NA,NA,NA,The Traveling Secretaries,21,124,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,4,4,4
+5,NA,NA,NA,The Traveling Secretaries,21,124,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,4,4,4
 11,NA,NA,NA,The West Bank Occupiers,21,125,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,5,5,5
 8,NA,NA,NA,Mt. Everest Taquito Farmers,21,126,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,6,6,6
-4,NA,-1.5,NA,All That is Wright,1,1,0,NA,NA,-2.1,NA,NA,0,13,NA,NA,NA,Ketel Bells,0,NA,NA,NA,NA,NA,0,7,7,8
-14,NA,4.5,NA,Elly De La Snooze,1,2,0,NA,NA,6.3,NA,NA,0,6,NA,1.5,NA,The Novaks,0,NA,NA,2.1,NA,NA,0,8,2,9
-7,NA,NA,NA,FVOS Re-imagined,1,3,0,NA,NA,NA,NA,NA,0,9,NA,NA,NA,Shrimp Fried Bryce,0,NA,NA,NA,NA,NA,0,9,10,10
-1,NA,NA,NA,The Talmudic Tunnelers,1,4,0,NA,NA,NA,NA,NA,0,12,NA,3,13.5,Blasphemous Hot Takes,13.5,0,NA,4.2,18.9,0,18.9,10,11,11
-8,NA,3.5,13.5,Mt. Everest Taquito Farmers,1,5,0,13.5,NA,4.9,18.9,18.9,0,2,NA,7.5,12,Sac Fly by the Rook,0,12,NA,10.5,16.8,16.8,0,11,3,1.5
-11,NA,NA,NA,The West Bank Occupiers,1,6,0,NA,NA,NA,NA,NA,0,5,NA,1,NA,The Traveling Secretaries,0,NA,NA,1.4,NA,NA,0,12,12,12
-14,NA,NA,NA,Elly De La Snooze,2,7,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
+4,-1.5,-1,-0.5,All That is Wright,1,1,0,-0.5,-2.625,-1.4,-0.7,-0.7,0,13,NA,NA,NA,Ketel Bells,0,NA,NA,NA,NA,NA,0,7,7,4
+14,4.5,4.5,NA,Burnes Notice,1,2,0,NA,7.875,6.3,NA,NA,0,6,1.5,1.5,NA,The Novaks,0,NA,2.625,2.1,NA,NA,0,4,3,9
+7,NA,NA,NA,FVOS Re-imagined,1,3,0,NA,NA,NA,NA,NA,0,9,NA,NA,NA,Shrimp Fried Bryce,0,NA,NA,NA,NA,NA,0,10,10,10
+1,NA,NA,NA,The Talmudic Tunnelers,1,4,0,NA,NA,NA,NA,NA,0,12,16.5,5.5,11,Blasphemous Hot Takes,13.5,-2.5,28.875,7.7,15.4,-3.5,18.9,11,11,11
+8,17,3.5,13.5,Mt. Everest Taquito Farmers,1,5,0,13.5,29.75,4.9,18.9,18.9,0,2,19.5,9.5,10,Sac Fly by the Rook,0,10,34.125,13.3,14,14,0,2,4,1
+11,NA,NA,NA,The West Bank Occupiers,1,6,0,NA,NA,NA,NA,NA,0,5,1,1,NA,The Traveling Secretaries,0,NA,1.75,1.4,NA,NA,0,12,12,12
+14,NA,NA,NA,Burnes Notice,2,7,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 13,NA,NA,NA,Ketel Bells,2,8,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,8,8,8
 6,NA,NA,NA,The Novaks,2,9,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 9,NA,NA,NA,Shrimp Fried Bryce,2,10,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 12,NA,NA,NA,Blasphemous Hot Takes,2,11,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 2,NA,NA,NA,Sac Fly by the Rook,2,12,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,3,13,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,7,7,7
-1,NA,NA,NA,The Talmudic Tunnelers,3,14,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,8,8,8
+1,NA,NA,NA,The Talmudic Tunnelers,3,14,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,8,8,8
 8,NA,NA,NA,Mt. Everest Taquito Farmers,3,15,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,9,9,9
 11,NA,NA,NA,The West Bank Occupiers,3,16,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,10,10,10
 5,NA,NA,NA,The Traveling Secretaries,3,17,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,11,11,11
 2,NA,NA,NA,Sac Fly by the Rook,3,18,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,12,12,12
 1,NA,NA,NA,The Talmudic Tunnelers,4,19,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 7,NA,NA,NA,FVOS Re-imagined,4,20,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,8,8,8
-14,NA,NA,NA,Elly De La Snooze,4,21,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,9,9,9
+14,NA,NA,NA,Burnes Notice,4,21,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 13,NA,NA,NA,Ketel Bells,4,22,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,10,10,10
 6,NA,NA,NA,The Novaks,4,23,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,11,11,11
 9,NA,NA,NA,Shrimp Fried Bryce,4,24,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,5,25,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,7,7,7
 11,NA,NA,NA,The West Bank Occupiers,5,26,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 5,NA,NA,NA,The Traveling Secretaries,5,27,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,9,9,9
-2,NA,NA,NA,Sac Fly by the Rook,5,28,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,10,10,10
+2,NA,NA,NA,Sac Fly by the Rook,5,28,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,10,10,10
 12,NA,NA,NA,Blasphemous Hot Takes,5,29,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,11,11,11
 9,NA,NA,NA,Shrimp Fried Bryce,5,30,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,12,12,12
 11,NA,NA,NA,The West Bank Occupiers,6,31,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 8,NA,NA,NA,Mt. Everest Taquito Farmers,6,32,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,8,8,8
 1,NA,NA,NA,The Talmudic Tunnelers,6,33,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,9,9,9
 7,NA,NA,NA,FVOS Re-imagined,6,34,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,10,10,10
-14,NA,NA,NA,Elly De La Snooze,6,35,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,11,11,11
+14,NA,NA,NA,Burnes Notice,6,35,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,11,11,11
 13,NA,NA,NA,Ketel Bells,6,36,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,7,37,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,7,7,7
 2,NA,NA,NA,Sac Fly by the Rook,7,38,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 12,NA,NA,NA,Blasphemous Hot Takes,7,39,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 9,NA,NA,NA,Shrimp Fried Bryce,7,40,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 6,NA,NA,NA,The Novaks,7,41,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,11,11,11
-13,NA,NA,NA,Ketel Bells,7,42,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,12,12,12
+13,NA,NA,NA,Ketel Bells,7,42,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,12,12,12
 2,NA,NA,NA,Sac Fly by the Rook,8,43,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 5,NA,NA,NA,The Traveling Secretaries,8,44,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,8,8,8
 11,NA,NA,NA,The West Bank Occupiers,8,45,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,9,9,9
 8,NA,NA,NA,Mt. Everest Taquito Farmers,8,46,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,10,10,10
 1,NA,NA,NA,The Talmudic Tunnelers,8,47,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,11,11,11
-7,NA,NA,NA,FVOS Re-imagined,8,48,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,12,12,12
+7,NA,NA,NA,FVOS Re-imagined,8,48,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,9,49,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,7,7,7
 9,NA,NA,NA,Shrimp Fried Bryce,9,50,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,8,8,8
 6,NA,NA,NA,The Novaks,9,51,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,9,9,9
 13,NA,NA,NA,Ketel Bells,9,52,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,10,10,10
-14,NA,NA,NA,Elly De La Snooze,9,53,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,11,11,11
+14,NA,NA,NA,Burnes Notice,9,53,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 7,NA,NA,NA,FVOS Re-imagined,9,54,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 9,NA,NA,NA,Shrimp Fried Bryce,10,55,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 12,NA,NA,NA,Blasphemous Hot Takes,10,56,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,8,8,8
 2,NA,NA,NA,Sac Fly by the Rook,10,57,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,9,9,9
-5,NA,NA,NA,The Traveling Secretaries,10,58,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,10,10,10
+5,NA,NA,NA,The Traveling Secretaries,10,58,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,10,10,10
 11,NA,NA,NA,The West Bank Occupiers,10,59,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,11,11,11
 8,NA,NA,NA,Mt. Everest Taquito Farmers,10,60,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,11,61,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,7,7,7
 13,NA,NA,NA,Ketel Bells,11,62,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,8,8,8
-14,NA,NA,NA,Elly De La Snooze,11,63,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,9,9,9
+14,NA,NA,NA,Burnes Notice,11,63,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,9,9,9
 7,NA,NA,NA,FVOS Re-imagined,11,64,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,10,10,10
 1,NA,NA,NA,The Talmudic Tunnelers,11,65,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,11,11,11
 8,NA,NA,NA,Mt. Everest Taquito Farmers,11,66,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,12,12,12
 13,NA,NA,NA,Ketel Bells,12,67,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
-6,NA,NA,NA,The Novaks,12,68,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,8,8,8
+6,NA,NA,NA,The Novaks,12,68,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,8,8,8
 9,NA,NA,NA,Shrimp Fried Bryce,12,69,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,9,9,9
 12,NA,NA,NA,Blasphemous Hot Takes,12,70,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 2,NA,NA,NA,Sac Fly by the Rook,12,71,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 5,NA,NA,NA,The Traveling Secretaries,12,72,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,12,12,12
-4,NA,NA,NA,All That is Wright,13,73,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,7,7,7
+4,NA,NA,NA,All That is Wright,13,73,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,7,7,7
 7,NA,NA,NA,FVOS Re-imagined,13,74,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,8,8,8
 1,NA,NA,NA,The Talmudic Tunnelers,13,75,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,9,9,9
 8,NA,NA,NA,Mt. Everest Taquito Farmers,13,76,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,10,10,10
 11,NA,NA,NA,The West Bank Occupiers,13,77,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,11,11,11
 5,NA,NA,NA,The Traveling Secretaries,13,78,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,12,12,12
 7,NA,NA,NA,FVOS Re-imagined,14,79,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
-14,NA,NA,NA,Elly De La Snooze,14,80,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,8,8,8
+14,NA,NA,NA,Burnes Notice,14,80,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 13,NA,NA,NA,Ketel Bells,14,81,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 6,NA,NA,NA,The Novaks,14,82,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 9,NA,NA,NA,Shrimp Fried Bryce,14,83,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,11,11,11
 12,NA,NA,NA,Blasphemous Hot Takes,14,84,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,15,85,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,7,7,7
 8,NA,NA,NA,Mt. Everest Taquito Farmers,15,86,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,8,8,8
-11,NA,NA,NA,The West Bank Occupiers,15,87,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,9,9,9
+11,NA,NA,NA,The West Bank Occupiers,15,87,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,9,9,9
 5,NA,NA,NA,The Traveling Secretaries,15,88,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,10,10,10
 2,NA,NA,NA,Sac Fly by the Rook,15,89,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,11,11,11
 12,NA,NA,NA,Blasphemous Hot Takes,15,90,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,12,12,12
 8,NA,NA,NA,Mt. Everest Taquito Farmers,16,91,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 1,NA,NA,NA,The Talmudic Tunnelers,16,92,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 7,NA,NA,NA,FVOS Re-imagined,16,93,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,9,9,9
-14,NA,NA,NA,Elly De La Snooze,16,94,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,10,10,10
+14,NA,NA,NA,Burnes Notice,16,94,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,10,10,10
 13,NA,NA,NA,Ketel Bells,16,95,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,11,11,11
 6,NA,NA,NA,The Novaks,16,96,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,17,97,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,7,7,7
 5,NA,NA,NA,The Traveling Secretaries,17,98,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 2,NA,NA,NA,Sac Fly by the Rook,17,99,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 12,NA,NA,NA,Blasphemous Hot Takes,17,100,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,10,10,10
-9,NA,NA,NA,Shrimp Fried Bryce,17,101,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,11,11,11
+9,NA,NA,NA,Shrimp Fried Bryce,17,101,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,11,11,11
 6,NA,NA,NA,The Novaks,17,102,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,12,12,12
 5,NA,NA,NA,The Traveling Secretaries,18,103,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 11,NA,NA,NA,The West Bank Occupiers,18,104,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,8,8,8
 8,NA,NA,NA,Mt. Everest Taquito Farmers,18,105,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,9,9,9
 1,NA,NA,NA,The Talmudic Tunnelers,18,106,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,10,10,10
 7,NA,NA,NA,FVOS Re-imagined,18,107,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,11,11,11
-14,NA,NA,NA,Elly De La Snooze,18,108,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,12,12,12
+14,NA,NA,NA,Burnes Notice,18,108,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,19,109,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,7,7,7
 12,NA,NA,NA,Blasphemous Hot Takes,19,110,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,8,8,8
 9,NA,NA,NA,Shrimp Fried Bryce,19,111,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,9,9,9
 6,NA,NA,NA,The Novaks,19,112,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,10,10,10
 13,NA,NA,NA,Ketel Bells,19,113,NA,NA,NA,NA,NA,NA,NA,1,NA,NA,NA,The Talmudic Tunnelers,NA,NA,NA,NA,NA,NA,NA,11,11,11
-14,NA,NA,NA,Elly De La Snooze,19,114,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,12,12,12
+14,NA,NA,NA,Burnes Notice,19,114,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,12,12,12
 12,NA,NA,NA,Blasphemous Hot Takes,20,115,NA,NA,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,7,7,7
 2,NA,NA,NA,Sac Fly by the Rook,20,116,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,8,8,8
 5,NA,NA,NA,The Traveling Secretaries,20,117,NA,NA,NA,NA,NA,NA,NA,6,NA,NA,NA,The Novaks,NA,NA,NA,NA,NA,NA,NA,9,9,9
 11,NA,NA,NA,The West Bank Occupiers,20,118,NA,NA,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,10,10,10
-8,NA,NA,NA,Mt. Everest Taquito Farmers,20,119,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Elly De La Snooze,NA,NA,NA,NA,NA,NA,NA,11,11,11
+8,NA,NA,NA,Mt. Everest Taquito Farmers,20,119,NA,NA,NA,NA,NA,NA,NA,14,NA,NA,NA,Burnes Notice,NA,NA,NA,NA,NA,NA,NA,11,11,11
 1,NA,NA,NA,The Talmudic Tunnelers,20,120,NA,NA,NA,NA,NA,NA,NA,7,NA,NA,NA,FVOS Re-imagined,NA,NA,NA,NA,NA,NA,NA,12,12,12
 4,NA,NA,NA,All That is Wright,21,121,NA,NA,NA,NA,NA,NA,NA,9,NA,NA,NA,Shrimp Fried Bryce,NA,NA,NA,NA,NA,NA,NA,7,7,7
 6,NA,NA,NA,The Novaks,21,122,NA,NA,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,8,8,8
 13,NA,NA,NA,Ketel Bells,21,123,NA,NA,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,9,9,9
-14,NA,NA,NA,Elly De La Snooze,21,124,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,10,10,10
+14,NA,NA,NA,Burnes Notice,21,124,NA,NA,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,10,10,10
 7,NA,NA,NA,FVOS Re-imagined,21,125,NA,NA,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,11,11,11
 1,NA,NA,NA,The Talmudic Tunnelers,21,126,NA,NA,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,12,12,12

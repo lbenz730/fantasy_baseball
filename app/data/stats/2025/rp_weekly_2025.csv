@@ -2,13 +2,14 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 1,NA,NA,NA,NA,NA,13
 2,1,Dansby Swanson,34895,NA,1.5,6
 3,1,Michael Busch,42415,NA,0,9
-4,1,Tommy Edman,39907,NA,2,12
-4,1,Max Muncy,33303,NA,1,12
+4,1,Tommy Edman,39907,NA,1.5,12
+4,1,Max Muncy,33303,NA,4,12
 4,1,Blake Treinen,32185,1,6.5,12
 4,1,Tanner Scott,35135,1,7,12
-5,1,Will Smith,38309,NA,5,2
+5,1,Will Smith,38309,NA,7,2
 5,1,Shota Imanaga,5134630,NA,12,2
 5,1,Miguel Amaya,38905,NA,2.5,2
+5,1,Justin Steele,41022,NA,0.5,2
 6,1,Ian Happ,34945,NA,1,5
 7,NA,NA,NA,NA,NA,4
 8,NA,NA,NA,NA,NA,7
@@ -130,10 +131,10 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 124,NA,NA,NA,NA,NA,5
 125,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,8
-1,1,Seiya Suzuki,4142424,NA,-0.5,4
+1,1,Seiya Suzuki,4142424,NA,-1,4
 1,1,Matt Shaw,4867667,NA,-2,4
 1,1,Pete Crow-Armstrong,4717833,NA,-0.5,4
-1,1,Michael Conforto,33711,NA,1.5,4
+1,1,Michael Conforto,33711,NA,2.5,4
 2,1,Shohei Ohtani,39832,NA,NA,14
 3,NA,NA,NA,NA,NA,7
 4,1,Kyle Tucker,34967,NA,0,1

@@ -1,20 +1,20 @@
 lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
-0,C,Will Smith,38309,2,5,5,1
-1,1B,Andrew Vaughn,42394,2,0,NA,1
+0,C,Will Smith,38309,2,7,3.5,1
+1,1B,Michael Busch,42415,9,1,0.5,1
 2,2B,Brandon Lowe,39961,4,0,NA,1
-3,3B,Max Muncy,33303,12,1,1,1
-4,SS,Tommy Edman,39907,12,2,2,1
-5,OF,Teoscar Hernandez,33377,8,3.5,3.5,1
-5,OF,Michael Conforto,33711,4,1.5,1.5,1
-5,OF,Ian Happ,34945,5,1,1,1
+3,3B,Max Muncy,33303,12,4,2,1
+4,SS,Dansby Swanson,34895,6,1.5,1.5,1
+5,OF,Teoscar Hernandez,33377,8,3.5,1.75,1
+5,OF,Michael Conforto,33711,4,2.5,1.25,1
+5,OF,Tommy Edman,39907,12,1.5,0.75,1
+5,OF,Ian Happ,34945,5,1,0.5,1
 5,OF,Aaron Judge,33192,2,0,NA,1
-5,OF,Adolis Garcia,35537,12,0,NA,1
-6,2B/SS,Dansby Swanson,34895,6,1.5,1.5,1
+6,2B/SS,Anthony Volpe,42547,5,0,NA,1
 7,1B/3B,Alec Bohm,41169,7,0,NA,1
-12,UTIL,Shohei Ohtani,39832,14,4.5,4.5,1
+12,UTIL,Shohei Ohtani,39832,14,4.5,2.25,1
 14,SP,Yoshinobu Yamamoto,4872587,8,13.5,13.5,1
 14,SP,Shota Imanaga,5134630,2,12,12,1
-14,SP,NA,NA,NA,NA,NA,1
+14,SP,Justin Steele,41022,2,0.5,0.5,1
 14,SP,NA,NA,NA,NA,NA,1
 14,SP,NA,NA,NA,NA,NA,1
 14,SP,NA,NA,NA,NA,NA,1
