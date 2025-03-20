@@ -1,16 +1,17 @@
 team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 1,NA,NA,NA,NA,NA,13
-2,1,Dansby Swanson,34895,1,1.5,6
-3,1,Michael Busch,42415,2,0,9
-4,1,Tommy Edman,39907,2,1.5,12
-4,1,Max Muncy,33303,2,4,12
+2,1,Kirby Yates,32623,NA,6,6
+2,1,Dansby Swanson,34895,2,5,6
+3,1,Michael Busch,42415,2,0.5,9
+4,1,Tommy Edman,39907,2,6,12
+4,1,Max Muncy,33303,2,3.5,12
 4,1,Blake Treinen,32185,NA,6.5,12
 4,1,Tanner Scott,35135,NA,7,12
-5,1,Will Smith,38309,2,7,2
+5,1,Will Smith,38309,2,11,2
 5,1,Shota Imanaga,5134630,NA,12,2
 5,1,Miguel Amaya,38905,1,2.5,2
-5,1,Justin Steele,41022,NA,0.5,2
-6,1,Ian Happ,34945,2,1,5
+5,1,Justin Steele,41022,NA,1.5,2
+6,1,Ian Happ,34945,2,3.5,5
 7,NA,NA,NA,NA,NA,4
 8,NA,NA,NA,NA,NA,7
 9,NA,NA,NA,NA,NA,1
@@ -131,14 +132,16 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 124,NA,NA,NA,NA,NA,5
 125,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,8
+1,1,Porter Hodge,5185133,NA,3.5,4
 1,1,Seiya Suzuki,4142424,2,-1,4
-1,1,Matt Shaw,4867667,1,-2,4
-1,1,Pete Crow-Armstrong,4717833,1,-0.5,4
-1,1,Michael Conforto,33711,2,2.5,4
-2,1,Shohei Ohtani,39832,2,4.5,14
+1,1,Matt Shaw,4867667,2,-1,4
+1,1,Pete Crow-Armstrong,4717833,2,-1.5,4
+1,1,Michael Conforto,33711,2,3,4
+2,1,Shohei Ohtani,39832,2,13,14
 3,NA,NA,NA,NA,NA,7
-4,1,Kyle Tucker,34967,2,0,1
-5,1,Teoscar Hernandez,33377,2,3.5,8
+4,1,Ryan Pressly,33072,NA,1.5,1
+4,1,Kyle Tucker,34967,2,4,1
+5,1,Teoscar Hernandez,33377,2,3,8
 5,1,Yoshinobu Yamamoto,4872587,NA,13.5,8
 6,NA,NA,NA,NA,NA,11
 7,NA,NA,NA,NA,NA,14

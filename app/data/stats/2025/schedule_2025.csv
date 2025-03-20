@@ -1,10 +1,10 @@
 matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitching_points,away_team_id,away_total_points,away_batting_points,away_pitching_points,home_team,away_team
-1,1,13,NA,NA,NA,4,-1.5,-1,-0.5,Ketel Bells,All That is Wright
-1,2,6,1.5,1.5,NA,14,4.5,4.5,NA,The Novaks,Burnes Notice
-1,3,9,NA,NA,NA,7,NA,NA,NA,Shrimp Fried Bryce,FVOS Re-imagined
-1,4,12,16.5,5.5,11,1,NA,NA,NA,Blasphemous Hot Takes,The Talmudic Tunnelers
-1,5,2,19.5,9.5,10,8,17,3.5,13.5,Sac Fly by the Rook,Mt. Everest Taquito Farmers
-1,6,5,1,1,NA,11,NA,NA,NA,The Traveling Secretaries,The West Bank Occupiers
+1,1,13,NA,NA,NA,4,3,-0.5,3.5,Ketel Bells,All That is Wright
+1,2,6,11,5,6,14,13,13,NA,The Novaks,Burnes Notice
+1,3,9,0.5,0.5,NA,7,NA,NA,NA,Shrimp Fried Bryce,FVOS Re-imagined
+1,4,12,23,9.5,13.5,1,5.5,4,1.5,Blasphemous Hot Takes,The Talmudic Tunnelers
+1,5,2,27,13.5,13.5,8,16.5,3,13.5,Sac Fly by the Rook,Mt. Everest Taquito Farmers
+1,6,5,3.5,3.5,NA,11,NA,NA,NA,The Traveling Secretaries,The West Bank Occupiers
 2,7,4,NA,NA,NA,14,NA,NA,NA,All That is Wright,Burnes Notice
 2,8,7,NA,NA,NA,13,NA,NA,NA,FVOS Re-imagined,Ketel Bells
 2,9,1,NA,NA,NA,6,NA,NA,NA,The Talmudic Tunnelers,The Novaks

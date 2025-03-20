@@ -1,16 +1,17 @@
 team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 1,NA,NA,NA,NA,NA,NA,13
-2,1,Dansby Swanson,34895,NA,1.5,NA,6
-3,1,Michael Busch,42415,NA,0,NA,9
-4,1,Tommy Edman,39907,NA,1.5,NA,12
-4,1,Max Muncy,33303,NA,4,NA,12
+2,1,Kirby Yates,32623,NA,6,0,6
+2,1,Dansby Swanson,34895,NA,5,NA,6
+3,1,Michael Busch,42415,NA,0.5,NA,9
+4,1,Tommy Edman,39907,NA,6,NA,12
+4,1,Max Muncy,33303,NA,3.5,NA,12
 4,1,Blake Treinen,32185,NA,6.5,0,12
 4,1,Tanner Scott,35135,NA,7,0,12
-5,1,Will Smith,38309,NA,7,NA,2
+5,1,Will Smith,38309,NA,11,NA,2
 5,1,Shota Imanaga,5134630,1,12,0,2
 5,1,Miguel Amaya,38905,NA,2.5,NA,2
-5,1,Justin Steele,41022,1,0.5,0,2
-6,1,Ian Happ,34945,NA,1,NA,5
+5,1,Justin Steele,41022,1,1.5,0,2
+6,1,Ian Happ,34945,NA,3.5,NA,5
 7,NA,NA,NA,NA,NA,NA,4
 8,NA,NA,NA,NA,NA,NA,7
 9,NA,NA,NA,NA,NA,NA,1
@@ -131,14 +132,16 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,5
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
+1,1,Porter Hodge,5185133,NA,3.5,0,4
 1,1,Seiya Suzuki,4142424,NA,-1,NA,4
-1,1,Matt Shaw,4867667,NA,-2,NA,4
-1,1,Pete Crow-Armstrong,4717833,NA,-0.5,NA,4
-1,1,Michael Conforto,33711,NA,2.5,NA,4
+1,1,Matt Shaw,4867667,NA,-1,NA,4
+1,1,Pete Crow-Armstrong,4717833,NA,-1.5,NA,4
+1,1,Michael Conforto,33711,NA,3,NA,4
 2,1,Shohei Ohtani,39832,NA,0,NA,14
 3,NA,NA,NA,NA,NA,NA,7
-4,1,Kyle Tucker,34967,NA,0,NA,1
-5,1,Teoscar Hernandez,33377,NA,3.5,NA,8
+4,1,Ryan Pressly,33072,NA,1.5,0,1
+4,1,Kyle Tucker,34967,NA,4,NA,1
+5,1,Teoscar Hernandez,33377,NA,3,NA,8
 5,1,Yoshinobu Yamamoto,4872587,1,13.5,0,8
 6,NA,NA,NA,NA,NA,NA,11
 7,NA,NA,NA,NA,NA,NA,14
