@@ -15,7 +15,7 @@ theme_set(theme_bw() +
 df_start <- 
   read_csv('data/df_start.csv') %>% 
   filter(season > 2019) %>% 
-  filter(season <= 2023 | matchup_id <= 22)
+  filter(season <= 2025)
 
 df_wp <- 
   map2_dfr(df_start$season, df_start$matchup_id, ~{
@@ -43,13 +43,13 @@ df_calibration <-
   group_by(season_id, wp_bucket) %>% 
   summarise('n' = n(),
             'mean_wp' = mean(win)) %>% 
-  mutate('train_set' = ifelse(season_id <= 2023, 'Training Data', 'Out of Sample'))
+  mutate('train_set' = ifelse(season_id <= 2024, 'Training Data', 'Out of Sample'))
 
 ggplot(df_calibration, aes(x = wp_bucket, y = mean_wp)) + 
   facet_wrap(~season_id) +
   geom_abline(slope = 1, intercept = 0) + 
   geom_point(aes(size = n, color = train_set)) + 
-  # geom_smooth() +
+  geom_smooth() +
   scale_x_continuous(labels = scales::percent) + 
   scale_y_continuous(labels = scales::percent) +
   labs(x = 'Predicted Win Probability',
