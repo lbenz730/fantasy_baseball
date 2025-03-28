@@ -1,23 +1,23 @@
 lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
-0,C,Will Smith,38309,2,11,5.5,1
-1,1B,Michael Busch,42415,9,0.5,0.25,1
-2,2B,Brandon Lowe,39961,4,0,NA,1
-3,3B,Max Muncy,33303,12,3.5,1.75,1
+0,C,Adley Rutschman,42178,9,14.5,14.5,1
+1,1B,Tyler Soderstrom,4686066,12,11.5,11.5,1
+2,2B,Ozzie Albies,33783,8,8,8,1
+3,3B,Manny Machado,31097,5,10.5,10.5,1
 4,SS,Tommy Edman,39907,12,6,3,1
-5,OF,Kyle Tucker,34967,1,4,2,1
-5,OF,Ian Happ,34945,5,3.5,1.75,1
-5,OF,Michael Conforto,33711,4,3,1.5,1
-5,OF,Teoscar Hernandez,33377,8,3,1.5,1
-5,OF,Aaron Judge,33192,2,0,NA,1
-6,2B/SS,Dansby Swanson,34895,6,5,2.5,1
-7,1B/3B,Alec Bohm,41169,7,0,NA,1
-12,UTIL,Shohei Ohtani,39832,14,13,6.5,1
-14,SP,Yoshinobu Yamamoto,4872587,8,13.5,13.5,1
-14,SP,Shota Imanaga,5134630,2,12,12,1
-14,SP,Justin Steele,41022,2,1.5,1.5,1
-14,SP,NA,NA,NA,NA,NA,1
-14,SP,NA,NA,NA,NA,NA,1
-14,SP,NA,NA,NA,NA,NA,1
-15,RP,Tanner Scott,35135,12,7,7,1
-15,RP,Blake Treinen,32185,12,6.5,6.5,1
-15,RP,Kirby Yates,32623,6,6,6,1
+5,OF,Wilyer Abreu,4990055,5,17,17,1
+5,OF,Cedric Mullins,35578,13,15,15,1
+5,OF,Ian Happ,34945,5,15,5,1
+5,OF,Tyler O'Neill,34168,2,14,14,1
+5,OF,Teoscar Hernandez,33377,8,10.5,3.5,1
+6,2B/SS,Jordan Westburg,4298641,8,7.5,7.5,1
+7,1B/3B,Vinnie Pasquantino,4109109,13,10,10,1
+12,UTIL,Shohei Ohtani,39832,14,21,7,1
+14,SP,Logan Gilbert,41221,4,30,30,1
+14,SP,Zack Wheeler,31267,1,26,26,1
+14,SP,Nathan Eovaldi,31174,13,25,25,1
+14,SP,Framber Valdez,36581,7,24.5,24.5,1
+14,SP,Luis Severino,33263,14,23.5,23.5,1
+14,SP,Sean Burke,4867679,5,22.5,22.5,1
+15,RP,Blake Treinen,32185,12,13,6.5,1
+15,RP,Tanner Scott,35135,12,10,5,1
+15,RP,Ryan Helsley,39909,8,8,8,1

@@ -1,14 +1,14 @@
 team,win_pct,exp_win_pct,win,loss,exp_win,exp_loss,division_id,logo,total_points,total_adj_points,batting_points,pitching_points,sp_points,rp_points,adj_batting_pts,adj_pitching_pts,adj_pts,adj_sp_pts,adj_rp_pts,batting_ppg,rp_ppg,sp_ppg,qs_pct,rank
-Sac Fly by the Rook,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/core/StarsAndFlames/stars_flames-8.svg,27,47.25,13.5,13.5,13.5,0,23.625,23.625,47.25,23.625,0,4.5,NA,6.75,0,1
-Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,23,40.25,9.5,13.5,0,13.5,16.625,23.625,40.25,0,23.625,2.375,6.75,NA,NA,2
-Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,16.5,28.875,3,13.5,13.5,0,5.25,23.625,28.875,23.625,0,1.5,NA,13.5,0,3
-Burnes Notice,0.5,0.5,0,0,0,0,1,https://imgur.com/roVSjje.png,13,22.75,13,0,0,0,22.75,NA,22.75,NA,0,6.5,NA,NA,NA,4
-The Novaks,0.5,0.5,0,0,0,0,1,https://i.imgur.com/DPLqmOq.jpg,11,19.25,5,6,0,6,8.75,10.5,19.25,0,10.5,2.5,6,NA,NA,5
-The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,5.5,9.625,4,1.5,0,1.5,7,2.625,9.625,0,2.625,2,1.5,NA,NA,6
-The Traveling Secretaries,0.5,0.5,0,0,0,0,1,https://i.imgur.com/wll1Ubw.jpg,3.5,6.125,3.5,0,0,0,6.125,NA,6.125,NA,0,1.75,NA,NA,NA,7
-All That is Wright,0.5,0.5,0,0,0,0,1,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,3,5.25,-0.5,3.5,0,3.5,-0.875,6.125,5.25,0,6.125,-0.0625,3.5,NA,NA,8
-Guts. Glory. JRam.,0.5,0.5,0,0,0,0,1,https://i.imgur.com/L5sud2F.png,0.5,0.875,0.5,0,0,0,0.875,NA,0.875,NA,0,0.25,NA,NA,NA,9
-FVOS Re-imagined,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,0,0,0,0,0,0,NA,NA,NA,NA,0,NA,NA,NA,NA,10
-Ketel Bells,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,0,0,0,0,0,0,NA,NA,NA,NA,0,NA,NA,NA,NA,11
-The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,0,0,0,0,0,0,NA,NA,NA,NA,0,NA,NA,NA,NA,12
-League Average,NA,NA,NA,NA,NA,NA,NA,NA,8.583333333333334,NA,4.291666666666667,4.291666666666667,2.25,2.0416666666666665,NA,NA,NA,NA,3.5729166666666665,1.9074074074074074,4.9,9,0,NA
+Ketel Bells,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,122.5,214.375,61.5,61,49.5,11.5,107.625,106.75,214.375,86.625,20.125,4.730769230769231,5.75,16.5,0.3333333333333333,1
+Burnes Notice,0.5,0.5,0,0,0,0,1,https://imgur.com/roVSjje.png,115.5,202.125,31.5,84,73,11,55.125,147,202.125,127.75,19.25,2.1,5.5,14.6,0.6,2
+Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,99,173.25,57.5,41.5,11.5,30,100.625,72.625,173.25,20.125,52.5,3.3823529411764706,6,5.75,0,3
+All That is Wright,0.5,0.5,0,0,0,0,1,https://media1.tenor.com/m/hRchp6kZVHIAAAAC/steve-cohen.gif,89.5,156.625,34.5,55,51.5,3.5,60.375,96.25,156.625,90.125,6.125,1.8157894736842106,3.5,17.166666666666668,0.3333333333333333,4
+The Traveling Secretaries,0.5,0.5,0,0,0,0,1,https://i.imgur.com/wll1Ubw.jpg,87.5,153.125,60,27.5,25,2.5,105,48.125,153.125,43.75,4.375,4,2.5,12.5,0.5,5
+Sac Fly by the Rook,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/core/StarsAndFlames/stars_flames-8.svg,75.5,132.125,42.5,33,29.5,3.5,74.375,57.75,132.125,51.625,6.125,2.65625,1.75,7.375,0,6
+Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,64,112,42.5,21.5,13.5,8,74.375,37.625,112,23.625,14,2.8333333333333335,8,13.5,0,7
+Guts. Glory. JRam.,0.5,0.5,0,0,0,0,1,https://i.imgur.com/L5sud2F.png,60,105,38,22,19,3,66.5,38.5,105,33.25,5.25,2.533333333333333,1.5,9.5,0,8
+The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,55.5,97.125,11,44.5,48,-3.5,19.25,77.875,97.125,84,-6.125,0.7857142857142857,-1.1666666666666667,12,0.25,9
+At Witt's End,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--09.svg,51.5,90.125,23,28.5,22.5,6,40.25,49.875,90.125,39.375,10.5,1.7692307692307692,3,11.25,0.5,10
+The Novaks,0.5,0.5,0,0,0,0,1,https://i.imgur.com/DPLqmOq.jpg,39.5,69.125,12,27.5,9,18.5,21,48.125,69.125,15.75,32.375,0.8,4.625,9,0,11
+The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,38.5,67.375,21.5,17,8,9,37.625,29.75,67.375,14,15.75,1.7916666666666667,4.5,8,0,12
+League Average,NA,NA,NA,NA,NA,NA,NA,NA,74.875,NA,36.291666666666664,38.583333333333336,30,8.583333333333334,63.510416666666664,67.52083333333333,131.03125,52.5,15.020833333333334,2.4329608938547485,3.814814814814815,12,0.26666666666666666,NA
