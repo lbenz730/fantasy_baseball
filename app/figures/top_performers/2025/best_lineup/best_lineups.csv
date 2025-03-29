@@ -1,23 +1,23 @@
 lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
-0,C,Adley Rutschman,42178,9,16.5,8.25,1
-1,1B,Tyler Soderstrom,4686066,12,15,7.5,1
-2,2B,Gleyber Torres,33804,2,11,5.5,1
-3,3B,Eugenio Suarez,32367,7,20,10,1
-4,SS,Mookie Betts,33039,11,18,9,1
-5,OF,Wilyer Abreu,4990055,5,21,10.5,1
-5,OF,Ian Happ,34945,5,16,4,1
-5,OF,Cedric Mullins,35578,13,15,7.5,1
-5,OF,Tyler O'Neill,34168,2,15,7.5,1
-5,OF,Fernando Tatis Jr.,35983,12,12.5,6.25,1
-6,2B/SS,Oneil Cruz,39712,1,12.5,6.25,1
-7,1B/3B,Manny Machado,31097,5,10,5,1
-12,UTIL,Shohei Ohtani,39832,14,23.5,5.875,1
+0,C,Adley Rutschman,42178,9,19.5,6.5,1
+1,1B,Cody Bellinger,33912,9,15.5,7.75,1
+2,2B,Jordan Westburg,4298641,8,21.5,7.166666666666667,1
+3,3B,Eugenio Suarez,32367,7,20,6.666666666666667,1
+4,SS,Oneil Cruz,39712,1,18.5,6.166666666666667,1
+5,OF,Aaron Judge,33192,2,28,14,1
+5,OF,Wilyer Abreu,4990055,5,21,7,1
+5,OF,Cedric Mullins,35578,13,19,6.333333333333333,1
+5,OF,Mookie Betts,33039,11,18,9,1
+5,OF,Ian Happ,34945,5,16,3.2,1
+6,2B/SS,Anthony Volpe,42547,5,15,7.5,1
+7,1B/3B,Tyler Soderstrom,4686066,12,15,5,1
+12,UTIL,Shohei Ohtani,39832,14,23.5,4.7,1
 14,SP,Logan Gilbert,41221,4,30,30,1
 14,SP,Yoshinobu Yamamoto,4872587,8,28.5,14.25,1
 14,SP,Zack Wheeler,31267,1,26,26,1
 14,SP,Nathan Eovaldi,31174,13,25,25,1
 14,SP,Framber Valdez,36581,7,24.5,24.5,1
-14,SP,Luis Severino,33263,14,23.5,23.5,1
+14,SP,Zack Littell,36052,5,24,24,1
 15,RP,Robert Suarez,4148749,14,14.5,7.25,1
 15,RP,Blake Treinen,32185,12,13,6.5,1
 15,RP,Jason Adam,32145,11,11.5,5.75,1

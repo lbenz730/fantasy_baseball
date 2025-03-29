@@ -305,7 +305,7 @@ remove_postcap <- function(df_daily) {
               'pitching_points' = sum(points[pitcher])) %>%
     group_by(matchup_id, team_id) %>%
     mutate('total_starts' = cumsum(starts)) %>% 
-    mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) >= start_cap & lag(total_starts, 2) < start_cap ) %>% 
+    mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) >= start_cap & lag(total_starts, 2) <= start_cap ) %>% 
     filter(over_start_cap) %>% 
     ungroup() %>% 
     select(matchup_id, team_id, scoring_period_id) %>% 
@@ -335,7 +335,7 @@ sp_remove_postcap <- function(sp_points) {
               'pitching_points' = sum(points[pitcher])) %>%
     group_by(matchup_id, team_id) %>%
     mutate('total_starts' = cumsum(starts)) %>% 
-    mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) >= start_cap & lag(total_starts, 2) < start_cap ) %>% 
+    mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) >= start_cap & lag(total_starts, 2) <= start_cap ) %>% 
     filter(over_start_cap) %>% 
     ungroup() %>% 
     select(matchup_id, team_id, scoring_period_id) %>% 
