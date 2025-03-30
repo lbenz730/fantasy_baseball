@@ -325,7 +325,9 @@ df_penalty <-
   group_by(matchup_id, team_id) %>%
   mutate('total_starts' = cumsum(starts)) %>% 
   mutate('over_start_cap' = total_starts > start_cap & lag(total_starts) <= start_cap ) %>% 
+  mutate('over_over_start_cap' = total_starts > start_cap & starts > 0) %>% 
   mutate('penalty' = ifelse(!over_start_cap, 0, sign(start_points) * plyr::round_any((total_starts - start_cap)/starts * abs(start_points + 0.00001), 0.5))) %>%
+  mutate('penalty' = ifelse(over_over_start_cap & !over_start_cap, start_points, penalty)) %>%
   select(matchup_id, team_id, penalty, scoring_period_id) %>%
   inner_join(select(teams, team, team_id)) %>%
   filter(penalty != 0) %>% 

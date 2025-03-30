@@ -1868,6 +1868,9 @@ shinyServer(function(input, output, session) {
     
     df_penalty %>% 
       select(team, logo, matchup_id, penalty) %>% 
+      group_by(team, logo, matchup_id) %>%
+      summarise('penalty' = sum(penalty)) %>%
+      ungroup() %>%
       gt() %>% 
       cols_align('center') %>% 
       text_transform(
