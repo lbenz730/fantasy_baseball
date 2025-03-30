@@ -116,7 +116,7 @@ distributions <-
 df_whatif <- 
   read_csv(glue('data/stats/{params$season}/whatif.csv')) %>% 
   mutate('record' = paste0(n_win, '-', n_loss),
-         'win_pct' = n_win/(n_win + n_loss)) %>%
+         'win_pct' = n_win/(n_win + n_loss + 0.00000000000000001)) %>%
   inner_join(select(teams, team_id, logo), by = 'team_id') %>% 
   inner_join(select(teams, team_id, logo), by = c('schedule_id' = 'team_id'), 
              suffix = c('_1', '_2')) %>%
