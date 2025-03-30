@@ -1,331 +1,333 @@
 player,player_id,team_id,stint,start,end,rp_eligible,transaction_type,n_points,n_games,w_bat,w_sp,w_rp,ppg
-A.J. Puk,36201,5,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
-Aaron Judge,33192,2,0,1,12,FALSE,Draft,28,2,1,0,0,14
-Aaron Nola,33709,5,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Adley Rutschman,42178,9,0,1,12,FALSE,Draft,19.5,3,1,0,0,6.5
-Adolis Garcia,35537,12,0,1,12,FALSE,Draft,15.5,3,1,0,0,5.166666666666667
-Alec Bohm,41169,7,0,1,12,FALSE,Draft,8,2,1,0,0,4
-Alec Burleson,4345070,7,0,1,12,FALSE,Draft,2,2,1,0,0,1
-Alex Bregman,34886,13,0,1,12,FALSE,Draft,3,3,1,0,0,1
-Alexis Diaz,4905920,2,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
+A.J. Puk,36201,5,0,1,13,TRUE,Draft,0,0,NA,NA,NA,0
+Aaron Judge,33192,2,0,1,13,FALSE,Draft,28,2,1,0,0,14
+Aaron Nola,33709,5,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Adley Rutschman,42178,9,0,1,13,FALSE,Draft,19.5,3,1,0,0,6.5
+Adolis Garcia,35537,12,0,1,13,FALSE,Draft,15.5,3,1,0,0,5.166666666666667
+Alec Bohm,41169,7,0,1,13,FALSE,Draft,8,2,1,0,0,4
+Alec Burleson,4345070,7,0,1,13,FALSE,Draft,2,2,1,0,0,1
+Alex Bregman,34886,13,0,1,13,FALSE,Draft,3,3,1,0,0,1
+Alexis Diaz,4905920,2,0,1,13,TRUE,Draft,0,0,NA,NA,NA,0
 Andres Gimenez,37729,12,0,1,9,FALSE,Draft,0,0,NA,NA,NA,0
-Andres Munoz,40939,2,0,1,12,TRUE,Draft,6.5,1,0,0,1,6.5
-Andrew Vaughn,42394,2,0,1,12,FALSE,Draft,-1,2,1,0,0,-0.5
-Anthony Santander,36084,7,0,1,12,FALSE,Draft,5,3,1,0,0,1.6666666666666667
-Anthony Volpe,42547,5,0,1,12,FALSE,Draft,15,2,1,0,0,7.5
-Aroldis Chapman,30442,11,0,1,12,TRUE,Draft,3,1,0,0,1,3
-Austin Riley,34982,4,0,1,12,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
-Austin Wells,4683349,13,0,1,12,FALSE,Draft,13.5,2,1,0,0,6.75
-Bailey Ober,3107919,6,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Blake Snell,33748,1,0,1,12,FALSE,Draft,5.5,1,0,1,0,5.5
-Blake Treinen,32185,12,0,1,12,TRUE,Draft,13,2,0,0,1,6.5
-Bo Bichette,38904,6,0,1,12,FALSE,Draft,11.5,3,1,0,0,3.8333333333333335
-Bobby Witt Jr.,42403,7,0,1,12,FALSE,Draft,3.5,2,1,0,0,1.75
-Bowden Francis,4734325,12,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
-Brandon Lowe,39961,4,0,1,12,FALSE,Draft,3.5,2,1,0,0,1.75
-Brandon Nimmo,32159,6,0,1,12,FALSE,Draft,0.5,3,1,0,0,0.16666666666666666
-Brandon Pfaadt,4721302,9,0,1,12,FALSE,Draft,15.5,1,0,1,0,15.5
-Brandon Woodruff,37515,6,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Brendan Donovan,41773,7,0,1,12,FALSE,Draft,5.5,2,1,0,0,2.75
-Brent Rooker,40926,2,0,1,12,FALSE,Draft,6.5,3,1,0,0,2.1666666666666665
-Brenton Doyle,42462,1,0,1,12,FALSE,Draft,0.5,2,1,0,0,0.25
-Brice Turang,41179,14,0,1,12,FALSE,Draft,1,1,1,0,0,1
-Bryan Abreu,41208,7,0,1,12,TRUE,Draft,10.5,2,0,0,1,5.25
-Bryan Reynolds,38980,12,0,1,12,FALSE,Draft,7.5,3,1,0,0,2.5
-Bryan Woo,4629089,8,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Bryce Harper,30951,9,0,1,12,FALSE,Draft,10,2,1,0,0,5
-Bryce Miller,4654313,7,0,1,12,FALSE,Draft,7.5,1,0,1,0,7.5
-Bryson Stott,42417,6,0,1,12,FALSE,Draft,13,2,1,0,0,6.5
-Bubba Chandler,4683325,7,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Byron Buxton,32655,1,0,1,12,FALSE,Draft,-1.5,2,1,0,0,-0.75
-CJ Abrams,42402,14,0,1,12,FALSE,Draft,3,2,1,0,0,1.5
-Cade Smith,4987924,12,0,1,12,TRUE,Draft,10,2,0,0,1,5
-Cal Raleigh,41292,11,0,1,12,FALSE,Draft,1.5,3,1,0,0,0.5
-Cam Smith,5080766,4,0,1,12,FALSE,Draft,1.5,1,1,0,0,1.5
-Carlos Correa,32653,2,0,1,12,FALSE,Draft,-2.5,2,1,0,0,-1.25
-Carlos Rodon,33696,14,0,1,12,FALSE,Draft,16,1,0,1,0,16
-Carlos Santana,30280,7,0,1,12,FALSE,Draft,4.5,2,1,0,0,2.25
-Ceddanne Rafaela,4987382,8,0,1,12,FALSE,Draft,1,3,1,0,0,0.3333333333333333
-Cedric Mullins,35578,13,0,1,12,FALSE,Draft,19,3,1,0,0,6.333333333333333
-Chris Bassitt,33148,12,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Chris Sale,30948,13,0,1,12,FALSE,Draft,9.5,1,0,1,0,9.5
-Christian Encarnacion-Strand,5012106,14,0,1,12,FALSE,Draft,9.5,2,1,0,0,4.75
-Christian Walker,32758,5,0,1,12,FALSE,Draft,-1,3,1,0,0,-0.3333333333333333
-Christian Yelich,31283,4,0,1,12,FALSE,Draft,3.5,2,1,0,0,1.75
-Christopher Morel,42927,11,0,1,12,FALSE,Draft,4.5,2,1,0,0,2.25
-Clarke Schmidt,41085,5,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Clay Holmes,32827,4,0,1,12,TRUE,Draft,6.5,1,0,1,0,6.5
-Cody Bellinger,33912,9,0,1,12,FALSE,Draft,15.5,2,1,0,0,7.75
-Cole Ragans,41054,9,0,1,12,FALSE,Draft,6,1,0,1,0,6
-Colt Keith,4683384,8,0,1,12,FALSE,Draft,0,3,1,0,0,0
-Colton Cowser,4416990,9,0,1,12,FALSE,Draft,6,3,1,0,0,2
+Andres Munoz,40939,2,0,1,13,TRUE,Draft,6.5,1,0,0,1,6.5
+Andrew Vaughn,42394,2,0,1,13,FALSE,Draft,-1,2,1,0,0,-0.5
+Anthony Santander,36084,7,0,1,13,FALSE,Draft,5,3,1,0,0,1.6666666666666667
+Anthony Volpe,42547,5,0,1,13,FALSE,Draft,15,2,1,0,0,7.5
+Aroldis Chapman,30442,11,0,1,13,TRUE,Draft,3,1,0,0,1,3
+Austin Riley,34982,4,0,1,13,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
+Austin Wells,4683349,13,0,1,13,FALSE,Draft,13.5,2,1,0,0,6.75
+Bailey Ober,3107919,6,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Blake Snell,33748,1,0,1,13,FALSE,Draft,5.5,1,0,1,0,5.5
+Blake Treinen,32185,12,0,1,13,TRUE,Draft,17,3,0,0,1,5.666666666666667
+Bo Bichette,38904,6,0,1,13,FALSE,Draft,11.5,3,1,0,0,3.8333333333333335
+Bobby Witt Jr.,42403,7,0,1,13,FALSE,Draft,3.5,2,1,0,0,1.75
+Bowden Francis,4734325,12,0,1,13,TRUE,Draft,0,0,NA,NA,NA,0
+Brandon Lowe,39961,4,0,1,13,FALSE,Draft,3.5,2,1,0,0,1.75
+Brandon Nimmo,32159,6,0,1,13,FALSE,Draft,0.5,3,1,0,0,0.16666666666666666
+Brandon Pfaadt,4721302,9,0,1,13,FALSE,Draft,15.5,1,0,1,0,15.5
+Brandon Woodruff,37515,6,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Brendan Donovan,41773,7,0,1,13,FALSE,Draft,5.5,2,1,0,0,2.75
+Brent Rooker,40926,2,0,1,13,FALSE,Draft,8.5,3,1,0,0,2.8333333333333335
+Brenton Doyle,42462,1,0,1,13,FALSE,Draft,0.5,2,1,0,0,0.25
+Brice Turang,41179,14,0,1,13,FALSE,Draft,1,1,1,0,0,1
+Bryan Abreu,41208,7,0,1,13,TRUE,Draft,10.5,2,0,0,1,5.25
+Bryan Reynolds,38980,12,0,1,13,FALSE,Draft,7.5,3,1,0,0,2.5
+Bryan Woo,4629089,8,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Bryce Harper,30951,9,0,1,13,FALSE,Draft,10,2,1,0,0,5
+Bryce Miller,4654313,7,0,1,13,FALSE,Draft,7.5,1,0,1,0,7.5
+Bryson Stott,42417,6,0,1,13,FALSE,Draft,13,2,1,0,0,6.5
+Bubba Chandler,4683325,7,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Byron Buxton,32655,1,0,1,13,FALSE,Draft,-1.5,2,1,0,0,-0.75
+CJ Abrams,42402,14,0,1,13,FALSE,Draft,3,2,1,0,0,1.5
+Cade Smith,4987924,12,0,1,13,TRUE,Draft,10,2,0,0,1,5
+Cal Raleigh,41292,11,0,1,13,FALSE,Draft,1.5,3,1,0,0,0.5
+Cam Smith,5080766,4,0,1,13,FALSE,Draft,1.5,1,1,0,0,1.5
+Carlos Correa,32653,2,0,1,13,FALSE,Draft,-2.5,2,1,0,0,-1.25
+Carlos Rodon,33696,14,0,1,13,FALSE,Draft,16,1,0,1,0,16
+Carlos Santana,30280,7,0,1,13,FALSE,Draft,4.5,2,1,0,0,2.25
+Ceddanne Rafaela,4987382,8,0,1,13,FALSE,Draft,1,3,1,0,0,0.3333333333333333
+Cedric Mullins,35578,13,0,1,13,FALSE,Draft,19,3,1,0,0,6.333333333333333
+Chris Bassitt,33148,12,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Chris Sale,30948,13,0,1,13,FALSE,Draft,9.5,1,0,1,0,9.5
+Christian Encarnacion-Strand,5012106,14,0,1,13,FALSE,Draft,9.5,2,1,0,0,4.75
+Christian Walker,32758,5,0,1,13,FALSE,Draft,-1,3,1,0,0,-0.3333333333333333
+Christian Yelich,31283,4,0,1,13,FALSE,Draft,3.5,2,1,0,0,1.75
+Christopher Morel,42927,11,0,1,13,FALSE,Draft,4.5,2,1,0,0,2.25
+Clarke Schmidt,41085,5,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Clay Holmes,32827,4,0,1,13,TRUE,Draft,6.5,1,0,1,0,6.5
+Cody Bellinger,33912,9,0,1,13,FALSE,Draft,15.5,2,1,0,0,7.75
+Cole Ragans,41054,9,0,1,13,FALSE,Draft,6,1,0,1,0,6
+Colt Keith,4683384,8,0,1,13,FALSE,Draft,-0.5,3,1,0,0,-0.16666666666666666
+Colton Cowser,4416990,9,0,1,13,FALSE,Draft,6,3,1,0,0,2
 Connor Norby,4417606,5,0,1,8,FALSE,Draft,0,0,NA,NA,NA,0
-Corbin Burnes,39878,14,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Corbin Carroll,42404,8,0,1,12,FALSE,Draft,4.5,3,1,0,0,1.5
-Corey Seager,32691,2,0,1,12,FALSE,Draft,1.5,3,1,0,0,0.5
-Cristopher Sanchez,42359,7,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Dansby Swanson,34895,6,0,1,12,FALSE,Draft,7.5,5,1,0,0,1.5
-Devin Williams,33224,9,0,1,12,TRUE,Draft,3.5,1,0,0,1,3.5
-Drew Rasmussen,42584,1,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
-Dustin May,40937,2,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Dylan Cease,34943,7,0,1,12,FALSE,Draft,9,1,0,1,0,9
-Dylan Crews,4719511,8,0,1,12,FALSE,Draft,0.5,2,1,0,0,0.25
-Dylan Moore,40593,11,0,1,12,FALSE,Draft,1,1,1,0,0,1
-Edwin Diaz,35394,8,0,1,12,TRUE,Draft,7,1,0,0,1,7
-Edwin Uceta,41308,13,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
-Elly De La Cruz,4917694,8,0,1,12,FALSE,Draft,4.5,2,1,0,0,2.25
-Emmanuel Clase,41743,2,0,1,12,TRUE,Draft,-3,1,0,0,1,-3
-Eugenio Suarez,32367,7,0,1,12,FALSE,Draft,28,3,1,0,0,9.333333333333334
+Corbin Burnes,39878,14,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Corbin Carroll,42404,8,0,1,13,FALSE,Draft,4.5,3,1,0,0,1.5
+Corey Seager,32691,2,0,1,13,FALSE,Draft,1.5,3,1,0,0,0.5
+Cristopher Sanchez,42359,7,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Dansby Swanson,34895,6,0,1,13,FALSE,Draft,7.5,5,1,0,0,1.5
+Devin Williams,33224,9,0,1,13,TRUE,Draft,3.5,1,0,0,1,3.5
+Drew Rasmussen,42584,1,0,1,13,TRUE,Draft,0,0,NA,NA,NA,0
+Dustin May,40937,2,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Dylan Cease,34943,7,0,1,13,FALSE,Draft,9,1,0,1,0,9
+Dylan Crews,4719511,8,0,1,13,FALSE,Draft,1.5,2,1,0,0,0.75
+Dylan Moore,40593,11,0,1,13,FALSE,Draft,1.5,2,1,0,0,0.75
+Edwin Diaz,35394,8,0,1,13,TRUE,Draft,7,1,0,0,1,7
+Edwin Uceta,41308,13,0,1,13,TRUE,Draft,0,0,NA,NA,NA,0
+Elly De La Cruz,4917694,8,0,1,13,FALSE,Draft,4.5,2,1,0,0,2.25
+Emmanuel Clase,41743,2,0,1,13,TRUE,Draft,-3,1,0,0,1,-3
+Eugenio Suarez,32367,7,0,1,13,FALSE,Draft,28,3,1,0,0,9.333333333333334
 Evan Carter,4917921,4,0,1,4,FALSE,Draft,0,0,NA,NA,NA,0
-Ezequiel Tovar,4905919,7,0,1,12,FALSE,Draft,2,2,1,0,0,1
-Felix Bautista,4905859,5,0,1,12,TRUE,Draft,4.5,1,0,0,1,4.5
-Fernando Tatis Jr.,35983,12,0,1,12,FALSE,Draft,13.5,3,1,0,0,4.5
-Framber Valdez,36581,7,0,1,12,FALSE,Draft,24.5,1,0,1,0,24.5
-Francisco Lindor,32129,5,0,1,12,FALSE,Draft,0,3,1,0,0,0
-Freddie Freeman,30193,14,0,1,12,FALSE,Draft,13,3,1,0,0,4.333333333333333
-Freddy Peralta,39825,1,0,1,12,FALSE,Draft,14.5,1,0,1,0,14.5
-Garrett Crochet,4297835,6,0,1,12,FALSE,Draft,9,1,0,1,0,9
-Garrett Mitchell,4313442,6,0,1,12,FALSE,Draft,0,0,1,0,0,0
-Gavin Williams,4345076,6,0,1,12,FALSE,Draft,8,1,0,1,0,8
-George Kirby,42406,11,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-George Springer,32078,14,0,1,12,FALSE,Draft,4.5,3,1,0,0,1.5
-Gleyber Torres,33804,2,0,1,12,FALSE,Draft,11,2,1,0,0,5.5
-Grant Holmes,33840,8,0,1,12,TRUE,Draft,0,0,0,0,1,0
-Grayson Rodriguez,41196,6,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Griffin Jax,42604,9,0,1,12,TRUE,Draft,-0.5,1,0,0,1,-0.5
-Gunnar Henderson,42507,11,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Heliot Ramos,39642,4,0,1,12,FALSE,Draft,7.5,2,1,0,0,3.75
-Hunter Brown,4717803,7,0,1,12,FALSE,Draft,20.5,1,0,1,0,20.5
-Hunter Greene,39635,4,0,1,12,FALSE,Draft,15,1,0,1,0,15
-Ian Happ,34945,5,0,1,12,FALSE,Draft,15.5,5,1,0,0,3.1
-Isaac Paredes,39706,6,0,1,12,FALSE,Draft,3.5,3,1,0,0,1.1666666666666667
-J.T. Realmuto,32177,14,0,1,12,FALSE,Draft,2,2,1,0,0,1
-JJ Bleday,42410,5,0,1,12,FALSE,Draft,6.5,3,1,0,0,2.1666666666666665
-Jack Flaherty,33837,5,0,1,12,FALSE,Draft,13.5,1,0,1,0,13.5
-Jackson Chourio,4917869,1,0,1,12,FALSE,Draft,2.5,2,1,0,0,1.25
-Jackson Holliday,5080633,9,0,1,12,FALSE,Draft,9,3,1,0,0,3
-Jackson Jobe,4872647,8,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Jackson Merrill,4872691,7,0,1,12,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
-Jacob deGrom,32796,13,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Jake Burger,39882,6,0,1,12,FALSE,Draft,6,3,1,0,0,2
-Jake Cronenworth,36364,7,0,1,12,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
-Jake McCarthy,41197,7,0,1,12,FALSE,Draft,1,2,1,0,0,0.5
-James Wood,4918256,11,0,1,12,FALSE,Draft,3,2,1,0,0,1.5
-Jared Jones,4918156,8,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Jarren Duran,41610,6,0,1,12,FALSE,Draft,5,3,1,0,0,1.6666666666666667
-Jason Adam,32145,11,0,1,12,TRUE,Draft,11.5,2,0,0,1,5.75
-Jasson Dominguez,42401,14,0,1,12,FALSE,Draft,3.5,2,1,0,0,1.75
-Jazz Chisholm Jr.,41433,14,0,1,12,FALSE,Draft,7,2,1,0,0,3.5
-Jeff Hoffman,33841,4,0,1,12,TRUE,Draft,3,1,0,0,1,3
-Jeimer Candelario,32531,11,0,1,12,FALSE,Draft,7,2,1,0,0,3.5
-Jeremiah Estrada,41014,13,0,1,12,TRUE,Draft,7,2,0,0,1,3.5
-Jeremy Pena,41273,1,0,1,12,FALSE,Draft,8.5,3,1,0,0,2.8333333333333335
-Jesus Luzardo,39667,12,0,1,12,FALSE,Draft,16,1,0,1,0,16
-Jhoan Duran,41109,9,0,1,12,TRUE,Draft,-2,1,0,0,1,-2
-Jhonkensy Noel,42548,11,0,1,12,FALSE,Draft,1.5,1,1,0,0,1.5
-Joc Pederson,31392,13,0,1,12,FALSE,Draft,2,1,1,0,0,2
-Joe Ryan,42450,8,0,1,12,FALSE,Draft,12,1,0,1,0,12
-Jonathan India,41171,5,0,1,12,FALSE,Draft,4,2,1,0,0,2
-Jordan Romano,36380,1,0,1,12,TRUE,Draft,-4,1,0,0,1,-4
-Jordan Walker,4684778,8,0,1,12,FALSE,Draft,3.5,2,1,0,0,1.75
-Jordan Westburg,4298641,8,0,1,12,FALSE,Draft,21.5,3,1,0,0,7.166666666666667
-Jorge Soler,32558,13,0,1,12,FALSE,Draft,3,2,1,0,0,1.5
-Jose Altuve,31662,1,0,1,12,FALSE,Draft,4,3,1,0,0,1.3333333333333333
-Jose Berrios,32811,7,0,1,12,FALSE,Draft,-2,1,0,1,0,-2
-Jose Ramirez,32801,9,0,1,12,FALSE,Draft,1,2,1,0,0,0.5
-Josh Hader,32760,14,0,1,12,TRUE,Draft,9,2,0,0,1,4.5
+Ezequiel Tovar,4905919,7,0,1,13,FALSE,Draft,2,2,1,0,0,1
+Felix Bautista,4905859,5,0,1,13,TRUE,Draft,4.5,1,0,0,1,4.5
+Fernando Tatis Jr.,35983,12,0,1,13,FALSE,Draft,13.5,3,1,0,0,4.5
+Framber Valdez,36581,7,0,1,13,FALSE,Draft,24.5,1,0,1,0,24.5
+Francisco Lindor,32129,5,0,1,13,FALSE,Draft,0,3,1,0,0,0
+Freddie Freeman,30193,14,0,1,13,FALSE,Draft,16,3,1,0,0,5.333333333333333
+Freddy Peralta,39825,1,0,1,13,FALSE,Draft,14.5,1,0,1,0,14.5
+Garrett Crochet,4297835,6,0,1,13,FALSE,Draft,9,1,0,1,0,9
+Garrett Mitchell,4313442,6,0,1,13,FALSE,Draft,0,0,1,0,0,0
+Gavin Williams,4345076,6,0,1,13,FALSE,Draft,8,1,0,1,0,8
+George Kirby,42406,11,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+George Springer,32078,14,0,1,13,FALSE,Draft,4.5,3,1,0,0,1.5
+Gleyber Torres,33804,2,0,1,13,FALSE,Draft,11,2,1,0,0,5.5
+Grant Holmes,33840,8,0,1,13,TRUE,Draft,0,0,0,0,1,0
+Grayson Rodriguez,41196,6,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Griffin Jax,42604,9,0,1,13,TRUE,Draft,-0.5,1,0,0,1,-0.5
+Gunnar Henderson,42507,11,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Heliot Ramos,39642,4,0,1,13,FALSE,Draft,7.5,2,1,0,0,3.75
+Hunter Brown,4717803,7,0,1,13,FALSE,Draft,20.5,1,0,1,0,20.5
+Hunter Greene,39635,4,0,1,13,FALSE,Draft,15,1,0,1,0,15
+Ian Happ,34945,5,0,1,13,FALSE,Draft,15.5,5,1,0,0,3.1
+Isaac Paredes,39706,6,0,1,13,FALSE,Draft,3.5,3,1,0,0,1.1666666666666667
+J.T. Realmuto,32177,14,0,1,13,FALSE,Draft,2,2,1,0,0,1
+JJ Bleday,42410,5,0,1,13,FALSE,Draft,6.5,3,1,0,0,2.1666666666666665
+Jack Flaherty,33837,5,0,1,13,FALSE,Draft,13.5,1,0,1,0,13.5
+Jackson Chourio,4917869,1,0,1,13,FALSE,Draft,2.5,2,1,0,0,1.25
+Jackson Holliday,5080633,9,0,1,13,FALSE,Draft,9,3,1,0,0,3
+Jackson Jobe,4872647,8,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Jackson Merrill,4872691,7,0,1,13,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
+Jacob deGrom,32796,13,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Jake Burger,39882,6,0,1,13,FALSE,Draft,6,3,1,0,0,2
+Jake Cronenworth,36364,7,0,1,13,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
+Jake McCarthy,41197,7,0,1,13,FALSE,Draft,1,2,1,0,0,0.5
+James Wood,4918256,11,0,1,13,FALSE,Draft,3,2,1,0,0,1.5
+Jared Jones,4918156,8,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Jarren Duran,41610,6,0,1,13,FALSE,Draft,5,3,1,0,0,1.6666666666666667
+Jason Adam,32145,11,0,1,13,TRUE,Draft,11.5,2,0,0,1,5.75
+Jasson Dominguez,42401,14,0,1,13,FALSE,Draft,3.5,2,1,0,0,1.75
+Jazz Chisholm Jr.,41433,14,0,1,13,FALSE,Draft,7,2,1,0,0,3.5
+Jeff Hoffman,33841,4,0,1,13,TRUE,Draft,3,1,0,0,1,3
+Jeimer Candelario,32531,11,0,1,13,FALSE,Draft,7,2,1,0,0,3.5
+Jeremiah Estrada,41014,13,0,1,13,TRUE,Draft,7,2,0,0,1,3.5
+Jeremy Pena,41273,1,0,1,13,FALSE,Draft,8.5,3,1,0,0,2.8333333333333335
+Jesus Luzardo,39667,12,0,1,13,FALSE,Draft,16,1,0,1,0,16
+Jhoan Duran,41109,9,0,1,13,TRUE,Draft,-2,1,0,0,1,-2
+Jhonkensy Noel,42548,11,0,1,13,FALSE,Draft,1.5,1,1,0,0,1.5
+Joc Pederson,31392,13,0,1,13,FALSE,Draft,2,1,1,0,0,2
+Joe Ryan,42450,8,0,1,13,FALSE,Draft,13,1,0,1,0,13
+Jonathan India,41171,5,0,1,13,FALSE,Draft,4,2,1,0,0,2
+Jordan Romano,36380,1,0,1,13,TRUE,Draft,-4,1,0,0,1,-4
+Jordan Walker,4684778,8,0,1,13,FALSE,Draft,3.5,2,1,0,0,1.75
+Jordan Westburg,4298641,8,0,1,13,FALSE,Draft,21.5,3,1,0,0,7.166666666666667
+Jorge Soler,32558,13,0,1,13,FALSE,Draft,3,2,1,0,0,1.5
+Jose Altuve,31662,1,0,1,13,FALSE,Draft,4,3,1,0,0,1.3333333333333333
+Jose Berrios,32811,7,0,1,13,FALSE,Draft,-2,1,0,1,0,-2
+Jose Ramirez,32801,9,0,1,13,FALSE,Draft,1,2,1,0,0,0.5
+Josh Hader,32760,14,0,1,13,TRUE,Draft,9,2,0,0,1,4.5
 Josh Jung,42437,14,0,1,11,FALSE,Draft,2,1,1,0,0,2
-Josh Lowe,40557,7,0,1,12,FALSE,Draft,1,1,1,0,0,1
-Josh Naylor,35066,4,0,1,12,FALSE,Draft,7,3,1,0,0,2.3333333333333335
-Juan Soto,36969,12,0,1,12,FALSE,Draft,13,3,1,0,0,4.333333333333333
-Julio Rodriguez,41044,14,0,1,12,FALSE,Draft,3,3,1,0,0,1
-Jung Hoo Lee,5134621,13,0,1,12,FALSE,Draft,6,2,1,0,0,3
-Junior Caminero,4905921,11,0,1,12,FALSE,Draft,3,2,1,0,0,1.5
-Jurickson Profar,31117,5,0,1,12,FALSE,Draft,4.5,3,1,0,0,1.5
-Justin Martinez,5116851,14,0,1,12,TRUE,Draft,3,1,0,0,1,3
-Justin Steele,41022,2,0,1,12,FALSE,Draft,5.5,2,0,1,0,2.75
+Josh Lowe,40557,7,0,1,13,FALSE,Draft,1,1,1,0,0,1
+Josh Naylor,35066,4,0,1,13,FALSE,Draft,7,3,1,0,0,2.3333333333333335
+Juan Soto,36969,12,0,1,13,FALSE,Draft,13,3,1,0,0,4.333333333333333
+Julio Rodriguez,41044,14,0,1,13,FALSE,Draft,3.5,3,1,0,0,1.1666666666666667
+Jung Hoo Lee,5134621,13,0,1,13,FALSE,Draft,6,2,1,0,0,3
+Junior Caminero,4905921,11,0,1,13,FALSE,Draft,3,2,1,0,0,1.5
+Jurickson Profar,31117,5,0,1,13,FALSE,Draft,4.5,3,1,0,0,1.5
+Justin Martinez,5116851,14,0,1,13,TRUE,Draft,3,1,0,0,1,3
+Justin Steele,41022,2,0,1,13,FALSE,Draft,5.5,2,0,1,0,2.75
 Ke'Bryan Hayes,35020,2,0,1,12,FALSE,Draft,5.5,3,1,0,0,1.8333333333333333
-Keibert Ruiz,38827,12,0,1,12,FALSE,Draft,15.5,2,1,0,0,7.75
-Kerry Carpenter,42714,9,0,1,12,FALSE,Draft,1,3,1,0,0,0.3333333333333333
-Ketel Marte,32512,12,0,1,12,FALSE,Draft,10,3,1,0,0,3.3333333333333335
-Kevin Gausman,32667,12,0,1,12,FALSE,Draft,19.5,1,0,1,0,19.5
+Keibert Ruiz,38827,12,0,1,13,FALSE,Draft,15.5,2,1,0,0,7.75
+Kerry Carpenter,42714,9,0,1,13,FALSE,Draft,0.5,3,1,0,0,0.16666666666666666
+Ketel Marte,32512,12,0,1,13,FALSE,Draft,10,3,1,0,0,3.3333333333333335
+Kevin Gausman,32667,12,0,1,13,FALSE,Draft,19.5,1,0,1,0,19.5
 Kirby Yates,32623,6,0,1,2,TRUE,Draft,6,1,0,0,1,6
-Kodai Senga,4142421,12,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Kristian Campbell,5201569,12,0,1,12,FALSE,Draft,1.5,1,1,0,0,1.5
-Kyle Finnegan,36543,7,0,1,12,TRUE,Draft,2,1,0,0,1,2
-Kyle Manzardo,4917927,13,0,1,12,FALSE,Draft,17.5,2,1,0,0,8.75
-Kyle Schwarber,33712,4,0,1,12,FALSE,Draft,15.5,2,1,0,0,7.75
-Kyle Tucker,34967,1,0,1,12,FALSE,Draft,17.5,5,1,0,0,3.5
-Lane Thomas,36409,6,0,1,12,FALSE,Draft,1.5,2,1,0,0,0.75
-Lars Nootbaar,4448736,13,0,1,12,FALSE,Draft,15.5,2,1,0,0,7.75
-Lawrence Butler,4917919,12,0,1,12,FALSE,Draft,7,3,1,0,0,2.3333333333333335
-Logan Gilbert,41221,4,0,1,12,FALSE,Draft,30,1,0,1,0,30
-Logan Webb,41216,12,0,1,12,FALSE,Draft,6.5,1,0,1,0,6.5
-Lourdes Gurriel Jr.,36040,14,0,1,12,FALSE,Draft,5.5,3,1,0,0,1.8333333333333333
-Lucas Erceg,36618,6,0,1,12,TRUE,Draft,6,2,0,0,1,3
-Luis Arraez,39572,5,0,1,12,FALSE,Draft,2,3,1,0,0,0.6666666666666666
-Luis Castillo,35124,11,0,1,12,FALSE,Draft,10.5,1,0,1,0,10.5
-Luis Garcia Jr.,40459,4,0,1,12,FALSE,Draft,3.5,1,1,0,0,3.5
-Luis Gil,40626,9,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Luis Rengifo,37237,13,0,1,12,FALSE,Draft,-1,1,1,0,0,-1
-Luis Robert Jr.,39631,1,0,1,12,FALSE,Draft,0.5,2,1,0,0,0.25
-Luis Severino,33263,14,0,1,12,FALSE,Draft,23.5,1,0,1,0,23.5
+Kodai Senga,4142421,12,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Kristian Campbell,5201569,12,0,1,13,FALSE,Draft,1.5,1,1,0,0,1.5
+Kyle Finnegan,36543,7,0,1,13,TRUE,Draft,2,1,0,0,1,2
+Kyle Manzardo,4917927,13,0,1,13,FALSE,Draft,17.5,2,1,0,0,8.75
+Kyle Schwarber,33712,4,0,1,13,FALSE,Draft,15.5,2,1,0,0,7.75
+Kyle Tucker,34967,1,0,1,13,FALSE,Draft,17.5,5,1,0,0,3.5
+Lane Thomas,36409,6,0,1,13,FALSE,Draft,1.5,2,1,0,0,0.75
+Lars Nootbaar,4448736,13,0,1,13,FALSE,Draft,15.5,2,1,0,0,7.75
+Lawrence Butler,4917919,12,0,1,13,FALSE,Draft,8,3,1,0,0,2.6666666666666665
+Logan Gilbert,41221,4,0,1,13,FALSE,Draft,30,1,0,1,0,30
+Logan Webb,41216,12,0,1,13,FALSE,Draft,6.5,1,0,1,0,6.5
+Lourdes Gurriel Jr.,36040,14,0,1,13,FALSE,Draft,5.5,3,1,0,0,1.8333333333333333
+Lucas Erceg,36618,6,0,1,13,TRUE,Draft,6,2,0,0,1,3
+Luis Arraez,39572,5,0,1,13,FALSE,Draft,2,3,1,0,0,0.6666666666666666
+Luis Castillo,35124,11,0,1,13,FALSE,Draft,10.5,1,0,1,0,10.5
+Luis Garcia Jr.,40459,4,0,1,13,FALSE,Draft,3.5,1,1,0,0,3.5
+Luis Gil,40626,9,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Luis Rengifo,37237,13,0,1,13,FALSE,Draft,-1,1,1,0,0,-1
+Luis Robert Jr.,39631,1,0,1,13,FALSE,Draft,0.5,2,1,0,0,0.25
+Luis Severino,33263,14,0,1,13,FALSE,Draft,23.5,1,0,1,0,23.5
 Luke Raley,40422,11,0,1,2,FALSE,Draft,0,0,NA,NA,NA,0
-Luke Weaver,33770,6,0,1,12,TRUE,Draft,6.5,1,0,0,1,6.5
-MacKenzie Gore,39636,13,0,1,12,FALSE,Draft,0,0,0,1,0,0
-Maikel Garcia,4905884,11,0,1,12,FALSE,Draft,0.5,1,1,0,0,0.5
-Manny Machado,31097,5,0,1,12,FALSE,Draft,10,3,1,0,0,3.3333333333333335
-Marcell Ozuna,31668,1,0,1,12,FALSE,Draft,9,3,1,0,0,3
-Marcus Semien,32146,11,0,1,12,FALSE,Draft,0.5,3,1,0,0,0.16666666666666666
-Mark Vientos,41034,8,0,1,12,FALSE,Draft,3.5,3,1,0,0,1.1666666666666667
-Masataka Yoshida,4872598,12,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Mason Miller,4730225,1,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
-Masyn Winn,4683365,13,0,1,12,FALSE,Draft,-0.5,2,1,0,0,-0.25
-Matt Chapman,33857,1,0,1,12,FALSE,Draft,2,2,1,0,0,1
-Matt McLain,4422899,13,0,1,12,FALSE,Draft,7.5,2,1,0,0,3.75
-Matt Olson,32767,8,0,1,12,FALSE,Draft,5,3,1,0,0,1.6666666666666667
-Matt Shaw,4867667,4,0,1,12,FALSE,Draft,8,5,1,0,0,1.6
+Luke Weaver,33770,6,0,1,13,TRUE,Draft,6.5,1,0,0,1,6.5
+MacKenzie Gore,39636,13,0,1,13,FALSE,Draft,0,0,0,1,0,0
+Maikel Garcia,4905884,11,0,1,13,FALSE,Draft,0.5,1,1,0,0,0.5
+Manny Machado,31097,5,0,1,13,FALSE,Draft,10,3,1,0,0,3.3333333333333335
+Marcell Ozuna,31668,1,0,1,13,FALSE,Draft,9,3,1,0,0,3
+Marcus Semien,32146,11,0,1,13,FALSE,Draft,0.5,3,1,0,0,0.16666666666666666
+Mark Vientos,41034,8,0,1,13,FALSE,Draft,3.5,3,1,0,0,1.1666666666666667
+Masataka Yoshida,4872598,12,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Mason Miller,4730225,1,0,1,13,TRUE,Draft,8,1,0,0,1,8
+Masyn Winn,4683365,13,0,1,13,FALSE,Draft,-0.5,2,1,0,0,-0.25
+Matt Chapman,33857,1,0,1,13,FALSE,Draft,2,2,1,0,0,1
+Matt McLain,4422899,13,0,1,13,FALSE,Draft,7.5,2,1,0,0,3.75
+Matt Olson,32767,8,0,1,13,FALSE,Draft,5,3,1,0,0,1.6666666666666667
+Matt Shaw,4867667,4,0,1,13,FALSE,Draft,8,5,1,0,0,1.6
 Matt Vierling,41636,11,0,1,9,FALSE,Draft,0,0,NA,NA,NA,0
-Matt Wallner,42427,9,0,1,12,FALSE,Draft,-0.5,2,1,0,0,-0.25
-Max Fried,32685,9,0,1,12,FALSE,Draft,5,1,0,1,0,5
-Max Meyer,4345164,2,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Max Muncy,33303,12,0,1,12,FALSE,Draft,0.5,5,1,0,0,0.1
+Matt Wallner,42427,9,0,1,13,FALSE,Draft,-0.5,2,1,0,0,-0.25
+Max Fried,32685,9,0,1,13,FALSE,Draft,5,1,0,1,0,5
+Max Meyer,4345164,2,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Max Muncy,33303,12,0,1,13,FALSE,Draft,0.5,5,1,0,0,0.1
 Max Scherzer,28976,1,0,1,12,FALSE,Draft,3,1,0,1,0,3
-Merrill Kelly,32968,12,0,1,12,FALSE,Draft,11,1,0,1,0,11
-Michael Busch,42415,9,0,1,12,FALSE,Draft,6.5,5,1,0,0,1.3
-Michael Conforto,33711,4,0,1,12,FALSE,Draft,11.5,4,1,0,0,2.875
-Michael Harris II,42470,12,0,1,12,FALSE,Draft,-2,3,1,0,0,-0.6666666666666666
-Michael King,40429,14,0,1,12,FALSE,Draft,-2,1,0,1,0,-2
+Merrill Kelly,32968,12,0,1,13,FALSE,Draft,11,1,0,1,0,11
+Michael Busch,42415,9,0,1,13,FALSE,Draft,6.5,5,1,0,0,1.3
+Michael Conforto,33711,4,0,1,13,FALSE,Draft,11,4,1,0,0,2.75
+Michael Harris II,42470,12,0,1,13,FALSE,Draft,-2,3,1,0,0,-0.6666666666666666
+Michael King,40429,14,0,1,13,FALSE,Draft,-2,1,0,1,0,-2
 Michael Kopech,33763,11,0,1,10,TRUE,Draft,0,0,NA,NA,NA,0
-Michael Toglia,42412,9,0,1,12,FALSE,Draft,0,1,1,0,0,0
-Michael Wacha,32640,11,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
+Michael Toglia,42412,9,0,1,13,FALSE,Draft,0,1,1,0,0,0
+Michael Wacha,32640,11,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
 Miguel Amaya,38905,2,0,1,7,FALSE,Draft,2.5,1,1,0,0,2.5
-Mike Trout,30836,6,0,1,12,FALSE,Draft,1,2,1,0,0,0.5
-Mitch Keller,33722,9,0,1,12,FALSE,Draft,19.5,1,0,1,0,19.5
-Mookie Betts,33039,11,0,1,12,FALSE,Draft,18,2,1,0,0,9
-Nathan Eovaldi,31174,13,0,1,12,FALSE,Draft,25,1,0,1,0,25
-Nathaniel Lowe,40538,11,0,1,12,FALSE,Draft,-0.5,1,1,0,0,-0.5
-Nestor Cortes,36480,14,0,1,12,FALSE,Draft,-16.5,1,0,1,0,-16.5
-Nick Castellanos,31187,14,0,1,12,FALSE,Draft,5.5,2,1,0,0,2.75
-Nick Lodolo,42433,6,0,1,12,FALSE,Draft,14.5,1,0,1,0,14.5
-Nick Pivetta,36071,4,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Nico Hoerner,41219,9,0,1,12,FALSE,Draft,5,2,1,0,0,2.5
-Nolan Arenado,31261,12,0,1,12,FALSE,Draft,12.5,2,1,0,0,6.25
-Nolan Gorman,41174,1,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Nolan Jones,37340,2,0,1,12,FALSE,Draft,2.5,1,1,0,0,2.5
+Mike Trout,30836,6,0,1,13,FALSE,Draft,1,2,1,0,0,0.5
+Mitch Keller,33722,9,0,1,13,FALSE,Draft,19.5,1,0,1,0,19.5
+Mookie Betts,33039,11,0,1,13,FALSE,Draft,18,2,1,0,0,9
+Nathan Eovaldi,31174,13,0,1,13,FALSE,Draft,25,1,0,1,0,25
+Nathaniel Lowe,40538,11,0,1,13,FALSE,Draft,-0.5,1,1,0,0,-0.5
+Nestor Cortes,36480,14,0,1,13,FALSE,Draft,-16.5,1,0,1,0,-16.5
+Nick Castellanos,31187,14,0,1,13,FALSE,Draft,5.5,2,1,0,0,2.75
+Nick Lodolo,42433,6,0,1,13,FALSE,Draft,14.5,1,0,1,0,14.5
+Nick Pivetta,36071,4,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Nico Hoerner,41219,9,0,1,13,FALSE,Draft,5,2,1,0,0,2.5
+Nolan Arenado,31261,12,0,1,13,FALSE,Draft,12.5,2,1,0,0,6.25
+Nolan Gorman,41174,1,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Nolan Jones,37340,2,0,1,13,FALSE,Draft,2.5,1,1,0,0,2.5
 Nolan Schanuel,4739755,1,0,1,10,FALSE,Draft,1,1,1,0,0,1
-Oneil Cruz,39712,1,0,1,12,FALSE,Draft,18.5,3,1,0,0,6.166666666666667
-Orion Kerkering,4630789,6,0,1,12,TRUE,Draft,4,1,0,0,1,4
-Ozzie Albies,33783,8,0,1,12,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
-Pablo Lopez,39671,12,0,1,12,FALSE,Draft,5,1,0,1,0,5
+Oneil Cruz,39712,1,0,1,13,FALSE,Draft,18.5,3,1,0,0,6.166666666666667
+Orion Kerkering,4630789,6,0,1,13,TRUE,Draft,4,1,0,0,1,4
+Ozzie Albies,33783,8,0,1,13,FALSE,Draft,9.5,3,1,0,0,3.1666666666666665
+Pablo Lopez,39671,12,0,1,13,FALSE,Draft,5,1,0,1,0,5
 Parker Meadows,41223,8,0,1,8,FALSE,Draft,0,0,NA,NA,NA,0
-Paul Goldschmidt,31027,1,0,1,12,FALSE,Draft,10.5,2,1,0,0,5.25
-Paul Skenes,4719507,13,0,1,12,FALSE,Draft,15,1,0,1,0,15
-Pete Alonso,37498,11,0,1,12,FALSE,Draft,3,3,1,0,0,1
-Pete Crow-Armstrong,4717833,4,0,1,12,FALSE,Draft,7.5,5,1,0,0,1.5
-Porter Hodge,5185133,4,0,1,12,TRUE,Draft,8.5,2,0,0,1,4.25
-Rafael Devers,33859,2,0,1,12,FALSE,Draft,-3,3,1,0,0,-1
-Raisel Iglesias,33618,8,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
-Randy Arozarena,36488,2,0,1,12,FALSE,Draft,6.5,3,1,0,0,2.1666666666666665
-Ranger Suarez,39817,11,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Reese Olson,4734319,4,0,1,12,FALSE,Draft,0,0,0,1,0,0
-Reynaldo Lopez,33860,1,0,1,12,FALSE,Draft,0,1,0,1,0,0
-Rhys Hoskins,35291,5,0,1,12,FALSE,Draft,3,2,1,0,0,1.5
-Riley Greene,42179,9,0,1,12,FALSE,Draft,1,3,1,0,0,0.3333333333333333
-Robbie Ray,32175,14,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Robert Suarez,4148749,14,0,1,12,TRUE,Draft,14.5,2,0,0,1,7.25
-Roki Sasaki,5134638,13,0,1,12,FALSE,Draft,-2.5,1,0,1,0,-2.5
-Ronald Acuna Jr.,36185,5,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Ronel Blanco,41829,11,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Royce Lewis,40635,2,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Ryan Helsley,39909,8,0,1,12,TRUE,Draft,8,1,0,0,1,8
-Ryan Jeffers,41587,7,0,1,12,FALSE,Draft,0.5,1,1,0,0,0.5
-Ryan McMahon,33247,1,0,1,12,FALSE,Draft,4.5,2,1,0,0,2.25
-Ryan Mountcastle,34940,6,0,1,12,FALSE,Draft,1.5,3,1,0,0,0.5
-Ryan Pepiot,4208281,8,0,1,12,FALSE,Draft,21.5,1,0,1,0,21.5
-Ryan Pressly,33072,1,0,1,12,TRUE,Draft,-1,3,0,0,1,-0.3333333333333333
-Ryan Walker,5000950,5,0,1,12,TRUE,Draft,2.5,1,0,0,1,2.5
-Salvador Perez,31127,8,0,1,12,FALSE,Draft,4,2,1,0,0,2
-Sandy Alcantara,35241,9,0,1,12,FALSE,Draft,13,1,0,1,0,13
-Sean Manaea,33244,7,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Seiya Suzuki,4142424,4,0,1,12,FALSE,Draft,-0.5,5,1,0,0,-0.1
-Seth Lugo,34873,4,0,1,12,FALSE,Draft,7.5,1,0,1,0,7.5
-Shane Baz,39639,5,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Shane Bieber,40912,1,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Shane McClanahan,41199,2,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Shea Langeliers,42598,1,0,1,12,FALSE,Draft,7,3,1,0,0,2.3333333333333335
-Shohei Ohtani,39832,14,0,1,12,FALSE,Draft,25.5,5,1,0,0,5.1
-Shota Imanaga,5134630,2,0,1,12,FALSE,Draft,36,2,0,1,0,18
-Sonny Gray,32082,2,0,1,12,FALSE,Draft,12,1,0,1,0,12
-Spencer Arrighetti,4726080,2,0,1,12,FALSE,Draft,0,0,0,1,0,0
-Spencer Horwitz,4228472,5,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Spencer Schwellenbach,4424862,6,0,1,12,FALSE,Draft,25,1,0,1,0,25
-Spencer Steer,4722857,7,0,1,12,FALSE,Draft,-1.5,1,1,0,0,-1.5
-Spencer Strider,4307825,4,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Steven Kwan,41996,5,0,1,12,FALSE,Draft,13,2,1,0,0,6.5
-TJ Friedl,36020,13,0,1,12,FALSE,Draft,2,2,1,0,0,1
-Taj Bradley,42480,9,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Tanner Bibee,4345278,11,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Tanner Houck,41009,5,0,1,12,FALSE,Draft,2.5,1,0,1,0,2.5
-Tanner Scott,35135,12,0,1,12,TRUE,Draft,6,3,0,0,1,2
-Tarik Skubal,42409,5,0,1,12,FALSE,Draft,2.5,1,0,1,0,2.5
-Taylor Ward,34923,11,0,1,12,FALSE,Draft,3,2,1,0,0,1.5
-Teoscar Hernandez,33377,8,0,1,12,FALSE,Draft,16,5,1,0,0,3.2
+Paul Goldschmidt,31027,1,0,1,13,FALSE,Draft,10.5,2,1,0,0,5.25
+Paul Skenes,4719507,13,0,1,13,FALSE,Draft,15,1,0,1,0,15
+Pete Alonso,37498,11,0,1,13,FALSE,Draft,3,3,1,0,0,1
+Pete Crow-Armstrong,4717833,4,0,1,13,FALSE,Draft,8.5,5,1,0,0,1.7
+Porter Hodge,5185133,4,0,1,13,TRUE,Draft,8.5,2,0,0,1,4.25
+Rafael Devers,33859,2,0,1,13,FALSE,Draft,-3,3,1,0,0,-1
+Raisel Iglesias,33618,8,0,1,13,TRUE,Draft,0,0,NA,NA,NA,0
+Randy Arozarena,36488,2,0,1,13,FALSE,Draft,8.5,3,1,0,0,2.8333333333333335
+Ranger Suarez,39817,11,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Reese Olson,4734319,4,0,1,13,FALSE,Draft,0,0,0,1,0,0
+Reynaldo Lopez,33860,1,0,1,13,FALSE,Draft,0,1,0,1,0,0
+Rhys Hoskins,35291,5,0,1,13,FALSE,Draft,3,2,1,0,0,1.5
+Riley Greene,42179,9,0,1,13,FALSE,Draft,1,3,1,0,0,0.3333333333333333
+Robbie Ray,32175,14,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Robert Suarez,4148749,14,0,1,13,TRUE,Draft,14.5,2,0,0,1,7.25
+Roki Sasaki,5134638,13,0,1,13,FALSE,Draft,-2.5,1,0,1,0,-2.5
+Ronald Acuna Jr.,36185,5,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Ronel Blanco,41829,11,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Royce Lewis,40635,2,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Ryan Helsley,39909,8,0,1,13,TRUE,Draft,8,1,0,0,1,8
+Ryan Jeffers,41587,7,0,1,13,FALSE,Draft,0.5,1,1,0,0,0.5
+Ryan McMahon,33247,1,0,1,13,FALSE,Draft,4.5,2,1,0,0,2.25
+Ryan Mountcastle,34940,6,0,1,13,FALSE,Draft,1.5,3,1,0,0,0.5
+Ryan Pepiot,4208281,8,0,1,13,FALSE,Draft,21.5,1,0,1,0,21.5
+Ryan Pressly,33072,1,0,1,13,TRUE,Draft,-1,3,0,0,1,-0.3333333333333333
+Ryan Walker,5000950,5,0,1,13,TRUE,Draft,2.5,1,0,0,1,2.5
+Salvador Perez,31127,8,0,1,13,FALSE,Draft,4,2,1,0,0,2
+Sandy Alcantara,35241,9,0,1,13,FALSE,Draft,13,1,0,1,0,13
+Sean Manaea,33244,7,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Seiya Suzuki,4142424,4,0,1,13,FALSE,Draft,-0.5,5,1,0,0,-0.1
+Seth Lugo,34873,4,0,1,13,FALSE,Draft,7.5,1,0,1,0,7.5
+Shane Baz,39639,5,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Shane Bieber,40912,1,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Shane McClanahan,41199,2,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Shea Langeliers,42598,1,0,1,13,FALSE,Draft,6.5,3,1,0,0,2.1666666666666665
+Shohei Ohtani,39832,14,0,1,13,FALSE,Draft,28.5,5,1,0,0,5.7
+Shota Imanaga,5134630,2,0,1,13,FALSE,Draft,36,2,0,1,0,18
+Sonny Gray,32082,2,0,1,13,FALSE,Draft,12,1,0,1,0,12
+Spencer Arrighetti,4726080,2,0,1,13,FALSE,Draft,0,0,0,1,0,0
+Spencer Horwitz,4228472,5,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Spencer Schwellenbach,4424862,6,0,1,13,FALSE,Draft,25,1,0,1,0,25
+Spencer Steer,4722857,7,0,1,13,FALSE,Draft,-1.5,1,1,0,0,-1.5
+Spencer Strider,4307825,4,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Steven Kwan,41996,5,0,1,13,FALSE,Draft,13,2,1,0,0,6.5
+TJ Friedl,36020,13,0,1,13,FALSE,Draft,2,2,1,0,0,1
+Taj Bradley,42480,9,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Tanner Bibee,4345278,11,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Tanner Houck,41009,5,0,1,13,FALSE,Draft,2.5,1,0,1,0,2.5
+Tanner Scott,35135,12,0,1,13,TRUE,Draft,6,3,0,0,1,2
+Tarik Skubal,42409,5,0,1,13,FALSE,Draft,2.5,1,0,1,0,2.5
+Taylor Ward,34923,11,0,1,13,FALSE,Draft,3,2,1,0,0,1.5
+Teoscar Hernandez,33377,8,0,1,13,FALSE,Draft,15.5,5,1,0,0,3.1
 Thairo Estrada,36485,6,0,1,4,FALSE,Draft,0,0,NA,NA,NA,0
-Tommy Edman,39907,12,0,1,12,FALSE,Draft,13.5,4,1,0,0,3.375
+Tommy Edman,39907,12,0,1,13,FALSE,Draft,13.5,4,1,0,0,3.375
 Tommy Pham,31208,9,0,1,7,FALSE,Draft,0,0,NA,NA,NA,0
 Tomoyuki Sugano,4142423,4,0,1,6,FALSE,Draft,0,0,NA,NA,NA,0
-Tony Santillan,40950,13,0,1,12,TRUE,Draft,11,2,0,0,1,5.5
-Trea Turner,33710,14,0,1,12,FALSE,Draft,0.5,1,1,0,0,0.5
-Trevor Larnach,41205,2,0,1,12,FALSE,Draft,6.5,2,1,0,0,3.25
-Trevor Megill,40080,4,0,1,12,TRUE,Draft,0,0,NA,NA,NA,0
-Trevor Story,32150,9,0,1,12,FALSE,Draft,4.5,3,1,0,0,1.5
-Triston Casas,41180,6,0,1,12,FALSE,Draft,-2,3,1,0,0,-0.6666666666666666
-Tyler Glasnow,33190,13,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
+Tony Santillan,40950,13,0,1,13,TRUE,Draft,11,2,0,0,1,5.5
+Trea Turner,33710,14,0,1,13,FALSE,Draft,0.5,1,1,0,0,0.5
+Trevor Larnach,41205,2,0,1,13,FALSE,Draft,6.5,2,1,0,0,3.25
+Trevor Megill,40080,4,0,1,13,TRUE,Draft,0,0,NA,NA,NA,0
+Trevor Story,32150,9,0,1,13,FALSE,Draft,4.5,3,1,0,0,1.5
+Triston Casas,41180,6,0,1,13,FALSE,Draft,-2,3,1,0,0,-0.6666666666666666
+Tyler Glasnow,33190,13,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
 Tyler Holton,3983833,7,0,1,11,TRUE,Draft,5,1,0,0,1,5
-Tyler O'Neill,34168,2,0,1,12,FALSE,Draft,15,2,1,0,0,7.5
-Victor Robles,35042,8,0,1,12,FALSE,Draft,3,3,1,0,0,1
-Vinnie Pasquantino,4109109,13,0,1,12,FALSE,Draft,11,2,1,0,0,5.5
-Vladimir Guerrero Jr.,35002,4,0,1,12,FALSE,Draft,7.5,3,1,0,0,2.5
-Walker Buehler,39251,9,0,1,12,FALSE,Draft,0,0,0,1,0,0
-Will Smith,38309,2,0,1,12,FALSE,Draft,19.5,5,1,0,0,3.9
-Willi Castro,34230,11,0,1,12,FALSE,Draft,6,2,1,0,0,3
-William Contreras,39895,6,0,1,12,FALSE,Draft,-0.5,2,1,0,0,-0.25
-Willson Contreras,32532,4,0,1,12,FALSE,Draft,-2.5,2,1,0,0,-1.25
-Willy Adames,33675,9,0,1,12,FALSE,Draft,-0.5,2,1,0,0,-0.25
-Wilyer Abreu,4990055,5,0,1,12,FALSE,Draft,24,3,1,0,0,8
-Wyatt Langford,4719324,2,0,1,12,FALSE,Draft,3,3,1,0,0,1
-Xander Bogaerts,31606,12,0,1,12,FALSE,Draft,7,3,1,0,0,2.3333333333333335
-Xavier Edwards,41326,13,0,1,12,FALSE,Draft,9,3,1,0,0,3
-Yainer Diaz,4781491,5,0,1,12,FALSE,Draft,2,2,1,0,0,1
-Yandy Diaz,33481,13,0,1,12,FALSE,Draft,1,2,1,0,0,0.5
-Yordan Alvarez,36018,6,0,1,12,FALSE,Draft,6,3,1,0,0,2
-Yoshinobu Yamamoto,4872587,8,0,1,12,FALSE,Draft,28.5,2,0,1,0,14.25
-Yu Darvish,32055,8,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Yusei Kikuchi,41415,14,0,1,12,FALSE,Draft,17,1,0,1,0,17
-Zac Gallen,39910,1,0,1,12,FALSE,Draft,2,1,0,1,0,2
-Zach Eflin,32804,14,0,1,12,FALSE,Draft,18.5,1,0,1,0,18.5
-Zach Neto,4666100,8,0,1,12,FALSE,Draft,0,0,NA,NA,NA,0
-Zack Wheeler,31267,1,0,1,12,FALSE,Draft,26,1,0,1,0,26
-Josh Bell,32517,7,0,2,12,FALSE,Free Agent,-0.5,1,1,0,0,-0.5
-Ben Rice,5016968,11,0,3,12,FALSE,Free Agent,2.5,2,1,0,0,1.25
-Jose Soriano,40973,6,0,3,12,FALSE,Free Agent,0,0,0,1,0,0
+Tyler O'Neill,34168,2,0,1,13,FALSE,Draft,15,2,1,0,0,7.5
+Victor Robles,35042,8,0,1,13,FALSE,Draft,2,3,1,0,0,0.6666666666666666
+Vinnie Pasquantino,4109109,13,0,1,13,FALSE,Draft,11,2,1,0,0,5.5
+Vladimir Guerrero Jr.,35002,4,0,1,13,FALSE,Draft,7.5,3,1,0,0,2.5
+Walker Buehler,39251,9,0,1,13,FALSE,Draft,0,0,0,1,0,0
+Will Smith,38309,2,0,1,13,FALSE,Draft,19.5,5,1,0,0,3.9
+Willi Castro,34230,11,0,1,13,FALSE,Draft,6,2,1,0,0,3
+William Contreras,39895,6,0,1,13,FALSE,Draft,-0.5,2,1,0,0,-0.25
+Willson Contreras,32532,4,0,1,13,FALSE,Draft,-2.5,2,1,0,0,-1.25
+Willy Adames,33675,9,0,1,13,FALSE,Draft,-0.5,2,1,0,0,-0.25
+Wilyer Abreu,4990055,5,0,1,13,FALSE,Draft,24,3,1,0,0,8
+Wyatt Langford,4719324,2,0,1,13,FALSE,Draft,3,3,1,0,0,1
+Xander Bogaerts,31606,12,0,1,13,FALSE,Draft,7,3,1,0,0,2.3333333333333335
+Xavier Edwards,41326,13,0,1,13,FALSE,Draft,9,3,1,0,0,3
+Yainer Diaz,4781491,5,0,1,13,FALSE,Draft,2,2,1,0,0,1
+Yandy Diaz,33481,13,0,1,13,FALSE,Draft,1,2,1,0,0,0.5
+Yordan Alvarez,36018,6,0,1,13,FALSE,Draft,6,3,1,0,0,2
+Yoshinobu Yamamoto,4872587,8,0,1,13,FALSE,Draft,28.5,2,0,1,0,14.25
+Yu Darvish,32055,8,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Yusei Kikuchi,41415,14,0,1,13,FALSE,Draft,17,1,0,1,0,17
+Zac Gallen,39910,1,0,1,13,FALSE,Draft,2,1,0,1,0,2
+Zach Eflin,32804,14,0,1,13,FALSE,Draft,18.5,1,0,1,0,18.5
+Zach Neto,4666100,8,0,1,13,FALSE,Draft,0,0,NA,NA,NA,0
+Zack Wheeler,31267,1,0,1,13,FALSE,Draft,26,1,0,1,0,26
+Josh Bell,32517,7,0,2,13,FALSE,Free Agent,-0.5,1,1,0,0,-0.5
+Ben Rice,5016968,11,0,3,13,FALSE,Free Agent,2.5,2,1,0,0,1.25
+Jose Soriano,40973,6,0,3,13,FALSE,Free Agent,0,0,0,1,0,0
 Tyler Freeman,40958,4,0,5,10,FALSE,Free Agent,0,0,NA,NA,NA,0
 Zack Gelof,4414531,6,0,5,5,FALSE,Free Agent,0,0,NA,NA,NA,0
 Mauricio Dubon,35304,6,0,6,11,FALSE,Free Agent,0,0,NA,NA,NA,0
-Jack Leiter,4622181,4,0,7,12,TRUE,Free Agent,0,0,0,1,0,0
-Brady Singer,41172,9,0,8,12,FALSE,Free Agent,0,0,NA,NA,NA,0
+Jack Leiter,4622181,4,0,7,13,TRUE,Free Agent,0,0,0,1,0,0
+Brady Singer,41172,9,0,8,13,FALSE,Free Agent,0,0,NA,NA,NA,0
 David Peterson,40921,5,0,8,8,FALSE,Free Agent,0,0,NA,NA,NA,0
-Nick Martinez,33372,2,0,8,12,TRUE,Free Agent,0,0,NA,NA,NA,0
+Nick Martinez,33372,2,0,8,13,TRUE,Free Agent,0,0,NA,NA,NA,0
 Charlie Morton,29155,5,0,9,11,FALSE,Free Agent,-2.5,1,0,1,0,-2.5
-Sean Burke,4867679,5,0,9,12,FALSE,Free Agent,22.5,1,0,1,0,22.5
-Tomoyuki Sugano,4142423,8,1,9,12,FALSE,Free Agent,0,0,NA,NA,NA,0
-Ben Lively,33194,11,0,10,12,FALSE,Free Agent,8,1,0,1,0,8
-Tyler Soderstrom,4686066,12,0,10,12,FALSE,Free Agent,13.5,3,1,0,0,4.5
-Joey Ortiz,42958,4,0,11,12,FALSE,Free Agent,0,0,1,0,0,0
-Spencer Torkelson,4424286,1,0,11,12,FALSE,Free Agent,3,1,1,0,0,3
-Andres Gimenez,37729,14,1,12,12,FALSE,Free Agent,7.5,1,1,0,0,7.5
-Erick Fedde,33793,7,0,12,12,FALSE,Free Agent,21,1,0,1,0,21
-Jeffrey Springs,35397,6,0,12,12,FALSE,Free Agent,0,0,NA,NA,NA,0
-Justin Verlander,6341,11,0,12,12,FALSE,Free Agent,9.5,1,0,1,0,9.5
-Zack Littell,36052,5,0,12,12,FALSE,Free Agent,24,1,0,1,0,24
+Sean Burke,4867679,5,0,9,13,FALSE,Free Agent,22.5,1,0,1,0,22.5
+Tomoyuki Sugano,4142423,8,1,9,13,FALSE,Free Agent,0,0,NA,NA,NA,0
+Ben Lively,33194,11,0,10,13,FALSE,Free Agent,8,1,0,1,0,8
+Tyler Soderstrom,4686066,12,0,10,13,FALSE,Free Agent,14.5,3,1,0,0,4.833333333333333
+Joey Ortiz,42958,4,0,11,13,FALSE,Free Agent,0,0,1,0,0,0
+Spencer Torkelson,4424286,1,0,11,13,FALSE,Free Agent,3,1,1,0,0,3
+Andres Gimenez,37729,14,1,12,13,FALSE,Free Agent,7.5,1,1,0,0,7.5
+Erick Fedde,33793,7,0,12,13,FALSE,Free Agent,21,1,0,1,0,21
+Jeffrey Springs,35397,6,0,12,13,FALSE,Free Agent,0,0,NA,NA,NA,0
+Justin Verlander,6341,11,0,12,13,FALSE,Free Agent,9.5,1,0,1,0,9.5
+Zack Littell,36052,5,0,12,13,FALSE,Free Agent,24,1,0,1,0,24
+Andrew Heaney,32672,1,0,13,13,FALSE,Free Agent,0,0,NA,NA,NA,0
+Josh Jung,42437,2,1,13,13,FALSE,Free Agent,0,0,NA,NA,NA,0
