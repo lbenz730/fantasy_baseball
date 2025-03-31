@@ -12,6 +12,7 @@ Ketel Bells,All That is Wright,9,4,-3,5,5,0,0.4767067361841766,0.461699092870040
 Ketel Bells,All That is Wright,10,3,33,2,2,0,0.803232240738577,0.8315911296114643
 Ketel Bells,All That is Wright,11,2,20.5,2,2,0,0.7419089819417618,0.7289201599066346
 Ketel Bells,All That is Wright,12,1,19.5,1,1,0,0.7879216176550259,0.719206135384508
+Ketel Bells,All That is Wright,13,0,17,0,0,0,1,0.6940172592753043
 The Novaks,Burnes Notice,0,13,0,5,5,0,0.5,0.4980916406925082
 The Novaks,Burnes Notice,1,12,-3,5,5,0,0.4744191576014129,0.4616990928700404
 The Novaks,Burnes Notice,2,11,-2,5,5,0,0.47846511801057273,0.47380382815863736
@@ -25,6 +26,7 @@ The Novaks,Burnes Notice,9,4,-2,5,5,0,0.48268250425630027,0.47380382815863736
 The Novaks,Burnes Notice,10,3,-76,4,0,4,0.2739696067255498,0.12490679903912595
 The Novaks,Burnes Notice,11,2,-87.5,4,0,4,0.09873232692490365,0.08990400284580118
 The Novaks,Burnes Notice,12,1,-65.5,1,0,1,0.03896638301450938,0.10288513702408195
+The Novaks,Burnes Notice,13,0,-119.5,0,0,0,0,0.0029642678730107683
 Guts. Glory. JRam.,At Witt's End,0,13,0,5,5,0,0.5,0.4980916406925082
 Guts. Glory. JRam.,At Witt's End,1,12,0,5,5,0,0.4991389160596442,0.4980916406925082
 Guts. Glory. JRam.,At Witt's End,2,11,0.5,5,5,0,0.5159320878600991,0.5041694877624097
@@ -38,6 +40,7 @@ Guts. Glory. JRam.,At Witt's End,9,4,0.5,5,5,0,0.5064101743316568,0.504169487762
 Guts. Glory. JRam.,At Witt's End,10,3,8.5,3,3,0,0.5889051894156005,0.6000485319931634
 Guts. Glory. JRam.,At Witt's End,11,2,-25.5,2,1,1,0.35564884385484624,0.34957596027923293
 Guts. Glory. JRam.,At Witt's End,12,1,-24,0,0,0,0.15231119823218908,0.2360244386101375
+Guts. Glory. JRam.,At Witt's End,13,0,-43.5,0,0,0,0,0.10690416503534186
 Blasphemous Hot Takes,The Talmudic Tunnelers,0,13,0,5,5,0,0.5,0.4980916406925082
 Blasphemous Hot Takes,The Talmudic Tunnelers,1,12,16.5,5,5,0,0.635297560862234,0.6888302573140997
 Blasphemous Hot Takes,The Talmudic Tunnelers,2,11,17.5,5,5,0,0.6424493771719227,0.6991555600997256
@@ -51,6 +54,7 @@ Blasphemous Hot Takes,The Talmudic Tunnelers,9,4,17.5,5,5,0,0.6349047166036854,0
 Blasphemous Hot Takes,The Talmudic Tunnelers,10,3,43.5,3,1,2,0.9464898307870515,0.9132736721389928
 Blasphemous Hot Takes,The Talmudic Tunnelers,11,2,71,1,0,1,0.9811546910369962,0.9571233823158617
 Blasphemous Hot Takes,The Talmudic Tunnelers,12,1,83.5,0,0,0,0.9936128903633956,0.9829169707324519
+Blasphemous Hot Takes,The Talmudic Tunnelers,13,0,76.5,0,0,0,1,0.9761556266016994
 Sac Fly by the Rook,Mt. Everest Taquito Farmers,0,13,0,5,5,0,0.5,0.4980916406925082
 Sac Fly by the Rook,Mt. Everest Taquito Farmers,1,12,2.5,4,4,0,0.5241558359253753,0.5284506311954795
 Sac Fly by the Rook,Mt. Everest Taquito Farmers,2,11,10.5,3,4,-1,0.49068804004075944,0.5072430480660409
@@ -64,6 +68,7 @@ Sac Fly by the Rook,Mt. Everest Taquito Farmers,9,4,10.5,3,4,-1,0.48278138854387
 Sac Fly by the Rook,Mt. Everest Taquito Farmers,10,3,11.5,1,4,-3,0.34541435298867224,0.3702497510883807
 Sac Fly by the Rook,Mt. Everest Taquito Farmers,11,2,-20.5,1,2,-1,0.1621505225461549,0.2371129611181523
 Sac Fly by the Rook,Mt. Everest Taquito Farmers,12,1,9,0,1,-1,0.48951974031485324,0.4927575992408278
+Sac Fly by the Rook,Mt. Everest Taquito Farmers,13,0,14,0,0,0,1,0.6621963402990594
 The Traveling Secretaries,The West Bank Occupiers,0,13,0,5,5,0,0.5,0.4980916406925082
 The Traveling Secretaries,The West Bank Occupiers,1,12,1,5,5,0,0.518513215544234,0.5102461028218781
 The Traveling Secretaries,The West Bank Occupiers,2,11,3.5,5,5,0,0.529141277947492,0.5405480607274501
@@ -75,5 +80,6 @@ The Traveling Secretaries,The West Bank Occupiers,7,6,3.5,5,5,0,0.52724456278330
 The Traveling Secretaries,The West Bank Occupiers,8,5,3.5,5,5,0,0.5272445627833074,0.5405480607274501
 The Traveling Secretaries,The West Bank Occupiers,9,4,3.5,5,5,0,0.5218275972986883,0.5405480607274501
 The Traveling Secretaries,The West Bank Occupiers,10,3,49,3,4,-1,0.7671056528381964,0.819985757019351
-The Traveling Secretaries,The West Bank Occupiers,11,2,41,0,3,-3,0.6007059302540448,0.6369031501868497
+The Traveling Secretaries,The West Bank Occupiers,11,2,41,0,3,-3,0.6007059302540448,0.6369031501868498
 The Traveling Secretaries,The West Bank Occupiers,12,1,46.5,0,2,-2,0.8004778991583448,0.7430794518961352
+The Traveling Secretaries,The West Bank Occupiers,13,0,25,0,0,0,1,0.7699372859462061
