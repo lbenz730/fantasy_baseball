@@ -375,6 +375,17 @@ if(nrow(df_trades) > 0) {
 }
 
 
+### Draft
+draft <- robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?view=mDraftDetail'))
+df_draft <- 
+  draft$draftDetail$picks %>% 
+  select('team_id' = teamId,
+         'player_id' = playerId,
+         'round_id' = roundId,
+         'pick_id' = overallPickNumber)
+write_csv(df_draft, glue('data/stats/{params$season}/draft.csv'))
+
+
 ### Transaction Log
 trans_log <- get_trans_log(params$season, nrow(df_trades) > 0)
 
@@ -902,16 +913,6 @@ df_daily %>%
   inner_join(teams %>% select(team, team_id), by = 'team_id') %>% 
   write_csv(glue('data/stats/{params$season}/pitch_matrix.csv'))
 
-
-### Draft
-draft <- robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{params$season}/segments/0/leagues/49106?view=mDraftDetail'))
-df_draft <- 
-  draft$draftDetail$picks %>% 
-  select('team_id' = teamId,
-         'player_id' = playerId,
-         'round_id' = roundId,
-         'pick_id' = overallPickNumber)
-write_csv(df_draft, glue('data/stats/{params$season}/draft.csv'))
 
 
 ### Record vs. others 

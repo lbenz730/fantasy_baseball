@@ -1,4 +1,5 @@
 game_date,player,player_id,team_id
+2025-03-31,Kris Bubic,41201,5
 2025-03-31,Cristopher Sanchez,42359,7
 2025-03-31,Brady Singer,41172,9
 2025-03-31,David Peterson,40921,4
@@ -6,6 +7,7 @@ game_date,player,player_id,team_id
 2025-03-31,Bowden Francis,4734325,12
 2025-03-31,Ronel Blanco,41829,11
 2025-03-31,Jackson Jobe,4872647,8
+2025-03-31,Ben Brown,41516,2
 2025-03-31,Grant Holmes,33840,8
 2025-03-31,Tyler Glasnow,33190,13
 2025-04-01,Nathan Eovaldi,31174,13
@@ -14,8 +16,10 @@ game_date,player,player_id,team_id
 2025-04-01,Shane Baz,39639,5
 2025-04-01,Corbin Burnes,39878,14
 2025-04-01,Jose Berrios,32811,7
+2025-04-01,Simeon Woods Richardson,41383,5
 2025-04-01,Logan Webb,41216,12
 2025-04-01,Michael King,40429,14
+2025-04-01,Casey Mize,41167,5
 2025-04-01,Logan Gilbert,41221,4
 2025-04-01,Justin Steele,41022,2
 2025-04-01,Luis Severino,33263,14
@@ -30,9 +34,7 @@ game_date,player,player_id,team_id
 2025-04-02,Yusei Kikuchi,41415,14
 2025-04-02,Sonny Gray,32082,2
 2025-04-02,Pablo Lopez,39671,12
-2025-04-02,Sean Burke,4867679,5
 2025-04-02,MacKenzie Gore,39636,13
-2025-04-02,Kevin Gausman,32667,12
 2025-04-02,Jeffrey Springs,35397,6
 2025-04-02,Ben Lively,33194,11
 2025-04-02,Dylan Cease,34943,7
@@ -45,5 +47,4 @@ game_date,player,player_id,team_id
 2025-04-02,Zack Wheeler,31267,1
 2025-04-02,Zac Gallen,39910,1
 2025-04-02,Carlos Rodon,33696,14
-2025-04-02,Reynaldo Lopez,33860,1
 2025-04-02,Blake Snell,33748,1

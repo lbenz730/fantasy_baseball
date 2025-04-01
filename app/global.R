@@ -35,7 +35,8 @@ ferry <- '<img src="www/ferry.jpg" style="height:30px;">'
 params <- 
   list('season' = 2025,
        'opening_day' = as.Date('2025-03-18'),
-       'opening_day_chart' = as.Date('2025-03-27'))
+       'opening_day_chart' = as.Date('2025-03-27'),
+       'period_rm' = 3:9)
 
 ### Load in All Data
 df_start <- 
@@ -225,12 +226,14 @@ df_points <-
 
 scale_factors <- 
   df_daily %>% 
+  filter(!scoring_period_id %in% params$period_rm) %>% 
   filter(in_lineup) %>% 
   filter(matchup_id < max(2, params$current_matchup)) %>% 
   group_by(team_id, matchup_id) %>% 
   summarise('n_bat' = sum(played),
             'n_rp' = sum(relief & !start)) %>% 
   inner_join(df_start, by = 'matchup_id') %>% 
+  mutate('duration' = ifelse(matchup_id == 1, duration - length(params$period_rm), duration)) %>% 
   mutate('n_rp' = n_rp/duration * 7,
          'n_bat' = n_bat/duration * 7) %>% 
   ungroup() %>% 
@@ -248,8 +251,8 @@ if(nrow(df_trades) > 0) {
   traded_players <- df_trades
 }
 
-threshold <- pmin(20, period/2)
-threshold_p <- pmin(5, period/5)
+threshold <- pmin(20, (period-length(params$period_rm))/2)
+threshold_p <- pmin(5, (period-length(params$period_rm))/5)
 
 df_fa <- 
   trans_log %>% 
@@ -261,9 +264,9 @@ df_fa <-
            (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp * w_rp + 
            (ppg - exp_standings$sp_ppg[13]) * scale_factors$n_sp * w_sp) %>% 
   mutate('total_value' = n_points - (end - 
-                                       case_when(start <= 2 ~ start,
-                                                 start >= as.numeric(params$opening_day_chart - params$opening_day) ~ start,
-                                                 start < as.numeric(params$opening_day_chart - params$opening_day) ~  as.numeric(params$opening_day_chart - params$opening_day)
+                                       case_when(start <= min(params$period_rm) - 1 ~ start,
+                                                 start >= max(params$period_rm) + 1 ~ start,
+                                                 start <= max(params$period_rm) ~  max(params$period_rm)
                                        )
                                      + 1)/7 * 
            (exp_standings$batting_ppg[13] * scale_factors$n_bat * w_bat + 

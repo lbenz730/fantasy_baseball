@@ -8,6 +8,7 @@ Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
 get_trans_log <- function(season, trades = T) {
   df_daily <- read_csv(glue('data/stats/{season}/daily_stats_{season}.csv'))
+  df_draft <- read_csv(glue('data/stats/{season}/draft.csv'))
   if(trades) {
     df_trades <- read_csv(glue('data/stats/{season}/traded_players_{season}.csv'))
   }
@@ -32,15 +33,17 @@ get_trans_log <- function(season, trades = T) {
   if(nrow(df_trades) > 0) {
     trans_log <- 
       trans_log %>% 
+      left_join(df_draft, by = c('player_id', 'team_id')) %>% 
       left_join(df_trades, by = c('player_id', 'player', 'start' = 'scoring_period_id', 'team_id' = 'team_to')) %>% 
-      mutate('transaction_type' = case_when(stint == 0 & start == 1 ~ 'Draft',
+      mutate('transaction_type' = case_when(stint == 0 & start == 1 & !is.na(pick_id) ~ 'Draft',
                                             !is.na(trade_id) ~ 'Trade',
                                             T ~ 'Free Agent')) %>% 
       ungroup()
   } else {
     trans_log <- 
       trans_log %>% 
-      mutate('transaction_type' = case_when(stint == 0 & start == 1 ~ 'Draft',
+      left_join(df_draft, by = c('player_id', 'team_id')) %>% 
+      mutate('transaction_type' = case_when(stint == 0 & start == 1 & !is.na(pick_id) ~ 'Draft',
                                             T ~ 'Free Agent'))
   }
   trans_log <- 
