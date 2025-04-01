@@ -302,6 +302,11 @@ shinyServer(function(input, output, session) {
       mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
       mutate_at(vars(everything()), ~replace(.x, .x == Inf, 0)) %>% 
       inner_join(teams, by = 'team_id') %>% 
+      inner_join(
+        exp_standings %>% 
+          select(team, pitching_points),
+        by = 'team') %>% 
+      arrange(-pitching_points) %>% 
       select(team, logo, 
              era, fip, k9, bb9, k_per_bb, hr9, 
              era_sp, fip_sp, k9_sp, bb9_sp, k_per_bb_sp, hr9_sp, 
@@ -537,6 +542,11 @@ shinyServer(function(input, output, session) {
       bat_stats %>% 
       mutate_at(vars(everything()), ~replace(.x, is.na(.x), 0)) %>% 
       inner_join(teams, by = 'team_id') %>% 
+      inner_join(
+        exp_standings %>% 
+          select(team, batting_points),
+        by = 'team') %>% 
+      arrange(-batting_points) %>% 
       select(team, logo, 
              avg, obp, slg, ops, woba, babip, k_rate, bb_rate) %>% 
       bind_rows(tibble('team' = 'League Average',
