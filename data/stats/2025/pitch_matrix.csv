@@ -9,9 +9,8 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.0,0,1,Bad Start,Sac Fly by the Rook
 2,4.0,5,1,Bad Start,Sac Fly by the Rook
 2,5.0,2,1,QS Potential,Sac Fly by the Rook
-2,5.0,3,1,QS Potential,Sac Fly by the Rook
+2,5.0,3,2,QS Potential,Sac Fly by the Rook
 2,7.0,1,1,QS,Sac Fly by the Rook
-2,< 3,0,1,Bad Start,Sac Fly by the Rook
 4,4.2,2,1,Bad Start,All That is Wright
 4,5.0,2,1,QS Potential,All That is Wright
 4,5.0,3,1,QS Potential,All That is Wright
@@ -36,11 +35,11 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.0,1,1,QS,At Witt's End
 7,6.0,2,1,QS,At Witt's End
 7,7.0,0,1,QS,At Witt's End
+8,4.0,3,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,1,2,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,2,1,QS Potential,Mt. Everest Taquito Farmers
 8,6.0,1,2,QS,Mt. Everest Taquito Farmers
-8,< 3,1,1,Bad Start,Mt. Everest Taquito Farmers
-8,< 3,2,1,Bad Start,Mt. Everest Taquito Farmers
 9,4.2,2,2,Bad Start,Guts. Glory. JRam.
 9,5.0,3,1,QS Potential,Guts. Glory. JRam.
 9,6.0,1,1,QS,Guts. Glory. JRam.
@@ -54,11 +53,10 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.0,3,1,QS Potential,Blasphemous Hot Takes
 12,5.1,1,1,QS Potential,Blasphemous Hot Takes
 12,6.0,2,2,QS,Blasphemous Hot Takes
-13,5.0,0,1,QS Potential,Ketel Bells
+13,5.0,0,2,QS Potential,Ketel Bells
 13,5.0,3,1,QS Potential,Ketel Bells
 13,5.1,2,1,QS Potential,Ketel Bells
 13,6.0,2,1,QS,Ketel Bells
-13,< 3,0,1,Bad Start,Ketel Bells
 13,< 3,2,1,Bad Start,Ketel Bells
 14,5.1,1,1,QS Potential,Burnes Notice
 14,5.1,3,1,QS Potential,Burnes Notice
