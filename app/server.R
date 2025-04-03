@@ -781,7 +781,7 @@ shinyServer(function(input, output, session) {
              fill = 'Start Points',
              title = 'Distribution of SP Points',
              caption = 'Dashed Line = League Average') + 
-        scale_y_continuous(labels = scales::percent) +
+        scale_y_continuous(labels = scales::percent, limits = c(0, max(start_buckets$pct_start) + 0.05)) +
         scale_x_discrete(limits = c('<= 0', '1-5', '6-10', '11-15', '16-20',
                                     '21-25', '26-30', '> 30')) + 
         scale_fill_manual(values = c('red3', 'salmon','orange', 'violet', 'lightskyblue', 'aquamarine2', 'seagreen3', 'forestgreen'), 
