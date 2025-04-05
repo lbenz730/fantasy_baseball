@@ -1,20 +1,4 @@
 game_date,player,player_id,team_id
-2025-04-04,Jack Flaherty,33837,5
-2025-04-04,Erick Fedde,33793,7
-2025-04-04,Walker Buehler,39251,9
-2025-04-04,Shota Imanaga,5134630,2
-2025-04-04,Kevin Gausman,32667,12
-2025-04-04,Max Fried,32685,9
-2025-04-04,Mitch Keller,33722,9
-2025-04-04,Justin Verlander,6341,11
-2025-04-04,Brandon Pfaadt,4721302,9
-2025-04-04,Yoshinobu Yamamoto,4872587,8
-2025-04-04,Jesus Luzardo,39667,12
-2025-04-04,Max Meyer,4345164,2
-2025-04-04,Spencer Schwellenbach,4424862,6
-2025-04-04,Seth Lugo,34873,4
-2025-04-04,Gavin Williams,4345076,6
-2025-04-04,Jose Soriano,40973,6
 2025-04-05,Reese Olson,4734319,4
 2025-04-05,Spencer Arrighetti,4726080,2
 2025-04-05,Bailey Ober,3107919,6
@@ -28,12 +12,14 @@ game_date,player,player_id,team_id
 2025-04-05,Chris Bassitt,33148,12
 2025-04-05,Brady Singer,41172,9
 2025-04-05,AJ Smith-Shawver,4917640,5
+2025-04-05,JP Sears,39818,1
 2025-04-05,Bryce Miller,4654313,7
 2025-04-05,Robbie Ray,32175,14
 2025-04-05,Tanner Bibee,4345278,11
 2025-04-06,Corbin Burnes,39878,14
 2025-04-06,Tyler Glasnow,33190,13
 2025-04-06,Cristopher Sanchez,42359,7
+2025-04-06,Sandy Alcantara,35241,9
 2025-04-06,Bowden Francis,4734325,12
 2025-04-06,Martin Perez,31098,1
 2025-04-06,Jackson Jobe,4872647,8
@@ -42,3 +28,5 @@ game_date,player,player_id,team_id
 2025-04-06,Drew Rasmussen,42584,1
 2025-04-06,Bryan Woo,4629089,8
 2025-04-06,Jordan Hicks,37909,8
+2025-04-07,Garrett Crochet,4297835,6
+2025-04-07,Hunter Greene,39635,4
