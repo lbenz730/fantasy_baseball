@@ -258,7 +258,7 @@ df_fa <-
   trans_log %>% 
   filter(!is.na(w_bat), !is.na(w_sp), !is.na(w_rp)) %>% 
   filter(transaction_type == 'Free Agent') %>% 
-  filter(w_bat * n_games >= threshold | w_sp * n_games >= threshold_p  | w_rp * n_games >= threshold_p) %>% 
+  filter(w_bat * n_games >= threshold | w_sp * n_games >= threshold_p  | w_rp * n_games >= threshold_p) %>%
   mutate('ppg_vs_avg' = 
            (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat * w_bat + 
            (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp * w_rp + 

@@ -452,10 +452,19 @@ team_points <-
       rename_with(function(x) gsub("away_", "", x))
   ) %>% 
   left_join(rp_scores) %>% 
-  mutate('sp_points' = pitching_points - rp_points)
+  mutate('sp_points' = pitching_points - rp_points,
+         'rp_points' = ifelse(is.na(pitching_points), NA, rp_points))
 
 team_points <- 
   team_points %>% 
+  mutate('weight' = case_when(
+    matchup_id == 1 ~ 4/7,
+    matchup_id == 14 & params$season != 2024 ~ 10/7,
+    matchup_id == 16 & params$season == 2024 ~ 10/7,
+    matchup_id > 21 ~ 0.5,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ 1,
+    (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
+    T ~ 1)) %>% 
   mutate("adj_pts" = case_when(
     matchup_id == 1 ~ total_points * 7/4,
     matchup_id == 14 & params$season != 2024 ~ total_points * 7/10,
@@ -504,7 +513,7 @@ team_points <-
 team_points <- 
   team_points %>% 
   left_join(team_points, 
-            by = c('matchup_id', 'game_id'),
+            by = c('matchup_id', 'game_id', 'weight'),
             suffix = c("", "_opp"),
             relationship = 'many-to-many'
   ) %>% 
@@ -521,11 +530,11 @@ total_team_points <-
             "pitching_points" = sum(pitching_points, na.rm = T),
             'sp_points' = sum(sp_points, na.rm = T),
             'rp_points' = sum(rp_points, na.rm = T),
-            "adj_batting_pts" = mean(adj_batting_pts, na.rm = T),
-            "adj_pitching_pts" = mean(adj_pitching_pts, na.rm = T),
-            'adj_pts' = mean(adj_pts, na.rm = T),
-            'adj_sp_pts' = mean(adj_sp_pts, na.rm = T),
-            'adj_rp_pts' = mean(adj_rp_pts, na.rm = T))
+            "adj_batting_pts" = weighted.mean(adj_batting_pts, weight, na.rm = T),
+            "adj_pitching_pts" = weighted.mean(adj_pitching_pts,  weight, na.rm = T),
+            'adj_pts' = weighted.mean(adj_pts, weight, na.rm = T),
+            'adj_sp_pts' = weighted.mean(adj_sp_pts, weight, na.rm = T),
+            'adj_rp_pts' = weighted.mean(adj_rp_pts, weight, na.rm = T))
 
 
 ### Summary Stats mean points by week
