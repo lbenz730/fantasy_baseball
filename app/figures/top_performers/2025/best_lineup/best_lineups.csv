@@ -43,25 +43,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Ryan Walker,5000950,5,19.5,4.875,2
 15,RP,Mason Miller,4730225,1,18,6,2
 15,RP,Josh Hader,32760,14,16,8,2
-0,C,NA,NA,NA,NA,NA,3
-1,1B,NA,NA,NA,NA,NA,3
-2,2B,NA,NA,NA,NA,NA,3
-3,3B,NA,NA,NA,NA,NA,3
-4,SS,NA,NA,NA,NA,NA,3
-5,OF,NA,NA,NA,NA,NA,3
-5,OF,NA,NA,NA,NA,NA,3
-5,OF,NA,NA,NA,NA,NA,3
-5,OF,NA,NA,NA,NA,NA,3
-5,OF,NA,NA,NA,NA,NA,3
-6,2B/SS,NA,NA,NA,NA,NA,3
-7,1B/3B,NA,NA,NA,NA,NA,3
-12,UTIL,NA,NA,NA,NA,NA,3
-14,SP,NA,NA,NA,NA,NA,3
-14,SP,NA,NA,NA,NA,NA,3
-14,SP,NA,NA,NA,NA,NA,3
-14,SP,NA,NA,NA,NA,NA,3
-14,SP,NA,NA,NA,NA,NA,3
-14,SP,NA,NA,NA,NA,NA,3
-15,RP,NA,NA,NA,NA,NA,3
-15,RP,NA,NA,NA,NA,NA,3
-15,RP,NA,NA,NA,NA,NA,3
+0,C,Keibert Ruiz,38827,12,4,4,3
+1,1B,Tyler Soderstrom,4686066,12,13,13,3
+2,2B,Jose Altuve,31662,1,9,9,3
+3,3B,Manny Machado,31097,5,7,7,3
+4,SS,Gunnar Henderson,42507,11,7.5,7.5,3
+5,OF,James Wood,4918256,11,9,9,3
+5,OF,George Springer,32078,14,8,8,3
+5,OF,Fernando Tatis Jr.,35983,12,6.5,6.5,3
+5,OF,Brendan Donovan,41773,7,5,5,3
+5,OF,Seiya Suzuki,4142424,4,5,5,3
+6,2B/SS,Andres Gimenez,37729,14,7,7,3
+7,1B/3B,Jake Cronenworth,36364,7,7,7,3
+12,UTIL,Shohei Ohtani,39832,14,11.5,11.5,3
+14,SP,Hunter Greene,39635,4,33,33,3
+14,SP,Logan Webb,41216,12,32,32,3
+14,SP,Justin Steele,41022,2,30,30,3
+14,SP,Logan Gilbert,41221,4,20,20,3
+14,SP,Zach Eflin,32804,14,17.5,17.5,3
+14,SP,Dustin May,40937,2,17,17,3
+15,RP,Kyle Finnegan,36543,7,7.5,7.5,3
+15,RP,Andres Munoz,40939,2,7,7,3
+15,RP,Robert Suarez,4148749,14,7,7,3
