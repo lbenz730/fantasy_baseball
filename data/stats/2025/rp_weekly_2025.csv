@@ -1085,18 +1085,19 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 13,3,Kyle Finnegan,36543,1,7.5,7
 13,3,Eugenio Suarez,32367,NA,0.5,7
 14,3,Carlos Rodon,33696,NA,11.5,14
+14,3,Jasson Dominguez,42401,NA,0,14
 14,3,Andres Gimenez,37729,NA,7,14
-14,3,Robert Suarez,4148749,1,7,14
 14,3,Wilmer Flores,30627,NA,0,14
-14,3,Zach McKinstry,38420,NA,1,14
 14,3,Zach Eflin,32804,NA,17.5,14
-14,3,Julio Rodriguez,41044,NA,-1,14
 14,3,Lourdes Gurriel Jr.,36040,NA,1,14
-14,3,Shohei Ohtani,39832,NA,NA,14
-14,3,Jazz Chisholm Jr.,41433,NA,0,14
 14,3,Michael King,40429,NA,4,14
 14,3,George Springer,32078,NA,8,14
 14,3,Luis Severino,33263,NA,6,14
+14,3,Robert Suarez,4148749,1,7,14
+14,3,Zach McKinstry,38420,NA,1,14
+14,3,Julio Rodriguez,41044,NA,-1,14
+14,3,Shohei Ohtani,39832,NA,NA,14
+14,3,Jazz Chisholm Jr.,41433,NA,0,14
 15,3,Austin Wells,4683349,NA,0,13
 15,3,Masyn Winn,4683365,NA,5.5,13
 15,3,Lars Nootbaar,4448736,NA,-0.5,13

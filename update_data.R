@@ -732,14 +732,14 @@ if(params$matchup_id > 1) {
   team_mus <- 
     group_by(team_points, team) %>% 
     summarise("mean_pts" = mean(adj_pts, na.rm = T),
-              "games_played" = max(matchup_id[!is.na(total_points)])) %>% 
+              "games_played" = max(matchup_id[!is.na(adj_pts)])) %>% 
     mutate("team_mu" = min(1, games_played/reg_season) * mean_pts  + max(0, (1 - games_played/reg_season)) * mu) %>% 
     pull(team_mu)
   
   team_sigmas <- 
     group_by(team_points, team) %>% 
     summarise("sd_pts" = sd(adj_pts, na.rm = T),
-              "games_played" = max(matchup_id[!is.na(total_points)])) %>% 
+              "games_played" = max(matchup_id[!is.na(adj_pts)])) %>% 
     mutate("team_sigma" = min(1, games_played/reg_season) * sd_pts  + max(0, (1 - games_played/reg_season)) * sigma) %>% 
     pull(team_sigma)
   team_sigmas[is.na(team_sigmas)] <- sigma
