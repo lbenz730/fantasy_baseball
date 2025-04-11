@@ -445,6 +445,7 @@ df_draft <- read_csv(glue('data/stats/{params$season}/draft.csv')) %>%
 
 draft_analysis <- 
   trans_log %>% 
+  select(-round_id, -pick_id) %>% 
   right_join(df_draft) %>% 
   group_by(player_id, player) %>% 
   summarise(
@@ -457,7 +458,7 @@ draft_analysis <-
     'w_bat' = max(w_bat, na.rm = T),
     'ppg' = points_total/(n_games_total + 0.001),
     'ppg_draft' = points_draft/(n_games_draft + 0.001),
-    'team_id' = first(draft_id),) %>% 
+    'team_id' = first(draft_id)) %>% 
   right_join(df_draft) %>% 
   inner_join(teams) %>% 
   inner_join(
