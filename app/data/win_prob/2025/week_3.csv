@@ -6,6 +6,7 @@ At Witt's End,All That is Wright,3,4,-94,5,4,1,0.030666780647836765,0.0367510178
 At Witt's End,All That is Wright,4,3,-107.5,5,4,1,0.010916458348686903,0.02215103199211462
 At Witt's End,All That is Wright,5,2,-96.5,3,2,1,0.021194568191403168,0.033482137354946206
 At Witt's End,All That is Wright,6,1,-66,2,2,0,0.020833819773244604,0.03853865300942558
+At Witt's End,All That is Wright,7,0,-142.5,1,0,1,0,0.005829051768848453
 Burnes Notice,The Talmudic Tunnelers,0,7,0,8,8,0,0.3283035935959656,0.4980916406925082
 Burnes Notice,The Talmudic Tunnelers,1,6,62.5,4,7,-3,0.6506044738116289,0.7955335938048483
 Burnes Notice,The Talmudic Tunnelers,2,5,43,4,5,-1,0.6921852543594247,0.7832093013533975
@@ -13,6 +14,7 @@ Burnes Notice,The Talmudic Tunnelers,3,4,65.5,3,5,-2,0.7694403050054808,0.856134
 Burnes Notice,The Talmudic Tunnelers,4,3,38,3,5,-2,0.661678655465311,0.6768324748668381
 Burnes Notice,The Talmudic Tunnelers,5,2,28,2,5,-3,0.523993094526418,0.5200506834322602
 Burnes Notice,The Talmudic Tunnelers,6,1,4.5,1,3,-2,0.3494722726960484,0.36984254241764697
+Burnes Notice,The Talmudic Tunnelers,7,0,13,0,0,0,1,0.6512353223326312
 Ketel Bells,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.6758025716232358,0.4980916406925082
 Ketel Bells,Mt. Everest Taquito Farmers,1,6,10.5,7,8,-1,0.6748756191957278,0.5072430480660409
 Ketel Bells,Mt. Everest Taquito Farmers,2,5,7,5,8,-3,0.5536098717741349,0.3322805161735312
@@ -20,6 +22,7 @@ Ketel Bells,Mt. Everest Taquito Farmers,3,4,-14,5,6,-1,0.33522100104179575,0.285
 Ketel Bells,Mt. Everest Taquito Farmers,4,3,-6,5,6,-1,0.3759204474768196,0.3524173933670691
 Ketel Bells,Mt. Everest Taquito Farmers,5,2,-16.5,4,5,-1,0.27995472030745905,0.26618780203290626
 Ketel Bells,Mt. Everest Taquito Farmers,6,1,-35,3,0,3,0.34833171014674663,0.4111132445279835
+Ketel Bells,Mt. Everest Taquito Farmers,7,0,20.5,0,0,0,1,0.7289201599066346
 The Novaks,The West Bank Occupiers,0,7,0,8,8,0,0.708958526855835,0.4980916406925082
 The Novaks,The West Bank Occupiers,1,6,-24.5,8,8,0,0.48334533088939236,0.23166877595269889
 The Novaks,The West Bank Occupiers,2,5,-7.5,6,5,1,0.6358884354144437,0.5185406305939471
@@ -27,6 +30,7 @@ The Novaks,The West Bank Occupiers,3,4,-28,6,4,2,0.42083488329395474,0.406249564
 The Novaks,The West Bank Occupiers,4,3,47.5,2,4,-2,0.6893797527314541,0.7502620868689401
 The Novaks,The West Bank Occupiers,5,2,43.5,1,2,-1,0.804607420713257,0.7864709478638616
 The Novaks,The West Bank Occupiers,6,1,56.5,1,2,-1,0.9219842288040367,0.858875347432791
+The Novaks,The West Bank Occupiers,7,0,38.5,0,0,0,1,0.8658061969274407
 Guts. Glory. JRam.,The Traveling Secretaries,0,7,0,8,8,0,0.4569910322451982,0.4980916406925082
 Guts. Glory. JRam.,The Traveling Secretaries,1,6,-19.5,8,8,0,0.3515202086200856,0.27772106778151934
 Guts. Glory. JRam.,The Traveling Secretaries,2,5,-65,7,5,2,0.20418425370635088,0.14256230838008202
@@ -34,6 +38,7 @@ Guts. Glory. JRam.,The Traveling Secretaries,3,4,-14.5,5,5,0,0.3771616107027649,
 Guts. Glory. JRam.,The Traveling Secretaries,4,3,-18,5,5,0,0.3442707787022337,0.292585735552184
 Guts. Glory. JRam.,The Traveling Secretaries,5,2,-22.5,3,3,0,0.25716612180242066,0.24942805131948492
 Guts. Glory. JRam.,The Traveling Secretaries,6,1,-21,1,2,-1,0.12289258760819864,0.23363677104751396
+Guts. Glory. JRam.,The Traveling Secretaries,7,0,-6.5,0,0,0,0,0.4197774542181359
 Blasphemous Hot Takes,Sac Fly by the Rook,0,7,0,8,8,0,0.6283298723823894,0.4980916406925082
 Blasphemous Hot Takes,Sac Fly by the Rook,1,6,19.5,6,6,0,0.7124883256181614,0.719206135384508
 Blasphemous Hot Takes,Sac Fly by the Rook,2,5,26.5,5,5,0,0.7628524456403276,0.782601671408425
@@ -41,3 +46,4 @@ Blasphemous Hot Takes,Sac Fly by the Rook,3,4,29.5,4,3,1,0.8276854175120552,0.81
 Blasphemous Hot Takes,Sac Fly by the Rook,4,3,68.5,2,3,-1,0.9008721159023027,0.9063233366221084
 Blasphemous Hot Takes,Sac Fly by the Rook,5,2,78,2,2,0,0.9806083831686339,0.9777955784394583
 Blasphemous Hot Takes,Sac Fly by the Rook,6,1,94,2,2,0,0.9958270472072239,0.9896768259138569
+Blasphemous Hot Takes,Sac Fly by the Rook,7,0,121.5,0,0,0,1,0.9972684120026863
