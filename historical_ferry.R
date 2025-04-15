@@ -14,6 +14,7 @@ theme_set(theme_bw() +
 teams2022 <- read_csv('data/stats/2022/teams_2022.csv')
 teams2023 <- read_csv('data/stats/2023/teams_2023.csv')
 teams2024 <- read_csv('data/stats/2024/teams_2024.csv')
+teams2025 <- read_csv('data/stats/2025/teams_2025.csv')
 
 odds2022 <- 
   read_csv('data/playoff_odds/historical_playoff_odds_2022.csv') %>% 
@@ -26,14 +27,18 @@ odds2023 <- read_csv('data/playoff_odds/historical_playoff_odds_2023.csv') %>%
 odds2024 <- read_csv('data/playoff_odds/historical_playoff_odds_2024.csv') %>% 
   mutate('season' = 2024) %>% 
   left_join(teams2024)
+odds2025 <- read_csv('data/playoff_odds/historical_playoff_odds_2025.csv') %>% 
+  mutate('season' = 2025) %>% 
+  left_join(teams2025)
 
 df <- 
   bind_rows(odds2022 %>% filter(matchup_id <= 20) , 
             odds2023 %>% filter(matchup_id <= 21) ,
-            odds2024) %>% 
+            odds2024 %>% filter(matchup_id <= 21),
+            odds2025) %>% 
   
   group_by(team_id) %>% 
-  mutate('franchise' = last(team[season == 2024])) %>%
+  mutate('franchise' = last(team[season == 2025])) %>%
   group_by(team_id, season) %>%
   mutate('safe' = map_lgl(matchup_id, ~{all(last_place[matchup_id >= .x-1] <= 0.01) })) %>%
   mutate('elim' = map_lgl(matchup_id, ~{all(playoffs[matchup_id >= .x-1] <= 0.01) })) %>%
@@ -42,7 +47,7 @@ df <-
   
   
 
-ggplot(df %>% filter(season == 2024, matchup_id <= 16, !safe), aes(x = matchup_id, y = last_place)) + 
+ggplot(df %>% filter(!safe), aes(x = matchup_id, y = last_place)) + 
   facet_wrap(~season, ncol = 1) + 
   geom_point(aes(col = franchise)) + 
   geom_line(aes(col = franchise)) +
@@ -55,6 +60,20 @@ ggplot(df %>% filter(season == 2024, matchup_id <= 16, !safe), aes(x = matchup_i
        title = 'Ferry Odds Over Time')
 
 ggsave('~/Desktop/historical_ferry.png', height = 9/1.4, width =16/1.4)
+
+ggplot(df %>% filter(matchup_id <= 3), aes(x = matchup_id, y = last_place)) + 
+  facet_wrap(~franchise) + 
+  geom_point(aes(col = as.factor(season)), size = 3) + 
+  geom_line(aes(col = as.factor(season))) +
+  scale_y_continuous(labels = scales::percent) +
+  scale_x_continuous(breaks = 0:21) +
+  theme(legend.position = 'bottom') +
+  labs(x = 'Week',
+       y = 'Ferry Odds',
+       col = '',
+       title = 'Ferry Odds Over Time')
+
+
 
 df <- 
   bind_rows(odds2022, odds2023) %>% 
