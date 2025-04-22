@@ -65,7 +65,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Andres Munoz,40939,2,23,5.75,3
 15,RP,Jeff Hoffman,33841,4,21.5,7.166666666666667,3
 15,RP,Robert Suarez,4148749,14,18.5,6.166666666666667,3
-0,C,Cal Raleigh,41292,11,32.5,5.416666666666667,4
+0,C,Cal Raleigh,41292,11,34.5,5.75,4
 1,1B,Bryce Harper,30951,9,42,6,4
 2,2B,Dylan Moore,40593,11,29.5,4.916666666666667,4
 3,3B,Matt Chapman,33857,1,31.5,4.5,4
@@ -87,25 +87,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Luke Weaver,33770,6,26.5,6.625,4
 15,RP,Tanner Scott,35135,12,22,5.5,4
 15,RP,Edwin Diaz,35394,8,20,6.666666666666667,4
-0,C,NA,NA,NA,NA,NA,5
-1,1B,NA,NA,NA,NA,NA,5
-2,2B,NA,NA,NA,NA,NA,5
-3,3B,NA,NA,NA,NA,NA,5
-4,SS,NA,NA,NA,NA,NA,5
-5,OF,NA,NA,NA,NA,NA,5
-5,OF,NA,NA,NA,NA,NA,5
-5,OF,NA,NA,NA,NA,NA,5
-5,OF,NA,NA,NA,NA,NA,5
-5,OF,NA,NA,NA,NA,NA,5
-6,2B/SS,NA,NA,NA,NA,NA,5
-7,1B/3B,NA,NA,NA,NA,NA,5
-12,UTIL,NA,NA,NA,NA,NA,5
-14,SP,NA,NA,NA,NA,NA,5
-14,SP,NA,NA,NA,NA,NA,5
-14,SP,NA,NA,NA,NA,NA,5
-14,SP,NA,NA,NA,NA,NA,5
-14,SP,NA,NA,NA,NA,NA,5
-14,SP,NA,NA,NA,NA,NA,5
-15,RP,NA,NA,NA,NA,NA,5
-15,RP,NA,NA,NA,NA,NA,5
-15,RP,NA,NA,NA,NA,NA,5
+0,C,Willson Contreras,32532,4,8,8,5
+1,1B,Wilmer Flores,30627,14,8,8,5
+2,2B,Bryson Stott,42417,6,8.5,8.5,5
+3,3B,Austin Riley,34982,4,10,10,5
+4,SS,Francisco Lindor,32129,5,14.5,14.5,5
+5,OF,Zach McKinstry,38420,14,8.5,8.5,5
+5,OF,Kyle Stowers,42796,7,8,8,5
+5,OF,Victor Scott II,4807220,4,8,8,5
+5,OF,Andrew Benintendi,34986,13,7,7,5
+5,OF,Gavin Sheets,40700,5,7,7,5
+6,2B/SS,Gleyber Torres,33804,2,6,6,5
+7,1B/3B,Jose Ramirez,32801,9,10,10,5
+12,UTIL,Sean Murphy,33557,12,7.5,7.5,5
+14,SP,Hunter Brown,4717803,7,32.5,32.5,5
+14,SP,Max Meyer,4345164,2,31,31,5
+14,SP,Spencer Schwellenbach,4424862,6,19,19,5
+14,SP,Robbie Ray,32175,14,9.5,9.5,5
+14,SP,Aaron Nola,33709,5,9,9,5
+14,SP,Kevin Gausman,32667,12,8.5,8.5,5
+15,RP,Hayden Birdsong,5197166,12,11,11,5
+15,RP,Cade Smith,4987924,12,7,7,5
+15,RP,Edwin Diaz,35394,8,5,5,5

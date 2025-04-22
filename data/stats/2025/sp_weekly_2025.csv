@@ -1670,7 +1670,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 20,4,Raisel Iglesias,33618,NA,13,0,8
 20,4,Zach Neto,4666100,NA,-1.5,NA,8
 20,4,Jordan Hicks,37909,1,8,0,8
-20,4,Elly De La Cruz,4917694,NA,22,NA,8
+20,4,Elly De La Cruz,4917694,NA,23,NA,8
 20,4,Salvador Perez,31127,NA,5.5,NA,8
 20,4,Ozzie Albies,33783,NA,16,NA,8
 20,4,Ryan Pepiot,4208281,1,3.5,0,8
@@ -1684,7 +1684,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 21,4,Lucas Erceg,36618,NA,-1,0,11
 21,4,Junior Caminero,4905921,NA,20,NA,11
 21,4,Gunnar Henderson,42507,NA,21.5,NA,11
-21,4,Cal Raleigh,41292,NA,32.5,NA,11
+21,4,Cal Raleigh,41292,NA,34.5,NA,11
 21,4,Mookie Betts,33039,NA,16.5,NA,11
 21,4,Jason Adam,32145,NA,14,0,11
 21,4,Dylan Moore,40593,NA,29.5,NA,11
@@ -2009,7 +2009,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 23,4,Yennier Cano,35536,NA,5,0,6
 23,4,Ben Casparius,4326800,NA,8,0,6
 23,4,Max Muncy,33303,NA,-0.5,NA,6
-23,4,William Contreras,39895,NA,16,NA,6
+23,4,William Contreras,39895,NA,17,NA,6
 23,4,Triston Casas,41180,NA,3.5,NA,6
 23,4,Spencer Schwellenbach,4424862,1,-2.5,0,6
 23,4,Jose Alvarado,36063,NA,11,0,6
@@ -2042,7 +2042,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 24,4,Taj Bradley,42480,1,-4,0,9
 24,4,Kameron Misner,42416,NA,20,NA,9
 24,4,Alex Call,38994,NA,3,NA,9
-24,4,Brady Singer,41172,1,8.5,0,9
+24,4,Brady Singer,41172,1,5.5,0,9
 24,4,Jhoan Duran,41109,NA,14.5,0,9
 24,4,Matthew Liberatore,41173,1,20.5,1,9
 24,4,Cody Bellinger,33912,NA,12.5,NA,9
@@ -2178,12 +2178,66 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 22,NA,NA,NA,NA,NA,NA,5
 23,NA,NA,NA,NA,NA,NA,2
 24,NA,NA,NA,NA,NA,NA,12
-25,NA,NA,NA,NA,NA,NA,8
-26,NA,NA,NA,NA,NA,NA,1
-27,NA,NA,NA,NA,NA,NA,7
-28,NA,NA,NA,NA,NA,NA,14
-29,NA,NA,NA,NA,NA,NA,13
-30,NA,NA,NA,NA,NA,NA,6
+25,5,Raisel Iglesias,33618,NA,-5.5,0,8
+25,5,Edwin Diaz,35394,NA,5,0,8
+25,5,Elly De La Cruz,4917694,NA,-0.5,NA,8
+25,5,Ozzie Albies,33783,NA,1,NA,8
+25,5,Ceddanne Rafaela,4987382,NA,0,NA,8
+25,5,Jordan Walker,4684778,NA,-1.5,NA,8
+25,5,Colt Keith,4683384,NA,2.5,NA,8
+25,5,Matt Olson,32767,NA,1.5,NA,8
+26,5,Matt Chapman,33857,NA,-0.5,NA,1
+26,5,Cam Smith,5080766,NA,2,NA,1
+26,5,Paul Goldschmidt,31027,NA,3.5,NA,1
+26,5,Marcell Ozuna,31668,NA,3,NA,1
+26,5,Trevor Story,32150,NA,5,NA,1
+26,5,Jackson Chourio,4917869,NA,-0.5,NA,1
+26,5,Jeremy Pena,41273,NA,3,NA,1
+26,5,Yainer Diaz,4781491,NA,1.5,NA,1
+26,5,Spencer Torkelson,4424286,NA,2,NA,1
+26,5,Jose Altuve,31662,NA,5.5,NA,1
+26,5,Luis Robert Jr.,39631,NA,-1,NA,1
+27,5,Spencer Steer,4722857,NA,0,NA,7
+27,5,Alec Bohm,41169,NA,2,NA,7
+27,5,Anthony Santander,36084,NA,-0.5,NA,7
+27,5,Tyler Fitzgerald,43030,NA,3,NA,7
+27,5,Carlos Santana,30280,NA,-0.5,NA,7
+27,5,Kyle Stowers,42796,NA,8,NA,7
+27,5,Alec Burleson,4345070,NA,0.5,NA,7
+27,5,Hunter Brown,4717803,1,32.5,1,7
+27,5,Brendan Donovan,41773,NA,2,NA,7
+28,5,Andres Gimenez,37729,NA,-0.5,NA,14
+28,5,J.T. Realmuto,32177,NA,2,NA,14
+28,5,Jasson Dominguez,42401,NA,5.5,NA,14
+28,5,Wilmer Flores,30627,NA,8,NA,14
+28,5,Nick Castellanos,31187,NA,-1,NA,14
+28,5,Zach McKinstry,38420,NA,8.5,NA,14
+28,5,Jazz Chisholm Jr.,41433,NA,6,NA,14
+28,5,Brice Turang,41179,NA,-2,NA,14
+28,5,George Springer,32078,NA,3.5,NA,14
+28,5,Trea Turner,33710,NA,1,NA,14
+28,5,Robbie Ray,32175,1,9.5,0,14
+29,5,Matt McLain,4422899,NA,3,NA,13
+29,5,Austin Wells,4683349,NA,-1.5,NA,13
+29,5,Lars Nootbaar,4448736,NA,-0.5,NA,13
+29,5,Jung Hoo Lee,5134621,NA,4,NA,13
+29,5,TJ Friedl,36020,NA,0.5,NA,13
+29,5,Alex Bregman,34886,NA,4,NA,13
+29,5,Andrew Benintendi,34986,NA,7,NA,13
+29,5,Kyle Manzardo,4917927,NA,6.5,NA,13
+29,5,Xavier Edwards,41326,NA,0.5,NA,13
+30,5,Nick Lodolo,42433,1,6.5,0,6
+30,5,Bryson Stott,42417,NA,8.5,NA,6
+30,5,Yordan Alvarez,36018,NA,3,NA,6
+30,5,Michael Harris II,42470,NA,3,NA,6
+30,5,William Contreras,39895,NA,1.5,NA,6
+30,5,Gabriel Arias,40344,NA,0,NA,6
+30,5,Bo Bichette,38904,NA,0.5,NA,6
+30,5,Jarren Duran,41610,NA,1.5,NA,6
+30,5,Triston Casas,41180,NA,-1,NA,6
+30,5,Otto Lopez,41917,NA,5,NA,6
+30,5,Spencer Schwellenbach,4424862,1,19,1,6
+30,5,Brandon Nimmo,32159,NA,0,NA,6
 31,NA,NA,NA,NA,NA,NA,4
 32,NA,NA,NA,NA,NA,NA,5
 33,NA,NA,NA,NA,NA,NA,2
@@ -2304,12 +2358,49 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 22,NA,NA,NA,NA,NA,NA,13
 23,NA,NA,NA,NA,NA,NA,6
 24,NA,NA,NA,NA,NA,NA,9
-25,NA,NA,NA,NA,NA,NA,4
-26,NA,NA,NA,NA,NA,NA,11
-27,NA,NA,NA,NA,NA,NA,5
-28,NA,NA,NA,NA,NA,NA,2
-29,NA,NA,NA,NA,NA,NA,12
-30,NA,NA,NA,NA,NA,NA,9
+25,5,Kyle Schwarber,33712,NA,0.5,NA,4
+25,5,Christian Yelich,31283,NA,4,NA,4
+25,5,Willson Contreras,32532,NA,8,NA,4
+25,5,Connor Norby,4417606,NA,2,NA,4
+25,5,Austin Riley,34982,NA,10,NA,4
+25,5,Heliot Ramos,39642,NA,0.5,NA,4
+25,5,Vladimir Guerrero Jr.,35002,NA,-1,NA,4
+25,5,Victor Scott II,4807220,NA,8,NA,4
+26,5,Austin Hays,36928,NA,2,NA,11
+26,5,Sal Frelick,4417795,NA,0.5,NA,11
+26,5,Ben Rice,5016968,NA,0,NA,11
+26,5,Ronny Simon,4912412,NA,2,NA,11
+26,5,Aroldis Chapman,30442,NA,3,0,11
+26,5,Pete Alonso,37498,NA,0,NA,11
+27,5,Francisco Lindor,32129,NA,14.5,NA,5
+27,5,Anthony Volpe,42547,NA,3,NA,5
+27,5,Manny Machado,31097,NA,3,NA,5
+27,5,Wilyer Abreu,4990055,NA,-0.5,NA,5
+27,5,Gavin Sheets,40700,NA,7,NA,5
+27,5,Steven Kwan,41996,NA,7,NA,5
+27,5,Aaron Nola,33709,1,9,0,5
+28,5,Rafael Devers,33859,NA,0.5,NA,2
+28,5,Gavin Lux,40423,NA,5.5,NA,2
+28,5,Aaron Judge,33192,NA,2,NA,2
+28,5,Alexis Diaz,4905920,NA,-6,0,2
+28,5,Gleyber Torres,33804,NA,6,NA,2
+28,5,Max Meyer,4345164,1,31,1,2
+29,5,Hayden Birdsong,5197166,NA,11,0,12
+29,5,Sean Murphy,33557,NA,7.5,NA,12
+29,5,Xander Bogaerts,31606,NA,1,NA,12
+29,5,Cade Smith,4987924,NA,7,0,12
+29,5,Juan Soto,36969,NA,-0.5,NA,12
+29,5,Isaac Paredes,39706,NA,2,NA,12
+29,5,Kevin Gausman,32667,1,8.5,0,12
+29,5,Nolan Arenado,31261,NA,2.5,NA,12
+29,5,Kristian Campbell,5201569,NA,4.5,NA,12
+29,5,Fernando Tatis Jr.,35983,NA,2,NA,12
+30,5,Jose Ramirez,32801,NA,10,NA,9
+30,5,Riley Greene,42179,NA,3,NA,9
+30,5,Bryce Harper,30951,NA,1,NA,9
+30,5,Cody Bellinger,33912,NA,0,NA,9
+30,5,Willy Adames,33675,NA,0.5,NA,9
+30,5,Mike Yastrzemski,33341,NA,2,NA,9
 31,NA,NA,NA,NA,NA,NA,11
 32,NA,NA,NA,NA,NA,NA,8
 33,NA,NA,NA,NA,NA,NA,1
