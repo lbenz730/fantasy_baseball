@@ -2369,6 +2369,26 @@ shinyServer(function(input, output, session) {
   })
   
   
+  output$positional_ppg <- renderPlot({
+    
+    ggplot(lineup_stats, aes(x = ppg, y = fct_rev(lineup_id))) + 
+      facet_wrap(~team) +
+      geom_point(data = lineup_avg, size = 3, shape = 18) + 
+      geom_point(aes(fill = ppg - ppg_avg), size = 4, pch = 21, color = 'black') + 
+      scale_fill_gradient2(breaks = c(-1.25, -0.75, -0.25, 0.25, 0.75, 1.25),low = 'blue', mid = 'lightgrey', high = 'red', midpoint = 0) + 
+      theme(legend.text = element_text(angle = 90, size = 12),
+            legend.position = 'bottom',
+            axis.text = element_text(size = 16),
+            strip.text = element_text(size = 16)) + 
+      labs(x = 'PPG', 
+           y = '',
+           fill = 'PPG vs. League Avg at Position',
+           title = 'Positional PPG Relative to League Average') 
+  }, 
+  height = 750,
+  width = 1334)
+  
+  
   
   outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
   outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)

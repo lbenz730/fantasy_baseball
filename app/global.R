@@ -43,6 +43,16 @@ df_start <-
   read_csv('data/df_start.csv') %>% 
   filter(season == params$season) 
 
+position <- c('0' = 'C',
+              '1' = '1B',
+              '2' = '2B',
+              '3' = '3B',
+              '4' = 'SS',
+              '5' = 'OF',
+              '7' = '1B/3B',
+              '6' = '2B/SS',
+              '12' = 'UTIL')
+
 period <- min(max(df_start$end_period), max(1, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1))
 
 params$current_matchup <- max(df_start$matchup_id[df_start$start_period <= period])
@@ -56,7 +66,7 @@ sim_results <-
   filter(matchup_id == params$current_matchup)
 df_daily <- 
   read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
-  select(team_id, player, player_id, in_lineup, scoring_period_id, matchup_id, points, played, relief, start, pitcher, batter, qs, relief_start, eligible_slots)
+  select(team_id, lineup_id, player, player_id, in_lineup, scoring_period_id, matchup_id, points, played, relief, start, pitcher, batter, qs, relief_start, eligible_slots)
 pitch_matrix <- 
   read_csv(glue('data/stats/{params$season}/pitch_matrix.csv')) %>% 
   mutate_at(vars(ip, earned_runs), ~as.character(.x)) %>% 
@@ -490,3 +500,26 @@ draft_analysis <-
                  
                  sep = "")) %>% 
   select(team, player, player_id, player_type, contains('points'), contains('games'), contains('ppg'), pick_id, round_id, text, residual, fit)
+
+
+lineup_stats <- 
+  df_daily %>% 
+  inner_join(teams) %>% 
+  filter(batter, in_lineup) %>% 
+  group_by(team, lineup_id) %>% 
+  summarise('ppg' = sum(points)/sum(played),
+            'games' = sum(played)) %>% 
+  mutate('lineup_id' = position[as.character(lineup_id)]) %>% 
+  mutate('lineup_id' = fct_relevel(lineup_id,
+                                   'C','1B', '3B', '1B/3B',
+                                   '2B', 'SS', '2B/SS', 
+                                   'OF', 'UTIL')) %>% 
+  group_by(lineup_id) %>% 
+  mutate('ppg_avg' = weighted.mean(ppg, games)) %>% 
+  ungroup()
+
+lineup_avg <- 
+  lineup_stats %>% 
+  group_by(lineup_id) %>% 
+  summarise('ppg' = weighted.mean(ppg, games))
+
