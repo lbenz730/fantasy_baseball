@@ -29,12 +29,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 14,289.5,181.5,108,Burnes Notice,5,28,26,82,1,289.5,181.5,108,82,26,2,355,232.5,122.5,Sac Fly by the Rook,28.5,94,355,232.5,122.5,94,28.5,10,6,12
 13,308,173,135,Ketel Bells,5,29,19,116,1,308,173,135,116,19,12,314.5,169,145.5,Blasphemous Hot Takes,50.5,95,314.5,169,145.5,95,50.5,8,7,7
 6,345.5,187.5,158,The Novaks,5,30,31.5,126.5,1,345.5,187.5,158,126.5,31.5,9,301,161,140,Guts. Glory. JRam.,3.5,136.5,301,161,140,136.5,3.5,3,5,2
-4,196.5,131,65.5,All That is Wright,6,31,20.5,45,NA,NA,NA,NA,NA,NA,11,206.5,154,52.5,The West Bank Occupiers,20.5,32,NA,NA,NA,NA,NA,5,3,4
-5,168.5,112.5,56,The Traveling Secretaries,6,32,24,32,NA,NA,NA,NA,NA,NA,8,125,96.5,28.5,Mt. Everest Taquito Farmers,6,22.5,NA,NA,NA,NA,NA,7,9,5
-2,145,116.5,28.5,Sac Fly by the Rook,6,33,1.5,27,NA,NA,NA,NA,NA,NA,1,224,101.5,122.5,The Talmudic Tunnelers,23,99.5,NA,NA,NA,NA,NA,11,7,11.5
-12,159,120.5,38.5,Blasphemous Hot Takes,6,34,4.5,34,NA,NA,NA,NA,NA,NA,7,162,115,47,At Witt's End,-1,48,NA,NA,NA,NA,NA,10,6,9
-9,174,125.5,48.5,Guts. Glory. JRam.,6,35,6,42.5,NA,NA,NA,NA,NA,NA,14,198.5,97,101.5,Burnes Notice,12,89.5,NA,NA,NA,NA,NA,6,5,7
-6,163.5,134,29.5,The Novaks,6,36,7.5,22,NA,NA,NA,NA,NA,NA,13,241,130,111,Ketel Bells,14,97,NA,NA,NA,NA,NA,8,2,10
+4,266,165,101,All That is Wright,6,31,26,75,NA,NA,NA,NA,NA,NA,11,256,187.5,68.5,The West Bank Occupiers,20.5,48,NA,NA,NA,NA,NA,2,2,5
+5,231.5,143.5,88,The Traveling Secretaries,6,32,31,57,NA,NA,NA,NA,NA,NA,8,224,109.5,114.5,Mt. Everest Taquito Farmers,5.5,109,NA,NA,NA,NA,NA,6,7,6
+2,168,139,29,Sac Fly by the Rook,6,33,1.5,27.5,NA,NA,NA,NA,NA,NA,1,276,144.5,131.5,The Talmudic Tunnelers,32,99.5,NA,NA,NA,NA,NA,12,8,12
+12,215.5,132,83.5,Blasphemous Hot Takes,6,34,22,61.5,NA,NA,NA,NA,NA,NA,7,189.5,135.5,54,At Witt's End,-1,55,NA,NA,NA,NA,NA,9,10,7
+9,225,161,64,Guts. Glory. JRam.,6,35,-9,73,NA,NA,NA,NA,NA,NA,14,257.5,124,133.5,Burnes Notice,12,121.5,NA,NA,NA,NA,NA,7,3,9
+6,190.5,146,44.5,The Novaks,6,36,22.5,22,NA,NA,NA,NA,NA,NA,13,262,151,111,Ketel Bells,14,97,NA,NA,NA,NA,NA,10,5,11
 5,NA,NA,NA,The Traveling Secretaries,7,37,NA,NA,1,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,1,1,1
 11,NA,NA,NA,The West Bank Occupiers,7,38,NA,NA,1,NA,NA,NA,NA,NA,2,NA,NA,NA,Sac Fly by the Rook,NA,NA,NA,NA,NA,NA,NA,2,2,2
 8,NA,NA,NA,Mt. Everest Taquito Farmers,7,39,NA,NA,1,NA,NA,NA,NA,NA,12,NA,NA,NA,Blasphemous Hot Takes,NA,NA,NA,NA,NA,NA,NA,3,3,3
@@ -155,12 +155,12 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 2,355,232.5,122.5,Sac Fly by the Rook,5,28,28.5,94,1,355,232.5,122.5,94,28.5,14,289.5,181.5,108,Burnes Notice,26,82,289.5,181.5,108,82,26,2,1,8
 12,314.5,169,145.5,Blasphemous Hot Takes,5,29,50.5,95,1,314.5,169,145.5,95,50.5,13,308,173,135,Ketel Bells,19,116,308,173,135,116,19,7,8,4
 9,301,161,140,Guts. Glory. JRam.,5,30,3.5,136.5,1,301,161,140,136.5,3.5,6,345.5,187.5,158,The Novaks,31.5,126.5,345.5,187.5,158,126.5,31.5,9,9,6
-11,206.5,154,52.5,The West Bank Occupiers,6,31,20.5,32,NA,NA,NA,NA,NA,NA,4,196.5,131,65.5,All That is Wright,20.5,45,NA,NA,NA,NA,NA,3,1,6
-8,125,96.5,28.5,Mt. Everest Taquito Farmers,6,32,6,22.5,NA,NA,NA,NA,NA,NA,5,168.5,112.5,56,The Traveling Secretaries,24,32,NA,NA,NA,NA,NA,12,12,11.5
-1,224,101.5,122.5,The Talmudic Tunnelers,6,33,23,99.5,NA,NA,NA,NA,NA,NA,2,145,116.5,28.5,Sac Fly by the Rook,1.5,27,NA,NA,NA,NA,NA,2,10,1
-7,162,115,47,At Witt's End,6,34,-1,48,NA,NA,NA,NA,NA,NA,12,159,120.5,38.5,Blasphemous Hot Takes,4.5,34,NA,NA,NA,NA,NA,9,8,8
-14,198.5,97,101.5,Burnes Notice,6,35,12,89.5,NA,NA,NA,NA,NA,NA,9,174,125.5,48.5,Guts. Glory. JRam.,6,42.5,NA,NA,NA,NA,NA,4,11,3
-13,241,130,111,Ketel Bells,6,36,14,97,NA,NA,NA,NA,NA,NA,6,163.5,134,29.5,The Novaks,7.5,22,NA,NA,NA,NA,NA,1,4,2
+11,256,187.5,68.5,The West Bank Occupiers,6,31,20.5,48,NA,NA,NA,NA,NA,NA,4,266,165,101,All That is Wright,26,75,NA,NA,NA,NA,NA,5,1,8
+8,224,109.5,114.5,Mt. Everest Taquito Farmers,6,32,5.5,109,NA,NA,NA,NA,NA,NA,5,231.5,143.5,88,The Traveling Secretaries,31,57,NA,NA,NA,NA,NA,8,12,3
+1,276,144.5,131.5,The Talmudic Tunnelers,6,33,32,99.5,NA,NA,NA,NA,NA,NA,2,168,139,29,Sac Fly by the Rook,1.5,27.5,NA,NA,NA,NA,NA,1,6,2
+7,189.5,135.5,54,At Witt's End,6,34,-1,55,NA,NA,NA,NA,NA,NA,12,215.5,132,83.5,Blasphemous Hot Takes,22,61.5,NA,NA,NA,NA,NA,11,9,10
+14,257.5,124,133.5,Burnes Notice,6,35,12,121.5,NA,NA,NA,NA,NA,NA,9,225,161,64,Guts. Glory. JRam.,-9,73,NA,NA,NA,NA,NA,4,11,1
+13,262,151,111,Ketel Bells,6,36,14,97,NA,NA,NA,NA,NA,NA,6,190.5,146,44.5,The Novaks,22.5,22,NA,NA,NA,NA,NA,3,4,4
 4,NA,NA,NA,All That is Wright,7,37,NA,NA,1,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,7,7,7
 2,NA,NA,NA,Sac Fly by the Rook,7,38,NA,NA,1,NA,NA,NA,NA,NA,11,NA,NA,NA,The West Bank Occupiers,NA,NA,NA,NA,NA,NA,NA,8,8,8
 12,NA,NA,NA,Blasphemous Hot Takes,7,39,NA,NA,1,NA,NA,NA,NA,NA,8,NA,NA,NA,Mt. Everest Taquito Farmers,NA,NA,NA,NA,NA,NA,NA,9,9,9
