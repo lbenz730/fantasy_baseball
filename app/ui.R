@@ -115,24 +115,24 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                             )
                    ),
                    
-                   # tabPanel("Season All-Stars",
-                   #          value = 'all_stars',
-                   #          
-                   #          ### Render Table
-                   #          mainPanel(
-                   #            width = 12,
-                   #            shinycssloaders::withSpinner(gt_output('asg_lineup'),
-                   #                                         image = baseball,
-                   #                                         image.height = 100),
-                   #            br(),
-                   #            br(),
-                   #            shinycssloaders::withSpinner(gt_output('asg_counts'),
-                   #                                         image = baseball,
-                   #                                         image.height = 100)
-                   #          )
-                   #          
-                   #          
-                   # ),
+                   tabPanel("Season All-Stars",
+                            value = 'all_stars',
+
+                            ### Render Table
+                            mainPanel(
+                              width = 12,
+                              shinycssloaders::withSpinner(gt_output('asg_lineup'),
+                                                           image = baseball,
+                                                           image.height = 100),
+                              br(),
+                              br(),
+                              shinycssloaders::withSpinner(gt_output('asg_counts'),
+                                                           image = baseball,
+                                                           image.height = 100)
+                            )
+
+
+                   ),
                    
                    tabPanel('Trade/Free Agent Analysis',
                             mainPanel(
