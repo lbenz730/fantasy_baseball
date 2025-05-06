@@ -1,13 +1,5 @@
 game_date,player,player_id,team_id
-2025-05-05,Sandy Alcantara,35241,6
-2025-05-05,Jake Irvin,41290,11
-2025-05-05,Nick Pivetta,36071,4
-2025-05-05,Carlos Rodon,33696,14
-2025-05-05,Brady Singer,41172,9
-2025-05-05,Matthew Boyd,34401,11
-2025-05-05,Shane Smith,5201814,2
-2025-05-05,Cole Ragans,41054,9
-2025-05-05,Bryce Miller,4654313,7
+2025-05-06,Jake Irvin,41290,11
 2025-05-06,Tony Gonsolin,38958,6
 2025-05-06,Nathan Eovaldi,31174,13
 2025-05-06,Zack Wheeler,31267,1
@@ -16,8 +8,10 @@ game_date,player,player_id,team_id
 2025-05-06,Clarke Schmidt,41085,9
 2025-05-06,Chris Sale,30948,13
 2025-05-06,Justin Verlander,6341,1
+2025-05-06,Colin Rea,33950,2
 2025-05-06,Pablo Lopez,39671,12
 2025-05-06,Seth Lugo,34873,4
+2025-05-06,Hayden Wesneski,42996,5
 2025-05-06,Paul Skenes,4719507,13
 2025-05-06,Matthew Liberatore,41173,9
 2025-05-06,Jackson Jobe,4872647,8
@@ -27,6 +21,7 @@ game_date,player,player_id,team_id
 2025-05-07,Sonny Gray,32082,2
 2025-05-07,Robbie Ray,32175,14
 2025-05-07,Bryan Woo,4629089,8
+2025-05-07,Gunnar Hoglund,4414154,11
 2025-05-07,Kodai Senga,4142421,12
 2025-05-07,Merrill Kelly,32968,12
 2025-05-07,Tyler Mahle,34973,14
@@ -36,6 +31,16 @@ game_date,player,player_id,team_id
 2025-05-07,Dylan Cease,34943,7
 2025-05-07,Max Fried,32685,9
 2025-05-07,Hunter Greene,39635,4
+2025-05-07,Michael Wacha,32640,9
 2025-05-07,Casey Mize,41167,5
 2025-05-07,Jose Berrios,32811,7
 2025-05-07,Yusei Kikuchi,41415,14
+2025-05-08,Joe Ryan,42450,8
+2025-05-08,Jack Leiter,4622181,11
+2025-05-08,Kris Bubic,41201,5
+2025-05-08,Tarik Skubal,42409,5
+2025-05-08,Jesus Luzardo,39667,12
+2025-05-08,Ryan Pepiot,4208281,8
+2025-05-08,Nick Lodolo,42433,6
+2025-05-08,Spencer Schwellenbach,4424862,4
+2025-05-08,Chris Bassitt,33148,12

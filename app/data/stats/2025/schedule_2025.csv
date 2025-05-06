@@ -29,18 +29,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 5,28,14,289.5,181.5,108,2,355,232.5,122.5,Burnes Notice,Sac Fly by the Rook
 5,29,13,308,173,135,12,314.5,169,145.5,Ketel Bells,Blasphemous Hot Takes
 5,30,6,345.5,187.5,158,9,301,161,140,The Novaks,Guts. Glory. JRam.
-6,31,4,361.5,226.5,135,11,368.5,268.5,100,All That is Wright,The West Bank Occupiers
+6,31,4,362.5,227.5,135,11,368.5,268.5,100,All That is Wright,The West Bank Occupiers
 6,32,5,369.5,218.5,151,8,314,156.5,157.5,The Traveling Secretaries,Mt. Everest Taquito Farmers
 6,33,2,257.5,195,62.5,1,371.5,206,165.5,Sac Fly by the Rook,The Talmudic Tunnelers
-6,34,12,300,157,143,7,313,223,90,Blasphemous Hot Takes,At Witt's End
-6,35,9,328,242,86,14,356.5,191,165.5,Guts. Glory. JRam.,Burnes Notice
+6,34,12,301,158,143,7,313,223,90,Blasphemous Hot Takes,At Witt's End
+6,35,9,328,242,86,14,357.5,192,165.5,Guts. Glory. JRam.,Burnes Notice
 6,36,6,296.5,206,90.5,13,354.5,219,135.5,The Novaks,Ketel Bells
-7,37,5,NA,NA,NA,4,NA,NA,NA,The Traveling Secretaries,All That is Wright
-7,38,11,NA,NA,NA,2,NA,NA,NA,The West Bank Occupiers,Sac Fly by the Rook
-7,39,8,NA,NA,NA,12,NA,NA,NA,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
-7,40,1,NA,NA,NA,9,NA,NA,NA,The Talmudic Tunnelers,Guts. Glory. JRam.
-7,41,7,NA,NA,NA,6,NA,NA,NA,At Witt's End,The Novaks
-7,42,14,NA,NA,NA,13,NA,NA,NA,Burnes Notice,Ketel Bells
+7,37,5,46,43,3,4,44,35,9,The Traveling Secretaries,All That is Wright
+7,38,11,48,27.5,20.5,2,14.5,3,11.5,The West Bank Occupiers,Sac Fly by the Rook
+7,39,8,35.5,22.5,13,12,32,32,NA,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
+7,40,1,15.5,14.5,1,9,38.5,18,20.5,The Talmudic Tunnelers,Guts. Glory. JRam.
+7,41,7,11.5,14,-2.5,6,25.5,20.5,5,At Witt's End,The Novaks
+7,42,14,58,18,40,13,13.5,8.5,5,Burnes Notice,Ketel Bells
 8,43,4,NA,NA,NA,2,NA,NA,NA,All That is Wright,Sac Fly by the Rook
 8,44,12,NA,NA,NA,5,NA,NA,NA,Blasphemous Hot Takes,The Traveling Secretaries
 8,45,9,NA,NA,NA,11,NA,NA,NA,Guts. Glory. JRam.,The West Bank Occupiers
