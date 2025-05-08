@@ -131,25 +131,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Felix Bautista,4905859,5,22,7.333333333333333,6
 15,RP,Jhoan Duran,41109,9,20,5,6
 15,RP,Raisel Iglesias,33618,8,19,6.333333333333333,6
-0,C,Austin Wells,4683349,13,12.5,6.25,7
-1,1B,Freddie Freeman,30193,14,16,8,7
-2,2B,Maikel Garcia,4905884,11,7.5,3.75,7
-3,3B,Matt Chapman,33857,1,10,5,7
-4,SS,Dansby Swanson,34895,6,13.5,6.75,7
-5,OF,Nick Castellanos,31187,14,12.5,12.5,7
-5,OF,Corbin Carroll,42404,8,12,6,7
-5,OF,Jung Hoo Lee,5134621,13,11.5,5.75,7
-5,OF,Byron Buxton,32655,1,11,11,7
-5,OF,Julio Rodriguez,41044,14,10.5,5.25,7
-6,2B/SS,Bobby Witt Jr.,42403,7,10,5,7
-7,1B/3B,Agustin Ramirez,5132014,9,11.5,5.75,7
-12,UTIL,Shohei Ohtani,39832,14,17,8.5,7
+0,C,Agustin Ramirez,5132014,9,14,4.666666666666667,7
+1,1B,Freddie Freeman,30193,14,26,8.666666666666666,7
+2,2B,Maikel Garcia,4905884,11,10.5,3.5,7
+3,3B,Alex Bregman,34886,13,13.5,6.75,7
+4,SS,Bobby Witt Jr.,42403,7,16.5,5.5,7
+5,OF,Corbin Carroll,42404,8,20,6.666666666666667,7
+5,OF,Byron Buxton,32655,1,19.5,9.75,7
+5,OF,Juan Soto,36969,12,18.5,6.166666666666667,7
+5,OF,Trent Grisham,34995,11,17.5,5.833333333333333,7
+5,OF,Wilyer Abreu,4990055,5,16,8,7
+6,2B/SS,Francisco Lindor,32129,5,15,5,7
+7,1B/3B,Cody Bellinger,33912,6,13.5,4.5,7
+12,UTIL,Shohei Ohtani,39832,14,24.5,8.166666666666666,7
+14,SP,Sonny Gray,32082,2,31.5,31.5,7
+14,SP,Dylan Cease,34943,7,30,30,7
 14,SP,Chris Sale,30948,13,28.5,28.5,7
+14,SP,Michael Wacha,32640,9,27.5,27.5,7
+14,SP,Framber Valdez,36581,7,27,27,7
 14,SP,Matthew Liberatore,41173,9,27,27,7
-14,SP,Zack Wheeler,31267,1,27,27,7
-14,SP,Carlos Rodon,33696,14,26.5,26.5,7
-14,SP,Zac Gallen,39910,1,26.5,26.5,7
-14,SP,Cole Ragans,41054,9,22,22,7
-15,RP,Robert Suarez,4148749,14,8,8,7
-15,RP,Tanner Scott,35135,12,8,4,7
-15,RP,Edwin Diaz,35394,8,7,7,7
+15,RP,Camilo Doval,41337,11,12.5,6.25,7
+15,RP,Robert Suarez,4148749,14,10,5,7
+15,RP,Andres Munoz,40939,2,9.5,4.75,7
