@@ -132,24 +132,24 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Jhoan Duran,41109,9,20,5,6
 15,RP,Raisel Iglesias,33618,8,19,6.333333333333333,6
 0,C,Agustin Ramirez,5132014,9,14,4.666666666666667,7
-1,1B,Freddie Freeman,30193,14,26,8.666666666666666,7
-2,2B,Maikel Garcia,4905884,11,10.5,3.5,7
-3,3B,Alex Bregman,34886,13,13.5,6.75,7
-4,SS,Bobby Witt Jr.,42403,7,16.5,5.5,7
-5,OF,Corbin Carroll,42404,8,20,6.666666666666667,7
-5,OF,Byron Buxton,32655,1,19.5,9.75,7
+1,1B,Freddie Freeman,30193,14,27.5,6.875,7
+2,2B,Maikel Garcia,4905884,11,16.5,4.125,7
+3,3B,Alex Bregman,34886,13,13,4.333333333333333,7
+4,SS,Bobby Witt Jr.,42403,7,28.5,7.125,7
+5,OF,Byron Buxton,32655,1,25.5,8.5,7
+5,OF,Corbin Carroll,42404,8,19.5,4.875,7
 5,OF,Juan Soto,36969,12,18.5,6.166666666666667,7
+5,OF,TJ Friedl,36020,13,17.5,4.375,7
 5,OF,Trent Grisham,34995,11,17.5,5.833333333333333,7
-5,OF,Wilyer Abreu,4990055,5,16,8,7
-6,2B/SS,Francisco Lindor,32129,5,15,5,7
-7,1B/3B,Cody Bellinger,33912,6,13.5,4.5,7
-12,UTIL,Shohei Ohtani,39832,14,24.5,8.166666666666666,7
+6,2B/SS,Trea Turner,33710,14,19,6.333333333333333,7
+7,1B/3B,Spencer Torkelson,4424286,1,16,5.333333333333333,7
+12,UTIL,Shohei Ohtani,39832,14,30,7.5,7
 14,SP,Sonny Gray,32082,2,31.5,31.5,7
 14,SP,Dylan Cease,34943,7,30,30,7
 14,SP,Chris Sale,30948,13,28.5,28.5,7
 14,SP,Michael Wacha,32640,9,27.5,27.5,7
 14,SP,Framber Valdez,36581,7,27,27,7
 14,SP,Matthew Liberatore,41173,9,27,27,7
+15,RP,Jhoan Duran,41109,9,16,8,7
 15,RP,Camilo Doval,41337,11,12.5,6.25,7
 15,RP,Robert Suarez,4148749,14,10,5,7
-15,RP,Andres Munoz,40939,2,9.5,4.75,7
