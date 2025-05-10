@@ -1,20 +1,6 @@
 game_date,player,player_id,team_id
-2025-05-09,Tarik Skubal,42409,5
-2025-05-09,Erick Fedde,33793,8
-2025-05-09,Mitchell Parker,4683356,7
-2025-05-09,Jose Quintana,32106,2
-2025-05-09,Zack Littell,36052,2
-2025-05-09,Jameson Taillon,31258,1
-2025-05-09,Clay Holmes,32827,4
-2025-05-09,Aaron Nola,33709,5
-2025-05-09,Gavin Williams,4345076,6
-2025-05-09,Max Meyer,4345164,2
-2025-05-09,Hunter Brown,4717803,7
-2025-05-09,Tomoyuki Sugano,4142423,8
-2025-05-09,Roki Sasaki,5134638,13
-2025-05-09,Eduardo Rodriguez,32675,6
-2025-05-09,Kevin Gausman,32667,12
-2025-05-09,Luis Castillo,35124,11
+2025-05-10,AJ Smith-Shawver,4917640,2
+2025-05-10,Andrew Heaney,32672,9
 2025-05-10,Carlos Rodon,33696,14
 2025-05-10,JP Sears,39818,14
 2025-05-10,Taj Bradley,42480,9
@@ -22,8 +8,10 @@ game_date,player,player_id,team_id
 2025-05-10,Jack Flaherty,33837,5
 2025-05-10,Ranger Suarez,39817,11
 2025-05-10,Tanner Bibee,4345278,11
+2025-05-10,Brady Singer,41172,7
 2025-05-10,Garrett Crochet,4297835,6
 2025-05-10,Cole Ragans,41054,9
+2025-05-10,Shane Smith,5201814,4
 2025-05-10,Tylor Megill,3332018,4
 2025-05-10,Logan Webb,41216,12
 2025-05-10,Joe Ryan,42450,8
@@ -34,7 +22,6 @@ game_date,player,player_id,team_id
 2025-05-11,Chris Sale,30948,13
 2025-05-11,Nathan Eovaldi,31174,13
 2025-05-11,Reese Olson,4734319,4
-2025-05-11,Andrew Abbott,4414528,9
 2025-05-11,Seth Lugo,34873,4
 2025-05-11,Pablo Lopez,39671,12
 2025-05-11,Sandy Alcantara,35241,6
@@ -45,3 +32,6 @@ game_date,player,player_id,team_id
 2025-05-11,Zac Gallen,39910,1
 2025-05-11,Bryce Miller,4654313,7
 2025-05-11,Zack Wheeler,31267,1
+2025-05-12,Freddy Peralta,39825,1
+2025-05-12,Matthew Liberatore,41173,9
+2025-05-12,Bryce Miller,4654313,7
