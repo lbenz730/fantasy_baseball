@@ -6,13 +6,15 @@ The Traveling Secretaries,All That is Wright,3,4,-2.5,5,5,0,0.47791626058415315,
 The Traveling Secretaries,All That is Wright,4,3,28.5,3,4,-1,0.6138673016933739,0.6735585677167469
 The Traveling Secretaries,All That is Wright,5,2,75,1,4,-3,0.8521816986342893,0.8607801286084578
 The Traveling Secretaries,All That is Wright,6,1,30,0,3,-3,0.5872204357548886,0.5385120184045699
+The Traveling Secretaries,All That is Wright,7,0,-8.5,0,0,0,0,0.396293207381004
 The West Bank Occupiers,Sac Fly by the Rook,0,7,0,8,8,0,0.44839575184649727,0.4980916406925082
 The West Bank Occupiers,Sac Fly by the Rook,1,6,34.5,7,7,0,0.7105938716897724,0.84156002808082
 The West Bank Occupiers,Sac Fly by the Rook,2,5,44.5,6,6,0,0.823992879558712,0.8962390788848685
 The West Bank Occupiers,Sac Fly by the Rook,3,4,36,5,5,0,0.7715050907831833,0.8510445216801985
 The West Bank Occupiers,Sac Fly by the Rook,4,3,39,4,5,-1,0.7423489478715887,0.7558288114709802
 The West Bank Occupiers,Sac Fly by the Rook,5,2,12,3,2,1,0.7240311197822553,0.6957671612045216
-The West Bank Occupiers,Sac Fly by the Rook,6,1,-23.5,1,0,1,0.3077342526876895,0.3673341936921947
+The West Bank Occupiers,Sac Fly by the Rook,6,1,-24.5,1,0,1,0.2800689834773679,0.3584065331698019
+The West Bank Occupiers,Sac Fly by the Rook,7,0,17,0,0,0,1,0.6940172592753043
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,0,7,0,8,8,0,0.3331274839636461,0.4980916406925082
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,1,6,2.5,8,8,0,0.37417657834175705,0.5284506311954795
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,2,5,11,7,7,0,0.4617556220374732,0.6288359791448855
@@ -20,6 +22,7 @@ Mt. Everest Taquito Farmers,Blasphemous Hot Takes,3,4,-57,5,5,0,0.10450887728047
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,4,3,-41.5,3,3,0,0.15080660973757792,0.11655004793257953
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,5,2,-63,2,2,0,0.04761945824573058,0.044322766194725735
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,6,1,-54.5,1,1,0,0.03278699473442069,0.06552084546392883
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,7,0,-77.5,0,0,0,0,0.02240164906611002
 The Talmudic Tunnelers,Guts. Glory. JRam.,0,7,0,8,8,0,0.6772868720274716,0.4980916406925082
 The Talmudic Tunnelers,Guts. Glory. JRam.,1,6,-23,8,6,2,0.5692450051114006,0.4530589603409384
 The Talmudic Tunnelers,Guts. Glory. JRam.,2,5,12.5,5,5,0,0.7141704134643878,0.6456933282319732
@@ -27,6 +30,7 @@ The Talmudic Tunnelers,Guts. Glory. JRam.,3,4,-45,5,3,2,0.2954292656372021,0.263
 The Talmudic Tunnelers,Guts. Glory. JRam.,4,3,-15.5,5,3,2,0.5287373478236772,0.5245902215555195
 The Talmudic Tunnelers,Guts. Glory. JRam.,5,2,9,4,3,1,0.6810046287232246,0.6707041866992339
 The Talmudic Tunnelers,Guts. Glory. JRam.,6,1,-11.5,4,1,3,0.6132190939872888,0.6255449042168393
+The Talmudic Tunnelers,Guts. Glory. JRam.,7,0,30.5,0,0,0,1,0.8138748112586673
 At Witt's End,The Novaks,0,7,0,8,8,0,0.29572085291121925,0.4980916406925082
 At Witt's End,The Novaks,1,6,-14,7,8,-1,0.22364866389122198,0.2854727334423159
 At Witt's End,The Novaks,2,5,8,7,5,2,0.48955245424691163,0.7304588759632566
@@ -34,6 +38,7 @@ At Witt's End,The Novaks,3,4,110,3,5,-2,0.9737532155303794,0.9699218355559497
 At Witt's End,The Novaks,4,3,75.5,3,3,0,0.9625704764564188,0.9749972816503798
 At Witt's End,The Novaks,5,2,109.5,1,2,-1,0.9905390012159331,0.979232914405816
 At Witt's End,The Novaks,6,1,62.5,0,1,-1,0.9565868640159161,0.8847053504842882
+At Witt's End,The Novaks,7,0,14,0,0,0,1,0.6621963402990594
 Burnes Notice,Ketel Bells,0,7,0,8,8,0,0.47952394306574814,0.4980916406925082
 Burnes Notice,Ketel Bells,1,6,44.5,7,8,-1,0.7109695071021965,0.7928865522346151
 Burnes Notice,Ketel Bells,2,5,8,6,5,1,0.6246957136186193,0.6621197824638237
@@ -41,3 +46,4 @@ Burnes Notice,Ketel Bells,3,4,70,3,5,-2,0.8277992250818892,0.8759295951817847
 Burnes Notice,Ketel Bells,4,3,78.5,3,5,-2,0.9250974338744881,0.9069727269285925
 Burnes Notice,Ketel Bells,5,2,106.5,3,4,-1,0.9877543566663306,0.9767405263738796
 Burnes Notice,Ketel Bells,6,1,131.5,0,3,-3,0.9951431032797009,0.9804557545882011
+Burnes Notice,Ketel Bells,7,0,92,0,0,0,1,0.988634473901088
