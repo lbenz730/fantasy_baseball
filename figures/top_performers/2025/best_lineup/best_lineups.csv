@@ -153,25 +153,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Jhoan Duran,41109,9,25,6.25,7
 15,RP,Tanner Scott,35135,12,19,4.75,7
 15,RP,Camilo Doval,41337,11,16.5,5.5,7
-0,C,NA,NA,NA,NA,NA,8
-1,1B,NA,NA,NA,NA,NA,8
-2,2B,NA,NA,NA,NA,NA,8
-3,3B,NA,NA,NA,NA,NA,8
-4,SS,NA,NA,NA,NA,NA,8
-5,OF,NA,NA,NA,NA,NA,8
-5,OF,NA,NA,NA,NA,NA,8
-5,OF,NA,NA,NA,NA,NA,8
-5,OF,NA,NA,NA,NA,NA,8
-5,OF,NA,NA,NA,NA,NA,8
-6,2B/SS,NA,NA,NA,NA,NA,8
-7,1B/3B,NA,NA,NA,NA,NA,8
-12,UTIL,NA,NA,NA,NA,NA,8
-14,SP,NA,NA,NA,NA,NA,8
-14,SP,NA,NA,NA,NA,NA,8
-14,SP,NA,NA,NA,NA,NA,8
-14,SP,NA,NA,NA,NA,NA,8
-14,SP,NA,NA,NA,NA,NA,8
-14,SP,NA,NA,NA,NA,NA,8
-15,RP,NA,NA,NA,NA,NA,8
-15,RP,NA,NA,NA,NA,NA,8
-15,RP,NA,NA,NA,NA,NA,8
+0,C,Austin Wells,4683349,13,8.5,8.5,8
+1,1B,Cody Bellinger,33912,6,5,5,8
+2,2B,Gleyber Torres,33804,2,12,12,8
+3,3B,Jose Ramirez,32801,9,8.5,8.5,8
+4,SS,Anthony Volpe,42547,5,10,10,8
+5,OF,Corbin Carroll,42404,8,14,14,8
+5,OF,Trent Grisham,34995,11,12,12,8
+5,OF,Taylor Ward,34923,11,9.5,9.5,8
+5,OF,Jackson Merrill,4872691,7,8,8,8
+5,OF,Aaron Judge,33192,2,7,7,8
+6,2B/SS,Zach Neto,4666100,8,9.5,9.5,8
+7,1B/3B,Yoan Moncada,33984,8,6.5,6.5,8
+12,UTIL,Marcell Ozuna,31668,1,8.5,8.5,8
+14,SP,Merrill Kelly,32968,12,24,24,8
+14,SP,Tyler Mahle,34973,14,21.5,21.5,8
+14,SP,Cristopher Sanchez,42359,7,20.5,20.5,8
+14,SP,David Peterson,40921,2,19.5,19.5,8
+14,SP,Paul Skenes,4719507,13,19.5,19.5,8
+14,SP,Jackson Jobe,4872647,8,16,16,8
+15,RP,Ryan Helsley,39909,8,8,8,8
+15,RP,Kyle Leahy,5006093,14,7,7,8
+15,RP,Jason Adam,32145,11,6.5,6.5,8
