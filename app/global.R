@@ -523,3 +523,44 @@ lineup_avg <-
   group_by(lineup_id) %>% 
   summarise('ppg' = weighted.mean(ppg, games))
 
+leverage <- read_csv(glue('data/playoff_odds/leverage_{params$season}.csv'))
+current_wp <- 
+  read_csv(glue('data/win_prob/{params$season}/week_{params$current_matchup}.csv')) %>% 
+  mutate('start_factor' = factor(case_when(start_advantage >= 4 ~ '> +3',
+                                           start_advantage <= -4 ~ '< -3',
+                                           start_advantage > 0 ~ paste0('+', start_advantage),
+                                           start_advantage < 0 ~ paste0('-', abs(start_advantage)),
+                                           T ~ '0'), levels = c('< -3', '-3', '-2', '-1', '0', 
+                                                                '+1', '+2', '+3', '> +3'))) %>% 
+  select(day_of_matchup, win_prob, team_home, team_away, start_factor, days_left) %>% 
+  filter(day_of_matchup == max(day_of_matchup)) %>% 
+  select(team_home, team_away, win_prob) %>% 
+  pivot_longer(cols = contains('team'),
+               names_to = 'home_away',
+               values_to = 'team') %>% 
+  mutate('win_prob' = ifelse(home_away == 'team_home', win_prob, 1-win_prob))
+
+leverage_long <- 
+  leverage %>% 
+  ungroup() %>% 
+  pivot_longer(cols = c(ends_with('_L'), ends_with('_W'), ends_with('_baseline')),
+               names_to = c('event', 'win_loss'),
+               values_to = 'prob',
+               names_sep = '_') %>% 
+  mutate('leverage' = ifelse(event == 'playoffs', playoff_leverage, -ferry_leverage)) %>% 
+  mutate('leverage' = ifelse(leverage == 0, 1 * 0, leverage)) %>% 
+  mutate('label' = sprintf('%0.1f', 100 * leverage)) %>% 
+  mutate('label' = glue('{team} ({label}%)')) %>% 
+  inner_join(current_wp, by = 'team') %>% 
+  mutate('text' = 
+           case_when(event == 'playoffs' & win_loss == 'W' ~ glue('Playoff Odds w/ Win: {sprintf("%0.1f", 100 * prob)}%'),
+                     event == 'playoffs' & win_loss == 'L' ~ glue('Playoff Odds w/ Loss: {sprintf("%0.1f", 100 * prob)}%'),
+                     event == 'playoffs' ~ paste(glue('Current Playoff Odds: {sprintf("%0.1f", 100 * prob)}%'),
+                                                 glue('Matchup Win Probability: {sprintf("%0.1f", 100 * win_prob)}%'),
+                                                 sep = '\n'),
+                     event == 'ferry' & win_loss == 'W' ~ glue('Ferry Odds w/ Win: {sprintf("%0.1f", 100 * prob)}%'),
+                     event == 'ferry' & win_loss == 'L' ~ glue('Ferry Odds w/ Loss: {sprintf("%0.1f", 100 * prob)}%'),
+                     event == 'ferry' ~ paste(glue('Current Ferry Odds: {sprintf("%0.1f", 100 * prob)}%'),
+                                              glue('Matchup Win Probability: {sprintf("%0.1f", 100 * win_prob)}%'),
+                                              sep = '\n')))
+                     

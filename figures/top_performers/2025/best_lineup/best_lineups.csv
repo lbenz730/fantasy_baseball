@@ -154,18 +154,18 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Tanner Scott,35135,12,19,4.75,7
 15,RP,Camilo Doval,41337,11,16.5,5.5,7
 0,C,Austin Wells,4683349,13,11,5.5,8
-1,1B,Josh Naylor,35066,6,12.5,6.25,8
-2,2B,Gleyber Torres,33804,2,12.5,6.25,8
-3,3B,Javier Baez,32127,1,22.5,11.25,8
-4,SS,Jacob Wilson,4719300,4,15,15,8
-5,OF,Corbin Carroll,42404,8,20,10,8
+1,1B,Rhys Hoskins,35291,4,18.5,6.166666666666667,8
+2,2B,Gleyber Torres,33804,2,12.5,4.166666666666667,8
+3,3B,Jose Ramirez,32801,9,26.5,8.833333333333334,8
+4,SS,Javier Baez,32127,1,22.5,7.5,8
+5,OF,Corbin Carroll,42404,8,22,7.333333333333333,8
 5,OF,Fernando Tatis Jr.,35983,12,15.5,7.75,8
-5,OF,Trent Grisham,34995,11,13.5,6.75,8
-5,OF,Kerry Carpenter,42714,9,11.5,5.75,8
-5,OF,Jung Hoo Lee,5134621,13,9.5,4.75,8
-6,2B/SS,Zach Neto,4666100,8,14,7,8
-7,1B/3B,Jose Ramirez,32801,9,16.5,8.25,8
-12,UTIL,Josh Jung,42437,6,15.5,7.75,8
+5,OF,Trent Grisham,34995,11,13,4.333333333333333,8
+5,OF,Kerry Carpenter,42714,9,11.5,3.8333333333333335,8
+5,OF,Trevor Larnach,41205,11,11.5,5.75,8
+6,2B/SS,Jacob Wilson,4719300,4,15,15,8
+7,1B/3B,Eugenio Suarez,32367,7,16.5,5.5,8
+12,UTIL,Josh Jung,42437,6,15.5,5.166666666666667,8
 14,SP,Framber Valdez,36581,7,27,27,8
 14,SP,Bryan Woo,4629089,8,26,26,8
 14,SP,Dylan Cease,34943,7,25,25,8
@@ -174,4 +174,4 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 14,SP,Merrill Kelly,32968,12,24,24,8
 15,RP,Lucas Erceg,36618,9,10.5,5.25,8
 15,RP,Jason Adam,32145,11,9.5,4.75,8
-15,RP,Luke Weaver,33770,9,9,9,8
+15,RP,Jordan Romano,36380,6,9,9,8
