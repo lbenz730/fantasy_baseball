@@ -153,25 +153,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Jhoan Duran,41109,9,25,6.25,7
 15,RP,Tanner Scott,35135,12,19,4.75,7
 15,RP,Camilo Doval,41337,11,16.5,5.5,7
-0,C,Ivan Herrera,41889,14,13.5,4.5,8
-1,1B,Rhys Hoskins,35291,4,18.5,6.166666666666667,8
-2,2B,Brandon Lowe,39961,4,23,7.666666666666667,8
-3,3B,Jose Ramirez,32801,9,26.5,8.833333333333334,8
-4,SS,Javier Baez,32127,1,22.5,7.5,8
-5,OF,Corbin Carroll,42404,8,24,8,8
-5,OF,Kyle Stowers,42796,7,21,7,8
-5,OF,Riley Greene,42179,9,18.5,6.166666666666667,8
-5,OF,Fernando Tatis Jr.,35983,12,16.5,5.5,8
-5,OF,Jung Hoo Lee,5134621,13,16.5,5.5,8
-6,2B/SS,Elly De La Cruz,4917694,8,16.5,5.5,8
-7,1B/3B,Josh Jung,42437,6,20,5,8
-12,UTIL,Shohei Ohtani,39832,14,25.5,8.5,8
+0,C,Ivan Herrera,41889,14,24.5,6.125,8
+1,1B,Wilmer Flores,30627,14,30.5,7.625,8
+2,2B,Brandon Lowe,39961,4,22,5.5,8
+3,3B,Jose Ramirez,32801,9,32.5,8.125,8
+4,SS,Javier Baez,32127,1,29.5,7.375,8
+5,OF,Riley Greene,42179,9,29,7.25,8
+5,OF,Corbin Carroll,42404,8,28,7,8
+5,OF,Kyle Stowers,42796,7,23.5,5.875,8
+5,OF,Pete Crow-Armstrong,4717833,4,22.5,5.625,8
+5,OF,Jung Hoo Lee,5134621,13,19.5,4.875,8
+6,2B/SS,Bo Bichette,38904,6,22,5.5,8
+7,1B/3B,Josh Jung,42437,6,27.5,5.5,8
+12,UTIL,Shohei Ohtani,39832,14,32.5,8.125,8
 14,SP,Hunter Brown,4717803,7,38,38,8
 14,SP,Jacob deGrom,32796,13,30.5,30.5,8
+14,SP,Corbin Burnes,39878,14,29.5,29.5,8
+14,SP,Joe Ryan,42450,8,29,29,8
+14,SP,Chris Sale,30948,13,27,27,8
 14,SP,Framber Valdez,36581,7,27,27,8
-14,SP,Nick Martinez,33372,6,27,27,8
-14,SP,Bryan Woo,4629089,8,26,26,8
-14,SP,AJ Smith-Shawver,4917640,2,25,25,8
-15,RP,Luke Weaver,33770,9,18,9,8
-15,RP,Lucas Erceg,36618,9,10.5,5.25,8
-15,RP,Fernando Cruz,34068,5,9.5,4.75,8
+15,RP,Luke Weaver,33770,9,22,7.333333333333333,8
+15,RP,Jordan Romano,36380,6,13.5,6.75,8
+15,RP,Griffin Jax,42604,12,12.5,6.25,8
