@@ -157,10 +157,10 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 1,1B,Wilmer Flores,30627,14,34.5,6.9,8
 2,2B,Brandon Lowe,39961,4,26,5.2,8
 3,3B,Jose Ramirez,32801,9,31.5,6.3,8
-4,SS,Javier Baez,32127,1,29.5,5.9,8
+4,SS,Javier Baez,32127,1,29.5,4.916666666666667,8
 5,OF,Corbin Carroll,42404,8,34,6.8,8
 5,OF,Pete Crow-Armstrong,4717833,4,28.5,5.7,8
-5,OF,Riley Greene,42179,9,27.5,5.5,8
+5,OF,Riley Greene,42179,9,27.5,4.583333333333333,8
 5,OF,Kyle Stowers,42796,7,26,5.2,8
 5,OF,Taylor Ward,34923,11,25,5,8
 6,2B/SS,Dansby Swanson,34895,6,24,4.8,8

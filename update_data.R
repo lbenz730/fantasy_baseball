@@ -836,6 +836,8 @@ leverage <-
   group_by(x, team, team_id) %>% 
   summarise('playoffs_W' = mean(playoffs[win_this_week == 1]),
             'playoffs_L' = mean(playoffs[win_this_week == 0]),
+            'n_W' = sum(win_this_week == 1),
+            'n_L' = sum(win_this_week == 0),
             'playoffs_baseline' = mean(playoffs),
             'playoff_leverage' = playoffs_W - playoffs_L,
             'ferry_W' = mean(last_place[win_this_week == 1]),

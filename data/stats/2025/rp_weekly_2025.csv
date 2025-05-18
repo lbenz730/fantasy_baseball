@@ -3973,6 +3973,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 47,8,Luis Rengifo,37237,NA,4,13
 47,8,Cedric Mullins,35578,NA,8,13
 47,8,Alex Vesia,42622,2,6,13
+48,8,Austin Hays,36928,NA,0,14
 48,8,Carlos Rodon,33696,NA,14,14
 48,8,Ivan Herrera,41889,NA,24,14
 48,8,Kyle Leahy,5006093,2,13,14
@@ -4117,29 +4118,29 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 41,NA,NA,NA,NA,NA,6
 42,NA,NA,NA,NA,NA,13
 43,8,Tylor Megill,3332018,NA,-2.5,2
-43,8,Jasson Dominguez,42401,NA,1.5,2
 43,8,AJ Smith-Shawver,4917640,NA,25,2
 43,8,Jordan Lawlar,4872649,NA,-1,2
 43,8,Rafael Devers,33859,NA,15.5,2
-43,8,Will Smith,38309,NA,10,2
 43,8,Randy Arozarena,36488,NA,8,2
-43,8,Aaron Judge,33192,NA,17.5,2
-43,8,Dustin May,40937,NA,7,2
-43,8,Andres Munoz,40939,2,9.5,2
 43,8,Gleyber Torres,33804,NA,16.5,2
 43,8,Carlos Correa,32653,NA,1.5,2
 43,8,Max Meyer,4345164,NA,10,2
 43,8,Emmanuel Clase,41743,2,10,2
-43,8,Michael Busch,42415,NA,3,2
 43,8,Sonny Gray,32082,NA,-7.5,2
 43,8,Wyatt Langford,4719324,NA,23.5,2
+43,8,David Peterson,40921,NA,19.5,2
+43,8,Brent Rooker,40926,NA,1,2
+43,8,Jasson Dominguez,42401,NA,1.5,2
+43,8,Will Smith,38309,NA,10,2
+43,8,Aaron Judge,33192,NA,17.5,2
+43,8,Dustin May,40937,NA,7,2
+43,8,Andres Munoz,40939,2,9.5,2
+43,8,Michael Busch,42415,NA,3,2
 43,8,Tyler O'Neill,34168,NA,-0.5,2
 43,8,Bryan Abreu,41208,2,7,2
-43,8,David Peterson,40921,NA,19.5,2
 43,8,Royce Lewis,40635,NA,10,2
 43,8,Mike Yastrzemski,33341,NA,10,2
 43,8,Landen Roupp,4345404,NA,22,2
-43,8,Brent Rooker,40926,NA,1,2
 43,8,Pavin Smith,40767,NA,-1.5,2
 44,8,Sal Frelick,4417795,NA,8.5,5
 44,8,Francisco Lindor,32129,NA,5.5,5
@@ -4241,28 +4242,28 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 47,8,Yainer Diaz,4781491,NA,3.5,1
 47,8,Gavin Sheets,40700,NA,1,1
 47,8,Javier Baez,32127,NA,29.5,1
+48,8,Ty France,35591,NA,-1.5,7
+48,8,Lourdes Gurriel Jr.,36040,NA,20.5,7
+48,8,Jake Cronenworth,36364,NA,12,7
+48,8,Alec Bohm,41169,NA,15.5,7
+48,8,Huascar Brazoban,4916509,2,6,7
+48,8,Brandon Pfaadt,4721302,NA,-0.5,7
 48,8,Spencer Steer,4722857,NA,4,7
 48,8,Jake Bird,3459223,1,1,7
 48,8,Bobby Witt Jr.,42403,NA,17,7
 48,8,Framber Valdez,36581,NA,27,7
-48,8,Ty France,35591,NA,-1.5,7
-48,8,Lourdes Gurriel Jr.,36040,NA,20.5,7
 48,8,Jose Berrios,32811,NA,3,7
 48,8,Hunter Brown,4717803,NA,38,7
 48,8,Kyle Stowers,42796,NA,26,7
-48,8,Jake Cronenworth,36364,NA,12,7
 48,8,Josh Lowe,40557,NA,4.5,7
 48,8,Brendan Donovan,41773,NA,14,7
 48,8,Ryan O'Hearn,35183,NA,6.5,7
 48,8,Eugenio Suarez,32367,NA,29.5,7
 48,8,Grant Holmes,33840,NA,19,7
-48,8,Alec Bohm,41169,NA,15.5,7
 48,8,Anthony Santander,36084,NA,-1.5,7
-48,8,Huascar Brazoban,4916509,2,6,7
 48,8,Cristopher Sanchez,42359,NA,20.5,7
 48,8,Jackson Merrill,4872691,NA,6,7
 48,8,Victor Scott II,4807220,NA,4,7
-48,8,Brandon Pfaadt,4721302,NA,-0.5,7
 48,8,Kyle Finnegan,36543,2,12,7
 48,8,Dylan Cease,34943,NA,25,7
 48,8,Logan O'Hoppe,42047,NA,9.5,7
