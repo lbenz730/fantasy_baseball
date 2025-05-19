@@ -543,6 +543,7 @@ current_wp <-
 leverage_long <- 
   leverage %>% 
   filter(n_W >= 50, n_L >= 50) %>% 
+  select(-n_W, -n_L) %>% 
   ungroup() %>% 
   pivot_longer(cols = c(ends_with('_L'), ends_with('_W'), ends_with('_baseline')),
                names_to = c('event', 'win_loss'),
