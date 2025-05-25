@@ -21,7 +21,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.2,4,2,Bad Start,The Talmudic Tunnelers
 1,5.2,6+,1,Bad Start,The Talmudic Tunnelers
 1,6.0,0,3,QS,The Talmudic Tunnelers
-1,6.0,1,4,QS,The Talmudic Tunnelers
+1,6.0,1,5,QS,The Talmudic Tunnelers
 1,6.0,2,4,QS,The Talmudic Tunnelers
 1,6.0,3,3,QS,The Talmudic Tunnelers
 1,6.0,4,1,QS Potential,The Talmudic Tunnelers
@@ -51,7 +51,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,5.0,3,4,QS Potential,Sac Fly by the Rook
 2,5.0,4,2,Bad Start,Sac Fly by the Rook
 2,5.0,5,3,Bad Start,Sac Fly by the Rook
-2,5.0,6+,1,Bad Start,Sac Fly by the Rook
+2,5.0,6+,2,Bad Start,Sac Fly by the Rook
 2,5.1,1,1,QS Potential,Sac Fly by the Rook
 2,5.1,3,2,QS Potential,Sac Fly by the Rook
 2,5.2,1,1,Blue Balls,Sac Fly by the Rook
@@ -119,7 +119,8 @@ team_id,ip,earned_runs,n,start_type,team
 5,4.2,2,1,Bad Start,The Traveling Secretaries
 5,4.2,3,3,Bad Start,The Traveling Secretaries
 5,5.0,0,1,QS Potential,The Traveling Secretaries
-5,5.0,2,2,QS Potential,The Traveling Secretaries
+5,5.0,1,1,QS Potential,The Traveling Secretaries
+5,5.0,2,3,QS Potential,The Traveling Secretaries
 5,5.0,4,4,Bad Start,The Traveling Secretaries
 5,5.1,1,1,QS Potential,The Traveling Secretaries
 5,5.1,5,1,Bad Start,The Traveling Secretaries
@@ -191,6 +192,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.0,6+,2,Bad Start,At Witt's End
 7,4.1,2,1,Bad Start,At Witt's End
 7,4.1,3,1,Bad Start,At Witt's End
+7,4.2,2,1,Bad Start,At Witt's End
 7,4.2,4,1,Bad Start,At Witt's End
 7,4.2,5,1,Bad Start,At Witt's End
 7,5.0,0,2,QS Potential,At Witt's End
@@ -207,7 +209,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,3,1,Blue Balls,At Witt's End
 7,5.2,4,1,Bad Start,At Witt's End
 7,6.0,0,4,QS,At Witt's End
-7,6.0,1,3,QS,At Witt's End
+7,6.0,1,4,QS,At Witt's End
 7,6.0,2,5,QS,At Witt's End
 7,6.0,3,5,QS,At Witt's End
 7,6.1,1,2,QS,At Witt's End
@@ -240,10 +242,10 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,1,1,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,3,1,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,6+,1,Bad Start,Mt. Everest Taquito Farmers
-8,6.0,0,5,QS,Mt. Everest Taquito Farmers
+8,6.0,0,6,QS,Mt. Everest Taquito Farmers
 8,6.0,1,7,QS,Mt. Everest Taquito Farmers
 8,6.0,2,4,QS,Mt. Everest Taquito Farmers
-8,6.0,3,4,QS,Mt. Everest Taquito Farmers
+8,6.0,3,5,QS,Mt. Everest Taquito Farmers
 8,6.0,4,1,QS Potential,Mt. Everest Taquito Farmers
 8,6.0,5,1,Bad Start,Mt. Everest Taquito Farmers
 8,6.0,6+,1,Bad Start,Mt. Everest Taquito Farmers
@@ -262,18 +264,18 @@ team_id,ip,earned_runs,n,start_type,team
 9,4.1,2,1,Bad Start,Guts. Glory. JRam.
 9,4.1,3,1,Bad Start,Guts. Glory. JRam.
 9,4.2,2,2,Bad Start,Guts. Glory. JRam.
-9,4.2,3,1,Bad Start,Guts. Glory. JRam.
+9,4.2,3,2,Bad Start,Guts. Glory. JRam.
 9,4.2,4,1,Bad Start,Guts. Glory. JRam.
 9,4.2,6+,1,Bad Start,Guts. Glory. JRam.
 9,5.0,0,2,QS Potential,Guts. Glory. JRam.
 9,5.0,1,3,QS Potential,Guts. Glory. JRam.
 9,5.0,2,1,QS Potential,Guts. Glory. JRam.
 9,5.0,3,4,QS Potential,Guts. Glory. JRam.
-9,5.0,4,3,Bad Start,Guts. Glory. JRam.
+9,5.0,4,4,Bad Start,Guts. Glory. JRam.
 9,5.0,5,1,Bad Start,Guts. Glory. JRam.
 9,5.1,2,1,QS Potential,Guts. Glory. JRam.
 9,5.1,6+,1,Bad Start,Guts. Glory. JRam.
-9,5.2,1,2,Blue Balls,Guts. Glory. JRam.
+9,5.2,1,3,Blue Balls,Guts. Glory. JRam.
 9,5.2,4,1,Bad Start,Guts. Glory. JRam.
 9,6.0,0,2,QS,Guts. Glory. JRam.
 9,6.0,1,8,QS,Guts. Glory. JRam.
@@ -283,10 +285,10 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.1,2,1,QS,Guts. Glory. JRam.
 9,6.2,2,2,QS,Guts. Glory. JRam.
 9,7.0,0,4,QS,Guts. Glory. JRam.
-9,7.0,1,2,QS,Guts. Glory. JRam.
+9,7.0,1,3,QS,Guts. Glory. JRam.
 9,7.0,2,1,QS,Guts. Glory. JRam.
 9,> 7,0,3,QS,Guts. Glory. JRam.
-9,> 7,1,1,QS,Guts. Glory. JRam.
+9,> 7,1,2,QS,Guts. Glory. JRam.
 11,3.0,4,1,Bad Start,The West Bank Occupiers
 11,3.2,5,1,Bad Start,The West Bank Occupiers
 11,3.2,6+,1,Bad Start,The West Bank Occupiers
@@ -345,7 +347,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,6.0,1,4,QS,Blasphemous Hot Takes
 12,6.0,2,5,QS,Blasphemous Hot Takes
 12,6.0,3,1,QS,Blasphemous Hot Takes
-12,6.0,4,3,QS Potential,Blasphemous Hot Takes
+12,6.0,4,4,QS Potential,Blasphemous Hot Takes
 12,6.1,0,1,QS,Blasphemous Hot Takes
 12,6.1,2,1,QS,Blasphemous Hot Takes
 12,6.1,3,1,QS,Blasphemous Hot Takes
