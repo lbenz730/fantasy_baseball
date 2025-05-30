@@ -179,7 +179,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 1,1B,Bryce Harper,30951,9,27,3.857142857142857,9
 2,2B,Brandon Lowe,39961,4,29.5,4.916666666666667,9
 3,3B,Rafael Devers,33859,2,35.5,5.071428571428571,9
-4,SS,Trea Turner,33710,14,42,6,9
+4,SS,Trea Turner,33710,14,43,6.142857142857143,9
 5,OF,Seiya Suzuki,4142424,4,45,7.5,9
 5,OF,Taylor Ward,34923,11,44.5,6.357142857142857,9
 5,OF,Aaron Judge,33192,2,33,5.5,9
@@ -197,25 +197,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Pete Fairbanks,42180,6,20.5,5.125,9
 15,RP,Trevor Megill,40080,4,20.5,5.125,9
 15,RP,Justin Slaten,4917925,12,19.5,4.875,9
-0,C,Agustin Ramirez,5132014,9,15,5,10
-1,1B,Jonathan Aranda,40810,9,18.5,6.166666666666667,10
-2,2B,Jose Altuve,31662,1,15,7.5,10
-3,3B,Miguel Vargas,42453,9,17,5.666666666666667,10
-4,SS,Elly De La Cruz,4917694,8,19.5,6.5,10
+0,C,Cal Raleigh,41292,11,16,5.333333333333333,10
+1,1B,Jonathan Aranda,40810,9,28,7,10
+2,2B,Jose Altuve,31662,1,20.5,6.833333333333333,10
+3,3B,Austin Riley,34982,4,17.5,5.833333333333333,10
+4,SS,Bo Bichette,38904,6,21.5,5.375,10
+5,OF,James Wood,4918256,11,22.5,7.5,10
 5,OF,Bryan Reynolds,38980,12,17.5,5.833333333333333,10
-5,OF,James Wood,4918256,11,15,7.5,10
+5,OF,Miguel Vargas,42453,9,17,5.666666666666667,10
 5,OF,Ryan O'Hearn,35183,7,15,5,10
 5,OF,Christian Yelich,31283,4,14,7,10
-5,OF,Gavin Sheets,40700,5,13,4.333333333333333,10
-6,2B/SS,Masyn Winn,4683365,13,14,4.666666666666667,10
-7,1B/3B,Jose Ramirez,32801,9,13.5,4.5,10
+6,2B/SS,Elly De La Cruz,4917694,8,19.5,6.5,10
+7,1B/3B,Agustin Ramirez,5132014,9,15,5,10
 12,UTIL,Shohei Ohtani,39832,14,19.5,6.5,10
 14,SP,Carlos Rodon,33696,14,31,31,10
+14,SP,Jose Berrios,32811,7,29,29,10
 14,SP,Jack Flaherty,33837,5,28,28,10
 14,SP,Kevin Gausman,32667,6,28,28,10
 14,SP,Paul Skenes,4719507,13,27.5,27.5,10
-14,SP,Matthew Boyd,34401,11,27,27,10
-14,SP,Drew Rasmussen,42584,1,26,26,10
+14,SP,Chris Sale,30948,13,27,27,10
 15,RP,Daniel Palencia,4875225,6,16,8,10
 15,RP,Tommy Kahnle,31867,1,16,8,10
 15,RP,Jeff Hoffman,33841,4,13,6.5,10
