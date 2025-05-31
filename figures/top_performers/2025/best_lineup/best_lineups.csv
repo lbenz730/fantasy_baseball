@@ -197,25 +197,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Pete Fairbanks,42180,6,20.5,5.125,9
 15,RP,Trevor Megill,40080,4,20.5,5.125,9
 15,RP,Justin Slaten,4917925,12,19.5,4.875,9
-0,C,Cal Raleigh,41292,11,16,5.333333333333333,10
-1,1B,Jonathan Aranda,40810,9,28,7,10
-2,2B,Jose Altuve,31662,1,20.5,6.833333333333333,10
-3,3B,Austin Riley,34982,4,17.5,5.833333333333333,10
-4,SS,Bo Bichette,38904,6,21.5,5.375,10
-5,OF,James Wood,4918256,11,22.5,7.5,10
-5,OF,Bryan Reynolds,38980,12,17.5,5.833333333333333,10
-5,OF,Miguel Vargas,42453,9,17,5.666666666666667,10
-5,OF,Ryan O'Hearn,35183,7,15,5,10
-5,OF,Christian Yelich,31283,4,14,7,10
-6,2B/SS,Elly De La Cruz,4917694,8,19.5,6.5,10
-7,1B/3B,Agustin Ramirez,5132014,9,15,5,10
-12,UTIL,Shohei Ohtani,39832,14,19.5,6.5,10
+0,C,Cal Raleigh,41292,11,30.5,7.625,10
+1,1B,Jonathan Aranda,40810,9,28.5,5.7,10
+2,2B,Luis Garcia Jr.,40459,13,22,5.5,10
+3,3B,Austin Riley,34982,4,18,4.5,10
+4,SS,Bo Bichette,38904,6,25.5,5.1,10
+5,OF,James Wood,4918256,11,29,7.25,10
+5,OF,Christian Yelich,31283,4,28,9.333333333333334,10
+5,OF,TJ Friedl,36020,13,22,5.5,10
+5,OF,Bryan Reynolds,38980,12,21,5.25,10
+5,OF,Jose Altuve,31662,1,19.5,4.875,10
+6,2B/SS,Elly De La Cruz,4917694,8,22,5.5,10
+7,1B/3B,Vladimir Guerrero Jr.,35002,4,19.5,3.9,10
+12,UTIL,Shohei Ohtani,39832,14,31,7.75,10
+14,SP,Framber Valdez,36581,7,40,40,10
+14,SP,Andrew Abbott,4414528,9,32.5,32.5,10
 14,SP,Carlos Rodon,33696,14,31,31,10
 14,SP,Jose Berrios,32811,7,29,29,10
 14,SP,Jack Flaherty,33837,5,28,28,10
 14,SP,Kevin Gausman,32667,6,28,28,10
-14,SP,Paul Skenes,4719507,13,27.5,27.5,10
-14,SP,Chris Sale,30948,13,27,27,10
+15,RP,Tommy Kahnle,31867,1,22,7.333333333333333,10
+15,RP,Reed Garrett,36526,13,17.5,8.75,10
 15,RP,Daniel Palencia,4875225,6,16,8,10
-15,RP,Tommy Kahnle,31867,1,16,8,10
-15,RP,Jeff Hoffman,33841,4,13,6.5,10
