@@ -92,7 +92,7 @@ pitch_stats <- read_csv(glue('data/stats/{params$season}/pitch_stats.csv'))
 df_penalty <- read_csv('data/red_flags/penalties.csv') %>% 
   mutate('scoring_period_id' = as.numeric(scoring_period_id),
          'penalty' = as.numeric(penalty),
-         'matchup_id' = as.numeric(matchup_id))
+         'matchup_id' = as.numeric(matchup_id)) 
 
 start_buckets <- 
   read_csv(glue('data/stats/{params$season}/start_buckets.csv')) %>% 

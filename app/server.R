@@ -1919,6 +1919,7 @@ shinyServer(function(input, output, session) {
         group_by(team, logo, matchup_id) %>%
         summarise('penalty' = sum(penalty)) %>%
         ungroup() %>%
+        arrange(matchup_id) %>% 
         gt() %>% 
         cols_align('center') %>% 
         text_transform(
