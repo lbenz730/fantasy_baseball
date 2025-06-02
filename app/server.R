@@ -2415,7 +2415,7 @@ shinyServer(function(input, output, session) {
         geom_point(data = lineup_avg, size = 3, shape = 18) + 
         geom_point(aes(fill = ppg - ppg_avg), size = 4, pch = 21, color = 'black') + 
         scale_fill_gradient2(breaks = c(-1.25, -0.75, -0.25, 0.25, 0.75, 1.25),low = 'blue', mid = 'lightgrey', high = 'red', midpoint = 0) + 
-        theme(legend.text = element_text(angle = 90, size = 12),
+        theme(legend.text = element_text(angle = 90, size = 12, vjust = 0.5, hjust=1),
               legend.position = 'bottom',
               axis.text = element_text(size = 16),
               strip.text = element_text(size = 16)) + 
