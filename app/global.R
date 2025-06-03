@@ -317,11 +317,12 @@ if(nrow(traded_players) > 0) {
       filter(player_id == traded_players$player_id[i]) %>% 
       filter(team_id == old_team) %>% 
       filter(scoring_period_id < scoring_period) %>% 
-      summarise('points' = sum(points),
-                'played' = sum(start) + sum(relief) + sum(played),
-                'batter' = sum(played),
-                'sp' = sum(start),
-                'rp' = sum(relief)) %>% 
+      summarise('points' = sum(points * in_lineup),
+                'played' = sum(start * in_lineup) + sum(relief * in_lineup) + sum(played * in_lineup),
+                'batter' = sum(played * in_lineup),
+                'pitcher' = sum(pitcher * in_lineup),
+                'sp' = sum(start * in_lineup),
+                'rp' = sum(relief * in_lineup)) %>% 
       mutate('ppg' = points/played) %>% 
       mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat,
                                       rp > 0 & sp == 0 ~ (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp,
@@ -335,12 +336,12 @@ if(nrow(traded_players) > 0) {
       filter(team_id == new_team) %>% 
       filter(scoring_period_id >= scoring_period) %>%
       filter(scoring_period_id <= end_period) %>% 
-      summarise('points' = sum(points),
-                'played' = sum(start) + sum(relief) + sum(played),
-                'batter' = sum(played),
-                'pitcher' = sum(pitcher),
-                'sp' = sum(start),
-                'rp' = sum(relief),
+      summarise('points' = sum(points * in_lineup),
+                'played' = sum(start * in_lineup) + sum(relief * in_lineup) + sum(played * in_lineup),
+                'batter' = sum(played * in_lineup),
+                'pitcher' = sum(pitcher * in_lineup),
+                'sp' = sum(start * in_lineup),
+                'rp' = sum(relief * in_lineup),
                 'n_days' = n()) %>% 
       mutate('ppg' =  points/played) %>% 
       mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat,
