@@ -1979,6 +1979,58 @@ shinyServer(function(input, output, session) {
       
     })
     
+    output$rp_start <- render_gt({
+      cat('Rendering RP Starts\n')
+      
+      df_relief_start %>% 
+        inner_join(teams, by = 'team_id') %>% 
+        mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+        select(team, logo, player_url, player, matchup_id, ip, p_er, rule, bonus) %>% 
+        gt() %>% 
+        cols_align('center') %>% 
+          ### Logos
+          text_transform(
+            locations = cells_body(contains(c('player_url'))),
+            fn = function(x) {
+              web_image(
+                url = x,
+                height = 50
+              )
+            }
+          ) %>%
+        text_transform(
+          locations = cells_body(columns = contains(c('logo'))),
+          fn = function(x) {
+            local_image(
+              filename = x,
+              height = 50
+            )
+          }
+        ) %>% 
+        cols_label('team' = 'Team',
+                   'logo' = '',
+                   'player_url' = 'Player',
+                   'player' = '',
+                   'matchup_id'  = 'Matchup',
+                   'ip' = 'IP', 
+                   'p_er' = 'ER',
+                   'rule' = 'Rule', 
+                   'bonus' = 'Bonus'
+                   ) %>% 
+        tab_header(title = 'RP Starts') %>%
+        tab_options(column_labels.font.size = 16,
+                    heading.title.font.size = 40,
+                    heading.subtitle.font.size = 40,
+                    heading.title.font.weight = 'bold',
+                    heading.subtitle.font.weight = 'bold',
+                    column_labels.font.weight = 'bold',
+                    row_group.font.weight = 'bold',
+                    row_group.font.size  = 22)
+      
+    })
+    
+    
+    
     ##################
     ### All Starts ###
     ##################

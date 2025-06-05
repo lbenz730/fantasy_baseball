@@ -111,6 +111,9 @@ df_rp_penalty <-
          'matchup_id' = as.numeric(matchup_id)) %>% 
   arrange(matchup_id) 
 
+df_relief_start <- 
+  read_csv('data/red_flags/relief_starts_flags.csv')
+
 df_trades <- read_csv(glue('data/stats/{params$season}/trades_{params$season}.csv'))
 if(nrow(df_trades) > 0) {
   traded_players <- read_csv(glue('data/stats/{params$season}/traded_players_{params$season}.csv'))
@@ -566,4 +569,4 @@ leverage_long <-
                      event == 'ferry' ~ paste(glue('Current Ferry Odds: {sprintf("%0.1f", 100 * prob)}%'),
                                               glue('Matchup Win Probability: {sprintf("%0.1f", 100 * win_prob)}%'),
                                               sep = '\n')))
-                     
+

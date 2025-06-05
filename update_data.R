@@ -310,6 +310,25 @@ relief_starts <-
 
 write_csv(relief_starts, 'data/red_flags/relief_starts.csv')
 
+relief_starts_flag <- 
+  df_daily %>% 
+  filter(in_lineup) %>% 
+  filter(pitcher) %>% 
+  filter(start, relief) %>% 
+  mutate('rule' = case_when(p_cg == 1 ~ 'Darvish Rule',
+                            qs == 1 ~ 'Javier Rule',
+                            T ~ 'Bulk RP Rule')) %>% 
+  mutate('bonus' = case_when(rule == 'Darvish Rule' ~ 15,
+                             rule == 'Javier Rule' ~ 5,
+                             T ~ 0)) %>% 
+  mutate('ip' = paste0(floor(p_outs/3), '.', p_outs - floor(p_outs/3) * 3)) %>% 
+  select(player, player_id, team_id, matchup_id, scoring_period_id, ip, p_er, rule, bonus)
+write_csv(relief_starts_flag, 'data/red_flags/relief_starts_flags.csv')
+
+
+
+
+
 df_penalty <- 
   df_daily %>%
   filter(in_lineup) %>%

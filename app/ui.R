@@ -428,6 +428,10 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                            image.height = 100),
                               shinycssloaders::withSpinner(gt_output('rp_pen'),
                                                            image = baseball,
+                                                           image.height = 100),
+                              
+                              shinycssloaders::withSpinner(gt_output('rp_start'),
+                                                           image = baseball,
                                                            image.height = 100)
                             )
                    ), 
