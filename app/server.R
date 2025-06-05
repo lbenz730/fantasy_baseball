@@ -1985,7 +1985,7 @@ shinyServer(function(input, output, session) {
       df_relief_start %>% 
         inner_join(teams, by = 'team_id') %>% 
         mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-        select(team, logo, player_url, player, matchup_id, ip, p_er, rule, bonus) %>% 
+        select(team, logo,  player, player_url, matchup_id, ip, p_er, rule, bonus) %>% 
         gt() %>% 
         cols_align('center') %>% 
           ### Logos
@@ -2009,8 +2009,8 @@ shinyServer(function(input, output, session) {
         ) %>% 
         cols_label('team' = 'Team',
                    'logo' = '',
-                   'player_url' = 'Player',
-                   'player' = '',
+                   'player' = 'Player',
+                   'player_url' = '',
                    'matchup_id'  = 'Matchup',
                    'ip' = 'IP', 
                    'p_er' = 'ER',
