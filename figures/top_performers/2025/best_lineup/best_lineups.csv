@@ -219,19 +219,19 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Tommy Kahnle,31867,1,26,6.5,10
 15,RP,Reed Garrett,36526,13,23.5,7.833333333333333,10
 15,RP,Daniel Palencia,4875225,6,23,7.666666666666667,10
-0,C,Hunter Goodman,4416591,6,27,9,11
-1,1B,Pete Alonso,37498,11,29.5,7.375,11
-2,2B,Ketel Marte,32512,12,28,9.333333333333334,11
-3,3B,Isaac Paredes,39706,12,19.5,6.5,11
-4,SS,Ceddanne Rafaela,4987382,8,22,7.333333333333333,11
-5,OF,Lawrence Butler,4917919,12,26.5,6.625,11
+0,C,Hunter Goodman,4416591,6,27.5,6.875,11
+1,1B,Pete Alonso,37498,11,36,7.2,11
+2,2B,Ketel Marte,32512,12,35,8.75,11
+3,3B,Isaac Paredes,39706,12,24,6,11
+4,SS,Trea Turner,33710,14,24.5,6.125,11
+5,OF,Lawrence Butler,4917919,12,31.5,6.3,11
+5,OF,Jazz Chisholm Jr.,41433,14,23,5.75,11
+5,OF,Juan Soto,36969,12,23,4.6,11
 5,OF,Corbin Carroll,42404,8,22,7.333333333333333,11
-5,OF,Tyler Soderstrom,4686066,12,20,5,11
-5,OF,Kerry Carpenter,42714,9,19.5,4.875,11
-5,OF,Willi Castro,34230,4,19.5,4.875,11
-6,2B/SS,Bobby Witt Jr.,42403,7,16,5.333333333333333,11
-7,1B/3B,Manny Machado,31097,5,16.5,4.125,11
-12,UTIL,Brent Rooker,40926,2,17,4.25,11
+5,OF,Ceddanne Rafaela,4987382,8,21.5,5.375,11
+6,2B/SS,Jacob Wilson,4719300,4,22,5.5,11
+7,1B/3B,Manny Machado,31097,5,21,4.2,11
+12,UTIL,Brent Rooker,40926,2,21,4.2,11
 14,SP,Merrill Kelly,32968,12,32.5,32.5,11
 14,SP,Paul Skenes,4719507,13,31.5,31.5,11
 14,SP,Logan Webb,41216,12,29.5,29.5,11
@@ -239,5 +239,5 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 14,SP,Max Fried,32685,9,28,28,11
 14,SP,Framber Valdez,36581,7,27.5,27.5,11
 15,RP,Randy Rodriguez,4919929,5,16.5,5.5,11
-15,RP,Tanner Scott,35135,12,11.5,3.8333333333333335,11
-15,RP,Ben Casparius,4326800,14,10,10,11
+15,RP,Josh Hader,32760,14,16,8,11
+15,RP,Will Vest,41606,6,15,7.5,11
