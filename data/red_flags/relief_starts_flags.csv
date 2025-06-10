@@ -1,3 +1,4 @@
 player,player_id,team_id,matchup_id,scoring_period_id,ip,p_er,rule,bonus
 Joe Ryan,42450,8,9,63,5.0,3,Bulk RP Rule,0
 Jeffrey Springs,35397,8,11,79,6.2,3,Javier Rule,5
+Jeffrey Springs,35397,8,12,84,6.0,3,Javier Rule,5
