@@ -1,14 +1,4 @@
 game_date,player,player_id,team_id
-2025-06-10,Andrew Abbott,4414528,9
-2025-06-10,Mitch Keller,33722,1
-2025-06-10,MacKenzie Gore,39636,13
-2025-06-10,Ryan Pepiot,4208281,8
-2025-06-10,Tyler Mahle,34973,14
-2025-06-10,Max Fried,32685,9
-2025-06-10,Noah Cameron,4417208,14
-2025-06-10,Shane Smith,5201814,9
-2025-06-10,Lance McCullers Jr.,32764,6
-2025-06-10,Dylan Cease,34943,7
 2025-06-11,Bailey Falter,4705677,11
 2025-06-11,Jesus Luzardo,39667,12
 2025-06-11,Nick Lodolo,42433,6
@@ -16,8 +6,10 @@ game_date,player,player_id,team_id
 2025-06-11,Chad Patrick,5131708,9
 2025-06-11,Bryan Woo,4629089,8
 2025-06-11,Casey Mize,41167,5
+2025-06-11,Zach Eflin,32804,1
 2025-06-11,David Peterson,40921,14
 2025-06-11,Zack Littell,36052,8
+2025-06-11,Jack Leiter,4622181,2
 2025-06-11,Clarke Schmidt,41085,9
 2025-06-11,Kris Bubic,41201,5
 2025-06-11,Robbie Ray,32175,14
@@ -28,3 +20,6 @@ game_date,player,player_id,team_id
 2025-06-12,Seth Lugo,34873,4
 2025-06-12,Sonny Gray,32082,2
 2025-06-12,Framber Valdez,36581,7
+2025-06-13,Kevin Gausman,32667,6
+2025-06-13,Clay Holmes,32827,4
+2025-06-13,Gavin Williams,4345076,6
