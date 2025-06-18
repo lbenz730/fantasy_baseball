@@ -154,13 +154,13 @@ write_csv(schedule, glue('data/stats/{params$season}/schedule_{params$season}.cs
 
 ### Update Daily Stats
 if(params$matchup_id == 1) {
-  write_csv(get_matchup_stats(params$matchup_id, season = params$season),
+  write_csv(get_matchup_stats(params$matchup_id, season = params$season, current_scoring_period = period),
             glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
 } else {
   read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>%
     filter(matchup_id < params$matchup_id - 1) %>%
-    bind_rows(get_matchup_stats(params$matchup_id - 1, season = params$season)) %>%
-    bind_rows(get_matchup_stats(params$matchup_id, season = params$season)) %>%
+    bind_rows(get_matchup_stats(params$matchup_id - 1, season = params$season, current_scoring_period = period)) %>%
+    bind_rows(get_matchup_stats(params$matchup_id, season = params$season, current_scoring_period = period)) %>%
     write_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv'))
 }
 

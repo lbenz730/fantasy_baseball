@@ -113,7 +113,7 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
 }
 
 
-get_matchup_stats <- function(week, season = 2023) {
+get_matchup_stats <- function(week, season = 2023, current_scoring_period = Inf) {
 
   df_schedule <- read_csv(glue('data/stats/{season}/schedule_{season}.csv'))
   df_start <- read_csv('data/df_start.csv')
@@ -142,7 +142,8 @@ get_matchup_stats <- function(week, season = 2023) {
 
       tmp1 <- map_dfr(indices, function(i) get_daily_stats(x, y, i, 'home', df_schedule))
       tmp2 <- map_dfr(indices, function(i) get_daily_stats(x, y, i, 'away', df_schedule))
-      if(nrow(tmp1) > 0) {
+      
+      if(nrow(tmp1) > 0 & .x <= current_scoring_period) {
         df <-
           bind_rows(tmp1, tmp2) %>%
           mutate('scoring_period_id' = .x) %>%
