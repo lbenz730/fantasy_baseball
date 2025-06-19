@@ -157,6 +157,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.0,4,4,Bad Start,The Traveling Secretaries
 5,5.1,1,3,QS Potential,The Traveling Secretaries
 5,5.1,2,1,QS Potential,The Traveling Secretaries
+5,5.1,3,1,QS Potential,The Traveling Secretaries
 5,5.1,5,1,Bad Start,The Traveling Secretaries
 5,5.1,6+,1,Bad Start,The Traveling Secretaries
 5,5.2,0,2,Blue Balls,The Traveling Secretaries
@@ -208,7 +209,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,5.2,4,1,Bad Start,The Novaks
 6,5.2,6+,1,Bad Start,The Novaks
 6,6.0,0,5,QS,The Novaks
-6,6.0,1,8,QS,The Novaks
+6,6.0,1,9,QS,The Novaks
 6,6.0,2,2,QS,The Novaks
 6,6.0,3,5,QS,The Novaks
 6,6.0,5,1,Bad Start,The Novaks
@@ -229,6 +230,8 @@ team_id,ip,earned_runs,n,start_type,team
 6,< 3,6+,1,Bad Start,The Novaks
 6,> 7,0,2,QS,The Novaks
 6,> 7,1,6,QS,The Novaks
+6,CG,2,1,CG,The Novaks
+6,CG,4,1,CG,The Novaks
 7,3.0,6+,1,Bad Start,At Witt's End
 7,4.0,2,1,Bad Start,At Witt's End
 7,4.0,3,1,Bad Start,At Witt's End
@@ -257,7 +260,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,4,1,Bad Start,At Witt's End
 7,6.0,0,6,QS,At Witt's End
 7,6.0,1,7,QS,At Witt's End
-7,6.0,2,5,QS,At Witt's End
+7,6.0,2,6,QS,At Witt's End
 7,6.0,3,5,QS,At Witt's End
 7,6.1,1,2,QS,At Witt's End
 7,6.2,0,1,QS,At Witt's End
@@ -385,7 +388,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,6.0,0,4,QS,The West Bank Occupiers
 11,6.0,1,5,QS,The West Bank Occupiers
 11,6.0,2,4,QS,The West Bank Occupiers
-11,6.0,3,6,QS,The West Bank Occupiers
+11,6.0,3,7,QS,The West Bank Occupiers
 11,6.0,4,2,QS Potential,The West Bank Occupiers
 11,6.0,6+,2,Bad Start,The West Bank Occupiers
 11,6.1,0,1,QS,The West Bank Occupiers
@@ -394,7 +397,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,6.1,5,1,Bad Start,The West Bank Occupiers
 11,6.2,0,1,QS,The West Bank Occupiers
 11,7.0,0,4,QS,The West Bank Occupiers
-11,7.0,1,2,QS,The West Bank Occupiers
+11,7.0,1,3,QS,The West Bank Occupiers
 11,7.0,2,2,QS,The West Bank Occupiers
 11,7.0,3,1,QS,The West Bank Occupiers
 11,< 3,3,1,Bad Start,The West Bank Occupiers
@@ -477,7 +480,8 @@ team_id,ip,earned_runs,n,start_type,team
 13,< 3,0,1,Bad Start,Ketel Bells
 13,< 3,2,2,Bad Start,Ketel Bells
 13,< 3,5,1,Bad Start,Ketel Bells
-13,> 7,0,2,QS,Ketel Bells
+13,< 3,6+,1,Bad Start,Ketel Bells
+13,> 7,0,3,QS,Ketel Bells
 13,> 7,1,1,QS,Ketel Bells
 13,CG,0,1,CG,Ketel Bells
 13,CG,1,1,CG,Ketel Bells
@@ -496,6 +500,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.0,6+,1,Bad Start,Burnes Notice
 14,5.1,0,1,QS Potential,Burnes Notice
 14,5.1,1,2,QS Potential,Burnes Notice
+14,5.1,2,1,QS Potential,Burnes Notice
 14,5.1,3,2,QS Potential,Burnes Notice
 14,5.1,4,1,Bad Start,Burnes Notice
 14,5.1,6+,1,Bad Start,Burnes Notice

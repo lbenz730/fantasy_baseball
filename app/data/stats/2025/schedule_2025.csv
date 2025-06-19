@@ -65,18 +65,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 11,64,2,330.5,205.5,125,7,243.5,98.5,145,Sac Fly by the Rook,At Witt's End
 11,65,5,272.5,164,108.5,1,303,167.5,135.5,The Traveling Secretaries,The Talmudic Tunnelers
 11,66,11,354,225,129,8,316,189,127,The West Bank Occupiers,Mt. Everest Taquito Farmers
-12,67,4,338,172.5,165.5,13,342.5,180.5,162,All That is Wright,Ketel Bells
+12,67,4,338,172.5,165.5,13,341.5,180.5,161,All That is Wright,Ketel Bells
 12,68,14,303,190,113,6,273.5,203.5,70,Burnes Notice,The Novaks
 12,69,7,329.5,151,178.5,9,347.5,160.5,187,At Witt's End,Guts. Glory. JRam.
-12,70,1,411.5,256.5,155,12,396.5,218.5,178,The Talmudic Tunnelers,Blasphemous Hot Takes
-12,71,8,311,203.5,107.5,2,216,187.5,28.5,Mt. Everest Taquito Farmers,Sac Fly by the Rook
+12,70,1,412.5,256.5,156,12,396.5,218.5,178,The Talmudic Tunnelers,Blasphemous Hot Takes
+12,71,8,311,203.5,107.5,2,217,188.5,28.5,Mt. Everest Taquito Farmers,Sac Fly by the Rook
 12,72,11,314.5,189.5,125,5,334,261,73,The West Bank Occupiers,The Traveling Secretaries
-13,73,14,97,59,38,4,97.5,52,45.5,Burnes Notice,All That is Wright
-13,74,13,48.5,50.5,-2,7,48.5,48,0.5,Ketel Bells,At Witt's End
-13,75,6,57.5,63.5,-6,1,49.5,28,21.5,The Novaks,The Talmudic Tunnelers
-13,76,9,94,42,52,8,131,47.5,83.5,Guts. Glory. JRam.,Mt. Everest Taquito Farmers
-13,77,12,79,68.5,10.5,11,78.5,60,18.5,Blasphemous Hot Takes,The West Bank Occupiers
-13,78,2,66.5,31.5,35,5,95.5,43.5,52,Sac Fly by the Rook,The Traveling Secretaries
+13,73,14,127,81.5,45.5,4,118,71.5,46.5,Burnes Notice,All That is Wright
+13,74,13,98,74,24,7,96,77,19,Ketel Bells,At Witt's End
+13,75,6,162.5,112,50.5,1,82.5,61,21.5,The Novaks,The Talmudic Tunnelers
+13,76,9,104.5,52.5,52,8,156.5,72,84.5,Guts. Glory. JRam.,Mt. Everest Taquito Farmers
+13,77,12,103.5,87,16.5,11,166.5,92.5,74,Blasphemous Hot Takes,The West Bank Occupiers
+13,78,2,91.5,50.5,41,5,114,53,61,Sac Fly by the Rook,The Traveling Secretaries
 14,79,4,NA,NA,NA,7,NA,NA,NA,All That is Wright,At Witt's End
 14,80,1,NA,NA,NA,14,NA,NA,NA,The Talmudic Tunnelers,Burnes Notice
 14,81,8,NA,NA,NA,13,NA,NA,NA,Mt. Everest Taquito Farmers,Ketel Bells
