@@ -7155,12 +7155,59 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 76,NA,NA,NA,NA,NA,9
 77,NA,NA,NA,NA,NA,12
 78,NA,NA,NA,NA,NA,2
-79,NA,NA,NA,NA,NA,4
-80,NA,NA,NA,NA,NA,1
-81,NA,NA,NA,NA,NA,8
-82,NA,NA,NA,NA,NA,11
-83,NA,NA,NA,NA,NA,5
-84,NA,NA,NA,NA,NA,2
+79,14,Roman Anthony,5080767,NA,2.5,4
+79,14,Christian Yelich,31283,NA,9.5,4
+79,14,Willson Contreras,32532,NA,5.5,4
+79,14,Austin Riley,34982,NA,4.5,4
+79,14,Seiya Suzuki,4142424,NA,0,4
+79,14,Matt Shaw,4867667,NA,1,4
+79,14,Spencer Schwellenbach,4424862,NA,21.5,4
+79,14,Pete Crow-Armstrong,4717833,NA,5.5,4
+80,14,Oneil Cruz,39712,NA,0,1
+80,14,Adolis Garcia,35537,NA,0.5,1
+80,14,Paul Goldschmidt,31027,NA,-1,1
+80,14,Marcell Ozuna,31668,NA,1,1
+80,14,Jackson Chourio,4917869,NA,-0.5,1
+80,14,Kyle Tucker,34967,NA,1,1
+80,14,Byron Buxton,32655,NA,-1,1
+81,14,Raisel Iglesias,33618,1,2,8
+81,14,Edwin Diaz,35394,1,3,8
+81,14,Zach Neto,4666100,NA,11.5,8
+81,14,Elly De La Cruz,4917694,NA,12,8
+81,14,Harrison Bader,35062,NA,-0.5,8
+81,14,Bryan Woo,4629089,NA,21.5,8
+81,14,Ozzie Albies,33783,NA,3,8
+81,14,Ceddanne Rafaela,4987382,NA,4,8
+81,14,Chase Meidroth,5136929,NA,-0.5,8
+81,14,Matt Olson,32767,NA,3.5,8
+82,14,Marcus Semien,32146,NA,-0.5,11
+82,14,Trevor Larnach,41205,NA,7.5,11
+82,14,Trevor Story,32150,NA,7.5,11
+82,14,Giancarlo Stanton,30583,NA,-0.5,11
+82,14,Pete Alonso,37498,NA,-1,11
+82,14,Taylor Ward,34923,NA,6,11
+82,14,James Wood,4918256,NA,12,11
+82,14,Gunnar Henderson,42507,NA,1,11
+82,14,Cal Raleigh,41292,NA,8.5,11
+83,14,Sal Frelick,4417795,NA,2.5,5
+83,14,Ian Happ,34945,NA,-1.5,5
+83,14,Francisco Lindor,32129,NA,1,5
+83,14,Abraham Toro,40754,NA,1.5,5
+83,14,Luis Arraez,39572,NA,1,5
+83,14,Ty France,35591,NA,2,5
+83,14,Manny Machado,31097,NA,5.5,5
+83,14,Ronald Acuna Jr.,36185,NA,7,5
+83,14,J.P. Crawford,33210,NA,-0.5,5
+83,14,Geraldo Perdomo,41355,NA,7.5,5
+83,14,Wilyer Abreu,4990055,NA,2,5
+83,14,Gavin Sheets,40700,NA,4,5
+84,14,Jasson Dominguez,42401,NA,1.5,2
+84,14,Jackson Holliday,5080633,NA,11,2
+84,14,Wyatt Langford,4719324,NA,0.5,2
+84,14,Randy Arozarena,36488,NA,2.5,2
+84,14,Aaron Judge,33192,NA,7,2
+84,14,Reid Detmers,4326697,1,3.5,2
+84,14,Carlos Correa,32653,NA,5.5,2
 85,NA,NA,NA,NA,NA,1
 86,NA,NA,NA,NA,NA,7
 87,NA,NA,NA,NA,NA,14
@@ -7281,12 +7328,53 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 76,NA,NA,NA,NA,NA,8
 77,NA,NA,NA,NA,NA,11
 78,NA,NA,NA,NA,NA,5
-79,NA,NA,NA,NA,NA,7
-80,NA,NA,NA,NA,NA,14
-81,NA,NA,NA,NA,NA,13
-82,NA,NA,NA,NA,NA,6
-83,NA,NA,NA,NA,NA,9
-84,NA,NA,NA,NA,NA,12
+79,14,Spencer Steer,4722857,NA,4,7
+79,14,Lourdes Gurriel Jr.,36040,NA,1,7
+79,14,Jackson Merrill,4872691,NA,4,7
+79,14,Jake Cronenworth,36364,NA,7,7
+79,14,Jorge Polanco,32525,NA,-0.5,7
+79,14,Brendan Donovan,41773,NA,7,7
+79,14,Kyle Finnegan,36543,1,1,7
+79,14,Eugenio Suarez,32367,NA,0.5,7
+80,14,CJ Abrams,42402,NA,6,14
+80,14,Julio Rodriguez,41044,NA,11,14
+80,14,Jazz Chisholm Jr.,41433,NA,-1.5,14
+80,14,Brice Turang,41179,NA,1.5,14
+81,14,Austin Wells,4683349,NA,1.5,13
+81,14,Masyn Winn,4683365,NA,1.5,13
+81,14,Nolan Schanuel,4739755,NA,-1,13
+81,14,Lars Nootbaar,4448736,NA,7,13
+81,14,TJ Friedl,36020,NA,1.5,13
+81,14,Cedric Mullins,35578,NA,3,13
+81,14,Luis Garcia Jr.,40459,NA,4,13
+81,14,Alec Burleson,4345070,NA,7,13
+82,14,Matt McLain,4422899,NA,1.5,6
+82,14,Bailey Ober,3107919,NA,6.5,6
+82,14,Nick Lodolo,42433,NA,11,6
+82,14,Michael Harris II,42470,NA,0.5,6
+82,14,William Contreras,39895,NA,3,6
+82,14,Cody Bellinger,33912,NA,5,6
+82,14,Josh Naylor,35066,NA,3.5,6
+82,14,Jarren Duran,41610,NA,1.5,6
+82,14,Colton Cowser,4416990,NA,1,6
+82,14,Dansby Swanson,34895,NA,-0.5,6
+82,14,Brandon Nimmo,32159,NA,3,6
+83,14,Chad Patrick,5131708,NA,6.5,9
+83,14,Nico Hoerner,41219,NA,2,9
+83,14,Miguel Vargas,42453,NA,-2.5,9
+83,14,Jo Adell,40854,NA,2.5,9
+83,14,Jeff McNeil,33900,NA,0,9
+84,14,Ketel Marte,32512,NA,8,12
+84,14,Marcelo Mayer,4872648,NA,-1,12
+84,14,Mike Trout,30836,NA,4.5,12
+84,14,Bryan Reynolds,38980,NA,3.5,12
+84,14,Xander Bogaerts,31606,NA,1,12
+84,14,Juan Soto,36969,NA,6.5,12
+84,14,Garrett Whitlock,39674,1,-5.5,12
+84,14,Emilio Pagan,33403,1,3,12
+84,14,Nolan Arenado,31261,NA,3,12
+84,14,David Bednar,38303,1,5.5,12
+84,14,Fernando Tatis Jr.,35983,NA,8,12
 85,NA,NA,NA,NA,NA,4
 86,NA,NA,NA,NA,NA,8
 87,NA,NA,NA,NA,NA,11
