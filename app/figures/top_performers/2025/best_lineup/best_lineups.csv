@@ -285,25 +285,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Aroldis Chapman,30442,11,23,7.666666666666667,13
 15,RP,Emmanuel Clase,41743,2,21,5.25,13
 15,RP,Felix Bautista,4905859,5,20,6.666666666666667,13
-0,C,Cal Raleigh,41292,11,8.5,8.5,14
-1,1B,Alec Burleson,4345070,13,7,7,14
-2,2B,Jackson Holliday,5080633,2,11,11,14
-3,3B,Manny Machado,31097,5,5.5,5.5,14
-4,SS,Elly De La Cruz,4917694,8,12,12,14
-5,OF,James Wood,4918256,11,12,12,14
-5,OF,Julio Rodriguez,41044,14,11,11,14
-5,OF,Christian Yelich,31283,4,9.5,9.5,14
-5,OF,Fernando Tatis Jr.,35983,12,8,8,14
-5,OF,Trevor Larnach,41205,11,7.5,7.5,14
-6,2B/SS,Zach Neto,4666100,8,11.5,11.5,14
-7,1B/3B,Jake Cronenworth,36364,7,7,7,14
-12,UTIL,Ketel Marte,32512,12,8,8,14
+0,C,Cal Raleigh,41292,11,14.5,7.25,14
+1,1B,Matt Olson,32767,8,11.5,5.75,14
+2,2B,Ketel Marte,32512,12,15,7.5,14
+3,3B,Austin Riley,34982,4,8,4,14
+4,SS,Elly De La Cruz,4917694,8,14,7,14
+5,OF,Lars Nootbaar,4448736,13,14.5,7.25,14
+5,OF,James Wood,4918256,11,13.5,6.75,14
+5,OF,George Springer,32078,14,13,13,14
+5,OF,Christian Yelich,31283,4,11.5,5.75,14
+5,OF,Julio Rodriguez,41044,14,11.5,5.75,14
+6,2B/SS,Masyn Winn,4683365,13,13.5,6.75,14
+7,1B/3B,Jake Cronenworth,36364,7,10.5,5.25,14
+12,UTIL,Nico Hoerner,41219,9,13,6.5,14
+14,SP,Garrett Crochet,4297835,6,31.5,31.5,14
+14,SP,Ranger Suarez,39817,11,28,28,14
+14,SP,Taj Bradley,42480,13,26.5,26.5,14
+14,SP,Carlos Rodon,33696,14,23.5,23.5,14
+14,SP,Framber Valdez,36581,7,23,23,14
 14,SP,Bryan Woo,4629089,8,21.5,21.5,14
-14,SP,Spencer Schwellenbach,4424862,4,21.5,21.5,14
-14,SP,Nick Lodolo,42433,6,11,11,14
-14,SP,Bailey Ober,3107919,6,6.5,6.5,14
-14,SP,Chad Patrick,5131708,9,6.5,6.5,14
-14,SP,NA,NA,NA,NA,NA,14
-15,RP,David Bednar,38303,12,5.5,5.5,14
-15,RP,Reid Detmers,4326697,2,3.5,3.5,14
-15,RP,Edwin Diaz,35394,8,3,3,14
+15,RP,Jeremiah Estrada,41014,4,8,8,14
+15,RP,Raisel Iglesias,33618,8,7,3.5,14
+15,RP,Robert Suarez,4148749,14,7,7,14
