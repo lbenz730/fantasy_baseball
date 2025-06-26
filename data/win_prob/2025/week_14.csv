@@ -1,19 +1,25 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-All That is Wright,At Witt's End,0,7,0,8,8,0,0.7422531785355774,0.4980916406925082
+All That is Wright,At Witt's End,0,7,0,8,8,0,0.7422531785355776,0.4980916406925082
 All That is Wright,At Witt's End,1,6,26,7,8,-1,0.7797978238224086,0.6519786496753971
 All That is Wright,At Witt's End,2,5,29,6,7,-1,0.7934787518986907,0.677791241411788
-The Talmudic Tunnelers,Burnes Notice,0,7,0,8,8,0,0.49817813530809285,0.4980916406925082
+All That is Wright,At Witt's End,3,4,84,3,6,-3,0.8949030717132436,0.8961602846373844
+The Talmudic Tunnelers,Burnes Notice,0,7,0,8,8,0,0.4985117139760097,0.4980916406925082
 The Talmudic Tunnelers,Burnes Notice,1,6,-17,8,8,0,0.3894988260417899,0.30275033004568036
-The Talmudic Tunnelers,Burnes Notice,2,5,-34,7,6,1,0.3326996435026554,0.2790567225715656
+The Talmudic Tunnelers,Burnes Notice,2,5,-34,7,6,1,0.33355415953201334,0.2790567225715656
+The Talmudic Tunnelers,Burnes Notice,3,4,-5.5,4,6,-2,0.32276241008896894,0.2864604803154502
 Mt. Everest Taquito Farmers,Ketel Bells,0,7,0,8,8,0,0.36215748728997277,0.4980916406925082
 Mt. Everest Taquito Farmers,Ketel Bells,1,6,35,7,8,-1,0.5785853308372791,0.7261991113091983
 Mt. Everest Taquito Farmers,Ketel Bells,2,5,1,7,7,0,0.40330430364848213,0.5102461028218781
+Mt. Everest Taquito Farmers,Ketel Bells,3,4,-12,5,4,1,0.5001902850386686,0.4751259247050614
 The West Bank Occupiers,The Novaks,0,7,0,8,8,0,0.4822762449198859,0.4980916406925082
 The West Bank Occupiers,The Novaks,1,6,4.5,8,6,2,0.6263390276574918,0.7033144105195145
 The West Bank Occupiers,The Novaks,2,5,23,6,5,1,0.7058181276675511,0.7776467754227167
-The Traveling Secretaries,Guts. Glory. JRam.,0,7,0,8,8,0,0.5485114452450806,0.4980916406925082
+The West Bank Occupiers,The Novaks,3,4,41,3,3,0,0.8299423518402727,0.8793124271548542
+The Traveling Secretaries,Guts. Glory. JRam.,0,7,0,8,8,0,0.5488418659854996,0.4980916406925082
 The Traveling Secretaries,Guts. Glory. JRam.,1,6,23.5,8,7,1,0.7151701062902656,0.7809675186797213
 The Traveling Secretaries,Guts. Glory. JRam.,2,5,25,5,7,-2,0.595839435184566,0.5610894278912137
+The Traveling Secretaries,Guts. Glory. JRam.,3,4,-10,4,6,-2,0.3098984174788346,0.2528400087656328
 Sac Fly by the Rook,Blasphemous Hot Takes,0,7,0,8,8,0,0.2951084145489473,0.4980916406925082
 Sac Fly by the Rook,Blasphemous Hot Takes,1,6,-5,8,8,0,0.2869853960840279,0.4376385149202614
 Sac Fly by the Rook,Blasphemous Hot Takes,2,5,-5,8,6,2,0.37480137399661123,0.6224365260118037
+Sac Fly by the Rook,Blasphemous Hot Takes,3,4,-13.5,7,5,2,0.5345216094517902,0.5436162049890535
