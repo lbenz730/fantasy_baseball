@@ -25,7 +25,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.2,4,2,Bad Start,The Talmudic Tunnelers
 1,5.2,6+,1,Bad Start,The Talmudic Tunnelers
 1,6.0,0,4,QS,The Talmudic Tunnelers
-1,6.0,1,9,QS,The Talmudic Tunnelers
+1,6.0,1,10,QS,The Talmudic Tunnelers
 1,6.0,2,7,QS,The Talmudic Tunnelers
 1,6.0,3,6,QS,The Talmudic Tunnelers
 1,6.0,4,1,QS Potential,The Talmudic Tunnelers
@@ -61,7 +61,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.1,5,1,Bad Start,Sac Fly by the Rook
 2,4.1,6+,1,Bad Start,Sac Fly by the Rook
 2,4.2,3,2,Bad Start,Sac Fly by the Rook
-2,5.0,0,5,QS Potential,Sac Fly by the Rook
+2,5.0,0,6,QS Potential,Sac Fly by the Rook
 2,5.0,1,5,QS Potential,Sac Fly by the Rook
 2,5.0,2,3,QS Potential,Sac Fly by the Rook
 2,5.0,3,6,QS Potential,Sac Fly by the Rook
@@ -149,7 +149,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,4.0,3,1,Bad Start,The Traveling Secretaries
 5,4.0,4,1,Bad Start,The Traveling Secretaries
 5,4.0,5,1,Bad Start,The Traveling Secretaries
-5,4.0,6+,1,Bad Start,The Traveling Secretaries
+5,4.0,6+,2,Bad Start,The Traveling Secretaries
 5,4.1,5,1,Bad Start,The Traveling Secretaries
 5,4.2,1,2,Bad Start,The Traveling Secretaries
 5,4.2,2,2,Bad Start,The Traveling Secretaries
@@ -238,7 +238,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,7.0,6+,1,Bad Start,The Novaks
 6,< 3,4,1,Bad Start,The Novaks
 6,< 3,6+,1,Bad Start,The Novaks
-6,> 7,0,2,QS,The Novaks
+6,> 7,0,3,QS,The Novaks
 6,> 7,1,6,QS,The Novaks
 6,CG,2,1,CG,The Novaks
 6,CG,4,1,CG,The Novaks
@@ -270,14 +270,14 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,3,3,Blue Balls,At Witt's End
 7,5.2,4,1,Bad Start,At Witt's End
 7,6.0,0,6,QS,At Witt's End
-7,6.0,1,7,QS,At Witt's End
+7,6.0,1,8,QS,At Witt's End
 7,6.0,2,6,QS,At Witt's End
 7,6.0,3,5,QS,At Witt's End
 7,6.1,1,2,QS,At Witt's End
 7,6.2,0,1,QS,At Witt's End
 7,6.2,1,2,QS,At Witt's End
 7,6.2,2,2,QS,At Witt's End
-7,7.0,0,5,QS,At Witt's End
+7,7.0,0,6,QS,At Witt's End
 7,7.0,1,1,QS,At Witt's End
 7,7.0,2,6,QS,At Witt's End
 7,7.0,3,2,QS,At Witt's End
@@ -300,7 +300,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.0,0,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,1,7,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,2,5,QS Potential,Mt. Everest Taquito Farmers
-8,5.0,3,3,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,3,4,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,4,2,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,5,2,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,6+,1,Bad Start,Mt. Everest Taquito Farmers
@@ -402,7 +402,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.2,6+,1,Bad Start,The West Bank Occupiers
 11,6.0,0,5,QS,The West Bank Occupiers
 11,6.0,1,6,QS,The West Bank Occupiers
-11,6.0,2,4,QS,The West Bank Occupiers
+11,6.0,2,5,QS,The West Bank Occupiers
 11,6.0,3,7,QS,The West Bank Occupiers
 11,6.0,4,2,QS Potential,The West Bank Occupiers
 11,6.0,6+,2,Bad Start,The West Bank Occupiers
@@ -418,6 +418,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,< 3,3,1,Bad Start,The West Bank Occupiers
 11,< 3,4,2,Bad Start,The West Bank Occupiers
 11,< 3,6+,1,Bad Start,The West Bank Occupiers
+11,> 7,0,1,QS,The West Bank Occupiers
 11,> 7,1,2,QS,The West Bank Occupiers
 11,> 7,2,1,QS,The West Bank Occupiers
 11,CG,4,1,CG,The West Bank Occupiers
@@ -474,7 +475,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.2,5,1,Bad Start,Ketel Bells
 13,5.0,0,3,QS Potential,Ketel Bells
 13,5.0,1,4,QS Potential,Ketel Bells
-13,5.0,2,4,QS Potential,Ketel Bells
+13,5.0,2,5,QS Potential,Ketel Bells
 13,5.0,3,6,QS Potential,Ketel Bells
 13,5.1,1,1,QS Potential,Ketel Bells
 13,5.1,2,3,QS Potential,Ketel Bells
