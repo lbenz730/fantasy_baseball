@@ -1,20 +1,4 @@
 game_date,player,player_id,team_id
-2025-06-28,Clarke Schmidt,41085,9
-2025-06-28,Casey Mize,41167,5
-2025-06-28,Zack Littell,36052,8
-2025-06-28,Bryan Woo,4629089,8
-2025-06-28,Shohei Ohtani,39832,14
-2025-06-28,Seth Lugo,34873,4
-2025-06-28,Andrew Abbott,4414528,9
-2025-06-28,Chris Bassitt,33148,7
-2025-06-28,Lucas Giolito,32697,1
-2025-06-28,Robbie Ray,32175,14
-2025-06-28,Adrian Houser,32157,14
-2025-06-28,Sandy Alcantara,35241,6
-2025-06-28,Quinn Priester,42449,12
-2025-06-28,Jesus Luzardo,39667,12
-2025-06-28,Spencer Schwellenbach,4424862,4
-2025-06-28,Michael Soroka,34984,1
 2025-06-29,Matthew Liberatore,41173,9
 2025-06-29,Frankie Montas,33249,8
 2025-06-29,Taj Bradley,42480,13
@@ -23,7 +7,12 @@ game_date,player,player_id,team_id
 2025-06-29,Nick Lodolo,42433,6
 2025-06-29,Framber Valdez,36581,7
 2025-06-29,Kris Bubic,41201,5
+2025-06-29,Justin Verlander,6341,14
 2025-06-29,Chad Patrick,5131708,9
 2025-06-29,Luis Castillo,35124,11
+2025-06-29,Eduardo Rodriguez,32675,12
 2025-06-29,Tarik Skubal,42409,5
 2025-06-30,Chase Burns,4927516,12
+2025-07-01,Nick Pivetta,36071,4
+2025-07-01,Gavin Williams,4345076,6
+2025-07-01,Jacob deGrom,32796,13
