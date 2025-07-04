@@ -308,24 +308,24 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Jeremiah Estrada,41014,4,21,7,14
 15,RP,Jason Adam,32145,11,17,5.666666666666667,14
 0,C,Shea Langeliers,42598,5,15.5,7.75,15
-1,1B,Matt Olson,32767,8,14,7,15
+1,1B,Spencer Torkelson,4424286,1,20.5,6.833333333333333,15
 2,2B,Marcus Semien,32146,11,26.5,8.833333333333334,15
-3,3B,Addison Barger,4997589,14,13.5,4.5,15
-4,SS,Trevor Story,32150,11,17.5,5.833333333333333,15
-5,OF,Randy Arozarena,36488,2,28.5,9.5,15
+3,3B,Addison Barger,4997589,14,24,6,15
+4,SS,Bobby Witt Jr.,42403,7,17.5,4.375,15
+5,OF,George Springer,32078,14,42,10.5,15
+5,OF,Aaron Judge,33192,2,28,7,15
+5,OF,Randy Arozarena,36488,2,28,7,15
 5,OF,Wilyer Abreu,4990055,5,27,9,15
-5,OF,George Springer,32078,14,25,8.333333333333334,15
-5,OF,Aaron Judge,33192,2,24,8,15
-5,OF,Lourdes Gurriel Jr.,36040,7,17.5,5.833333333333333,15
-6,2B/SS,Gunnar Henderson,42507,11,15.5,5.166666666666667,15
-7,1B/3B,Spencer Torkelson,4424286,1,12.5,6.25,15
-12,UTIL,Adolis Garcia,35537,1,17,5.666666666666667,15
+5,OF,James Wood,4918256,11,21,7,15
+6,2B/SS,Trevor Story,32150,11,17.5,5.833333333333333,15
+7,1B/3B,Cam Smith,5080766,2,16.5,5.5,15
+12,UTIL,Lourdes Gurriel Jr.,36040,7,19,4.75,15
+14,SP,Robbie Ray,32175,14,36.5,36.5,15
 14,SP,Zack Wheeler,31267,1,32.5,32.5,15
+14,SP,Jose Soriano,40973,9,29,29,15
+14,SP,Eury Perez,4917854,2,28.5,28.5,15
 14,SP,Yoshinobu Yamamoto,4872587,8,28.5,28.5,15
 14,SP,Mitch Keller,33722,6,27,27,15
-14,SP,Cristopher Sanchez,42359,7,24,24,15
-14,SP,George Kirby,42406,11,23,23,15
-14,SP,Joe Ryan,42450,8,23,23,15
+15,RP,Edwin Diaz,35394,8,17,8.5,15
+15,RP,Jeff Hoffman,33841,4,17,5.666666666666667,15
 15,RP,Daniel Palencia,4875225,6,13,6.5,15
-15,RP,Mason Miller,4730225,1,12.5,6.25,15
-15,RP,Jeff Hoffman,33841,4,12,6,15
