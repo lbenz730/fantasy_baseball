@@ -1,17 +1,4 @@
 game_date,player,player_id,team_id
-2025-07-07,Shane Baz,39639,11
-2025-07-07,Brady Singer,41172,13
-2025-07-07,Andrew Heaney,32672,13
-2025-07-07,Noah Cameron,4417208,14
-2025-07-07,Jose Berrios,32811,7
-2025-07-07,Yoshinobu Yamamoto,4872587,8
-2025-07-07,Freddy Peralta,39825,1
-2025-07-07,Tanner Bibee,4345278,11
-2025-07-07,Jacob deGrom,32796,13
-2025-07-07,Yusei Kikuchi,41415,7
-2025-07-07,Zac Gallen,39910,1
-2025-07-07,Yu Darvish,32055,13
-2025-07-07,Cristopher Sanchez,42359,7
 2025-07-08,Clay Holmes,32827,4
 2025-07-08,Ryan Pepiot,4208281,8
 2025-07-08,Jack Flaherty,33837,5
@@ -24,6 +11,7 @@ game_date,player,player_id,team_id
 2025-07-08,Chris Bassitt,33148,7
 2025-07-08,Clayton Kershaw,28963,1
 2025-07-08,Jacob Misiorowski,5080761,4
+2025-07-08,Sonny Gray,32082,2
 2025-07-08,Hunter Brown,4717803,7
 2025-07-08,Nathan Eovaldi,31174,13
 2025-07-08,Jose Soriano,40973,9
@@ -33,8 +21,9 @@ game_date,player,player_id,team_id
 2025-07-08,Jeffrey Springs,35397,8
 2025-07-09,Zack Littell,36052,8
 2025-07-09,Reese Olson,4734319,4
+2025-07-09,Eric Lauer,39915,6
 2025-07-09,Adrian Houser,32157,14
-2025-07-09,Dustin May,40937,2
+2025-07-09,Tyler Glasnow,33190,13
 2025-07-09,Jesus Luzardo,39667,12
 2025-07-09,David Peterson,40921,14
 2025-07-09,Lucas Giolito,32697,1
@@ -42,5 +31,10 @@ game_date,player,player_id,team_id
 2025-07-09,Kris Bubic,41201,5
 2025-07-09,Cade Horton,4692526,5
 2025-07-09,MacKenzie Gore,39636,13
-2025-07-09,Sonny Gray,32082,2
+2025-07-09,Brandon Walter,4228724,5
 2025-07-09,Dylan Cease,34943,7
+2025-07-10,Charlie Morton,29155,5
+2025-07-10,Nick Lodolo,42433,6
+2025-07-10,Bryan Woo,4629089,8
+2025-07-10,Michael Soroka,34984,8
+2025-07-10,Spencer Strider,4307825,4
