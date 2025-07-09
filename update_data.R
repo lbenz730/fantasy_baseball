@@ -478,8 +478,8 @@ team_points <-
   team_points %>% 
   mutate('weight' = case_when(
     matchup_id == 1 ~ 4/7,
-    matchup_id == 14 & params$season != 2024 ~ 10/7,
-    matchup_id == 16 & params$season == 2024 ~ 10/7,
+    matchup_id == 14 & params$season < 2024 ~ 10/7,
+    matchup_id == 16 & params$season >= 2024 ~ 10/7,
     matchup_id > 21 ~ 0.5,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ 1,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
