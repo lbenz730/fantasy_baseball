@@ -4,7 +4,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,4.0,0,1,Bad Start,The Talmudic Tunnelers
 1,4.0,2,1,Bad Start,The Talmudic Tunnelers
 1,4.0,4,2,Bad Start,The Talmudic Tunnelers
-1,4.0,5,1,Bad Start,The Talmudic Tunnelers
+1,4.0,5,2,Bad Start,The Talmudic Tunnelers
 1,4.0,6+,1,Bad Start,The Talmudic Tunnelers
 1,4.1,1,1,Bad Start,The Talmudic Tunnelers
 1,4.2,2,1,Bad Start,The Talmudic Tunnelers
@@ -129,9 +129,9 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.0,0,4,QS Potential,All That is Wright
 4,5.0,1,5,QS Potential,All That is Wright
 4,5.0,2,9,QS Potential,All That is Wright
-4,5.0,3,3,QS Potential,All That is Wright
+4,5.0,3,4,QS Potential,All That is Wright
 4,5.0,4,2,Bad Start,All That is Wright
-4,5.0,5,2,Bad Start,All That is Wright
+4,5.0,5,3,Bad Start,All That is Wright
 4,5.1,0,1,QS Potential,All That is Wright
 4,5.1,2,1,QS Potential,All That is Wright
 4,5.1,3,1,QS Potential,All That is Wright
@@ -142,7 +142,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.2,3,1,Blue Balls,All That is Wright
 4,6.0,0,6,QS,All That is Wright
 4,6.0,1,11,QS,All That is Wright
-4,6.0,2,8,QS,All That is Wright
+4,6.0,2,9,QS,All That is Wright
 4,6.0,3,5,QS,All That is Wright
 4,6.0,4,2,QS Potential,All That is Wright
 4,6.0,5,2,Bad Start,All That is Wright
@@ -210,7 +210,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,6.2,2,1,QS,The Traveling Secretaries
 5,6.2,3,1,QS,The Traveling Secretaries
 5,7.0,0,12,QS,The Traveling Secretaries
-5,7.0,1,6,QS,The Traveling Secretaries
+5,7.0,1,7,QS,The Traveling Secretaries
 5,7.0,2,1,QS,The Traveling Secretaries
 5,7.0,3,1,QS,The Traveling Secretaries
 5,7.0,4,1,QS Potential,The Traveling Secretaries
@@ -263,7 +263,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,6.2,5,1,Bad Start,The Novaks
 6,7.0,0,5,QS,The Novaks
 6,7.0,1,2,QS,The Novaks
-6,7.0,2,4,QS,The Novaks
+6,7.0,2,5,QS,The Novaks
 6,7.0,3,1,QS,The Novaks
 6,7.0,4,1,QS Potential,The Novaks
 6,7.0,5,1,Bad Start,The Novaks
@@ -272,7 +272,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,< 3,6+,1,Bad Start,The Novaks
 6,> 7,0,3,QS,The Novaks
 6,> 7,1,6,QS,The Novaks
-6,CG,0,1,CG,The Novaks
+6,CG,0,2,CG,The Novaks
 6,CG,2,1,CG,The Novaks
 6,CG,4,1,CG,The Novaks
 7,3.0,4,1,Bad Start,At Witt's End
@@ -290,8 +290,8 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.2,5,1,Bad Start,At Witt's End
 7,4.2,6+,1,Bad Start,At Witt's End
 7,5.0,0,2,QS Potential,At Witt's End
-7,5.0,1,2,QS Potential,At Witt's End
-7,5.0,2,3,QS Potential,At Witt's End
+7,5.0,1,3,QS Potential,At Witt's End
+7,5.0,2,4,QS Potential,At Witt's End
 7,5.0,3,3,QS Potential,At Witt's End
 7,5.0,4,4,Bad Start,At Witt's End
 7,5.0,5,3,Bad Start,At Witt's End
@@ -323,6 +323,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,< 3,6+,2,Bad Start,At Witt's End
 7,> 7,0,3,QS,At Witt's End
 7,> 7,1,3,QS,At Witt's End
+7,> 7,3,1,QS,At Witt's End
 7,CG,1,4,CG,At Witt's End
 7,CG,2,1,CG,At Witt's End
 8,3.2,3,1,Bad Start,Mt. Everest Taquito Farmers
@@ -400,6 +401,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.0,6+,1,Bad Start,Guts. Glory. JRam.
 9,5.1,0,1,QS Potential,Guts. Glory. JRam.
 9,5.1,2,2,QS Potential,Guts. Glory. JRam.
+9,5.1,4,1,Bad Start,Guts. Glory. JRam.
 9,5.1,6+,1,Bad Start,Guts. Glory. JRam.
 9,5.2,1,5,Blue Balls,Guts. Glory. JRam.
 9,5.2,3,2,Blue Balls,Guts. Glory. JRam.
@@ -417,6 +419,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,7.0,0,8,QS,Guts. Glory. JRam.
 9,7.0,1,4,QS,Guts. Glory. JRam.
 9,7.0,2,4,QS,Guts. Glory. JRam.
+9,< 3,4,1,Bad Start,Guts. Glory. JRam.
 9,> 7,0,4,QS,Guts. Glory. JRam.
 9,> 7,1,3,QS,Guts. Glory. JRam.
 9,CG,0,1,CG,Guts. Glory. JRam.
@@ -440,7 +443,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.0,0,2,QS Potential,The West Bank Occupiers
 11,5.0,1,1,QS Potential,The West Bank Occupiers
 11,5.0,2,12,QS Potential,The West Bank Occupiers
-11,5.0,3,7,QS Potential,The West Bank Occupiers
+11,5.0,3,8,QS Potential,The West Bank Occupiers
 11,5.0,4,4,Bad Start,The West Bank Occupiers
 11,5.0,5,3,Bad Start,The West Bank Occupiers
 11,5.0,6+,1,Bad Start,The West Bank Occupiers
@@ -498,6 +501,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.0,3,4,QS Potential,Blasphemous Hot Takes
 12,5.0,4,4,Bad Start,Blasphemous Hot Takes
 12,5.0,5,2,Bad Start,Blasphemous Hot Takes
+12,5.0,6+,1,Bad Start,Blasphemous Hot Takes
 12,5.1,1,3,QS Potential,Blasphemous Hot Takes
 12,5.1,2,3,QS Potential,Blasphemous Hot Takes
 12,5.1,3,4,QS Potential,Blasphemous Hot Takes
@@ -565,7 +569,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,6.2,0,3,QS,Ketel Bells
 13,6.2,4,1,QS Potential,Ketel Bells
 13,7.0,0,6,QS,Ketel Bells
-13,7.0,1,4,QS,Ketel Bells
+13,7.0,1,5,QS,Ketel Bells
 13,7.0,2,4,QS,Ketel Bells
 13,< 3,0,1,Bad Start,Ketel Bells
 13,< 3,2,2,Bad Start,Ketel Bells
