@@ -351,19 +351,19 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Emmanuel Clase,41743,2,29,5.8,16
 15,RP,Trevor Megill,40080,4,26,6.5,16
 15,RP,Jeremiah Estrada,41014,4,25.5,5.1,16
-0,C,Willson Contreras,32532,4,25.5,6.375,17
-1,1B,Salvador Perez,31127,8,23.5,7.833333333333333,17
-2,2B,Brendan Donovan,41773,7,19,4.75,17
+0,C,Willson Contreras,32532,4,32,6.4,17
+1,1B,Nick Kurtz,4966637,6,53.5,10.7,17
+2,2B,Chase Meidroth,5136929,8,21.5,5.375,17
 3,3B,Jose Ramirez,32801,9,27,6.75,17
-4,SS,Willy Adames,33675,1,21,7,17
+4,SS,Willy Adames,33675,1,24,6,17
 5,OF,Steven Kwan,41996,5,23.5,5.875,17
-5,OF,Ramon Laureano,35142,9,21.5,5.375,17
-5,OF,George Springer,32078,14,17.5,4.375,17
-5,OF,Andy Pages,42468,12,16,5.333333333333333,17
-5,OF,Mickey Moniak,36181,5,14,4.666666666666667,17
-6,2B/SS,Corey Seager,32691,2,16.5,5.5,17
-7,1B/3B,Rafael Devers,33859,2,22,7.333333333333333,17
-12,UTIL,Nick Kurtz,4966637,6,20.5,5.125,17
+5,OF,Mickey Moniak,36181,5,22,5.5,17
+5,OF,George Springer,32078,14,21,4.2,17
+5,OF,Ramon Laureano,35142,9,21,4.2,17
+5,OF,Andy Pages,42468,12,20,5,17
+6,2B/SS,Bo Bichette,38904,6,19,3.8,17
+7,1B/3B,Vladimir Guerrero Jr.,35002,4,25.5,5.1,17
+12,UTIL,Kyle Schwarber,33712,4,30.5,7.625,17
 14,SP,Nick Lodolo,42433,6,46,46,17
 14,SP,Cristopher Sanchez,42359,7,43,43,17
 14,SP,Tyler Glasnow,33190,13,32.5,32.5,17
@@ -371,5 +371,5 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 14,SP,Eric Lauer,39915,11,28,28,17
 14,SP,Matthew Boyd,34401,11,27.5,27.5,17
 15,RP,Edwin Diaz,35394,8,17,8.5,17
+15,RP,Andres Munoz,40939,2,16.5,5.5,17
 15,RP,Emmanuel Clase,41743,2,14,7,17
-15,RP,Josh Hader,32760,14,12,6,17
