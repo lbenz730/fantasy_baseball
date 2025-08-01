@@ -342,7 +342,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,4.0,3,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.0,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.0,5,1,Bad Start,Mt. Everest Taquito Farmers
-8,4.0,6+,3,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,6+,4,Bad Start,Mt. Everest Taquito Farmers
 8,4.1,2,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,3,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,4,1,Bad Start,Mt. Everest Taquito Farmers
@@ -412,7 +412,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.0,5,2,Bad Start,Guts. Glory. JRam.
 9,5.0,6+,1,Bad Start,Guts. Glory. JRam.
 9,5.1,0,1,QS Potential,Guts. Glory. JRam.
-9,5.1,2,2,QS Potential,Guts. Glory. JRam.
+9,5.1,2,3,QS Potential,Guts. Glory. JRam.
 9,5.1,4,1,Bad Start,Guts. Glory. JRam.
 9,5.1,6+,1,Bad Start,Guts. Glory. JRam.
 9,5.2,1,5,Blue Balls,Guts. Glory. JRam.
@@ -469,7 +469,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.2,4,1,Bad Start,The West Bank Occupiers
 11,5.2,5,1,Bad Start,The West Bank Occupiers
 11,5.2,6+,1,Bad Start,The West Bank Occupiers
-11,6.0,0,5,QS,The West Bank Occupiers
+11,6.0,0,6,QS,The West Bank Occupiers
 11,6.0,1,7,QS,The West Bank Occupiers
 11,6.0,2,7,QS,The West Bank Occupiers
 11,6.0,3,8,QS,The West Bank Occupiers
