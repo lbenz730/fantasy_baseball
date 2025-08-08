@@ -395,7 +395,7 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Raisel Iglesias,33618,8,22,5.5,18
 15,RP,Jeremiah Estrada,41014,4,17.5,4.375,18
 15,RP,Jeff Hoffman,33841,4,16.5,4.125,18
-0,C,Shea Langeliers,42598,9,22.5,11.25,19
+0,C,Shea Langeliers,42598,9,24,8,19
 1,1B,Vladimir Guerrero Jr.,35002,4,25.5,8.5,19
 2,2B,Ernie Clement,41287,12,22.5,7.5,19
 3,3B,Max Muncy,33303,6,16.5,8.25,19
@@ -403,11 +403,11 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 5,OF,Nathan Lukes,35682,11,28.5,9.5,19
 5,OF,Daulton Varsho,40963,12,27,13.5,19
 5,OF,Isaac Collins,42959,4,22,7.333333333333333,19
+5,OF,Jurickson Profar,31117,12,19,4.75,19
 5,OF,Kerry Carpenter,42714,5,17.5,5.833333333333333,19
-5,OF,Jo Adell,40854,9,16.5,5.5,19
 6,2B/SS,Xander Bogaerts,31606,12,16.5,5.5,19
-7,1B/3B,Josh Naylor,35066,6,23,11.5,19
-12,UTIL,Teoscar Hernandez,33377,8,16.5,5.5,19
+7,1B/3B,Josh Naylor,35066,6,22.5,7.5,19
+12,UTIL,Jo Adell,40854,9,16.5,5.5,19
 14,SP,Nathan Eovaldi,31174,13,34,34,19
 14,SP,Gavin Williams,4345076,6,31.5,31.5,19
 14,SP,Bryan Woo,4629089,8,31,31,19
