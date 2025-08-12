@@ -109,16 +109,16 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 18,108,13,286.5,201.5,85,14,342.5,208.5,134,Ketel Bells,Burnes Notice
 19,109,2,294.5,162.5,132,4,320,217.5,102.5,Sac Fly by the Rook,All That is Wright
 19,110,5,221,151,70,12,460.5,295.5,165,The Traveling Secretaries,Blasphemous Hot Takes
-19,111,11,365.5,245,120.5,9,329,196.5,132.5,The West Bank Occupiers,Guts. Glory. JRam.
+19,111,11,366.5,246,120.5,9,329,196.5,132.5,The West Bank Occupiers,Guts. Glory. JRam.
 19,112,8,295,137.5,157.5,6,420.5,263,157.5,Mt. Everest Taquito Farmers,The Novaks
 19,113,1,286,195,91,13,342.5,167.5,175,The Talmudic Tunnelers,Ketel Bells
 19,114,7,273.5,161,112.5,14,279,212.5,66.5,At Witt's End,Burnes Notice
-20,115,4,NA,NA,NA,12,NA,NA,NA,All That is Wright,Blasphemous Hot Takes
-20,116,9,NA,NA,NA,2,NA,NA,NA,Guts. Glory. JRam.,Sac Fly by the Rook
-20,117,6,NA,NA,NA,5,NA,NA,NA,The Novaks,The Traveling Secretaries
-20,118,13,NA,NA,NA,11,NA,NA,NA,Ketel Bells,The West Bank Occupiers
-20,119,14,NA,NA,NA,8,NA,NA,NA,Burnes Notice,Mt. Everest Taquito Farmers
-20,120,7,NA,NA,NA,1,NA,NA,NA,At Witt's End,The Talmudic Tunnelers
+20,115,4,49,28.5,20.5,12,45,21,24,All That is Wright,Blasphemous Hot Takes
+20,116,9,59,26,33,2,71.5,40,31.5,Guts. Glory. JRam.,Sac Fly by the Rook
+20,117,6,40.5,31,9.5,5,19,16,3,The Novaks,The Traveling Secretaries
+20,118,13,40,15.5,24.5,11,30.5,30.5,NA,Ketel Bells,The West Bank Occupiers
+20,119,14,31.5,20.5,11,8,44,38.5,5.5,Burnes Notice,Mt. Everest Taquito Farmers
+20,120,7,15,15,NA,1,40.5,24.5,16,At Witt's End,The Talmudic Tunnelers
 21,121,9,NA,NA,NA,4,NA,NA,NA,Guts. Glory. JRam.,All That is Wright
 21,122,12,NA,NA,NA,6,NA,NA,NA,Blasphemous Hot Takes,The Novaks
 21,123,2,NA,NA,NA,13,NA,NA,NA,Sac Fly by the Rook,Ketel Bells
