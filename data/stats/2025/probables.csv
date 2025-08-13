@@ -1,18 +1,4 @@
 game_date,player,player_id,team_id
-2025-08-12,George Kirby,42406,11
-2025-08-12,Dean Kremer,38295,5
-2025-08-12,Ranger Suarez,39817,11
-2025-08-12,Carlos Rodon,33696,14
-2025-08-12,Jose Berrios,32811,7
-2025-08-12,Spencer Strider,4307825,4
-2025-08-12,Michael Wacha,32640,8
-2025-08-12,Jack Flaherty,33837,5
-2025-08-12,Paul Skenes,4719507,13
-2025-08-12,Freddy Peralta,39825,1
-2025-08-12,Jack Leiter,4622181,5
-2025-08-12,Robbie Ray,32175,14
-2025-08-12,Shane Baz,39639,11
-2025-08-12,Jacob Lopez,42239,5
 2025-08-13,Seth Lugo,34873,4
 2025-08-13,Mitch Keller,33722,6
 2025-08-13,Brandon Woodruff,37515,6
@@ -27,6 +13,7 @@ game_date,player,player_id,team_id
 2025-08-13,Eury Perez,4917854,2
 2025-08-13,Gavin Williams,4345076,6
 2025-08-13,Joe Ryan,42450,8
+2025-08-13,Cade Horton,4692526,1
 2025-08-13,Kevin Gausman,32667,6
 2025-08-13,Hunter Brown,4717803,7
 2025-08-13,David Peterson,40921,14
@@ -38,3 +25,4 @@ game_date,player,player_id,team_id
 2025-08-14,Tanner Bibee,4345278,11
 2025-08-14,Kodai Senga,4142421,12
 2025-08-14,Tarik Skubal,42409,5
+2025-08-15,Sean Manaea,33244,7
