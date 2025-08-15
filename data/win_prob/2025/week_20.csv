@@ -1,25 +1,31 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-All That is Wright,Blasphemous Hot Takes,0,7,0,8,8,0,0.5002282405294104,0.4980916406925082
-All That is Wright,Blasphemous Hot Takes,1,6,4,7,7,0,0.5231715123542979,0.5465797984047903
-All That is Wright,Blasphemous Hot Takes,2,5,-51.5,6,7,-1,0.12758280104564895,0.0857929024183387
-All That is Wright,Blasphemous Hot Takes,3,4,-54.5,3,6,-3,0.05782886963335823,0.04848916437467689
+All That is Wright,Blasphemous Hot Takes,0,7,0,8,8,0,0.5004564809637014,0.4980916406925082
+All That is Wright,Blasphemous Hot Takes,1,6,3,7,7,0,0.5126149189874706,0.5345044197664544
+All That is Wright,Blasphemous Hot Takes,2,5,-52.5,6,7,-1,0.11850677269714373,0.0828110942253121
+All That is Wright,Blasphemous Hot Takes,3,4,-55.5,3,6,-3,0.056843773093068005,0.046807887982544295
+All That is Wright,Blasphemous Hot Takes,4,3,-101,3,3,0,0.007794434045092942,0.007256177387320403
 Guts. Glory. JRam.,Sac Fly by the Rook,0,7,0,8,8,0,0.5080842778114351,0.4980916406925082
 Guts. Glory. JRam.,Sac Fly by the Rook,1,6,-13.5,7,6,1,0.4734374840562653,0.460705319794571
 Guts. Glory. JRam.,Sac Fly by the Rook,2,5,-26.5,7,5,2,0.45302349365054495,0.4201543945222559
 Guts. Glory. JRam.,Sac Fly by the Rook,3,4,-9.5,6,4,2,0.5611834345864475,0.5812355571027693
+Guts. Glory. JRam.,Sac Fly by the Rook,4,3,2.5,5,4,1,0.593540587051396,0.6131003599548558
 The Novaks,The Traveling Secretaries,0,7,0,8,8,0,0.6059168306905702,0.4980916406925082
 The Novaks,The Traveling Secretaries,1,6,21.5,7,8,-1,0.6581844574046715,0.611568573034099
 The Novaks,The Traveling Secretaries,2,5,-46.5,7,4,3,0.4373320376782912,0.31295480127597747
 The Novaks,The Traveling Secretaries,3,4,-23.5,3,4,-1,0.20417601770554827,0.21679113837057576
+The Novaks,The Traveling Secretaries,4,3,-47,3,3,0,0.1197046326659216,0.09170904112959581
 Ketel Bells,The West Bank Occupiers,0,7,0,8,8,0,0.5007549489221615,0.4980916406925082
 Ketel Bells,The West Bank Occupiers,1,6,9.5,6,8,-2,0.43699530554295996,0.4150760865450608
 Ketel Bells,The West Bank Occupiers,2,5,-30.5,5,5,0,0.25949573514895374,0.1838235854127373
 Ketel Bells,The West Bank Occupiers,3,4,-45.5,5,5,0,0.14963087313012738,0.09796806537292684
-Burnes Notice,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.6356511767302887,0.4980916406925082
+Ketel Bells,The West Bank Occupiers,4,3,-77,5,3,2,0.07691366896496381,0.09509239720633453
+Burnes Notice,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.6358625914405402,0.4980916406925082
 Burnes Notice,Mt. Everest Taquito Farmers,1,6,-12.5,7,5,2,0.6022342345401255,0.5530851589066823
 Burnes Notice,Mt. Everest Taquito Farmers,2,5,39,5,4,1,0.8671742583791353,0.866443467875291
 Burnes Notice,Mt. Everest Taquito Farmers,3,4,24,4,3,1,0.7945277258283852,0.7842524272834052
+Burnes Notice,Mt. Everest Taquito Farmers,4,3,11.5,4,3,1,0.6966202237170394,0.6916646847930823
 At Witt's End,The Talmudic Tunnelers,0,7,0,8,8,0,0.33135390352884214,0.4980916406925082
 At Witt's End,The Talmudic Tunnelers,1,6,-25.5,8,8,0,0.21761153398657548,0.22312698059800795
 At Witt's End,The Talmudic Tunnelers,2,5,-28.5,7,7,0,0.19366120985466312,0.19886444465905778
 At Witt's End,The Talmudic Tunnelers,3,4,-19.5,5,5,0,0.3533513586750172,0.27772106778151934
+At Witt's End,The Talmudic Tunnelers,4,3,-25,5,4,1,0.385632333307655,0.3539787985344298
