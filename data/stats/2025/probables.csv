@@ -1,26 +1,13 @@
 game_date,player,player_id,team_id
-2025-08-18,Freddy Peralta,39825,1
-2025-08-18,Jack Flaherty,33837,5
-2025-08-18,Kevin Gausman,32667,6
-2025-08-18,Paul Skenes,4719507,13
-2025-08-18,Matthew Liberatore,41173,2
-2025-08-18,Eury Perez,4917854,2
-2025-08-18,Logan Gilbert,41221,4
-2025-08-18,Ranger Suarez,39817,11
-2025-08-18,Trevor Rogers,39640,9
-2025-08-18,Spencer Strider,4307825,4
-2025-08-18,Jack Leiter,4622181,5
-2025-08-18,Michael Wacha,32640,8
-2025-08-18,Yoshinobu Yamamoto,4872587,8
-2025-08-18,Gavin Williams,4345076,6
-2025-08-18,Robbie Ray,32175,14
+2025-08-19,Matthew Boyd,34401,11
+2025-08-19,Brandon Woodruff,37515,6
 2025-08-19,Hunter Brown,4717803,7
 2025-08-19,Tarik Skubal,42409,5
 2025-08-19,Max Scherzer,28976,12
-2025-08-19,Mitch Keller,33722,6
 2025-08-19,Michael McGreevy,4424141,8
 2025-08-19,Edward Cabrera,40944,9
 2025-08-19,David Peterson,40921,14
+2025-08-19,Bryce Miller,4654313,7
 2025-08-19,Cristopher Sanchez,42359,7
 2025-08-19,Carlos Rodon,33696,14
 2025-08-19,Shane Baz,39639,11
@@ -28,8 +15,6 @@ game_date,player,player_id,team_id
 2025-08-19,Seth Lugo,34873,4
 2025-08-19,Jacob Lopez,42239,5
 2025-08-19,Joe Ryan,42450,8
-2025-08-19,Brandon Woodruff,37515,6
-2025-08-19,Matthew Boyd,34401,11
 2025-08-19,Hunter Greene,39635,4
 2025-08-19,Tanner Bibee,4345278,11
 2025-08-19,Nick Pivetta,36071,4
@@ -38,6 +23,7 @@ game_date,player,player_id,team_id
 2025-08-20,Jesus Luzardo,39667,12
 2025-08-20,Framber Valdez,36581,7
 2025-08-20,Charlie Morton,29155,1
+2025-08-20,Brandon Pfaadt,4721302,8
 2025-08-20,Kodai Senga,4142421,12
 2025-08-20,Hurston Waldrep,4740117,9
 2025-08-20,Drew Rasmussen,42584,1
@@ -46,3 +32,9 @@ game_date,player,player_id,team_id
 2025-08-20,Jacob Misiorowski,5080761,12
 2025-08-20,Shohei Ohtani,39832,14
 2025-08-20,Yusei Kikuchi,41415,7
+2025-08-21,Quinn Priester,42449,6
+2025-08-21,Shota Imanaga,5134630,2
+2025-08-21,Sean Manaea,33244,7
+2025-08-21,MacKenzie Gore,39636,13
+2025-08-21,Dylan Cease,34943,7
+2025-08-21,Lucas Giolito,32697,1
