@@ -440,16 +440,16 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Kyle Finnegan,36543,6,21.5,5.375,20
 15,RP,Luke Weaver,33770,9,20,6.666666666666667,20
 0,C,J.T. Realmuto,32177,13,20.5,6.833333333333333,21
-1,1B,Vinnie Pasquantino,4109109,13,25,8.333333333333334,21
-2,2B,Brice Turang,41179,14,18,4.5,21
-3,3B,Jose Ramirez,32801,9,13.5,4.5,21
+1,1B,Vinnie Pasquantino,4109109,13,30,7.5,21
+2,2B,Brice Turang,41179,14,25.5,5.1,21
+3,3B,Manny Machado,31097,5,18.5,4.625,21
 4,SS,Trea Turner,33710,14,30.5,10.166666666666666,21
 5,OF,Jurickson Profar,31117,12,26.5,8.833333333333334,21
-5,OF,Ryan O'Hearn,35183,7,20,6.666666666666667,21
-5,OF,George Springer,32078,14,18.5,6.166666666666667,21
-5,OF,Gavin Sheets,40700,5,18,6,21
-5,OF,Cody Bellinger,33912,6,17,8.5,21
-6,2B/SS,Bryson Stott,42417,12,17,8.5,21
+5,OF,Brenton Doyle,42462,9,24,6,21
+5,OF,Ryan O'Hearn,35183,7,21.5,5.375,21
+5,OF,Tyler Soderstrom,4686066,12,20,6.666666666666667,21
+5,OF,Cody Bellinger,33912,6,19,6.333333333333333,21
+6,2B/SS,Bobby Witt Jr.,42403,7,20,5,21
 7,1B/3B,Bryce Harper,30951,9,22.5,7.5,21
 12,UTIL,Kyle Schwarber,33712,4,24,8,21
 14,SP,David Peterson,40921,14,32.5,32.5,21
@@ -459,5 +459,5 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 14,SP,Hurston Waldrep,4740117,9,28.5,28.5,21
 14,SP,Robbie Ray,32175,14,27,27,21
 15,RP,Dennis Santana,39801,7,13.5,6.75,21
-15,RP,Raisel Iglesias,33618,8,13,6.5,21
-15,RP,Brad Keller,35292,12,10,5,21
+15,RP,Abner Uribe,4917865,9,13,4.333333333333333,21
+15,RP,Carlos Estevez,34861,13,13,6.5,21
