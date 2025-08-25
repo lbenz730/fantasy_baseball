@@ -1337,25 +1337,31 @@ shinyServer(function(input, output, session) {
   output$leverage_plot <- 
     plotly::renderPlotly({
       
-      p <- 
-        ggplot(leverage_long, aes(x = prob, y = fct_reorder(label, leverage))) + 
-        facet_wrap(~fct_rev(tools::toTitleCase(event)), ncol = 1, scales = 'free_y') + 
-        geom_line() +
-        geom_point(aes(color = win_loss, alpha = win_loss, text = text), size = 4) + 
-        scale_x_continuous(limits = c(0,1), labels = scales::percent) + 
-        scale_color_manual(values = c('darkgrey', 'red', 'seagreen'), labels = c('Current', 'Loss', 'Win')) + 
-        scale_alpha_manual(values = c(0.6, 1, 1), guide = 'none') +
-        theme(legend.position = 'none',
-              axis.title = element_text(size = 24),
-              axis.text = element_text(size = 16),
-              legend.text = element_text(size = 16),
-              legend.title = element_text(size = 24),
-              plot.title = element_text(hjust = 0.5, size = 28)) + 
-        labs(x = 'Probability', 
-             y = '',
-             color = 'Result This Week',
-             alpha = 'Result This Week',
-             title = 'Playoff + Ferry Leverage')
+      if(params$current_matchup <= max(df_start$matchup_id[!df_start$playoffs])) {
+        p <- 
+          ggplot(leverage_long, aes(x = prob, y = fct_reorder(label, leverage))) + 
+          facet_wrap(~fct_rev(tools::toTitleCase(event)), ncol = 1, scales = 'free_y') + 
+          geom_line() +
+          geom_point(aes(color = win_loss, alpha = win_loss, text = text), size = 4) + 
+          scale_x_continuous(limits = c(0,1), labels = scales::percent) + 
+          scale_color_manual(values = c('darkgrey', 'red', 'seagreen'), labels = c('Current', 'Loss', 'Win')) + 
+          scale_alpha_manual(values = c(0.6, 1, 1), guide = 'none') +
+          theme(legend.position = 'none',
+                axis.title = element_text(size = 24),
+                axis.text = element_text(size = 16),
+                legend.text = element_text(size = 16),
+                legend.title = element_text(size = 24),
+                plot.title = element_text(hjust = 0.5, size = 28)) + 
+          labs(x = 'Probability', 
+               y = '',
+               color = 'Result This Week',
+               alpha = 'Result This Week',
+               title = 'Playoff + Ferry Leverage')
+      } else {
+        p <- 
+          ggplot() + 
+          theme_void()
+      }
       
       plotly::ggplotly(p, tooltip = 'text',
                        'height' = 900,
@@ -1371,388 +1377,113 @@ shinyServer(function(input, output, session) {
       
       
     })
+  
+  ######################
+  ### Points by Week ###
+  ######################
+  output$ppw_1 <- renderPlot({
     
-    ######################
-    ### Points by Week ###
-    ######################
-    output$ppw_1 <- renderPlot({
-      
-      ggplot(team_points,  aes(x = matchup_id, y = adj_pts)) +
-        facet_wrap(~team) +
-        geom_point(data = select(team_points, matchup_id, adj_pts),
-                   aes(x = matchup_id, y = adj_pts), fill = "grey", alpha = 0.2) +
-        geom_line(data = mean_pts_by_week, alpha = 0.4, lty = 2) +
-        geom_point(aes(color = team), size = 2) +
-        labs(x = "Week",
-             y = "Points",
-             subtitle = "Total Points (Normalized to 7 Day Matchup)",
-             title = "Fantasy Points by Week") +
-        scale_x_continuous(limits = c(1, params$current_matchup), breaks = 0:params$current_matchup)
-    },
-    height = 750,
-    width = 1334)
+    ggplot(team_points,  aes(x = matchup_id, y = adj_pts)) +
+      facet_wrap(~team) +
+      geom_point(data = select(team_points, matchup_id, adj_pts),
+                 aes(x = matchup_id, y = adj_pts), fill = "grey", alpha = 0.2) +
+      geom_line(data = mean_pts_by_week, alpha = 0.4, lty = 2) +
+      geom_point(aes(color = team), size = 2) +
+      labs(x = "Week",
+           y = "Points",
+           subtitle = "Total Points (Normalized to 7 Day Matchup)",
+           title = "Fantasy Points by Week") +
+      scale_x_continuous(limits = c(1, params$current_matchup), breaks = 0:params$current_matchup)
+  },
+  height = 750,
+  width = 1334)
+  
+  output$ppw_2 <- renderPlot({
+    ggplot(team_points,  aes(x = matchup_id, y = adj_batting_pts)) +
+      facet_wrap(~team) +
+      geom_point(data = select(team_points, matchup_id, adj_batting_pts),
+                 aes(x = matchup_id, y = adj_batting_pts), fill = "grey", alpha = 0.2) +
+      geom_line(data = mean_pts_by_week, alpha = 0.4, lty = 2) +
+      geom_point(aes(color = team), size = 2) +
+      labs(x = "Week",
+           y = "Points",
+           subtitle = "Batting Points (Normalized to 7 Day Matchup)",
+           title = "Fantasy Points by Week") +
+      scale_x_continuous(limits = c(1, params$current_matchup), breaks = 0:params$current_matchup)
+  },
+  height = 750,
+  width = 1334)
+  
+  output$ppw_3 <- renderPlot({
+    ggplot(team_points,  aes(x = matchup_id, y = adj_pitching_pts)) +
+      facet_wrap(~team) +
+      geom_point(data = select(team_points, matchup_id, adj_pitching_pts),
+                 aes(x = matchup_id, y = adj_pitching_pts), fill = "grey", alpha = 0.2) +
+      geom_line(data = mean_pts_by_week, alpha = 0.4, lty = 2) +
+      geom_point(aes(color = team), size = 2) +
+      labs(x = "Week",
+           y = "Points",
+           subtitle = "Pitching Points (Normalized to 7 Day Matchup)",
+           title = "Fantasy Points by Week") +
+      scale_x_continuous(limits = c(1, params$current_matchup), breaks = 0:params$current_matchup)
+  },
+  height = 750,
+  width = 1334)
+  
+  output$bump <- renderPlot({
     
-    output$ppw_2 <- renderPlot({
-      ggplot(team_points,  aes(x = matchup_id, y = adj_batting_pts)) +
-        facet_wrap(~team) +
-        geom_point(data = select(team_points, matchup_id, adj_batting_pts),
-                   aes(x = matchup_id, y = adj_batting_pts), fill = "grey", alpha = 0.2) +
-        geom_line(data = mean_pts_by_week, alpha = 0.4, lty = 2) +
-        geom_point(aes(color = team), size = 2) +
-        labs(x = "Week",
-             y = "Points",
-             subtitle = "Batting Points (Normalized to 7 Day Matchup)",
-             title = "Fantasy Points by Week") +
-        scale_x_continuous(limits = c(1, params$current_matchup), breaks = 0:params$current_matchup)
-    },
-    height = 750,
-    width = 1334)
-    
-    output$ppw_3 <- renderPlot({
-      ggplot(team_points,  aes(x = matchup_id, y = adj_pitching_pts)) +
-        facet_wrap(~team) +
-        geom_point(data = select(team_points, matchup_id, adj_pitching_pts),
-                   aes(x = matchup_id, y = adj_pitching_pts), fill = "grey", alpha = 0.2) +
-        geom_line(data = mean_pts_by_week, alpha = 0.4, lty = 2) +
-        geom_point(aes(color = team), size = 2) +
-        labs(x = "Week",
-             y = "Points",
-             subtitle = "Pitching Points (Normalized to 7 Day Matchup)",
-             title = "Fantasy Points by Week") +
-        scale_x_continuous(limits = c(1, params$current_matchup), breaks = 0:params$current_matchup)
-    },
-    height = 750,
-    width = 1334)
-    
-    output$bump <- renderPlot({
-      
-      ggplot(df_points, aes(x = scoring_period_id, y = rank)) + 
-        facet_wrap(~team) +
-        geom_vline(data = df_start %>% filter(matchup_id <= params$current_matchup), aes(xintercept = end_period), lty = 2, alpha = 0.5) +
-        # geom_line(data = rename(df_points, 'team2' = team), aes(group = team2), col = 'grey', alpha = 0.5, lineend = 'round') +
-        ggbump::geom_bump(aes(col = team), lwd = 1.2, lineend = 'round') +
-        scale_y_reverse(limits = c(12, 1), breaks = 12:1) + 
-        labs(x = 'Day of Season', 
-             y = 'Rank by Points Scored',
-             title = 'Scoring Rank Over Time') 
-    }, 
-    height = 750,
-    width = 1334)
-    
-    ########################
-    ### Rolling Averages ###
-    ########################
-    
-    k_chart <- eventReactive(input$k, {
-      cat('Computing K-Avg Chart\n')
-      plot_k_avg(input$k)
-    })
-    
-    output$roll_k <- renderPlot({
-      cat('Rendering K-Avg Chart\n')
-      k_chart()
-    },
-    height = 900, 
-    width = 1600)
-    
-    ##########################
-    ### Trades/Free Agents ###
-    ##########################
-    
-    output$trade_chart <- render_gt({
-      cat('Rendering Trade Chart\n')
-      if(nrow(df_trades) > 0) {
-        df_trades %>% 
-          select(-trade_id_1) %>% 
-          gt() %>% 
-          ### Align Columns
-          cols_align(align = "center", columns = everything()) %>%
-          
-          tab_spanner(label = 'Before Trade ', columns = contains('_before_1')) %>%
-          tab_spanner(label = 'Before Trade', columns = contains('_before_2')) %>%
-          tab_spanner(label = 'After Trade ', columns = contains('_after_1')) %>%
-          tab_spanner(label = 'After Trade', columns = contains('_after_2')) %>% 
-          
-          data_color(columns = contains('avg'),
-                     colors = scales::col_quantile(palette = ggsci::rgb_gsea(), 
-                                                   domain = c(-m, m),
-                                                   probs = c(0, seq(0.05, 0.95, 0.01), 1))
-          ) %>%
-          
-          ### Round Numbers
-          fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
-          fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-          fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
-          sub_missing(columns = everything(), missing_text = "---") %>%
-          
-          
-          
-          ### Align Columns
-          cols_align(align = "center", columns = everything()) %>%
-          
-          
-          ### Borders
-          tab_style(
-            style = list(
-              cell_borders(
-                sides = "bottom",
-                color = "black",
-                weight = px(3)
-              )
-            ),
-            locations = list(
-              cells_column_labels(
-                columns = gt::everything()
-              )
-            )
-          ) %>%
-          
-          ### Logos
-          text_transform(
-            locations = cells_body(columns = contains(c('player_url_1')),
-                                   rows = (!is.na(logo_1) & !is.na(player_url_1))),
-            fn = function(x) {
-              web_image(
-                url = x,
-                height = 50
-              )
-            }
-          ) %>% 
-          text_transform(
-            locations = cells_body(columns = contains(c('player_url_2')),
-                                   rows = (!is.na(logo_2) & !is.na(player_url_2))),
-            fn = function(x) {
-              web_image(
-                url = x,
-                height = 50
-              )
-            }
-          ) %>% 
-          
-          text_transform(
-            locations = cells_body(columns = contains(c('logo_2')),
-                                   rows = (!is.na(logo_2) & !is.na(player_url_2))),
-            fn = function(x) {
-              local_image(
-                filename = x,
-                height = 50
-              )
-            }
-          ) %>% 
-          
-          text_transform(
-            locations = cells_body(columns = contains(c('logo_1')),
-                                   rows = (!is.na(logo_1) & !is.na(player_url_1))),
-            fn = function(x) {
-              local_image(
-                filename = x,
-                height = 50
-              )
-            }
-          ) %>%
-          
-          tab_style(
-            style = list(
-              cell_borders(
-                sides = "right",
-                color = "black",
-                weight = px(8)
-              )
-            ),
-            locations = list(
-              cells_body(
-                columns = contains('total_value_after_1')
-              )
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(
-              cell_borders(
-                sides = "right",
-                color = "black",
-                weight = px(4)
-              )
-            ),
-            locations = list(
-              cells_body(
-                columns = c(contains('ppg_vs_avg_before'), contains('logo'))
-              )
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(
-              cell_borders(
-                sides = "right",
-                color = "black",
-                weight = px(2)
-              )
-            ),
-            locations = list(
-              cells_body(
-                columns = c(contains('ppg_vs_avg_after'))
-              )
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(cell_fill(color = "white")),
-            locations = cells_body(
-              columns = contains('avg_after_1'),
-              rows = (is.na(points_after_1) | played_after_1 == 0)
-            )
-          ) %>%
-          tab_style(
-            style = list(cell_fill(color = "white")),
-            locations = cells_body(
-              columns = contains('avg_after_2'),
-              rows = (is.na(points_after_2) | played_after_2 == 0)
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(cell_fill(color = "springgreen")),
-            locations = cells_body(
-              columns = total_value_after_1,
-              rows = total_value_after_1 > total_value_after_2
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(cell_fill(color = "tomato")),
-            locations = cells_body(
-              columns = total_value_after_1,
-              rows = total_value_after_1 < total_value_after_2
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(cell_fill(color = "springgreen")),
-            locations = cells_body(
-              columns = total_value_after_2,
-              rows = total_value_after_1 < total_value_after_2
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(cell_fill(color = "tomato")),
-            locations = cells_body(
-              columns = total_value_after_2,
-              rows = total_value_after_1 > total_value_after_2
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(cell_fill(color = "white")),
-            locations = cells_body(
-              columns = contains('avg_before_1'),
-              rows = (is.na(points_before_1) | played_before_1 == 0)
-            )
-          ) %>%
-          tab_style(
-            style = list(cell_fill(color = "white")),
-            locations = cells_body(
-              columns = contains('avg_before_2'),
-              rows = (is.na(points_before_2) | played_before_2 == 0)
-            )
-          ) %>%
-          
-          tab_style(
-            style = list(
-              cell_borders(
-                sides = "bottom",
-                color = "black",
-                weight = px(2)
-              )
-            ),
-            locations = list(
-              cells_body(
-                rows = which(df_trades$trade_id_1 != lead(df_trades$trade_id_1) | is.na(lead(df_trades$trade_id_1)))
-              )
-            )
-          ) %>%
-          
-          ### Names
-          cols_label(
-            'player_1' = 'Player',
-            'player_2' = 'Player',
-            'player_url_1' = '',
-            'player_url_2' = '',
-            'team_1' = 'New Team',
-            'team_2' = 'New Team',
-            'logo_1' = '',
-            'logo_2' = '',
-            'points_before_1' = 'Points',
-            'points_before_2' = 'Points',
-            'points_after_1' = 'Points',
-            'points_after_2' = 'Points',
-            'played_before_1' = 'Games',
-            'played_before_2' = 'Games',
-            'played_after_1' = 'Games',
-            'played_after_2' = 'Games',
-            'ppg_before_1' = 'PPG',
-            'ppg_before_2' = 'PPG',
-            'ppg_after_1' = 'PPG',
-            'ppg_after_2' = 'PPG',
-            'total_value_after_1' = 'Total Trade Value',
-            'total_value_after_2' = 'Total Trade Value',
-            'ppg_vs_avg_before_1' = 'Value/Matchup',
-            'ppg_vs_avg_before_2' = 'Value/Matchup',
-            'ppg_vs_avg_after_1' = 'Value/Matchup',
-            'ppg_vs_avg_after_2' = 'Value/Matchup') %>% 
-          
-          tab_header(title = 'Trade Analysis') %>%
-          tab_footnote(footnote = "Value = Points/Week vs. League Average at Position (Only includes games played)",
-                       locations = cells_column_labels(columns = contains('avg')),
-                       placement = 'left') %>% 
-          tab_footnote(footnote = "Total value accumulated of all players in trade (points scored vs. points that league average players at position(s) would be expected to score in time since trade)",
-                       locations = cells_column_labels(columns = contains('value')),
-                       placement = 'left') %>% 
-          tab_source_note('Includes games until player dropped/traded in first stint with new team') %>% 
-          tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', exp_standings$sp_ppg[13]))) %>% 
-          tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', exp_standings$rp_ppg[13]))) %>% 
-          tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', exp_standings$batting_ppg[13]))) %>% 
-          tab_options(column_labels.font.size = 16,
-                      heading.title.font.size = 40,
-                      heading.subtitle.font.size = 40,
-                      heading.title.font.weight = 'bold',
-                      heading.subtitle.font.weight = 'bold',
-                      column_labels.font.weight = 'bold',
-                      row_group.font.weight = 'bold',
-                      row_group.font.size  = 22)
-      } else {
-        gt(df_trades %>%dplyr::slice(0)) %>% 
-          cols_label('team_id' = '',
-                     'scoring_period_id' = '',
-                     'matchup_id' = '') %>% 
-          tab_header(title = 'Trade Analysis') %>%
-          tab_footnote(footnote = "Value = Points/Week vs. League Average at Position (Only includes games played)",
-                       locations = cells_column_labels(columns = contains('avg'))) %>% 
-          tab_footnote(footnote = "Total value accumulated of all players in trade (points scored vs. points that league average players at position(s) would be expected to score in time since trade)",
-                       locations = cells_column_labels(columns = contains('value'))) %>% 
-          tab_source_note('Includes games until player dropped/traded in first stint with new team') %>% 
-          tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', exp_standings$sp_ppg[13]))) %>% 
-          tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', exp_standings$rp_ppg[13]))) %>% 
-          tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', exp_standings$batting_ppg[13]))) %>% 
-          tab_options(column_labels.font.size = 16,
-                      heading.title.font.size = 40,
-                      heading.subtitle.font.size = 40,
-                      heading.title.font.weight = 'bold',
-                      heading.subtitle.font.weight = 'bold',
-                      column_labels.font.weight = 'bold',
-                      row_group.font.weight = 'bold',
-                      row_group.font.size  = 22)
-        
-      }
-      
-    })
-    output$fa_chart <- render_gt({
-      cat('Rendering FA Chart\n')
-      
-      gt(df_fa) %>% 
+    ggplot(df_points, aes(x = scoring_period_id, y = rank)) + 
+      facet_wrap(~team) +
+      geom_vline(data = df_start %>% filter(matchup_id <= params$current_matchup), aes(xintercept = end_period), lty = 2, alpha = 0.5) +
+      # geom_line(data = rename(df_points, 'team2' = team), aes(group = team2), col = 'grey', alpha = 0.5, lineend = 'round') +
+      ggbump::geom_bump(aes(col = team), lwd = 1.2, lineend = 'round') +
+      scale_y_reverse(limits = c(12, 1), breaks = 12:1) + 
+      labs(x = 'Day of Season', 
+           y = 'Rank by Points Scored',
+           title = 'Scoring Rank Over Time') 
+  }, 
+  height = 750,
+  width = 1334)
+  
+  ########################
+  ### Rolling Averages ###
+  ########################
+  
+  k_chart <- eventReactive(input$k, {
+    cat('Computing K-Avg Chart\n')
+    plot_k_avg(input$k)
+  })
+  
+  output$roll_k <- renderPlot({
+    cat('Rendering K-Avg Chart\n')
+    k_chart()
+  },
+  height = 900, 
+  width = 1600)
+  
+  ##########################
+  ### Trades/Free Agents ###
+  ##########################
+  
+  output$trade_chart <- render_gt({
+    cat('Rendering Trade Chart\n')
+    if(nrow(df_trades) > 0) {
+      df_trades %>% 
+        select(-trade_id_1) %>% 
+        gt() %>% 
         ### Align Columns
         cols_align(align = "center", columns = everything()) %>%
+        
+        tab_spanner(label = 'Before Trade ', columns = contains('_before_1')) %>%
+        tab_spanner(label = 'Before Trade', columns = contains('_before_2')) %>%
+        tab_spanner(label = 'After Trade ', columns = contains('_after_1')) %>%
+        tab_spanner(label = 'After Trade', columns = contains('_after_2')) %>% 
+        
+        data_color(columns = contains('avg'),
+                   colors = scales::col_quantile(palette = ggsci::rgb_gsea(), 
+                                                 domain = c(-m, m),
+                                                 probs = c(0, seq(0.05, 0.95, 0.01), 1))
+        ) %>%
         
         ### Round Numbers
         fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
@@ -1760,8 +1491,6 @@ shinyServer(function(input, output, session) {
         fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
         sub_missing(columns = everything(), missing_text = "---") %>%
         
-        tab_spanner(label = 'Top 20 by Value ', columns = contains('_1')) %>%
-        tab_spanner(label = 'Top 20 by Points', columns = contains('_2')) %>%
         
         
         ### Align Columns
@@ -1780,6 +1509,65 @@ shinyServer(function(input, output, session) {
           locations = list(
             cells_column_labels(
               columns = gt::everything()
+            )
+          )
+        ) %>%
+        
+        ### Logos
+        text_transform(
+          locations = cells_body(columns = contains(c('player_url_1')),
+                                 rows = (!is.na(logo_1) & !is.na(player_url_1))),
+          fn = function(x) {
+            web_image(
+              url = x,
+              height = 50
+            )
+          }
+        ) %>% 
+        text_transform(
+          locations = cells_body(columns = contains(c('player_url_2')),
+                                 rows = (!is.na(logo_2) & !is.na(player_url_2))),
+          fn = function(x) {
+            web_image(
+              url = x,
+              height = 50
+            )
+          }
+        ) %>% 
+        
+        text_transform(
+          locations = cells_body(columns = contains(c('logo_2')),
+                                 rows = (!is.na(logo_2) & !is.na(player_url_2))),
+          fn = function(x) {
+            local_image(
+              filename = x,
+              height = 50
+            )
+          }
+        ) %>% 
+        
+        text_transform(
+          locations = cells_body(columns = contains(c('logo_1')),
+                                 rows = (!is.na(logo_1) & !is.na(player_url_1))),
+          fn = function(x) {
+            local_image(
+              filename = x,
+              height = 50
+            )
+          }
+        ) %>%
+        
+        tab_style(
+          style = list(
+            cell_borders(
+              sides = "right",
+              color = "black",
+              weight = px(8)
+            )
+          ),
+          locations = list(
+            cells_body(
+              columns = contains('total_value_after_1')
             )
           )
         ) %>%
@@ -1789,70 +1577,148 @@ shinyServer(function(input, output, session) {
             cell_borders(
               sides = "right",
               color = "black",
-              weight = px(6)
+              weight = px(4)
             )
           ),
           locations = list(
             cells_body(
-              columns = contains('total_value_1')
+              columns = c(contains('ppg_vs_avg_before'), contains('logo'))
             )
           )
         ) %>%
         
-        ### Logos
-        text_transform(
-          locations = cells_body(columns = contains(c('player_url'))),
-          fn = function(x) {
-            web_image(
-              url = x,
-              height = 50
+        tab_style(
+          style = list(
+            cell_borders(
+              sides = "right",
+              color = "black",
+              weight = px(2)
             )
-          }
-        ) %>% 
+          ),
+          locations = list(
+            cells_body(
+              columns = c(contains('ppg_vs_avg_after'))
+            )
+          )
+        ) %>%
         
-        text_transform(
-          locations = cells_body(columns = contains(c('logo'))),
-          fn = function(x) {
-            local_image(
-              filename = x,
-              height = 50
+        tab_style(
+          style = list(cell_fill(color = "white")),
+          locations = cells_body(
+            columns = contains('avg_after_1'),
+            rows = (is.na(points_after_1) | played_after_1 == 0)
+          )
+        ) %>%
+        tab_style(
+          style = list(cell_fill(color = "white")),
+          locations = cells_body(
+            columns = contains('avg_after_2'),
+            rows = (is.na(points_after_2) | played_after_2 == 0)
+          )
+        ) %>%
+        
+        tab_style(
+          style = list(cell_fill(color = "springgreen")),
+          locations = cells_body(
+            columns = total_value_after_1,
+            rows = total_value_after_1 > total_value_after_2
+          )
+        ) %>%
+        
+        tab_style(
+          style = list(cell_fill(color = "tomato")),
+          locations = cells_body(
+            columns = total_value_after_1,
+            rows = total_value_after_1 < total_value_after_2
+          )
+        ) %>%
+        
+        tab_style(
+          style = list(cell_fill(color = "springgreen")),
+          locations = cells_body(
+            columns = total_value_after_2,
+            rows = total_value_after_1 < total_value_after_2
+          )
+        ) %>%
+        
+        tab_style(
+          style = list(cell_fill(color = "tomato")),
+          locations = cells_body(
+            columns = total_value_after_2,
+            rows = total_value_after_1 > total_value_after_2
+          )
+        ) %>%
+        
+        tab_style(
+          style = list(cell_fill(color = "white")),
+          locations = cells_body(
+            columns = contains('avg_before_1'),
+            rows = (is.na(points_before_1) | played_before_1 == 0)
+          )
+        ) %>%
+        tab_style(
+          style = list(cell_fill(color = "white")),
+          locations = cells_body(
+            columns = contains('avg_before_2'),
+            rows = (is.na(points_before_2) | played_before_2 == 0)
+          )
+        ) %>%
+        
+        tab_style(
+          style = list(
+            cell_borders(
+              sides = "bottom",
+              color = "black",
+              weight = px(2)
             )
-          }
-        ) %>% 
+          ),
+          locations = list(
+            cells_body(
+              rows = which(df_trades$trade_id_1 != lead(df_trades$trade_id_1) | is.na(lead(df_trades$trade_id_1)))
+            )
+          )
+        ) %>%
         
         ### Names
         cols_label(
           'player_1' = 'Player',
-          'player_url_1' = '',
-          'logo_1' = '',
-          'n_points_1' = 'Points',
-          'ppg_1' = 'PPG',
-          'team_1' = 'Team',
-          'total_value_1' = 'Total Value',
-          'added_1' = 'Added',
-          'dropped_1' = 'Dropped/Traded',
-          'n_games_1' = '# of Games',
-          
           'player_2' = 'Player',
+          'player_url_1' = '',
           'player_url_2' = '',
+          'team_1' = 'New Team',
+          'team_2' = 'New Team',
+          'logo_1' = '',
           'logo_2' = '',
-          'n_points_2' = 'Points',
-          'ppg_2' = 'PPG',
-          'team_2' = 'Team',
-          'total_value_2' = 'Total Value',
-          'added_2' = 'Added',
-          'dropped_2' = 'Dropped/Traded',
-          'n_games_2' = '# of Games'
-        ) %>% 
+          'points_before_1' = 'Points',
+          'points_before_2' = 'Points',
+          'points_after_1' = 'Points',
+          'points_after_2' = 'Points',
+          'played_before_1' = 'Games',
+          'played_before_2' = 'Games',
+          'played_after_1' = 'Games',
+          'played_after_2' = 'Games',
+          'ppg_before_1' = 'PPG',
+          'ppg_before_2' = 'PPG',
+          'ppg_after_1' = 'PPG',
+          'ppg_after_2' = 'PPG',
+          'total_value_after_1' = 'Total Trade Value',
+          'total_value_after_2' = 'Total Trade Value',
+          'ppg_vs_avg_before_1' = 'Value/Matchup',
+          'ppg_vs_avg_before_2' = 'Value/Matchup',
+          'ppg_vs_avg_after_1' = 'Value/Matchup',
+          'ppg_vs_avg_after_2' = 'Value/Matchup') %>% 
         
-        tab_header(title = 'Free Agent Analysis') %>%
-        tab_footnote(footnote = "Total value= points scored vs. points that league average player at position would be expected to score in time since acquisition",
-                     locations = cells_column_labels(columns = contains('value'))) %>% 
+        tab_header(title = 'Trade Analysis') %>%
+        tab_footnote(footnote = "Value = Points/Week vs. League Average at Position (Only includes games played)",
+                     locations = cells_column_labels(columns = contains('avg')),
+                     placement = 'left') %>% 
+        tab_footnote(footnote = "Total value accumulated of all players in trade (points scored vs. points that league average players at position(s) would be expected to score in time since trade)",
+                     locations = cells_column_labels(columns = contains('value')),
+                     placement = 'left') %>% 
+        tab_source_note('Includes games until player dropped/traded in first stint with new team') %>% 
         tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', exp_standings$sp_ppg[13]))) %>% 
         tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', exp_standings$rp_ppg[13]))) %>% 
         tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', exp_standings$batting_ppg[13]))) %>% 
-        tab_source_note('Min Games for Inclusion: Batter (20), SP (5), RP (5), or 50% of the season for batters and 20% of the season for pitchers up until day 40') %>% 
-        tab_source_note('NOTE: Additions prior to Opening Day do not count, as those are indistinguishable from draft picks in ESPN data') %>% 
         tab_options(column_labels.font.size = 16,
                     heading.title.font.size = 40,
                     heading.subtitle.font.size = 40,
@@ -1861,42 +1727,20 @@ shinyServer(function(input, output, session) {
                     column_labels.font.weight = 'bold',
                     row_group.font.weight = 'bold',
                     row_group.font.size  = 22)
-    })
-    
-    output$fs_chart <- render_gt({
-      cat('Rendering FS Chart\n')
-      trans_log %>% 
-        group_by(player, player_id) %>% 
-        summarise('n_stints' = n_distinct(stint),
-                  'n_teams' = n_distinct(team_id),
-                  'points' = sum(n_points)) %>% 
-        arrange(-n_stints, -n_teams, points) %>% 
-        head(10) %>% 
-        ungroup() %>% 
-        mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-        select(player, player_url, n_stints, n_teams, points) %>% 
-        gt() %>% 
-        ### Align Columns
-        cols_align(align = "center", columns = everything()) %>% 
-        fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-        ### Logos
-        text_transform(
-          locations = cells_body(columns = contains(c('player_url'))),
-          fn = function(x) {
-            web_image(
-              url = x,
-              height = 50
-            )
-          }
-        ) %>% 
-        cols_label(
-          'player' = 'Player',
-          'player_url' = '',
-          'n_stints' = '# of Stints on Teams',
-          'n_teams' = '# of Teams',
-          'points' = 'Points Scored While Rostered'
-        ) %>% 
-        tab_header(title = 'Most Transacted Players') %>%
+    } else {
+      gt(df_trades %>%dplyr::slice(0)) %>% 
+        cols_label('team_id' = '',
+                   'scoring_period_id' = '',
+                   'matchup_id' = '') %>% 
+        tab_header(title = 'Trade Analysis') %>%
+        tab_footnote(footnote = "Value = Points/Week vs. League Average at Position (Only includes games played)",
+                     locations = cells_column_labels(columns = contains('avg'))) %>% 
+        tab_footnote(footnote = "Total value accumulated of all players in trade (points scored vs. points that league average players at position(s) would be expected to score in time since trade)",
+                     locations = cells_column_labels(columns = contains('value'))) %>% 
+        tab_source_note('Includes games until player dropped/traded in first stint with new team') %>% 
+        tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', exp_standings$sp_ppg[13]))) %>% 
+        tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', exp_standings$rp_ppg[13]))) %>% 
+        tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', exp_standings$batting_ppg[13]))) %>% 
         tab_options(column_labels.font.size = 16,
                     heading.title.font.size = 40,
                     heading.subtitle.font.size = 40,
@@ -1905,150 +1749,565 @@ shinyServer(function(input, output, session) {
                     column_labels.font.weight = 'bold',
                     row_group.font.weight = 'bold',
                     row_group.font.size  = 22)
-    })
-    
-    #################
-    ### Penalties ###
-    #################
-    
-    output$sp_pen <- render_gt({
-      cat('Rendering SP Penalties\n')
       
-      df_penalty %>% 
-        select(team, logo, matchup_id, penalty) %>% 
-        group_by(team, logo, matchup_id) %>%
-        summarise('penalty' = sum(penalty)) %>%
-        ungroup() %>%
-        arrange(matchup_id) %>% 
+    }
+    
+  })
+  output$fa_chart <- render_gt({
+    cat('Rendering FA Chart\n')
+    
+    gt(df_fa) %>% 
+      ### Align Columns
+      cols_align(align = "center", columns = everything()) %>%
+      
+      ### Round Numbers
+      fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+      fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+      fmt_number(columns = contains('value'), decimals = 2, sep_mark = '') %>% 
+      sub_missing(columns = everything(), missing_text = "---") %>%
+      
+      tab_spanner(label = 'Top 20 by Value ', columns = contains('_1')) %>%
+      tab_spanner(label = 'Top 20 by Points', columns = contains('_2')) %>%
+      
+      
+      ### Align Columns
+      cols_align(align = "center", columns = everything()) %>%
+      
+      
+      ### Borders
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_column_labels(
+            columns = gt::everything()
+          )
+        )
+      ) %>%
+      
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "right",
+            color = "black",
+            weight = px(6)
+          )
+        ),
+        locations = list(
+          cells_body(
+            columns = contains('total_value_1')
+          )
+        )
+      ) %>%
+      
+      ### Logos
+      text_transform(
+        locations = cells_body(columns = contains(c('player_url'))),
+        fn = function(x) {
+          web_image(
+            url = x,
+            height = 50
+          )
+        }
+      ) %>% 
+      
+      text_transform(
+        locations = cells_body(columns = contains(c('logo'))),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>% 
+      
+      ### Names
+      cols_label(
+        'player_1' = 'Player',
+        'player_url_1' = '',
+        'logo_1' = '',
+        'n_points_1' = 'Points',
+        'ppg_1' = 'PPG',
+        'team_1' = 'Team',
+        'total_value_1' = 'Total Value',
+        'added_1' = 'Added',
+        'dropped_1' = 'Dropped/Traded',
+        'n_games_1' = '# of Games',
+        
+        'player_2' = 'Player',
+        'player_url_2' = '',
+        'logo_2' = '',
+        'n_points_2' = 'Points',
+        'ppg_2' = 'PPG',
+        'team_2' = 'Team',
+        'total_value_2' = 'Total Value',
+        'added_2' = 'Added',
+        'dropped_2' = 'Dropped/Traded',
+        'n_games_2' = '# of Games'
+      ) %>% 
+      
+      tab_header(title = 'Free Agent Analysis') %>%
+      tab_footnote(footnote = "Total value= points scored vs. points that league average player at position would be expected to score in time since acquisition",
+                   locations = cells_column_labels(columns = contains('value'))) %>% 
+      tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', exp_standings$sp_ppg[13]))) %>% 
+      tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', exp_standings$rp_ppg[13]))) %>% 
+      tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', exp_standings$batting_ppg[13]))) %>% 
+      tab_source_note('Min Games for Inclusion: Batter (20), SP (5), RP (5), or 50% of the season for batters and 20% of the season for pitchers up until day 40') %>% 
+      tab_source_note('NOTE: Additions prior to Opening Day do not count, as those are indistinguishable from draft picks in ESPN data') %>% 
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold',
+                  row_group.font.weight = 'bold',
+                  row_group.font.size  = 22)
+  })
+  
+  output$fs_chart <- render_gt({
+    cat('Rendering FS Chart\n')
+    trans_log %>% 
+      group_by(player, player_id) %>% 
+      summarise('n_stints' = n_distinct(stint),
+                'n_teams' = n_distinct(team_id),
+                'points' = sum(n_points)) %>% 
+      arrange(-n_stints, -n_teams, points) %>% 
+      head(10) %>% 
+      ungroup() %>% 
+      mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+      select(player, player_url, n_stints, n_teams, points) %>% 
+      gt() %>% 
+      ### Align Columns
+      cols_align(align = "center", columns = everything()) %>% 
+      fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+      ### Logos
+      text_transform(
+        locations = cells_body(columns = contains(c('player_url'))),
+        fn = function(x) {
+          web_image(
+            url = x,
+            height = 50
+          )
+        }
+      ) %>% 
+      cols_label(
+        'player' = 'Player',
+        'player_url' = '',
+        'n_stints' = '# of Stints on Teams',
+        'n_teams' = '# of Teams',
+        'points' = 'Points Scored While Rostered'
+      ) %>% 
+      tab_header(title = 'Most Transacted Players') %>%
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold',
+                  row_group.font.weight = 'bold',
+                  row_group.font.size  = 22)
+  })
+  
+  #################
+  ### Penalties ###
+  #################
+  
+  output$sp_pen <- render_gt({
+    cat('Rendering SP Penalties\n')
+    
+    df_penalty %>% 
+      select(team, logo, matchup_id, penalty) %>% 
+      group_by(team, logo, matchup_id) %>%
+      summarise('penalty' = sum(penalty)) %>%
+      ungroup() %>%
+      arrange(matchup_id) %>% 
+      gt() %>% 
+      cols_align('center') %>% 
+      text_transform(
+        locations = cells_body(columns = contains(c('logo'))),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>% 
+      cols_label('team' = 'Team',
+                 'logo' = '',
+                 'matchup_id'  = 'Matchup',
+                 'penalty' = 'Penalty') %>% 
+      tab_header(title = 'Start Cap Penalties') %>%
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold',
+                  row_group.font.weight = 'bold',
+                  row_group.font.size  = 22)
+    
+    
+  })
+  output$rp_pen <- render_gt({
+    cat('Rendering RP Penalties\n')
+    
+    df_rp_penalty %>% 
+      select(team, logo, matchup_id, penalty) %>% 
+      gt() %>% 
+      cols_align('center') %>% 
+      text_transform(
+        locations = cells_body(columns = contains(c('logo'))),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>% 
+      cols_label('team' = 'Team',
+                 'logo' = '',
+                 'matchup_id'  = 'Matchup',
+                 'penalty' = 'Penalty') %>% 
+      tab_header(title = 'RP Cap/Usage Penalties') %>%
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold',
+                  row_group.font.weight = 'bold',
+                  row_group.font.size  = 22)
+    
+  })
+  
+  output$rp_start <- render_gt({
+    cat('Rendering RP Starts\n')
+    
+    df_relief_start %>% 
+      inner_join(teams, by = 'team_id') %>% 
+      mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
+      select(team, logo,  player, player_url, matchup_id, ip, p_er, rule, bonus) %>% 
+      gt() %>% 
+      cols_align('center') %>% 
+      ### Logos
+      text_transform(
+        locations = cells_body(contains(c('player_url'))),
+        fn = function(x) {
+          web_image(
+            url = x,
+            height = 50
+          )
+        }
+      ) %>%
+      text_transform(
+        locations = cells_body(columns = contains(c('logo'))),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>% 
+      cols_label('team' = 'Team',
+                 'logo' = '',
+                 'player' = 'Player',
+                 'player_url' = '',
+                 'matchup_id'  = 'Matchup',
+                 'ip' = 'IP', 
+                 'p_er' = 'ER',
+                 'rule' = 'Rule', 
+                 'bonus' = 'Bonus'
+      ) %>% 
+      tab_header(title = 'RP Starts') %>%
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold',
+                  row_group.font.weight = 'bold',
+                  row_group.font.size  = 22)
+    
+  })
+  
+  
+  
+  ##################
+  ### All Starts ###
+  ##################
+  output$asg_lineup <- render_gt({
+    cat('Rendering All-Star Chart\n')
+    
+    gt(df_asg_lineup) %>%
+      
+      ### Align Columns
+      cols_align(align = "center", columns = everything()) %>%
+      
+      fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
+      fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
+      
+      
+      tab_spanner(label = 'First Team', columns = contains('_1')) %>%
+      tab_spanner(label = 'Second Team', columns = contains('_2')) %>%
+      tab_spanner(label = 'Third team', columns = contains('_3')) %>%
+      
+      
+      ### Borders
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_column_labels(
+            columns = gt::everything()
+          )
+        )
+      ) %>%
+      
+      ### Logos
+      text_transform(
+        locations = cells_body(contains(c('player_url'))),
+        fn = function(x) {
+          web_image(
+            url = x,
+            height = 50
+          )
+        }
+      ) %>%
+      
+      text_transform(
+        locations = cells_body(contains(c('logo'))),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>%
+      
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "right",
+            color = "black",
+            weight = px(6)
+          )
+        ),
+        locations = list(
+          cells_body(
+            columns = contains('ppg')
+          )
+        )
+      ) %>%
+      
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_body(
+            rows = c(13, 19)
+          )
+        )
+      ) %>%
+      
+      
+      
+      ### Names
+      cols_label(
+        'position_1' = 'Position',
+        'player_1' = 'Player',
+        'player_url_1' = '', 
+        'team_1' = 'Team',
+        'logo_1' = '',
+        'points_1' = 'Points',
+        'ppg_1' = 'PPG',
+        
+        'position_2' = 'Position',
+        'player_2' = 'Player',
+        'player_url_2' = '', 
+        'team_2' = 'Team',
+        'logo_2' = '',
+        'points_2' = 'Points',
+        'ppg_2' = 'PPG',
+        
+        'position_3' = 'Position',
+        'player_3' = 'Player',
+        'player_url_3' = '', 
+        'team_3' = 'Team',
+        'logo_3' = '',
+        'points_3' = 'Points',
+        'ppg_3' = 'PPG'
+        
+        
+      ) %>%
+      tab_header(
+        title = md(glue('**{params$season} Fantasy All-Stars**')),
+      ) %>%
+      tab_options(column_labels.font.size = 20,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold'
+                  
+      ) %>% 
+      tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
+      tab_footnote(footnote = "Players ranked by weighted average of Z-Scores of Points (67%) and PPG (33%) relative to position") %>% 
+      tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (6), RP (10)") %>% 
+      tab_footnote(footnote = "Only includes games players in starting fantasy lineup") 
+    
+    
+  })
+  output$asg_counts <- render_gt({
+    cat('Rendering All-Star Chart Counts\n')
+    
+    
+    gt(df_asg_counts) %>% 
+      cols_align(align = "center", columns = everything()) %>%
+      
+      ### Borders
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_column_labels(
+            columns = gt::everything()
+          )
+        )
+      ) %>%
+      
+      ### Logos
+      text_transform(
+        locations = cells_body(contains(c('logo'))),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
+      ) %>%
+      
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "right",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_body(
+            columns = contains(c('logo', 'third_team'))
+          )
+        )
+      ) %>%
+      
+      
+      ### Names
+      cols_label(
+        'team' = 'Team',
+        'logo' = '',
+        'first_team' = '1st Team',
+        'second_team' = '2nd Team',
+        'third_team' = '3rd Team',
+        'star_points' = 'Total Points'
+        
+      ) %>%
+      tab_header(
+        title = md(glue('**{params$season} Fantasy All-Stars**')),
+      ) %>%
+      tab_options(column_labels.font.size = 20,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 40,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold'
+                  
+      ) %>% 
+      tab_footnote(footnote = "Star Points: 1st Team (3), 2nd Team (2), 3rd Team (1)") 
+  })
+  
+  
+  ### Draft 
+  output$draft_plot <- 
+    plotly::renderPlotly({
+      p <-
+        ggplot(draft_analysis, aes(x = pick_id, y = points_total)) + 
+        facet_wrap(~team) +
+        geom_smooth(data = select(draft_analysis, -team), col = 'black', alpha = 0.2, se = F) +
+        geom_hline(yintercept = 0, lty = 2, col = 'grey') + 
+        geom_point(aes(color = player_type, text = text), size = 5) + 
+        theme(legend.position = 'bottom') + 
+        labs(x = 'Pick Number',
+             y = 'Points Scoring for Drafting Team',
+             title = 'Draft Curves',
+             color = 'Player Type'
+        )
+      
+      plotly::ggplotly(p, tooltip = 'text') %>% 
+        plotly::layout('legend' = list(
+          xanchor='center',
+          x = 0.5,
+          yanchor='bottom',
+          orientation='h'),
+          'height' = 900,
+          'width' = 1600
+        )
+    })
+  
+  
+  output$gt_draft <- 
+    render_gt({
+      dfd <- 
+        draft_analysis %>% 
+        arrange(-residual) %>% 
+        mutate('pitcher' = player_type == 'batter') %>% 
+        inner_join(teams %>% select(team, logo)) %>% 
+        change_logo() %>% 
+        mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'))
+      
+      dfd_bat <- 
+        dfd %>% 
+        filter(player_type == 'Batter') %>% 
+        head(20) %>% 
+        select(player, player_url, team, logo, pick_id, round_id, points_total, points_draft, ppg, ppg_draft, fit, residual)
+      
+      dfd_pitch <- 
+        dfd %>% 
+        filter(player_type != 'Batter') %>% 
+        head(20) %>% 
+        select(player, player_url, team, logo, pick_id, round_id, points_total, points_draft, ppg, ppg_draft, fit, residual)
+      
+      names(dfd_bat) <- paste0(names(dfd_bat), '_bat')
+      names(dfd_pitch) <- paste0(names(dfd_pitch), '_pitch')
+      
+      # gt_draft <- 
+      bind_cols(dfd_bat, dfd_pitch) %>% 
         gt() %>% 
         cols_align('center') %>% 
-        text_transform(
-          locations = cells_body(columns = contains(c('logo'))),
-          fn = function(x) {
-            local_image(
-              filename = x,
-              height = 50
-            )
-          }
-        ) %>% 
-        cols_label('team' = 'Team',
-                   'logo' = '',
-                   'matchup_id'  = 'Matchup',
-                   'penalty' = 'Penalty') %>% 
-        tab_header(title = 'Start Cap Penalties') %>%
-        tab_options(column_labels.font.size = 16,
-                    heading.title.font.size = 40,
-                    heading.subtitle.font.size = 40,
-                    heading.title.font.weight = 'bold',
-                    heading.subtitle.font.weight = 'bold',
-                    column_labels.font.weight = 'bold',
-                    row_group.font.weight = 'bold',
-                    row_group.font.size  = 22)
-      
-      
-    })
-    output$rp_pen <- render_gt({
-      cat('Rendering RP Penalties\n')
-      
-      df_rp_penalty %>% 
-        select(team, logo, matchup_id, penalty) %>% 
-        gt() %>% 
-        cols_align('center') %>% 
-        text_transform(
-          locations = cells_body(columns = contains(c('logo'))),
-          fn = function(x) {
-            local_image(
-              filename = x,
-              height = 50
-            )
-          }
-        ) %>% 
-        cols_label('team' = 'Team',
-                   'logo' = '',
-                   'matchup_id'  = 'Matchup',
-                   'penalty' = 'Penalty') %>% 
-        tab_header(title = 'RP Cap/Usage Penalties') %>%
-        tab_options(column_labels.font.size = 16,
-                    heading.title.font.size = 40,
-                    heading.subtitle.font.size = 40,
-                    heading.title.font.weight = 'bold',
-                    heading.subtitle.font.weight = 'bold',
-                    column_labels.font.weight = 'bold',
-                    row_group.font.weight = 'bold',
-                    row_group.font.size  = 22)
-      
-    })
-    
-    output$rp_start <- render_gt({
-      cat('Rendering RP Starts\n')
-      
-      df_relief_start %>% 
-        inner_join(teams, by = 'team_id') %>% 
-        mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-        select(team, logo,  player, player_url, matchup_id, ip, p_er, rule, bonus) %>% 
-        gt() %>% 
-        cols_align('center') %>% 
-          ### Logos
-          text_transform(
-            locations = cells_body(contains(c('player_url'))),
-            fn = function(x) {
-              web_image(
-                url = x,
-                height = 50
-              )
-            }
-          ) %>%
-        text_transform(
-          locations = cells_body(columns = contains(c('logo'))),
-          fn = function(x) {
-            local_image(
-              filename = x,
-              height = 50
-            )
-          }
-        ) %>% 
-        cols_label('team' = 'Team',
-                   'logo' = '',
-                   'player' = 'Player',
-                   'player_url' = '',
-                   'matchup_id'  = 'Matchup',
-                   'ip' = 'IP', 
-                   'p_er' = 'ER',
-                   'rule' = 'Rule', 
-                   'bonus' = 'Bonus'
-                   ) %>% 
-        tab_header(title = 'RP Starts') %>%
-        tab_options(column_labels.font.size = 16,
-                    heading.title.font.size = 40,
-                    heading.subtitle.font.size = 40,
-                    heading.title.font.weight = 'bold',
-                    heading.subtitle.font.weight = 'bold',
-                    column_labels.font.weight = 'bold',
-                    row_group.font.weight = 'bold',
-                    row_group.font.size  = 22)
-      
-    })
-    
-    
-    
-    ##################
-    ### All Starts ###
-    ##################
-    output$asg_lineup <- render_gt({
-      cat('Rendering All-Star Chart\n')
-      
-      gt(df_asg_lineup) %>%
-        
-        ### Align Columns
-        cols_align(align = "center", columns = everything()) %>%
-        
-        fmt_number(columns = contains('ppg'), decimals = 2, sep_mark = '') %>% 
-        fmt_number(columns = contains('points'), decimals = 1, sep_mark = '') %>% 
-        
-        
-        tab_spanner(label = 'First Team', columns = contains('_1')) %>%
-        tab_spanner(label = 'Second Team', columns = contains('_2')) %>%
-        tab_spanner(label = 'Third team', columns = contains('_3')) %>%
+        tab_spanner(label = 'Pitching', columns = contains('_pitch')) %>%
+        tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
+        sub_missing(columns = everything(), missing_text = "---") %>% 
+        fmt_number(contains(c('ppg', 'fit', 'residual')), decimals = 1) %>% 
         
         
         ### Borders
@@ -2065,7 +2324,7 @@ shinyServer(function(input, output, session) {
               columns = gt::everything()
             )
           )
-        ) %>%
+        )  %>% 
         
         ### Logos
         text_transform(
@@ -2079,7 +2338,8 @@ shinyServer(function(input, output, session) {
         ) %>%
         
         text_transform(
-          locations = cells_body(contains(c('logo'))),
+          locations = cells_body(columns = contains(c('logo_pitch')), 
+                                 rows = (logo_pitch != '---')),
           fn = function(x) {
             local_image(
               filename = x,
@@ -2088,110 +2348,9 @@ shinyServer(function(input, output, session) {
           }
         ) %>%
         
-        tab_style(
-          style = list(
-            cell_borders(
-              sides = "right",
-              color = "black",
-              weight = px(6)
-            )
-          ),
-          locations = list(
-            cells_body(
-              columns = contains('ppg')
-            )
-          )
-        ) %>%
-        
-        tab_style(
-          style = list(
-            cell_borders(
-              sides = "bottom",
-              color = "black",
-              weight = px(3)
-            )
-          ),
-          locations = list(
-            cells_body(
-              rows = c(13, 19)
-            )
-          )
-        ) %>%
-        
-        
-        
-        ### Names
-        cols_label(
-          'position_1' = 'Position',
-          'player_1' = 'Player',
-          'player_url_1' = '', 
-          'team_1' = 'Team',
-          'logo_1' = '',
-          'points_1' = 'Points',
-          'ppg_1' = 'PPG',
-          
-          'position_2' = 'Position',
-          'player_2' = 'Player',
-          'player_url_2' = '', 
-          'team_2' = 'Team',
-          'logo_2' = '',
-          'points_2' = 'Points',
-          'ppg_2' = 'PPG',
-          
-          'position_3' = 'Position',
-          'player_3' = 'Player',
-          'player_url_3' = '', 
-          'team_3' = 'Team',
-          'logo_3' = '',
-          'points_3' = 'Points',
-          'ppg_3' = 'PPG'
-          
-          
-        ) %>%
-        tab_header(
-          title = md(glue('**{params$season} Fantasy All-Stars**')),
-        ) %>%
-        tab_options(column_labels.font.size = 20,
-                    heading.title.font.size = 40,
-                    heading.subtitle.font.size = 40,
-                    heading.title.font.weight = 'bold',
-                    heading.subtitle.font.weight = 'bold',
-                    column_labels.font.weight = 'bold'
-                    
-        ) %>% 
-        tab_footnote(footnote = "Listed Team = team that player played most games for") %>% 
-        tab_footnote(footnote = "Players ranked by weighted average of Z-Scores of Points (67%) and PPG (33%) relative to position") %>% 
-        tab_footnote(footnote = "Min Games for Inclusion: Batter (30), SP (6), RP (10)") %>% 
-        tab_footnote(footnote = "Only includes games players in starting fantasy lineup") 
-      
-      
-    })
-    output$asg_counts <- render_gt({
-      cat('Rendering All-Star Chart Counts\n')
-      
-      
-      gt(df_asg_counts) %>% 
-        cols_align(align = "center", columns = everything()) %>%
-        
-        ### Borders
-        tab_style(
-          style = list(
-            cell_borders(
-              sides = "bottom",
-              color = "black",
-              weight = px(3)
-            )
-          ),
-          locations = list(
-            cells_column_labels(
-              columns = gt::everything()
-            )
-          )
-        ) %>%
-        
-        ### Logos
         text_transform(
-          locations = cells_body(contains(c('logo'))),
+          locations = cells_body(columns = contains(c('logo_bat')), 
+                                 rows = (logo_bat != '---')),
           fn = function(x) {
             local_image(
               filename = x,
@@ -2199,6 +2358,8 @@ shinyServer(function(input, output, session) {
             )
           }
         ) %>%
+        
+        
         
         tab_style(
           style = list(
@@ -2210,316 +2371,160 @@ shinyServer(function(input, output, session) {
           ),
           locations = list(
             cells_body(
-              columns = contains(c('logo', 'third_team'))
+              columns = contains('residual')
             )
           )
-        ) %>%
+        ) %>% 
         
         
         ### Names
         cols_label(
-          'team' = 'Team',
-          'logo' = '',
-          'first_team' = '1st Team',
-          'second_team' = '2nd Team',
-          'third_team' = '3rd Team',
-          'star_points' = 'Total Points'
+          'team_bat' = 'Team',
+          'logo_bat' = '',
+          'player_url_bat' = '',
+          'player_bat' = 'Player',
+          'points_total_bat' = 'Points',
+          'points_draft_bat' = 'Points (Draft Team)',
+          'ppg_bat' = 'PPG',
+          'ppg_draft_bat' = 'PPG (Draft Team)',
+          'pick_id_bat' = 'Pick',
+          'round_id_bat' = 'Round',
+          'fit_bat' = 'Exp. Pick Value',
+          'residual_bat' = 'Residual',
+          
+          'team_pitch' = 'Team',
+          'logo_pitch' = '',
+          'player_url_pitch' = '',
+          'player_pitch' = 'Player',
+          'points_total_pitch' = 'Points',
+          'points_draft_pitch' = 'Points (Draft Team)',
+          'ppg_pitch' = 'PPG',
+          'ppg_draft_pitch' = 'PPG (Draft Team)',
+          'pick_id_pitch' = 'Pick',
+          'round_id_pitch' = 'Round',
+          'fit_pitch' = 'Exp. Pick Value',
+          'residual_pitch' = 'Residual'
+          
+          
           
         ) %>%
         tab_header(
-          title = md(glue('**{params$season} Fantasy All-Stars**')),
+          title = md('**Top Draft Picks**')
         ) %>%
-        tab_options(column_labels.font.size = 20,
+        tab_options(column_labels.font.size = 12,
                     heading.title.font.size = 40,
                     heading.subtitle.font.size = 40,
                     heading.title.font.weight = 'bold',
                     heading.subtitle.font.weight = 'bold',
-                    column_labels.font.weight = 'bold'
-                    
-        ) %>% 
-        tab_footnote(footnote = "Star Points: 1st Team (3), 2nd Team (2), 3rd Team (1)") 
-    })
-    
-    
-    ### Draft 
-    output$draft_plot <- 
-      plotly::renderPlotly({
-        p <-
-          ggplot(draft_analysis, aes(x = pick_id, y = points_total)) + 
-          facet_wrap(~team) +
-          geom_smooth(data = select(draft_analysis, -team), col = 'black', alpha = 0.2, se = F) +
-          geom_hline(yintercept = 0, lty = 2, col = 'grey') + 
-          geom_point(aes(color = player_type, text = text), size = 5) + 
-          theme(legend.position = 'bottom') + 
-          labs(x = 'Pick Number',
-               y = 'Points Scoring for Drafting Team',
-               title = 'Draft Curves',
-               color = 'Player Type'
-          )
-        
-        plotly::ggplotly(p, tooltip = 'text') %>% 
-          plotly::layout('legend' = list(
-            xanchor='center',
-            x = 0.5,
-            yanchor='bottom',
-            orientation='h'),
-            'height' = 900,
-            'width' = 1600
-          )
-      })
-    
-    
-    output$gt_draft <- 
-      render_gt({
-        dfd <- 
-          draft_analysis %>% 
-          arrange(-residual) %>% 
-          mutate('pitcher' = player_type == 'batter') %>% 
-          inner_join(teams %>% select(team, logo)) %>% 
-          change_logo() %>% 
-          mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'))
-        
-        dfd_bat <- 
-          dfd %>% 
-          filter(player_type == 'Batter') %>% 
-          head(20) %>% 
-          select(player, player_url, team, logo, pick_id, round_id, points_total, points_draft, ppg, ppg_draft, fit, residual)
-        
-        dfd_pitch <- 
-          dfd %>% 
-          filter(player_type != 'Batter') %>% 
-          head(20) %>% 
-          select(player, player_url, team, logo, pick_id, round_id, points_total, points_draft, ppg, ppg_draft, fit, residual)
-        
-        names(dfd_bat) <- paste0(names(dfd_bat), '_bat')
-        names(dfd_pitch) <- paste0(names(dfd_pitch), '_pitch')
-        
-        # gt_draft <- 
-        bind_cols(dfd_bat, dfd_pitch) %>% 
-          gt() %>% 
-          cols_align('center') %>% 
-          tab_spanner(label = 'Pitching', columns = contains('_pitch')) %>%
-          tab_spanner(label = 'Batting', columns = contains('_bat')) %>%
-          sub_missing(columns = everything(), missing_text = "---") %>% 
-          fmt_number(contains(c('ppg', 'fit', 'residual')), decimals = 1) %>% 
-          
-          
-          ### Borders
-          tab_style(
-            style = list(
-              cell_borders(
-                sides = "bottom",
-                color = "black",
-                weight = px(3)
-              )
-            ),
-            locations = list(
-              cells_column_labels(
-                columns = gt::everything()
-              )
-            )
-          )  %>% 
-          
-          ### Logos
-          text_transform(
-            locations = cells_body(contains(c('player_url'))),
-            fn = function(x) {
-              web_image(
-                url = x,
-                height = 50
-              )
-            }
-          ) %>%
-          
-          text_transform(
-            locations = cells_body(columns = contains(c('logo_pitch')), 
-                                   rows = (logo_pitch != '---')),
-            fn = function(x) {
-              local_image(
-                filename = x,
-                height = 50
-              )
-            }
-          ) %>%
-          
-          text_transform(
-            locations = cells_body(columns = contains(c('logo_bat')), 
-                                   rows = (logo_bat != '---')),
-            fn = function(x) {
-              local_image(
-                filename = x,
-                height = 50
-              )
-            }
-          ) %>%
-          
-          
-          
-          tab_style(
-            style = list(
-              cell_borders(
-                sides = "right",
-                color = "black",
-                weight = px(3)
-              )
-            ),
-            locations = list(
-              cells_body(
-                columns = contains('residual')
-              )
-            )
-          ) %>% 
-          
-          
-          ### Names
-          cols_label(
-            'team_bat' = 'Team',
-            'logo_bat' = '',
-            'player_url_bat' = '',
-            'player_bat' = 'Player',
-            'points_total_bat' = 'Points',
-            'points_draft_bat' = 'Points (Draft Team)',
-            'ppg_bat' = 'PPG',
-            'ppg_draft_bat' = 'PPG (Draft Team)',
-            'pick_id_bat' = 'Pick',
-            'round_id_bat' = 'Round',
-            'fit_bat' = 'Exp. Pick Value',
-            'residual_bat' = 'Residual',
-            
-            'team_pitch' = 'Team',
-            'logo_pitch' = '',
-            'player_url_pitch' = '',
-            'player_pitch' = 'Player',
-            'points_total_pitch' = 'Points',
-            'points_draft_pitch' = 'Points (Draft Team)',
-            'ppg_pitch' = 'PPG',
-            'ppg_draft_pitch' = 'PPG (Draft Team)',
-            'pick_id_pitch' = 'Pick',
-            'round_id_pitch' = 'Round',
-            'fit_pitch' = 'Exp. Pick Value',
-            'residual_pitch' = 'Residual'
-            
-            
-            
-          ) %>%
-          tab_header(
-            title = md('**Top Draft Picks**')
-          ) %>%
-          tab_options(column_labels.font.size = 12,
-                      heading.title.font.size = 40,
-                      heading.subtitle.font.size = 40,
-                      heading.title.font.weight = 'bold',
-                      heading.subtitle.font.weight = 'bold',
-                      column_labels.font.weight = 'bold')
-        
-        
-        
-        
-      })
-    
-    output$whatif_table <- render_gt({
-      gt(df_whatif) %>% 
-        cols_hide(contains('win_pct')) %>% 
-        cols_align('center') %>% 
-        data_color(columns = contains('win_pct'),
-                   target_columns = contains('record'),
-                   fn = scales::col_numeric(palette = 'RdYlGn', domain = range(df_whatif %>% select(contains('win_pct'))))) %>% 
-        text_transform(locations = cells_body(c(logo_1)),
-                       fn = function(x) {
-                         local_image(filename = x, height = 30)
-                       }) %>% 
-        cols_label_with(columns = 2:13, fn = function(x) {
-          html(local_image(filename = gsub('record_', '', x), height = 30))
-        }) %>% 
-        cols_label('logo_1' = 'Team') %>% 
-        tab_spanner(columns = contains('record'), label = 'vs. This Team\'s Schedule') %>% 
-        tab_header(title = md('**Record vs. Each Team\'s Schedule**')) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 1, columns = 2)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 2, columns = 3)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 3, columns = 4)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 4, columns = 5)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 5, columns = 6)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 6, columns = 7)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 7, columns = 8)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 8, columns = 9)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 9, columns = 10)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 10, columns = 11)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 11, columns = 12)) %>% 
-        tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 12, columns = 13)) %>% 
-        tab_options(column_labels.font.size = 16,
-                    column_labels.font.weight = 'bold',
-                    heading.title.font.size = 50,
-                    heading.subtitle.font.size = 20,
-                    heading.title.font.weight = 'bold',
-                    heading.subtitle.font.weight = 'bold'
-        ) 
+                    column_labels.font.weight = 'bold')
       
       
       
       
     })
-    
-    
-    output$positional_ppg <- renderPlot({
-      
-      ggplot(lineup_stats, aes(x = ppg, y = fct_rev(lineup_id))) + 
-        facet_wrap(~team) +
-        geom_point(data = lineup_avg, size = 3, shape = 18) + 
-        geom_point(aes(fill = ppg - ppg_avg), size = 4, pch = 21, color = 'black') + 
-        scale_fill_gradient2(breaks = c(-1.25, -0.75, -0.25, 0.25, 0.75, 1.25),low = 'blue', mid = 'lightgrey', high = 'red', midpoint = 0) + 
-        theme(legend.text = element_text(angle = 90, size = 12, vjust = 0.5, hjust=1),
-              legend.position = 'bottom',
-              axis.text = element_text(size = 16),
-              strip.text = element_text(size = 16)) + 
-        labs(x = 'PPG', 
-             y = '',
-             fill = 'PPG vs. League Avg at Position',
-             title = 'Positional PPG Relative to League Average') 
-    }, 
-    height = 750,
-    width = 1334)
-    
-    
-    
-    outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
-    outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
-    outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)
-    # outputOptions(output, "top_performers", suspendWhenHidden = FALSE, priority = 2)
-    # outputOptions(output, "best_lineup", suspendWhenHidden = FALSE, priority = 2)
-    # outputOptions(output, 'trade_chart', suspendWhenHidden = FALSE, priority = 2)
-    # outputOptions(output, 'fa_chart', suspendWhenHidden = FALSE, priority = 2)
-    # outputOptions(output, 'fs_chart', suspendWhenHidden = FALSE, priority = 2)
-    outputOptions(output, 'wp_plot', suspendWhenHidden = FALSE, priority = 1)
-    
-    
-    #   outputOptions(output, 'win_dist', suspendWhenHidden = FALSE)
-    #   outputOptions(output, 'points_dist', suspendWhenHidden = FALSE)
-    #   outputOptions(output, 'playoff_history', suspendWhenHidden = FALSE)
-    #   
-    #   outputOptions(output, 'bump', suspendWhenHidden = FALSE)
-    #   outputOptions(output, 'ppw_1', suspendWhenHidden = FALSE)
-    #   outputOptions(output, 'ppw_2', suspendWhenHidden = FALSE)
-    #   outputOptions(output, 'ppw_3', suspendWhenHidden = FALSE)
-    #   outputOptions(output, 'roll_k', suspendWhenHidden = FALSE)
-    # 
-    #   outputOptions(output, 'asg_lineup', suspendWhenHidden = FALSE)
-    #   outputOptions(output, 'asg_counts', suspendWhenHidden = FALSE)
-    
-    
-    #   
-    #   outputOptions(output, "sp_pen", suspendWhenHidden = FALSE)
-    #   outputOptions(output, "rp_pen", suspendWhenHidden = FALSE)
+  
+  output$whatif_table <- render_gt({
+    gt(df_whatif) %>% 
+      cols_hide(contains('win_pct')) %>% 
+      cols_align('center') %>% 
+      data_color(columns = contains('win_pct'),
+                 target_columns = contains('record'),
+                 fn = scales::col_numeric(palette = 'RdYlGn', domain = range(df_whatif %>% select(contains('win_pct'))))) %>% 
+      text_transform(locations = cells_body(c(logo_1)),
+                     fn = function(x) {
+                       local_image(filename = x, height = 30)
+                     }) %>% 
+      cols_label_with(columns = 2:13, fn = function(x) {
+        html(local_image(filename = gsub('record_', '', x), height = 30))
+      }) %>% 
+      cols_label('logo_1' = 'Team') %>% 
+      tab_spanner(columns = contains('record'), label = 'vs. This Team\'s Schedule') %>% 
+      tab_header(title = md('**Record vs. Each Team\'s Schedule**')) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 1, columns = 2)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 2, columns = 3)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 3, columns = 4)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 4, columns = 5)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 5, columns = 6)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 6, columns = 7)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 7, columns = 8)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 8, columns = 9)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 9, columns = 10)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 10, columns = 11)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 11, columns = 12)) %>% 
+      tab_style(style = cell_borders(sides = 'all', color = 'black', weight = px(3), style = "solid"), locations = cells_body(rows = 12, columns = 13)) %>% 
+      tab_options(column_labels.font.size = 16,
+                  column_labels.font.weight = 'bold',
+                  heading.title.font.size = 50,
+                  heading.subtitle.font.size = 20,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold'
+      ) 
     
     
     
     
+  })
+  
+  
+  output$positional_ppg <- renderPlot({
     
-    
-    
+    ggplot(lineup_stats, aes(x = ppg, y = fct_rev(lineup_id))) + 
+      facet_wrap(~team) +
+      geom_point(data = lineup_avg, size = 3, shape = 18) + 
+      geom_point(aes(fill = ppg - ppg_avg), size = 4, pch = 21, color = 'black') + 
+      scale_fill_gradient2(breaks = c(-1.25, -0.75, -0.25, 0.25, 0.75, 1.25),low = 'blue', mid = 'lightgrey', high = 'red', midpoint = 0) + 
+      theme(legend.text = element_text(angle = 90, size = 12, vjust = 0.5, hjust=1),
+            legend.position = 'bottom',
+            axis.text = element_text(size = 16),
+            strip.text = element_text(size = 16)) + 
+      labs(x = 'PPG', 
+           y = '',
+           fill = 'PPG vs. League Avg at Position',
+           title = 'Positional PPG Relative to League Average') 
+  }, 
+  height = 750,
+  width = 1334)
+  
+  
+  
+  outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
+  outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
+  outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)
+  # outputOptions(output, "top_performers", suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, "best_lineup", suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, 'trade_chart', suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, 'fa_chart', suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, 'fs_chart', suspendWhenHidden = FALSE, priority = 2)
+  outputOptions(output, 'wp_plot', suspendWhenHidden = FALSE, priority = 1)
+  
+  
+  #   outputOptions(output, 'win_dist', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'points_dist', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'playoff_history', suspendWhenHidden = FALSE)
+  #   
+  #   outputOptions(output, 'bump', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'ppw_1', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'ppw_2', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'ppw_3', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'roll_k', suspendWhenHidden = FALSE)
+  # 
+  #   outputOptions(output, 'asg_lineup', suspendWhenHidden = FALSE)
+  #   outputOptions(output, 'asg_counts', suspendWhenHidden = FALSE)
+  
+  
+  #   
+  #   outputOptions(output, "sp_pen", suspendWhenHidden = FALSE)
+  #   outputOptions(output, "rp_pen", suspendWhenHidden = FALSE)
+  
+  
+  
+  
+  
+  
+  
 })
-  
-  
-  
-  
-  
-  
+
+
+
+
+

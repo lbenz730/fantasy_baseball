@@ -6,6 +6,7 @@ Guts. Glory. JRam.,All That is Wright,3,4,59.5,4,3,1,0.9297026013821398,0.934717
 Guts. Glory. JRam.,All That is Wright,4,3,50,3,3,0,0.8810508873107892,0.918605400146475
 Guts. Glory. JRam.,All That is Wright,5,2,21,3,2,1,0.7997960070234235,0.764006463472722
 Guts. Glory. JRam.,All That is Wright,6,1,45,1,2,-1,0.8762050974734502,0.7960405184300252
+Guts. Glory. JRam.,All That is Wright,7,0,42.5,0,0,0,1,0.886840873593452
 Blasphemous Hot Takes,The Novaks,0,7,0,8,8,0,0.539173850378047,0.4980916406925082
 Blasphemous Hot Takes,The Novaks,1,6,-15.5,8,6,2,0.5613510544124223,0.5245902215555195
 Blasphemous Hot Takes,The Novaks,2,5,-10,6,5,1,0.5250463670182998,0.49441394492426227
@@ -13,6 +14,7 @@ Blasphemous Hot Takes,The Novaks,3,4,29,4,5,-1,0.6462783582219328,0.677791241411
 Blasphemous Hot Takes,The Novaks,4,3,50,3,4,-1,0.7682320340297681,0.8256176629772092
 Blasphemous Hot Takes,The Novaks,5,2,69.5,2,4,-2,0.8741774680439094,0.8738513478531279
 Blasphemous Hot Takes,The Novaks,6,1,38.5,1,3,-2,0.7770515470062003,0.6809715383665981
+Blasphemous Hot Takes,The Novaks,7,0,31.5,0,0,0,1,0.8211283143172253
 Sac Fly by the Rook,Ketel Bells,0,7,0,8,8,0,0.43198154973963526,0.4980916406925082
 Sac Fly by the Rook,Ketel Bells,1,6,-29.5,6,6,0,0.25939221342984414,0.19123112959581484
 Sac Fly by the Rook,Ketel Bells,2,5,-22,6,6,0,0.2986725818026153,0.2540072256863552
@@ -20,6 +22,7 @@ Sac Fly by the Rook,Ketel Bells,3,4,-24,6,6,0,0.3150163529853942,0.2360244386101
 Sac Fly by the Rook,Ketel Bells,4,3,-4.5,4,5,-1,0.3651968641856329,0.36575206308514685
 Sac Fly by the Rook,Ketel Bells,5,2,-26.5,4,4,0,0.24489720288732356,0.21481207505141522
 Sac Fly by the Rook,Ketel Bells,6,1,-75,2,2,0,0.013650900613291973,0.02522416011899278
+Sac Fly by the Rook,Ketel Bells,7,0,-138,0,0,0,0,0.0012078635202308083
 The Traveling Secretaries,Burnes Notice,0,7,0,8,8,0,0.41050290255951033,0.4980916406925082
 The Traveling Secretaries,Burnes Notice,1,6,6,6,7,-1,0.4434857786640731,0.463847369425102
 The Traveling Secretaries,Burnes Notice,2,5,18.5,4,5,-1,0.4843425138038899,0.5837091720315344
@@ -27,13 +30,15 @@ The Traveling Secretaries,Burnes Notice,3,4,-24,4,5,-1,0.2485709467717966,0.2135
 The Traveling Secretaries,Burnes Notice,4,3,-25,4,5,-1,0.23151499253247532,0.20711387305132312
 The Traveling Secretaries,Burnes Notice,5,2,-24,4,2,2,0.503441516740093,0.44360269778159966
 The Traveling Secretaries,Burnes Notice,6,1,13,2,2,0,0.6867851565719273,0.6512353223326312
+The Traveling Secretaries,Burnes Notice,7,0,-55,0,0,0,0,0.06404791620626477
 The West Bank Occupiers,At Witt's End,0,7,0,8,8,0,0.6511843683135791,0.4980916406925082
 The West Bank Occupiers,At Witt's End,1,6,33.5,7,8,-1,0.750929583926141,0.71452779481381
-The West Bank Occupiers,At Witt's End,2,5,-8.5,4,6,-2,0.4141356786892576,0.26375142773278676
+The West Bank Occupiers,At Witt's End,2,5,-8.5,4,6,-2,0.4141356786892576,0.2637514277327868
 The West Bank Occupiers,At Witt's End,3,4,-43,4,3,1,0.28168547291215534,0.21472168657463175
 The West Bank Occupiers,At Witt's End,4,3,-44,4,1,3,0.37072536844510884,0.33325039836262904
 The West Bank Occupiers,At Witt's End,5,2,-29,4,1,3,0.4456334355245967,0.46590423721618424
 The West Bank Occupiers,At Witt's End,6,1,-57.5,4,0,4,0.153395000602092,0.20510466647786718
+The West Bank Occupiers,At Witt's End,7,0,14,3,0,3,1,0.8115211048824629
 Mt. Everest Taquito Farmers,The Talmudic Tunnelers,0,7,0,8,8,0,0.3713663607141251,0.4980916406925082
 Mt. Everest Taquito Farmers,The Talmudic Tunnelers,1,6,-7,6,7,-1,0.31396455035462406,0.34365221191716333
 Mt. Everest Taquito Farmers,The Talmudic Tunnelers,2,5,19,5,7,-2,0.4293684879926088,0.5044343074099433
@@ -41,3 +46,4 @@ Mt. Everest Taquito Farmers,The Talmudic Tunnelers,3,4,-21,5,5,0,0.3275551591249
 Mt. Everest Taquito Farmers,The Talmudic Tunnelers,4,3,-44.5,5,4,1,0.1953825651031743,0.20511600296795887
 Mt. Everest Taquito Farmers,The Talmudic Tunnelers,5,2,-111.5,3,2,1,0.008479966035780684,0.019040967612405126
 Mt. Everest Taquito Farmers,The Talmudic Tunnelers,6,1,-162.5,3,0,3,0.0021272277911056786,0.0061007093101986785
+Mt. Everest Taquito Farmers,The Talmudic Tunnelers,7,0,-148,1,0,1,0,0.004718913779451593

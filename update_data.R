@@ -811,14 +811,26 @@ df_sims <-
 
 write_csv(df_sims, 'data/playoff_odds/raw_sims.csv')
 
-x <- 
-  df_sims %>% 
-  filter(matchup_id <= reg_season) %>% 
-  group_by(team, division_id, sim_id, team_id) %>% 
-  summarise('wins' = sum(total_points > total_points_opp),
-            'points' = sum(total_points),
-            'win_this_week' = as.numeric(total_points[matchup_id == params$matchup_id] > total_points_opp[matchup_id == params$matchup_id])) %>% 
-  ungroup() 
+if(params$matchup_id <= reg_season) {
+  x <- 
+    df_sims %>% 
+    filter(matchup_id <= reg_season) %>% 
+    group_by(team, division_id, sim_id, team_id) %>% 
+    summarise('wins' = sum(total_points > total_points_opp),
+              'points' = sum(total_points),
+              'win_this_week' = as.numeric(total_points[matchup_id == params$matchup_id] > total_points_opp[matchup_id == params$matchup_id])) %>% 
+    ungroup()
+} else {
+  x <- 
+    df_sims %>% 
+    filter(matchup_id <= reg_season) %>% 
+    group_by(team, division_id, sim_id, team_id) %>% 
+    summarise('wins' = sum(total_points > total_points_opp),
+              'points' = sum(total_points)) %>% 
+    ungroup()
+  
+}
+
 write_csv(x, 'data/playoff_odds/distributions.csv')
 
 x <- 
@@ -852,21 +864,22 @@ sim_results <-
             'last_place' = mean(last_place),
             'champ' = mean(champions == team))
 
-
-leverage <- 
-  group_by(x, team, team_id) %>% 
-  summarise('playoffs_W' = mean(playoffs[win_this_week == 1]),
-            'playoffs_L' = mean(playoffs[win_this_week == 0]),
-            'n_W' = sum(win_this_week == 1),
-            'n_L' = sum(win_this_week == 0),
-            'playoffs_baseline' = mean(playoffs),
-            'playoff_leverage' = playoffs_W - playoffs_L,
-            'ferry_W' = mean(last_place[win_this_week == 1]),
-            'ferry_L' = mean(last_place[win_this_week == 0]),
-            'ferry_baseline' = mean(last_place),
-            'ferry_leverage' = ferry_W - ferry_L) 
-
-write_csv(leverage, glue('data/playoff_odds/leverage_{params$season}.csv'))
+if(params$matchup_id <= reg_season) {
+  leverage <- 
+    group_by(x, team, team_id) %>% 
+    summarise('playoffs_W' = mean(playoffs[win_this_week == 1]),
+              'playoffs_L' = mean(playoffs[win_this_week == 0]),
+              'n_W' = sum(win_this_week == 1),
+              'n_L' = sum(win_this_week == 0),
+              'playoffs_baseline' = mean(playoffs),
+              'playoff_leverage' = playoffs_W - playoffs_L,
+              'ferry_W' = mean(last_place[win_this_week == 1]),
+              'ferry_L' = mean(last_place[win_this_week == 0]),
+              'ferry_baseline' = mean(last_place),
+              'ferry_leverage' = ferry_W - ferry_L) 
+  
+  write_csv(leverage, glue('data/playoff_odds/leverage_{params$season}.csv'))
+}
 
 if(params$matchup_id == 1) {
   df_sims0 <- 
