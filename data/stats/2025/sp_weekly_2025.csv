@@ -255,7 +255,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -520,8 +520,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -798,7 +798,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -1079,8 +1079,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -1363,7 +1363,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -1640,8 +1640,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -1917,7 +1917,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -2196,8 +2196,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -2478,7 +2478,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -2762,8 +2762,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -3047,7 +3047,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -3323,8 +3323,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -3601,7 +3601,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -3880,8 +3880,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -4164,7 +4164,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -4442,8 +4442,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -4716,7 +4716,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -4992,8 +4992,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -5269,7 +5269,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -5549,8 +5549,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -5836,7 +5836,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -6107,8 +6107,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -6384,7 +6384,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -6666,8 +6666,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -6953,7 +6953,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -7227,8 +7227,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -7503,7 +7503,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -7778,8 +7778,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -8057,7 +8057,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -8339,8 +8339,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -8627,7 +8627,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -8905,8 +8905,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -9178,7 +9178,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -9461,8 +9461,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -9753,7 +9753,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -10024,8 +10024,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -10292,7 +10292,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -10574,8 +10574,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -10851,7 +10851,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -11129,8 +11129,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -11401,7 +11401,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 126,21,Ceddanne Rafaela,4987382,NA,9.5,NA,8
 126,21,Matt Olson,32767,NA,11.5,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -11678,8 +11678,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 126,21,Yainer Diaz,4781491,NA,13,NA,1
 126,21,Kenley Jansen,29630,NA,-3,0,1
 126,21,Colt Keith,4683384,NA,-1.5,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
@@ -11811,7 +11811,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 125,NA,NA,NA,NA,NA,NA,11
 126,NA,NA,NA,NA,NA,NA,8
 127,NA,NA,NA,NA,NA,NA,14
-128,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,13
 129,NA,NA,NA,NA,NA,NA,4
 130,NA,NA,NA,NA,NA,NA,11
 131,NA,NA,NA,NA,NA,NA,6
@@ -11942,8 +11942,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 124,NA,NA,NA,NA,NA,NA,14
 125,NA,NA,NA,NA,NA,NA,7
 126,NA,NA,NA,NA,NA,NA,1
-127,NA,NA,NA,NA,NA,NA,12
-128,NA,NA,NA,NA,NA,NA,13
+127,NA,NA,NA,NA,NA,NA,1
+128,NA,NA,NA,NA,NA,NA,12
 129,NA,NA,NA,NA,NA,NA,5
 130,NA,NA,NA,NA,NA,NA,9
 131,NA,NA,NA,NA,NA,NA,2
