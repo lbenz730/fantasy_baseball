@@ -461,19 +461,19 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Daniel Palencia,4875225,6,24,6,21
 15,RP,Bryan Abreu,41208,12,20.5,6.833333333333333,21
 15,RP,Carlos Estevez,34861,13,20,6.666666666666667,21
-0,C,William Contreras,39895,6,18.5,6.166666666666667,22
-1,1B,Cody Bellinger,33912,6,22,7.333333333333333,22
-2,2B,Ozzie Albies,33783,8,27.5,9.166666666666666,22
-3,3B,Rafael Devers,33859,2,21.5,10.75,22
+0,C,William Contreras,39895,6,21,5.25,22
+1,1B,Cody Bellinger,33912,6,34,8.5,22
+2,2B,Ozzie Albies,33783,8,28.5,7.125,22
+3,3B,Rafael Devers,33859,2,23.5,7.833333333333333,22
 4,SS,Zach Neto,4666100,8,20,6.666666666666667,22
 5,OF,George Springer,32078,14,26.5,8.833333333333334,22
-5,OF,Jurickson Profar,31117,12,24,8,22
+5,OF,Jurickson Profar,31117,12,26,6.5,22
 5,OF,Adolis Garcia,35537,1,23,7.666666666666667,22
-5,OF,Ramon Laureano,35142,9,17,5.666666666666667,22
-5,OF,Andy Pages,42468,12,16.5,5.5,22
+5,OF,Jazz Chisholm Jr.,41433,14,22.5,5.625,22
+5,OF,Harrison Bader,35062,8,20.5,5.125,22
 6,2B/SS,Corey Seager,32691,2,18,6,22
-7,1B/3B,Eugenio Suarez,32367,7,20,6.666666666666667,22
-12,UTIL,Matt Chapman,33857,1,19,9.5,22
+7,1B/3B,Pete Alonso,37498,11,21.5,5.375,22
+12,UTIL,Kyle Schwarber,33712,4,32,8,22
 14,SP,Edward Cabrera,40944,9,33.5,33.5,22
 14,SP,Lucas Giolito,32697,1,32.5,32.5,22
 14,SP,Nolan McLean,4433874,2,31,31,22
@@ -481,5 +481,5 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 14,SP,Cam Schlittler,5134581,9,26.5,26.5,22
 14,SP,Framber Valdez,36581,7,26.5,26.5,22
 15,RP,Aroldis Chapman,30442,11,15,7.5,22
-15,RP,Aaron Ashby,41325,4,10.5,10.5,22
-15,RP,Cade Smith,4987924,7,10,5,22
+15,RP,Bryan Abreu,41208,12,12,6,22
+15,RP,Garrett Whitlock,39674,12,11.5,5.75,22
