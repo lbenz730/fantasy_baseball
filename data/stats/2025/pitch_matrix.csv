@@ -151,7 +151,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.0,0,4,QS Potential,All That is Wright
 4,5.0,1,7,QS Potential,All That is Wright
 4,5.0,2,10,QS Potential,All That is Wright
-4,5.0,3,5,QS Potential,All That is Wright
+4,5.0,3,6,QS Potential,All That is Wright
 4,5.0,4,3,Bad Start,All That is Wright
 4,5.0,5,3,Bad Start,All That is Wright
 4,5.1,0,1,QS Potential,All That is Wright
@@ -167,7 +167,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,6.0,0,6,QS,All That is Wright
 4,6.0,1,13,QS,All That is Wright
 4,6.0,2,12,QS,All That is Wright
-4,6.0,3,7,QS,All That is Wright
+4,6.0,3,8,QS,All That is Wright
 4,6.0,4,2,QS Potential,All That is Wright
 4,6.0,5,3,Bad Start,All That is Wright
 4,6.1,0,2,QS,All That is Wright
@@ -224,7 +224,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.1,5,2,Bad Start,The Traveling Secretaries
 5,5.1,6+,2,Bad Start,The Traveling Secretaries
 5,5.2,0,3,Blue Balls,The Traveling Secretaries
-5,5.2,1,1,Blue Balls,The Traveling Secretaries
+5,5.2,1,2,Blue Balls,The Traveling Secretaries
 5,5.2,2,4,Blue Balls,The Traveling Secretaries
 5,5.2,3,3,Blue Balls,The Traveling Secretaries
 5,5.2,4,3,Bad Start,The Traveling Secretaries
@@ -304,7 +304,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,6.2,4,1,QS Potential,The Novaks
 6,6.2,5,1,Bad Start,The Novaks
 6,7.0,0,5,QS,The Novaks
-6,7.0,1,6,QS,The Novaks
+6,7.0,1,8,QS,The Novaks
 6,7.0,2,8,QS,The Novaks
 6,7.0,3,1,QS,The Novaks
 6,7.0,4,1,QS Potential,The Novaks
@@ -370,7 +370,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.2,3,1,QS,At Witt's End
 7,6.2,4,1,QS Potential,At Witt's End
 7,7.0,0,8,QS,At Witt's End
-7,7.0,1,6,QS,At Witt's End
+7,7.0,1,7,QS,At Witt's End
 7,7.0,2,6,QS,At Witt's End
 7,7.0,3,2,QS,At Witt's End
 7,7.0,4,1,QS Potential,At Witt's End
@@ -396,7 +396,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,4.2,4,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,5,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,6+,3,Bad Start,Mt. Everest Taquito Farmers
-8,5.0,0,2,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,0,3,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,1,11,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,2,5,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,3,3,QS Potential,Mt. Everest Taquito Farmers
@@ -449,7 +449,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,3.2,4,1,Bad Start,Guts. Glory. JRam.
 9,4.0,2,1,Bad Start,Guts. Glory. JRam.
 9,4.0,4,2,Bad Start,Guts. Glory. JRam.
-9,4.0,5,3,Bad Start,Guts. Glory. JRam.
+9,4.0,5,4,Bad Start,Guts. Glory. JRam.
 9,4.0,6+,3,Bad Start,Guts. Glory. JRam.
 9,4.1,2,1,Bad Start,Guts. Glory. JRam.
 9,4.1,3,1,Bad Start,Guts. Glory. JRam.
@@ -462,7 +462,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,4.2,6+,2,Bad Start,Guts. Glory. JRam.
 9,5.0,0,3,QS Potential,Guts. Glory. JRam.
 9,5.0,1,8,QS Potential,Guts. Glory. JRam.
-9,5.0,2,1,QS Potential,Guts. Glory. JRam.
+9,5.0,2,2,QS Potential,Guts. Glory. JRam.
 9,5.0,3,6,QS Potential,Guts. Glory. JRam.
 9,5.0,4,8,Bad Start,Guts. Glory. JRam.
 9,5.0,5,2,Bad Start,Guts. Glory. JRam.
@@ -478,7 +478,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.2,3,2,Blue Balls,Guts. Glory. JRam.
 9,5.2,4,1,Bad Start,Guts. Glory. JRam.
 9,6.0,0,11,QS,Guts. Glory. JRam.
-9,6.0,1,15,QS,Guts. Glory. JRam.
+9,6.0,1,16,QS,Guts. Glory. JRam.
 9,6.0,2,5,QS,Guts. Glory. JRam.
 9,6.0,3,5,QS,Guts. Glory. JRam.
 9,6.0,4,5,QS Potential,Guts. Glory. JRam.
@@ -490,7 +490,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.2,2,4,QS,Guts. Glory. JRam.
 9,6.2,4,1,QS Potential,Guts. Glory. JRam.
 9,7.0,0,12,QS,Guts. Glory. JRam.
-9,7.0,1,8,QS,Guts. Glory. JRam.
+9,7.0,1,9,QS,Guts. Glory. JRam.
 9,7.0,2,4,QS,Guts. Glory. JRam.
 9,7.0,3,1,QS,Guts. Glory. JRam.
 9,< 3,3,1,Bad Start,Guts. Glory. JRam.
@@ -605,7 +605,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,6.1,0,2,QS,Blasphemous Hot Takes
 12,6.1,1,2,QS,Blasphemous Hot Takes
 12,6.1,2,5,QS,Blasphemous Hot Takes
-12,6.1,3,2,QS,Blasphemous Hot Takes
+12,6.1,3,3,QS,Blasphemous Hot Takes
 12,6.1,4,1,QS Potential,Blasphemous Hot Takes
 12,6.2,0,2,QS,Blasphemous Hot Takes
 12,6.2,1,2,QS,Blasphemous Hot Takes
@@ -645,14 +645,14 @@ team_id,ip,earned_runs,n,start_type,team
 13,5.1,2,4,QS Potential,Ketel Bells
 13,5.1,3,1,QS Potential,Ketel Bells
 13,5.1,5,2,Bad Start,Ketel Bells
-13,5.1,6+,1,Bad Start,Ketel Bells
+13,5.1,6+,2,Bad Start,Ketel Bells
 13,5.2,0,2,Blue Balls,Ketel Bells
 13,5.2,2,2,Blue Balls,Ketel Bells
 13,5.2,3,2,Blue Balls,Ketel Bells
 13,5.2,4,2,Bad Start,Ketel Bells
 13,5.2,5,1,Bad Start,Ketel Bells
 13,6.0,0,9,QS,Ketel Bells
-13,6.0,1,19,QS,Ketel Bells
+13,6.0,1,20,QS,Ketel Bells
 13,6.0,2,15,QS,Ketel Bells
 13,6.0,3,4,QS,Ketel Bells
 13,6.0,4,1,QS Potential,Ketel Bells
@@ -667,6 +667,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,7.0,0,8,QS,Ketel Bells
 13,7.0,1,8,QS,Ketel Bells
 13,7.0,2,5,QS,Ketel Bells
+13,7.0,3,1,QS,Ketel Bells
 13,< 3,0,1,Bad Start,Ketel Bells
 13,< 3,2,2,Bad Start,Ketel Bells
 13,< 3,5,1,Bad Start,Ketel Bells
@@ -734,7 +735,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,< 3,2,1,Bad Start,Burnes Notice
 14,< 3,3,1,Bad Start,Burnes Notice
 14,< 3,4,1,Bad Start,Burnes Notice
-14,< 3,6+,1,Bad Start,Burnes Notice
+14,< 3,6+,2,Bad Start,Burnes Notice
 14,> 7,0,2,QS,Burnes Notice
 14,> 7,1,1,QS,Burnes Notice
 14,CG,0,2,CG,Burnes Notice
