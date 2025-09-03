@@ -1,16 +1,4 @@
 game_date,player,player_id,team_id
-2025-09-02,Nolan McLean,4433874,2
-2025-09-02,Clayton Kershaw,28963,12
-2025-09-02,Jose Berrios,32811,7
-2025-09-02,Nick Lodolo,42433,6
-2025-09-02,Garrett Crochet,4297835,6
-2025-09-02,Bryan Woo,4629089,8
-2025-09-02,Drew Rasmussen,42584,1
-2025-09-02,Joey Wentz,40927,14
-2025-09-02,Shota Imanaga,5134630,2
-2025-09-02,Max Fried,32685,9
-2025-09-02,Framber Valdez,36581,7
-2025-09-02,Logan Webb,41216,12
 2025-09-03,Eury Perez,4917854,2
 2025-09-03,Casey Mize,41167,5
 2025-09-03,Zac Gallen,39910,1
@@ -32,3 +20,6 @@ game_date,player,player_id,team_id
 2025-09-04,Seth Lugo,34873,4
 2025-09-04,Carlos Rodon,33696,14
 2025-09-04,Cristian Javier,41261,9
+2025-09-05,Andrew Abbott,4414528,9
+2025-09-05,Kevin Gausman,32667,6
+2025-09-05,Michael McGreevy,4424141,8
