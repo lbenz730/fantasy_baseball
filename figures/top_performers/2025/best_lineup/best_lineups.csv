@@ -461,19 +461,19 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Daniel Palencia,4875225,6,24,6,21
 15,RP,Bryan Abreu,41208,12,20.5,6.833333333333333,21
 15,RP,Carlos Estevez,34861,13,20,6.666666666666667,21
-0,C,William Contreras,39895,6,35,4.375,22
-1,1B,Rafael Devers,33859,2,54,6.75,22
-2,2B,Jazz Chisholm Jr.,41433,14,46.5,5.8125,22
-3,3B,Mark Vientos,41034,12,38,4.222222222222222,22
-4,SS,Willy Adames,33675,1,38,5.428571428571429,22
-5,OF,Juan Soto,36969,12,67.5,7.5,22
-5,OF,George Springer,32078,14,53,6.625,22
-5,OF,Byron Buxton,32655,1,45.5,6.5,22
-5,OF,Aaron Judge,33192,2,44,5.5,22
-5,OF,Trent Grisham,34995,14,42.5,5.3125,22
-6,2B/SS,Ozzie Albies,33783,8,46.5,5.166666666666667,22
-7,1B/3B,Pete Alonso,37498,11,41.5,4.611111111111111,22
-12,UTIL,Ian Happ,34945,5,39.5,5.642857142857143,22
+0,C,William Contreras,39895,6,37,4.111111111111111,22
+1,1B,Rafael Devers,33859,2,56.5,6.277777777777778,22
+2,2B,Ozzie Albies,33783,8,54,5.4,22
+3,3B,Jazz Chisholm Jr.,41433,14,46,5.111111111111111,22
+4,SS,Willy Adames,33675,1,39,4.875,22
+5,OF,Juan Soto,36969,12,69.5,6.95,22
+5,OF,George Springer,32078,14,63.5,7.055555555555555,22
+5,OF,Byron Buxton,32655,1,49,6.125,22
+5,OF,Cody Bellinger,33912,6,47.5,5.277777777777778,22
+5,OF,Aaron Judge,33192,2,46,5.111111111111111,22
+6,2B/SS,Brice Turang,41179,14,42.5,4.722222222222222,22
+7,1B/3B,Pete Alonso,37498,11,46.5,4.65,22
+12,UTIL,Matt Chapman,33857,1,43.5,5.4375,22
 14,SP,Lucas Giolito,32697,1,53.5,26.75,22
 14,SP,Tarik Skubal,42409,5,53,26.5,22
 14,SP,Nolan McLean,4433874,2,52.5,26.25,22
@@ -481,5 +481,5 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 14,SP,Max Fried,32685,9,48,24,22
 14,SP,Shane Baz,39639,11,44,22,22
 15,RP,Aroldis Chapman,30442,11,30,7.5,22
-15,RP,Garrett Whitlock,39674,12,19,4.75,22
-15,RP,Edwin Diaz,35394,8,16.5,5.5,22
+15,RP,Dennis Santana,39801,7,23.5,4.7,22
+15,RP,Reid Detmers,4326697,2,20.5,5.125,22
