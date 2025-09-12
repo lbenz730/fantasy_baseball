@@ -297,7 +297,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,5.2,6+,1,Bad Start,The Novaks
 6,6.0,0,11,QS,The Novaks
 6,6.0,1,12,QS,The Novaks
-6,6.0,2,8,QS,The Novaks
+6,6.0,2,9,QS,The Novaks
 6,6.0,3,9,QS,The Novaks
 6,6.0,4,2,QS Potential,The Novaks
 6,6.0,5,3,Bad Start,The Novaks
@@ -322,7 +322,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,< 3,6+,1,Bad Start,The Novaks
 6,> 7,0,3,QS,The Novaks
 6,> 7,1,8,QS,The Novaks
-6,CG,0,2,CG,The Novaks
+6,CG,0,3,CG,The Novaks
 6,CG,2,1,CG,The Novaks
 6,CG,4,1,CG,The Novaks
 7,3.0,4,1,Bad Start,At Witt's End
@@ -488,10 +488,10 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.2,3,2,Blue Balls,Guts. Glory. JRam.
 9,5.2,4,1,Bad Start,Guts. Glory. JRam.
 9,6.0,0,11,QS,Guts. Glory. JRam.
-9,6.0,1,17,QS,Guts. Glory. JRam.
+9,6.0,1,18,QS,Guts. Glory. JRam.
 9,6.0,2,5,QS,Guts. Glory. JRam.
 9,6.0,3,5,QS,Guts. Glory. JRam.
-9,6.0,4,5,QS Potential,Guts. Glory. JRam.
+9,6.0,4,6,QS Potential,Guts. Glory. JRam.
 9,6.0,5,2,Bad Start,Guts. Glory. JRam.
 9,6.1,2,1,QS,Guts. Glory. JRam.
 9,6.1,4,1,QS Potential,Guts. Glory. JRam.
@@ -631,6 +631,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,< 3,6+,2,Bad Start,Blasphemous Hot Takes
 12,> 7,0,2,QS,Blasphemous Hot Takes
 12,> 7,1,1,QS,Blasphemous Hot Takes
+12,> 7,4,1,QS Potential,Blasphemous Hot Takes
 13,3.0,3,1,Bad Start,Ketel Bells
 13,3.0,5,1,Bad Start,Ketel Bells
 13,3.0,6+,1,Bad Start,Ketel Bells
@@ -639,7 +640,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.0,0,2,Bad Start,Ketel Bells
 13,4.0,1,1,Bad Start,Ketel Bells
 13,4.0,2,1,Bad Start,Ketel Bells
-13,4.0,3,2,Bad Start,Ketel Bells
+13,4.0,3,3,Bad Start,Ketel Bells
 13,4.0,4,3,Bad Start,Ketel Bells
 13,4.0,5,1,Bad Start,Ketel Bells
 13,4.0,6+,1,Bad Start,Ketel Bells
@@ -649,7 +650,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.2,5,1,Bad Start,Ketel Bells
 13,5.0,0,10,QS Potential,Ketel Bells
 13,5.0,1,7,QS Potential,Ketel Bells
-13,5.0,2,10,QS Potential,Ketel Bells
+13,5.0,2,11,QS Potential,Ketel Bells
 13,5.0,3,10,QS Potential,Ketel Bells
 13,5.0,4,3,Bad Start,Ketel Bells
 13,5.0,5,2,Bad Start,Ketel Bells
@@ -710,7 +711,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.0,0,7,QS Potential,Burnes Notice
 14,5.0,1,3,QS Potential,Burnes Notice
 14,5.0,2,8,QS Potential,Burnes Notice
-14,5.0,3,7,QS Potential,Burnes Notice
+14,5.0,3,8,QS Potential,Burnes Notice
 14,5.0,4,3,Bad Start,Burnes Notice
 14,5.0,5,1,Bad Start,Burnes Notice
 14,5.0,6+,3,Bad Start,Burnes Notice
