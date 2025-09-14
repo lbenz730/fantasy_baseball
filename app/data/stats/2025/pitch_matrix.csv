@@ -19,7 +19,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.0,0,10,QS Potential,The Talmudic Tunnelers
 1,5.0,1,9,QS Potential,The Talmudic Tunnelers
 1,5.0,2,9,QS Potential,The Talmudic Tunnelers
-1,5.0,3,12,QS Potential,The Talmudic Tunnelers
+1,5.0,3,13,QS Potential,The Talmudic Tunnelers
 1,5.0,4,4,Bad Start,The Talmudic Tunnelers
 1,5.0,5,4,Bad Start,The Talmudic Tunnelers
 1,5.0,6+,5,Bad Start,The Talmudic Tunnelers
@@ -87,7 +87,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.2,6+,1,Bad Start,Sac Fly by the Rook
 2,5.0,0,7,QS Potential,Sac Fly by the Rook
 2,5.0,1,7,QS Potential,Sac Fly by the Rook
-2,5.0,2,7,QS Potential,Sac Fly by the Rook
+2,5.0,2,8,QS Potential,Sac Fly by the Rook
 2,5.0,3,12,QS Potential,Sac Fly by the Rook
 2,5.0,4,8,Bad Start,Sac Fly by the Rook
 2,5.0,5,5,Bad Start,Sac Fly by the Rook
@@ -188,6 +188,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,7.0,4,2,QS Potential,All That is Wright
 4,< 3,0,1,Bad Start,All That is Wright
 4,< 3,1,1,Bad Start,All That is Wright
+4,< 3,5,1,Bad Start,All That is Wright
 4,< 3,6+,1,Bad Start,All That is Wright
 4,> 7,0,2,QS,All That is Wright
 4,CG,2,1,CG,All That is Wright
@@ -363,7 +364,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,4,2,Bad Start,At Witt's End
 7,5.2,5,1,Bad Start,At Witt's End
 7,6.0,0,10,QS,At Witt's End
-7,6.0,1,14,QS,At Witt's End
+7,6.0,1,15,QS,At Witt's End
 7,6.0,2,9,QS,At Witt's End
 7,6.0,3,6,QS,At Witt's End
 7,6.0,4,2,QS Potential,At Witt's End
@@ -373,7 +374,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.1,2,2,QS,At Witt's End
 7,6.2,0,1,QS,At Witt's End
 7,6.2,1,3,QS,At Witt's End
-7,6.2,2,2,QS,At Witt's End
+7,6.2,2,3,QS,At Witt's End
 7,6.2,3,1,QS,At Witt's End
 7,6.2,4,1,QS Potential,At Witt's End
 7,7.0,0,8,QS,At Witt's End
@@ -393,7 +394,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,3.2,3,1,Bad Start,Mt. Everest Taquito Farmers
 8,3.2,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,3.2,6+,1,Bad Start,Mt. Everest Taquito Farmers
-8,4.0,2,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.0,2,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.0,3,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.0,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.0,5,2,Bad Start,Mt. Everest Taquito Farmers
@@ -423,7 +424,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,6+,1,Bad Start,Mt. Everest Taquito Farmers
 8,6.0,0,9,QS,Mt. Everest Taquito Farmers
 8,6.0,1,13,QS,Mt. Everest Taquito Farmers
-8,6.0,2,19,QS,Mt. Everest Taquito Farmers
+8,6.0,2,20,QS,Mt. Everest Taquito Farmers
 8,6.0,3,9,QS,Mt. Everest Taquito Farmers
 8,6.0,4,5,QS Potential,Mt. Everest Taquito Farmers
 8,6.0,5,4,Bad Start,Mt. Everest Taquito Farmers
@@ -479,7 +480,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.0,6+,2,Bad Start,Guts. Glory. JRam.
 9,5.1,0,1,QS Potential,Guts. Glory. JRam.
 9,5.1,1,2,QS Potential,Guts. Glory. JRam.
-9,5.1,2,4,QS Potential,Guts. Glory. JRam.
+9,5.1,2,5,QS Potential,Guts. Glory. JRam.
 9,5.1,4,1,Bad Start,Guts. Glory. JRam.
 9,5.1,5,1,Bad Start,Guts. Glory. JRam.
 9,5.1,6+,1,Bad Start,Guts. Glory. JRam.
@@ -587,7 +588,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,4.0,3,2,Bad Start,Blasphemous Hot Takes
 12,4.0,4,4,Bad Start,Blasphemous Hot Takes
 12,4.0,5,2,Bad Start,Blasphemous Hot Takes
-12,4.0,6+,2,Bad Start,Blasphemous Hot Takes
+12,4.0,6+,3,Bad Start,Blasphemous Hot Takes
 12,4.1,4,2,Bad Start,Blasphemous Hot Takes
 12,4.2,0,1,Bad Start,Blasphemous Hot Takes
 12,4.2,1,1,Bad Start,Blasphemous Hot Takes
@@ -597,7 +598,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.0,1,3,QS Potential,Blasphemous Hot Takes
 12,5.0,2,7,QS Potential,Blasphemous Hot Takes
 12,5.0,3,6,QS Potential,Blasphemous Hot Takes
-12,5.0,4,6,Bad Start,Blasphemous Hot Takes
+12,5.0,4,7,Bad Start,Blasphemous Hot Takes
 12,5.0,5,2,Bad Start,Blasphemous Hot Takes
 12,5.0,6+,1,Bad Start,Blasphemous Hot Takes
 12,5.1,1,4,QS Potential,Blasphemous Hot Takes
@@ -731,8 +732,8 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.2,4,1,Bad Start,Burnes Notice
 14,5.2,5,1,Bad Start,Burnes Notice
 14,5.2,6+,1,Bad Start,Burnes Notice
-14,6.0,0,7,QS,Burnes Notice
-14,6.0,1,17,QS,Burnes Notice
+14,6.0,0,8,QS,Burnes Notice
+14,6.0,1,18,QS,Burnes Notice
 14,6.0,2,9,QS,Burnes Notice
 14,6.0,3,10,QS,Burnes Notice
 14,6.0,4,7,QS Potential,Burnes Notice
