@@ -192,6 +192,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,< 3,5,1,Bad Start,All That is Wright
 4,< 3,6+,1,Bad Start,All That is Wright
 4,> 7,0,2,QS,All That is Wright
+4,CG,0,1,CG,All That is Wright
 4,CG,2,1,CG,All That is Wright
 5,3.0,2,1,Bad Start,The Traveling Secretaries
 5,3.0,3,1,Bad Start,The Traveling Secretaries
@@ -237,7 +238,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.2,4,3,Bad Start,The Traveling Secretaries
 5,5.2,6+,1,Bad Start,The Traveling Secretaries
 5,6.0,0,12,QS,The Traveling Secretaries
-5,6.0,1,14,QS,The Traveling Secretaries
+5,6.0,1,15,QS,The Traveling Secretaries
 5,6.0,2,11,QS,The Traveling Secretaries
 5,6.0,3,4,QS,The Traveling Secretaries
 5,6.0,4,2,QS Potential,The Traveling Secretaries
@@ -338,7 +339,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.0,5,2,Bad Start,At Witt's End
 7,4.0,6+,2,Bad Start,At Witt's End
 7,4.1,2,2,Bad Start,At Witt's End
-7,4.1,3,1,Bad Start,At Witt's End
+7,4.1,3,2,Bad Start,At Witt's End
 7,4.1,4,1,Bad Start,At Witt's End
 7,4.1,6+,2,Bad Start,At Witt's End
 7,4.2,2,1,Bad Start,At Witt's End
@@ -361,7 +362,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.1,5,1,Bad Start,At Witt's End
 7,5.1,6+,2,Bad Start,At Witt's End
 7,5.2,0,1,Blue Balls,At Witt's End
-7,5.2,2,6,Blue Balls,At Witt's End
+7,5.2,2,7,Blue Balls,At Witt's End
 7,5.2,3,5,Blue Balls,At Witt's End
 7,5.2,4,2,Bad Start,At Witt's End
 7,5.2,5,1,Bad Start,At Witt's End
@@ -414,6 +415,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.0,4,3,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,5,2,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,6+,2,Bad Start,Mt. Everest Taquito Farmers
+8,5.1,0,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,1,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,2,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,3,3,QS Potential,Mt. Everest Taquito Farmers
@@ -502,7 +504,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.2,1,2,QS,Guts. Glory. JRam.
 9,6.2,2,4,QS,Guts. Glory. JRam.
 9,6.2,4,1,QS Potential,Guts. Glory. JRam.
-9,7.0,0,12,QS,Guts. Glory. JRam.
+9,7.0,0,13,QS,Guts. Glory. JRam.
 9,7.0,1,10,QS,Guts. Glory. JRam.
 9,7.0,2,4,QS,Guts. Glory. JRam.
 9,7.0,3,1,QS,Guts. Glory. JRam.
@@ -532,7 +534,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,4.2,4,2,Bad Start,The West Bank Occupiers
 11,4.2,5,1,Bad Start,The West Bank Occupiers
 11,4.2,6+,2,Bad Start,The West Bank Occupiers
-11,5.0,0,2,QS Potential,The West Bank Occupiers
+11,5.0,0,3,QS Potential,The West Bank Occupiers
 11,5.0,1,3,QS Potential,The West Bank Occupiers
 11,5.0,2,14,QS Potential,The West Bank Occupiers
 11,5.0,3,9,QS Potential,The West Bank Occupiers
@@ -550,8 +552,8 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.2,4,2,Bad Start,The West Bank Occupiers
 11,5.2,5,1,Bad Start,The West Bank Occupiers
 11,5.2,6+,1,Bad Start,The West Bank Occupiers
-11,6.0,0,9,QS,The West Bank Occupiers
-11,6.0,1,10,QS,The West Bank Occupiers
+11,6.0,0,10,QS,The West Bank Occupiers
+11,6.0,1,11,QS,The West Bank Occupiers
 11,6.0,2,8,QS,The West Bank Occupiers
 11,6.0,3,10,QS,The West Bank Occupiers
 11,6.0,4,4,QS Potential,The West Bank Occupiers
@@ -588,7 +590,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,3.2,6+,1,Bad Start,Blasphemous Hot Takes
 12,4.0,0,1,Bad Start,Blasphemous Hot Takes
 12,4.0,1,1,Bad Start,Blasphemous Hot Takes
-12,4.0,3,2,Bad Start,Blasphemous Hot Takes
+12,4.0,3,3,Bad Start,Blasphemous Hot Takes
 12,4.0,4,4,Bad Start,Blasphemous Hot Takes
 12,4.0,5,2,Bad Start,Blasphemous Hot Takes
 12,4.0,6+,3,Bad Start,Blasphemous Hot Takes
@@ -628,8 +630,9 @@ team_id,ip,earned_runs,n,start_type,team
 12,6.2,0,3,QS,Blasphemous Hot Takes
 12,6.2,1,2,QS,Blasphemous Hot Takes
 12,6.2,2,1,QS,Blasphemous Hot Takes
+12,6.2,3,1,QS,Blasphemous Hot Takes
 12,7.0,0,11,QS,Blasphemous Hot Takes
-12,7.0,1,14,QS,Blasphemous Hot Takes
+12,7.0,1,15,QS,Blasphemous Hot Takes
 12,7.0,2,3,QS,Blasphemous Hot Takes
 12,7.0,3,2,QS,Blasphemous Hot Takes
 12,7.0,4,1,QS Potential,Blasphemous Hot Takes
@@ -733,7 +736,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.1,6+,1,Bad Start,Burnes Notice
 14,5.2,0,1,Blue Balls,Burnes Notice
 14,5.2,1,3,Blue Balls,Burnes Notice
-14,5.2,2,7,Blue Balls,Burnes Notice
+14,5.2,2,8,Blue Balls,Burnes Notice
 14,5.2,3,2,Blue Balls,Burnes Notice
 14,5.2,4,1,Bad Start,Burnes Notice
 14,5.2,5,1,Bad Start,Burnes Notice
