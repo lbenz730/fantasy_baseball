@@ -264,7 +264,7 @@ shinyServer(function(input, output, session) {
         last_place = md(ferry),
       ) %>%
       tab_header(
-        subtitle = md('**Millburnish Fantansy Baseball League Advanced Stats Table**'),
+        subtitle = md('**Millburnish Fantasy Baseball League Advanced Stats Table**'),
         title = md('<img src="www/League.png" style="height:200px;">')
       ) %>%
       tab_options(column_labels.font.size = 20,
@@ -2486,6 +2486,159 @@ shinyServer(function(input, output, session) {
   width = 1334)
   
   
+  ### League History ###
+  output$league_history_table <- render_gt({
+    league_summary <-
+      league_history %>% 
+      left_join(df_managers, by = c('team_id', 'season')) %>% 
+      group_by(manager) %>% 
+      summarise('seasons' = n(),
+                'playoffs' = sum(playoffs),
+                'champion' = sum(champion),
+                'runner_up' = sum(runner_up),
+                'third' = sum(third),
+                'points_champ' = sum(points_champ),
+                'ferry' = sum(ferry),
+                'avg_rs_finish' = mean(rs_finish),
+                'n_points' = sum(n_points),
+                'ppg' = weighted.mean(ppg, n_wins + n_loss),
+                'ppg_scaled' = weighted.mean(ppg_scaled, n_wins + n_loss),
+                'n_wins' = sum(n_wins),
+                'n_loss' = sum(n_loss),
+                'current' = any(season >= 2025)) %>% 
+      mutate('win_pct' = n_wins/(n_wins + n_loss)) %>% 
+      arrange(-current, avg_rs_finish) %>% 
+      select(-current)
+    
+    
+    gt(league_summary) %>% 
+      cols_align('center') %>% 
+      fmt_number(avg_rs_finish, decimals = 1) %>% 
+      fmt_number(c(n_points, n_wins, n_loss), decimals = 1, drop_trailing_zeros = T) %>% 
+      fmt_number(c( ppg, ppg_scaled), decimals = 1, drop_trailing_zeros = F) %>% 
+      fmt_number(win_pct, decimals = 3) %>% 
+      tab_spanner(c(playoffs, champion, runner_up, third, points_champ, ferry, avg_rs_finish), label = 'Standings') %>% 
+      tab_spanner(c(n_points, ppg, ppg_scaled), label = 'Points') %>% 
+      tab_spanner(c(n_wins, n_loss, win_pct), label = 'Record') %>% 
+      cols_label(manager = 'Manager',
+                 seasons = '# Seasons',
+                 playoffs = 'Playoffs',
+                 champion = 'Champ',
+                 runner_up = '2nd',
+                 third = '3rd',
+                 points_champ = 'Points Lead',
+                 ferry = 'Ferry',
+                 avg_rs_finish = 'Avg. Finish',
+                 n_points = '# of Points',
+                 ppg = 'PPG',
+                 ppg_scaled = 'Scaled PPG',
+                 n_wins = 'Wins',
+                 n_loss = 'Loss',
+                 win_pct = 'Win %') %>% 
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_column_labels(
+            columns = gt::everything()
+          )
+        )
+      ) %>%
+      
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "right",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_body(
+            columns = c('seasons', 'avg_rs_finish', 'ppg_scaled')
+          )
+        )
+      ) %>% 
+      tab_footnote(
+        footnote = "Average of playoff finish for 1-4 and regular season finish for 5-12, under current seeding rules (wins, w/ points tiebreaker; no divisions)",
+        locations = cells_column_labels(avg_rs_finish),
+        placement = 'left'
+      ) %>% 
+      tab_footnote(
+        footnote = "PPG relative to league average over relevant seasons, to adjust for different rules/scoring environments",
+        locations = cells_column_labels(ppg_scaled),
+        placement = 'left'
+      ) %>% 
+      tab_header(title = md('**Millburnish Fantasy League History**'),
+                 subtitle = md('**2015-2026**')) %>% 
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 30,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold',
+                  row_group.font.weight = 'bold',
+                  row_group.font.size  = 22) %>% 
+      tab_style(style = list(cell_borders(sides = "top", color = "black", weight = px(3))), locations = list(cells_body(rows = 13))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = playoffs, rows = playoffs == max(playoffs))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = champion, rows = champion == max(champion))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = runner_up, rows = runner_up == max(runner_up))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = third, rows = third == max(third))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = n_points, rows = n_points == max(n_points))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = ppg, rows = ppg == max(ppg))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = win_pct, rows = win_pct == max(win_pct))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = ppg_scaled, rows = ppg_scaled == max(ppg_scaled))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = points_champ, rows = points_champ == max(points_champ))) %>% 
+      tab_style(style = cell_fill(color = 'lightgreen'), locations = cells_body(columns = avg_rs_finish, rows = avg_rs_finish == min(avg_rs_finish))) %>% 
+      tab_style(style = cell_fill(color = 'pink'), locations = cells_body(columns = ferry, rows = ferry == max(ferry))) 
+    
+  })
+  
+  
+  output$wl_mat <- render_gt({
+    win_mat %>% 
+      mutate('record' = paste0(n_wins, '-', n_loss)) %>% 
+      mutate('manager' = factor(manager, levels = manager_order),
+             'manager_opp' = factor(manager_opp, levels = manager_order)) %>% 
+      arrange(manager, manager_opp) %>% 
+      pivot_wider(names_from = manager_opp,
+                  values_from = c('record', 'win_pct'),
+                  id_cols = 'manager') %>% 
+      relocate(c('manager', paste0('record_', intersect(manager_order, win_mat$manager_opp)),  paste0('win_pct_', intersect(manager_order, win_mat$manager_opp)))) %>% 
+      gt() %>% 
+      cols_align('center') %>% 
+      cols_width(contains('record') ~ px(100)) %>% 
+      fmt_missing() %>% 
+      cols_hide(contains('win_pct')) %>% 
+      data_color(columns = contains('win_pct'),
+                 target_columns = contains('record'),
+                 fn = scales::col_numeric(palette = 'RdYlGn', domain = range(win_mat$win_pct), na.color = 'white')) %>% 
+      tab_style(style = cell_text(weight = 'bold'), locations = cells_body(columns = 'manager')) %>% 
+      tab_style(style = cell_borders(sides = 'bottom', color = 'black', weight = px(6), style = "solid"), locations = cells_body(rows = 12)) %>% 
+      tab_style(style = cell_borders(sides = 'right', color = 'black', weight = px(6), style = "solid"), locations = cells_body(columns = 13)) %>% 
+      tab_header(title = md('**Manager vs. Manager Win/Loss Matrix**'),
+                 subtitle = md('**2015-2026**')) %>% 
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 40,
+                  heading.subtitle.font.size = 30,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold',
+                  column_labels.font.weight = 'bold',
+                  row_group.font.weight = 'bold',
+                  row_group.font.size  = 22) %>% 
+      cols_label('manager' = '') %>% 
+      cols_label_with(contains('record'),
+                      fn = ~gsub('record_', '', .))
+    
+  })
+  
+  
+  
   
   outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
   outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
@@ -2523,6 +2676,10 @@ shinyServer(function(input, output, session) {
   
   
 })
+
+
+
+
 
 
 

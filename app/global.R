@@ -570,3 +570,16 @@ leverage_long <-
                                               glue('Matchup Win Probability: {sprintf("%0.1f", 100 * win_prob)}%'),
                                               sep = '\n')))
 
+
+### League History
+league_history <- read_csv('data/stats/league_history.csv')
+df_managers <- read_csv('data/stats/manager_history.csv')
+win_mat <- read_csv('data/stats/wl_history.csv')
+
+manager_order <- 
+  df_managers %>% 
+  arrange(desc(season), manager) %>% 
+  pull(manager) %>% 
+  unique()
+
+

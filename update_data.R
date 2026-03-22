@@ -20,6 +20,7 @@ source('data/trades.R')
 source('data/free_agents.R')
 source('figures/wp_graphics.R')
 source('figures/all_star_teams.R')
+source('data/league_history.R')
 
 params <- 
   list('season' = 2025,
@@ -36,6 +37,8 @@ if(!dir.exists(glue('figures/top_performers/{params$season}/'))) {
   dir.create(glue('figures/top_performers/{params$season}/'))
   dir.create(glue('figures/top_performers/{params$season}/best_lineup'))
 }
+
+
 
 df_start <- 
   read_csv('data/df_start.csv') %>% 
@@ -1021,6 +1024,13 @@ for(i in 1:nrow(df_whatif)) {
 }
 
 write_csv(df_whatif, glue('data/stats/{params$season}/whatif.csv'))
+
+
+### League History
+update_league_history(params$season)
+update_win_loss_matrix(params$season)
+
+
 
 dir_copy('data/', 'app/data', overwrite = T)
 dir_copy('figures/', 'app/figures', overwrite = T)

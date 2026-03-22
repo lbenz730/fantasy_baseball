@@ -35,7 +35,7 @@ df <-
   bind_rows(odds2022 %>% filter(matchup_id <= 20) , 
             odds2023 %>% filter(matchup_id <= 21) ,
             odds2024 %>% filter(matchup_id <= 21),
-            odds2025) %>% 
+            odds2025 %>% filter(matchup_id <= 21)) %>% 
   
   group_by(team_id) %>% 
   mutate('franchise' = last(team[season == 2025])) %>%
@@ -43,6 +43,23 @@ df <-
   mutate('safe' = map_lgl(matchup_id, ~{all(last_place[matchup_id >= .x-1] <= 0.01) })) %>%
   mutate('elim' = map_lgl(matchup_id, ~{all(playoffs[matchup_id >= .x-1] <= 0.01) })) %>%
   ungroup() 
+
+
+
+df %>% 
+  group_by(season, team_id, team) %>% 
+  summarise('make_playoffs' = playoffs[which.max(matchup_id)] == 1,
+            'ferry' = last_place[which.max(matchup_id)] == 1,
+            'max_playoffs' = max(playoffs),
+            'min_playoffs' = min(playoffs),
+            'which_max_playoffs' = which.max(playoffs),
+            'which_min_playoffs' = which.min(playoffs),
+            'max_ferry' = max(last_place),
+            'min_ferry' = min(last_place),
+            'which_min_ferry' = which.min(last_place),
+            'which_max_ferry' = which.max(last_place)) %>% 
+  filter(make_playoffs == 1) %>%
+  View()
   
   
   
