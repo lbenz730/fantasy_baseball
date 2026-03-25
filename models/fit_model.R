@@ -169,7 +169,7 @@ log_reg <- glm(win ~ score_diff*factor(case_when(start_advantage >= 4 ~ '> +3',
 log_reg$residuals <- NULL
 log_reg$fitted.values <- NULL
 
-write_rds(log_reg, here('models/log_reg.rds'))
+write_rds(log_reg, here('models/log_reg.rds'), compress = 'xz')
 
 prior <- glm(win ~ -1 + points_per_day_spread,  data = df %>% filter(day_of_matchup == 0), family = 'binomial')
 write_rds(prior, here('models/prior.rds')) 
