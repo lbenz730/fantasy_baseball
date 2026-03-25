@@ -3,8 +3,7 @@ library(googlesheets4)
 library(glue)
 library(gt)
 
-### Google Sheets configuration
-gs4_auth(cache=".secrets", email="lukesbenz@gmail.com")
+
 
 ### Processing Functions
 convert_schedule <- function(df, format = 'old') {

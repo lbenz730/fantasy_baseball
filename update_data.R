@@ -9,10 +9,14 @@ library(patchwork)
 library(truncnorm)
 library(fs)
 library(baseballr)
+library(googlesheets4)
 
 
 plan(multisession(workers = min(parallel::detectCores(), 12)))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
+
+### Google Sheets configuration
+gs4_auth(cache=".secrets", email="lukesbenz@gmail.com")
 
 source('helpers.R')
 source('data/daily_stats.R')
