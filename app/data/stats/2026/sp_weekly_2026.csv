@@ -1,15 +1,15 @@
 team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
-1,1,Austin Wells,4683349,NA,0,NA,11
+1,1,Austin Wells,4683349,NA,4,NA,11
 1,1,Jung Hoo Lee,5134621,NA,0,NA,11
-1,1,Trent Grisham,34995,NA,-0.5,NA,11
-1,1,Ben Rice,5016968,NA,0,NA,11
-1,1,Harrison Bader,35062,NA,0,NA,11
+1,1,Trent Grisham,34995,NA,4.5,NA,11
+1,1,Ben Rice,5016968,NA,2,NA,11
+1,1,Harrison Bader,35062,NA,-1,NA,11
 2,NA,NA,NA,NA,NA,NA,6
-3,1,Logan Webb,41216,1,5,0,12
-3,1,Luis Arraez,39572,NA,1,NA,12
-4,1,Giancarlo Stanton,30583,NA,0,NA,1
-4,1,Willy Adames,33675,NA,0,NA,1
-5,1,Jazz Chisholm Jr.,41433,NA,0,NA,8
+3,1,Logan Webb,41216,1,0,0,12
+3,1,Luis Arraez,39572,NA,2,NA,12
+4,1,Giancarlo Stanton,30583,NA,3.5,NA,1
+4,1,Willy Adames,33675,NA,-1.5,NA,1
+5,1,Jazz Chisholm Jr.,41433,NA,3.5,NA,8
 6,NA,NA,NA,NA,NA,NA,5
 7,NA,NA,NA,NA,NA,NA,7
 8,NA,NA,NA,NA,NA,NA,4
@@ -125,15 +125,16 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 118,NA,NA,NA,NA,NA,NA,11
 119,NA,NA,NA,NA,NA,NA,14
 120,NA,NA,NA,NA,NA,NA,4
-1,1,Rafael Devers,33859,NA,0,NA,7
+1,1,Rafael Devers,33859,NA,1,NA,7
 1,1,Heliot Ramos,39642,NA,0,NA,7
-2,1,Cody Bellinger,33912,NA,0,NA,14
-3,1,Max Fried,32685,1,-0.5,0,4
-4,1,Aaron Judge,33192,NA,-0.5,NA,13
+2,1,Cody Bellinger,33912,NA,1,NA,14
+3,1,Max Fried,32685,1,20,0,4
+4,1,Aaron Judge,33192,NA,-2,NA,13
 5,NA,NA,NA,NA,NA,NA,9
-6,1,Matt Chapman,33857,NA,0,NA,2
-6,1,Jose Caballero,42135,NA,0,NA,2
-6,1,Ryan McMahon,33247,NA,0,NA,2
+6,1,Matt Chapman,33857,NA,1,NA,2
+6,1,Jose Caballero,42135,NA,2,NA,2
+6,1,Camilo Doval,41337,NA,0.5,0,2
+6,1,Ryan McMahon,33247,NA,4,NA,2
 7,NA,NA,NA,NA,NA,NA,14
 8,NA,NA,NA,NA,NA,NA,11
 9,NA,NA,NA,NA,NA,NA,6

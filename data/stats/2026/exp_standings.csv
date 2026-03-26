@@ -1,14 +1,14 @@
 team,win_pct,exp_win_pct,win,loss,exp_win,exp_loss,division_id,logo,total_points,total_adj_points,batting_points,pitching_points,sp_points,rp_points,adj_batting_pts,adj_pitching_pts,adj_pts,adj_sp_pts,adj_rp_pts,batting_ppg,rp_ppg,sp_ppg,qs_pct,rank
-All That is Wright,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/14b70890-213c-11f1-925d-9707aef79b0b,0,0,0,-0.5,-0.5,0,NA,-0.3181818181818182,NA,-0.3181818181818182,0,NA,NA,-0.5,0,1
-Bibee-di-Bobbidi-Boo,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/c04a8c70-20d5-11f1-a3db-1b8e3b53005a,0,0,0,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,2
-Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,0,0,1,5,5,0,0.6363636363636364,3.181818181818182,NA,3.181818181818182,0,1,NA,5,0,3
+All That is Wright,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/14b70890-213c-11f1-925d-9707aef79b0b,0,0,0,20,20,0,NA,12.727272727272728,NA,12.727272727272728,0,NA,NA,20,0,1
+Bibee-di-Bobbidi-Boo,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/c04a8c70-20d5-11f1-a3db-1b8e3b53005a,0,0,1,0,0,0,0.6363636363636364,NA,NA,NA,NA,0.5,NA,NA,NA,2
+Blasphemous Hot Takes,0.5,0.5,0,0,0,0,1,https://i.imgur.com/8kDpq7D.png,0,0,2,0,0,0,1.2727272727272727,NA,NA,NA,NA,2,NA,0,0,3
 Book of Boba Chette,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/ec4544e0-221b-11f1-925d-9707aef79b0b,0,0,0,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,4
-Ketel Bells,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,0,0,-0.5,0,0,0,-0.3181818181818182,NA,NA,NA,NA,-0.5,NA,NA,NA,5
-Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,0,0,0,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,6
+Ketel Bells,0.5,0.5,0,0,0,0,1,https://g.espncdn.com/lm-static/flb/images/default_logos/15.svg,0,0,-2,0,0,0,-1.2727272727272727,NA,NA,NA,NA,-2,NA,NA,NA,5
+Mt. Everest Taquito Farmers,0.5,0.5,0,0,0,0,1,https://i.imgur.com/VW41hvO.gif,0,0,3.5,0,0,0,2.227272727272727,NA,NA,NA,NA,3.5,NA,NA,NA,6
 The Novaks,0.5,0.5,0,0,0,0,1,https://i.imgur.com/DPLqmOq.jpg,0,0,0,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,7
-The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,0,0,0,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,8
+The Talmudic Tunnelers,0.5,0.5,0,0,0,0,1,https://64.media.tumblr.com/0a5cf45b1a3869db928255d8982d407f/bb2cb8147657a525-1f/s640x960/bfbb193017d6048f0e1528411316841adb2858a2.jpg,0,0,2,0,0,0,1.2727272727272727,NA,NA,NA,NA,1,NA,NA,NA,8
 The Traveling Secretaries,0.5,0.5,0,0,0,0,1,https://i.imgur.com/wll1Ubw.jpg,0,0,0,0,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,9
-The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,0,0,-0.5,0,0,0,-0.3181818181818182,NA,NA,NA,NA,-0.5,NA,NA,NA,10
-Top Gunner: Henderson,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/d33e4540-20e1-11f1-a3db-1b8e3b53005a,0,0,0,0,0,0,NA,NA,NA,NA,NA,0,NA,NA,NA,11
-Tucker? I hardly know her,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/e68dff90-20d3-11f1-8e1d-8fda8893658d,0,0,0,0,0,0,NA,NA,NA,NA,NA,0,NA,NA,NA,12
-League Average,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,0,0.375,0.375,0,NA,NA,NA,NA,NA,0,NA,2.25,0,NA
+The West Bank Occupiers,0.5,0.5,0,0,0,0,1,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/2000px-Flag_of_Israel.svg.png,0,0,9.5,0,0,0,6.045454545454546,NA,NA,NA,NA,1.9,NA,NA,NA,10
+Top Gunner: Henderson,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/d33e4540-20e1-11f1-a3db-1b8e3b53005a,0,0,1,0,0,0,0.6363636363636364,NA,NA,NA,NA,1,NA,NA,NA,11
+Tucker? I hardly know her,0.5,0.5,0,0,0,0,1,https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/e68dff90-20d3-11f1-8e1d-8fda8893658d,0,0,7,0.5,0,0.5,4.454545454545454,0.3181818181818182,NA,0,0.3181818181818182,2.3333333333333335,0.5,NA,NA,12
+League Average,NA,NA,NA,NA,NA,NA,NA,NA,0,NA,2,1.7083333333333333,1.6666666666666667,0.041666666666666664,NA,NA,NA,NA,NA,1.5,0.5,10,0,NA
