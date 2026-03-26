@@ -16,11 +16,8 @@ plan(multisession(workers = min(parallel::detectCores(), 12)))
 Sys.setenv("VROOM_CONNECTION_SIZE" = 131072 * 2000)
 
 ### Google Sheets configuration
-message("Working dir: ", getwd())
-message("here() root: ", here())
-message("Files in .secrets: ", paste(list.files(".secrets", all.files = TRUE), collapse = ", "))
-message("Files in here(.secrets): ", paste(list.files(here(".secrets"), all.files = TRUE), collapse = ", "))
-gs4_auth(cache = here('.secrets'), email="lukesbenz@gmail.com")
+token_path <- here(".secrets", "7a6077d23f6776ccc63f8f70bc12b214_lukesbenz@gmail.com")
+gs4_auth(token = readRDS(token_path))
 
 source('helpers.R')
 source('data/daily_stats.R')
