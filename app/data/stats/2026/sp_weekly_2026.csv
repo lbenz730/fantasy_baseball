@@ -128,12 +128,12 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 1,1,Rafael Devers,33859,NA,1,NA,7
 1,1,Heliot Ramos,39642,NA,0,NA,7
 2,1,Cody Bellinger,33912,NA,1,NA,14
-3,1,Max Fried,32685,1,20,0,4
+3,1,Max Fried,32685,1,25,1,4
 4,1,Aaron Judge,33192,NA,-2,NA,13
 5,NA,NA,NA,NA,NA,NA,9
 6,1,Matt Chapman,33857,NA,1,NA,2
-6,1,Jose Caballero,42135,NA,2,NA,2
-6,1,Camilo Doval,41337,NA,0.5,0,2
+6,1,Jose Caballero,42135,NA,1,NA,2
+6,1,Camilo Doval,41337,NA,2.5,0,2
 6,1,Ryan McMahon,33247,NA,4,NA,2
 7,NA,NA,NA,NA,NA,NA,14
 8,NA,NA,NA,NA,NA,NA,11

@@ -46,7 +46,7 @@ Cade Smith,4987924,5,0,1,2,TRUE,8,92,Draft,0,0,NA,NA,NA,0
 Cal Raleigh,41292,6,0,1,2,FALSE,2,24,Draft,0,0,NA,NA,NA,0
 Caleb Durbin,5007615,5,0,1,2,FALSE,19,221,Draft,0,0,NA,NA,NA,0
 Cam Schlittler,5134581,11,0,1,2,FALSE,9,103,Draft,0,0,NA,NA,NA,0
-Camilo Doval,41337,2,0,1,2,TRUE,24,281,Draft,0.5,1,0,0,1,0.5
+Camilo Doval,41337,2,0,1,2,TRUE,24,281,Draft,2.5,1,0,0,1,2.5
 Carlos Correa,32653,14,0,1,2,FALSE,18,211,Draft,0,0,NA,NA,NA,0
 Carlos Estevez,34861,7,0,1,2,TRUE,23,275,Draft,0,0,NA,NA,NA,0
 Carlos Rodon,33696,1,0,1,2,FALSE,16,184,Draft,0,0,NA,NA,NA,0
@@ -151,7 +151,7 @@ Jordan Lawlar,4872649,4,0,1,2,FALSE,22,261,Draft,0,0,NA,NA,NA,0
 Jordan Westburg,4298641,8,0,1,2,FALSE,25,298,Draft,0,0,NA,NA,NA,0
 Jorge Polanco,32525,13,0,1,2,FALSE,19,218,Draft,0,0,NA,NA,NA,0
 Jose Altuve,31662,11,0,1,2,FALSE,3,31,Draft,0,0,NA,NA,NA,0
-Jose Caballero,42135,2,0,1,2,FALSE,25,296,Draft,2,1,1,0,0,2
+Jose Caballero,42135,2,0,1,2,FALSE,25,296,Draft,1,1,1,0,0,1
 Jose Ferrer,5119607,11,0,1,2,TRUE,24,282,Draft,0,0,NA,NA,NA,0
 Jose Ramirez,32801,11,0,1,2,FALSE,1,7,Draft,0,0,NA,NA,NA,0
 Jose Soriano,40973,6,0,1,2,FALSE,16,192,Draft,0,0,NA,NA,NA,0
@@ -198,7 +198,7 @@ Matt McLain,4422899,8,0,1,2,FALSE,19,226,Draft,0,0,NA,NA,NA,0
 Matt Olson,32767,1,0,1,2,FALSE,4,40,Draft,0,0,NA,NA,NA,0
 Matt Vierling,41636,13,0,1,2,FALSE,24,287,Draft,0,0,NA,NA,NA,0
 Matthew Boyd,34401,2,0,1,2,FALSE,12,137,Draft,0,0,NA,NA,NA,0
-Max Fried,32685,4,0,1,2,FALSE,5,52,Draft,20,1,0,1,0,20
+Max Fried,32685,4,0,1,2,FALSE,5,52,Draft,25,1,0,1,0,25
 Max Meyer,4345164,6,0,1,2,FALSE,NA,NA,Free Agent,0,0,NA,NA,NA,0
 Max Muncy,33303,12,0,1,2,FALSE,18,214,Draft,0,0,NA,NA,NA,0
 Merrill Kelly,32968,12,0,1,2,FALSE,16,190,Draft,0,0,NA,NA,NA,0
@@ -246,7 +246,7 @@ Roman Anthony,5080767,9,0,1,2,FALSE,5,60,Draft,0,0,NA,NA,NA,0
 Ronald Acuna Jr.,36185,1,0,1,2,FALSE,1,9,Draft,0,0,NA,NA,NA,0
 Royce Lewis,40635,5,0,1,2,FALSE,16,188,Draft,0,0,NA,NA,NA,0
 Ryan Helsley,39909,13,0,1,2,TRUE,22,263,Draft,0,0,NA,NA,NA,0
-Ryan McMahon,33247,2,0,1,2,FALSE,NA,NA,Free Agent,4,1,1,0,0,4
+Ryan McMahon,33247,2,0,1,1,FALSE,NA,NA,Free Agent,4,1,1,0,0,4
 Ryan O'Hearn,35183,13,0,1,2,FALSE,21,242,Draft,0,0,NA,NA,NA,0
 Ryan Pepiot,4208281,7,0,1,2,FALSE,7,83,Draft,0,0,NA,NA,NA,0
 Ryan Walker,5000950,6,0,1,2,TRUE,22,264,Draft,0,0,NA,NA,NA,0
@@ -309,3 +309,4 @@ Zach McKinstry,38420,14,0,1,2,FALSE,24,283,Draft,0,0,NA,NA,NA,0
 Zach Neto,4666100,14,0,1,2,FALSE,8,91,Draft,0,0,NA,NA,NA,0
 Zack Littell,36052,11,0,1,2,FALSE,17,199,Draft,0,0,NA,NA,NA,0
 Zack Wheeler,31267,13,0,1,2,FALSE,6,71,Draft,0,0,NA,NA,NA,0
+Braxton Ashcraft,41282,2,0,2,2,TRUE,NA,NA,Free Agent,0,0,NA,NA,NA,0
