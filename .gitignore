@@ -1,0 +1,8 @@
+.DS*
+data/playoff_odds/raw_sims.csv
+app/data/playoff_odds/raw_sims.csv
+old_takes_exposed/*
+rsconnect/*
+eda*
+.Renviron
+.Rproj.user
