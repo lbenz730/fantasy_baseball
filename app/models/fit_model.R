@@ -10,7 +10,8 @@ df <- bind_rows(build_train_set(2020, augment = T),
                 build_train_set(2021, augment = T),
                 build_train_set(2022, augment = T),
                 build_train_set(2023, augment = T),
-                build_train_set(2024, augment = T))
+                build_train_set(2024, augment = T),
+                build_train_set(2025, augment = T))
                 
 
 covariates <- c('score_diff', 
@@ -43,7 +44,7 @@ preprocessing_recipe <-
   step_rm(-any_of(covariates)) %>% 
   prep()
 # preprocessing_recipe <- butcher::butcher(preprocessing_recipe)
-write_rds(recipe, here('models/recipe.rds'))
+write_rds(preprocessing_recipe, here('models/recipe.rds'))
 
 ### CV Folds
 cv_folds <- 
@@ -162,9 +163,13 @@ log_reg <- glm(win ~ score_diff*factor(case_when(start_advantage >= 4 ~ '> +3',
                                                  start_advantage < 0 ~ paste0('-', abs(start_advantage)),
                                                  T ~ '0'), levels = c('< -3', '-3', '-2', '-1', '0', 
                                                                       '+1', '+2', '+3', '> +3')), 
-               data = df, family = 'binomial')
+               data = df, family = 'binomial',
+               x = FALSE,
+               y = FALSE)
+log_reg$residuals <- NULL
+log_reg$fitted.values <- NULL
 
-write_rds(log_reg, here('models/log_reg.rds'))
+write_rds(log_reg, here('models/log_reg.rds'), compress = 'xz')
 
 prior <- glm(win ~ -1 + points_per_day_spread,  data = df %>% filter(day_of_matchup == 0), family = 'binomial')
 write_rds(prior, here('models/prior.rds')) 

@@ -11,8 +11,10 @@ getmode <- function(v) {
 ### Function to help w/ logos in gt tables
 change_logo <- function(df, team_cols = 'team', cols = 'logo') {
   for(i in 1:length(cols)) {
+    df[[ cols[i] ]] <- ifelse(grepl('mystique', df[[ cols[i] ]]), paste0(df[[ cols[i] ]], '.jpg'), df[[ cols[i] ]])
     df[[ cols[i] ]] <- paste0('www/', df[[ team_cols[i] ]], str_sub(df[[ cols[i] ]], -4, -1))
-    df[[ cols[i] ]] <- gsub('=254', '.png', df[[ cols[i] ]]) 
+    df[[ cols[i] ]] <- gsub('=254', '.png', df[[ cols[i] ]])
+    df[[ cols[i] ]] <- gsub('\\:', '', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('Blasphemous Hot Takes.png', 'Blasphemous Hot Takes.jpg', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('Elly De La Snooze.png', 'Elly De La Snooze.jpg', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('All That is Wright.gif', 'All That is Wright.jpg', df[[ cols[i] ]])

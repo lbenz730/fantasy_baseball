@@ -33,10 +33,10 @@ ferry <- '<img src="www/ferry.jpg" style="height:30px;">'
 
 ### Parameters
 params <- 
-  list('season' = 2025,
-       'opening_day' = as.Date('2025-03-18'),
-       'opening_day_chart' = as.Date('2025-03-27'),
-       'period_rm' = 3:9)
+  list('season' = 2026,
+       'opening_day' = as.Date('2026-03-25'),
+       'opening_day_chart' = as.Date('2026-03-25'),
+       'period_rm' = 0)
 
 ### Load in All Data
 df_start <- 

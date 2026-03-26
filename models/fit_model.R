@@ -44,7 +44,7 @@ preprocessing_recipe <-
   step_rm(-any_of(covariates)) %>% 
   prep()
 # preprocessing_recipe <- butcher::butcher(preprocessing_recipe)
-write_rds(recipe, here('models/recipe.rds'))
+write_rds(preprocessing_recipe, here('models/recipe.rds'))
 
 ### CV Folds
 cv_folds <- 

@@ -3,8 +3,7 @@ library(googlesheets4)
 library(glue)
 library(gt)
 
-### Google Sheets configuration
-gs4_auth(cache=".secrets", email="lukesbenz@gmail.com")
+
 
 ### Processing Functions
 convert_schedule <- function(df, format = 'old') {
@@ -54,6 +53,7 @@ convert_schedule <- function(df, format = 'old') {
 
 summarise_season <- function(season, format, history_url, rs_bounds_old) {
   df_start <- read_csv('data/df_start.csv')
+  old_managers <- read_sheet(history_url, 'Managers')
   
   if(format == 'new') {
     teams <- read_csv(glue('data/stats/{season}/teams_{season}.csv'))
@@ -119,6 +119,7 @@ summarise_season <- function(season, format, history_url, rs_bounds_old) {
                 'n_loss' = sum(as.numeric(team_score < opp_score) + 0.5 * as.numeric(team_score == opp_score), na.rm = T),
                 'n_points' = sum(team_score, na.rm = T),
                 'ppg' = mean(team_score, na.rm = T)) %>% 
+      mutate('ppg' = replace(ppg, is.na(ppg), 0)) %>% 
       ungroup() %>% 
       mutate('ppg_scaled' = ppg - mean(ppg)) %>% 
       arrange(-n_wins, -n_points) %>% 
@@ -235,7 +236,15 @@ update_league_history <- function(season_max) {
 }
 
 update_win_loss_matrix <- function(season_max) {
+  rs_bounds_old <- 
+    list('2019' = 21,
+         '2018' = 21,
+         '2017' = 21,
+         '2016' = 21,
+         '2015' = 21)
+  
   df_managers <- read_csv('data/stats/manager_history.csv')
+  history_url <- 'https://docs.google.com/spreadsheets/d/1teUNQArj8mCKb5Ukctp5b9nFKFX8GHMjDJHbPUNcfV8'
   old_stats <- map_dfr(2015:2019, get_schedule, 'old', history_url, rs_bounds_old)
   new_stats <- map_dfr(2020:season_max, get_schedule, 'new', history_url, rs_bounds_old)
   

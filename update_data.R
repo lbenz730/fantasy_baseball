@@ -27,8 +27,8 @@ source('figures/all_star_teams.R')
 source('data/league_history.R')
 
 params <- 
-  list('season' = 2025,
-       'opening_day' = as.Date('2025-03-18'),
+  list('season' = 2026,
+       'opening_day' = as.Date('2026-03-25'),
        'nsims' = 10000)
 
 if(!dir.exists(glue('data/stats/{params$season}/'))) {
@@ -333,9 +333,6 @@ relief_starts_flag <-
 write_csv(relief_starts_flag, 'data/red_flags/relief_starts_flags.csv')
 
 
-
-
-
 df_penalty <- 
   df_daily %>%
   filter(in_lineup) %>%
@@ -484,55 +481,61 @@ team_points <-
 team_points <- 
   team_points %>% 
   mutate('weight' = case_when(
-    matchup_id == 1 ~ 4/7,
+    matchup_id == 1 & params$season == 2026 ~ 11/7,
+    matchup_id == 1 & params$season == 2025 ~ 4/7,
     matchup_id == 14 & params$season < 2024 ~ 10/7,
     matchup_id == 16 & params$season >= 2024 ~ 10/7,
-    matchup_id > 21 ~ 0.5,
+    matchup_id > n_games ~ 0.5,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ 1,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     T ~ 1)) %>% 
   mutate("adj_pts" = case_when(
-    matchup_id == 1 ~ total_points * 7/4,
+    matchup_id == 1 & params$season == 2026 ~ total_points * 7/11,
+    matchup_id == 1 & params$season == 2025 ~ total_points * 7/4,
     matchup_id == 14 & params$season < 2024 ~ total_points * 7/10,
     matchup_id == 16 & params$season >= 2024 ~ total_points * 7/10,
-    matchup_id > 21 ~ total_points * 7/14,
+    matchup_id > n_games ~ total_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ total_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     T ~ total_points)) %>% 
   mutate("adj_batting_pts" = case_when(
-    matchup_id == 1 ~ batting_points * 7/4,
+    matchup_id == 1 & params$season == 2026 ~ batting_points * 7/11,
+    matchup_id == 1 & params$season == 2025 ~ batting_points * 7/4,
     matchup_id == 14 & params$season < 2024 ~ batting_points * 7/10,
     matchup_id == 16 & params$season >= 2024 ~ batting_points * 7/10,
-    matchup_id > 21 ~ batting_points * 7/14,
+    matchup_id > n_games ~ batting_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ batting_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
     T ~ batting_points)) %>% 
   mutate("adj_pitching_pts" = case_when(
-    matchup_id == 1 ~ pitching_points * 7/4,
+    matchup_id == 1 & params$season == 2026 ~ pitching_points * 7/11,
+    matchup_id == 1 & params$season == 2025 ~ pitching_points * 7/4,
     matchup_id == 14 & params$season < 2024 ~ pitching_points * 7/10,
     matchup_id == 16 & params$season >= 2024 ~ pitching_points * 7/10,
-    matchup_id > 21 ~ pitching_points * 7/14,
+    matchup_id > n_games ~ pitching_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ pitching_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
     T ~ pitching_points)) %>% 
   
   mutate("adj_sp_pts" = case_when(
-    matchup_id == 1 ~ sp_points * 7/4,
+    matchup_id == 1 & params$season == 2026 ~ sp_points * 7/11,
+    matchup_id == 1 & params$season == 2025 ~ sp_points * 7/4,
     matchup_id == 14 & params$season < 2024 ~ sp_points * 7/10,
     matchup_id == 16 & params$season >= 2024 ~ sp_points * 7/10,
-    matchup_id > 21 ~ sp_points * 7/14,
+    matchup_id > n_games ~ sp_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ sp_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
     T ~ sp_points)) %>% 
   
   mutate("adj_rp_pts" = case_when(
-    matchup_id == 1 ~ rp_points * 7/4,
+    matchup_id == 1 & params$season == 2026 ~ rp_points * 7/11,
+    matchup_id == 1 & params$season == 2025 ~ rp_points * 7/4,
     matchup_id == 14 & params$season < 2024 ~ rp_points * 7/10,
     matchup_id == 16 & params$season >= 2024 ~ rp_points * 7/10,
-    matchup_id > 21 ~ rp_points * 7/14,
+    matchup_id > n_games ~ rp_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ rp_points,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) != 2) ~ NA_real_,
     
@@ -773,7 +776,7 @@ if(params$matchup_id > 1) {
   team_sigmas[is.na(team_sigmas)] <- sigma
 } else {
   tmp <- 
-    read_csv('data/stats/2024/schedule_2024.csv') %>% 
+    read_csv('data/stats/2025/schedule_2025.csv') %>% 
     filter(matchup_id %in% c(2:13, 15:20))
   
   mu <-  mean(c(tmp$home_total_points, tmp$away_total_points, na.rm = T))
@@ -922,39 +925,39 @@ if(params$matchup_id != params$sim_match_id) {
     write_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'))
 }
 
-### Best Line-up
+# ### Best Line-up
 best_lineup(params$season, params$matchup_id, save = F)
 if(params$matchup_id > 1) {
   best_lineup(params$season, params$matchup_id-1, save = F)
 }
+# 
+# ### ASG
+# if(params$matchup_id > 6) {
+#   pkg <- make_asg_graphics(params$season, save = F)
+#   write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
+#   write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
+# }
 
-### ASG
-if(params$matchup_id > 6) {
-  pkg <- make_asg_graphics(params$season, save = F)
-  write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
-  write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
-}
 
-
-### MLB Probables
-df_probables <- 
-  mlb_schedule(params$season) %>% 
-  filter(date >= Sys.Date(),
-         date <= Sys.Date() + 2) %>% 
-  pull(game_pk) %>% 
-  map_dfr(mlb_probables) %>% 
-  select(game_date, 'player' = fullName) %>% 
-  mutate('player' = stringi::stri_trans_general(str = player, 
-                                                id = 'Latin-ASCII')) %>% 
-  inner_join(
-    df_daily %>% 
-      filter(scoring_period_id == max(scoring_period_id)) %>% 
-      distinct(player_id, player, team_id),
-    
-    by = c('player')
-  )
-
-write_csv(df_probables, glue('data/stats/{params$season}/probables.csv'))
+# ### MLB Probables
+# df_probables <- 
+#   mlb_schedule(params$season) %>% 
+#   filter(date >= Sys.Date(),
+#          date <= Sys.Date() + 2) %>% 
+#   pull(game_pk) %>% 
+#   map_dfr(mlb_probables) %>% 
+#   select(game_date, 'player' = fullName) %>% 
+#   mutate('player' = stringi::stri_trans_general(str = player, 
+#                                                 id = 'Latin-ASCII')) %>% 
+#   inner_join(
+#     df_daily %>% 
+#       filter(scoring_period_id == max(scoring_period_id)) %>% 
+#       distinct(player_id, player, team_id),
+#     
+#     by = c('player')
+#   )
+# 
+# write_csv(df_probables, glue('data/stats/{params$season}/probables.csv'))
 
 
 ### Pitch Matrix

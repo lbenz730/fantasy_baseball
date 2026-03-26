@@ -6,18 +6,18 @@ library(tidyr)
 
 ### Come back and Fix
 df_start_26 <-
-  tibble('matchup_id' = 1:23) %>%
+  tibble('matchup_id' = 1:22) %>%
   mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
                                  matchup_id == 15 ~ 11,
-                                 matchup_id > 21 ~ 16,
+                                 matchup_id > 20 ~ 16,
                                  T ~ 8),
          'duration' = case_when(matchup_id == 1 ~ 12,
                                 matchup_id == 15 ~ 14,
-                                matchup_id > 21 ~ 14,
+                                matchup_id > 20 ~ 14,
                                 T ~ 7),
          'end_period' = cumsum(duration),
          'start_period' = end_period - duration + 1,
-         'playoffs' = matchup_id > 21)
+         'playoffs' = matchup_id > 20)
 
 df_start_25 <-
   tibble('matchup_id' = 1:23) %>%
@@ -153,7 +153,8 @@ df_start_15 <-
          'playoffs' = matchup_id > 21)
 
 df_start <-
-  bind_rows(df_start_25 %>% mutate('season' = 2025),
+  bind_rows(df_start_26 %>% mutate('season' = 2026),
+            df_start_25 %>% mutate('season' = 2025),
             df_start_24 %>% mutate('season' = 2024),
             df_start_23 %>% mutate('season' = 2023),
             df_start_21_22 %>% mutate('season' = 2022),

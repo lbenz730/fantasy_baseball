@@ -126,7 +126,7 @@ shinyServer(function(input, output, session) {
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$batting_ppg, na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(rp_ppg),
-                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$rp_ppg, na.rm = T)),
+                 fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(c(2,3, df$rp_ppg), na.rm = T)),
                  autocolor_text = F) %>%
       data_color(columns = c(sp_ppg),
                  fn = scales::col_numeric(palette = ggsci::rgb_material('amber', n = 100), domain = range(df$sp_ppg, na.rm = T)),
