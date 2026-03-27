@@ -21,7 +21,7 @@ jobs:
           sudo apt-get install libtiff5-dev libharfbuzz-dev libfribidi-dev
       - name: Install dependencies
         run: |
-          if (!requireNamespace("renv", quietly = TRUE))  { install.packages("renv", version = "1.0.3",repos = "https://packagemanager.posit.co/cran/__linux__/jammy/latest") }
+          if (!requireNamespace("renv", quietly = TRUE))  { install.packages("renv",repos = "https://packagemanager.posit.co/cran/__linux__/jammy/2025-03-24") }
           renv::restore()
         shell: Rscript {0}
       - name: Update data
