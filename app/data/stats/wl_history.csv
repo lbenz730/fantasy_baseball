@@ -1,7 +1,7 @@
 manager,manager_opp,n_wins,n_loss,win_pct
 Alex Brod,Andrew Lama,10,8,0.5555555555555556
 Alex Brod,Andrew Tham,14,4,0.7777777777777778
-Alex Brod,Blair Prato,5,10,0.3333333333333333
+Alex Brod,Blair Prato,4,11,0.26666666666666666
 Alex Brod,Dan Gold,13,6,0.6842105263157895
 Alex Brod,Dylan Boyd,16,9,0.64
 Alex Brod,Griffin Schwab,6,0,1
@@ -21,7 +21,7 @@ Andrew Lama,Alex Brod,8,10,0.4444444444444444
 Andrew Lama,Andrew Tham,8.5,5.5,0.6071428571428571
 Andrew Lama,Blair Prato,6,7,0.46153846153846156
 Andrew Lama,Dan Gold,7,11,0.3888888888888889
-Andrew Lama,Dylan Boyd,11,9,0.55
+Andrew Lama,Dylan Boyd,12,8,0.6
 Andrew Lama,Griffin Schwab,3,1,0.75
 Andrew Lama,Jack Wagner,6,16,0.2727272727272727
 Andrew Lama,Jake Hubertus,9,14,0.391304347826087
@@ -51,7 +51,7 @@ Andrew Tham,Matt O'Donnell,2,4,0.3333333333333333
 Andrew Tham,Michael Bogaty,1,13,0.07142857142857142
 Andrew Tham,Vick Raghunathan,1,1,0.5
 Andrew Tham,Zach Vinik,2,5,0.2857142857142857
-Blair Prato,Alex Brod,10,5,0.6666666666666666
+Blair Prato,Alex Brod,11,4,0.7333333333333333
 Blair Prato,Andrew Lama,7,6,0.5384615384615384
 Blair Prato,Andrew Tham,9,8,0.5294117647058824
 Blair Prato,Dan Gold,8,6,0.5714285714285714
@@ -84,7 +84,7 @@ Dan Gold,Michael Bogaty,7,9,0.4375
 Dan Gold,Vick Raghunathan,2,0,1
 Dan Gold,Zach Vinik,3,5,0.375
 Dylan Boyd,Alex Brod,9,16,0.36
-Dylan Boyd,Andrew Lama,9,11,0.45
+Dylan Boyd,Andrew Lama,8,12,0.4
 Dylan Boyd,Andrew Tham,12,9,0.5714285714285714
 Dylan Boyd,Blair Prato,3,12,0.2
 Dylan Boyd,Dan Gold,5,11,0.3125
