@@ -1,7 +1,7 @@
 manager,manager_opp,n_wins,n_loss,win_pct
 Alex Brod,Andrew Lama,10,8,0.5555555555555556
 Alex Brod,Andrew Tham,14,4,0.7777777777777778
-Alex Brod,Blair Prato,4,11,0.26666666666666666
+Alex Brod,Blair Prato,5,10,0.3333333333333333
 Alex Brod,Dan Gold,13,6,0.6842105263157895
 Alex Brod,Dylan Boyd,16,9,0.64
 Alex Brod,Griffin Schwab,6,0,1
@@ -51,7 +51,7 @@ Andrew Tham,Matt O'Donnell,2,4,0.3333333333333333
 Andrew Tham,Michael Bogaty,1,13,0.07142857142857142
 Andrew Tham,Vick Raghunathan,1,1,0.5
 Andrew Tham,Zach Vinik,2,5,0.2857142857142857
-Blair Prato,Alex Brod,11,4,0.7333333333333333
+Blair Prato,Alex Brod,10,5,0.6666666666666666
 Blair Prato,Andrew Lama,7,6,0.5384615384615384
 Blair Prato,Andrew Tham,9,8,0.5294117647058824
 Blair Prato,Dan Gold,8,6,0.5714285714285714
