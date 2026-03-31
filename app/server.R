@@ -1989,6 +1989,7 @@ shinyServer(function(input, output, session) {
     cat('Rendering RP Starts\n')
     
     df_relief_start %>% 
+      mutate('team_id' = as.numeric(team_id)) %>% 
       inner_join(teams, by = 'team_id') %>% 
       mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
       select(team, logo,  player, player_url, matchup_id, ip, p_er, rule, bonus) %>% 
