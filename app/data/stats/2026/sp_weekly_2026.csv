@@ -5,14 +5,14 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 1,1,Andrew Abbott,4414528,2,27,1,11
 1,1,Nico Hoerner,41219,NA,23,NA,11
 1,1,Ben Rice,5016968,NA,26.5,NA,11
-1,1,George Kirby,42406,2,33,1,11
+1,1,George Kirby,42406,2,34,1,11
 1,1,Ramon Laureano,35142,NA,12,NA,11
 1,1,Nick Pivetta,36071,2,13.5,0,11
 1,1,Junior Caminero,4905921,NA,1,NA,11
 1,1,Brett Baty,42414,NA,1,NA,11
 1,1,Jose Altuve,31662,NA,31.5,NA,11
 1,1,Austin Wells,4683349,NA,0,NA,11
-1,1,Jung Hoo Lee,5134621,NA,11.5,NA,11
+1,1,Jung Hoo Lee,5134621,NA,14.5,NA,11
 1,1,Trent Grisham,34995,NA,14,NA,11
 1,1,Marcell Ozuna,31668,NA,3,NA,11
 1,1,Trevor Story,32150,NA,1.5,NA,11
@@ -21,7 +21,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 1,1,Jose Ferrer,5119607,NA,6.5,0,11
 1,1,Cam Schlittler,5134581,2,52,1,11
 1,1,Kevin Gausman,32667,2,62,2,11
-1,1,Mike Yastrzemski,33341,NA,6.5,NA,11
+1,1,Mike Yastrzemski,33341,NA,13.5,NA,11
 1,1,Spencer Torkelson,4424286,NA,3,NA,11
 2,1,Kyle Bradish,4311625,1,10.5,0,6
 2,1,Lucas Erceg,36618,NA,15.5,0,6
@@ -29,9 +29,10 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 2,1,Cal Raleigh,41292,NA,4.5,NA,6
 2,1,Jose Soriano,40973,2,50,2,6
 2,1,Max Meyer,4345164,1,8,0,6
-2,1,Byron Buxton,32655,NA,6.5,NA,6
+2,1,Byron Buxton,32655,NA,7,NA,6
 2,1,Trevor Megill,40080,NA,7.5,0,6
-2,1,Jac Caglianone,4926296,NA,9.5,NA,6
+2,1,Jonathan India,41171,NA,0,NA,6
+2,1,Jac Caglianone,4926296,NA,10,NA,6
 2,1,Wyatt Langford,4719324,NA,5.5,NA,6
 2,1,Julio Rodriguez,41044,NA,4,NA,6
 2,1,Miguel Vargas,42453,NA,-0.5,NA,6
@@ -39,14 +40,14 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 2,1,Paul Skenes,4719507,2,1.5,0,6
 2,1,Kevin McGonigle,5149072,NA,22.5,NA,6
 2,1,Nolan Schanuel,4739755,NA,21,NA,6
-2,1,Austin Riley,34982,NA,6.5,NA,6
+2,1,Austin Riley,34982,NA,12,NA,6
 2,1,Jordan Walker,4684778,NA,10.5,NA,6
 2,1,Eugenio Suarez,32367,NA,9.5,NA,6
 2,1,Kris Bubic,41201,1,22,1,6
 2,1,Gavin Williams,4345076,2,43.5,1,6
-2,1,Ozzie Albies,33783,NA,11.5,NA,6
+2,1,Ozzie Albies,33783,NA,17.5,NA,6
 2,1,Jackson Merrill,4872691,NA,14.5,NA,6
-2,1,Ryan Walker,5000950,NA,6,0,6
+2,1,Ryan Walker,5000950,NA,9,0,6
 2,1,Otto Lopez,41917,NA,4,NA,6
 2,1,Tanner Scott,35135,NA,5,0,6
 3,1,Logan Webb,41216,2,17,1,12
@@ -54,10 +55,10 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 3,1,Jarren Duran,41610,NA,11.5,NA,12
 3,1,Jake Cronenworth,36364,NA,4.5,NA,12
 3,1,Steven Kwan,41996,NA,13.5,NA,12
-3,1,Marcus Semien,32146,NA,4.5,NA,12
+3,1,Marcus Semien,32146,NA,5.5,NA,12
 3,1,Lawrence Butler,4917919,NA,1.5,NA,12
 3,1,Willson Contreras,32532,NA,6.5,NA,12
-3,1,Luis Arraez,39572,NA,12,NA,12
+3,1,Luis Arraez,39572,NA,18.5,NA,12
 3,1,Salvador Perez,31127,NA,10.5,NA,12
 3,1,Max Muncy,33303,NA,12,NA,12
 3,1,Addison Barger,4997589,NA,0.5,NA,12
@@ -79,21 +80,21 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 4,1,Samuel Basallo,4917646,NA,1.5,NA,1
 4,1,Alex Bregman,34886,NA,16,NA,1
 4,1,Yusei Kikuchi,41415,2,6,0,1
-4,1,Drake Baldwin,4810190,NA,31,NA,1
-4,1,Willy Adames,33675,NA,9,NA,1
+4,1,Drake Baldwin,4810190,NA,35.5,NA,1
+4,1,Willy Adames,33675,NA,7.5,NA,1
 4,1,Mookie Betts,33039,NA,14.5,NA,1
 4,1,Sonny Gray,32082,1,4.5,0,1
 4,1,Daniel Palencia,4875225,NA,5,0,1
 4,1,Nolan Gorman,41174,NA,2,NA,1
 4,1,Chase Burns,4927516,1,19.5,0,1
 4,1,Dominic Canzone,4345621,NA,5.5,NA,1
-4,1,Ronald Acuna Jr.,36185,NA,8,NA,1
+4,1,Ronald Acuna Jr.,36185,NA,10.5,NA,1
 4,1,Munetaka Murakami,4872595,NA,23.5,NA,1
-4,1,Michael Harris II,42470,NA,10.5,NA,1
+4,1,Michael Harris II,42470,NA,16.5,NA,1
 4,1,Aroldis Chapman,30442,NA,10,0,1
 4,1,Griffin Jax,42604,NA,-13,0,1
-4,1,Joey Wiemer,4417134,NA,9,NA,1
-4,1,Robbie Ray,32175,1,11,0,1
+4,1,Joey Wiemer,4417134,NA,10,NA,1
+4,1,Robbie Ray,32175,2,25.5,0,1
 4,1,Giancarlo Stanton,30583,NA,18,NA,1
 4,1,Joey Cantillo,42488,1,6,0,1
 4,1,Vladimir Guerrero Jr.,35002,NA,17,NA,1
@@ -101,11 +102,11 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 4,1,Ceddanne Rafaela,4987382,NA,7.5,NA,1
 4,1,Owen Caissie,4917685,NA,14,NA,1
 4,1,Dylan Cease,34943,1,22,0,1
-4,1,Matt Olson,32767,NA,7.5,NA,1
+4,1,Matt Olson,32767,NA,22,NA,1
 5,1,Edwin Diaz,35394,NA,14,0,8
 5,1,Jack Leiter,4622181,1,21.5,1,8
 5,1,Jakob Marsee,4866735,NA,11.5,NA,8
-5,1,Ryne Nelson,4916269,1,6.5,0,8
+5,1,Ryne Nelson,4916269,2,15,0,8
 5,1,Colson Montgomery,4872685,NA,10.5,NA,8
 5,1,Devin Williams,33224,NA,14,0,8
 5,1,Garrett Crochet,4297835,2,34,1,8
@@ -148,7 +149,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 6,1,Cade Smith,4987924,NA,1,0,5
 6,1,Mason Miller,4730225,NA,16.5,0,5
 6,1,Shane Smith,5201814,2,-16,0,5
-6,1,Royce Lewis,40635,NA,17,NA,5
+6,1,Royce Lewis,40635,NA,16.5,NA,5
 6,1,Brice Turang,41179,NA,29.5,NA,5
 7,NA,NA,NA,NA,NA,NA,7
 8,NA,NA,NA,NA,NA,NA,4
@@ -265,29 +266,30 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 119,NA,NA,NA,NA,NA,NA,14
 120,NA,NA,NA,NA,NA,NA,4
 1,1,Michael Wacha,32640,1,26.5,1,7
-1,1,Agustin Ramirez,5132014,NA,9,NA,7
 1,1,Ian Happ,34945,NA,23.5,NA,7
 1,1,Yoshinobu Yamamoto,4872587,2,36,2,7
-1,1,Rafael Devers,33859,NA,5.5,NA,7
-1,1,Zac Gallen,39910,2,21,1,7
+1,1,Rafael Devers,33859,NA,12,NA,7
+1,1,Reynaldo Lopez,33860,1,11.5,0,7
 1,1,Randy Arozarena,36488,NA,24,NA,7
+1,1,Geraldo Perdomo,41355,NA,14,NA,7
+1,1,Dansby Swanson,34895,NA,10,NA,7
+1,1,Fernando Tatis Jr.,35983,NA,13.5,NA,7
+1,1,Adolis Garcia,35537,NA,14.5,NA,7
+1,1,Brady Singer,41172,1,4,0,7
+1,1,Brandon Lowe,39961,NA,25.5,NA,7
+1,1,Heliot Ramos,39642,NA,8.5,NA,7
+1,1,Agustin Ramirez,5132014,NA,9,NA,7
+1,1,Zac Gallen,39910,2,21,1,7
 1,1,Tyler Rogers,34026,NA,16.5,0,7
-1,1,Geraldo Perdomo,41355,NA,11,NA,7
 1,1,Kyle Manzardo,4917927,NA,-2.5,NA,7
 1,1,Hunter Brown,4717803,2,44,1,7
 1,1,Aaron Ashby,41325,NA,2.5,0,7
 1,1,Carlos Estevez,34861,NA,-18,0,7
-1,1,Dansby Swanson,34895,NA,9,NA,7
-1,1,Fernando Tatis Jr.,35983,NA,13.5,NA,7
-1,1,Adolis Garcia,35537,NA,14.5,NA,7
 1,1,Christian Yelich,31283,NA,23,NA,7
-1,1,Brady Singer,41172,1,4,0,7
 1,1,Christian Walker,32758,NA,23.5,NA,7
-1,1,Brandon Lowe,39961,NA,25.5,NA,7
 1,1,Manny Machado,31097,NA,9.5,NA,7
 1,1,Mitch Keller,33722,1,22,1,7
 1,1,Garrett Whitlock,39674,NA,12,0,7
-1,1,Heliot Ramos,39642,NA,6,NA,7
 1,1,Tanner Bibee,4345278,1,11,0,7
 2,1,TJ Rumfield,5014349,NA,1,NA,14
 2,1,Riley Greene,42179,NA,12,NA,14
@@ -319,12 +321,12 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 2,1,Yainer Diaz,4781491,NA,5.5,NA,14
 3,1,Tatsuya Imai,5330833,1,-1,0,4
 3,1,Brayan Rocchio,41217,NA,2.5,NA,4
-3,1,Francisco Lindor,32129,NA,18,NA,4
+3,1,Francisco Lindor,32129,NA,19.5,NA,4
 3,1,Jordan Lawlar,4872649,NA,1,NA,4
 3,1,Nathan Eovaldi,31174,2,-1.5,0,4
 3,1,Chase DeLauter,4619649,NA,25.5,NA,4
 3,1,Matt Brash,4894467,NA,5,0,4
-3,1,Luke Keaschall,4977664,NA,8,NA,4
+3,1,Luke Keaschall,4977664,NA,9.5,NA,4
 3,1,Garrett Cleavinger,36429,NA,5,0,4
 3,1,Sal Stewart,5080771,NA,31.5,NA,4
 3,1,Nolan McLean,4433874,1,13.5,0,4
@@ -334,7 +336,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 3,1,Kerry Carpenter,42714,NA,-1.5,NA,4
 3,1,Bryce Harper,30951,NA,9.5,NA,4
 3,1,Cade Horton,4692526,1,19.5,1,4
-3,1,Juan Soto,36969,NA,22,NA,4
+3,1,Juan Soto,36969,NA,23.5,NA,4
 3,1,Taylor Ward,34923,NA,16.5,NA,4
 3,1,Max Fried,32685,2,53,2,4
 3,1,Carson Benge,4925604,NA,10.5,NA,4
@@ -346,14 +348,15 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 4,1,Adley Rutschman,42178,NA,10,NA,13
 4,1,Pete Fairbanks,42180,NA,19,0,13
 4,1,Yandy Diaz,33481,NA,30.5,NA,13
-4,1,Vinnie Pasquantino,4109109,NA,10.5,NA,13
+4,1,Vinnie Pasquantino,4109109,NA,12.5,NA,13
 4,1,Gleyber Torres,33804,NA,10.5,NA,13
-4,1,Jorge Polanco,32525,NA,4,NA,13
+4,1,Jorge Polanco,32525,NA,3.5,NA,13
 4,1,Justin Crawford,5080642,NA,1.5,NA,13
 4,1,Alec Bohm,41169,NA,11.5,NA,13
+4,1,David Peterson,40921,1,-2.5,0,13
 4,1,Jacob deGrom,32796,1,8.5,0,13
 4,1,Nolan Arenado,31261,NA,0,NA,13
-4,1,Cole Ragans,41054,1,1,0,13
+4,1,Cole Ragans,41054,2,27.5,1,13
 4,1,Brandon Nimmo,32159,NA,24,NA,13
 4,1,Matt Vierling,41636,NA,0,NA,13
 4,1,Chris Sale,30948,2,47,2,13
@@ -380,7 +383,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 5,1,JJ Wetherholt,4941056,NA,19.5,NA,9
 5,1,Erik Sabrowski,5194333,NA,4,0,9
 5,1,Jonathan India,41171,NA,-0.5,NA,9
-5,1,Maikel Garcia,4905884,NA,15,NA,9
+5,1,Maikel Garcia,4905884,NA,18,NA,9
 5,1,Jo Adell,40854,NA,10,NA,9
 5,1,Trevor Rogers,39640,2,41,2,9
 5,1,David Bednar,38303,NA,14,0,9
@@ -394,11 +397,12 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 5,1,Roman Anthony,5080767,NA,10,NA,9
 5,1,Cam Smith,5080766,NA,1,NA,9
 5,1,Jesus Luzardo,39667,1,6.5,0,9
-5,1,Bo Bichette,38904,NA,2,NA,9
+5,1,Bo Bichette,38904,NA,4.5,NA,9
 5,1,Carter Jensen,4917812,NA,5.5,NA,9
-6,1,Matt Chapman,33857,NA,11,NA,2
+6,1,Matt Chapman,33857,NA,15,NA,2
 6,1,Braxton Ashcraft,41282,1,16,1,2
 6,1,Daulton Varsho,40963,NA,7,NA,2
+6,1,Josh Bell,32517,NA,7.5,NA,2
 6,1,Ranger Suarez,39817,1,0.5,0,2
 6,1,Brandon Woodruff,37515,1,13,0,2
 6,1,Luis Garcia Jr.,40459,NA,8.5,NA,2
@@ -410,7 +414,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 6,1,Ryan McMahon,33247,NA,4,NA,2
 6,1,Matthew Boyd,34401,2,22.5,0,2
 6,1,Kazuma Okamoto,5134636,NA,16.5,NA,2
-6,1,Corbin Carroll,42404,NA,30,NA,2
+6,1,Corbin Carroll,42404,NA,29,NA,2
 6,1,Will Smith,38309,NA,14.5,NA,2
 6,1,Tyler Glasnow,33190,1,20.5,1,2
 6,1,Nick Kurtz,4966637,NA,3.5,NA,2
@@ -418,6 +422,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,n_qs,team_id
 6,1,Kodai Senga,4142421,1,22.5,1,2
 6,1,Brendan Donovan,41773,NA,25,NA,2
 6,1,Jorge Soler,32558,NA,4.5,NA,2
+6,1,Kyle Isbel,41263,NA,0.5,NA,2
 6,1,Jeff Hoffman,33841,NA,17.5,0,2
 6,1,Corey Seager,32691,NA,29.5,NA,2
 6,1,Mike Trout,30836,NA,27.5,NA,2

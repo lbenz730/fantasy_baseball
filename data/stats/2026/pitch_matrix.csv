@@ -5,7 +5,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.0,0,1,QS Potential,The Talmudic Tunnelers
 1,5.0,2,1,QS Potential,The Talmudic Tunnelers
 1,5.1,1,1,QS Potential,The Talmudic Tunnelers
-1,5.1,2,1,QS Potential,The Talmudic Tunnelers
+1,5.1,2,2,QS Potential,The Talmudic Tunnelers
 1,5.1,5,1,Bad Start,The Talmudic Tunnelers
 1,5.2,5,1,Bad Start,The Talmudic Tunnelers
 2,3.2,6+,1,Bad Start,Tucker? I hardly know her
@@ -41,12 +41,14 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.0,3,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,4,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,0,1,Bad Start,Bibee-di-Bobbidi-Boo
+7,5.0,1,1,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,3,1,QS Potential,Bibee-di-Bobbidi-Boo
 7,6.0,0,3,QS,Bibee-di-Bobbidi-Boo
 7,6.0,1,1,QS,Bibee-di-Bobbidi-Boo
 7,6.0,2,2,QS,Bibee-di-Bobbidi-Boo
 8,4.0,5,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.1,0,1,Bad Start,Mt. Everest Taquito Farmers
+8,4.2,2,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,5.0,1,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,4,1,Bad Start,Mt. Everest Taquito Farmers
@@ -78,11 +80,12 @@ team_id,ip,earned_runs,n,start_type,team
 12,6.1,0,1,QS,Blasphemous Hot Takes
 12,7.0,1,1,QS,Blasphemous Hot Takes
 13,4.0,4,1,Bad Start,Ketel Bells
+13,4.1,5,1,Bad Start,Ketel Bells
 13,4.2,2,1,Bad Start,Ketel Bells
 13,4.2,3,1,Bad Start,Ketel Bells
 13,5.0,3,1,QS Potential,Ketel Bells
 13,5.2,2,1,Blue Balls,Ketel Bells
-13,6.0,0,1,QS,Ketel Bells
+13,6.0,0,2,QS,Ketel Bells
 13,6.0,1,2,QS,Ketel Bells
 14,4.1,2,1,Bad Start,Top Gunner: Henderson
 14,4.2,5,1,Bad Start,Top Gunner: Henderson
