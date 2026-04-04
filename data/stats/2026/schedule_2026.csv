@@ -1,10 +1,10 @@
 matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitching_points,away_team_id,away_total_points,away_batting_points,away_pitching_points,home_team,away_team
-1,1,11,387,189,198,7,397,208,189,The West Bank Occupiers,Bibee-di-Bobbidi-Boo
-1,2,6,339,166.5,172.5,14,325,156.5,168.5,The Novaks,Top Gunner: Henderson
-1,3,12,294.5,150,144.5,4,356,247.5,108.5,Blasphemous Hot Takes,All That is Wright
-1,4,1,322,223.5,98.5,13,364,198.5,165.5,The Talmudic Tunnelers,Ketel Bells
-1,5,8,297.5,110,187.5,9,360.5,185.5,175,Mt. Everest Taquito Farmers,Book of Boba Chette
-1,6,5,318.5,178.5,140,2,352.5,222.5,130,The Traveling Secretaries,Tucker? I hardly know her
+1,1,11,430,219,211,7,433,218,215,The West Bank Occupiers,Bibee-di-Bobbidi-Boo
+1,2,6,366.5,191.5,175,14,405,201,204,The Novaks,Top Gunner: Henderson
+1,3,12,377,201.5,175.5,4,416.5,287.5,129,Blasphemous Hot Takes,All That is Wright
+1,4,1,385.5,254,131.5,13,450.5,244.5,206,The Talmudic Tunnelers,Ketel Bells
+1,5,8,340.5,144.5,196,9,404,198,206,Mt. Everest Taquito Farmers,Book of Boba Chette
+1,6,5,378.5,223,155.5,2,381,247,134,The Traveling Secretaries,Tucker? I hardly know her
 2,7,7,NA,NA,NA,14,NA,NA,NA,Bibee-di-Bobbidi-Boo,Top Gunner: Henderson
 2,8,4,NA,NA,NA,11,NA,NA,NA,All That is Wright,The West Bank Occupiers
 2,9,13,NA,NA,NA,6,NA,NA,NA,Ketel Bells,The Novaks
