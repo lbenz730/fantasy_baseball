@@ -12,10 +12,13 @@ team_id,ip,earned_runs,n,start_type,team
 2,3.2,6+,1,Bad Start,Tucker? I hardly know her
 2,4.0,6+,1,Bad Start,Tucker? I hardly know her
 2,4.1,4,1,Bad Start,Tucker? I hardly know her
+2,4.2,5,1,Bad Start,Tucker? I hardly know her
 2,5.0,2,1,QS Potential,Tucker? I hardly know her
 2,5.2,1,1,Blue Balls,Tucker? I hardly know her
-2,6.0,2,3,QS,Tucker? I hardly know her
+2,6.0,2,4,QS,Tucker? I hardly know her
 2,< 3,1,1,Bad Start,Tucker? I hardly know her
+4,3.2,3,1,Bad Start,All That is Wright
+4,4.0,2,1,Bad Start,All That is Wright
 4,4.0,6+,1,Bad Start,All That is Wright
 4,4.1,1,1,Bad Start,All That is Wright
 4,4.2,5,1,Bad Start,All That is Wright
@@ -40,7 +43,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,5.0,1,1,QS Potential,The Novaks
 6,5.0,3,2,QS Potential,The Novaks
 6,6.0,0,2,QS,The Novaks
-6,6.0,1,1,QS,The Novaks
+6,6.0,1,2,QS,The Novaks
 6,7.0,0,1,QS,The Novaks
 6,< 3,5,1,Bad Start,The Novaks
 7,4.0,3,1,Bad Start,Bibee-di-Bobbidi-Boo
@@ -71,6 +74,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.0,1,1,QS,Book of Boba Chette
 9,6.0,2,2,QS,Book of Boba Chette
 9,6.0,6+,1,Bad Start,Book of Boba Chette
+9,6.2,1,1,QS,Book of Boba Chette
 9,7.0,0,2,QS,Book of Boba Chette
 11,3.0,6+,1,Bad Start,The West Bank Occupiers
 11,4.2,3,1,Bad Start,The West Bank Occupiers
@@ -81,11 +85,14 @@ team_id,ip,earned_runs,n,start_type,team
 11,6.0,1,2,QS,The West Bank Occupiers
 11,6.0,4,1,QS Potential,The West Bank Occupiers
 11,6.1,0,1,QS,The West Bank Occupiers
+12,5.0,2,1,QS Potential,Blasphemous Hot Takes
 12,5.0,6+,1,Bad Start,Blasphemous Hot Takes
 12,6.0,0,3,QS,Blasphemous Hot Takes
 12,6.0,1,1,QS,Blasphemous Hot Takes
 12,6.0,3,1,QS,Blasphemous Hot Takes
 12,6.1,0,1,QS,Blasphemous Hot Takes
+12,6.2,1,1,QS,Blasphemous Hot Takes
+12,7.0,0,1,QS,Blasphemous Hot Takes
 12,7.0,1,1,QS,Blasphemous Hot Takes
 13,4.0,4,1,Bad Start,Ketel Bells
 13,4.1,5,1,Bad Start,Ketel Bells
@@ -96,6 +103,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,6.0,0,2,QS,Ketel Bells
 13,6.0,1,2,QS,Ketel Bells
 13,6.1,1,1,QS,Ketel Bells
+14,4.0,5,1,Bad Start,Top Gunner: Henderson
 14,4.1,2,1,Bad Start,Top Gunner: Henderson
 14,4.2,5,1,Bad Start,Top Gunner: Henderson
 14,5.0,0,1,QS Potential,Top Gunner: Henderson
@@ -103,6 +111,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.1,1,1,QS Potential,Top Gunner: Henderson
 14,5.1,2,1,QS Potential,Top Gunner: Henderson
 14,5.1,4,1,Bad Start,Top Gunner: Henderson
+14,5.2,0,1,Blue Balls,Top Gunner: Henderson
 14,5.2,4,1,Bad Start,Top Gunner: Henderson
 14,6.0,3,1,QS,Top Gunner: Henderson
 14,7.0,0,1,QS,Top Gunner: Henderson
