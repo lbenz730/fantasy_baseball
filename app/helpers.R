@@ -19,6 +19,7 @@ change_logo <- function(df, team_cols = 'team', cols = 'logo') {
     df[[ cols[i] ]] <- gsub('Elly De La Snooze.png', 'Elly De La Snooze.jpg', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('All That is Wright.gif', 'All That is Wright.jpg', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('Takin\' Care of Rizzness.png', 'Takin\' Care of Rizzness.jpg', df[[ cols[i] ]])
+    df[[ cols[i] ]] <- gsub('Tucker\\?', 'Tucker', df[[ cols[i] ]])
     
     ### Check images that don't exist
     ix <- df[[ cols[i] ]]  %in% dir('www', full.names = T)
