@@ -10,7 +10,7 @@
 #   source(here('figures/weekly_summary.R'))
 #   make_weekly_summary(season = 2026, week = 1)
 
-library(tidyverse)
+library(dplyr)
 library(gt)
 library(gtExtras)
 library(glue)
