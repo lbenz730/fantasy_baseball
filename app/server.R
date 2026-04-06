@@ -265,7 +265,7 @@ shinyServer(function(input, output, session) {
       ) %>%
       tab_header(
         subtitle = md('**Millburnish Fantasy Baseball League Advanced Stats Table**'),
-        title = md('<img src="www/League.png" style="height:200px;">')
+        title = md('<img src="League.png" style="height:200px;">')
       ) %>%
       tab_options(column_labels.font.size = 20,
                   heading.title.font.size = 40,
@@ -2641,6 +2641,27 @@ shinyServer(function(input, output, session) {
   
   
   
+  #######################
+  ### Weekly Summary  ###
+  #######################
+  source('../figures/weekly_summary.R', local = TRUE)
+
+  weekly_scoreboardOutput <- eventReactive(input$matchup_id, {
+    df_week   <- team_points %>% filter(matchup_id == input$matchup_id, !is.na(total_points))
+    logo_lkup <- setNames(teams$logo, teams$team)
+    make_scoreboard_table(df_week, params$season, input$matchup_id, logo_lkup)
+  })
+
+  output$weekly_scoreboard <- render_gt(weekly_scoreboardOutput())
+
+  output$weekly_standings <- render_gt({
+    week          <- max(team_points$matchup_id[!is.na(team_points$total_points)], na.rm = TRUE)
+    playoff_hist  <- read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'),
+                              show_col_types = FALSE)
+    logo_lkup     <- setNames(teams$logo, teams$team)
+    make_standings_table(exp_standings, playoff_hist, week, params$season, logo_lkup)
+  })
+
   outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
   outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
   outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)

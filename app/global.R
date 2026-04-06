@@ -85,8 +85,10 @@ pitch_matrix <-
                                   T ~ 'Bad Start')) %>% 
   mutate('start_type' = factor(start_type, levels = c('Bad Start', 'Blue Balls', 'QS Potential', 'QS', 'CG')))
 df_log <- read_csv(glue('figures/top_performers/{params$season}/best_lineup/best_lineups.csv'))
-team_points <- read_csv(glue('data/stats/{params$season}/team_points.csv')) %>% 
-  select(team_id, team, contains('adj'), matchup_id, -ends_with('opp'), -adj_sp_pts, -adj_rp_pts)
+team_points <- read_csv(glue('data/stats/{params$season}/team_points.csv')) %>%
+  select(team_id, team, contains('adj'), matchup_id, -ends_with('opp'), -adj_sp_pts, -adj_rp_pts,
+         total_points, batting_points, sp_points, rp_points,
+         game_id, team_opp, total_points_opp)
 bat_stats <- read_csv(glue('data/stats/{params$season}/bat_stats.csv'))
 pitch_stats <- read_csv(glue('data/stats/{params$season}/pitch_stats.csv'))
 df_penalty <- read_csv('data/red_flags/penalties.csv') %>% 
