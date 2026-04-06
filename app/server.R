@@ -2646,12 +2646,13 @@ shinyServer(function(input, output, session) {
   #######################
   source('../figures/weekly_summary.R', local = TRUE)
 
-  output$weekly_scoreboard <- render_gt({
-    week      <- max(team_points$matchup_id[!is.na(team_points$total_points)], na.rm = TRUE)
-    df_week   <- team_points %>% filter(matchup_id == week, !is.na(total_points))
+  weekly_scoreboardOutput <- eventReactive(input$matchup_id, {
+    df_week   <- team_points %>% filter(matchup_id == input$matchup_id, !is.na(total_points))
     logo_lkup <- setNames(teams$logo, teams$team)
-    make_scoreboard_table(df_week, params$season, week, logo_lkup)
+    make_scoreboard_table(df_week, params$season, input$matchup_id, logo_lkup)
   })
+
+  output$weekly_scoreboard <- render_gt(weekly_scoreboardOutput())
 
   output$weekly_standings <- render_gt({
     week          <- max(team_points$matchup_id[!is.na(team_points$total_points)], na.rm = TRUE)

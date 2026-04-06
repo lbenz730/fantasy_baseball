@@ -439,6 +439,15 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                    
                    tabPanel('Weekly Summary',
                             value = 'weekly_summary',
+                            sidebarLayout(
+                              sidebarPanel(
+                                selectInput("matchup_id", 
+                                            label = "Select Matchup",
+                                            choices = (params$current_matchup-1:1), 
+                                            selected = params$current_matchup-1
+                                            
+                                )
+                              ),
                             mainPanel(
                               width = 12,
                               shinycssloaders::withSpinner(gt_output('weekly_scoreboard'),
@@ -450,21 +459,21 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                            image = baseball,
                                                            image.height = 100)
                             )
-                   ),
+                   )),
 
                    tabPanel('League History',
-                            mainPanel(
-                              width = 12,
-                              shinycssloaders::withSpinner(gt_output('league_history_table'),
-                                                           image = baseball,
-                                                           image.height = 100),
-                              br(),
-                        
-                              shinycssloaders::withSpinner(gt_output('wl_mat'),
-                                                           image = baseball,
-                                                           image.height = 100)
-                            )
-                   ), 
+                              mainPanel(
+                                width = 12,
+                                shinycssloaders::withSpinner(gt_output('league_history_table'),
+                                                            image = baseball,
+                                                            image.height = 100),
+                                br(),
+                          
+                                shinycssloaders::withSpinner(gt_output('wl_mat'),
+                                                            image = baseball,
+                                                            image.height = 100)
+                   ) 
+                   ),
                    
                    
                    
