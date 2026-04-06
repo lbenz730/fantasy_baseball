@@ -2644,24 +2644,42 @@ shinyServer(function(input, output, session) {
   #######################
   ### Weekly Summary  ###
   #######################
-  source('../figures/weekly_summary.R', local = TRUE)
-
-  weekly_scoreboardOutput <- eventReactive(input$matchup_id, {
-    df_week   <- team_points %>% filter(matchup_id == input$matchup_id, !is.na(total_points))
-    logo_lkup <- setNames(teams$logo, teams$team)
-    make_scoreboard_table(df_week, params$season, input$matchup_id, logo_lkup)
+  
+  
+  weekly_scoreboardOutput <- eventReactive(input$matchup_id_weekly, {
+    if(params$current_matchup > 1) {
+      df_week <- 
+        team_points %>% 
+        filter(matchup_id == input$matchup_id_weekly,
+               !is.na(total_points))
+      logo_lkup <- setNames(teams$logo, teams$team)
+      make_scoreboard_table(df_week, params$season, input$matchup_id_weekly, logo_lkup)
+    } else {
+      gt(data = tibble('winner' = NULL, 
+                       'loser' = NULL))  
+    }
   })
-
+  
   output$weekly_scoreboard <- render_gt(weekly_scoreboardOutput())
-
-  output$weekly_standings <- render_gt({
-    week          <- max(team_points$matchup_id[!is.na(team_points$total_points)], na.rm = TRUE)
-    playoff_hist  <- read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'),
-                              show_col_types = FALSE)
-    logo_lkup     <- setNames(teams$logo, teams$team)
-    make_standings_table(exp_standings, playoff_hist, week, params$season, logo_lkup)
+  
+  weekly_standingsOutput <- eventReactive(input$matchup_id_weekly, {
+    if(params$current_matchup > 1) {
+      playoff_hist  <- read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'),
+                                show_col_types = FALSE)
+      logo_lkup     <- setNames(teams$logo, teams$team)
+      make_standings_table(exp_standings, playoff_hist, as.numeric(input$matchup_id_weekly), params$season, logo_lkup)
+    } else {
+      gt(data = tibble('winner' = NULL, 
+                       'loser' = NULL)) 
+    }
   })
-
+  
+  
+  
+  output$weekly_standings <- render_gt({
+    weekly_standingsOutput()
+  })
+  
   outputOptions(output, 'stats_table', suspendWhenHidden = FALSE)
   outputOptions(output, 'bat_table', suspendWhenHidden = FALSE)
   outputOptions(output, 'pitch_table', suspendWhenHidden = FALSE)

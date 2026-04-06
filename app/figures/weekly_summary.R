@@ -82,7 +82,7 @@ wp_sparkline_svg <- function(vals, width = 160, height = 40) {
 # TABLE 1 – Matchup Scoreboard
 # ══════════════════════════════════════════════════════════════════════════════
 make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thresh_pct = 0.03) {
-  
+
   matchups <- df_week %>%
     group_by(game_id) %>%
     slice(1) %>%
@@ -103,22 +103,22 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
     ) %>%
     arrange(margin)
   
-  
+
   # ── Win probability sparklines ──────────────────────────────────────────────
   # win_prob in the csv = home team's probability.
   # We flip it for matchups where the away team won, so the sparkline always
   # shows the WINNER's probability (should trend toward 1.0).
   wp_path <- here(glue('data/win_prob/{season}/week_{week}.csv'))
   has_wp  <- file.exists(wp_path)
-  
+
   if (has_wp) {
     wp_raw <- read_csv(wp_path, show_col_types = FALSE)
-    
+
     wp_sparks <- wp_raw %>%
       arrange(day_of_matchup) %>%
       group_by(team_home, team_away) %>%
       summarise(spark = list(win_prob), .groups = 'drop')
-    
+
     matchups <- matchups %>%
       left_join(wp_sparks, by = c('home_team' = 'team_home',
                                   'away_team'  = 'team_away')) %>%
@@ -128,33 +128,33 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
       })) %>%
       select(-spark)
   }
-  
+
   score_range <- range(c(matchups$win_score, matchups$los_score), na.rm = TRUE)
-  
+
   df_gt <- matchups %>%
     select(logo_win, win_team, win_score,
            los_score, los_team, logo_los,
            margin,
            { if (has_wp) 'win_prob_spark' else NULL })
-  
+
   tbl <- gt(df_gt) %>%
-    
+
     # Logos
     text_transform(
       locations = cells_body(columns = c(logo_win, logo_los)),
       fn = function(x) local_image(filename = x, height = 50)
     ) %>%
-    
+
     # Format scores and margin
     fmt_number(columns = c(win_score, los_score, margin), decimals = 1, sep_mark = '') %>%
-    
+
     # Amber heatmap on scores
     data_color(
       columns = c(win_score, los_score),
       fn = scales::col_numeric(palette = amber_pal(), domain = score_range),
       autocolor_text = FALSE
     ) %>%
-    
+
     # Winner side = lightgreen
     tab_style(
       style     = cell_fill(color = 'lightgreen'),
@@ -170,7 +170,7 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
     #   style     = cell_text(weight = 'bold', size = px(18)),
     #   locations = cells_body(columns = win_score)
     # ) %>%
-    
+
     # Close game: highlight margin cell
     tab_style(
       style     = cell_fill(color = '#fff3cd'),
@@ -180,13 +180,13 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
       style     = cell_text(weight = 'bold', color = 'darkorange'),
       locations = cells_body(columns = margin, rows = matchups$close_game)
     ) %>%
-    
+
     # Dividers
     tab_style(
       style     = cell_borders(sides = 'right', color = 'black', weight = px(3)),
       locations = cells_body(columns = c(logo_los, win_score, margin))
     ) %>%
-    
+
     cols_label(
       logo_win  = '',
       win_team  = '\U1f3c6 Winner',
@@ -196,7 +196,7 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
       los_team  = 'Loser',
       logo_los  = ''
     ) %>%
-    
+
     tab_header(
       title    = md('**Week Results**'),
       subtitle = md(glue('**Week {week}  \u2022  {season} Season**'))
@@ -205,9 +205,9 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
       footnote  = 'Sorted by margin (closest games first). Highlighted margin = within 3% of avg score.',
       placement = 'left'
     ) %>%
-    
+
     apply_gt_style()
-  
+
   # Render SVG sparklines if win prob data exists
   if (has_wp) {
     tbl <- tbl %>%
@@ -217,7 +217,7 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
       ) %>%
       cols_label(win_prob_spark = 'Win Prob.')
   }
-  
+
   tbl
 }
 
@@ -225,13 +225,13 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
 # TABLE 2 – Standings + Odds Movement
 # ══════════════════════════════════════════════════════════════════════════════
 make_standings_table <- function(exp_standings, playoff_history, week, season, logo_lookup) {
-  
+
   curr <- playoff_history %>% filter(matchup_id == week)
   prev <- playoff_history %>% filter(matchup_id == week - 1)
   if (nrow(prev) == 0) {
     prev <- curr %>% mutate(playoffs = 1/3, last_place = 1/12, champ = 1/12)
   }
-  
+
   df <- exp_standings %>%
     filter(!is.na(win)) %>%       # drop league average row if present
     mutate(rank_pos = row_number()) %>%
@@ -250,37 +250,37 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
     select(rank_pos, logo, team, record,
            total_points, batting_points, sp_points, rp_points,
            playoff_prob, playoff_chg, ferry_prob, ferry_chg, champ_prob)
-  
+
   pts_range <- range(df$total_points, na.rm = TRUE)
-  
+
   # Helper: format change column as "+X.X%" with color
   fmt_chg <- function(x) {
     ifelse(is.na(x), '---',
            paste0(ifelse(x >= 0, '+', ''), formatC(100 * x, digits = 1, format = 'f'), '%'))
   }
-  
+
   df <- df %>%
     mutate(
       playoff_chg_label = fmt_chg(playoff_chg),
       ferry_chg_label   = fmt_chg(ferry_chg)
     )
-  
+
   gt(select(df, rank_pos, logo, team, record,
             total_points, batting_points, sp_points, rp_points,
             playoff_prob, playoff_chg_label, ferry_prob, ferry_chg_label, champ_prob)) %>%
-    
+
     # Logos
     text_transform(
       locations = cells_body(columns = logo),
       fn = function(x) local_image(filename = x, height = 40)
     ) %>%
-    
+
     fmt_number(columns = c(total_points, batting_points, sp_points, rp_points),
                decimals = 1, sep_mark = '') %>%
     fmt_percent(columns = c(playoff_prob, ferry_prob, champ_prob),
                 decimals = 1, sep_mark = '') %>%
     sub_missing(columns = everything(), missing_text = '---') %>%
-    
+
     # Amber heatmap on points
     data_color(
       columns = c(total_points, batting_points, sp_points, rp_points),
@@ -292,7 +292,7 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
       fn = scales::col_numeric(palette = amber_pal(), domain = c(0, 1)),
       autocolor_text = FALSE
     ) %>%
-    
+
     # Colour the change labels: green = better playoff odds, red = worse
     tab_style(
       style     = cell_text(color = 'seagreen', weight = 'bold'),
@@ -315,7 +315,7 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
       locations = cells_body(columns = ferry_chg_label,
                              rows = df$ferry_chg > 0)
     ) %>%
-    
+
     # Section dividers
     tab_style(
       style     = cell_borders(sides = 'right', color = 'black', weight = px(3)),
@@ -326,13 +326,13 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
       style     = cell_borders(sides = 'bottom', color = 'black', weight = px(3)),
       locations = cells_body(rows = 4, columns = everything())
     ) %>%
-    
+
     # Spanners
     tab_spanner(label = 'Total Points',
                 columns = c(total_points, batting_points, sp_points, rp_points)) %>%
     tab_spanner(label = 'Season Simulations',
                 columns = c(playoff_prob, playoff_chg_label, ferry_prob, ferry_chg_label, champ_prob)) %>%
-    
+
     cols_label(
       rank_pos         = '#',
       logo             = '',
@@ -348,7 +348,7 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
       ferry_chg_label  = '\u0394',
       champ_prob       = 'Champion'
     ) %>%
-    
+
     tab_header(
       title    = md('**Standings & Odds**'),
       subtitle = md(glue('**Week {week}  \u2022  {season} Season**'))
@@ -357,7 +357,7 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
       footnote  = '\u0394 = change in odds vs. prior week',
       placement = 'left'
     ) %>%
-    
+
     apply_gt_style()
 }
 
@@ -365,7 +365,7 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
 # TABLE 3 – Top Individual Performers
 # ══════════════════════════════════════════════════════════════════════════════
 make_performers_table <- function(daily_stats, teams, week, season, logo_lookup, top_n = 10) {
-  
+
   # Reuse the exact same logic as server.R's gt_top
   df_bat <- daily_stats %>%
     filter(in_lineup, batter, matchup_id == week) %>%
@@ -380,7 +380,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
     left_join(teams %>% select(team_id, team, logo), by = 'team_id') %>%
     mutate(logo = logo_lookup[team]) %>%
     select(player, player_url, team, logo, n_points)
-  
+
   df_sp <- daily_stats %>%
     filter(in_lineup, start, matchup_id == week) %>%
     group_by(player_id, team_id, player) %>%
@@ -394,7 +394,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
     left_join(teams %>% select(team_id, team, logo), by = 'team_id') %>%
     mutate(logo = logo_lookup[team]) %>%
     select(player, player_url, team, logo, n_games, ppg)
-  
+
   df_rp <- daily_stats %>%
     filter(in_lineup, relief, !relief_start, matchup_id == week) %>%
     group_by(player_id, team_id, player) %>%
@@ -407,7 +407,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
     left_join(teams %>% select(team_id, team, logo), by = 'team_id') %>%
     mutate(logo = logo_lookup[team]) %>%
     select(player, player_url, team, logo, n_games, n_points)
-  
+
   # Pad to top_n rows
   pad <- function(df, n) {
     if (nrow(df) < n) df[seq(nrow(df) + 1, n), ] <- NA
@@ -416,20 +416,20 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
   df_bat <- pad(df_bat, top_n); names(df_bat) <- paste0(names(df_bat), '_bat')
   df_sp  <- pad(df_sp,  top_n); names(df_sp)  <- paste0(names(df_sp),  '_sp')
   df_rp  <- pad(df_rp,  top_n); names(df_rp)  <- paste0(names(df_rp),  '_rp')
-  
+
   df_top <- bind_cols(df_bat, df_sp, df_rp)
-  
+
   gt(df_top) %>%
     cols_align('center') %>%
-    
+
     tab_spanner(label = 'Batting',          columns = contains('_bat')) %>%
     tab_spanner(label = 'Starting Pitching', columns = contains('_sp')) %>%
     tab_spanner(label = 'Relief Pitching',  columns = contains('_rp')) %>%
-    
+
     sub_missing(columns = everything(), missing_text = '---') %>%
     fmt_number(columns = c(n_points_bat, ppg_sp, n_points_rp), decimals = 1, sep_mark = '') %>%
     fmt_number(columns = n_games_sp, decimals = 0, sep_mark = '') %>%
-    
+
     # Player headshots (ESPN CDN)
     text_transform(
       locations = cells_body(columns = contains('player_url')),
@@ -448,7 +448,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
       locations = cells_body(columns = logo_rp, rows = !is.na(logo_rp)),
       fn = function(x) local_image(filename = x, height = 50)
     ) %>%
-    
+
     # Amber heatmap on score columns
     data_color(
       columns = n_points_bat,
@@ -465,7 +465,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
       fn = scales::col_numeric(palette = amber_pal(), domain = NULL),
       autocolor_text = FALSE
     ) %>%
-    
+
     # Section dividers
     tab_style(
       style     = cell_borders(sides = 'bottom', color = 'black', weight = px(3)),
@@ -475,7 +475,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
       style     = cell_borders(sides = 'right', color = 'black', weight = px(3)),
       locations = cells_body(columns = c(n_points_bat, n_games_sp, n_points_rp))
     ) %>%
-    
+
     cols_label(
       player_bat    = 'Player', player_url_bat = '', team_bat  = 'Team', logo_bat = '',
       n_points_bat  = 'Points',
@@ -484,12 +484,12 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
       player_rp     = 'Player', player_url_rp  = '', team_rp   = 'Team', logo_rp  = '',
       n_games_rp    = '# App.',  n_points_rp    = 'Points'
     ) %>%
-    
+
     tab_header(
       title    = md('**Top Performances**'),
       subtitle = md(glue('**Week {week}  \u2022  {season} Season**'))
     ) %>%
-    
+
     apply_gt_style()
 }
 
@@ -498,73 +498,73 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
 # ══════════════════════════════════════════════════════════════════════════════
 make_weekly_summary <- function(season = 2026, week) {
   message(glue('Building Week {week} summary for {season}...'))
-  
+
   # Load data
   teams         <- read_csv(here(glue('data/stats/{season}/teams_{season}.csv')),
-                            show_col_types = FALSE)
+                             show_col_types = FALSE)
   team_points   <- read_csv(here(glue('data/stats/{season}/team_points.csv')),
-                            show_col_types = FALSE)
+                             show_col_types = FALSE)
   playoff_hist  <- read_csv(here(glue('data/playoff_odds/historical_playoff_odds_{season}.csv')),
-                            show_col_types = FALSE)
+                             show_col_types = FALSE)
   exp_standings <- read_csv(here(glue('data/stats/{season}/exp_standings.csv')),
-                            show_col_types = FALSE)
+                             show_col_types = FALSE)
   daily_stats   <- read_csv(here(glue('data/stats/{season}/daily_stats_{season}.csv')),
-                            show_col_types = FALSE)
-  
+                             show_col_types = FALSE)
+
   df_week <- team_points %>%
     filter(matchup_id == week, !is.na(total_points))
-  
+
   if (nrow(df_week) == 0)
     stop(glue('No completed data found for week {week} in season {season}.'))
-  
+
   logo_lookup <- build_logo_lookup(teams)
-  
+
   out_dir <- here(glue('figures/weekly_summary/{season}'))
   if (!dir.exists(out_dir)) dir.create(out_dir, recursive = TRUE)
-  
+
   # 1 – Scoreboard
   message('  Building scoreboard...')
   gt_scores <- make_scoreboard_table(df_week, season, week, logo_lookup)
   gtExtras::gtsave_extra(gt_scores,
                          file.path(out_dir, glue('week_{week}_scoreboard.png')),
                          vwidth = 1200, selector = 'table')
-  
+
   # 2 – Standings + Odds
   message('  Building standings...')
   gt_stand <- make_standings_table(exp_standings, playoff_hist, week, season, logo_lookup)
   gtExtras::gtsave_extra(gt_stand,
                          file.path(out_dir, glue('week_{week}_standings.png')),
                          vwidth = 1600, selector = 'table')
-  
+
   # 3 – Top Performers
   message('  Building top performers...')
   gt_perf <- make_performers_table(daily_stats, teams, week, season, logo_lookup)
   gtExtras::gtsave_extra(gt_perf,
                          file.path(out_dir, glue('week_{week}_performers.png')),
                          vwidth = 2400, selector = 'table')
-  
+
   # Stack scoreboard + standings into one combined PNG
   message('  Combining scoreboard + standings...')
   path_scoreboard <- file.path(out_dir, glue('week_{week}_scoreboard.png'))
   path_standings  <- file.path(out_dir, glue('week_{week}_standings.png'))
   path_combined   <- file.path(out_dir, glue('week_{week}_combined.png'))
-  
+
   img_scores <- magick::image_read(path_scoreboard)
   img_stand  <- magick::image_read(path_standings)
-  
+
   # Match widths before stacking (scale narrower image up to the wider one)
   w_scores <- magick::image_info(img_scores)$width
   w_stand  <- magick::image_info(img_stand)$width
   target_w <- max(w_scores, w_stand)
-  
+
   if (w_scores != target_w)
     img_scores <- magick::image_scale(img_scores, glue('{target_w}x'))
   if (w_stand != target_w)
     img_stand  <- magick::image_scale(img_stand,  glue('{target_w}x'))
-  
+
   magick::image_append(c(img_scores, img_stand), stack = TRUE) %>%
     magick::image_write(path_combined)
-  
+
   message(glue('  Done! Files saved to {out_dir}'))
   invisible(list(scoreboard = gt_scores, standings = gt_stand, performers = gt_perf))
 }

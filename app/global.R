@@ -15,6 +15,7 @@ options(readr.show_col_types = F)
 options(dplyr.summarise.inform = F)
 
 source('helpers.R')
+source('figures/weekly_summary.R')
 
 
 

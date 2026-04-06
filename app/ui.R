@@ -441,9 +441,9 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                             value = 'weekly_summary',
                             sidebarLayout(
                               sidebarPanel(
-                                selectInput("matchup_id", 
+                                selectInput("matchup_id_weekly", 
                                             label = "Select Matchup",
-                                            choices = (params$current_matchup-1:1), 
+                                            choices = (params$current_matchup-1):1, 
                                             selected = params$current_matchup-1
                                             
                                 )
