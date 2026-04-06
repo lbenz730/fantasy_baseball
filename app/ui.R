@@ -437,6 +437,21 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                    ), 
                    
                    
+                   tabPanel('Weekly Summary',
+                            value = 'weekly_summary',
+                            mainPanel(
+                              width = 12,
+                              shinycssloaders::withSpinner(gt_output('weekly_scoreboard'),
+                                                           image = baseball,
+                                                           image.height = 100),
+                              br(),
+                              br(),
+                              shinycssloaders::withSpinner(gt_output('weekly_standings'),
+                                                           image = baseball,
+                                                           image.height = 100)
+                            )
+                   ),
+
                    tabPanel('League History',
                             mainPanel(
                               width = 12,
