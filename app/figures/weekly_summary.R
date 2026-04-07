@@ -223,14 +223,25 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
 # ══════════════════════════════════════════════════════════════════════════════
 # TABLE 2 – Standings + Odds Movement
 # ══════════════════════════════════════════════════════════════════════════════
-make_standings_table <- function(exp_standings, playoff_history, week, season, logo_lookup) {
-  
+make_standings_table <- function(exp_standings, playoff_history, week, season, logo_lookup, team_points) {
+
   curr <- playoff_history %>% filter(matchup_id == week)
   prev <- playoff_history %>% filter(matchup_id == week - 1)
   if (nrow(prev) == 0) {
     prev <- curr %>% mutate(playoffs = 1/3, last_place = 1/12, champ = 1/12)
   }
-  
+
+  pts_thru_week <- team_points %>%
+    filter(matchup_id <= week, !is.na(total_points)) %>%
+    group_by(team) %>%
+    summarise(
+      total_points   = sum(total_points,   na.rm = TRUE),
+      batting_points = sum(batting_points, na.rm = TRUE),
+      sp_points      = sum(sp_points,      na.rm = TRUE),
+      rp_points      = sum(rp_points,      na.rm = TRUE),
+      .groups = 'drop'
+    )
+
   df <- exp_standings %>%
     filter(!is.na(win)) %>%       # drop league average row if present
     mutate(rank_pos = row_number()) %>%
@@ -246,6 +257,9 @@ make_standings_table <- function(exp_standings, playoff_history, week, season, l
       logo        = logo_lookup[team],
       record      = paste0(win, '-', loss)
     ) %>%
+    select(rank_pos, logo, team, record,
+           playoff_prob, playoff_chg, ferry_prob, ferry_chg, champ_prob) %>%
+    left_join(pts_thru_week, by = 'team') %>%
     select(rank_pos, logo, team, record,
            total_points, batting_points, sp_points, rp_points,
            playoff_prob, playoff_chg, ferry_prob, ferry_chg, champ_prob)
