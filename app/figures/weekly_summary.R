@@ -17,7 +17,6 @@ library(glue)
 library(here)
 library(ggsci)
 
-source(here('app/helpers.R'))
 
 # ── Logo lookup builder ───────────────────────────────────────────────────────
 # Uses change_logo() from app/helpers.R. Must temporarily setwd to app/ so
