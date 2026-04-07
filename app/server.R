@@ -2667,7 +2667,7 @@ shinyServer(function(input, output, session) {
       playoff_hist  <- read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv'),
                                 show_col_types = FALSE)
       logo_lkup     <- setNames(teams$logo, teams$team)
-      make_standings_table(exp_standings, playoff_hist, as.numeric(input$matchup_id_weekly), params$season, logo_lkup)
+      make_standings_table(exp_standings, playoff_hist, as.numeric(input$matchup_id_weekly), params$season, logo_lkup, team_points)
     } else {
       gt(data = tibble('winner' = NULL, 
                        'loser' = NULL)) 
