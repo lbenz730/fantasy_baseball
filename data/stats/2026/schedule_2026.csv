@@ -1,16 +1,16 @@
 matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitching_points,away_team_id,away_total_points,away_batting_points,away_pitching_points,home_team,away_team
 1,1,11,541,289,252,7,508.5,296,212.5,The West Bank Occupiers,Bibee-di-Bobbidi-Boo
-1,2,6,466.5,243.5,223,14,510,267,243,The Novaks,Top Gunner: Henderson
-1,3,12,528,271.5,256.5,4,536,362,174,Blasphemous Hot Takes,All That is Wright
+1,2,6,466.5,243.5,223,14,507,267,240,The Novaks,Top Gunner: Henderson
+1,3,12,528,271.5,256.5,4,535,361,174,Blasphemous Hot Takes,All That is Wright
 1,4,1,468,301.5,166.5,13,507,312.5,194.5,The Talmudic Tunnelers,Ketel Bells
-1,5,8,433.5,204,229.5,9,523.5,260,263.5,Mt. Everest Taquito Farmers,Book of Boba Chette
+1,5,8,433.5,204,229.5,9,524.5,261,263.5,Mt. Everest Taquito Farmers,Book of Boba Chette
 1,6,5,488,293,195,2,511.5,307.5,204,The Traveling Secretaries,Tucker? I hardly know her
-2,7,7,133.5,44.5,89,14,85.5,50.5,35,Bibee-di-Bobbidi-Boo,Top Gunner: Henderson
-2,8,4,102.5,70.5,32,11,138,59.5,78.5,All That is Wright,The West Bank Occupiers
-2,9,13,90.5,53,37.5,6,147.5,56.5,91,Ketel Bells,The Novaks
-2,10,9,110.5,62,48.5,12,78,52,26,Book of Boba Chette,Blasphemous Hot Takes
-2,11,2,80,60,20,1,80,34.5,45.5,Tucker? I hardly know her,The Talmudic Tunnelers
-2,12,5,99.5,48.5,51,8,103,55,48,The Traveling Secretaries,Mt. Everest Taquito Farmers
+2,7,7,188,70,118,14,148,73.5,74.5,Bibee-di-Bobbidi-Boo,Top Gunner: Henderson
+2,8,4,138.5,102.5,36,11,167,84,83,All That is Wright,The West Bank Occupiers
+2,9,13,127.5,80,47.5,6,188,86.5,101.5,Ketel Bells,The Novaks
+2,10,9,146,87,59,12,95.5,80.5,15,Book of Boba Chette,Blasphemous Hot Takes
+2,11,2,117,95,22,1,169.5,67.5,102,Tucker? I hardly know her,The Talmudic Tunnelers
+2,12,5,117,61,56,8,158.5,86,72.5,The Traveling Secretaries,Mt. Everest Taquito Farmers
 3,13,4,NA,NA,NA,7,NA,NA,NA,All That is Wright,Bibee-di-Bobbidi-Boo
 3,14,14,NA,NA,NA,13,NA,NA,NA,Top Gunner: Henderson,Ketel Bells
 3,15,11,NA,NA,NA,9,NA,NA,NA,The West Bank Occupiers,Book of Boba Chette
