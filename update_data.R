@@ -25,6 +25,7 @@ source('data/free_agents.R')
 source('figures/wp_graphics.R')
 source('figures/all_star_teams.R')
 source('data/league_history.R')
+source('data/scrape_mlb_boxscores.R')
 
 params <- 
   list('season' = 2026,
@@ -1036,6 +1037,40 @@ write_csv(df_whatif, glue('data/stats/{params$season}/whatif.csv'))
 ### League History
 update_league_history(params$season)
 update_win_loss_matrix(params$season)
+
+
+### Scrape MLB Box Data
+scrape_min <- min(Sys.Date() - 7, params$opening_day)
+scrape_max <- Sys.Date() - 1
+date_seq <- seq.Date(from = scrape_min, to = scrape_max, 1)
+
+
+id_list <- map(date_seq, list_of_game_ids)
+names(id_list) <- date_seq
+game_ids <- unlist(id_list)
+date_ids <- rep(date_seq, map_dbl(id_list, length))
+mlb_batting <- map2_dfr(game_ids, date_ids, game_data)
+mlb_pitching <- map2_dfr(game_ids, date_ids, game_data)
+
+if(scrape_min == params$opening_day) {
+  
+  write_csv(mlb_batting,  glue('data/stats/{params$season}/mlb_batting_logs.csv'))
+  write_csv(mlb_pitching,  glue('data/stats/{params$season}/mlb_pitching_logs.csv'))
+  
+} else {
+  read_csv(glue('data/stats/{params$season}/mlb_batting_logs.csv')) %>% 
+    filter(! date %in% date_seq) %>% 
+    bind_rows(mlb_batting) %>% 
+    arrange(date) %>% 
+    write_csv(glue('data/stats/{params$season}/mlb_batting_logs.csv'))
+  
+  read_csv(glue('data/stats/{params$season}/mlb_pitching_logs.csv')) %>% 
+    filter(! date %in% date_seq) %>% 
+    bind_rows(mlb_pitching) %>% 
+    arrange(date) %>% 
+    write_csv(glue('data/stats/{params$season}/mlb_pitching_logs.csv'))
+}
+
 
 
 
