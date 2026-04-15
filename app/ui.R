@@ -366,6 +366,136 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                                              image.height = 100)
                               )
                               
+                            ),
+                            
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            
+                            
+                            sidebarLayout(
+                              sidebarPanel(
+                                h2('MLB Batter Rolling Averages'),
+                                selectInput('roll_batter',
+                                            label = "Select Batter",
+                                            choices = batters,
+                                            selected =  592450),
+                                selectInput("stat_col_bat",
+                                            label = "Stat",
+                                            choices = bat_stat_cols,
+                                            selected = 'points'),
+                                dateRangeInput('roll_bat_date_range',
+                                               label = "Date Range",
+                                               min   = params$opening_day,
+                                               max   = Sys.Date(),
+                                               start = params$opening_day,
+                                               end   = Sys.Date()),
+                                radioButtons("roll_bat_starter_filter",
+                                             label = "Player Type",
+                                             choices = list("All" = F, "Starts Only" = T),
+                                             selected = F),
+                                radioButtons("roll_bat_roll_sum",
+                                             label = "Rolling Type",
+                                             choices = list("Total" = T, 'Average' = F),
+                                             selected = F),
+                                sliderInput("roll_bat_k",
+                                            label = "Rolling Window (games)",
+                                            min = min(period, 5),
+                                            max = min(period - 3 - as.numeric(params$opening_day_chart - params$opening_day), 50),
+                                            step = 5,
+                                            value = min(period - 3 - as.numeric(params$opening_day_chart - params$opening_day), 10)),
+                                
+                                actionButton('k_bat', 'Render Chart')
+                              ),
+                              
+                              mainPanel(
+                                width = 12,
+                                shinycssloaders::withSpinner(plotOutput('roll_k_bat'),
+                                                             image = baseball,
+                                                             image.height = 100)
+                              )
+                              
+                            ),
+                            
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            br(),
+                            
+                            
+                            sidebarLayout(
+                              sidebarPanel(
+                                h2('MLB Pitcher Rolling Averages'),
+                                selectInput('roll_pitcher',
+                                            label = "Select Pitcher",
+                                            choices = pitchers,
+                                            selected =  669373),
+                                selectInput("stat_col_pitch",
+                                            label = "Stat",
+                                            choices = pitch_stat_cols,
+                                            selected = 'points'),
+                                dateRangeInput('roll_pitch_date_range',
+                                               label = "Date Range",
+                                               min   = params$opening_day,
+                                               max   = Sys.Date(),
+                                               start = params$opening_day,
+                                               end   = Sys.Date()),
+                                radioButtons("roll_pitch_starter_filter",
+                                             label = "Player Type",
+                                             choices = list("Reliever" = F, "Starter" = T),
+                                             selected = T),
+                                radioButtons("roll_pitch_roll_sum",
+                                             label = "Rolling Type",
+                                             choices = list("Total" = T, 'Average' = F),
+                                             selected = F),
+                                sliderInput("roll_pitch_k",
+                                            label = "Rolling Window (games)",
+                                            min = 1,
+                                            max = min(period - 3 - as.numeric(params$opening_day_chart - params$opening_day), 50),
+                                            step = 1,
+                                            value = min(sum(mlb_pitchers$player == 'Tarik Skubal'), 10)),
+                                
+                                actionButton('k_pitch', 'Render Chart')
+                              ),
+                              
+                              mainPanel(
+                                width = 12,
+                                shinycssloaders::withSpinner(plotOutput('roll_k_pitch'),
+                                                             image = baseball,
+                                                             image.height = 100)
+                              )
+                              
                             )
                    ),
                    
@@ -448,31 +578,31 @@ shinyUI(navbarPage("Millburnish Fantasy Baseball",
                                             
                                 )
                               ),
+                              mainPanel(
+                                width = 12,
+                                shinycssloaders::withSpinner(gt_output('weekly_scoreboard'),
+                                                             image = baseball,
+                                                             image.height = 100),
+                                br(),
+                                br(),
+                                shinycssloaders::withSpinner(gt_output('weekly_standings'),
+                                                             image = baseball,
+                                                             image.height = 100)
+                              )
+                            )),
+                   
+                   tabPanel('League History',
                             mainPanel(
                               width = 12,
-                              shinycssloaders::withSpinner(gt_output('weekly_scoreboard'),
+                              shinycssloaders::withSpinner(gt_output('league_history_table'),
                                                            image = baseball,
                                                            image.height = 100),
                               br(),
-                              br(),
-                              shinycssloaders::withSpinner(gt_output('weekly_standings'),
+                              
+                              shinycssloaders::withSpinner(gt_output('wl_mat'),
                                                            image = baseball,
                                                            image.height = 100)
-                            )
-                   )),
-
-                   tabPanel('League History',
-                              mainPanel(
-                                width = 12,
-                                shinycssloaders::withSpinner(gt_output('league_history_table'),
-                                                            image = baseball,
-                                                            image.height = 100),
-                                br(),
-                          
-                                shinycssloaders::withSpinner(gt_output('wl_mat'),
-                                                            image = baseball,
-                                                            image.height = 100)
-                   ) 
+                            ) 
                    ),
                    
                    

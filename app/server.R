@@ -1461,6 +1461,45 @@ shinyServer(function(input, output, session) {
   height = 900, 
   width = 1600)
   
+  k_chart_bat <- eventReactive(input$k_bat, {
+    roll_avg_plot(total_stats = mlb_batting, 
+                  date_range = input$roll_bat_date_range, 
+                  player = names(input$roll_batter), 
+                  player_id = as.numeric(input$roll_batter), 
+                  stat_col = input$stat_col_bat, 
+                  rolling_sum = as.logical(input$roll_bat_roll_sum), 
+                  starter_only = as.logical(input$roll_bat_starter_filter),
+                  roll_k = as.numeric(input$roll_bat_k),
+                  batter = T)
+  })
+  
+  output$roll_k_bat <- renderPlot({
+    cat('Rendering K-Avg Chart Batter\n')
+    k_chart_bat()
+  },
+  height = 675, 
+  width = 1200)
+  
+  k_chart_pitch <- eventReactive(input$k_pitch, {
+    roll_avg_plot(total_stats = mlb_pitching, 
+                  date_range = input$roll_pitch_date_range, 
+                  player = names(input$roll_pitcher), 
+                  player_id = as.numeric(input$roll_pitcher), 
+                  stat_col = input$stat_col_pitch, 
+                  rolling_sum = as.logical(input$roll_pitch_roll_sum), 
+                  starter_only = as.logical(input$roll_pitch_starter_filter),
+                  roll_k = as.numeric(input$roll_pitch_k),
+                  batter = F)
+  })
+  
+  output$roll_k_pitch <- renderPlot({
+    cat('Rendering K-Avg Chart Pitchern')
+    k_chart_pitch()
+  },
+  height = 675, 
+  width = 1200)
+  
+  
   ##########################
   ### Trades/Free Agents ###
   ##########################
@@ -1757,6 +1796,8 @@ shinyServer(function(input, output, session) {
     cat('Rendering FA Chart\n')
     
     gt(df_fa) %>% 
+      sub_missing(columns = everything(), missing_text = "---") %>% 
+      
       ### Align Columns
       cols_align(align = "center", columns = everything()) %>%
       
@@ -1807,17 +1848,41 @@ shinyServer(function(input, output, session) {
       
       ### Logos
       text_transform(
-        locations = cells_body(columns = contains(c('player_url'))),
+        locations = cells_body(columns = contains(c('player_url_1')), 
+                               rows = (player_url_1 != '---')),
         fn = function(x) {
           web_image(
             url = x,
             height = 50
           )
         }
+      ) %>%
+      
+      text_transform(
+        locations = cells_body(columns = contains(c('player_url_2')), 
+                               rows = (player_url_2 != '---')),
+        fn = function(x) {
+          web_image(
+            url = x,
+            height = 50
+          )
+        }
+      ) %>%
+      
+      text_transform(
+        locations = cells_body(columns = contains(c('logo_1')),
+                               rows = (logo_1 != '---')),
+        fn = function(x) {
+          local_image(
+            filename = x,
+            height = 50
+          )
+        }
       ) %>% 
       
       text_transform(
-        locations = cells_body(columns = contains(c('logo'))),
+        locations = cells_body(columns = contains(c('logo_2')),
+                               rows = (logo_2 != '---')),
         fn = function(x) {
           local_image(
             filename = x,
@@ -1857,7 +1922,7 @@ shinyServer(function(input, output, session) {
       tab_source_note(paste("SP:", sprintf('%0.2f', scale_factors$n_sp), 'Games/Week | Average SP Game:', sprintf('%0.2f', exp_standings$sp_ppg[13]))) %>% 
       tab_source_note(paste("RP:", sprintf('%0.2f', scale_factors$n_rp), 'Games/Week | Average RP Game:', sprintf('%0.2f', exp_standings$rp_ppg[13]))) %>% 
       tab_source_note(paste("Batter:", sprintf('%0.2f', scale_factors$n_bat), 'Games/Week | Average Batter Game:', sprintf('%0.2f', exp_standings$batting_ppg[13]))) %>% 
-      tab_source_note('Min Games for Inclusion: Batter (20), SP (5), RP (5), or 50% of the season for batters and 20% of the season for pitchers up until day 40') %>% 
+      tab_source_note('Min Games for Inclusion [Value View]: Batter (20), SP (5), RP (5), or 50% of the season for batters and 20% of the season for pitchers up until day 40') %>% 
       tab_source_note('NOTE: Additions prior to Opening Day do not count, as those are indistinguishable from draft picks in ESPN data') %>% 
       tab_options(column_labels.font.size = 16,
                   heading.title.font.size = 40,

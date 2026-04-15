@@ -183,7 +183,7 @@ pitcher_game_data <- function(game_id, date_id) {
   total_pitcher_data <- 
     bind_rows(PitcherDataAway, PitcherDataHome) %>% 
     mutate('qualityStarts' = ifelse(outs >=18 & earnedruns <= 3, 1, 0),
-           'completeGames' = completeGames := ifelse(outs >= 15 & outs == sum(outs), 1, 0),
+           'completeGames' = ifelse(outs >= 15 & outs == sum(outs), 1, 0),
            'noHitters' = ifelse(outs >= 21 & completeGames == 1 & hits == 0, 1, 0),
            'perfectGames' = ifelse(outs >= 21 & completeGames == 1 & hits == 0 & walks == 0 & hbp == 0, 1, 0),
            'points' = outs * 1 + hits * (-1) + earnedruns * (-2) + walks * (-0.5) + hbp * (-0.5) +

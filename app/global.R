@@ -274,7 +274,6 @@ df_fa <-
   trans_log %>% 
   filter(!is.na(w_bat), !is.na(w_sp), !is.na(w_rp)) %>% 
   filter(transaction_type == 'Free Agent') %>% 
-  filter(w_bat * n_games >= threshold | w_sp * n_games >= threshold_p  | w_rp * n_games >= threshold_p) %>%
   mutate('ppg_vs_avg' = 
            (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat * w_bat + 
            (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp * w_rp + 
@@ -291,22 +290,25 @@ df_fa <-
   mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
   inner_join(select(teams, team, team_id, logo), by = 'team_id') %>% 
   mutate('added' = as.character(format.Date(as.Date(params$opening_day) - 1 + start, "%b, %d")),
-         'dropped' = ifelse(end == max(end), NA, as.character(format.Date(as.Date(params$opening_day) - 1 + end, "%b, %d")))) %>% 
-  select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) 
+         'dropped' = ifelse(end == max(end), NA, as.character(format.Date(as.Date(params$opening_day) - 1 + end, "%b, %d")))) 
+
 
 df1 <- 
   df_fa %>% 
   arrange(-total_value) %>% 
+  filter(w_bat * n_games >= threshold | w_sp * n_games >= threshold_p  | w_rp * n_games >= threshold_p) %>%
+  select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) %>% 
   head(20)
 names(df1) <- paste0(names(df1), '_1')
 
 df2 <- 
   df_fa %>% 
   arrange(-n_points) %>% 
+  select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) %>% 
   head(20)
 names(df2) <- paste0(names(df2), '_2')
 
-df_fa <- bind_cols(df1, df2)
+df_fa <- bind_cols(pad_rows(df1, n = min(nrow(df2), 20)), df2)
 
 
 if(nrow(traded_players) > 0) {
@@ -586,3 +588,60 @@ manager_order <-
   unique()
 
 
+### Vinik's MLB Rolling Averages
+mlb_batting <- read_csv(glue('data/stats/{params$season}/mlb_batting_logs.csv'))
+mlb_pitching <- read_csv(glue('data/stats/{params$season}/mlb_pitching_logs.csv'))
+
+mlb_batters <- 
+  mlb_batting %>% 
+  distinct(player, mlbam_id) %>% 
+  arrange(player)
+
+batters <- mlb_batters$mlbam_id 
+names(batters) <- mlb_batters$player
+
+bat_stat_cols <- 
+  c('HR' = 'home_runs',
+    '1B' = 'h_1b',
+    '2B' = 'h_2b',
+    '3B' = 'h_3b',
+    'AB' = 'h_ab',
+    'PA' = 'b_pa',
+    'BB' = 'b_walks',
+    'IBB' = 'b_ibb',
+    'SF' = 'b_sf',
+    'R' = 'b_runs',
+    'RBI' = 'b_rbi',
+    'K' = 'b_k',
+    'GIDP' = 'b_gidp',
+    'Errors' = 'b_E',
+    'SB' = 'b_SB',
+    'CS' = 'b_cs',
+    'Fantasy Points' = 'points')
+    
+  
+mlb_pitchers <- 
+  mlb_pitching %>% 
+  distinct(player, mlbam_id) %>% 
+  arrange(player)
+
+pitchers <- mlb_pitchers$mlbam_id
+names(pitchers) <- mlb_pitchers$player
+
+pitch_stat_cols <- 
+  c('Outs Recorded' = 'outs',
+    'H' = 'hits',
+    'ER' = 'earnedruns',
+    'BB' = 'walks',
+    'HBP' = 'hpb',
+    'K' = 'strikeouts',
+    'WP' = 'wildPitches',
+    'Balks' = 'balks',
+    'PO' = 'pickoffs',
+    'Shutouts' = 'shitouts',
+    'SV' = 'Saves',
+    'HD' = 'holds',
+    'BS' = 'blownSaves',
+    'QS' = 'Quality Starts',
+    'CG' = 'Complete Games',
+    'Fantasy Points' = 'points')

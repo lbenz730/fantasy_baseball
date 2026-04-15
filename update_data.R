@@ -1040,7 +1040,7 @@ update_win_loss_matrix(params$season)
 
 
 ### Scrape MLB Box Data
-scrape_min <- min(Sys.Date() - 7, params$opening_day)
+scrape_min <- max(Sys.Date() - 7, params$opening_day)
 scrape_max <- Sys.Date() - 1
 date_seq <- seq.Date(from = scrape_min, to = scrape_max, 1)
 
@@ -1050,7 +1050,7 @@ names(id_list) <- date_seq
 game_ids <- unlist(id_list)
 date_ids <- rep(date_seq, map_dbl(id_list, length))
 mlb_batting <- map2_dfr(game_ids, date_ids, game_data)
-mlb_pitching <- map2_dfr(game_ids, date_ids, game_data)
+mlb_pitching <- map2_dfr(game_ids, date_ids, pitcher_game_data)
 
 if(scrape_min == params$opening_day) {
   
