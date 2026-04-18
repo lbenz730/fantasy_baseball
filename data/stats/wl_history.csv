@@ -2,7 +2,7 @@ manager,manager_opp,n_wins,n_loss,win_pct
 Alex Brod,Andrew Lama,10,8,0.5555555555555556
 Alex Brod,Andrew Tham,14,4,0.7777777777777778
 Alex Brod,Blair Prato,4,11,0.26666666666666666
-Alex Brod,Dan Gold,14,6,0.7
+Alex Brod,Dan Gold,13,7,0.65
 Alex Brod,Dylan Boyd,16,9,0.64
 Alex Brod,Griffin Schwab,6,0,1
 Alex Brod,Jack Wagner,13,6,0.6842105263157895
@@ -65,7 +65,7 @@ Blair Prato,Louis Danowsky,5,0,1
 Blair Prato,Luke Benz,8,5,0.6153846153846154
 Blair Prato,Michael Bogaty,4,10,0.2857142857142857
 Blair Prato,Zach Vinik,3,5,0.375
-Dan Gold,Alex Brod,6,14,0.3
+Dan Gold,Alex Brod,7,13,0.35
 Dan Gold,Andrew Lama,11,7,0.6111111111111112
 Dan Gold,Andrew Tham,10,6,0.625
 Dan Gold,Blair Prato,6,8,0.42857142857142855
@@ -100,7 +100,7 @@ Dylan Boyd,Luke Benz,6,6,0.5
 Dylan Boyd,Matt O'Donnell,5,1,0.8333333333333334
 Dylan Boyd,Michael Bogaty,10,5,0.6666666666666666
 Dylan Boyd,Vick Raghunathan,1,1,0.5
-Dylan Boyd,Zach Vinik,2,7,0.2222222222222222
+Dylan Boyd,Zach Vinik,3,6,0.3333333333333333
 Griffin Schwab,Alex Brod,0,6,0
 Griffin Schwab,Andrew Lama,1,3,0.25
 Griffin Schwab,Andrew Tham,3,3,0.5
@@ -275,7 +275,7 @@ Zach Vinik,Andrew Lama,5,4,0.5555555555555556
 Zach Vinik,Andrew Tham,5,2,0.7142857142857143
 Zach Vinik,Blair Prato,5,3,0.625
 Zach Vinik,Dan Gold,5,3,0.625
-Zach Vinik,Dylan Boyd,7,2,0.7777777777777778
+Zach Vinik,Dylan Boyd,6,3,0.6666666666666666
 Zach Vinik,Jack Wagner,6,2,0.75
 Zach Vinik,Jake Hubertus,5,3,0.625
 Zach Vinik,James Whitty,5,2,0.7142857142857143
