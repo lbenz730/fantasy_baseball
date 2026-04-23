@@ -84,6 +84,7 @@ get_trade_players <- function(df_trades) {
       ) %>% 
       filter(!duplicated(paste(player, player_id, team_from, team_to, scoring_period_id))) %>% 
       group_by(scoring_period_id, teams_involved) %>% 
+      filter(n() > 1) %>% 
       mutate('trade_id' = cur_group_id()) %>% 
       arrange(trade_id) %>% 
       ungroup()

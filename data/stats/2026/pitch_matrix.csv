@@ -47,7 +47,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,7.0,2,1,QS,Tucker? I hardly know her
 2,< 3,1,1,Bad Start,Tucker? I hardly know her
 2,< 3,6+,1,Bad Start,Tucker? I hardly know her
-2,> 7,0,1,QS,Tucker? I hardly know her
+2,> 7,0,2,QS,Tucker? I hardly know her
 4,3.2,3,1,Bad Start,All That is Wright
 4,4.0,2,1,Bad Start,All That is Wright
 4,4.0,6+,1,Bad Start,All That is Wright
@@ -82,6 +82,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.0,2,2,QS Potential,The Traveling Secretaries
 5,5.0,4,2,Bad Start,The Traveling Secretaries
 5,5.1,1,2,QS Potential,The Traveling Secretaries
+5,5.1,6+,1,Bad Start,The Traveling Secretaries
 5,5.2,1,1,Blue Balls,The Traveling Secretaries
 5,5.2,3,1,Blue Balls,The Traveling Secretaries
 5,5.2,4,1,Bad Start,The Traveling Secretaries
@@ -120,7 +121,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.0,5,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,0,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,1,1,Bad Start,Bibee-di-Bobbidi-Boo
-7,5.0,1,2,QS Potential,Bibee-di-Bobbidi-Boo
+7,5.0,1,3,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,2,1,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,3,2,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.1,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
@@ -185,7 +186,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.2,1,1,QS,Book of Boba Chette
 9,7.0,0,2,QS,Book of Boba Chette
 9,7.0,2,1,QS,Book of Boba Chette
-9,7.0,3,1,QS,Book of Boba Chette
+9,7.0,3,2,QS,Book of Boba Chette
 11,3.0,6+,1,Bad Start,The West Bank Occupiers
 11,4.2,1,1,Bad Start,The West Bank Occupiers
 11,4.2,3,1,Bad Start,The West Bank Occupiers
@@ -221,13 +222,14 @@ team_id,ip,earned_runs,n,start_type,team
 12,6.0,0,3,QS,Blasphemous Hot Takes
 12,6.0,1,3,QS,Blasphemous Hot Takes
 12,6.0,3,2,QS,Blasphemous Hot Takes
-12,6.0,4,1,QS Potential,Blasphemous Hot Takes
+12,6.0,4,2,QS Potential,Blasphemous Hot Takes
 12,6.1,0,1,QS,Blasphemous Hot Takes
 12,6.1,1,1,QS,Blasphemous Hot Takes
 12,6.2,1,3,QS,Blasphemous Hot Takes
 12,6.2,3,1,QS,Blasphemous Hot Takes
 12,7.0,0,2,QS,Blasphemous Hot Takes
 12,7.0,1,3,QS,Blasphemous Hot Takes
+12,7.0,3,1,QS,Blasphemous Hot Takes
 13,4.0,0,1,Bad Start,Ketel Bells
 13,4.0,2,1,Bad Start,Ketel Bells
 13,4.0,4,1,Bad Start,Ketel Bells
@@ -271,6 +273,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,6.0,3,1,QS,Top Gunner: Henderson
 14,6.0,4,1,QS Potential,Top Gunner: Henderson
 14,6.0,6+,1,Bad Start,Top Gunner: Henderson
+14,6.1,1,1,QS,Top Gunner: Henderson
 14,7.0,0,1,QS,Top Gunner: Henderson
 14,7.0,2,1,QS,Top Gunner: Henderson
 14,> 7,2,1,QS,Top Gunner: Henderson
