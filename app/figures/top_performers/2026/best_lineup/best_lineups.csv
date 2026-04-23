@@ -65,25 +65,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Mason Miller,4730225,5,30.5,7.625,3
 15,RP,Raisel Iglesias,33618,5,21.5,7.166666666666667,3
 15,RP,Riley O'Brien,41509,11,21,5.25,3
-0,C,Drake Baldwin,4810190,1,15,7.5,4
-1,1B,Sal Stewart,5080771,4,17.5,8.75,4
-2,2B,Luis Garcia Jr.,40459,2,9.5,4.75,4
-3,3B,Max Muncy,33303,12,17,8.5,4
-4,SS,Elly De La Cruz,4917694,8,19.5,9.75,4
-5,OF,James Wood,4918256,8,12,6,4
-5,OF,Tyler Soderstrom,4686066,5,11.5,5.75,4
-5,OF,Riley Greene,42179,14,11,5.5,4
-5,OF,Spencer Steer,4722857,5,10.5,5.25,4
-5,OF,Daylen Lile,4917889,4,10,5,4
-6,2B/SS,Colson Montgomery,4872685,8,10,10,4
-7,1B/3B,Isaac Paredes,39706,6,16,8,4
-12,UTIL,Cal Raleigh,41292,6,13.5,6.75,4
+0,C,Cal Raleigh,41292,6,24,8,4
+1,1B,Ildemaro Vargas,32985,11,22.5,11.25,4
+2,2B,Luis Garcia Jr.,40459,2,11.5,3.8333333333333335,4
+3,3B,Max Muncy,33303,12,19,6.333333333333333,4
+4,SS,Elly De La Cruz,4917694,8,18.5,6.166666666666667,4
+5,OF,James Wood,4918256,8,22,7.333333333333333,4
+5,OF,Daylen Lile,4917889,4,20,6.666666666666667,4
+5,OF,Michael Harris II,42470,1,18,6,4
+5,OF,Yordan Alvarez,36018,4,16,5.333333333333333,4
+5,OF,Jakob Marsee,4866735,8,15,5,4
+6,2B/SS,Colson Montgomery,4872685,8,16,8,4
+7,1B/3B,Nick Kurtz,4966637,2,19.5,6.5,4
+12,UTIL,Drake Baldwin,4810190,1,23,7.666666666666667,4
+14,SP,Max Fried,32685,4,34,34,4
 14,SP,Seth Lugo,34873,12,31,31,4
+14,SP,Nick Martinez,33372,11,27.5,27.5,4
 14,SP,Randy Vasquez,4722847,6,27.5,27.5,4
 14,SP,Nolan McLean,4433874,4,24,24,4
-14,SP,Shota Imanaga,5134630,5,21.5,21.5,4
-14,SP,Bryce Elder,4301067,12,20.5,20.5,4
-14,SP,Yoshinobu Yamamoto,4872587,7,20,20,4
+14,SP,Casey Mize,41167,5,23.5,23.5,4
 15,RP,Louis Varland,4917888,6,14,7,4
-15,RP,Ryan Walker,5000950,13,8,8,4
-15,RP,Jeff Hoffman,33841,2,7,3.5,4
+15,RP,Ryan Walker,5000950,13,13.5,6.75,4
+15,RP,Pete Fairbanks,42180,13,11,5.5,4
