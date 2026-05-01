@@ -1,25 +1,31 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-Book of Boba Chette,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.4547996985099513,0.49812692435459077
-Book of Boba Chette,Bibee-di-Bobbidi-Boo,1,6,0.5,8,7,1,0.5007348085372545,0.5980899457777034
+Book of Boba Chette,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.4522841646892639,0.49812692435459077
+Book of Boba Chette,Bibee-di-Bobbidi-Boo,1,6,0,8,7,1,0.4952033452692292,0.5934002064181673
 Book of Boba Chette,Bibee-di-Bobbidi-Boo,2,5,56.5,5,6,-1,0.7981047848362327,0.8595822947713733
-Book of Boba Chette,Bibee-di-Bobbidi-Boo,3,4,75,5,5,0,0.9475188041076718,0.9756001354980751
-Ketel Bells,Tucker? I hardly know her,0,7,0,8,8,0,0.45914217681078845,0.49812692435459077
-Ketel Bells,Tucker? I hardly know her,1,6,-22,8,6,2,0.455651722701816,0.46879701988114986
-Ketel Bells,Tucker? I hardly know her,2,5,30,7,5,2,0.7520238521746052,0.8599227085964145
+Book of Boba Chette,Bibee-di-Bobbidi-Boo,3,4,74.5,5,5,0,0.9457868284338837,0.9750066729158785
+Book of Boba Chette,Bibee-di-Bobbidi-Boo,4,3,108.5,5,4,1,0.9933039903515508,0.9900847672789941
+Ketel Bells,Tucker? I hardly know her,0,7,0,8,8,0,0.4627946876699611,0.49812692435459077
+Ketel Bells,Tucker? I hardly know her,1,6,-22,8,6,2,0.4749687536084932,0.46879701988114986
+Ketel Bells,Tucker? I hardly know her,2,5,30,7,5,2,0.7639044883898152,0.8599227085964145
 Ketel Bells,Tucker? I hardly know her,3,4,16.5,7,4,3,0.792976112169473,0.8217373838148938
-All That is Wright,The Traveling Secretaries,0,7,0,8,8,0,0.5423349956846348,0.49812692435459077
-All That is Wright,The Traveling Secretaries,1,6,38,7,8,-1,0.7247357326762381,0.7485923558555558
-All That is Wright,The Traveling Secretaries,2,5,29,6,7,-1,0.6790132359801179,0.6771062990717318
+Ketel Bells,Tucker? I hardly know her,4,3,12,6,3,3,0.7832796592629239,0.7965171432079297
+All That is Wright,The Traveling Secretaries,0,7,0,8,8,0,0.5372053123300387,0.49812692435459077
+All That is Wright,The Traveling Secretaries,1,6,38,7,8,-1,0.7071147400157156,0.7485923558555558
+All That is Wright,The Traveling Secretaries,2,5,29,6,7,-1,0.6640269116698152,0.6771062990717318
 All That is Wright,The Traveling Secretaries,3,4,8.5,5,5,0,0.573332357215953,0.6014196863178021
-Top Gunner: Henderson,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.4930006057686593,0.49812692435459077
-Top Gunner: Henderson,Mt. Everest Taquito Farmers,1,6,4.5,8,8,0,0.522351801612646,0.5533624302281469
-Top Gunner: Henderson,Mt. Everest Taquito Farmers,2,5,4.5,6,7,-1,0.46656144917751385,0.44671720568066003
+All That is Wright,The Traveling Secretaries,4,3,-30,5,3,2,0.4167068400113239,0.39570875869614586
+Top Gunner: Henderson,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.49645638451062324,0.49812692435459077
+Top Gunner: Henderson,Mt. Everest Taquito Farmers,1,6,5,8,8,0,0.526737729391859,0.5594439093341729
+Top Gunner: Henderson,Mt. Everest Taquito Farmers,2,5,4.5,6,7,-1,0.4683078414275749,0.44671720568066003
 Top Gunner: Henderson,Mt. Everest Taquito Farmers,3,4,7.5,4,6,-2,0.4092845265390084,0.3942947707184183
-The West Bank Occupiers,The Talmudic Tunnelers,0,7,0,8,8,0,0.5781889638157883,0.49812692435459077
-The West Bank Occupiers,The Talmudic Tunnelers,1,6,18,7,7,0,0.6718427805872955,0.7067268633704378
-The West Bank Occupiers,The Talmudic Tunnelers,2,5,46,5,6,-1,0.8058677143284713,0.8026239605888889
-The West Bank Occupiers,The Talmudic Tunnelers,3,4,54,4,6,-2,0.7398443375918379,0.7852443033919289
-The Novaks,Blasphemous Hot Takes,0,7,0,8,8,0,0.7384451822599589,0.49812692435459077
+Top Gunner: Henderson,Mt. Everest Taquito Farmers,4,3,44,3,5,-2,0.709085485594528,0.716132269586409
+The West Bank Occupiers,The Talmudic Tunnelers,0,7,0,8,8,0,0.579852559571328,0.49812692435459077
+The West Bank Occupiers,The Talmudic Tunnelers,1,6,18,7,7,0,0.6734762339564362,0.7067268633704378
+The West Bank Occupiers,The Talmudic Tunnelers,2,5,46.5,5,6,-1,0.8112836017633951,0.805691547406453
+The West Bank Occupiers,The Talmudic Tunnelers,3,4,54.5,4,6,-2,0.7449381963613791,0.7883570870772815
+The West Bank Occupiers,The Talmudic Tunnelers,4,3,83,3,5,-2,0.9269557490458872,0.9147288871361742
+The Novaks,Blasphemous Hot Takes,0,7,0,8,8,0,0.7361063136330283,0.49812692435459077
 The Novaks,Blasphemous Hot Takes,1,6,6.5,7,7,0,0.7056370048678551,0.5775746250930593
-The Novaks,Blasphemous Hot Takes,2,5,45,5,7,-2,0.8230264164801459,0.7236161121706262
-The Novaks,Blasphemous Hot Takes,3,4,48.5,4,6,-2,0.6976240086516657,0.7488274216457794
+The Novaks,Blasphemous Hot Takes,2,5,45.5,5,7,-2,0.8252617590956434,0.7273119654916441
+The Novaks,Blasphemous Hot Takes,3,4,49.5,4,6,-2,0.7082581576076206,0.755743293149797
+The Novaks,Blasphemous Hot Takes,4,3,19,3,4,-1,0.537253361061031,0.5868441120525917
