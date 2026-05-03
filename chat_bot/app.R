@@ -68,6 +68,9 @@ df_trades <-
       mutate('season' = .x)
   })
 
+league_history <- read_csv('data/stats/league_history.csv')
+wl_history <- read_csv('data/stats/wl_history.csv')
+
 old_schedule <- read_csv('data/stats/schedule_2015_2019.csv')
 bylaws <- read_file('chat_bot/docs/bylaws.txt')
 prompt <- read_file('chat_bot/docs/clade_prompt.md')
@@ -91,6 +94,8 @@ data_registry <-
     'win_probability' = df_wp,
     'transactions' = df_transactions,
     'trades' = df_trades,
+    'league_history' = league_history,
+    'wl_history' = wl_history,
     'old_schedule' = old_schedule,
     'bylaws' = bylaws
   )
