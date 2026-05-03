@@ -1,10 +1,8 @@
-FROM rocker/shiny:4.5.2
+FROM rocker/shiny:4.6.0
 
 RUN apt-get update && apt-get install -y \
   libuv1 \
   && rm -rf /var/lib/apt/lists/*
-
-RUN echo 'options(repos = c(CRAN = "https://packagemanager.posit.co/cran/latest"))' >> "${R_HOME}/etc/Rprofile.site"
 
 RUN install2.r \
   rsconnect \
