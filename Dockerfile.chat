@@ -13,10 +13,11 @@ RUN install2.r \
   stringr \
   sass \
   future \
-  devtools 	
+  Dev tools 	
 
 WORKDIR /home/dorothy_dAI
 COPY data data
 COPY docs docs
+COPY chat_bot.R chat_bot.R
 COPY deploy_chat_bot.R deploy_chat_bot.R
 CMD Rscript deploy_chat_bot.R
