@@ -17,7 +17,6 @@ RUN install2.r \
 
 WORKDIR /home/dorothy_dAI
 COPY data data
-COPY docs docs
-COPY chat_bot.R chat_bot.R
+COPY chat_bot chat_bot
 COPY deploy_chat_bot.R deploy_chat_bot.R
 CMD Rscript deploy_chat_bot.R

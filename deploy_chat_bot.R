@@ -10,9 +10,9 @@ setAccountInfo(name = Sys.getenv('NAME'),
 
 deployApp(forceUpdate = T,        # root of the repo becomes the base
           appFiles = c(
-            'chat_bot.R',
-            'docs/bylaws.txt',
-            'docs/clade_prompt.md',
+            'chat_bot/app.R',
+            'chat_bot/docs/bylaws.txt',
+            'chat_bot/docs/clade_prompt.md',
             list.files('data/', recursive = TRUE, full.names = TRUE)
           ),
           appName = 'dorothy_dAI',
