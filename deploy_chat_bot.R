@@ -11,11 +11,11 @@ setAccountInfo(name = Sys.getenv('NAME'),
 deployApp(forceUpdate = T,        # root of the repo becomes the base
           appPrimaryDoc = 'chat_bot/app.R',
           appFiles = c(
+            '.Renviron',
             'chat_bot/app.R',
             'chat_bot/docs/bylaws.txt',
             'chat_bot/docs/clade_prompt.md',
             list.files('data/', recursive = TRUE, full.names = TRUE)
           ), 
           appId = 17282689,
-          appName = 'dorothy_dAI',
-          envVars = c("ANTHROPIC_API_KEY"))
+          appName = 'dorothy_dAI')

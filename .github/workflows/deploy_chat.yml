@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Create Renviron
+        run: echo "ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}" >> .Renviron
 
       - name: Build image  
         run: docker build -t chat_bot -f Dockerfile.chat .

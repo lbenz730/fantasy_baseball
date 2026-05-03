@@ -19,4 +19,5 @@ WORKDIR /home/dorothy_dAI
 COPY data data
 COPY chat_bot chat_bot
 COPY deploy_chat_bot.R deploy_chat_bot.R
+COPY .Renviron .Renviron
 CMD Rscript deploy_chat_bot.R
