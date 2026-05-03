@@ -1,0 +1,24 @@
+name: Deploy Chat Bot
+
+on:
+  schedule:
+    - cron: "45 10 * 3-9 *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build image  
+        run: docker build -t chat_bot -f Dockerfile.chat .
+
+      - name: Execute
+        run: >
+          docker run
+          -e NAME=${{ secrets.NAME }}
+          -e TOKEN=${{ secrets.TOKEN }}
+          -e SECRET=${{ secrets.SECRET }}
+          -e ANTHROPIC_API_KEY=${{ secrets.ANTHROPIC_API_KEY }}
+          chat_bot
