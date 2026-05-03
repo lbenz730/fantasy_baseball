@@ -9,6 +9,7 @@ setAccountInfo(name = Sys.getenv('NAME'),
                secret = Sys.getenv('SECRET'))
 
 deployApp(forceUpdate = T,        # root of the repo becomes the base
+          appPrimaryDoc = 'chat_bot/app.R',
           appFiles = c(
             'chat_bot/app.R',
             'chat_bot/docs/bylaws.txt',
