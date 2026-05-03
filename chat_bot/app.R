@@ -303,7 +303,7 @@ ui <- page_sidebar(
   ),
   chat_ui(
     id = "chat",
-    messages = "**Hey! I'm your Dorothy, the official stats bot of the Millburnish Fantasy Baseball League.** Ask me anything about
+    messages = "**Hey! I'm Dorothy, the official stats bot of the Millburnish Fantasy Baseball League.** Ask me anything about
         league history, records, trades, player stats, or rules. I'll look it up in the data."
   )
 )
