@@ -1,5 +1,5 @@
 devtools::install_version('rsconnect', 
-                          version = '1.0.1', 
+                          version = '1.6.1', 
                           repos='http://cran.rstudio.com/', 
                           upgrade = F)
 library(rsconnect)
