@@ -23,8 +23,8 @@ write_csv(df_2024, here('data/stats/2024/daily_stats_2024.csv'))
 
 ### 2025 Scrape
 df_2025 <- map_dfr(1:23, ~get_matchup_stats(.x, season = 2025))
-write_csv(df_2025, here('data/stats/2024/daily_stats_2025.csv'))
+write_csv(df_2025, here('data/stats/2025/daily_stats_2025.csv'))
 
 ### 2026 Scrape
-df_2026 <- map_dfr(1:5, ~get_matchup_stats(.x, season = 2026))
-write_csv(df_2026, here('data/stats/2024/daily_stats_2026.csv'))
+df_2026 <- map_dfr(1:6, ~get_matchup_stats(.x, season = 2026))
+write_csv(df_2026, here('data/stats/2026/daily_stats_2026.csv'))
