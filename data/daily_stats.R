@@ -19,7 +19,7 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
     x <- x$schedule$away$rosterForCurrentScoringPeriod
     y <- y$schedule$away$rosterForCurrentScoringPeriod
   }
-
+  
   df <-
     map_dfr(x$entries[[index]]$playerPoolEntry$player$stats, ~{
       if(length(.x) > 0) {
@@ -111,26 +111,30 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
   df$p_cg[df$p_outs >= 27 & df$p_cg == 0] <- 1
   
   return(df)
-
+  
 }
 
 
 get_matchup_stats <- function(week, season = 2023, current_scoring_period = Inf) {
-
+  
   df_schedule <- read_csv(glue('data/stats/{season}/schedule_{season}.csv'))
   df_start <- read_csv('data/df_start.csv')
   df_start <- df_start[df_start$season == season,]
   start <- df_start$start_period[week]
   end <- df_start$end_period[week]
-
+  openers <- NULL
+  if(file.exists(glue('data/stats/{season}/openers.csv'))) { 
+    openers <- read_csv(glue('data/stats/{season}/openers.csv'))
+  }
+  
   df <-
     future_map_dfr(start:end, ~{
       x <- robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mMatchupScore'))
       y <- robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mMatchup'))
       z <- robust_scrape(glue('https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=mRoster'))
       # w <- robust_scrape(glue('https://fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106?scoringPeriodId={.x}&view=kona_player_info'))
-
-
+      
+      
       roster_status <-
         map2_dfr(z$teams$roster$entries, z$teams$id, ~{
           tibble('player' = .x$playerPoolEntry$player$fullName,
@@ -139,9 +143,9 @@ get_matchup_stats <- function(week, season = 2023, current_scoring_period = Inf)
                  'lineup_id' = .x$lineupSlotId,
                  'team_id' = .y)
         })
-
+      
       indices <- which(!map_lgl(x$schedule$home$rosterForCurrentScoringPeriod$entries, is.null))
-
+      
       tmp1 <- map_dfr(indices, function(i) get_daily_stats(x, y, i, 'home', df_schedule))
       tmp2 <- map_dfr(indices, function(i) get_daily_stats(x, y, i, 'away', df_schedule))
       
@@ -156,14 +160,24 @@ get_matchup_stats <- function(week, season = 2023, current_scoring_period = Inf)
                  'batter' = lineup_id <= 12) %>%
           mutate('season' = season) %>%
           mutate('playoffs' = df_start$playoffs[week])
-
-
+        
+        
         df
       } else {
         NULL
       }
-
+      
     })
-
+  
+  
+  ### Adjust 
+  if(!is.null(openers)) {
+    for(i in 1:nrow(openers)) {
+      row_ix <- df$player_id == openers$player_id[i] & df$scoring_period_id == openers$scoring_period_id[i]
+      df$start[row_ix] <- F
+      df$relief[row_ix] <- T
+    }
+  }
+  
   return(df)
 }

@@ -318,11 +318,30 @@ relief_starts <-
 
 write_csv(relief_starts, 'data/red_flags/relief_starts.csv')
 
+openers <- NULL
+
+if(file.exists(glue('data/stats/{params$season}/openers.csv'))) { 
+  openers <- read_csv(glue('data/stats/{params$season}/openers.csv'))
+}
+
 relief_starts_flag <- 
   df_daily %>% 
   filter(in_lineup) %>% 
   filter(pitcher) %>% 
-  filter(start, relief) %>% 
+  filter(start, relief) 
+
+if(!is.null(openers)) {
+  df_openers <- 
+    df_daily %>% 
+    inner_join(openers) %>% 
+    mutate('rule' = 'Opener Rule',
+           'bonus' = 0) %>% 
+    mutate('ip' = paste0(floor(p_outs/3), '.', p_outs - floor(p_outs/3) * 3)) %>% 
+    select(player, player_id, team_id, matchup_id, scoring_period_id, ip, p_er, rule, bonus)
+}
+
+relief_starts_flag <- 
+  relief_starts_flag %>% 
   mutate('rule' = case_when(p_cg == 1 ~ 'Darvish Rule',
                             qs == 1 ~ 'Javier Rule',
                             T ~ 'Bulk RP Rule')) %>% 
@@ -330,7 +349,9 @@ relief_starts_flag <-
                              rule == 'Javier Rule' ~ 5,
                              T ~ 0)) %>% 
   mutate('ip' = paste0(floor(p_outs/3), '.', p_outs - floor(p_outs/3) * 3)) %>% 
-  select(player, player_id, team_id, matchup_id, scoring_period_id, ip, p_er, rule, bonus)
+  select(player, player_id, team_id, matchup_id, scoring_period_id, ip, p_er, rule, bonus) %>% 
+  bind_rows(df_openers) %>% 
+  arrange(scoring_period_id) 
 write_csv(relief_starts_flag, 'data/red_flags/relief_starts_flags.csv')
 
 
