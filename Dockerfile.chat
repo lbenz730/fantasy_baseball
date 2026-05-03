@@ -13,7 +13,7 @@ RUN install2.r \
   stringr \
   sass \
   future \
-  Dev tools 	
+  devtools 	
 
 WORKDIR /home/dorothy_dAI
 COPY data data
