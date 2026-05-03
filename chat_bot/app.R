@@ -6,10 +6,8 @@ library(dplyr)
 library(readr)
 library(purrr)
 library(glue)
-library(furrr)
 library(stringr)
 
-plan(multisession(workers = parallel::detectCores()))
 
 # ──────────────────────────────────────────────────────────────────────
 # 1. LOAD YOUR DATA
@@ -51,12 +49,12 @@ df_historical_playoff_odds <-
 
 
 df_wp <- 
-  future_map_dfr(dir('data/win_prob/', full.names = T, recursive = T), 
-                 ~{
-                   read_csv(.x, show_col_types = F) %>% 
-                     mutate('season' = as.numeric(str_extract(.x, '20\\d+\\d+')),
-                            'matchup_id' = as.numeric(gsub('.*week_', '', gsub('\\.csv', '', .x))))
-                 })
+  map_dfr(dir('data/win_prob/', full.names = T, recursive = T), 
+          ~{
+            read_csv(.x, show_col_types = F) %>% 
+              mutate('season' = as.numeric(str_extract(.x, '20\\d+\\d+')),
+                     'matchup_id' = as.numeric(gsub('.*week_', '', gsub('\\.csv', '', .x))))
+          })
 
 df_transactions <- 
   map_dfr(2022:max(seasons), ~{
