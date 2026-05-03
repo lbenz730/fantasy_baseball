@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Blasphemous Hot Takes,Place Your Betts,0,7,0,8,8,0,0.5073493147336517,0.49812692435459077
+Blasphemous Hot Takes,Place Your Betts,1,6,-36,8,7,1,0.34465482456947666,0.2642433754337481
+Blasphemous Hot Takes,Place Your Betts,2,5,-34.5,6,3,3,0.4747475802587369,0.4195080695981278
+Blasphemous Hot Takes,Place Your Betts,3,4,-35.5,4,3,1,0.327715096876643,0.2680466672063959
+Blasphemous Hot Takes,Place Your Betts,4,3,-38,4,3,1,0.2908681707522956,0.24938003070239587
+Blasphemous Hot Takes,Place Your Betts,5,2,-45.5,4,3,1,0.19409283946383976,0.19876690011934373
+Blasphemous Hot Takes,Place Your Betts,6,1,-105,2,1,1,0.008037782136181055,0.02386176577515029
+Blasphemous Hot Takes,Place Your Betts,7,0,-83.5,0,1,-1,0,0.02552682578221367
+The Novaks,The  Lincoln Project,0,7,0,8,8,0,0.5452160801874545,0.49812692435459077
+The Novaks,The  Lincoln Project,1,6,7.5,6,8,-2,0.48018494291321495,0.3942947707184183
+The Novaks,The  Lincoln Project,2,5,4.5,6,7,-1,0.5290733701064689,0.44671720568066003
+The Novaks,The  Lincoln Project,3,4,22.5,6,7,-1,0.6101756791863419,0.6194664143490674
+The Novaks,The  Lincoln Project,4,3,28,6,7,-1,0.6474410925920363,0.6685308985986093
+The Novaks,The  Lincoln Project,5,2,19,6,4,2,0.7727778940873483,0.8028722164937413
+The Novaks,The  Lincoln Project,6,1,29.5,5,4,1,0.8558545448774281,0.8215606365180741
+The Novaks,The  Lincoln Project,7,0,2,4,3,1,1,0.6120487755767421
+Ryan Topping -Zimmerman,The West Bank Occupiers,0,7,0,8,8,0,0.20754762514048525,0.49812692435459077
+Ryan Topping -Zimmerman,The West Bank Occupiers,1,6,8.5,8,6,2,0.37149982762725503,0.73354603411711
+Ryan Topping -Zimmerman,The West Bank Occupiers,2,5,-7.5,7,5,2,0.2910200392452477,0.6024974163609736
+Ryan Topping -Zimmerman,The West Bank Occupiers,3,4,5,6,4,2,0.6761773658681974,0.7072649364119098
+Ryan Topping -Zimmerman,The West Bank Occupiers,4,3,0,6,4,2,0.6326445433620591,0.6672193274517747
+Ryan Topping -Zimmerman,The West Bank Occupiers,5,2,-26,5,3,2,0.40647655601261506,0.43188216785424755
+Ryan Topping -Zimmerman,The West Bank Occupiers,6,1,-15.5,4,1,3,0.5698275748152195,0.5903769449684313
+Ryan Topping -Zimmerman,The West Bank Occupiers,7,0,-64.5,4,0,4,0,0.1698419659448266
+The Snell of defeat :(,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.7504736979817788,0.49812692435459077
+The Snell of defeat :(,Mt. Everest Taquito Farmers,1,6,-5.5,6,7,-1,0.6090990802616947,0.3535400733208021
+The Snell of defeat :(,Mt. Everest Taquito Farmers,2,5,-31.5,6,6,0,0.3985765447108941,0.17367553208718525
+The Snell of defeat :(,Mt. Everest Taquito Farmers,3,4,-30,5,6,-1,0.2215219798055359,0.17393913982662967
+The Snell of defeat :(,Mt. Everest Taquito Farmers,4,3,-76.5,5,5,0,0.032618505203840006,0.022370683372601202
+The Snell of defeat :(,Mt. Everest Taquito Farmers,5,2,0,2,5,-3,0.2883601055759275,0.2800858548373402
+The Snell of defeat :(,Mt. Everest Taquito Farmers,6,1,-4.5,1,5,-4,0.22935053729091306,0.343143970920355
+The Snell of defeat :(,Mt. Everest Taquito Farmers,7,0,-7,0,3,-3,0,0.23187854010156406
+Whats that Odor?,"Came, Kershaw, Conquered",0,7,0,8,8,0,0.2793571433841865,0.49812692435459077
+Whats that Odor?,"Came, Kershaw, Conquered",1,6,3,6,8,-2,0.2836585934863628,0.355189172380239
+Whats that Odor?,"Came, Kershaw, Conquered",2,5,-7.5,5,7,-2,0.22877125459429593,0.27170275238737307
+Whats that Odor?,"Came, Kershaw, Conquered",3,4,-9,5,6,-1,0.3551880194229191,0.3230338461609212
+Whats that Odor?,"Came, Kershaw, Conquered",4,3,-2,5,6,-1,0.4001754618443959,0.3852875713298283
+Whats that Odor?,"Came, Kershaw, Conquered",5,2,-31.5,5,5,0,0.2073169524333125,0.17367553208718525
+Whats that Odor?,"Came, Kershaw, Conquered",6,1,-0.5,2,3,-1,0.38280377207655386,0.3992169367654592
+Whats that Odor?,"Came, Kershaw, Conquered",7,0,13,1,3,-2,1,0.4439443527292146
+Yosemite Yeshivas,Stanton Ovation,0,7,0,8,8,0,0.31868924206460564,0.49812692435459077
+Yosemite Yeshivas,Stanton Ovation,1,6,-32,8,7,1,0.18775065555805265,0.2956199355241804
+Yosemite Yeshivas,Stanton Ovation,2,5,-47.5,7,5,2,0.15248412933963884,0.25423806145878386
+Yosemite Yeshivas,Stanton Ovation,3,4,-54,6,4,2,0.25988500712588203,0.21105328193678305
+Yosemite Yeshivas,Stanton Ovation,4,3,-34,5,3,2,0.3841186744113325,0.36064182824867896
+Yosemite Yeshivas,Stanton Ovation,5,2,8.5,3,3,0,0.5882040855885448,0.6014196863178021
+Yosemite Yeshivas,Stanton Ovation,6,1,-37,1,2,-1,0.06611185662720806,0.13815935895936515
+Yosemite Yeshivas,Stanton Ovation,7,0,-17,0,1,-1,0,0.25893316035355446

@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+All Walshed Up,The West Bank Occupiers,0,7,0,8,8,0,0.6768174633793212,0.49812692435459077
+All Walshed Up,The West Bank Occupiers,1,6,2,8,8,0,0.6499941119998913,0.5227509783954523
+All Walshed Up,The West Bank Occupiers,2,5,-74,5,5,0,0.1263342616692509,0.02522969133423059
+All Walshed Up,The West Bank Occupiers,3,4,-52.5,5,4,1,0.17383445600698036,0.15887219210612982
+All Walshed Up,The West Bank Occupiers,4,3,-9.5,4,3,1,0.5483400976396774,0.5020123301631084
+All Walshed Up,The West Bank Occupiers,5,2,-70,4,0,4,0.24318522415542904,0.14620299150468416
+All Walshed Up,The West Bank Occupiers,6,1,-81,4,0,4,0.06007246947197642,0.10711096107505388
+All Walshed Up,The West Bank Occupiers,7,0,36,0,0,0,1,0.8540308591919828
+The Novaks,All That is Wright,0,7,0,8,8,0,0.46018532083462194,0.49812692435459077
+The Novaks,All That is Wright,1,6,44,6,7,-1,0.6802091415091731,0.7899893797260412
+The Novaks,All That is Wright,2,5,45.5,5,5,0,0.8342477710392203,0.9033250368367263
+The Novaks,All That is Wright,3,4,72,4,4,0,0.9438439617896647,0.9718221477392167
+The Novaks,All That is Wright,4,3,71,4,4,0,0.9530650577609556,0.9704408455216968
+The Novaks,All That is Wright,5,2,58,4,2,2,0.961595482957699,0.945785134364518
+The Novaks,All That is Wright,6,1,104,1,2,-1,0.9918922163707854,0.9749689013412958
+The Novaks,All That is Wright,7,0,82,0,0,0,1,0.9825948749637229
+The Traveling Secretaries,Blasphemous Hot Takes,0,7,0,8,8,0,0.6820840006678128,0.49812692435459077
+The Traveling Secretaries,Blasphemous Hot Takes,1,6,46,6,8,-2,0.8230091473805604,0.7309767709909365
+The Traveling Secretaries,Blasphemous Hot Takes,2,5,39,6,7,-1,0.82626990888591,0.7558529185292814
+The Traveling Secretaries,Blasphemous Hot Takes,3,4,107.5,2,7,-5,0.8657619922373793,0.9502019728293519
+The Traveling Secretaries,Blasphemous Hot Takes,4,3,146,1,6,-5,0.9925891752582188,0.9850136615541548
+The Traveling Secretaries,Blasphemous Hot Takes,5,2,109,1,3,-2,0.9792826224832971,0.965701361286338
+The Traveling Secretaries,Blasphemous Hot Takes,6,1,100.5,0,2,-2,0.9834456469482177,0.9535706742072078
+The Traveling Secretaries,Blasphemous Hot Takes,7,0,28,0,0,0,1,0.7977572351954465
+Springer Bell,Yosemite Yeshivas,0,7,0,8,8,0,0.8280016547435795,0.49812692435459077
+Springer Bell,Yosemite Yeshivas,1,6,30.5,6,8,-2,0.7999888520608734,0.6045167948655246
+Springer Bell,Yosemite Yeshivas,2,5,36.5,6,7,-1,0.8594694041236339,0.7374357695500544
+Springer Bell,Yosemite Yeshivas,3,4,33.5,3,3,0,0.7968472997523242,0.8379934033636715
+Springer Bell,Yosemite Yeshivas,4,3,12,3,2,1,0.7151399538844574,0.6996004213540499
+Springer Bell,Yosemite Yeshivas,5,2,6,3,2,1,0.6757598686114804,0.648332543331725
+Springer Bell,Yosemite Yeshivas,6,1,57.5,2,2,0,0.9580422877151624,0.9440691228226247
+Springer Bell,Yosemite Yeshivas,7,0,94,0,2,-2,1,0.9416427862208463
+Mt. Everest Taquito Farmers,Freedom of the Pressly,0,7,0,8,8,0,0.33356732376338205,0.49812692435459077
+Mt. Everest Taquito Farmers,Freedom of the Pressly,1,6,30.5,7,8,-1,0.4784638719560852,0.6897478485118103
+Mt. Everest Taquito Farmers,Freedom of the Pressly,2,5,19.5,5,6,-1,0.45345395081348017,0.5915587183389461
+Mt. Everest Taquito Farmers,Freedom of the Pressly,3,4,1,5,4,1,0.5884126780110073,0.6027618039039133
+Mt. Everest Taquito Farmers,Freedom of the Pressly,4,3,-24.5,5,4,1,0.36941128323524275,0.3598199163898365
+Mt. Everest Taquito Farmers,Freedom of the Pressly,5,2,-35,4,3,1,0.27875810129777023,0.2718844717079572
+Mt. Everest Taquito Farmers,Freedom of the Pressly,6,1,-61,4,2,2,0.08621482201625091,0.17083922120766573
+Mt. Everest Taquito Farmers,Freedom of the Pressly,7,0,-20.5,1,1,0,0,0.26547107778456
+Framber Valdez Oil Spill,Of Bryce and Men,0,7,0,8,8,0,0.5605993480716501,0.49812692435459077
+Framber Valdez Oil Spill,Of Bryce and Men,1,6,-12.5,7,6,1,0.500260120860065,0.4728293728397538
+Framber Valdez Oil Spill,Of Bryce and Men,2,5,21,5,6,-1,0.6130315698762042,0.6055986471868073
+Framber Valdez Oil Spill,Of Bryce and Men,3,4,32.5,5,5,0,0.76549295664236,0.8311912656031573
+Framber Valdez Oil Spill,Of Bryce and Men,4,3,-5,4,4,0,0.4447191602718441,0.436866227155729
+Framber Valdez Oil Spill,Of Bryce and Men,5,2,-20,4,4,0,0.30457825804315664,0.2703034219965402
+Framber Valdez Oil Spill,Of Bryce and Men,6,1,-51.5,0,1,-1,0.028845469974462187,0.08351340068324008
+Framber Valdez Oil Spill,Of Bryce and Men,7,0,-68.5,0,0,0,0,0.03282647052692188

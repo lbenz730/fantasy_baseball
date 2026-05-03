@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Stanton Ovation,"Came, Kershaw, Conquered",0,7,0,8,8,0,0.507349314733652,0.49812692435459077
+Stanton Ovation,"Came, Kershaw, Conquered",1,6,-55,7,5,2,0.30384416597493497,0.20490932551066096
+Stanton Ovation,"Came, Kershaw, Conquered",2,5,-80,7,5,2,0.1275477295750824,0.09208828490696709
+Stanton Ovation,"Came, Kershaw, Conquered",3,4,-53.5,3,4,-1,0.08526138747022567,0.07774019659986182
+Stanton Ovation,"Came, Kershaw, Conquered",4,3,-67.5,3,4,-1,0.038474526683145736,0.046581356126338104
+Stanton Ovation,"Came, Kershaw, Conquered",5,2,-84,2,2,0,0.013367309895056169,0.015566027569364234
+Stanton Ovation,"Came, Kershaw, Conquered",6,1,-101.5,1,0,1,0.009420956592532196,0.027251564396509324
+Stanton Ovation,"Came, Kershaw, Conquered",7,0,-84,1,0,1,0,0.05247813036650333
+Place Your Betts,Whats that Odor?,0,7,0,8,8,0,0.5276529845492158,0.49812692435459077
+Place Your Betts,Whats that Odor?,1,6,22.5,6,8,-2,0.5262993324465599,0.5318098011945912
+Place Your Betts,Whats that Odor?,2,5,76.5,4,8,-4,0.8487090995277505,0.8757538449593087
+Place Your Betts,Whats that Odor?,3,4,86.5,4,7,-3,0.9134388746580963,0.8994340011286155
+Place Your Betts,Whats that Odor?,4,3,117,3,6,-3,0.9730731373066567,0.9643034363959542
+Place Your Betts,Whats that Odor?,5,2,65.5,2,3,-1,0.9025431849418731,0.8968254239792236
+Place Your Betts,Whats that Odor?,6,1,63.5,1,3,-2,0.9289701660733843,0.8387658914969066
+Place Your Betts,Whats that Odor?,7,0,16.5,0,3,-3,1,0.41434487482620336
+The West Bank Occupiers,Blasphemous Hot Takes,0,7,0,8,8,0,0.5080888953196834,0.49812692435459077
+The West Bank Occupiers,Blasphemous Hot Takes,1,6,-10.5,8,8,0,0.42943313709700975,0.37170067388836914
+The West Bank Occupiers,Blasphemous Hot Takes,2,5,-19,8,8,0,0.3844851567255866,0.28013256882995913
+The West Bank Occupiers,Blasphemous Hot Takes,3,4,7.5,7,7,0,0.5619106727519266,0.5895497588707169
+The West Bank Occupiers,Blasphemous Hot Takes,4,3,-27.5,6,3,3,0.47857707928182946,0.4823908304454023
+The West Bank Occupiers,Blasphemous Hot Takes,5,2,29.5,3,3,0,0.7918082402506839,0.8094213908351939
+The West Bank Occupiers,Blasphemous Hot Takes,6,1,-11.5,2,2,0,0.3530305249395643,0.360266565443148
+The West Bank Occupiers,Blasphemous Hot Takes,7,0,-36,2,2,0,0,0.1441110111778926
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.6923150195443809,0.49812692435459077
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,1,6,-3.5,8,8,0,0.6331487955610563,0.45512834288706827
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,2,5,37,6,8,-2,0.7866034880440773,0.6605083421674081
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,3,4,40.5,5,8,-3,0.6130136635579768,0.62803371085629
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,4,3,26.5,5,7,-2,0.5613642242239487,0.5685324801437913
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,5,2,-21.5,1,5,-4,0.1337471294151425,0.2322870730095504
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,6,1,-42.5,0,4,-4,0.03841164532718499,0.13353368135379948
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,7,0,-53,0,4,-4,0,0.09908942241255807
+The  Lincoln Project,Ryan Topping -Zimmerman,0,7,0,8,8,0,0.6329382989564395,0.49812692435459077
+The  Lincoln Project,Ryan Topping -Zimmerman,1,6,36,6,8,-2,0.7171947719331311,0.652137161133551
+The  Lincoln Project,Ryan Topping -Zimmerman,2,5,60.5,6,8,-2,0.8283469271697343,0.8231349349209374
+The  Lincoln Project,Ryan Topping -Zimmerman,3,4,55,6,7,-1,0.8260000207410839,0.8523797881536616
+The  Lincoln Project,Ryan Topping -Zimmerman,4,3,40,6,6,0,0.7983335242937272,0.8769317797175367
+The  Lincoln Project,Ryan Topping -Zimmerman,5,2,52,4,5,-1,0.8623362843702349,0.8370605963508735
+The  Lincoln Project,Ryan Topping -Zimmerman,6,1,13,2,4,-2,0.4534321844237778,0.4439443527292146
+The  Lincoln Project,Ryan Topping -Zimmerman,7,0,46.5,2,4,-2,1,0.7346102952517739
+The Novaks,The Snell of defeat :(,0,7,0,8,8,0,0.5721559722067834,0.49812692435459077
+The Novaks,The Snell of defeat :(,1,6,-13.5,8,7,1,0.4989103172194211,0.46313302416168034
+The Novaks,The Snell of defeat :(,2,5,-29,7,4,3,0.5174906943445563,0.46879945904272746
+The Novaks,The Snell of defeat :(,3,4,30.5,4,3,1,0.8247165315013151,0.8271987997795245
+The Novaks,The Snell of defeat :(,4,3,1,4,2,2,0.690527012002258,0.6754491431106554
+The Novaks,The Snell of defeat :(,5,2,19.5,2,2,0,0.7337631542276418,0.7218103245063926
+The Novaks,The Snell of defeat :(,6,1,13.5,1,1,0,0.7227727501578695,0.658761930063393
+The Novaks,The Snell of defeat :(,7,0,-25.5,1,0,1,0,0.3508984773443991

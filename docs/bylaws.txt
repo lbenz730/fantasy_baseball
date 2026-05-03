@@ -1,0 +1,108 @@
+BYLAWS OF THE MILLBURNISH FANTASY BASEBALL LEAGUE
+
+	THESE BYLAWS OF THE MILLBURNISH FANTASY BASEBALL LEAGUE (the “Bylaws”) are made effective as of January 26, 2024 (the “Effective Date”) by and among those members of that certain fantasy baseball league registered on ESPN entitled “Millburnish Fantasy Baseball league” (the “League”) enumerated on Schedule 1 hereto or their successors appointed pursuant to Section 1.1.b herein (individually, the “Member,” or collectively, the “Members”). All capitalized terms used but not defined in these Bylaws shall have the meaning ascribed or implied thereto from the ESPN fantasy baseball website (the “ESPN Website”). 
+
+WITNESSETH:
+
+	WHEREAS, the Members desire to create these Bylaws to establish the rules providing for the membership, gameplay, and governance of the League; 
+
+	NOW, THEREFORE, in consideration of the opportunity to participate as a Member in the League, the Members agree as follows: 
+
+Section 1. Membership 
+
+1.1. Members and Teams 
+The League shall consist of 12 Teams. Each Team shall be controlled by one or two Members (individually, a “Team Manager, ” or collectively, the “Team Managers”), as shall be indicated on the ESPN Website upon a Member’s addition to the league. 
+The addition of Members to, or removal of Members from, the League shall be at the sole discretion of the League Manager. 
+Team Managers may transfer temporary control of their Team to an individual that is not a Member, but any attempt to transfer control of a Team for a period of longer than three months will be subject to the approval of the League Manager.
+
+1.2. Entry Fee and Prize Pool
+The Team Managers for a given Team shall be jointly and severally responsible for and obligated to pay to the League Manager prior to the Draft an annual entry fee equal to $50*(1.1)n, where n is equal to the year in which the Draft occurs less 2023 (the “Entry Fee”). The sum of the entry fees collected from each Member shall constitute the prize pool (the “Prize Pool”).
+Team Managers who fail to pay the Entry Fee by the date of the Draft will be required to pay an additional fee equal to ten percent of the Entry Fee, which will be added to the Prize Pool. 
+Following the conclusion of a given season, the League Manager shall distribute the Prize Pool to the Team Managers whose Team finished the season in First, Second, and Third place, as well as to the Team Managers whose Team scored the most points during the Regular Season (the “Regular Season Points Leader”). Each Team’s Team Managers will collectively receive a fraction of the Prize Pool as determined by their Team’s finishing position in accordance with table immediately following this sentence: 
+
+Finishing Position
+Fraction of Prize Pool to be Received
+First
+5/12
+Second
+3/12
+Third
+1/12
+Regular Season Points Leader
+3/12
+
+
+1.3. Punishments 
+The Team Managers of the Team that finishes a given season in last place (the “Last Place Team”) shall complete the fantasy punishment described in this subsection (the “Fantasy Punishment”) prior to one week before the Draft for the following season. To complete the Fantasy Punishment, each Team Manager of the Last Place Team shall remain on the Staten Island Ferry or comparable ferry system for a period of 24 consecutive hours, or a pro rata fraction of 24 hours corresponding to the portion of the Entry Fee paid by that Team Manager for his Team, a period which may be further reduced by up to 30 minutes for each Jamaican meat patty the Team Manager consumes on the ferry during the Fantasy Punishment, by up to 20 minutes for each Taquito the Team Manager consumes on the ferry during the Fantasy Punishment, and by up to one hour for each beer the Team Manager consumes on the ferry during the Fantasy Punishment, with additional reasonable reductions allowed for comparable food and beverage consumption at the discretion of the League Manager (each such maximum reduction in time spent on the ferry due to a consumed food or beverage, a “Punishment Reduction”), with each Punishment Reduction reduced from its maximum amount for a given Team Manager by a pro rata amount corresponding to the portion of the Entry Fee paid by that Team Manager. 
+Team Managers who fail to complete the Fantasy Punishment by the start of the first Matchup of the following season may be removed from the League. 
+Each Team Manager of a Team that loses to their opponent Team in a given Matchup by at least 200 points shall write by hand a letter addressed to each of the Team Managers of the opponent Team apologizing for wasting that opponent Team’s time, and each Team Manager of the losing Team shall physically mail such letter to each of the Team Managers of the opponent Team. 
+
+Section 2. Governance
+
+2.1. League Manager
+The League Manager shall be Alex Brod. 
+The League Manager can be replaced by a Supermajority Vote Amendment (as defined in Section 2.2 herein). 
+In the event of the death or permanent incapacitation of Alex Brod, Luke Benz shall assume the duties and powers of League Manager as Successor League Manager, and Luke Benz shall promptly choose his own Successor League Manager. In the event of the temporary incapacitation of Alex Brod, Luke Benz shall assume the duties and powers of League Manager until Alex Brod deems himself fit to resume his position as League Manager.
+2.2. Amendments and Waiver 
+The Bylaws and ESPN Default Rules (as defined in Section 2.4 herein) may be amended or waived by a Majority Vote (as defined in Section 2.3 herein), and such amendments (each a “Majority Vote Amendment”) will take effect at the beginning of the Regular Season that commences following their passage. Majority Vote Amendments may be proposed by any Member at any time and must be announced to the Members in any manner reasonably designed to give notice to each other Member of the pendency of the amendment (“Reasonable Notice”). 
+The Bylaws and ESPN Default Rules may be amended or waived by a Supermajority Vote (as defined in Section 2.3 herein), and such amendments (each a “Supermajority Vote Amendment”) will take effect immediately following their passage. Supermajority Vote Amendments may be proposed by any Member at any time and Members must be provided Reasonable Notice of such amendments. A Supermajority Vote Amendment that is voted on by the Members but is not adopted is not eligible to be adopted as Majority Vote Amendment pursuant to the prior failed vote. 
+League Manager’s Amendments. The Bylaws and ESPN Default Rules may be amended or waived by the League Manager (a “League Manager’s Amendment,” collectively with Majority Vote Amendments and Supermajority Vote Amendments, “Amendments”) without a vote by the Members, and such Amendments will take effect immediately following announcement of the Amendment by the League Manager to the Members in any manner reasonably designed to notify the Members of the passage of the League Manager’s Amendment. A League Manager’s Amendment can be removed from the Bylaws and its effects retroactively reversed (to the extent reasonably practicable) by a Majority Vote Amendment that may take effect immediately (rather than in the subsequent season) following its passage if adopted within eight days after a League Manager’s Amendment takes effect. 
+2.3. Voting Procedures
+Each Team shall be entitled to one vote on each Amendment that is not a League Manager’s Amendment. The vote may be an affirmative vote, negative vote, or an active abstention. If a given Team is controlled by more than one Team Manager, the vote of the Team Manager of that Team that first effectively communicates his vote for a given proposed Amendment to the other Members will represent that Team’s recorded vote for the given proposed Amendment. 
+Quorum. A given Amendment that is not a League Managers Amendment cannot be adopted unless at least eight Teams vote in the affirmative or negative or actively abstain from voting on that Amendment. Notwithstanding the foregoing, a Majority Vote Amendment that receives seven affirmative votes will not be subject to this Section 2.2.b.
+Majority Votes. Following Reasonable Notice of a Majority Vote by the League Manager, Teams will have the opportunity to vote in Majority Votes during a period of seven days, after which no further votes will be recorded. The League Manager will use best efforts to hold simultaneous Majority Votes on multiple Majority Vote Amendments in the three months prior to the start of the season for which such Majority Vote Amendments will take effect. A Majority Vote Amendment shall be adopted only if affirmative votes comprise a majority of the total number of affirmative and negative votes for that Amendment. 
+Supermajority Votes.  Following Reasonable Notice of a Supermajority Vote by any Member, Teams will have the opportunity to vote in Supermajority Votes during a period of seven days, after which no further votes will be recorded. A Supermajority Vote Amendment shall be adopted only if affirmative votes comprise three-fourths of the total number of affirmative and negative votes for that Amendment, rounding up to the closest integer. 
+
+2.4. ESPN Default Rules
+Unless otherwise stated herein, the League will be governed by the rules, settings and limitations of the ESPN Website as configured for the League as of the Effective Date (the “ESPN Default Rules”). 
+The ESPN Default Rules may be amended pursuant to the procedures set forth in Section 2.2. 
+
+Section 3. Gameplay 
+
+3.1. Draft Order 
+The draft order will be determined by a random lottery administered by the League Manager. 
+3.2. Scoring 
+The Shohei Ohtani Rule. Teams may only use a given Player in either a hitting or pitching Lineup spot in a given Matchup. If the Lineup spot in which the Player first locks in a given Matchup is a hitting (pitching) slot, that Player can only accrue points as a hitter (pitcher) for that Matchup, and may not accrue hitting (pitching) points while in a pitching (hitting) Lineup spot.
+Start Cap. Subject to the exceptions in this subsection, each Team shall be eligible to accrue points from a maximum of eight Games Started (as defined in Section 3.2.d herein) by Starting Pitchers for every seven days in a Matchup during which Major League Baseball (“MLB”) regular season games are played (the “Start Cap”). In Matchups during which there are more than seven days in which MLB regular season games are played, the Start Cap shall increase in proportion to the number of such days that exceed seven, rounded to the nearest integer. For the avoidance of doubt, a Matchup during which there are ten days during which MLB regular season games are played will have a Start Cap of 11 Games Started. 
+Start Cap Penalty. If the ESPN Website records Points for a Team in a Matchup in connection with one or more Games Started that exceeds the Start Cap, the Team will have its points for the Matchup reduced by the start cap penalty (the “Start Cap Penalty”). The Start Cap Penalty is equal to the total points recorded by a Team’s pitchers in that Team’s Starting Lineup (i.e., in non-bench or non-Injured List roster spots) credited with a Game Started on the day in the Matchup when the Start Cap was exceeded, divided by that Team’s recorded Games Started on that day, multiplied by the the number of that Team’s Games Started that day in excess of the Start Cap, and rounded to the nearest 0.5 or integer. For example, if Team A has recorded seven Games Started prior to the final day of a seven-day Matchup, records three Games Started on the final day of the matchup resulting in 40 total points attributable to those Games Started, the Start Cap Penalty will be equal to 26.5. 
+Games Started. The number of Games Started includes the sum of (1) the number of “games started” recorded on the ESPN Website, and (2) the number of times in which a Pitcher records four Innings Pitched in a game while in a Team’s Starting Lineup in a Starting Pitcher or Relief Pitcher lineup slot (a “Bulk Guy Appearance”), provided, however, if a player placed in a Relief Pitcher lineup slot is credited by MLB with a start for a given appearance, but such player had averaged fewer than 2 Innings Pitched per outing during that season and pitches fewer than 4 Innings Pitched during such appearance, such appearance (an “Opener Appearance”) will not be considered a Game Started unless the League Manager determines there was a realistic possibility, ab initio, that such pitcher would have pitched more than 4 Innings Pitched if not for a deficient performance, a realized injury during the appearance in question, or any other relevant reason, in which case such Opener Appearance will still be considered a Game Started.
+Relief Pitcher Appearance Cap. Subject to the exceptions in this subsection, Each Team is permitted to accrue points attributable to a maximum of five Relief Pitcher Appearances in a given Matchup (the “Relief Pitcher Appearance Cap”). A Relief Pitcher Appearance occurs when a Team places in their Starting Lineup for the first time in a Matchup in a Relief Pitcher or Starting Pitcher Lineup slot any player that is reasonably likely to make an appearance in relief in an MLB game that day (as determined by the League Manager), does make such such an appearance in relief, or makes an Opener Appearance, in all cases even if that player does not have Relief Pitcher eligibility on the ESPN Website; provided, however, a Bulk Guy Appearance by a Pitcher whose placement in the Starting Lineup would otherwise constitute a Relief Pitcher Appearance will nullify the Relief Pitcher Appearance on that day, but that Pitcher’s subsequent placement in the Starting Lineup in that Matchup will constitute a Relief Pitcher Appearance if the aforementioned conditions for an appearance to constitute a Relief Pitcher Appearances, with the exception of the requirement to be placed in a Starting Lineup for the first time in a Matchup, are satisfied. If during a given Matchup a Team Drops a player who has made a Relief Pitcher Appearance during that Matchup, subsequently adds that player during that same Matchup, and places that player in their Starting Lineup on a day in which he is reasonably likely to make an appearance in relief in an MLB game that day, or does make such an appearance in relief, that placement in the Starting Lineup will constitute an additional Relief Pitcher Appearance. 
+Relief Pitcher Appearance Cap Penalty. If the ESPN Website records Points for a Team in a Matchup in connection with one or more Relief Pitcher Appearances that exceed the Relief Pitcher Appearance Cap, the Team will have its points for the Matchup reduced by the relief pitcher appearance cap penalty (the “Relief Pitcher Appearance Cap Penalty”). The Relief Pitcher Appearance Cap Penalty is equal to the sum of (1) the total points attributable to Relief Pitcher Appearances on the day in the Matchup when the Relief Pitcher Appearance Cap was exceeded, divided by the quantity of that Team’s Relief Pitcher Appearances on that day that relate to actual relief appearances in an MLB game that day by the relevant Pitcher, multiplied by the number of that Team’s Relief Pitcher Appearances that day that relate to actual relief appearances in an MLB game that day by the relevant Pitcher in excess of the Relief Pitcher Appearance Cap, and rounded to the nearest 0.5 or integer and (2) the total points attributable to Relief Pitcher Appearances on any day in the Matchup after the day in the Matchup when the Relief Pitcher Appearance Cap was exceeded. Furthermore, no pitcher may accrue points pitching in relief in a Matchup if such pitcher was ineligible to accrue points on the day of his Relief Pitcher Appearance. For example, if Team A has accumulated four Relief Pitcher Appearances prior to day six of a seven-day Matchup, Team A records three additional Relief Pitcher Appearances on day six of the matchup resulting in 10 total points from two of the Relief Pitchers (while the third Relief Pitcher did not appear in an MLB game that day), and has one additional Relief Pitcher Appearance on day seven that results in 7 points, the Relief Pitcher Appearance Cap Penalty will be 12. 
+Daily Relief Pitcher Limit. A maximum of three pitchers can be eligible to accrue points from pitching in relief on a given day of a Matchup. If one or more pitchers that are placed in a Team’s Starting Pitcher roster slots accrue points pitching in relief in a given day of a Matchup, such points will be deducted if that Team did not leave unfilled a quantity of Relief Pitcher roster slots on that day equal to or greater than the number of pitchers in Starting Pitcher roster slots that accrued points pitching in relief that day. For the purposes of this Section 3.2.g, points accrued in a Bulk Guy Appearance will not qualify as points accrued pitching in relief. 
+The Yu Darvish Rule. Any Team that rosters a Starting Pitcher in their Starting Lineup who while in that Team’s Starting Lineup, pitches nine consecutive innings in a single game, shall be awarded the appropriate number of points for a Complete Game per the ESPN Default Rules, independent of whether the relevant game ends after nine innings. Such Starting Pitcher shall also be awarded the appropriate number of points for a Shutout per the ESPN Default Rules if such Starting Pitcher allowed no runs in the relevant outing.
+The Pedro Martinez Rule: Any Team that rosters a Starting Pitcher in their Starting Lineup who, while in that Team’s Starting Lineup, pitches nine consecutive innings that are hitless or perfect in a single game, shall be awarded the appropriate number points for a No-Hitter or Perfect Game, respectively, as well as the appropriate number of points for a Complete Game and Shutout, per the ESPN Default Rules, independent of whether the relevant game ends after nine innings. 
+The Christian Javier Rule: Any Team that rosters a Pitcher in their Starting Lineup who while in that Team’s Starting Lineup, pitches at least six innings in a game and allows no more than three Earned Runs, shall be awarded the appropriate number of points for a Quality Start per the ESPN Default Rules, independent of whether the Pitcher started the game. 
+3.4. Playoffs
+The Team with the highest Playoff seeding (the “First Seed”) shall choose their opponent for the first Playoff Matchup from among the other three Teams in the Playoffs (the “Playoff Challenge”). The Playoff Challenge shall be communicated to the League Manager at least three hours prior to the start of the first game in the first Playoff Matchup; failure to so communicate the Playoff Challenge will result in the First Seed facing the Team in the Playoffs with the lowest Playoff seeding in the first Playoff Matchup. 
+Teams that do not make, or have been eliminated from, the Playoffs shall not be permitted to add or drop Players from their Roster during the Playoffs. 
+3.5 Transactions
+In the final matchup of the Regular Season, if a Team whose probability of making the Playoffs at the time of a given transaction is below 50% according to the relevant playoff probability model available at https://lbenz730.shinyapps.io/millburn_savant/ (or if such model is not operational (as determined by the League Manager) according to the model available on the ESPN Website) drops a player from its Roster who is (i) not on the IL and (ii) has been rostered on that Team for at least 60 consecutive days, no Team in the League shall be permitted to add that player for the remainder of the Regular Season or during the Playoffs for that season. 
+
+Section 4. Effectiveness 
+These Bylaws shall become first effective following their ratification by eight Members. 
+
+
+
+
+Schedule 1
+Members:
+Luke Benz
+Michael Bogaty 
+Dylan Boyd
+Alex Brod
+Daniel Gold 
+Jake Hubertus
+Andrew Lama 
+Blair Prato
+Andrew Tham
+Zach Vinik
+Jack Wagner
+James Whitty (James Isaac)
+
+
+
+
+
+
+
+

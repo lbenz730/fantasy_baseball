@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+All Walshed Up,Blasphemous Hot Takes,0,7,0,8,8,0,0.8056299567385413,0.49812692435459077
+All Walshed Up,Blasphemous Hot Takes,1,6,-59.5,8,7,1,0.31151886936546214,0.12572829706077004
+All Walshed Up,Blasphemous Hot Takes,2,5,-26.5,5,5,0,0.5066220197090308,0.21191831082542725
+All Walshed Up,Blasphemous Hot Takes,3,4,-18.5,5,5,0,0.3396567743971809,0.28512819705151693
+All Walshed Up,Blasphemous Hot Takes,4,3,-27.5,3,4,-1,0.18478267140805935,0.18838011958302128
+All Walshed Up,Blasphemous Hot Takes,5,2,-38.5,2,1,1,0.25114088744727947,0.24575267198912998
+All Walshed Up,Blasphemous Hot Takes,6,1,-14.5,1,1,0,0.2633660004581606,0.3269425843340539
+All Walshed Up,Blasphemous Hot Takes,7,0,-10.5,0,0,0,0,0.37170067388836914
+All That is Wright,The Traveling Secretaries,0,7,0,8,8,0,0.7072326245379305,0.49812692435459077
+All That is Wright,The Traveling Secretaries,1,6,-38,8,5,3,0.5343705396198368,0.38889562107281694
+All That is Wright,The Traveling Secretaries,2,5,-76.5,6,4,2,0.22860431601552128,0.10360014090676901
+All That is Wright,The Traveling Secretaries,3,4,-74.5,5,2,3,0.15932703077136764,0.14453888234194567
+All That is Wright,The Traveling Secretaries,4,3,-39.5,4,2,2,0.34515418120593716,0.314808920441612
+All That is Wright,The Traveling Secretaries,5,2,-33,2,2,0,0.17309946217901848,0.16332165991335476
+All That is Wright,The Traveling Secretaries,6,1,-74,1,0,1,0.027501576312429655,0.0755789371676125
+All That is Wright,The Traveling Secretaries,7,0,-58.5,0,0,0,0,0.0526328115631944
+The West Bank Occupiers,The Novaks,0,7,0,8,8,0,0.21615302405467926,0.49812692435459077
+The West Bank Occupiers,The Novaks,1,6,7,8,8,0,0.30012914891257936,0.5835745213039246
+The West Bank Occupiers,The Novaks,2,5,-48.5,6,6,0,0.0704555052503098,0.08335960804628773
+The West Bank Occupiers,The Novaks,3,4,9.5,3,5,-2,0.4053248366227735,0.4121541780784672
+The West Bank Occupiers,The Novaks,4,3,-8,3,4,-1,0.3190015056223076,0.33161114577969
+The West Bank Occupiers,The Novaks,5,2,-34.5,3,3,0,0.16869253860339356,0.15347040480076604
+The West Bank Occupiers,The Novaks,6,1,-3.5,1,0,1,0.608745443090524,0.5601393074382376
+The West Bank Occupiers,The Novaks,7,0,-6.5,0,0,0,0,0.4187736943612324
+Springer Bell,Of Bryce and Men,0,7,0,8,8,0,0.516030527392594,0.49812692435459077
+Springer Bell,Of Bryce and Men,1,6,-21.5,8,7,1,0.4294492949922353,0.38715028260125167
+Springer Bell,Of Bryce and Men,2,5,-14,6,4,2,0.5758833018233476,0.5432489351879048
+Springer Bell,Of Bryce and Men,3,4,7,6,3,3,0.7431782570773816,0.7654875950487733
+Springer Bell,Of Bryce and Men,4,3,56.5,4,3,1,0.9322420126323798,0.9294655353451262
+Springer Bell,Of Bryce and Men,5,2,66,1,2,-1,0.8997104502728283,0.8986138848506209
+Springer Bell,Of Bryce and Men,6,1,68.5,0,0,0,0.9883214293081806,0.9666944377260389
+Springer Bell,Of Bryce and Men,7,0,27,0,0,0,1,0.7896896935226114
+Freedom of the Pressly,Framber Valdez Oil Spill,0,7,0,8,8,0,0.3449208861927015,0.49812692435459077
+Freedom of the Pressly,Framber Valdez Oil Spill,1,6,-43,8,6,2,0.23919464005377547,0.2873512334300406
+Freedom of the Pressly,Framber Valdez Oil Spill,2,5,-25.5,8,5,3,0.3689546561173398,0.5005497812886031
+Freedom of the Pressly,Framber Valdez Oil Spill,3,4,30.5,4,4,0,0.7611951566950286,0.8169075137455283
+Freedom of the Pressly,Framber Valdez Oil Spill,4,3,54,2,3,-1,0.7821339297762143,0.8474102857066327
+Freedom of the Pressly,Framber Valdez Oil Spill,5,2,3,2,2,0,0.5474341956604168,0.5350291124298755
+Freedom of the Pressly,Framber Valdez Oil Spill,6,1,-5.5,1,2,-1,0.2633078720384677,0.3535400733208021
+Freedom of the Pressly,Framber Valdez Oil Spill,7,0,-10,0,0,0,0,0.3774729871085706
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.547960163763632,0.49812692435459077
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,1,6,-16,7,8,-1,0.40248804013968686,0.2664784153819667
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,2,5,-5,6,7,-1,0.4528851089537753,0.358004479438371
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,3,4,1.5,3,5,-2,0.35875164535857484,0.34254415170437297
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,4,3,35.5,2,5,-3,0.5285648409075825,0.584816487405344
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,5,2,4.5,0,2,-2,0.3059493476786144,0.3680396773965866
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,6,1,-5,0,2,-2,0.15296263251809938,0.29044654236668993
+Yosemite Yeshivas,Mt. Everest Taquito Farmers,7,0,-49,0,1,-1,0,0.09127649025643018

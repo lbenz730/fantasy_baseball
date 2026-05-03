@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+The West Bank Occupiers,Whats that Odor?,0,7,0,8,8,0,0.6828194900414837,0.49812692435459077
+The West Bank Occupiers,Whats that Odor?,1,6,-10.5,8,8,0,0.5881999313017218,0.37170067388836914
+The West Bank Occupiers,Whats that Odor?,2,5,-42.5,8,7,1,0.43062241969693876,0.21803061655110006
+The West Bank Occupiers,Whats that Odor?,3,4,8,7,7,0,0.5631595862364108,0.5954986872550521
+The West Bank Occupiers,Whats that Odor?,4,3,30.5,4,6,-2,0.5847917180429292,0.6045167948655246
+The West Bank Occupiers,Whats that Odor?,5,2,85,2,4,-2,0.9359396384610218,0.9203432148510146
+The West Bank Occupiers,Whats that Odor?,6,1,70.5,1,3,-2,0.9436389101698789,0.8708921842395437
+The West Bank Occupiers,Whats that Odor?,7,0,96.5,0,0,0,1,0.9914053701297719
+The Novaks,Ryan Germany Marquez,0,7,0,8,8,0,0.5933068126826373,0.49812692435459077
+The Novaks,Ryan Germany Marquez,1,6,-12.5,7,7,0,0.4623691177643284,0.34898881925987413
+The Novaks,Ryan Germany Marquez,2,5,-21.5,6,7,-1,0.38201884905183936,0.22673712569895516
+The Novaks,Ryan Germany Marquez,3,4,-17.5,5,5,0,0.3459653792228309,0.2952782797048526
+The Novaks,Ryan Germany Marquez,4,3,-49.5,4,4,0,0.12676448786220013,0.079670606253597
+The Novaks,Ryan Germany Marquez,5,2,-40,2,2,0,0.1348503221506345,0.12146015045423017
+The Novaks,Ryan Germany Marquez,6,1,23,1,0,1,0.8979805230561588,0.7813935158505815
+The Novaks,Ryan Germany Marquez,7,0,17,0,0,0,1,0.6964099682246032
+Place Your Betts,Yu Suck,0,7,0,8,8,0,0.3942877118629485,0.49812692435459077
+Place Your Betts,Yu Suck,1,6,10,8,8,0,0.5157283613052116,0.6189993962477375
+Place Your Betts,Yu Suck,2,5,-30.5,6,6,0,0.24012466229826446,0.18086186835319976
+Place Your Betts,Yu Suck,3,4,-25.5,4,5,-1,0.23763730828238389,0.20058275780443643
+Place Your Betts,Yu Suck,4,3,-31.5,4,5,-1,0.17116093239821678,0.165702144386256
+Place Your Betts,Yu Suck,5,2,-117,4,4,0,0.003226144958995626,0.0031001440631611976
+Place Your Betts,Yu Suck,6,1,-140,2,1,1,0.0022567841434690747,0.006215656085713811
+Place Your Betts,Yu Suck,7,0,-122,1,0,1,0,0.012451128896807566
+Mother of All Bohms,Haders Gonna Hate,0,7,0,8,8,0,0.3216255502308905,0.49812692435459077
+Mother of All Bohms,Haders Gonna Hate,1,6,-5,8,8,0,0.32190412349816244,0.436866227155729
+Mother of All Bohms,Haders Gonna Hate,2,5,33,6,8,-2,0.4885946018835451,0.6264706767303472
+Mother of All Bohms,Haders Gonna Hate,3,4,48.5,4,6,-2,0.6976240086516657,0.7488274216457794
+Mother of All Bohms,Haders Gonna Hate,4,3,88,4,6,-2,0.9432319036403571,0.9281331853465608
+Mother of All Bohms,Haders Gonna Hate,5,2,73,4,4,0,0.9588665742078301,0.9731406881010041
+Mother of All Bohms,Haders Gonna Hate,6,1,53,3,1,2,0.9725942807953925,0.935387809102285
+Mother of All Bohms,Haders Gonna Hate,7,0,32,2,1,1,1,0.8353904303555157
+Blasphemous Hot Takes,Yosemite Yeshivas,0,7,0,8,8,0,0.5800166240435058,0.49812692435459077
+Blasphemous Hot Takes,Yosemite Yeshivas,1,6,-1.5,7,8,-1,0.5081474104298725,0.38991107482392295
+Blasphemous Hot Takes,Yosemite Yeshivas,2,5,20.5,6,6,0,0.6960511703453239,0.7315967178154871
+Blasphemous Hot Takes,Yosemite Yeshivas,3,4,20.5,6,5,1,0.7179023824190418,0.7643070628520445
+Blasphemous Hot Takes,Yosemite Yeshivas,4,3,77,3,4,-1,0.9351393394934948,0.9315308000980895
+Blasphemous Hot Takes,Yosemite Yeshivas,5,2,114,1,3,-2,0.9845564216333678,0.9713439941239558
+Blasphemous Hot Takes,Yosemite Yeshivas,6,1,84,1,1,0,0.9933046235855044,0.9842026766998059
+Blasphemous Hot Takes,Yosemite Yeshivas,7,0,68,0,0,0,1,0.9658919402938929
+The  Lincoln Project,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.2987937417927739,0.49812692435459077
+The  Lincoln Project,Mt. Everest Taquito Farmers,1,6,-0.5,8,8,0,0.3249984706548613,0.4919676607389063
+The  Lincoln Project,Mt. Everest Taquito Farmers,2,5,-24,6,6,0,0.1784819673108242,0.2332228176828135
+The  Lincoln Project,Mt. Everest Taquito Farmers,3,4,-64,6,4,2,0.2283993390439994,0.15556652706814136
+The  Lincoln Project,Mt. Everest Taquito Farmers,4,3,38,3,4,-1,0.7128169494883719,0.7485923558555558
+The  Lincoln Project,Mt. Everest Taquito Farmers,5,2,25.5,3,3,0,0.7606902966777475,0.7771503726164465
+The  Lincoln Project,Mt. Everest Taquito Farmers,6,1,30,3,3,0,0.8400619067164894,0.8131933360944734
+The  Lincoln Project,Mt. Everest Taquito Farmers,7,0,52.5,0,2,-2,1,0.7757072718142864

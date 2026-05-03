@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+The West Bank Occupiers,Place Your Betts,0,7,0,8,8,0,0.7650184840265779,0.49812692435459077
+The West Bank Occupiers,Place Your Betts,1,6,2.5,6,7,-1,0.7277770069004694,0.42754913705666786
+The West Bank Occupiers,Place Your Betts,2,5,-3,6,6,0,0.7254264019726642,0.4612451308960349
+The West Bank Occupiers,Place Your Betts,3,4,35.5,5,5,0,0.776667876745853,0.8509323383648847
+The West Bank Occupiers,Place Your Betts,4,3,9.5,5,4,1,0.6468390390879832,0.6787492859397943
+The West Bank Occupiers,Place Your Betts,5,2,11,5,4,1,0.6685786315267779,0.6913523946068674
+The West Bank Occupiers,Place Your Betts,6,1,16,4,2,2,0.8399331248894434,0.7845602540553016
+The West Bank Occupiers,Place Your Betts,7,0,54,1,0,1,1,0.922809213689143
+The  Lincoln Project,The Novaks,0,7,0,8,8,0,0.1519801094934389,0.49812692435459077
+The  Lincoln Project,The Novaks,1,6,-12,8,8,0,0.14277214999246216,0.3546074924492645
+The  Lincoln Project,The Novaks,2,5,-39.5,7,7,0,0.07305977628617219,0.12411402096295014
+The  Lincoln Project,The Novaks,3,4,-41,5,7,-2,0.12506482973327546,0.09714909268569487
+The  Lincoln Project,The Novaks,4,3,-35.5,4,6,-2,0.12662740203789163,0.11658390626566047
+The  Lincoln Project,The Novaks,5,2,-41.5,3,5,-2,0.08147747815907858,0.09553357218745792
+The  Lincoln Project,The Novaks,6,1,-87.5,3,3,0,0.008188820506605899,0.013132386159791138
+The  Lincoln Project,The Novaks,7,0,-144.5,3,0,3,0,0.013107645895099109
+Blasphemous Hot Takes,Mother of All Bohms,0,7,0,8,8,0,0.6372676275927248,0.49812692435459077
+Blasphemous Hot Takes,Mother of All Bohms,1,6,-30.5,8,5,3,0.53234446486826,0.45525421902513763
+Blasphemous Hot Takes,Mother of All Bohms,2,5,26,6,5,1,0.7836810515156473,0.8006951440528453
+Blasphemous Hot Takes,Mother of All Bohms,3,4,10,5,4,1,0.6495597812756115,0.6829805241148742
+Blasphemous Hot Takes,Mother of All Bohms,4,3,14.5,5,3,2,0.7638852241658001,0.77495271117629
+Blasphemous Hot Takes,Mother of All Bohms,5,2,25.5,1,3,-2,0.5153474890706033,0.5594061944949986
+Blasphemous Hot Takes,Mother of All Bohms,6,1,-4,1,1,0,0.4089682401061284,0.44902506504067896
+Blasphemous Hot Takes,Mother of All Bohms,7,0,11.5,0,0,0,1,0.6362726664027945
+Yosemite Yeshivas,Whats that Odor?,0,7,0,8,8,0,0.615030616683659,0.49812692435459077
+Yosemite Yeshivas,Whats that Odor?,1,6,-26.5,8,6,2,0.5150433925551529,0.42731208988147706
+Yosemite Yeshivas,Whats that Odor?,2,5,8.5,6,6,0,0.6423841951370957,0.6014196863178021
+Yosemite Yeshivas,Whats that Odor?,3,4,-11.5,6,6,0,0.4123873470546941,0.360266565443148
+Yosemite Yeshivas,Whats that Odor?,4,3,-36,5,5,0,0.1982213087381115,0.1441110111778926
+Yosemite Yeshivas,Whats that Odor?,5,2,-35,2,3,-1,0.1192591958246965,0.14770087768727097
+Yosemite Yeshivas,Whats that Odor?,6,1,26,0,2,-2,0.5822847526225453,0.5639747543942949
+Yosemite Yeshivas,Whats that Odor?,7,0,6,0,2,-2,1,0.38108033782590967
+Haders Gonna Hate,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.8378997283230425,0.49812692435459077
+Haders Gonna Hate,Mt. Everest Taquito Farmers,1,6,114.5,6,6,0,0.9941391491883467,0.9964420914617526
+Haders Gonna Hate,Mt. Everest Taquito Farmers,2,5,152.5,5,6,-1,0.9970747723142077,0.9961341688830501
+Haders Gonna Hate,Mt. Everest Taquito Farmers,3,4,141,5,6,-1,0.9959237871396012,0.993962435835335
+Haders Gonna Hate,Mt. Everest Taquito Farmers,4,3,163.5,4,5,-1,0.997880961864144,0.9974781392462567
+Haders Gonna Hate,Mt. Everest Taquito Farmers,5,2,132.5,3,4,-1,0.9967465016442045,0.9916122806857046
+Haders Gonna Hate,Mt. Everest Taquito Farmers,6,1,170,1,3,-2,0.998402960403323,0.9963219456019393
+Haders Gonna Hate,Mt. Everest Taquito Farmers,7,0,151,1,2,-1,1,0.9959024889884927
+Yu Suck,Ryan Germany Marquez,0,7,0,8,8,0,0.5602567070516332,0.49812692435459077
+Yu Suck,Ryan Germany Marquez,1,6,12.5,8,7,1,0.6618882625151091,0.7036769235374594
+Yu Suck,Ryan Germany Marquez,2,5,19.5,7,6,1,0.7105815047246301,0.7572191328913389
+Yu Suck,Ryan Germany Marquez,3,4,38.5,5,5,0,0.8034095896790258,0.8687294192661003
+Yu Suck,Ryan Germany Marquez,4,3,47,4,4,0,0.8709788716856757,0.9095906799158051
+Yu Suck,Ryan Germany Marquez,5,2,81.5,2,3,-1,0.9538452164432468,0.941901022633339
+Yu Suck,Ryan Germany Marquez,6,1,41,1,1,0,0.9101371878878322,0.8821521260325296
+Yu Suck,Ryan Germany Marquez,7,0,53.5,0,0,0,1,0.9327025833106348

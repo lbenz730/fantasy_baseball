@@ -1,0 +1,21 @@
+FROM rocker/shiny:4.4.2
+
+RUN install2.r \
+  rsconnect \
+  ellmer \
+  shinychat \
+  bslib \
+  dplyr \
+  readr \
+  purrr \
+  glue \
+  furrr \
+  stringr \
+  sass \
+  future
+
+WORKDIR /home/dorothy_dAI
+COPY data data
+COPY docs docs
+COPY deploy_chat_bot.R deploy_chat_bot.R
+CMD Rscript deploy_chat_bot.R
