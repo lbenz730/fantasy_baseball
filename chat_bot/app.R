@@ -69,8 +69,8 @@ df_trades <-
   })
 
 old_schedule <- read_csv('data/stats/schedule_2015_2019.csv')
-bylaws <- read_file('docs/bylaws.txt')
-prompt <- read_file('docs/clade_prompt.md')
+bylaws <- read_file('chat_bot/docs/bylaws.txt')
+prompt <- read_file('chat_bot/docs/clade_prompt.md')
 
 
 # ──────────────────────────────────────────────────────────────────────
