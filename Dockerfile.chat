@@ -1,4 +1,10 @@
-FROM rocker/shiny:latest
+FROM rocker/shiny:4.5.2
+
+RUN apt-get update && apt-get install -y \
+  libuv1 \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN echo 'options(repos = c(CRAN = "https://packagemanager.posit.co/cran/latest"))' >> "${R_HOME}/etc/Rprofile.site"
 
 RUN install2.r \
   rsconnect \
@@ -13,7 +19,7 @@ RUN install2.r \
   stringr \
   sass \
   future \
-  devtools 	
+  devtools
 
 WORKDIR /home/dorothy_dAI
 COPY data data
