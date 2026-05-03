@@ -9,7 +9,7 @@ library(glue)
 library(furrr)
 library(stringr)
 
-plan(multisession(workers = 12))
+plan(multisession(workers = parallel::detectCores()))
 
 # ──────────────────────────────────────────────────────────────────────
 # 1. LOAD YOUR DATA
