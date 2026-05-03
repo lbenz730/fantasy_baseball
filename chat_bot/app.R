@@ -192,12 +192,14 @@ query_data_tool <- tool(
     )
     result
   },
-  .name = "query_data",
-  .description = "Execute R code against the league's data frames. Use dplyr
+  name = "query_data",
+  description = "Execute R code against the league's data frames. Use dplyr
     for data manipulation. Available data frames and their columns are
     described in the system prompt. Return the R code as a string.",
-  r_code = type_string("R code to execute. Must be a valid R expression
+  arguments = list(
+    r_code = type_string("R code to execute. Must be a valid R expression
       using available data frames and dplyr verbs.")
+  )
 )
 
 # Tool: list available tables
@@ -210,19 +212,21 @@ list_tables_tool <- tool(
     })
     paste(info, collapse = "\n")
   },
-  .name = "list_tables",
-  .description = "List all available data frames with their dimensions and column names.",
+  name = "list_tables",
+  description = "List all available data frames with their dimensions and column names.",
+  arguments = list()
 )
 
 get_bylaws_tool <- tool(
   function() {
     bylaws
   },
-  .name = "get_bylaws",
-  .description = "Retrieve the full league bylaws text. Use this when users
+  name = "get_bylaws",
+  description = "Retrieve the full league bylaws text. Use this when users
     ask about rules, punishments, entry fees, voting procedures, scoring
     rules, the Ohtani rule, start caps, RP caps, playoff procedures,
-    transaction rules, or any league governance questions."
+    transaction rules, or any league governance questions.",
+  arguments = list()
 )
 
 # ──────────────────────────────────────────────────────────────────────

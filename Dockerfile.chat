@@ -1,4 +1,4 @@
-FROM rocker/shiny:4.4.2
+FROM rocker/shiny:latest
 
 RUN install2.r \
   rsconnect \
