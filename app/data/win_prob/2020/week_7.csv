@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Blasphemous Hot Takes,Yosemite Yeshivas,0,7,0,8,8,0,0.54527919406876,0.49812692435459077
+Blasphemous Hot Takes,Yosemite Yeshivas,1,6,61.5,4,7,-3,0.772729143308007,0.7832802971522175
+Blasphemous Hot Takes,Yosemite Yeshivas,2,5,37,4,5,-1,0.74747773996004,0.7411898072068157
+Blasphemous Hot Takes,Yosemite Yeshivas,3,4,86.5,3,4,-1,0.945410346260416,0.9516870939272016
+Blasphemous Hot Takes,Yosemite Yeshivas,4,3,45,3,3,0,0.8627551808963556,0.9011517837694974
+Blasphemous Hot Takes,Yosemite Yeshivas,5,2,95,2,3,-1,0.9784937282960678,0.9648270927115541
+Blasphemous Hot Takes,Yosemite Yeshivas,6,1,90,0,0,0,0.9955612121919842,0.9881986375252612
+Blasphemous Hot Takes,Yosemite Yeshivas,7,0,80,0,0,0,1,0.980826624071156
+Place Your Betts,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.8302913598799616,0.49812692435459077
+Place Your Betts,Mt. Everest Taquito Farmers,1,6,-17,6,7,-1,0.636206454763582,0.25893316035355446
+Place Your Betts,Mt. Everest Taquito Farmers,2,5,5.5,6,6,0,0.7937573809989915,0.5655076004905626
+Place Your Betts,Mt. Everest Taquito Farmers,3,4,-26,5,5,0,0.28657565851216776,0.21606258249308985
+Place Your Betts,Mt. Everest Taquito Farmers,4,3,-10,4,5,-1,0.3467018572480435,0.31457398732053954
+Place Your Betts,Mt. Everest Taquito Farmers,5,2,29,2,4,-2,0.5959827553951006,0.5911328600737495
+Place Your Betts,Mt. Everest Taquito Farmers,6,1,44.5,1,4,-3,0.7896637245316047,0.6612256985399809
+Place Your Betts,Mt. Everest Taquito Farmers,7,0,48,0,1,-1,1,0.8146767399964217
+The Novaks,"Came, Kershaw, Conquered",0,7,0,8,8,0,0.37159725082262585,0.49812692435459077
+The Novaks,"Came, Kershaw, Conquered",1,6,-35,8,6,2,0.28697918255442517,0.35208658373922785
+The Novaks,"Came, Kershaw, Conquered",2,5,-50.5,7,4,3,0.21179966777822104,0.28779595346553744
+The Novaks,"Came, Kershaw, Conquered",3,4,-4,5,3,2,0.6296265672492665,0.6333077305792179
+The Novaks,"Came, Kershaw, Conquered",4,3,22,2,3,-1,0.6006260129818426,0.6148642167494228
+The Novaks,"Came, Kershaw, Conquered",5,2,-5.5,2,2,0,0.4171090142007192,0.43081421298802697
+The Novaks,"Came, Kershaw, Conquered",6,1,-43.5,2,1,1,0.1519602372424551,0.21146347490022513
+The Novaks,"Came, Kershaw, Conquered",7,0,-28.5,1,0,1,0,0.32477107499305313
+The West Bank Occupiers,The Snell of defeat :(,0,7,0,8,8,0,0.624292339420095,0.49812692435459077
+The West Bank Occupiers,The Snell of defeat :(,1,6,10.5,7,8,-1,0.6188981575086774,0.5049495907202667
+The West Bank Occupiers,The Snell of defeat :(,2,5,54,5,7,-2,0.8107783471438399,0.7852443033919289
+The West Bank Occupiers,The Snell of defeat :(,3,4,71,4,7,-3,0.8057453418734866,0.8360587482468272
+The West Bank Occupiers,The Snell of defeat :(,4,3,84.5,3,6,-3,0.9129074389612895,0.8926850829900405
+The West Bank Occupiers,The Snell of defeat :(,5,2,-25,2,3,-1,0.1884249777707559,0.20372435196761368
+The West Bank Occupiers,The Snell of defeat :(,6,1,-19.5,2,3,-1,0.17891589164209806,0.24068757829954002
+The West Bank Occupiers,The Snell of defeat :(,7,0,27,0,2,-2,1,0.5730786283919952
+Ryan Topping -Zimmerman,Stanton Ovation,0,7,0,8,8,0,0.15245522833337957,0.49812692435459077
+Ryan Topping -Zimmerman,Stanton Ovation,1,6,4.5,6,8,-2,0.17298845248523775,0.3680396773965866
+Ryan Topping -Zimmerman,Stanton Ovation,2,5,-18.5,4,7,-3,0.07323923909111714,0.16596140977958315
+Ryan Topping -Zimmerman,Stanton Ovation,3,4,-32.5,4,7,-3,0.12513812972802357,0.10698438652845393
+Ryan Topping -Zimmerman,Stanton Ovation,4,3,-4.5,4,6,-2,0.32124155397123133,0.29428569649189884
+Ryan Topping -Zimmerman,Stanton Ovation,5,2,-83.5,4,3,1,0.044053401100793914,0.05345489923421318
+Ryan Topping -Zimmerman,Stanton Ovation,6,1,-18,2,2,0,0.2288443704996482,0.2901770017758908
+Ryan Topping -Zimmerman,Stanton Ovation,7,0,-47,2,1,1,0,0.18962653840320845
+The  Lincoln Project,Whats that Odor?,0,7,0,8,8,0,0.388235377171493,0.49812692435459077
+The  Lincoln Project,Whats that Odor?,1,6,42.5,6,7,-1,0.646043947895889,0.7801302848285664
+The  Lincoln Project,Whats that Odor?,2,5,16,6,5,1,0.6129095432952575,0.7312907565611264
+The  Lincoln Project,Whats that Odor?,3,4,22.5,5,5,0,0.6990753487147836,0.7505032198617593
+The  Lincoln Project,Whats that Odor?,4,3,12.5,4,5,-1,0.5023414970803425,0.5244088775754794
+The  Lincoln Project,Whats that Odor?,5,2,-0.5,4,5,-1,0.4098403271879621,0.3992169367654592
+The  Lincoln Project,Whats that Odor?,6,1,-22,4,3,1,0.3331516687679837,0.3825402576162616
+The  Lincoln Project,Whats that Odor?,7,0,-58.5,4,0,4,0,0.19898971111249658

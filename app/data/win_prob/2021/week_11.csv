@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Whats that Odor?,The Novaks,0,7,0,8,8,0,0.3941823465682764,0.49812692435459077
+Whats that Odor?,The Novaks,1,6,-0.5,8,8,0,0.4355472530034942,0.4919676607389063
+Whats that Odor?,The Novaks,2,5,-12.5,7,7,0,0.36185427668461645,0.34898881925987413
+Whats that Odor?,The Novaks,3,4,-40,7,5,2,0.3764001837412852,0.31079995187140375
+Whats that Odor?,The Novaks,4,3,-13,6,5,1,0.4908163420270791,0.46797817543690895
+Whats that Odor?,The Novaks,5,2,-25,3,4,-1,0.19584478374452413,0.20372435196761368
+Whats that Odor?,The Novaks,6,1,-52.5,1,2,-1,0.032014467020417776,0.08057963927422176
+Whats that Odor?,The Novaks,7,0,-104.5,1,0,1,0,0.024319572654347105
+Ryan Germany Marquez,Place Your Betts,0,7,0,8,8,0,0.5790903979263119,0.49812692435459077
+Ryan Germany Marquez,Place Your Betts,1,6,-1.5,7,7,0,0.5453728091892164,0.47965831169315193
+Ryan Germany Marquez,Place Your Betts,2,5,28.5,4,5,-1,0.6807613507250415,0.67283303307467
+Ryan Germany Marquez,Place Your Betts,3,4,28.5,3,5,-2,0.5663188805528153,0.586640293572182
+Ryan Germany Marquez,Place Your Betts,4,3,-2.5,2,4,-2,0.28671830837123957,0.3099331232008024
+Ryan Germany Marquez,Place Your Betts,5,2,-13.5,2,3,-1,0.2689220886053462,0.28594284479690374
+Ryan Germany Marquez,Place Your Betts,6,1,20.5,1,2,-1,0.6399742230881245,0.6009367764429216
+Ryan Germany Marquez,Place Your Betts,7,0,41,0,0,0,1,0.8821521260325296
+Yu Suck,Mother of All Bohms,0,7,0,8,8,0,0.5493216710903551,0.49812692435459077
+Yu Suck,Mother of All Bohms,1,6,-16,8,6,2,0.5664259761008174,0.52468697698541
+Yu Suck,Mother of All Bohms,2,5,-25,7,5,2,0.49678691960017207,0.44105644706091884
+Yu Suck,Mother of All Bohms,3,4,-30.5,6,5,1,0.35488508769116106,0.3079280171911568
+Yu Suck,Mother of All Bohms,4,3,-2.5,4,5,-1,0.39489509049939175,0.3806846829199322
+Yu Suck,Mother of All Bohms,5,2,23.5,2,4,-2,0.5035759293008242,0.5410387249662059
+Yu Suck,Mother of All Bohms,6,1,-8,2,3,-1,0.2952164161317549,0.33161114577969
+Yu Suck,Mother of All Bohms,7,0,-38,1,1,0,0,0.1323755612202821
+Haders Gonna Hate,Blasphemous Hot Takes,0,7,0,8,8,0,0.5535337894696074,0.49812692435459077
+Haders Gonna Hate,Blasphemous Hot Takes,1,6,-2.5,6,8,-2,0.42273646537654963,0.3099331232008024
+Haders Gonna Hate,Blasphemous Hot Takes,2,5,-37.5,6,6,0,0.24949714387227911,0.1352312189722964
+Haders Gonna Hate,Blasphemous Hot Takes,3,4,-122,6,2,4,0.0650211914138663,0.03085451511376507
+Haders Gonna Hate,Blasphemous Hot Takes,4,3,-54.5,3,2,1,0.21159454435551334,0.14873766156257034
+Haders Gonna Hate,Blasphemous Hot Takes,5,2,-27.5,1,1,0,0.1820786162326712,0.2038050051967217
+Haders Gonna Hate,Blasphemous Hot Takes,6,1,-3.5,1,0,1,0.608745443090524,0.5601393074382376
+Haders Gonna Hate,Blasphemous Hot Takes,7,0,4.5,0,0,0,1,0.5533624302281469
+Yosemite Yeshivas,The  Lincoln Project,0,7,0,8,8,0,0.7858199375429139,0.49812692435459077
+Yosemite Yeshivas,The  Lincoln Project,1,6,59,6,8,-2,0.8810295008899303,0.8148838993318532
+Yosemite Yeshivas,The  Lincoln Project,2,5,54,5,6,-1,0.9047907042970883,0.8474102857066327
+Yosemite Yeshivas,The  Lincoln Project,3,4,116.5,2,5,-3,0.9564099464601024,0.9636743832557113
+Yosemite Yeshivas,The  Lincoln Project,4,3,131,2,5,-3,0.9920298662491394,0.97819880977658
+Yosemite Yeshivas,The  Lincoln Project,5,2,145.5,1,4,-3,0.9958658980170569,0.9869941705662415
+Yosemite Yeshivas,The  Lincoln Project,6,1,160,0,3,-3,0.9976446987997453,0.9922692188675002
+Yosemite Yeshivas,The  Lincoln Project,7,0,172.5,0,2,-2,1,0.9966467649867861
+Mt. Everest Taquito Farmers,The West Bank Occupiers,0,7,0,8,8,0,0.20772351148603332,0.49812692435459077
+Mt. Everest Taquito Farmers,The West Bank Occupiers,1,6,-13,7,7,0,0.18795132608436002,0.34341180181614817
+Mt. Everest Taquito Farmers,The West Bank Occupiers,2,5,-33.5,6,5,1,0.15018453762574707,0.283602216126706
+Mt. Everest Taquito Farmers,The West Bank Occupiers,3,4,-26,5,3,2,0.44474089642332754,0.43188216785424755
+Mt. Everest Taquito Farmers,The West Bank Occupiers,4,3,-22.5,5,1,4,0.5699899867077665,0.44328055525819254
+Mt. Everest Taquito Farmers,The West Bank Occupiers,5,2,-52,5,1,4,0.2660418764961109,0.23463595718758543
+Mt. Everest Taquito Farmers,The West Bank Occupiers,6,1,-61.5,3,0,3,0.10856332507020935,0.21319554876718444
+Mt. Everest Taquito Farmers,The West Bank Occupiers,7,0,-56,2,0,2,0,0.19889913439635992

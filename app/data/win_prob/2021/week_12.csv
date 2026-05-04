@@ -1,0 +1,49 @@
+team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
+Place Your Betts,Mother of All Bohms,0,7,0,8,8,0,0.36726332644192394,0.49812692435459077
+Place Your Betts,Mother of All Bohms,1,6,-6,8,8,0,0.3616976825350703,0.4247827966780367
+Place Your Betts,Mother of All Bohms,2,5,31,7,8,-1,0.5557145335903257,0.6939006937694997
+Place Your Betts,Mother of All Bohms,3,4,-7,7,7,0,0.43391176983759383,0.4127885960065114
+Place Your Betts,Mother of All Bohms,4,3,-3,6,6,0,0.46799491870392623,0.4612451308960349
+Place Your Betts,Mother of All Bohms,5,2,40,4,6,-2,0.6811878145779399,0.6850119475703348
+Place Your Betts,Mother of All Bohms,6,1,10.5,3,4,-1,0.49110635895469057,0.5049495907202667
+Place Your Betts,Mother of All Bohms,7,0,-6.5,3,4,-1,0,0.3446880770304445
+Blasphemous Hot Takes,The Novaks,0,7,0,8,8,0,0.5264416898259541,0.49812692435459077
+Blasphemous Hot Takes,The Novaks,1,6,18.5,7,8,-1,0.586106829756757,0.5821135288191852
+Blasphemous Hot Takes,The Novaks,2,5,-31,5,5,0,0.26032738543042644,0.17724012615725923
+Blasphemous Hot Takes,The Novaks,3,4,7,2,5,-3,0.32325787407995654,0.33395802293426763
+Blasphemous Hot Takes,The Novaks,4,3,32,2,5,-3,0.5127895966688609,0.5537238794166921
+Blasphemous Hot Takes,The Novaks,5,2,5,2,4,-2,0.35271441292304473,0.37236622379377204
+Blasphemous Hot Takes,The Novaks,6,1,23.5,1,2,-1,0.6863628248393363,0.6286059896230005
+Blasphemous Hot Takes,The Novaks,7,0,23,0,0,0,1,0.7550884399229456
+The  Lincoln Project,The West Bank Occupiers,0,7,0,8,8,0,0.1138098228488862,0.49812692435459077
+The  Lincoln Project,The West Bank Occupiers,1,6,20,6,7,-1,0.2303223221538374,0.5962565387477027
+The  Lincoln Project,The West Bank Occupiers,2,5,-46,6,5,1,0.0728598902594362,0.19568381208743368
+The  Lincoln Project,The West Bank Occupiers,3,4,-111,6,3,3,0.07377821610121345,0.04293321598313324
+The  Lincoln Project,The West Bank Occupiers,4,3,-104,5,3,2,0.02533397228886241,0.03978719569094746
+The  Lincoln Project,The West Bank Occupiers,5,2,-125,4,3,1,0.004857808709724414,0.011093354121307204
+The  Lincoln Project,The West Bank Occupiers,6,1,-137.5,1,1,0,8.594146804687703e-4,0.0011311000644375184
+The  Lincoln Project,The West Bank Occupiers,7,0,-189,1,0,1,0,9.268236891366618e-4
+Whats that Odor?,Ryan Germany Marquez,0,7,0,8,8,0,0.48625829849784524,0.49812692435459077
+Whats that Odor?,Ryan Germany Marquez,1,6,-40.5,8,6,2,0.35400824041960194,0.30681917527305846
+Whats that Odor?,Ryan Germany Marquez,2,5,-35,6,5,1,0.303967553483132,0.2718844717079572
+Whats that Odor?,Ryan Germany Marquez,3,4,-55,5,4,1,0.16648338357221026,0.1462888975744912
+Whats that Odor?,Ryan Germany Marquez,4,3,-65.5,5,4,1,0.11665962429194199,0.10220638371251753
+Whats that Odor?,Ryan Germany Marquez,5,2,-12,2,4,-2,0.20798349294145388,0.23993928385096722
+Whats that Odor?,Ryan Germany Marquez,6,1,-82.5,2,1,1,0.02167280903728513,0.05546010567582481
+Whats that Odor?,Ryan Germany Marquez,7,0,-60.5,1,0,1,0,0.1215093188878316
+Yu Suck,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.6879654177138919,0.49812692435459077
+Yu Suck,Mt. Everest Taquito Farmers,1,6,3.5,7,7,0,0.6797648979228446,0.5411532287804826
+Yu Suck,Mt. Everest Taquito Farmers,2,5,38.5,5,7,-2,0.7919311526521076,0.6728780285040677
+Yu Suck,Mt. Everest Taquito Farmers,3,4,61.5,3,7,-4,0.736130721087793,0.8132007455604247
+Yu Suck,Mt. Everest Taquito Farmers,4,3,81.5,3,7,-4,0.8829111794897425,0.8922032019836246
+Yu Suck,Mt. Everest Taquito Farmers,5,2,87,2,5,-3,0.9373518465085555,0.9010612955310588
+Yu Suck,Mt. Everest Taquito Farmers,6,1,73.5,1,4,-3,0.9320144013650024,0.8481027265820915
+Yu Suck,Mt. Everest Taquito Farmers,7,0,65,0,3,-3,1,0.8040394510818213
+Haders Gonna Hate,Yosemite Yeshivas,0,7,0,8,8,0,0.642345256739396,0.49812692435459077
+Haders Gonna Hate,Yosemite Yeshivas,1,6,-7,8,8,0,0.5310419969265221,0.4127885960065114
+Haders Gonna Hate,Yosemite Yeshivas,2,5,-11,7,6,1,0.5515671838215124,0.4874101225987726
+Haders Gonna Hate,Yosemite Yeshivas,3,4,33.5,5,6,-1,0.6789447115058108,0.7141880026431896
+Haders Gonna Hate,Yosemite Yeshivas,4,3,28.5,5,5,0,0.7307873782622467,0.8017034814296412
+Haders Gonna Hate,Yosemite Yeshivas,5,2,63,3,5,-2,0.8541735934300113,0.8362405010393812
+Haders Gonna Hate,Yosemite Yeshivas,6,1,37.5,2,2,0,0.8847099664349047,0.8630068193033092
+Haders Gonna Hate,Yosemite Yeshivas,7,0,81,0,0,0,1,0.9817317339948113
