@@ -112,6 +112,10 @@ get_daily_stats <- function(x, y, index, team, df_schedule) {
   df$points[df$p_outs >= 27 & df$p_cg == 0 & df$p_er == 0] <- df$points[df$p_outs >= 27 & df$p_cg == 0 & df$p_er == 0] + 5
   df$p_cg[df$p_outs >= 27 & df$p_cg == 0] <- 1
   
+  ### CG Rule
+  df$points[df$p_outs <= 21 & df$p_cg == 1] <- df$points[df$p_outs <= 21 & df$p_cg == 1] - 5
+  df$cg[df$p_outs <= 21 & df$p_cg == 1] <- 0
+  
   return(df)
   
 }
@@ -125,9 +129,14 @@ get_matchup_stats <- function(week, season = 2023, current_scoring_period = Inf)
   start <- df_start$start_period[week]
   end <- df_start$end_period[week]
   openers <- NULL
+  extra_starts <- NULL
   if(file.exists(glue('data/stats/{season}/openers.csv'))) { 
     openers <- read_csv(glue('data/stats/{season}/openers.csv'))
   }
+  if(file.exists(glue('data/stats/{season}/extra_starts.csv'))) { 
+    extra_starts <- read_csv(glue('data/stats/{season}/extra_starts.csv'))
+  }
+  
   
   df <-
     future_map_dfr(start:end, ~{
@@ -180,6 +189,121 @@ get_matchup_stats <- function(week, season = 2023, current_scoring_period = Inf)
       df$relief[row_ix] <- T
     }
   }
+  
+  if(!is.null(extra_starts)) {
+    for(i in 1:nrow(extra_starts)) {
+      row_ix <- df$player_id == extra_starts$player_id[i] & df$scoring_period_id == extra_starts$scoring_period_id[i]
+      df$start[row_ix] <- T
+      
+      x <- player_scrape(player_id = extra_starts$player_id[i], extra_starts$scoring_period_id[i], season)
+      .x <- 
+        x$players$player$stats[[1]] %>% 
+        filter(seasonId == season, scoringPeriodId == extra_starts$scoring_period_id[i])
+      
+      
+      
+      if(nrow(.x) > 0) {
+        df_row <- 
+          tibble('points' = sum(.x$appliedTotal, na.rm = T),
+                 'played' = sum(.x$stats$`81`, na.rm = T),
+                 'start' = as.logical(sum(.x$stats$`33` > 0 | .x$stats$`34` >= 12, na.rm = T)),
+                 'relief' = as.logical(sum(.x$stats$`32` > 0 & .x$stats$`33` == 0, na.rm = T)),
+                 'relief_start' = as.logical(sum(.x$stats$`33` == 0 & .x$stats$`34` >= 12, na.rm = T)),
+                 'qs' = as.logical(sum(.x$stats$`34` >= 18 & .x$stats$`45` <= 3, na.rm = T)),
+                 'save' = as.logical(sum(.x$stats$`57`, na.rm = T)),
+                 'home_runs' = sum(.x$stats$`5`, na.rm = T),
+                 'blue_balls' = as.logical(sum(.x$stats$`34` == 17 & .x$stats$`45` <= 3, na.rm = T)),
+                 'hr_allowed' = sum(.x$stats$`46`, na.rm = T),
+                 'p_walks' = sum(.x$stats$`39`, na.rm = T),
+                 'p_ibb' = sum(.x$stats$`40`, na.rm = T),
+                 'p_hbp' = sum(.x$stats$`42`, na.rm = T),
+                 'p_outs' = sum(.x$stats$`34`, na.rm = T),
+                 'p_er' = sum(.x$stats$`45`, na.rm = T),
+                 'p_win' = sum(.x$stats$`53`, na.rm = T),
+                 'p_lose' = sum(.x$stats$`54`, na.rm = T),
+                 'p_blsv' = sum(.x$stats$`58`, na.rm = T),
+                 'p_hold' = sum(.x$stats$`60`, na.rm = T),
+                 'p_k' = sum(.x$stats$`48`, na.rm = T),
+                 'p_cg' = sum(.x$stats$`62`, na.rm = T),
+                 'h_1b' = sum(.x$stats$`7`, na.rm = T),
+                 'h_2b' = sum(.x$stats$`3`, na.rm = T),
+                 'h_3b' = sum(.x$stats$`4`, na.rm = T),
+                 'b_ab' = sum(.x$stats$`0`, na.rm = T),
+                 'b_pa' = sum(.x$stats$`16`, na.rm = T),
+                 'b_walks' =  sum(.x$stats$`10`, na.rm = T),
+                 'b_hpb' =  sum(.x$stats$`12`, na.rm = T),
+                 'b_ibb' =  sum(.x$stats$`11`, na.rm = T),
+                 'b_sf' =  sum(.x$stats$`13`, na.rm = T),
+                 'b_runs' = sum(.x$stats$`20`, na.rm = T),
+                 'b_rbi' = sum(.x$stats$`21`, na.rm = T),
+                 'b_k' = sum(.x$stats$`27`, na.rm = T),
+                 'b_gidp' = sum(.x$stats$`26`, na.rm = T),
+                 'b_sac' = sum(.x$stats$`15`, na.rm = T),
+                 'f_error' = sum(.x$stats$`72`, na.rm = T)
+          )
+      } else {
+        df_row <- 
+          tibble('points' = 0,
+                 'played' = 0,
+                 'start' = F,
+                 'relief' = F,
+                 'relief_start' = F,
+                 'qs' = F,
+                 'save' = F,
+                 'home_runs' = 0,
+                 'hr_allowed' = 0,
+                 'blue_balls' = F,  
+                 'p_walks' = 0,
+                 'p_ibb' = 0,
+                 'p_win' = 0,
+                 'p_hold' = 0,
+                 'p_blsv' = 0,
+                 'p_loss' = 0,
+                 'p_hbp' = 0,
+                 'p_outs' = 0,
+                 'p_er' = 0,
+                 'p_k' = 0,
+                 'p_cg' = 0,
+                 'h_1b' = 0,
+                 'h_2b' = 0,
+                 'h_3b' = 0,
+                 'b_ab' = 0,
+                 'b_pa' = 0,
+                 'b_walks' = 0,
+                 'b_hpb' =  0,
+                 'b_ibb' =  0,
+                 'b_sf' =  0,
+                 'b_runs' = 0,
+                 'b_rbi' = 0,
+                 'b_k' = 0,
+                 'b_gidp' = 0,
+                 'b_sac' = 0,
+                 'f_error' = 0)
+        
+      }
+      
+      df_row$player <- extra_starts$player[i]
+      df_row$player_id <- extra_starts$player_id[i]
+      
+      
+      ### Christian Javier Rule
+      df_row$points[df_row$relief_start & df_row$qs] <- df_row$points[df_row$relief_start & df_row$qs] + 5
+      
+      ### Yu Darvish Rule
+      df_row$points[df_row$p_outs >= 27 & df_row$p_cg == 0] <- df_row$points[df_row$p_outs >= 27 & df_row$p_cg == 0] + 5
+      df_row$points[df_row$p_outs >= 27 & df_row$p_cg == 0 & df_row$p_er == 0] <- df_row$points[df_row$p_outs >= 27 & df_row$p_cg == 0 & df_row$p_er == 0] + 5
+      df_row$p_cg[df_row$p_outs >= 27 & df_row$p_cg == 0] <- 1
+      
+      ### CG Rule
+      df_row$points[df_row$p_outs <= 21 & df_row$p_cg == 1] <- df_row$points[df_row$p_outs <= 21 & df_row$p_cg == 1] - 5
+      df_row$cg[df_row$p_outs <= 21 & df_row$p_cg == 1] <- 0
+      
+      cols_to_update <- intersect(names(df_row), names(df))
+      df[row_ix, cols_to_update] <- df_row[1, cols_to_update]
+      
+    }
+  }
+  
   
   return(df)
 }

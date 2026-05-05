@@ -319,10 +319,15 @@ relief_starts <-
 write_csv(relief_starts, 'data/red_flags/relief_starts.csv')
 
 openers <- NULL
-
+extra_starts <- NULL
 if(file.exists(glue('data/stats/{params$season}/openers.csv'))) { 
   openers <- read_csv(glue('data/stats/{params$season}/openers.csv'))
 }
+
+if(file.exists(glue('data/stats/{params$season}/extra_starts.csv'))) { 
+  extra_starts <- read_csv(glue('data/stats/{params$season}/extra_starts.csv'))
+}
+
 
 relief_starts_flag <- 
   df_daily %>% 
@@ -340,6 +345,16 @@ if(!is.null(openers)) {
     select(player, player_id, team_id, matchup_id, scoring_period_id, ip, p_er, rule, bonus)
 }
 
+if(!is.null(extra_starts)) {
+  df_extra <- 
+    df_daily %>% 
+    inner_join(extra_starts) %>% 
+    mutate('rule' = 'Opener Rule (Extra Start)',
+           'bonus' = points) %>% 
+    mutate('ip' = paste0(floor(p_outs/3), '.', p_outs - floor(p_outs/3) * 3)) %>% 
+    select(player, player_id, team_id, matchup_id, scoring_period_id, ip, p_er, rule, bonus)
+}
+
 relief_starts_flag <- 
   relief_starts_flag %>% 
   mutate('rule' = case_when(p_cg == 1 ~ 'Darvish Rule',
@@ -351,6 +366,7 @@ relief_starts_flag <-
   mutate('ip' = paste0(floor(p_outs/3), '.', p_outs - floor(p_outs/3) * 3)) %>% 
   select(player, player_id, team_id, matchup_id, scoring_period_id, ip, p_er, rule, bonus) %>% 
   bind_rows(df_openers) %>% 
+  bind_rows(df_extra) %>% 
   arrange(scoring_period_id) 
 write_csv(relief_starts_flag, 'data/red_flags/relief_starts_flags.csv')
 
@@ -456,8 +472,8 @@ df_rp_penalty <-
   group_by(player_id) %>% 
   arrange(scoring_period_id) %>% 
   mutate('cumsum_rp' = cumsum(relief)) %>% 
-  ### Ryan Helsley Week 11 on IL Days 1-2 of matchip
-  # filter(!(matchup_id == 11 & player == 'Ryan Helsley')) %>% 
+  ### IL Days
+  filter(!(matchup_id == 6 & player == 'Erik Miller')) %>%
   # filter(!(matchup_id == 12 & player == 'Jordan Hicks')) %>% 
   # filter(!(matchup_id == 19 & player == 'Hunter Brown')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
@@ -952,13 +968,13 @@ best_lineup(params$season, params$matchup_id, save = F)
 if(params$matchup_id > 1) {
   best_lineup(params$season, params$matchup_id-1, save = F)
 }
-# 
-# ### ASG
-# if(params$matchup_id > 6) {
-#   pkg <- make_asg_graphics(params$season, save = F)
-#   write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
-#   write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
-# }
+
+### ASG
+if(params$matchup_id > 6) {
+  pkg <- make_asg_graphics(params$season, save = F)
+  write_csv(pkg$stars, glue('figures/top_performers/{params$season}/best_lineup/asg_counts.csv'))
+  write_csv(pkg$lineups, glue('figures/top_performers/{params$season}/best_lineup/asg_lineups.csv'))
+}
 
 
 # ### MLB Probables

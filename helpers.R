@@ -356,3 +356,27 @@ sp_remove_postcap <- function(sp_points) {
   return(sp_points)
   
 }
+
+
+player_scrape <- function(player_id, scoring_period, season) {
+  url <- glue("https://lm-api-reads.fantasy.espn.com/apis/v3/games/flb/seasons/{season}/segments/0/leagues/49106")
+  
+  filter <- paste0('{"players":{"filterIds":{"value":[', player_id, ']},"limit":1,"sortPercOwned":{"sortPriority":1,"sortAsc":false}}}')
+  
+  fails <- 0
+  while (fails < 1000) {
+    json <- suppressWarnings(try({
+      resp <- GET(
+        url,
+        add_headers("x-fantasy-filter" = filter),
+        query = list(view = "kona_player_info", scoringPeriodId = scoring_period)
+      )
+      fromJSON(content(resp, as = "text", encoding = "UTF-8"))
+    }))
+    if (all(class(json) != "try-error")) {
+      return(json)
+    } else {
+      fails <- fails + 1
+    }
+  }
+}
