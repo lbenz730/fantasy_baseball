@@ -109,25 +109,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Seranthony Dominguez,37793,1,16.5,5.5,5
 15,RP,Cade Smith,4987924,5,15,7.5,5
 15,RP,Ben Brown,41516,6,14.5,7.25,5
-0,C,Drake Baldwin,4810190,1,7,7,6
-1,1B,Munetaka Murakami,4872595,1,13,13,6
-2,2B,Brice Turang,41179,5,7.5,7.5,6
-3,3B,Austin Riley,34982,4,7,7,6
-4,SS,Bobby Witt Jr.,42403,5,7.5,7.5,6
-5,OF,Aaron Judge,33192,13,11.5,11.5,6
-5,OF,Seiya Suzuki,4142424,9,10.5,10.5,6
-5,OF,Jarren Duran,41610,12,10,10,6
-5,OF,Trent Grisham,34995,11,10,10,6
-5,OF,Jackson Chourio,4917869,5,8,8,6
-6,2B/SS,Casey Schmitt,4301949,5,6.5,6.5,6
-7,1B/3B,Bryce Harper,30951,6,9,9,6
-12,UTIL,Cody Bellinger,33912,14,7.5,7.5,6
+0,C,Liam Hicks,4725251,9,10,5,6
+1,1B,Bryce Harper,30951,6,25,12.5,6
+2,2B,Casey Schmitt,4301949,5,13,6.5,6
+3,3B,Munetaka Murakami,4872595,1,13.5,6.75,6
+4,SS,Bobby Witt Jr.,42403,5,11,5.5,6
+5,OF,Cody Bellinger,33912,14,15.5,7.75,6
+5,OF,Aaron Judge,33192,13,15,7.5,6
+5,OF,Jackson Merrill,4872691,6,14.5,7.25,6
+5,OF,Ceddanne Rafaela,4987382,1,12.5,6.25,6
+5,OF,Seiya Suzuki,4142424,9,11.5,5.75,6
+6,2B/SS,Jazz Chisholm Jr.,41433,8,11,5.5,6
+7,1B/3B,Matt Olson,32767,1,15,7.5,6
+12,UTIL,Pete Alonso,37498,14,12,6,6
+14,SP,Cristopher Sanchez,42359,5,35,35,6
 14,SP,Payton Tolle,4966140,4,32,32,6
 14,SP,Davis Martin,42823,14,31,31,6
+14,SP,Bryce Elder,4301067,12,24.5,24.5,6
 14,SP,Aaron Nola,33709,13,22.5,22.5,6
-14,SP,Michael Wacha,32640,7,20.5,20.5,6
-14,SP,Yoshinobu Yamamoto,4872587,7,19,19,6
-14,SP,Edward Cabrera,40944,9,16,16,6
+14,SP,Taj Bradley,42480,5,22,22,6
 15,RP,Andres Munoz,40939,14,7,7,6
 15,RP,Aroldis Chapman,30442,1,7,7,6
-15,RP,Devin Williams,33224,8,7,7,6
+15,RP,David Bednar,38303,9,7,7,6
