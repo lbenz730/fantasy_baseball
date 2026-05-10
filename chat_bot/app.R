@@ -37,7 +37,7 @@ params <-
        'opening_day' = as.Date('2026-03-25'))
 df_start_current <- 
   read_csv('data/df_start.csv') %>% 
-  filter(season == current_season) 
+  filter(season == params$current_season) 
 params$current_matchup <- max(df_start_current$matchup_id[df_start_current$start_period <= period])
 params$current_period <- min(max(df_start$end_period), max(1, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1))
 
