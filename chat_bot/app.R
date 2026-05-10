@@ -20,6 +20,29 @@ library(stringr)
 
 seasons <- 2020:2026
 
+position_ids <- 
+  c('0' = 'C',
+    '1' = '1B',
+    '2' = '2B',
+    '3' = '3B',
+    '4' = 'SS',
+    '5' = 'OF',
+    '7' = '1B/3B',
+    '6' = '2B/SS',
+    '12' = 'UTIL')
+
+### Parameters
+params <- 
+  list('current_season' = 2026,
+       'opening_day' = as.Date('2026-03-25'))
+df_start_current <- 
+  read_csv('data/df_start.csv') %>% 
+  filter(season == current_season) 
+params$current_matchup <- max(df_start_current$matchup_id[df_start_current$start_period <= period])
+params$current_period <- min(max(df_start$end_period), max(1, as.numeric(as.Date(substring(as.POSIXct(Sys.time(), tz="EST") - 5 * 60 * 60, 1, 10)) - params$opening_day) + 1))
+
+
+
 
 
 # Example: load all season files from your local clone of the repo
@@ -91,13 +114,17 @@ data_registry <-
     'managers' = df_managers,
     'daily_stats' = df_daily,
     'historical_playoff_odds' = df_historical_playoff_odds,
+    'player_lookup' = distinct(df_daily, player_id, player),
     'win_probability' = df_wp,
     'transactions' = df_transactions,
     'trades' = df_trades,
     'league_history' = league_history,
     'wl_history' = wl_history,
     'old_schedule' = old_schedule,
-    'bylaws' = bylaws
+    'bylaws' = bylaws,
+    'current_season' = params$season,
+    'position_ids' = position_ids,
+    'params' = params
   )
 
 build_manifest <- function(registry) {
