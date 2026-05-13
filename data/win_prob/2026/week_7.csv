@@ -1,13 +1,19 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 The Traveling Secretaries,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.6868140912274234,0.49812692435459077
 The Traveling Secretaries,Bibee-di-Bobbidi-Boo,1,6,-18,7,7,0,0.5569077281597437,0.2901770017758908
+The Traveling Secretaries,Bibee-di-Bobbidi-Boo,2,5,-19.5,6,5,1,0.5694845832063458,0.40578587684715844
 Tucker? I hardly know her,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.5168807236048134,0.49812692435459077
 Tucker? I hardly know her,Mt. Everest Taquito Farmers,1,6,17.5,8,8,0,0.6326763953572933,0.7015940377148108
-Book of Boba Chette,The Talmudic Tunnelers,0,7,0,8,8,0,0.4986291991824736,0.49812692435459077
-Book of Boba Chette,The Talmudic Tunnelers,1,6,-3.5,8,8,0,0.4644949020902921,0.45512834288706827
+Tucker? I hardly know her,Mt. Everest Taquito Farmers,2,5,35,7,7,0,0.7654206309749441,0.847779767728724
+Book of Boba Chette,The Talmudic Tunnelers,0,7,0,8,8,0,0.4996791735169596,0.49812692435459077
+Book of Boba Chette,The Talmudic Tunnelers,1,6,-3.5,8,8,0,0.46874249596999185,0.45512834288706827
+Book of Boba Chette,The Talmudic Tunnelers,2,5,38.5,7,8,-1,0.6819687474122078,0.7522404732060585
 Ketel Bells,Blasphemous Hot Takes,0,7,0,8,8,0,0.5607430311096557,0.49812692435459077
 Ketel Bells,Blasphemous Hot Takes,1,6,-23,8,8,0,0.38464069912120114,0.2421510492406492
+Ketel Bells,Blasphemous Hot Takes,2,5,4.5,6,8,-2,0.45822473960224214,0.3680396773965866
 All That is Wright,The Novaks,0,7,0,8,8,0,0.4139501517268336,0.49812692435459077
 All That is Wright,The Novaks,1,6,-47,8,7,1,0.20337870590833337,0.18962653840320845
-Top Gunner: Henderson,The West Bank Occupiers,0,7,0,8,8,0,0.28244206912371383,0.49812692435459077
+All That is Wright,The Novaks,2,5,-73.5,7,6,1,0.08547940861550797,0.07695075926024855
+Top Gunner: Henderson,The West Bank Occupiers,0,7,0,8,8,0,0.2818749550590771,0.49812692435459077
 Top Gunner: Henderson,The West Bank Occupiers,1,6,-14.5,8,6,2,0.3427180397277429,0.5386176644590269
+Top Gunner: Henderson,The West Bank Occupiers,2,5,-34.5,8,5,3,0.22372494336832555,0.4195080695981278
