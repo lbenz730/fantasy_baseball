@@ -12,6 +12,7 @@ getmode <- function(v) {
 change_logo <- function(df, team_cols = 'team', cols = 'logo') {
   for(i in 1:length(cols)) {
     df[[ cols[i] ]] <- ifelse(grepl('mystique', df[[ cols[i] ]]), paste0(df[[ cols[i] ]], '.jpg'), df[[ cols[i] ]])
+    df[[ cols[i] ]] <- ifelse(grepl('lm-static', df[[ cols[i] ]]), paste0(df[[ cols[i] ]], '.jpg'), df[[ cols[i] ]])
     df[[ cols[i] ]] <- paste0('www/', df[[ team_cols[i] ]], str_sub(df[[ cols[i] ]], -4, -1))
     df[[ cols[i] ]] <- gsub('=254', '.png', df[[ cols[i] ]])
     df[[ cols[i] ]] <- gsub('\\:', '', df[[ cols[i] ]])
