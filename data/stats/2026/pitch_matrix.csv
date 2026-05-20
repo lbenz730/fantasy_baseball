@@ -13,6 +13,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.0,1,4,QS Potential,The Talmudic Tunnelers
 1,5.0,2,3,QS Potential,The Talmudic Tunnelers
 1,5.0,4,1,Bad Start,The Talmudic Tunnelers
+1,5.0,5,1,Bad Start,The Talmudic Tunnelers
 1,5.0,6+,1,Bad Start,The Talmudic Tunnelers
 1,5.1,1,1,QS Potential,The Talmudic Tunnelers
 1,5.1,2,2,QS Potential,The Talmudic Tunnelers
@@ -25,7 +26,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.2,4,1,Bad Start,The Talmudic Tunnelers
 1,5.2,5,1,Bad Start,The Talmudic Tunnelers
 1,6.0,0,4,QS,The Talmudic Tunnelers
-1,6.0,1,5,QS,The Talmudic Tunnelers
+1,6.0,1,6,QS,The Talmudic Tunnelers
 1,6.0,2,5,QS,The Talmudic Tunnelers
 1,6.0,4,1,QS Potential,The Talmudic Tunnelers
 1,6.1,0,1,QS,The Talmudic Tunnelers
@@ -44,6 +45,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.0,4,1,Bad Start,Tucker? I hardly know her
 2,4.0,5,1,Bad Start,Tucker? I hardly know her
 2,4.0,6+,1,Bad Start,Tucker? I hardly know her
+2,4.1,1,1,Bad Start,Tucker? I hardly know her
 2,4.1,4,1,Bad Start,Tucker? I hardly know her
 2,4.1,5,1,Bad Start,Tucker? I hardly know her
 2,4.1,6+,1,Bad Start,Tucker? I hardly know her
@@ -61,6 +63,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,5.2,2,4,Blue Balls,Tucker? I hardly know her
 2,5.2,4,1,Bad Start,Tucker? I hardly know her
 2,5.2,5,1,Bad Start,Tucker? I hardly know her
+2,5.2,6+,1,Bad Start,Tucker? I hardly know her
 2,6.0,0,3,QS,Tucker? I hardly know her
 2,6.0,1,4,QS,Tucker? I hardly know her
 2,6.0,2,6,QS,Tucker? I hardly know her
@@ -90,10 +93,11 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.0,3,2,QS Potential,All That is Wright
 4,5.0,5,1,Bad Start,All That is Wright
 4,5.1,1,1,QS Potential,All That is Wright
-4,5.1,2,1,QS Potential,All That is Wright
+4,5.1,2,2,QS Potential,All That is Wright
 4,5.1,3,2,QS Potential,All That is Wright
 4,5.1,5,2,Bad Start,All That is Wright
 4,5.2,1,2,Blue Balls,All That is Wright
+4,5.2,6+,1,Bad Start,All That is Wright
 4,6.0,0,2,QS,All That is Wright
 4,6.0,1,3,QS,All That is Wright
 4,6.0,2,1,QS,All That is Wright
@@ -105,7 +109,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,6.2,3,2,QS,All That is Wright
 4,7.0,0,5,QS,All That is Wright
 4,7.0,1,1,QS,All That is Wright
-4,7.0,3,1,QS,All That is Wright
+4,7.0,3,2,QS,All That is Wright
 4,< 3,0,1,Bad Start,All That is Wright
 4,< 3,3,1,Bad Start,All That is Wright
 4,< 3,4,1,Bad Start,All That is Wright
@@ -123,7 +127,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.0,0,1,QS Potential,The Traveling Secretaries
 5,5.0,1,5,QS Potential,The Traveling Secretaries
 5,5.0,2,4,QS Potential,The Traveling Secretaries
-5,5.0,3,2,QS Potential,The Traveling Secretaries
+5,5.0,3,3,QS Potential,The Traveling Secretaries
 5,5.0,4,2,Bad Start,The Traveling Secretaries
 5,5.1,1,3,QS Potential,The Traveling Secretaries
 5,5.1,2,1,QS Potential,The Traveling Secretaries
@@ -197,10 +201,10 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.0,2,2,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,3,5,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,4,1,Bad Start,Bibee-di-Bobbidi-Boo
-7,5.0,5,1,Bad Start,Bibee-di-Bobbidi-Boo
+7,5.0,5,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,5.1,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,5.2,2,1,Blue Balls,Bibee-di-Bobbidi-Boo
-7,5.2,4,1,Bad Start,Bibee-di-Bobbidi-Boo
+7,5.2,4,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,5.2,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,6.0,0,5,QS,Bibee-di-Bobbidi-Boo
 7,6.0,1,2,QS,Bibee-di-Bobbidi-Boo
@@ -243,7 +247,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,1,1,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,3,2,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,6+,1,Bad Start,Mt. Everest Taquito Farmers
-8,6.0,0,4,QS,Mt. Everest Taquito Farmers
+8,6.0,0,5,QS,Mt. Everest Taquito Farmers
 8,6.0,1,5,QS,Mt. Everest Taquito Farmers
 8,6.0,2,2,QS,Mt. Everest Taquito Farmers
 8,6.0,3,3,QS,Mt. Everest Taquito Farmers
@@ -282,8 +286,8 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.2,2,1,Blue Balls,Book of Bob
 9,5.2,3,1,Blue Balls,Book of Bob
 9,6.0,0,6,QS,Book of Bob
-9,6.0,1,2,QS,Book of Bob
-9,6.0,2,7,QS,Book of Bob
+9,6.0,1,3,QS,Book of Bob
+9,6.0,2,8,QS,Book of Bob
 9,6.0,3,1,QS,Book of Bob
 9,6.0,4,1,QS Potential,Book of Bob
 9,6.0,5,1,Bad Start,Book of Bob
@@ -304,8 +308,8 @@ team_id,ip,earned_runs,n,start_type,team
 11,4.2,6+,1,Bad Start,The West Bank Occupiers
 11,5.0,0,1,QS Potential,The West Bank Occupiers
 11,5.0,1,3,QS Potential,The West Bank Occupiers
-11,5.0,2,2,QS Potential,The West Bank Occupiers
-11,5.0,3,4,QS Potential,The West Bank Occupiers
+11,5.0,2,3,QS Potential,The West Bank Occupiers
+11,5.0,3,5,QS Potential,The West Bank Occupiers
 11,5.0,4,1,Bad Start,The West Bank Occupiers
 11,5.1,0,1,QS Potential,The West Bank Occupiers
 11,5.1,2,2,QS Potential,The West Bank Occupiers
