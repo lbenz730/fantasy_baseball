@@ -1,7 +1,19 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-The Talmudic Tunnelers,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.5460029268782852,0.49812692435459077
-Mt. Everest Taquito Farmers,Blasphemous Hot Takes,0,7,0,8,8,0,0.4175916135972187,0.49812692435459077
-The Traveling Secretaries,The Novaks,0,7,0,8,8,0,0.5754551276829221,0.49812692435459077
-Tucker? I hardly know her,The West Bank Occupiers,0,7,0,8,8,0,0.37365017534762773,0.49812692435459077
-Book of Bob,Top Gunner: Henderson,0,7,0,8,8,0,0.6433049111806421,0.49812692435459077
-Ketel Bells,All That is Wright,0,7,0,8,8,0,0.40161773969656883,0.49812692435459077
+The Talmudic Tunnelers,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.5444408449603048,0.49812692435459077
+The Talmudic Tunnelers,Bibee-di-Bobbidi-Boo,1,6,-46.5,8,6,2,0.38572118840558156,0.2613748591116478
+The Talmudic Tunnelers,Bibee-di-Bobbidi-Boo,2,5,14.5,7,5,2,0.7365179660939006,0.77495271117629
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,0,7,0,8,8,0,0.41657051297612196,0.49812692435459077
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,1,6,-4,7,6,1,0.45064632321081827,0.5553359699588154
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,2,5,36,5,5,0,0.7583457016388115,0.8540308591919828
+The Traveling Secretaries,The Novaks,0,7,0,8,8,0,0.5769934897712049,0.49812692435459077
+The Traveling Secretaries,The Novaks,1,6,38.5,7,8,-1,0.7265225994935066,0.7522404732060585
+The Traveling Secretaries,The Novaks,2,5,24,7,6,1,0.7362482816157438,0.7879732997107993
+Tucker? I hardly know her,The West Bank Occupiers,0,7,0,8,8,0,0.37315884130386673,0.49812692435459077
+Tucker? I hardly know her,The West Bank Occupiers,1,6,-28.5,8,7,1,0.2887687739814598,0.32477107499305313
+Tucker? I hardly know her,The West Bank Occupiers,2,5,-59,6,5,1,0.12528576268047498,0.12788444823475703
+Book of Bob,Top Gunner: Henderson,0,7,0,8,8,0,0.6423406051083229,0.49812692435459077
+Book of Bob,Top Gunner: Henderson,1,6,41.5,6,8,-2,0.7462804925509565,0.6968985259872037
+Book of Bob,Top Gunner: Henderson,2,5,48,4,7,-3,0.773062945020464,0.6890347034348393
+Ketel Bells,All That is Wright,0,7,0,8,8,0,0.4011131808745299,0.49812692435459077
+Ketel Bells,All That is Wright,1,6,-27,7,5,2,0.39098679592491026,0.422754385584634
+Ketel Bells,All That is Wright,2,5,-38.5,6,5,1,0.25884651733087044,0.24575267198912998
