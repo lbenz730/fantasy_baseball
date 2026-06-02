@@ -47,18 +47,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 8,46,6,304,155.5,148.5,9,361,209.5,151.5,The Novaks,Book of Bob
 8,47,11,286,189,97,13,313.5,197,116.5,The West Bank Occupiers,Ketel Bells
 8,48,14,271,178,93,4,332,190.5,141.5,Top Gunner: Henderson,All That is Wright
-9,49,1,444,274.5,169.5,7,324,233,91,The Talmudic Tunnelers,Bibee-di-Bobbidi-Boo
-9,50,8,357.5,203,154.5,12,337.5,233,104.5,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
+9,49,1,443,274.5,168.5,7,324,233,91,The Talmudic Tunnelers,Bibee-di-Bobbidi-Boo
+9,50,8,358.5,204,154.5,12,337.5,233,104.5,Mt. Everest Taquito Farmers,Blasphemous Hot Takes
 9,51,5,332,211.5,120.5,6,333,200.5,132.5,The Traveling Secretaries,The Novaks
-9,52,2,288,155.5,132.5,11,324.5,215.5,109,Tucker? I hardly know her,The West Bank Occupiers
+9,52,2,285,155.5,129.5,11,324.5,215.5,109,Tucker? I hardly know her,The West Bank Occupiers
 9,53,9,420.5,244,176.5,14,294.5,195.5,99,Book of Bob,Top Gunner: Henderson
 9,54,13,326,171.5,154.5,4,362,225,137,Ketel Bells,All That is Wright
-10,55,7,NA,NA,NA,12,NA,NA,NA,Bibee-di-Bobbidi-Boo,Blasphemous Hot Takes
-10,56,6,NA,NA,NA,1,NA,NA,NA,The Novaks,The Talmudic Tunnelers
-10,57,11,NA,NA,NA,8,NA,NA,NA,The West Bank Occupiers,Mt. Everest Taquito Farmers
-10,58,14,NA,NA,NA,5,NA,NA,NA,Top Gunner: Henderson,The Traveling Secretaries
-10,59,4,NA,NA,NA,2,NA,NA,NA,All That is Wright,Tucker? I hardly know her
-10,60,13,NA,NA,NA,9,NA,NA,NA,Ketel Bells,Book of Bob
+10,55,7,21,21,NA,12,15,11,4,Bibee-di-Bobbidi-Boo,Blasphemous Hot Takes
+10,56,6,27.5,3.5,24,1,20,20,NA,The Novaks,The Talmudic Tunnelers
+10,57,11,39,25,14,8,84.5,49.5,35,The West Bank Occupiers,Mt. Everest Taquito Farmers
+10,58,14,59.5,41.5,18,5,46,36,10,Top Gunner: Henderson,The Traveling Secretaries
+10,59,4,30,16,14,2,8,8,NA,All That is Wright,Tucker? I hardly know her
+10,60,13,71.5,49,22.5,9,31.5,15,16.5,Ketel Bells,Book of Bob
 11,61,6,NA,NA,NA,7,NA,NA,NA,The Novaks,Bibee-di-Bobbidi-Boo
 11,62,12,NA,NA,NA,11,NA,NA,NA,Blasphemous Hot Takes,The West Bank Occupiers
 11,63,1,NA,NA,NA,14,NA,NA,NA,The Talmudic Tunnelers,Top Gunner: Henderson

@@ -7,7 +7,7 @@ Alex Brod,Dylan Boyd,16,9,0.64
 Alex Brod,Griffin Schwab,6,0,1
 Alex Brod,Jack Wagner,13,7,0.65
 Alex Brod,Jake Hubertus,18,6,0.75
-Alex Brod,James Whitty,5,5,0.5
+Alex Brod,James Whitty,6,5,0.5454545454545454
 Alex Brod,Jordan Bennett,1,0,1
 Alex Brod,Josh Chodor,5,3,0.625
 Alex Brod,Kent Hubert,6,4,0.6
@@ -18,7 +18,7 @@ Alex Brod,Michael Bogaty,10,5,0.6666666666666666
 Alex Brod,Vick Raghunathan,2,0,1
 Alex Brod,Zach Vinik,4,5,0.4444444444444444
 Andrew Lama,Alex Brod,9,10,0.47368421052631576
-Andrew Lama,Andrew Tham,8.5,5.5,0.6071428571428571
+Andrew Lama,Andrew Tham,8.5,6.5,0.5666666666666667
 Andrew Lama,Blair Prato,7,7,0.5
 Andrew Lama,Dan Gold,8,11,0.42105263157894735
 Andrew Lama,Dylan Boyd,12,8,0.6
@@ -34,7 +34,7 @@ Andrew Lama,Matt O'Donnell,0,4,0
 Andrew Lama,Michael Bogaty,3,8,0.2727272727272727
 Andrew Lama,Zach Vinik,4,5,0.4444444444444444
 Andrew Tham,Alex Brod,4,15,0.21052631578947367
-Andrew Tham,Andrew Lama,5.5,8.5,0.39285714285714285
+Andrew Tham,Andrew Lama,6.5,8.5,0.43333333333333335
 Andrew Tham,Blair Prato,8,10,0.4444444444444444
 Andrew Tham,Dan Gold,6,11,0.35294117647058826
 Andrew Tham,Dylan Boyd,9,13,0.4090909090909091
@@ -57,7 +57,7 @@ Blair Prato,Andrew Tham,10,8,0.5555555555555556
 Blair Prato,Dan Gold,9,6,0.6
 Blair Prato,Dylan Boyd,12,4,0.75
 Blair Prato,Jack Wagner,9,9,0.5
-Blair Prato,Jake Hubertus,6,5,0.5454545454545454
+Blair Prato,Jake Hubertus,7,5,0.5833333333333334
 Blair Prato,James Whitty,9,3,0.75
 Blair Prato,Josh Chodor,3,0,1
 Blair Prato,Kent Hubert,2,3,0.4
@@ -82,7 +82,7 @@ Dan Gold,Luke Benz,5,8,0.38461538461538464
 Dan Gold,Matt O'Donnell,4,2,0.6666666666666666
 Dan Gold,Michael Bogaty,7,10,0.4117647058823529
 Dan Gold,Vick Raghunathan,2,0,1
-Dan Gold,Zach Vinik,3,5,0.375
+Dan Gold,Zach Vinik,3,6,0.3333333333333333
 Dylan Boyd,Alex Brod,9,16,0.36
 Dylan Boyd,Andrew Lama,8,12,0.4
 Dylan Boyd,Andrew Tham,13,9,0.5909090909090909
@@ -96,7 +96,7 @@ Dylan Boyd,Jordan Bennett,2,0,1
 Dylan Boyd,Josh Chodor,6,2,0.75
 Dylan Boyd,Kent Hubert,5,1,0.8333333333333334
 Dylan Boyd,Louis Danowsky,9,5,0.6428571428571429
-Dylan Boyd,Luke Benz,6,6,0.5
+Dylan Boyd,Luke Benz,7,6,0.5384615384615384
 Dylan Boyd,Matt O'Donnell,5,1,0.8333333333333334
 Dylan Boyd,Michael Bogaty,10,6,0.625
 Dylan Boyd,Vick Raghunathan,1,1,0.5
@@ -128,12 +128,12 @@ Jack Wagner,Kent Hubert,6,3,0.6666666666666666
 Jack Wagner,Louis Danowsky,8,0,1
 Jack Wagner,Luke Benz,6,8,0.42857142857142855
 Jack Wagner,Matt O'Donnell,2,0,1
-Jack Wagner,Michael Bogaty,7,7,0.5
+Jack Wagner,Michael Bogaty,7,8,0.4666666666666667
 Jack Wagner,Zach Vinik,2,7,0.2222222222222222
 Jake Hubertus,Alex Brod,6,18,0.25
 Jake Hubertus,Andrew Lama,14,10,0.5833333333333334
 Jake Hubertus,Andrew Tham,14,7,0.6666666666666666
-Jake Hubertus,Blair Prato,5,6,0.45454545454545453
+Jake Hubertus,Blair Prato,5,7,0.4166666666666667
 Jake Hubertus,Dan Gold,8,15,0.34782608695652173
 Jake Hubertus,Dylan Boyd,11,13,0.4583333333333333
 Jake Hubertus,Griffin Schwab,4,2,0.6666666666666666
@@ -148,7 +148,7 @@ Jake Hubertus,Matt O'Donnell,4,2,0.6666666666666666
 Jake Hubertus,Michael Bogaty,5,6,0.45454545454545453
 Jake Hubertus,Vick Raghunathan,2,0,1
 Jake Hubertus,Zach Vinik,4,5,0.4444444444444444
-James Whitty,Alex Brod,5,5,0.5
+James Whitty,Alex Brod,5,6,0.45454545454545453
 James Whitty,Andrew Lama,6,5,0.5454545454545454
 James Whitty,Andrew Tham,6,5,0.5454545454545454
 James Whitty,Blair Prato,3,9,0.25
@@ -224,7 +224,7 @@ Luke Benz,Andrew Lama,11,2,0.8461538461538461
 Luke Benz,Andrew Tham,10,3,0.7692307692307693
 Luke Benz,Blair Prato,5,9,0.35714285714285715
 Luke Benz,Dan Gold,8,5,0.6153846153846154
-Luke Benz,Dylan Boyd,6,6,0.5
+Luke Benz,Dylan Boyd,6,7,0.46153846153846156
 Luke Benz,Jack Wagner,8,6,0.5714285714285714
 Luke Benz,Jake Hubertus,7,7,0.5
 Luke Benz,James Whitty,7,3,0.7
@@ -251,7 +251,7 @@ Michael Bogaty,Andrew Tham,13,2,0.8666666666666667
 Michael Bogaty,Blair Prato,10,4,0.7142857142857143
 Michael Bogaty,Dan Gold,10,7,0.5882352941176471
 Michael Bogaty,Dylan Boyd,6,10,0.375
-Michael Bogaty,Jack Wagner,7,7,0.5
+Michael Bogaty,Jack Wagner,8,7,0.5333333333333333
 Michael Bogaty,Jake Hubertus,6,5,0.5454545454545454
 Michael Bogaty,James Whitty,7,6,0.5384615384615384
 Michael Bogaty,Josh Chodor,2,0,1
@@ -274,7 +274,7 @@ Zach Vinik,Alex Brod,5,4,0.5555555555555556
 Zach Vinik,Andrew Lama,5,4,0.5555555555555556
 Zach Vinik,Andrew Tham,5,2,0.7142857142857143
 Zach Vinik,Blair Prato,6,3,0.6666666666666666
-Zach Vinik,Dan Gold,5,3,0.625
+Zach Vinik,Dan Gold,6,3,0.6666666666666666
 Zach Vinik,Dylan Boyd,6,3,0.6666666666666666
 Zach Vinik,Jack Wagner,7,2,0.7777777777777778
 Zach Vinik,Jake Hubertus,5,4,0.5555555555555556
