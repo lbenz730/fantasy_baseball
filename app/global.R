@@ -10,6 +10,7 @@ library(patchwork)
 library(stringr)
 library(purrr)
 library(forcats)
+library(arrow)
 
 options(readr.show_col_types = F)
 options(dplyr.summarise.inform = F)
@@ -65,9 +66,8 @@ exp_standings <- change_logo(read_csv(glue('data/stats/{params$season}/exp_stand
 sim_results <- 
   read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>% 
   filter(matchup_id == params$current_matchup)
-df_daily <- 
-  read_csv(glue('data/stats/{params$season}/daily_stats_{params$season}.csv')) %>% 
-  select(team_id, lineup_id, player, player_id, in_lineup, scoring_period_id, matchup_id, points, played, relief, start, pitcher, batter, qs, relief_start, eligible_slots)
+df_daily <-
+  read_parquet(glue('data/stats/{params$season}/daily_stats.parquet'))
 pitch_matrix <- 
   read_csv(glue('data/stats/{params$season}/pitch_matrix.csv')) %>% 
   mutate_at(vars(ip, earned_runs), ~as.character(.x)) %>% 
@@ -126,9 +126,7 @@ trans_log <- read_csv(glue('data/stats/{params$season}/transaction_log_{params$s
 
 
 distributions <-
-  read_csv('data/playoff_odds/distributions.csv') %>%
-  filter(sim_id <= 1000) %>% 
-  select(-division_id, -sim_id)
+  read_parquet('data/playoff_odds/distributions.parquet')
 
 df_whatif <- 
   read_csv(glue('data/stats/{params$season}/whatif.csv')) %>% 
@@ -219,224 +217,13 @@ df_whatif <-
 
 
 ### Summary Stats mean points by week
-mean_pts_by_week <- 
-  group_by(team_points, matchup_id) %>%
-  summarise("adj_pts" = mean(adj_pts, na.rm = T),
-            "adj_batting_pts" = mean(adj_batting_pts, na.rm = T),
-            "adj_pitching_pts" = mean(adj_pitching_pts, na.rm = T))
+mean_pts_by_week <- readRDS('data/cache/mean_pts_by_week.rds')
 
 ### For ggbump
-df_points <- 
-  df_daily %>% 
-  filter(in_lineup) %>% 
-  inner_join(teams, by = 'team_id') %>% 
-  bind_rows(df_penalty %>% mutate('points' = -penalty)) %>% 
-  group_by(team, scoring_period_id) %>% 
-  summarise('n_points' = sum(points)) %>% 
-  mutate('total_points' = cumsum(n_points)) %>% 
-  group_by(scoring_period_id) %>% 
-  mutate('points_back' = total_points - max(total_points)) %>% 
-  mutate('rank' = rank(-total_points)) %>% 
-  ungroup() 
+df_points <- readRDS('data/cache/df_points.rds')
 
 
-scale_factors <- 
-  df_daily %>% 
-  filter(!scoring_period_id %in% params$period_rm) %>% 
-  filter(in_lineup) %>% 
-  filter(matchup_id < max(2, params$current_matchup)) %>% 
-  group_by(team_id, matchup_id) %>% 
-  summarise('n_bat' = sum(played),
-            'n_rp' = sum(relief & !start)) %>% 
-  inner_join(df_start, by = 'matchup_id') %>% 
-  mutate('duration' = ifelse(matchup_id == 1, duration - length(params$period_rm), duration)) %>% 
-  mutate('n_rp' = n_rp/duration * 7,
-         'n_bat' = n_bat/duration * 7) %>% 
-  ungroup() %>% 
-  summarise('n_sp' = 8/6,
-            'n_rp' = mean(n_rp)/3,
-            'n_bat' = mean(n_bat)/13)
-
-
-### Trades
-if(nrow(df_trades) > 0) {
-  traded_players <- 
-    trans_log %>%
-    filter(transaction_type == 'Trade')
-} else {
-  traded_players <- df_trades
-}
-
-threshold <- pmin(20, (period-length(params$period_rm))/2)
-threshold_p <- pmin(5, (period-length(params$period_rm))/5)
-
-df_fa <- 
-  trans_log %>% 
-  filter(!is.na(w_bat), !is.na(w_sp), !is.na(w_rp)) %>% 
-  filter(transaction_type == 'Free Agent') %>% 
-  mutate('ppg_vs_avg' = 
-           (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat * w_bat + 
-           (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp * w_rp + 
-           (ppg - exp_standings$sp_ppg[13]) * scale_factors$n_sp * w_sp) %>% 
-  mutate('total_value' = n_points - (end - 
-                                       case_when(start <= min(params$period_rm) - 1 ~ start,
-                                                 start >= max(params$period_rm) + 1 ~ start,
-                                                 start <= max(params$period_rm) ~  max(params$period_rm)
-                                       )
-                                     + 1)/7 * 
-           (exp_standings$batting_ppg[13] * scale_factors$n_bat * w_bat + 
-              exp_standings$rp_ppg[13] * scale_factors$n_rp * w_rp + 
-              exp_standings$sp_ppg[13] * scale_factors$n_sp * w_sp)) %>% 
-  mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-  inner_join(select(teams, team, team_id, logo), by = 'team_id') %>% 
-  mutate('added' = as.character(format.Date(as.Date(params$opening_day) - 1 + start, "%b, %d")),
-         'dropped' = ifelse(end == max(end), NA, as.character(format.Date(as.Date(params$opening_day) - 1 + end, "%b, %d")))) 
-
-
-df1 <- 
-  df_fa %>% 
-  arrange(-total_value) %>% 
-  filter(w_bat * n_games >= threshold | w_sp * n_games >= threshold_p  | w_rp * n_games >= threshold_p) %>%
-  select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) %>% 
-  head(20)
-names(df1) <- paste0(names(df1), '_1')
-
-df2 <- 
-  df_fa %>% 
-  arrange(-n_points) %>% 
-  select(player, player_url, team, logo, added, dropped, n_points, n_games, ppg, total_value) %>% 
-  head(20)
-names(df2) <- paste0(names(df2), '_2')
-
-df_fa <- bind_cols(pad_rows(df1, n = min(nrow(df2), 20)), df2)
-
-
-if(nrow(traded_players) > 0) {
-  trade_stats <- NULL
-  
-  for(i in 1:nrow(traded_players)) {
-    old_team <- traded_players$team_from[i]
-    new_team <- traded_players$team_id[i]
-    scoring_period <- traded_players$start[i]
-    end_period <- traded_players$end[i]
-    
-    tmp_before <- 
-      df_daily %>% 
-      filter(player_id == traded_players$player_id[i]) %>% 
-      filter(team_id == old_team) %>% 
-      filter(scoring_period_id < scoring_period) %>% 
-      summarise('points' = sum(points * in_lineup),
-                'played' = sum(start * in_lineup) + sum(relief * in_lineup) + sum(played * in_lineup),
-                'batter' = sum(played * in_lineup),
-                'pitcher' = sum(pitcher * in_lineup),
-                'sp' = sum(start * in_lineup),
-                'rp' = sum(relief * in_lineup)) %>% 
-      mutate('ppg' = points/played) %>% 
-      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat,
-                                      rp > 0 & sp == 0 ~ (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp,
-                                      sp > 0 ~ (ppg - exp_standings$sp_ppg[13]) * scale_factors$n_sp)) %>% 
-      select(points, played, ppg, ppg_vs_avg)
-    names(tmp_before) <- paste0(names(tmp_before), '_before')
-    
-    tmp_after <- 
-      df_daily %>% 
-      filter(player_id == traded_players$player_id[i]) %>% 
-      filter(team_id == new_team) %>% 
-      filter(scoring_period_id >= scoring_period) %>%
-      filter(scoring_period_id <= end_period) %>% 
-      summarise('points' = sum(points * in_lineup),
-                'played' = sum(start * in_lineup) + sum(relief * in_lineup) + sum(played * in_lineup),
-                'batter' = sum(played * in_lineup),
-                'pitcher' = sum(pitcher * in_lineup),
-                'sp' = sum(start * in_lineup),
-                'rp' = sum(relief * in_lineup),
-                'n_days' = n()) %>% 
-      mutate('ppg' =  points/played) %>% 
-      mutate('ppg_vs_avg' = case_when(rp == 0 & sp == 0 ~ (ppg - exp_standings$batting_ppg[13]) * scale_factors$n_bat,
-                                      rp > 0 & sp == 0 ~ (ppg - exp_standings$rp_ppg[13]) * scale_factors$n_rp,
-                                      sp > 0 ~ (ppg - exp_standings$sp_ppg[13]) * scale_factors$n_sp)) %>% 
-      mutate('total_value' = points - n_days/7 * 
-               case_when(rp == 0 & sp == 0 & pitcher == 0 ~ exp_standings$batting_ppg[13] * scale_factors$n_bat,
-                         rp > 0 & sp == 0 ~ exp_standings$rp_ppg[13] * scale_factors$n_rp,
-                         sp > 0 | pitcher > 0 ~ exp_standings$sp_ppg[13] *scale_factors$n_sp)
-      ) %>% 
-      select(points, played, ppg, ppg_vs_avg, total_value)
-    names(tmp_after) <- paste0(names(tmp_after), '_after')
-    
-    trade_stats <- 
-      trade_stats %>% bind_rows(
-        bind_cols(tmp_before, tmp_after) %>% 
-          mutate('player_id' = traded_players$player_id[i],
-                 'team_from' = old_team,
-                 'team_to' = new_team)
-      )
-    
-  }
-  
-  tmp_stats <- 
-    traded_players %>%
-    inner_join(trade_stats, by = c('player_id', 'team_from')) %>% 
-    inner_join(select(teams, team_id, team, logo), by = c('team_to' = 'team_id')) %>% 
-    mutate('player_url' = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>% 
-    group_by(trade_id) %>% 
-    mutate('n_rec' = map_dbl(team_to, ~sum(team_to == .x)))  %>% 
-    mutate('n_given' = map_dbl(team_from, ~sum(team_to == .x)))  %>% 
-    group_by(trade_id, team_to) %>% 
-    group_split() %>% 
-    map(~{ 
-      if(.x$n_given[1]  > .x$n_rec[1]) {
-        tmp_z <- NULL
-        for(z in 1:(.x$n_given[1] - .x$n_rec[1])) {
-          tmp <- .x[1,]
-          tmp[1,] <- NA
-          tmp$trade_id <- .x$trade_id[1]
-          tmp_z <- bind_rows(tmp, tmp_z)
-        }
-        
-        
-        bind_rows(.x, tmp_z)
-      } else {
-        .x 
-      }
-    })
-  
-  
-  df_trades <- 
-    map_dfr(1:(length(tmp_stats)/2),  ~{
-      x <- tmp_stats[[2 * .x -1]]
-      names(x) <- paste0(names(x), '_1')
-      y <- tmp_stats[[2 * .x]]
-      names(y) <- paste0(names(y), '_2')
-      bind_cols(x, y)
-    }) %>% 
-    select(trade_id_1, 
-           player_1, player_url_1, team_1, logo_1,
-           points_before_1, played_before_1, ppg_before_1, ppg_vs_avg_before_1,
-           points_after_1, played_after_1, ppg_after_1, ppg_vs_avg_after_1, total_value_after_1,
-           player_2, player_url_2, team_2, logo_2,
-           points_before_2, played_before_2, ppg_before_2, ppg_vs_avg_before_2,
-           points_after_2, played_after_2, ppg_after_2, ppg_vs_avg_after_2, total_value_after_2) %>% 
-    group_by(trade_id_1) %>% 
-    mutate('total_value_after_1' = c(sum(total_value_after_1, na.rm = T), rep(NA, n() - 1)),
-           'total_value_after_2' = c(sum(total_value_after_2, na.rm = T), rep(NA, n() - 1))) %>% 
-    ungroup() %>% 
-    mutate('trade_id_1' = fct_reorder(factor(paste0('Trade #', trade_id_1)), trade_id_1)) %>% 
-    group_by(trade_id_1)
-  
-  m <- 
-    df_trades %>% 
-    ungroup() %>% 
-    select(contains('avg')) %>% 
-    abs() %>% 
-    max(na.rm = T)
-  
-}
-
-
-### GT for Penalties
-df_penalty <- 
-  df_penalty %>% 
-  inner_join(select(teams, team, logo), by = 'team') 
+scale_factors <- readRDS('data/cache/scale_factors.rds') 
 
 df_rp_penalty <- 
   df_rp_penalty %>% 
@@ -462,75 +249,13 @@ if(params$current_matchup > 6) {
 df_draft <- read_csv(glue('data/stats/{params$season}/draft.csv')) %>% 
   rename('draft_id' = team_id)
 
-draft_analysis <- 
-  trans_log %>% 
-  select(-round_id, -pick_id) %>% 
-  right_join(df_draft) %>% 
-  group_by(player_id, player) %>% 
-  summarise(
-    'points_total' = sum(n_points),
-    'n_games_total' = sum(n_games),
-    'points_draft' = sum(n_points[team_id == draft_id]),
-    'n_games_draft' = sum(n_games[team_id == draft_id]),
-    'w_sp' = max(w_sp, na.rm = T),
-    'w_rp' = max(w_rp,na.rm = T),
-    'w_bat' = max(w_bat, na.rm = T),
-    'ppg' = points_total/(n_games_total + 0.001),
-    'ppg_draft' = points_draft/(n_games_draft + 0.001),
-    'team_id' = first(draft_id)) %>% 
-  right_join(df_draft) %>% 
-  inner_join(teams) %>% 
-  inner_join(
-    df_daily %>% 
-      group_by(player_id) %>% 
-      filter(scoring_period_id == max(scoring_period_id)) %>% 
-      summarise('player_type' = case_when(grepl('14', eligible_slots) ~ 'SP',
-                                          grepl('15', eligible_slots) ~ 'RP',
-                                          T ~ 'Batter'))
-  ) %>% 
-  mutate('player_type' = case_when(w_rp == 1 ~ 'RP',
-                                   w_sp >= 0.75 ~ 'SP',
-                                   w_bat == 1 ~ 'Batter',
-                                   w_bat == 0 ~ 'RP/SP',
-                                   w_bat > 0 ~ 'Ohtani',
-                                   T ~ player_type)) %>% 
-  ungroup() %>% 
-  mutate('fit' = loess(points_total ~ pick_id, data = .)$fitted) %>% 
-  mutate('residual' = points_total - fit) %>% 
-  mutate('text' = 
-           paste("Player: ", player, "<br>", 
-                 "Pick: ", pick_id, "<br>",
-                 "# of Games Played: ", n_games_total, " (Drafted Team: ", n_games_draft, ")<br>",
-                 "Points: ", points_total, " (Drafted Team: ", points_draft, ")<br>",
-                 "PPG: ", sprintf('%0.2f', ppg), " (Drafted Team: ", sprintf('%0.2f', ppg_draft), ")<br>",
-                 'Expected Points from Draft Slot: ', sprintf('%0.1f', fit), '<br>',
-                 'Points Relative to Draft Slot Expectation: ', sprintf('%0.1f', residual), '<br>',
-                 
-                 
-                 sep = "")) %>% 
-  select(team, player, player_id, player_type, contains('points'), contains('games'), contains('ppg'), pick_id, round_id, text, residual, fit)
+draft_analysis <- readRDS('data/cache/draft_analysis.rds')
 
 
-lineup_stats <- 
-  df_daily %>% 
-  inner_join(teams) %>% 
-  filter(batter, in_lineup) %>% 
-  group_by(team, lineup_id) %>% 
-  summarise('ppg' = sum(points)/sum(played),
-            'games' = sum(played)) %>% 
-  mutate('lineup_id' = position[as.character(lineup_id)]) %>% 
-  mutate('lineup_id' = fct_relevel(lineup_id,
-                                   'C','1B', '3B', '1B/3B',
-                                   '2B', 'SS', '2B/SS', 
-                                   'OF', 'UTIL')) %>% 
-  group_by(lineup_id) %>% 
-  mutate('ppg_avg' = weighted.mean(ppg, games)) %>% 
-  ungroup()
-
-lineup_avg <- 
-  lineup_stats %>% 
-  group_by(lineup_id) %>% 
-  summarise('ppg' = weighted.mean(ppg, games))
+lineup_cache <- readRDS('data/cache/lineup_stats.rds')
+lineup_stats  <- lineup_cache$stats
+lineup_avg    <- lineup_cache$avg
+rm(lineup_cache)
 
 leverage <- read_csv(glue('data/playoff_odds/leverage_{params$season}.csv'))
 current_wp <- 
@@ -589,8 +314,8 @@ manager_order <-
 
 
 ### Vinik's MLB Rolling Averages
-mlb_batting <- read_csv(glue('data/stats/{params$season}/mlb_batting_logs.csv'))
-mlb_pitching <- read_csv(glue('data/stats/{params$season}/mlb_pitching_logs.csv'))
+mlb_batting  <- read_parquet(glue('data/stats/{params$season}/mlb_batting_logs.parquet'))
+mlb_pitching <- read_parquet(glue('data/stats/{params$season}/mlb_pitching_logs.parquet'))
 
 mlb_batters <- 
   mlb_batting %>% 
