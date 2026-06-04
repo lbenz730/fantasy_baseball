@@ -293,7 +293,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,6.0,0,5,QS,Mt. Everest Taquito Farmers
 8,6.0,1,7,QS,Mt. Everest Taquito Farmers
 8,6.0,2,4,QS,Mt. Everest Taquito Farmers
-8,6.0,3,3,QS,Mt. Everest Taquito Farmers
+8,6.0,3,4,QS,Mt. Everest Taquito Farmers
 8,6.0,4,2,QS Potential,Mt. Everest Taquito Farmers
 8,6.1,1,1,QS,Mt. Everest Taquito Farmers
 8,6.1,2,1,QS,Mt. Everest Taquito Farmers
@@ -301,7 +301,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,7.0,1,1,QS,Mt. Everest Taquito Farmers
 8,7.0,2,1,QS,Mt. Everest Taquito Farmers
 8,7.0,3,1,QS,Mt. Everest Taquito Farmers
-8,< 3,0,2,Bad Start,Mt. Everest Taquito Farmers
+8,< 3,0,1,Bad Start,Mt. Everest Taquito Farmers
 8,< 3,6+,1,Bad Start,Mt. Everest Taquito Farmers
 8,> 7,1,1,QS,Mt. Everest Taquito Farmers
 8,> 7,2,1,QS,Mt. Everest Taquito Farmers
@@ -503,7 +503,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.2,4,2,Bad Start,Top Gunner: Henderson
 14,5.2,5,1,Bad Start,Top Gunner: Henderson
 14,5.2,6+,1,Bad Start,Top Gunner: Henderson
-14,6.0,0,2,QS,Top Gunner: Henderson
+14,6.0,0,3,QS,Top Gunner: Henderson
 14,6.0,1,8,QS,Top Gunner: Henderson
 14,6.0,2,5,QS,Top Gunner: Henderson
 14,6.0,3,2,QS,Top Gunner: Henderson
@@ -517,6 +517,5 @@ team_id,ip,earned_runs,n,start_type,team
 14,7.0,0,3,QS,Top Gunner: Henderson
 14,7.0,2,2,QS,Top Gunner: Henderson
 14,7.0,3,1,QS,Top Gunner: Henderson
-14,< 3,0,1,Bad Start,Top Gunner: Henderson
 14,> 7,2,1,QS,Top Gunner: Henderson
 14,CG,0,1,CG,Top Gunner: Henderson
