@@ -4361,7 +4361,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 49,9,Alex Bregman,34886,NA,19.5,1
 49,9,Aroldis Chapman,30442,1,4,1
 49,9,Willy Adames,33675,NA,26.5,1
-49,9,Robbie Ray,32175,NA,9.5,1
+49,9,Robbie Ray,32175,NA,10.5,1
 49,9,Mookie Betts,33039,NA,21.5,1
 49,9,Justin Wrobleski,4417203,NA,32,1
 49,9,Sonny Gray,32082,NA,22.5,1
@@ -4887,7 +4887,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 55,10,Luke Raley,40422,NA,-1.5,7
 55,10,Michael Soroka,34984,NA,9,7
 55,10,Randy Arozarena,36488,NA,5,7
-55,10,Geraldo Perdomo,41355,NA,1,7
+55,10,Geraldo Perdomo,41355,NA,1.5,7
 55,10,Aaron Ashby,41325,1,2,7
 55,10,Jorge Soler,32558,NA,10.5,7
 55,10,Dansby Swanson,34895,NA,-0.5,7
@@ -4916,6 +4916,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 56,10,Isaac Paredes,39706,NA,-1.5,6
 56,10,J.P. Crawford,33210,NA,0.5,6
 56,10,Kevin McGonigle,5149072,NA,4,6
+56,10,Tanner Scott,35135,1,6,6
 57,10,Zack Gelof,4414531,NA,1,11
 57,10,Jose Ramirez,32801,NA,9,11
 57,10,TJ Rumfield,5014349,NA,1.5,11
@@ -4931,7 +4932,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 57,10,Michael McGreevy,4424141,NA,14,11
 57,10,Anthony Volpe,42547,NA,0.5,11
 57,10,Trent Grisham,34995,NA,2,11
-57,10,Ildemaro Vargas,32985,NA,1,11
+57,10,Ildemaro Vargas,32985,NA,2,11
 57,10,Cam Schlittler,5134581,NA,2.5,11
 57,10,Kevin Gausman,32667,NA,12,11
 57,10,Kody Clemens,41311,NA,1,11
@@ -4939,6 +4940,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 58,10,Sal Frelick,4417795,NA,6.5,14
 58,10,Garrett Mitchell,4313442,NA,5,14
 58,10,Riley Greene,42179,NA,17.5,14
+58,10,Juan Morillo,4722925,1,4,14
 58,10,Ernie Clement,41287,NA,1.5,14
 58,10,Davis Martin,42823,NA,-9,14
 58,10,Sandy Alcantara,35241,NA,18,14
@@ -4967,9 +4969,9 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 59,10,Jacob Latz,3210625,1,8,4
 59,10,Tommy Troy,4837403,NA,8,4
 59,10,Connelly Early,4863321,NA,7.5,4
-59,10,William Contreras,39895,NA,4.5,4
+59,10,William Contreras,39895,NA,5.5,4
 59,10,Jeremy Pena,41273,NA,6,4
-60,10,Matt Chapman,33857,NA,7.5,13
+60,10,Matt Chapman,33857,NA,8.5,13
 60,10,Adley Rutschman,42178,NA,3,13
 60,10,Masyn Winn,4683365,NA,5,13
 60,10,Pete Fairbanks,42180,1,4,13
@@ -4982,7 +4984,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 60,10,Jake McCarthy,41197,NA,15,13
 60,10,Ryan O'Hearn,35183,NA,2,13
 60,10,Jason Adam,32145,1,0,13
-60,10,Freddie Freeman,30193,NA,9,13
+60,10,Freddie Freeman,30193,NA,8.5,13
 60,10,Xander Bogaerts,31606,NA,-0.5,13
 60,10,Kerry Carpenter,42714,NA,9.5,13
 60,10,Jacob deGrom,32796,NA,18.5,13
@@ -5156,7 +5158,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 58,10,Oneil Cruz,39712,NA,8,5
 58,10,Spencer Steer,4722857,NA,13,5
 58,10,Bobby Witt Jr.,42403,NA,9.5,5
-58,10,Andy Pages,42468,NA,2.5,5
+58,10,Andy Pages,42468,NA,3.5,5
 58,10,Jake Bauers,35013,NA,11.5,5
 58,10,Shea Langeliers,42598,NA,0,5
 58,10,Jackson Chourio,4917869,NA,16.5,5
@@ -5185,7 +5187,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 59,10,Spencer Torkelson,4424286,NA,-0.5,2
 60,10,Ketel Marte,32512,NA,10,9
 60,10,Ivan Herrera,41889,NA,2,9
-60,10,Bryan Reynolds,38980,NA,2.5,9
+60,10,Bryan Reynolds,38980,NA,3.5,9
 60,10,Josh Jung,42437,NA,0,9
 60,10,Jorge Mateo,33832,NA,-1,9
 60,10,Emerson Hancock,4297897,NA,24,9
