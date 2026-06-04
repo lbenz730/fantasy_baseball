@@ -474,7 +474,7 @@ df_rp_penalty <-
   mutate('cumsum_rp' = cumsum(relief)) %>% 
   ### IL Days
   filter(!(matchup_id == 6 & player == 'Erik Miller')) %>%
-  # filter(!(matchup_id == 12 & player == 'Jordan Hicks')) %>% 
+  filter(!(matchup_id == 9 & player == 'Garrett Whitlock')) %>%
   # filter(!(matchup_id == 19 & player == 'Hunter Brown')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
   group_by(team, matchup_id, scoring_period_id) %>% 
@@ -1118,4 +1118,6 @@ dir_delete(glue('app/data/stats/{2020:(params$season - 1)}'))
 dir_delete(glue('app/data/win_prob/{2023:(params$season - 1)}'))
 file.remove('app/data/playoff_odds/raw_sims.csv')
 file.remove('data/playoff_odds/raw_sims.csv')
+
+source('cache_files.R')
 

@@ -166,6 +166,27 @@
       ],
       "Hash": "529ba9cd287e1bad20006d1e6fc62f7f"
     },
+    "arrow": {
+      "Package": "arrow",
+      "Version": "20.0.0.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "assertthat",
+        "bit64",
+        "glue",
+        "methods",
+        "purrr",
+        "rlang",
+        "stats",
+        "tidyselect",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "b243b338d544b48dab326f21be513f70"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.2.1",
