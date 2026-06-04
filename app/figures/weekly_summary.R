@@ -84,7 +84,7 @@ make_scoreboard_table <- function(df_week, season, week, logo_lookup, close_thre
   
   matchups <- df_week %>%
     group_by(game_id) %>%
-    dplyr::slice(1) %>%
+    slice(1) %>%
     ungroup() %>%
     mutate(
       # slice(1) gives home team as `team`; preserve for wp join
@@ -389,7 +389,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
     mutate(player_url = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
            ppg        = n_points / n_games) %>%
     arrange(-n_points) %>%
-    dplyr::slice(1:top_n) %>%
+    slice(1:top_n) %>%
     left_join(teams %>% select(team_id, team, logo), by = 'team_id') %>%
     mutate(logo = logo_lookup[team]) %>%
     select(player, player_url, team, logo, n_points)
@@ -403,7 +403,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
     mutate(player_url = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254'),
            ppg        = n_points / n_games) %>%
     arrange(-ppg, -n_games) %>%
-    dplyr::slice(1:top_n) %>%
+    slice(1:top_n) %>%
     left_join(teams %>% select(team_id, team, logo), by = 'team_id') %>%
     mutate(logo = logo_lookup[team]) %>%
     select(player, player_url, team, logo, n_games, ppg)
@@ -416,7 +416,7 @@ make_performers_table <- function(daily_stats, teams, week, season, logo_lookup,
     filter(n_games > 0) %>%
     mutate(player_url = glue('https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/{player_id}.png&w=350&h=254')) %>%
     arrange(-n_points) %>%
-    dplyr::slice(1:top_n) %>%
+    slice(1:top_n) %>%
     left_join(teams %>% select(team_id, team, logo), by = 'team_id') %>%
     mutate(logo = logo_lookup[team]) %>%
     select(player, player_url, team, logo, n_games, n_points)
