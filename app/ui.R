@@ -6,9 +6,19 @@ library(gt)
 
 # Define UI 
 baseball <- 'https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzM0OWVkd2dtbGo0dnRyY3Fpemg4cXpkOXkxZWkyOXZvNDAyaTQxeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1Aftgizz0ekprKsRHJ/giphy.gif'
-shinyUI(navbarPage("Millburnish Fantasy Baseball",
+shinyUI(navbarPage(tags$span(
+                     tags$img(src = 'League.png', height = '30px', style = 'margin-right:8px; vertical-align:middle;'),
+                     "Millburnish Fantasy Baseball 🛳️"
+                   ),
                    id = 'navbar',
-                   
+                   theme = shinythemes::shinytheme('united'),
+                   header = tags$style(HTML("
+                     .navbar { background-color: #1a2e4a !important; border-color: #1a2e4a !important; }
+                     .navbar .navbar-brand, .navbar .nav > li > a { color: #ffffff !important; }
+                     .navbar .nav > li > a:hover, .navbar .nav > .active > a { background-color: #2c4a6e !important; color: #ffffff !important; }
+                     .navbar-collapse::after { content: '⛵'; float: right; padding: 13px 15px; font-size: 22px; line-height: 20px; }
+                   ")),
+
                    tabPanel("Stats",
                             value = 'stats',
                             # useWaiter(),
