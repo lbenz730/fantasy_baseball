@@ -562,7 +562,10 @@ withr::with_dir(app_dir, {
   pitch_st_gt <- read_csv(glue('data/stats/{season}/pitch_stats.csv'))
   bat_st_gt   <- read_csv(glue('data/stats/{season}/bat_stats.csv'))
 
-  ferry_html <- '<img src="www/ferry.jpg" style="height:30px;">'
+  ferry_b64  <- base64enc::dataURI(file = 'www/ferry.jpg', mime = 'image/jpeg')
+  ferry_html <- glue('<img src="{ferry_b64}" style="height:30px;">')
+  league_b64  <- base64enc::dataURI(file = 'www/League.png', mime = 'image/png')
+  league_html <- glue('<img src="{league_b64}" style="height:200px;">')
 
   ### ---- stats_table ----
   league_avg_stats <-
@@ -714,7 +717,7 @@ withr::with_dir(app_dir, {
     ) %>%
     tab_header(
       subtitle = md('**Millburnish Fantasy Baseball League Advanced Stats Table**'),
-      title    = md('<img src="League.png" style="height:200px;">')
+      title    = md(league_html)
     ) %>%
     tab_options(column_labels.font.size = 20, heading.title.font.size = 40,
                 heading.subtitle.font.size = 40, heading.title.font.weight = 'bold',
