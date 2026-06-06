@@ -280,7 +280,7 @@ p_sp_matrix <-
 
 ggsave(
   glue('{app_dir}/www/cache/sp_matrix.png'), p_sp_matrix,
-  width = 1600, height = 900, units = 'px', dpi = 96
+  width = 4800, height = 2700, units = 'px', dpi = 300
 )
 rm(p_sp_matrix, pitch_matrix_cache)
 
@@ -334,7 +334,7 @@ p_start_buckets <-
 
 ggsave(
   glue('{app_dir}/www/cache/start_buckets.png'), p_start_buckets,
-  width = 1600, height = 900, units = 'px', dpi = 96
+  width = 4800, height = 2700, units = 'px', dpi = 300
 )
 rm(p_start_buckets, start_buckets_cache, start_buckets_avg_cache)
 
@@ -387,9 +387,9 @@ p_ppw_3 <-
   ) +
   scale_x_continuous(limits = c(1, current_matchup), breaks = 0:current_matchup)
 
-ggsave(glue('{app_dir}/www/cache/ppw_1.png'), p_ppw_1, width = 1334, height = 750, units = 'px', dpi = 96)
-ggsave(glue('{app_dir}/www/cache/ppw_2.png'), p_ppw_2, width = 1334, height = 750, units = 'px', dpi = 96)
-ggsave(glue('{app_dir}/www/cache/ppw_3.png'), p_ppw_3, width = 1334, height = 750, units = 'px', dpi = 96)
+ggsave(glue('{app_dir}/www/cache/ppw_1.png'), p_ppw_1, width = 4000, height = 2250, units = 'px', dpi = 300)
+ggsave(glue('{app_dir}/www/cache/ppw_2.png'), p_ppw_2, width = 4000, height = 2250, units = 'px', dpi = 300)
+ggsave(glue('{app_dir}/www/cache/ppw_3.png'), p_ppw_3, width = 4000, height = 2250, units = 'px', dpi = 300)
 rm(p_ppw_1, p_ppw_2, p_ppw_3)
 
 ### Bump chart (scoring rank over time)
@@ -407,7 +407,7 @@ p_bump <-
     title = 'Scoring Rank Over Time'
   )
 
-ggsave(glue('{app_dir}/www/cache/bump.png'), p_bump, width = 1334, height = 750, units = 'px', dpi = 96)
+ggsave(glue('{app_dir}/www/cache/bump.png'), p_bump, width = 4000, height = 2250, units = 'px', dpi = 300)
 rm(p_bump)
 
 ### Playoff history
@@ -437,7 +437,7 @@ p_playoff_history <-
 
 ggsave(
   glue('{app_dir}/www/cache/playoff_history.png'), p_playoff_history,
-  width = 1067, height = 600, units = 'px', dpi = 96
+  width = 3200, height = 1800, units = 'px', dpi = 300
 )
 rm(p_playoff_history)
 
@@ -486,11 +486,11 @@ p_points_dist <-
 
 ggsave(
   glue('{app_dir}/www/cache/win_dist.png'), p_win_dist,
-  width = 1067, height = 600, units = 'px', dpi = 96
+  width = 3200, height = 1800, units = 'px', dpi = 300
 )
 ggsave(
   glue('{app_dir}/www/cache/points_dist.png'), p_points_dist,
-  width = 1067, height = 600, units = 'px', dpi = 96
+  width = 3200, height = 1800, units = 'px', dpi = 300
 )
 rm(p_win_dist, p_points_dist, distributions_cache, sim_results_cache)
 
@@ -518,7 +518,7 @@ p_positional_ppg <-
 
 ggsave(
   glue('{app_dir}/www/cache/positional_ppg.png'), p_positional_ppg,
-  width = 1334, height = 750, units = 'px', dpi = 96
+  width = 4000, height = 2250, units = 'px', dpi = 300
 )
 rm(p_positional_ppg, lineup_stats_cache, lineup_avg_cache)
 
@@ -1893,7 +1893,7 @@ withr::with_dir(app_dir, {
                  size = 6)
 
     ggsave(glue('www/cache/wp_{season}_week_{w}.png'), p_wp,
-           width = 1600, height = 900, units = 'px', dpi = 96)
+           width = 4800, height = 2700, units = 'px', dpi = 300)
     rm(df_wp_w, df_image_w, p_wp)
     gc()
   }
