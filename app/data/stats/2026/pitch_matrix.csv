@@ -14,7 +14,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.0,0,3,QS Potential,The Talmudic Tunnelers
 1,5.0,1,4,QS Potential,The Talmudic Tunnelers
 1,5.0,2,4,QS Potential,The Talmudic Tunnelers
-1,5.0,4,1,Bad Start,The Talmudic Tunnelers
+1,5.0,4,2,Bad Start,The Talmudic Tunnelers
 1,5.0,5,2,Bad Start,The Talmudic Tunnelers
 1,5.0,6+,1,Bad Start,The Talmudic Tunnelers
 1,5.1,1,2,QS Potential,The Talmudic Tunnelers
@@ -55,13 +55,14 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.2,1,1,Bad Start,Tucker? I hardly know her
 2,4.2,2,1,Bad Start,Tucker? I hardly know her
 2,4.2,4,3,Bad Start,Tucker? I hardly know her
-2,4.2,5,1,Bad Start,Tucker? I hardly know her
+2,4.2,5,2,Bad Start,Tucker? I hardly know her
 2,5.0,0,1,QS Potential,Tucker? I hardly know her
 2,5.0,1,1,QS Potential,Tucker? I hardly know her
 2,5.0,2,2,QS Potential,Tucker? I hardly know her
 2,5.0,3,3,QS Potential,Tucker? I hardly know her
 2,5.0,4,1,Bad Start,Tucker? I hardly know her
 2,5.0,5,1,Bad Start,Tucker? I hardly know her
+2,5.0,6+,1,Bad Start,Tucker? I hardly know her
 2,5.1,0,1,QS Potential,Tucker? I hardly know her
 2,5.1,2,2,QS Potential,Tucker? I hardly know her
 2,5.2,1,1,Blue Balls,Tucker? I hardly know her
@@ -95,7 +96,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,4.0,2,1,Bad Start,All That is Wright
 4,4.0,3,1,Bad Start,All That is Wright
 4,4.0,4,1,Bad Start,All That is Wright
-4,4.0,5,2,Bad Start,All That is Wright
+4,4.0,5,3,Bad Start,All That is Wright
 4,4.0,6+,1,Bad Start,All That is Wright
 4,4.1,1,2,Bad Start,All That is Wright
 4,4.2,2,1,Bad Start,All That is Wright
@@ -113,8 +114,8 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.1,5,2,Bad Start,All That is Wright
 4,5.2,1,2,Blue Balls,All That is Wright
 4,5.2,6+,1,Bad Start,All That is Wright
-4,6.0,0,3,QS,All That is Wright
-4,6.0,1,5,QS,All That is Wright
+4,6.0,0,4,QS,All That is Wright
+4,6.0,1,6,QS,All That is Wright
 4,6.0,2,1,QS,All That is Wright
 4,6.0,3,1,QS,All That is Wright
 4,6.0,4,1,QS Potential,All That is Wright
@@ -259,8 +260,8 @@ team_id,ip,earned_runs,n,start_type,team
 7,7.0,2,4,QS,Bibee-di-Bobbidi-Boo
 7,7.0,3,1,QS,Bibee-di-Bobbidi-Boo
 7,< 3,4,1,Bad Start,Bibee-di-Bobbidi-Boo
-7,> 7,0,1,QS,Bibee-di-Bobbidi-Boo
-7,> 7,1,2,QS,Bibee-di-Bobbidi-Boo
+7,> 7,0,2,QS,Bibee-di-Bobbidi-Boo
+7,> 7,1,3,QS,Bibee-di-Bobbidi-Boo
 7,CG,0,1,CG,Bibee-di-Bobbidi-Boo
 8,3.0,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,3.2,5,1,Bad Start,Mt. Everest Taquito Farmers
@@ -292,13 +293,14 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,3,2,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,6+,1,Bad Start,Mt. Everest Taquito Farmers
 8,6.0,0,5,QS,Mt. Everest Taquito Farmers
-8,6.0,1,7,QS,Mt. Everest Taquito Farmers
+8,6.0,1,8,QS,Mt. Everest Taquito Farmers
 8,6.0,2,4,QS,Mt. Everest Taquito Farmers
 8,6.0,3,4,QS,Mt. Everest Taquito Farmers
 8,6.0,4,2,QS Potential,Mt. Everest Taquito Farmers
 8,6.1,1,1,QS,Mt. Everest Taquito Farmers
 8,6.1,2,1,QS,Mt. Everest Taquito Farmers
-8,7.0,0,3,QS,Mt. Everest Taquito Farmers
+8,6.1,4,1,QS Potential,Mt. Everest Taquito Farmers
+8,7.0,0,4,QS,Mt. Everest Taquito Farmers
 8,7.0,1,1,QS,Mt. Everest Taquito Farmers
 8,7.0,2,1,QS,Mt. Everest Taquito Farmers
 8,7.0,3,1,QS,Mt. Everest Taquito Farmers
@@ -323,8 +325,9 @@ team_id,ip,earned_runs,n,start_type,team
 9,4.2,5,1,Bad Start,Book of Bob
 9,5.0,1,4,QS Potential,Book of Bob
 9,5.0,2,2,QS Potential,Book of Bob
-9,5.0,3,4,QS Potential,Book of Bob
+9,5.0,3,5,QS Potential,Book of Bob
 9,5.0,5,1,Bad Start,Book of Bob
+9,5.1,0,1,QS Potential,Book of Bob
 9,5.1,1,1,QS Potential,Book of Bob
 9,5.1,2,2,QS Potential,Book of Bob
 9,5.1,3,1,QS Potential,Book of Bob
@@ -332,6 +335,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.1,5,1,Bad Start,Book of Bob
 9,5.1,6+,2,Bad Start,Book of Bob
 9,5.2,0,2,Blue Balls,Book of Bob
+9,5.2,1,1,Blue Balls,Book of Bob
 9,5.2,2,1,Blue Balls,Book of Bob
 9,5.2,3,1,Blue Balls,Book of Bob
 9,6.0,0,8,QS,Book of Bob
@@ -453,7 +457,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,5.0,1,2,QS Potential,Ketel Bells
 13,5.0,2,4,QS Potential,Ketel Bells
 13,5.0,3,2,QS Potential,Ketel Bells
-13,5.0,4,2,Bad Start,Ketel Bells
+13,5.0,4,3,Bad Start,Ketel Bells
 13,5.1,0,1,QS Potential,Ketel Bells
 13,5.1,4,2,Bad Start,Ketel Bells
 13,5.2,0,1,Blue Balls,Ketel Bells
