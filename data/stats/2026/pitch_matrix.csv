@@ -26,10 +26,11 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.2,2,1,Blue Balls,The Talmudic Tunnelers
 1,5.2,3,1,Blue Balls,The Talmudic Tunnelers
 1,5.2,4,1,Bad Start,The Talmudic Tunnelers
-1,5.2,5,1,Bad Start,The Talmudic Tunnelers
+1,5.2,5,2,Bad Start,The Talmudic Tunnelers
 1,6.0,0,5,QS,The Talmudic Tunnelers
 1,6.0,1,9,QS,The Talmudic Tunnelers
 1,6.0,2,6,QS,The Talmudic Tunnelers
+1,6.0,3,1,QS,The Talmudic Tunnelers
 1,6.0,4,1,QS Potential,The Talmudic Tunnelers
 1,6.1,0,1,QS,The Talmudic Tunnelers
 1,6.1,1,2,QS,The Talmudic Tunnelers
@@ -58,7 +59,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,4.2,5,2,Bad Start,Tucker? I hardly know her
 2,5.0,0,1,QS Potential,Tucker? I hardly know her
 2,5.0,1,2,QS Potential,Tucker? I hardly know her
-2,5.0,2,2,QS Potential,Tucker? I hardly know her
+2,5.0,2,3,QS Potential,Tucker? I hardly know her
 2,5.0,3,3,QS Potential,Tucker? I hardly know her
 2,5.0,4,1,Bad Start,Tucker? I hardly know her
 2,5.0,5,1,Bad Start,Tucker? I hardly know her
@@ -175,7 +176,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,6.1,6+,1,Bad Start,The Traveling Secretaries
 5,6.2,0,1,QS,The Traveling Secretaries
 5,6.2,2,2,QS,The Traveling Secretaries
-5,7.0,0,5,QS,The Traveling Secretaries
+5,7.0,0,6,QS,The Traveling Secretaries
 5,7.0,1,2,QS,The Traveling Secretaries
 5,7.0,2,3,QS,The Traveling Secretaries
 5,7.0,4,1,QS Potential,The Traveling Secretaries
@@ -249,7 +250,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,5.2,4,3,Bad Start,Bibee-di-Bobbidi-Boo
 7,5.2,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,6.0,0,6,QS,Bibee-di-Bobbidi-Boo
-7,6.0,1,4,QS,Bibee-di-Bobbidi-Boo
+7,6.0,1,5,QS,Bibee-di-Bobbidi-Boo
 7,6.0,2,7,QS,Bibee-di-Bobbidi-Boo
 7,6.0,3,3,QS,Bibee-di-Bobbidi-Boo
 7,6.0,4,1,QS Potential,Bibee-di-Bobbidi-Boo
@@ -258,7 +259,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.1,5,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,6.2,3,1,QS,Bibee-di-Bobbidi-Boo
 7,7.0,0,1,QS,Bibee-di-Bobbidi-Boo
-7,7.0,1,6,QS,Bibee-di-Bobbidi-Boo
+7,7.0,1,7,QS,Bibee-di-Bobbidi-Boo
 7,7.0,2,4,QS,Bibee-di-Bobbidi-Boo
 7,7.0,3,1,QS,Bibee-di-Bobbidi-Boo
 7,< 3,4,1,Bad Start,Bibee-di-Bobbidi-Boo
@@ -337,7 +338,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.1,5,1,Bad Start,Book of Bob
 9,5.1,6+,2,Bad Start,Book of Bob
 9,5.2,0,2,Blue Balls,Book of Bob
-9,5.2,1,1,Blue Balls,Book of Bob
+9,5.2,1,2,Blue Balls,Book of Bob
 9,5.2,2,1,Blue Balls,Book of Bob
 9,5.2,3,1,Blue Balls,Book of Bob
 9,6.0,0,9,QS,Book of Bob
@@ -379,12 +380,12 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.2,1,6,Blue Balls,The West Bank Occupiers
 11,5.2,2,2,Blue Balls,The West Bank Occupiers
 11,5.2,3,1,Blue Balls,The West Bank Occupiers
-11,5.2,4,3,Bad Start,The West Bank Occupiers
+11,5.2,4,4,Bad Start,The West Bank Occupiers
 11,5.2,6+,1,Bad Start,The West Bank Occupiers
 11,6.0,0,9,QS,The West Bank Occupiers
 11,6.0,1,5,QS,The West Bank Occupiers
 11,6.0,2,7,QS,The West Bank Occupiers
-11,6.0,3,1,QS,The West Bank Occupiers
+11,6.0,3,2,QS,The West Bank Occupiers
 11,6.0,4,2,QS Potential,The West Bank Occupiers
 11,6.1,0,1,QS,The West Bank Occupiers
 11,6.1,1,1,QS,The West Bank Occupiers
@@ -447,6 +448,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,> 7,3,1,QS,Blasphemous Hot Takes
 13,3.0,0,1,Bad Start,Ketel Bells
 13,3.0,6+,1,Bad Start,Ketel Bells
+13,3.1,1,1,Bad Start,Ketel Bells
 13,3.2,6+,1,Bad Start,Ketel Bells
 13,4.0,0,1,Bad Start,Ketel Bells
 13,4.0,2,3,Bad Start,Ketel Bells
@@ -468,7 +470,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,5.1,4,2,Bad Start,Ketel Bells
 13,5.2,0,1,Blue Balls,Ketel Bells
 13,5.2,1,1,Blue Balls,Ketel Bells
-13,5.2,2,2,Blue Balls,Ketel Bells
+13,5.2,2,3,Blue Balls,Ketel Bells
 13,5.2,3,1,Blue Balls,Ketel Bells
 13,6.0,0,10,QS,Ketel Bells
 13,6.0,1,9,QS,Ketel Bells
@@ -506,7 +508,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.0,1,2,QS Potential,Top Gunner: Henderson
 14,5.0,2,3,QS Potential,Top Gunner: Henderson
 14,5.0,3,2,QS Potential,Top Gunner: Henderson
-14,5.0,4,4,Bad Start,Top Gunner: Henderson
+14,5.0,4,5,Bad Start,Top Gunner: Henderson
 14,5.0,5,1,Bad Start,Top Gunner: Henderson
 14,5.0,6+,1,Bad Start,Top Gunner: Henderson
 14,5.1,1,2,QS Potential,Top Gunner: Henderson
@@ -518,9 +520,9 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.2,4,2,Bad Start,Top Gunner: Henderson
 14,5.2,5,1,Bad Start,Top Gunner: Henderson
 14,5.2,6+,1,Bad Start,Top Gunner: Henderson
-14,6.0,0,3,QS,Top Gunner: Henderson
+14,6.0,0,4,QS,Top Gunner: Henderson
 14,6.0,1,8,QS,Top Gunner: Henderson
-14,6.0,2,5,QS,Top Gunner: Henderson
+14,6.0,2,6,QS,Top Gunner: Henderson
 14,6.0,3,2,QS,Top Gunner: Henderson
 14,6.0,4,3,QS Potential,Top Gunner: Henderson
 14,6.0,5,1,Bad Start,Top Gunner: Henderson
@@ -528,6 +530,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,6.1,1,1,QS,Top Gunner: Henderson
 14,6.2,1,1,QS,Top Gunner: Henderson
 14,6.2,2,1,QS,Top Gunner: Henderson
+14,6.2,3,2,QS,Top Gunner: Henderson
 14,6.2,4,1,QS Potential,Top Gunner: Henderson
 14,7.0,0,3,QS,Top Gunner: Henderson
 14,7.0,1,1,QS,Top Gunner: Henderson
