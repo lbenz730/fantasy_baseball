@@ -97,6 +97,7 @@ wl_history <- read_csv('data/stats/wl_history.csv')
 old_schedule <- read_csv('data/stats/schedule_2015_2019.csv')
 bylaws <- read_file('chat_bot/docs/bylaws.txt')
 prompt <- read_file('chat_bot/docs/clade_prompt.md')
+power_rankings_prompt <- read_file('chat_bot/docs/power_rankings_prompt.md')
 
 
 # ──────────────────────────────────────────────────────────────────────
@@ -317,6 +318,12 @@ ui <- page_sidebar(
       tags$li("Longest odds who ultimately did make the playoffs")
     ),
     hr(),
+    p(em("Skills:"), style = "margin-bottom: 4px;"),
+    tags$ul(
+      style = "font-size: 0.85em; padding-left: 1.2em;",
+      tags$li(tags$code("/power-rankings"), " — Generate ESPN-style power rankings")
+    ),
+    hr(),
     p("Be as specific as possible for best results."),
     p('If our conversation gets too long, start a new conversation with the button below.'),
     actionButton("reset_chat", "New Conversation",
@@ -359,7 +366,13 @@ server <- function(input, output, session) {
   
   # Handle user messages
   observeEvent(input$chat_user_input, {
-    stream <- chat_client()$stream_async(input$chat_user_input)
+    user_msg <- input$chat_user_input
+    actual_msg <- if (grepl("^/power-rankings", trimws(user_msg), ignore.case = TRUE)) {
+      power_rankings_prompt
+    } else {
+      user_msg
+    }
+    stream <- chat_client()$stream_async(actual_msg)
     chat_append("chat", stream)
   })
   
