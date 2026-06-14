@@ -11,6 +11,7 @@ deployApp(forceUpdate = T,        # root of the repo becomes the base
             'chat_bot/app.R',
             'chat_bot/docs/bylaws.txt',
             'chat_bot/docs/clade_prompt.md',
+            'chat_bot/docs/power_rankings_prompt.md',
             list.files('data/', recursive = TRUE, full.names = TRUE)
           ), 
           appId = 17282689,
