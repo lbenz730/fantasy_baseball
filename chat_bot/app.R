@@ -303,6 +303,14 @@ ui <- page_sidebar(
     font-size: 14px !important;
     padding: 0;
   }
+  .sidebar code {
+    color: #F76B1F !important;
+    background-color: #0D2038 !important;
+    font-family: monospace !important;
+    font-size: 0.9em !important;
+    padding: 2px 5px !important;
+    border-radius: 3px !important;
+  }
 "))),
   sidebar = sidebar(
     title = "Hi, I'm Dorothy!",
