@@ -1,13 +1,19 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 Bibee-di-Bobbidi-Boo,The West Bank Occupiers,0,7,0,8,8,0,0.41248949067394114,0.49812692435459077
 Bibee-di-Bobbidi-Boo,The West Bank Occupiers,1,6,-6,8,7,1,0.4379366991185857,0.5360278473614218
-Top Gunner: Henderson,The Novaks,0,7,0,8,8,0,0.327358312466578,0.49812692435459077
-Top Gunner: Henderson,The Novaks,1,6,-97.5,8,7,1,0.02796802202770407,0.03169987995968734
-All That is Wright,Blasphemous Hot Takes,0,7,0,8,8,0,0.5759913911222819,0.49812692435459077
+Bibee-di-Bobbidi-Boo,The West Bank Occupiers,2,5,16,4,7,-3,0.3302757273472526,0.4099544338172563
+Top Gunner: Henderson,The Novaks,0,7,0,8,8,0,0.3276946915439924,0.49812692435459077
+Top Gunner: Henderson,The Novaks,1,6,-97.5,8,7,1,0.028234165707322907,0.03169987995968734
+Top Gunner: Henderson,The Novaks,2,5,-94.5,4,6,-2,0.015232185998827426,0.014558780835420924
+All That is Wright,Blasphemous Hot Takes,0,7,0,8,8,0,0.5752452370293633,0.49812692435459077
 All That is Wright,Blasphemous Hot Takes,1,6,13.5,8,8,0,0.6332703017383866,0.658761930063393
-Ketel Bells,The Talmudic Tunnelers,0,7,0,8,8,0,0.4745203583054464,0.49812692435459077
+All That is Wright,Blasphemous Hot Takes,2,5,-2.5,6,7,-1,0.48743926469372767,0.3806846829199322
+Ketel Bells,The Talmudic Tunnelers,0,7,0,8,8,0,0.4756629454295035,0.49812692435459077
 Ketel Bells,The Talmudic Tunnelers,1,6,-2,7,7,0,0.46206686869444125,0.47351195291587067
+Ketel Bells,The Talmudic Tunnelers,2,5,6.5,6,6,0,0.5439102440035972,0.5775746250930593
 Book of Bob,Mt. Everest Taquito Farmers,0,7,0,8,8,0,0.5146795594927631,0.49812692435459077
 Book of Bob,Mt. Everest Taquito Farmers,1,6,-27.5,8,7,1,0.4020308784471488,0.333369400017726
+Book of Bob,Mt. Everest Taquito Farmers,2,5,21,7,7,0,0.6667069125138195,0.7364073633961236
 Tucker? I hardly know her,The Traveling Secretaries,0,7,0,8,8,0,0.24557921202897423,0.49812692435459077
 Tucker? I hardly know her,The Traveling Secretaries,1,6,71,6,7,-1,0.7769835653392063,0.915033431096666
+Tucker? I hardly know her,The Traveling Secretaries,2,5,51.5,6,6,0,0.7740019569988746,0.9262460520842171
