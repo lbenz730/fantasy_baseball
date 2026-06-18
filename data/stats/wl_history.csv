@@ -158,7 +158,7 @@ James Whitty,Jack Wagner,5,6,0.45454545454545453
 James Whitty,Jake Hubertus,6,4,0.6
 James Whitty,Louis Danowsky,2,0,1
 James Whitty,Luke Benz,3,7,0.3
-James Whitty,Michael Bogaty,6,8,0.42857142857142855
+James Whitty,Michael Bogaty,7,7,0.5
 James Whitty,Zach Vinik,2,6,0.25
 Jordan Bennett,Alex Brod,0,1,0
 Jordan Bennett,Andrew Tham,1,1,0.5
@@ -231,7 +231,7 @@ Luke Benz,James Whitty,7,3,0.7
 Luke Benz,Kent Hubert,1,0,1
 Luke Benz,Louis Danowsky,3,1,0.75
 Luke Benz,Michael Bogaty,8,7,0.5333333333333333
-Luke Benz,Zach Vinik,5,5,0.5
+Luke Benz,Zach Vinik,4,6,0.4
 Matt O'Donnell,Alex Brod,1,5,0.16666666666666666
 Matt O'Donnell,Andrew Lama,4,0,1
 Matt O'Donnell,Andrew Tham,4,2,0.6666666666666666
@@ -253,7 +253,7 @@ Michael Bogaty,Dan Gold,10,7,0.5882352941176471
 Michael Bogaty,Dylan Boyd,6,10,0.375
 Michael Bogaty,Jack Wagner,8,7,0.5333333333333333
 Michael Bogaty,Jake Hubertus,6,6,0.5
-Michael Bogaty,James Whitty,8,6,0.5714285714285714
+Michael Bogaty,James Whitty,7,7,0.5
 Michael Bogaty,Josh Chodor,2,0,1
 Michael Bogaty,Kent Hubert,6,1,0.8571428571428571
 Michael Bogaty,Louis Danowsky,10,1,0.9090909090909091
@@ -279,5 +279,5 @@ Zach Vinik,Dylan Boyd,6,3,0.6666666666666666
 Zach Vinik,Jack Wagner,7,2,0.7777777777777778
 Zach Vinik,Jake Hubertus,5,4,0.5555555555555556
 Zach Vinik,James Whitty,6,2,0.75
-Zach Vinik,Luke Benz,5,5,0.5
+Zach Vinik,Luke Benz,6,4,0.6
 Zach Vinik,Michael Bogaty,3,7,0.3
