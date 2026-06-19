@@ -41,7 +41,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,6.2,3,1,QS,The Talmudic Tunnelers
 1,7.0,0,3,QS,The Talmudic Tunnelers
 1,7.0,1,2,QS,The Talmudic Tunnelers
-1,7.0,3,1,QS,The Talmudic Tunnelers
+1,7.0,3,2,QS,The Talmudic Tunnelers
 1,< 3,1,1,Bad Start,The Talmudic Tunnelers
 1,> 7,6+,1,Bad Start,The Talmudic Tunnelers
 2,3.1,6+,1,Bad Start,Tucker? I hardly know her
@@ -80,7 +80,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,6.0,4,2,QS Potential,Tucker? I hardly know her
 2,6.0,5,1,Bad Start,Tucker? I hardly know her
 2,6.1,0,1,QS,Tucker? I hardly know her
-2,6.1,1,2,QS,Tucker? I hardly know her
+2,6.1,1,3,QS,Tucker? I hardly know her
 2,6.1,3,2,QS,Tucker? I hardly know her
 2,6.2,4,1,QS Potential,Tucker? I hardly know her
 2,7.0,0,1,QS,Tucker? I hardly know her
@@ -156,7 +156,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,4.2,3,2,Bad Start,The Traveling Secretaries
 5,4.2,4,3,Bad Start,The Traveling Secretaries
 5,5.0,0,1,QS Potential,The Traveling Secretaries
-5,5.0,1,7,QS Potential,The Traveling Secretaries
+5,5.0,1,8,QS Potential,The Traveling Secretaries
 5,5.0,2,4,QS Potential,The Traveling Secretaries
 5,5.0,3,4,QS Potential,The Traveling Secretaries
 5,5.0,4,2,Bad Start,The Traveling Secretaries
@@ -290,7 +290,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,4.2,2,2,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,3,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,4,1,Bad Start,Mt. Everest Taquito Farmers
-8,5.0,0,2,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,0,3,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,1,4,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,2,6,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,3,3,QS Potential,Mt. Everest Taquito Farmers
@@ -340,7 +340,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,4.2,5,1,Bad Start,Book of Bob
 9,5.0,1,6,QS Potential,Book of Bob
 9,5.0,2,2,QS Potential,Book of Bob
-9,5.0,3,5,QS Potential,Book of Bob
+9,5.0,3,6,QS Potential,Book of Bob
 9,5.0,5,1,Bad Start,Book of Bob
 9,5.0,6+,1,Bad Start,Book of Bob
 9,5.1,0,1,QS Potential,Book of Bob
@@ -366,10 +366,10 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.1,5,1,Bad Start,Book of Bob
 9,6.2,1,1,QS,Book of Bob
 9,6.2,6+,1,Bad Start,Book of Bob
-9,7.0,0,5,QS,Book of Bob
+9,7.0,0,7,QS,Book of Bob
 9,7.0,1,2,QS,Book of Bob
 9,7.0,2,2,QS,Book of Bob
-9,7.0,3,2,QS,Book of Bob
+9,7.0,3,3,QS,Book of Bob
 9,< 3,5,1,Bad Start,Book of Bob
 9,> 7,3,1,QS,Book of Bob
 11,3.0,6+,1,Bad Start,The West Bank Occupiers
@@ -399,7 +399,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.2,6+,1,Bad Start,The West Bank Occupiers
 11,6.0,0,9,QS,The West Bank Occupiers
 11,6.0,1,5,QS,The West Bank Occupiers
-11,6.0,2,8,QS,The West Bank Occupiers
+11,6.0,2,9,QS,The West Bank Occupiers
 11,6.0,3,3,QS,The West Bank Occupiers
 11,6.0,4,2,QS Potential,The West Bank Occupiers
 11,6.1,0,1,QS,The West Bank Occupiers
@@ -463,7 +463,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,< 3,6+,1,Bad Start,Blasphemous Hot Takes
 12,> 7,0,1,QS,Blasphemous Hot Takes
 12,> 7,1,1,QS,Blasphemous Hot Takes
-12,> 7,3,1,QS,Blasphemous Hot Takes
+12,> 7,3,2,QS,Blasphemous Hot Takes
 13,3.0,0,1,Bad Start,Ketel Bells
 13,3.0,6+,1,Bad Start,Ketel Bells
 13,3.1,1,1,Bad Start,Ketel Bells
@@ -482,7 +482,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.2,6+,1,Bad Start,Ketel Bells
 13,5.0,0,3,QS Potential,Ketel Bells
 13,5.0,1,2,QS Potential,Ketel Bells
-13,5.0,2,4,QS Potential,Ketel Bells
+13,5.0,2,5,QS Potential,Ketel Bells
 13,5.0,3,2,QS Potential,Ketel Bells
 13,5.0,4,4,Bad Start,Ketel Bells
 13,5.1,0,1,QS Potential,Ketel Bells
