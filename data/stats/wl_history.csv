@@ -21,7 +21,7 @@ Andrew Lama,Alex Brod,9,10,0.47368421052631576
 Andrew Lama,Andrew Tham,8.5,6.5,0.5666666666666667
 Andrew Lama,Blair Prato,7,7,0.5
 Andrew Lama,Dan Gold,8,11,0.42105263157894735
-Andrew Lama,Dylan Boyd,12,9,0.5714285714285714
+Andrew Lama,Dylan Boyd,13,8,0.6190476190476191
 Andrew Lama,Griffin Schwab,3,1,0.75
 Andrew Lama,Jack Wagner,7,16,0.30434782608695654
 Andrew Lama,Jake Hubertus,10,14,0.4166666666666667
@@ -84,7 +84,7 @@ Dan Gold,Michael Bogaty,7,10,0.4117647058823529
 Dan Gold,Vick Raghunathan,2,0,1
 Dan Gold,Zach Vinik,3,6,0.3333333333333333
 Dylan Boyd,Alex Brod,10,16,0.38461538461538464
-Dylan Boyd,Andrew Lama,9,12,0.42857142857142855
+Dylan Boyd,Andrew Lama,8,13,0.38095238095238093
 Dylan Boyd,Andrew Tham,13,9,0.5909090909090909
 Dylan Boyd,Blair Prato,4,12,0.25
 Dylan Boyd,Dan Gold,6,11,0.35294117647058826
@@ -231,7 +231,7 @@ Luke Benz,James Whitty,7,3,0.7
 Luke Benz,Kent Hubert,1,0,1
 Luke Benz,Louis Danowsky,3,1,0.75
 Luke Benz,Michael Bogaty,8,7,0.5333333333333333
-Luke Benz,Zach Vinik,5,5,0.5
+Luke Benz,Zach Vinik,4,6,0.4
 Matt O'Donnell,Alex Brod,1,5,0.16666666666666666
 Matt O'Donnell,Andrew Lama,4,0,1
 Matt O'Donnell,Andrew Tham,4,2,0.6666666666666666
@@ -279,5 +279,5 @@ Zach Vinik,Dylan Boyd,6,3,0.6666666666666666
 Zach Vinik,Jack Wagner,7,2,0.7777777777777778
 Zach Vinik,Jake Hubertus,5,4,0.5555555555555556
 Zach Vinik,James Whitty,6,2,0.75
-Zach Vinik,Luke Benz,5,5,0.5
+Zach Vinik,Luke Benz,6,4,0.6
 Zach Vinik,Michael Bogaty,3,7,0.3
