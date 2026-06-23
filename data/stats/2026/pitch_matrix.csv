@@ -25,7 +25,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.1,4,1,Bad Start,The Talmudic Tunnelers
 1,5.1,5,2,Bad Start,The Talmudic Tunnelers
 1,5.2,1,2,Blue Balls,The Talmudic Tunnelers
-1,5.2,2,1,Blue Balls,The Talmudic Tunnelers
+1,5.2,2,2,Blue Balls,The Talmudic Tunnelers
 1,5.2,3,1,Blue Balls,The Talmudic Tunnelers
 1,5.2,4,1,Bad Start,The Talmudic Tunnelers
 1,5.2,5,2,Bad Start,The Talmudic Tunnelers
@@ -142,7 +142,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,< 3,0,1,Bad Start,All That is Wright
 4,< 3,3,1,Bad Start,All That is Wright
 4,< 3,4,1,Bad Start,All That is Wright
-4,> 7,0,3,QS,All That is Wright
+4,> 7,0,4,QS,All That is Wright
 4,> 7,1,4,QS,All That is Wright
 4,> 7,2,2,QS,All That is Wright
 4,> 7,3,1,QS,All That is Wright
@@ -176,7 +176,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.2,4,2,Bad Start,The Traveling Secretaries
 5,6.0,0,3,QS,The Traveling Secretaries
 5,6.0,1,9,QS,The Traveling Secretaries
-5,6.0,2,6,QS,The Traveling Secretaries
+5,6.0,2,7,QS,The Traveling Secretaries
 5,6.0,3,2,QS,The Traveling Secretaries
 5,6.0,6+,3,Bad Start,The Traveling Secretaries
 5,6.1,1,1,QS,The Traveling Secretaries
@@ -205,7 +205,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,4.2,5,1,Bad Start,The Novaks
 6,5.0,0,2,QS Potential,The Novaks
 6,5.0,1,5,QS Potential,The Novaks
-6,5.0,2,3,QS Potential,The Novaks
+6,5.0,2,4,QS Potential,The Novaks
 6,5.0,3,7,QS Potential,The Novaks
 6,5.0,4,4,Bad Start,The Novaks
 6,5.0,5,3,Bad Start,The Novaks
@@ -242,6 +242,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,> 7,1,2,QS,The Novaks
 6,CG,0,1,CG,The Novaks
 7,3.0,0,1,Bad Start,Bibee-di-Bobbidi-Boo
+7,3.0,1,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,3.0,6+,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,3.2,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,3,2,Bad Start,Bibee-di-Bobbidi-Boo
@@ -276,14 +277,14 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.1,5,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,6.2,3,1,QS,Bibee-di-Bobbidi-Boo
 7,7.0,0,2,QS,Bibee-di-Bobbidi-Boo
-7,7.0,1,8,QS,Bibee-di-Bobbidi-Boo
+7,7.0,1,9,QS,Bibee-di-Bobbidi-Boo
 7,7.0,2,5,QS,Bibee-di-Bobbidi-Boo
 7,7.0,3,1,QS,Bibee-di-Bobbidi-Boo
 7,7.0,4,1,QS Potential,Bibee-di-Bobbidi-Boo
 7,< 3,0,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,< 3,4,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,> 7,0,2,QS,Bibee-di-Bobbidi-Boo
-7,> 7,1,4,QS,Bibee-di-Bobbidi-Boo
+7,> 7,1,5,QS,Bibee-di-Bobbidi-Boo
 7,CG,0,1,CG,Bibee-di-Bobbidi-Boo
 8,3.0,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,3.2,5,1,Bad Start,Mt. Everest Taquito Farmers
@@ -490,7 +491,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.0,4,2,Bad Start,Ketel Bells
 13,4.0,6+,2,Bad Start,Ketel Bells
 13,4.1,4,1,Bad Start,Ketel Bells
-13,4.1,5,3,Bad Start,Ketel Bells
+13,4.1,5,4,Bad Start,Ketel Bells
 13,4.1,6+,1,Bad Start,Ketel Bells
 13,4.2,2,1,Bad Start,Ketel Bells
 13,4.2,3,2,Bad Start,Ketel Bells
@@ -559,7 +560,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.2,5,1,Bad Start,Top Gunner: Henderson
 14,5.2,6+,1,Bad Start,Top Gunner: Henderson
 14,6.0,0,5,QS,Top Gunner: Henderson
-14,6.0,1,9,QS,Top Gunner: Henderson
+14,6.0,1,11,QS,Top Gunner: Henderson
 14,6.0,2,7,QS,Top Gunner: Henderson
 14,6.0,3,2,QS,Top Gunner: Henderson
 14,6.0,4,4,QS Potential,Top Gunner: Henderson
@@ -570,7 +571,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,6.2,2,1,QS,Top Gunner: Henderson
 14,6.2,3,2,QS,Top Gunner: Henderson
 14,6.2,4,1,QS Potential,Top Gunner: Henderson
-14,7.0,0,3,QS,Top Gunner: Henderson
+14,7.0,0,4,QS,Top Gunner: Henderson
 14,7.0,1,1,QS,Top Gunner: Henderson
 14,7.0,2,3,QS,Top Gunner: Henderson
 14,7.0,3,1,QS,Top Gunner: Henderson
