@@ -65,18 +65,18 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 11,64,8,395.5,234.5,161,4,330.5,202,128.5,Mt. Everest Taquito Farmers,All That is Wright
 11,65,5,433.5,271,162.5,13,333.5,232,101.5,The Traveling Secretaries,Ketel Bells
 11,66,2,300.5,216,84.5,9,288,242.5,45.5,Tucker? I hardly know her,Book of Bob
-12,67,7,312,193,119,11,321.5,207.5,114,Bibee-di-Bobbidi-Boo,The West Bank Occupiers
+12,67,7,312,193,119,11,324.5,210.5,114,Bibee-di-Bobbidi-Boo,The West Bank Occupiers
 12,68,14,259,198.5,60.5,6,412,267.5,144.5,Top Gunner: Henderson,The Novaks
 12,69,4,363,213.5,149.5,12,361,193,168,All That is Wright,Blasphemous Hot Takes
-12,70,13,282.5,153.5,129,1,286.5,171,115.5,Ketel Bells,The Talmudic Tunnelers
+12,70,13,283.5,154.5,129,1,286.5,171,115.5,Ketel Bells,The Talmudic Tunnelers
 12,71,9,407,228.5,178.5,8,297,145,152,Book of Bob,Mt. Everest Taquito Farmers
 12,72,2,393,239.5,153.5,5,245,180.5,64.5,Tucker? I hardly know her,The Traveling Secretaries
-13,73,14,105,39.5,65.5,7,80,16.5,63.5,Top Gunner: Henderson,Bibee-di-Bobbidi-Boo
-13,74,11,13.5,7.5,6,4,53.5,23,30.5,The West Bank Occupiers,All That is Wright
-13,75,6,43,19.5,23.5,13,33,34.5,-1.5,The Novaks,Ketel Bells
-13,76,12,25,18.5,6.5,9,20,20,NA,Blasphemous Hot Takes,Book of Bob
-13,77,1,4.5,7.5,-3,2,27,27,NA,The Talmudic Tunnelers,Tucker? I hardly know her
-13,78,8,20.5,13.5,7,5,31.5,4.5,27,Mt. Everest Taquito Farmers,The Traveling Secretaries
+13,73,14,151.5,64,87.5,7,124,53.5,70.5,Top Gunner: Henderson,Bibee-di-Bobbidi-Boo
+13,74,11,86.5,46.5,40,4,94.5,50,44.5,The West Bank Occupiers,All That is Wright
+13,75,6,78,48.5,29.5,13,85,72.5,12.5,The Novaks,Ketel Bells
+13,76,12,53.5,35.5,18,9,84,50.5,33.5,Blasphemous Hot Takes,Book of Bob
+13,77,1,123,40,83,2,67,67,NA,The Talmudic Tunnelers,Tucker? I hardly know her
+13,78,8,82,49.5,32.5,5,75,30.5,44.5,Mt. Everest Taquito Farmers,The Traveling Secretaries
 14,79,7,NA,NA,NA,4,NA,NA,NA,Bibee-di-Bobbidi-Boo,All That is Wright
 14,80,13,NA,NA,NA,14,NA,NA,NA,Ketel Bells,Top Gunner: Henderson
 14,81,9,NA,NA,NA,11,NA,NA,NA,Book of Bob,The West Bank Occupiers

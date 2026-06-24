@@ -1,13 +1,19 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.43856743245020574,0.49812692435459077
 Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,1,6,25,5,5,0,0.6508090679881228,0.7728539432273568
-The West Bank Occupiers,All That is Wright,0,7,0,8,8,0,0.47050366518807,0.49812692435459077
-The West Bank Occupiers,All That is Wright,1,6,-40,8,7,1,0.28391959552107815,0.23508560082011226
-The Novaks,Ketel Bells,0,7,0,8,8,0,0.6250519988255147,0.49812692435459077
+Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,2,5,27.5,4,5,-1,0.5932666065906097,0.6642004264467006
+The West Bank Occupiers,All That is Wright,0,7,0,8,8,0,0.4715501169470208,0.49812692435459077
+The West Bank Occupiers,All That is Wright,1,6,-40,8,7,1,0.2840519893580532,0.23508560082011226
+The West Bank Occupiers,All That is Wright,2,5,-8,7,6,1,0.4612992538323207,0.5166111058544134
+The Novaks,Ketel Bells,0,7,0,8,8,0,0.624723841592864,0.49812692435459077
 The Novaks,Ketel Bells,1,6,10,7,7,0,0.6526827165450797,0.6189993962477375
+The Novaks,Ketel Bells,2,5,-7,7,6,1,0.5706166093974683,0.5263294306543334
 Blasphemous Hot Takes,Book of Bob,0,7,0,8,8,0,0.4601708303128665,0.49812692435459077
 Blasphemous Hot Takes,Book of Bob,1,6,5,8,8,0,0.49316045411567494,0.5594439093341729
+Blasphemous Hot Takes,Book of Bob,2,5,-30.5,7,6,1,0.32130626269421286,0.3079280171911568
 The Talmudic Tunnelers,Tucker? I hardly know her,0,7,0,8,8,0,0.5532729788926675,0.49812692435459077
 The Talmudic Tunnelers,Tucker? I hardly know her,1,6,-22.5,7,8,-1,0.358688121756337,0.2199796722353593
+The Talmudic Tunnelers,Tucker? I hardly know her,2,5,56,3,8,-5,0.7031642907603455,0.7848665683189395
 Mt. Everest Taquito Farmers,The Traveling Secretaries,0,7,0,8,8,0,0.3341475644248037,0.49812692435459077
 Mt. Everest Taquito Farmers,The Traveling Secretaries,1,6,-11,8,7,1,0.33428903707773794,0.4874101225987726
+Mt. Everest Taquito Farmers,The Traveling Secretaries,2,5,7,7,6,1,0.45536323694530767,0.6571600987585208
