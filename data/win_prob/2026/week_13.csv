@@ -1,31 +1,37 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.43856743245020574,0.49812692435459077
+Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,0,7,0,8,8,0,0.4389121711853064,0.49812692435459077
 Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,1,6,25,5,5,0,0.6508090679881228,0.7728539432273568
 Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,2,5,27.5,4,5,-1,0.5932666065906097,0.6642004264467006
 Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,3,4,-4.5,4,4,0,0.44659516072661176,0.4429370987609274
 Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,4,3,-6,4,4,0,0.4308419553393305,0.4247827966780367
+Top Gunner: Henderson,Bibee-di-Bobbidi-Boo,5,2,-3,4,4,0,0.46695938989506736,0.4612451308960349
 The West Bank Occupiers,All That is Wright,0,7,0,8,8,0,0.4715501169470208,0.49812692435459077
 The West Bank Occupiers,All That is Wright,1,6,-40,8,7,1,0.2840519893580532,0.23508560082011226
 The West Bank Occupiers,All That is Wright,2,5,-8,7,6,1,0.4612992538323207,0.5166111058544134
 The West Bank Occupiers,All That is Wright,3,4,-15.5,7,4,3,0.6241209212202489,0.5903769449684313
 The West Bank Occupiers,All That is Wright,4,3,14.5,5,3,2,0.7638852241658001,0.77495271117629
+The West Bank Occupiers,All That is Wright,5,2,-28,2,1,1,0.34258421301945746,0.3290559268039346
 The Novaks,Ketel Bells,0,7,0,8,8,0,0.624723841592864,0.49812692435459077
 The Novaks,Ketel Bells,1,6,10,7,7,0,0.6526827165450797,0.6189993962477375
-The Novaks,Ketel Bells,2,5,-7,7,6,1,0.5706166093974683,0.5263294306543334
-The Novaks,Ketel Bells,3,4,-60,6,4,2,0.23758282767819186,0.17618799741500712
-The Novaks,Ketel Bells,4,3,-68,5,4,1,0.08970486396871497,0.09361174078397398
+The Novaks,Ketel Bells,2,5,-6,7,6,1,0.576095807280512,0.5360278473614218
+The Novaks,Ketel Bells,3,4,-59,6,4,2,0.24339291653864997,0.18166754652229022
+The Novaks,Ketel Bells,4,3,-67,5,4,1,0.10066028568373157,0.09696899519493345
+The Novaks,Ketel Bells,5,2,-35.5,2,3,-1,0.11739666246875904,0.14526560340344044
 Blasphemous Hot Takes,Book of Bob,0,7,0,8,8,0,0.4601708303128665,0.49812692435459077
 Blasphemous Hot Takes,Book of Bob,1,6,5,8,8,0,0.49316045411567494,0.5594439093341729
-Blasphemous Hot Takes,Book of Bob,2,5,-30.5,7,6,1,0.32130626269421286,0.3079280171911568
-Blasphemous Hot Takes,Book of Bob,3,4,-67,6,4,2,0.19570339431133943,0.14142630049422755
-Blasphemous Hot Takes,Book of Bob,4,3,-59,5,3,2,0.22922504744761601,0.18166754652229022
-The Talmudic Tunnelers,Tucker? I hardly know her,0,7,0,8,8,0,0.5532729788926675,0.49812692435459077
+Blasphemous Hot Takes,Book of Bob,2,5,-41.5,7,6,1,0.24039809162133652,0.22474357757537147
+Blasphemous Hot Takes,Book of Bob,3,4,-78,6,4,2,0.11517358580628469,0.09851820068555239
+Blasphemous Hot Takes,Book of Bob,4,3,-70,5,3,2,0.12453606275955453,0.1283759548385746
+Blasphemous Hot Takes,Book of Bob,5,2,-97,4,1,3,0.04892414126363526,0.06942389476136017
+The Talmudic Tunnelers,Tucker? I hardly know her,0,7,0,8,8,0,0.5522346897755989,0.49812692435459077
 The Talmudic Tunnelers,Tucker? I hardly know her,1,6,-22.5,7,8,-1,0.358688121756337,0.2199796722353593
 The Talmudic Tunnelers,Tucker? I hardly know her,2,5,56,3,8,-5,0.7031642907603455,0.7848665683189395
 The Talmudic Tunnelers,Tucker? I hardly know her,3,4,-11,3,5,-2,0.2582547788743398,0.24677282816381332
 The Talmudic Tunnelers,Tucker? I hardly know her,4,3,-65,3,3,0,0.05440055256493069,0.0387663754526365
+The Talmudic Tunnelers,Tucker? I hardly know her,5,2,-98.5,3,1,2,0.03572386327152255,0.048408639093828296
 Mt. Everest Taquito Farmers,The Traveling Secretaries,0,7,0,8,8,0,0.3341475644248037,0.49812692435459077
 Mt. Everest Taquito Farmers,The Traveling Secretaries,1,6,-11,8,7,1,0.33428903707773794,0.4874101225987726
-Mt. Everest Taquito Farmers,The Traveling Secretaries,2,5,7,7,6,1,0.45536323694530767,0.6571600987585208
-Mt. Everest Taquito Farmers,The Traveling Secretaries,3,4,30,5,4,1,0.8055734558258366,0.8243975258638018
-Mt. Everest Taquito Farmers,The Traveling Secretaries,4,3,35.5,4,3,1,0.8538083638506124,0.853289169945811
+Mt. Everest Taquito Farmers,The Traveling Secretaries,2,5,8,7,6,1,0.4573159095881453,0.6658802614798498
+Mt. Everest Taquito Farmers,The Traveling Secretaries,3,4,31,5,4,1,0.8214291027478652,0.8299646036288519
+Mt. Everest Taquito Farmers,The Traveling Secretaries,4,3,36.5,4,3,1,0.8547721729591184,0.8580979634894395
+Mt. Everest Taquito Farmers,The Traveling Secretaries,5,2,33.5,2,3,-1,0.7078635153912509,0.7141880026431896
