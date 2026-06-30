@@ -81,9 +81,9 @@ team_id,ip,earned_runs,n,start_type,team
 2,6.0,0,5,QS,Tucker? I hardly know her
 2,6.0,1,11,QS,Tucker? I hardly know her
 2,6.0,2,7,QS,Tucker? I hardly know her
-2,6.0,3,2,QS,Tucker? I hardly know her
+2,6.0,3,3,QS,Tucker? I hardly know her
 2,6.0,4,2,QS Potential,Tucker? I hardly know her
-2,6.0,5,1,Bad Start,Tucker? I hardly know her
+2,6.0,5,2,Bad Start,Tucker? I hardly know her
 2,6.1,0,1,QS,Tucker? I hardly know her
 2,6.1,1,3,QS,Tucker? I hardly know her
 2,6.1,3,2,QS,Tucker? I hardly know her
@@ -96,7 +96,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,7.0,4,1,QS Potential,Tucker? I hardly know her
 2,< 3,0,1,Bad Start,Tucker? I hardly know her
 2,< 3,1,2,Bad Start,Tucker? I hardly know her
-2,< 3,2,2,Bad Start,Tucker? I hardly know her
+2,< 3,2,3,Bad Start,Tucker? I hardly know her
 2,< 3,3,1,Bad Start,Tucker? I hardly know her
 2,< 3,6+,1,Bad Start,Tucker? I hardly know her
 2,> 7,0,4,QS,Tucker? I hardly know her
@@ -119,7 +119,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.0,3,3,QS Potential,All That is Wright
 4,5.0,5,1,Bad Start,All That is Wright
 4,5.1,1,1,QS Potential,All That is Wright
-4,5.1,2,2,QS Potential,All That is Wright
+4,5.1,2,3,QS Potential,All That is Wright
 4,5.1,3,2,QS Potential,All That is Wright
 4,5.1,4,1,Bad Start,All That is Wright
 4,5.1,5,2,Bad Start,All That is Wright
@@ -188,12 +188,12 @@ team_id,ip,earned_runs,n,start_type,team
 5,6.0,3,2,QS,The Traveling Secretaries
 5,6.0,6+,3,Bad Start,The Traveling Secretaries
 5,6.1,1,1,QS,The Traveling Secretaries
-5,6.1,2,1,QS,The Traveling Secretaries
+5,6.1,2,2,QS,The Traveling Secretaries
 5,6.1,6+,1,Bad Start,The Traveling Secretaries
 5,6.2,0,1,QS,The Traveling Secretaries
 5,6.2,2,2,QS,The Traveling Secretaries
 5,6.2,4,1,QS Potential,The Traveling Secretaries
-5,7.0,0,6,QS,The Traveling Secretaries
+5,7.0,0,7,QS,The Traveling Secretaries
 5,7.0,1,3,QS,The Traveling Secretaries
 5,7.0,2,3,QS,The Traveling Secretaries
 5,7.0,4,1,QS Potential,The Traveling Secretaries
@@ -338,7 +338,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,6.1,4,1,QS Potential,Mt. Everest Taquito Farmers
 8,6.2,0,1,QS,Mt. Everest Taquito Farmers
 8,7.0,0,4,QS,Mt. Everest Taquito Farmers
-8,7.0,1,2,QS,Mt. Everest Taquito Farmers
+8,7.0,1,3,QS,Mt. Everest Taquito Farmers
 8,7.0,2,1,QS,Mt. Everest Taquito Farmers
 8,7.0,3,2,QS,Mt. Everest Taquito Farmers
 8,< 3,0,1,Bad Start,Mt. Everest Taquito Farmers
@@ -437,6 +437,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,6.2,0,1,QS,The West Bank Occupiers
 11,6.2,1,2,QS,The West Bank Occupiers
 11,6.2,2,2,QS,The West Bank Occupiers
+11,6.2,4,1,QS Potential,The West Bank Occupiers
 11,7.0,0,1,QS,The West Bank Occupiers
 11,7.0,1,2,QS,The West Bank Occupiers
 11,7.0,2,2,QS,The West Bank Occupiers
@@ -488,7 +489,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,6.1,2,1,QS,Blasphemous Hot Takes
 12,6.1,3,1,QS,Blasphemous Hot Takes
 12,6.1,6+,1,Bad Start,Blasphemous Hot Takes
-12,6.2,1,3,QS,Blasphemous Hot Takes
+12,6.2,1,4,QS,Blasphemous Hot Takes
 12,6.2,3,2,QS,Blasphemous Hot Takes
 12,6.2,5,1,Bad Start,Blasphemous Hot Takes
 12,7.0,0,6,QS,Blasphemous Hot Takes
@@ -498,6 +499,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,< 3,6+,1,Bad Start,Blasphemous Hot Takes
 12,> 7,0,1,QS,Blasphemous Hot Takes
 12,> 7,1,1,QS,Blasphemous Hot Takes
+12,> 7,2,1,QS,Blasphemous Hot Takes
 12,> 7,3,2,QS,Blasphemous Hot Takes
 12,CG,2,1,CG,Blasphemous Hot Takes
 13,3.0,0,1,Bad Start,Ketel Bells
@@ -511,7 +513,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.0,6+,2,Bad Start,Ketel Bells
 13,4.1,4,1,Bad Start,Ketel Bells
 13,4.1,5,4,Bad Start,Ketel Bells
-13,4.1,6+,1,Bad Start,Ketel Bells
+13,4.1,6+,2,Bad Start,Ketel Bells
 13,4.2,2,1,Bad Start,Ketel Bells
 13,4.2,3,2,Bad Start,Ketel Bells
 13,4.2,5,1,Bad Start,Ketel Bells
@@ -577,7 +579,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.2,1,4,Blue Balls,Top Gunner: Henderson
 14,5.2,2,1,Blue Balls,Top Gunner: Henderson
 14,5.2,4,2,Bad Start,Top Gunner: Henderson
-14,5.2,5,1,Bad Start,Top Gunner: Henderson
+14,5.2,5,2,Bad Start,Top Gunner: Henderson
 14,5.2,6+,1,Bad Start,Top Gunner: Henderson
 14,6.0,0,5,QS,Top Gunner: Henderson
 14,6.0,1,11,QS,Top Gunner: Henderson

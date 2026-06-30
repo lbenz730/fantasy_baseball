@@ -1,7 +1,13 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 Bibee-di-Bobbidi-Boo,All That is Wright,0,7,0,8,8,0,0.4075600352065151,0.49812692435459077
+Bibee-di-Bobbidi-Boo,All That is Wright,1,6,-46,8,7,1,0.21408947209232196,0.19568381208743368
 Ketel Bells,Top Gunner: Henderson,0,7,0,8,8,0,0.5879208957148995,0.49812692435459077
+Ketel Bells,Top Gunner: Henderson,1,6,-18.5,7,7,0,0.43196925341634584,0.28512819705151693
 Book of Bob,The West Bank Occupiers,0,7,0,8,8,0,0.5041459708638404,0.49812692435459077
+Book of Bob,The West Bank Occupiers,1,6,0.5,8,7,1,0.5672654653518298,0.5980899457777034
 Tucker? I hardly know her,The Novaks,0,7,0,8,8,0,0.38389970663556705,0.49812692435459077
+Tucker? I hardly know her,The Novaks,1,6,22,5,8,-3,0.4059391871455391,0.4633911328331029
 The Traveling Secretaries,Blasphemous Hot Takes,0,7,0,8,8,0,0.6339793911515212,0.49812692435459077
-Mt. Everest Taquito Farmers,The Talmudic Tunnelers,0,7,0,8,8,0,0.4711442512979616,0.49812692435459077
+The Traveling Secretaries,Blasphemous Hot Takes,1,6,-9.5,6,6,0,0.5151279887349105,0.38328025777672553
+Mt. Everest Taquito Farmers,The Talmudic Tunnelers,0,7,0,8,8,0,0.47146625730723674,0.49812692435459077
+Mt. Everest Taquito Farmers,The Talmudic Tunnelers,1,6,43,7,8,-1,0.6641373472177087,0.7834531450088309
