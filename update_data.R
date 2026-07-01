@@ -475,6 +475,7 @@ df_rp_penalty <-
   ### IL Days
   filter(!(matchup_id == 6 & player == 'Erik Miller')) %>%
   filter(!(matchup_id == 9 & player == 'Garrett Whitlock')) %>%
+  filter(!(matchup_id == 14 & player == 'Brad Lord')) %>%
   # filter(!(matchup_id == 19 & player == 'Hunter Brown')) %>% 
   mutate('stint' = map2_dbl(player_id, scoring_period_id, ~min(trans_log$stint[trans_log$player_id == .x & trans_log$end >= .y]))) %>% 
   group_by(team, matchup_id, scoring_period_id) %>% 
