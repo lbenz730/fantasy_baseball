@@ -2,7 +2,7 @@ manager,manager_opp,n_wins,n_loss,win_pct
 Alex Brod,Andrew Lama,10,9,0.5263157894736842
 Alex Brod,Andrew Tham,15,4,0.7894736842105263
 Alex Brod,Blair Prato,5,11,0.3125
-Alex Brod,Dan Gold,13,8,0.6190476190476191
+Alex Brod,Dan Gold,14,7,0.6666666666666666
 Alex Brod,Dylan Boyd,16,10,0.6153846153846154
 Alex Brod,Griffin Schwab,6,0,1
 Alex Brod,Jack Wagner,13,7,0.65
@@ -23,7 +23,7 @@ Andrew Lama,Blair Prato,7,7,0.5
 Andrew Lama,Dan Gold,8,11,0.42105263157894735
 Andrew Lama,Dylan Boyd,13,8,0.6190476190476191
 Andrew Lama,Griffin Schwab,3,1,0.75
-Andrew Lama,Jack Wagner,7,17,0.2916666666666667
+Andrew Lama,Jack Wagner,8,16,0.3333333333333333
 Andrew Lama,Jake Hubertus,10,14,0.4166666666666667
 Andrew Lama,James Whitty,5,6,0.45454545454545453
 Andrew Lama,Josh Chodor,1,4,0.2
@@ -65,7 +65,7 @@ Blair Prato,Louis Danowsky,5,0,1
 Blair Prato,Luke Benz,9,5,0.6428571428571429
 Blair Prato,Michael Bogaty,5,10,0.3333333333333333
 Blair Prato,Zach Vinik,3,6,0.3333333333333333
-Dan Gold,Alex Brod,8,13,0.38095238095238093
+Dan Gold,Alex Brod,7,14,0.3333333333333333
 Dan Gold,Andrew Lama,11,8,0.5789473684210527
 Dan Gold,Andrew Tham,11,6,0.6470588235294118
 Dan Gold,Blair Prato,6,9,0.4
@@ -115,7 +115,7 @@ Griffin Schwab,Louis Danowsky,1,2,0.3333333333333333
 Griffin Schwab,Matt O'Donnell,3,3,0.5
 Griffin Schwab,Vick Raghunathan,1,1,0.5
 Jack Wagner,Alex Brod,7,13,0.35
-Jack Wagner,Andrew Lama,17,7,0.7083333333333334
+Jack Wagner,Andrew Lama,16,8,0.6666666666666666
 Jack Wagner,Andrew Tham,17,5,0.7727272727272727
 Jack Wagner,Blair Prato,9,9,0.5
 Jack Wagner,Dan Gold,15,7,0.6818181818181818
@@ -143,7 +143,7 @@ Jake Hubertus,Jordan Bennett,2,0,1
 Jake Hubertus,Josh Chodor,3,1,0.75
 Jake Hubertus,Kent Hubert,1,9,0.1
 Jake Hubertus,Louis Danowsky,7,4,0.6363636363636364
-Jake Hubertus,Luke Benz,7,8,0.4666666666666667
+Jake Hubertus,Luke Benz,8,7,0.5333333333333333
 Jake Hubertus,Matt O'Donnell,4,2,0.6666666666666666
 Jake Hubertus,Michael Bogaty,6,6,0.5
 Jake Hubertus,Vick Raghunathan,2,0,1
@@ -226,7 +226,7 @@ Luke Benz,Blair Prato,5,9,0.35714285714285715
 Luke Benz,Dan Gold,8,5,0.6153846153846154
 Luke Benz,Dylan Boyd,7,6,0.5384615384615384
 Luke Benz,Jack Wagner,8,7,0.5333333333333333
-Luke Benz,Jake Hubertus,8,7,0.5333333333333333
+Luke Benz,Jake Hubertus,7,8,0.4666666666666667
 Luke Benz,James Whitty,7,3,0.7
 Luke Benz,Kent Hubert,1,0,1
 Luke Benz,Louis Danowsky,3,1,0.75
