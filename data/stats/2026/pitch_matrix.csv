@@ -31,7 +31,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,5.2,4,1,Bad Start,The Talmudic Tunnelers
 1,5.2,5,2,Bad Start,The Talmudic Tunnelers
 1,6.0,0,5,QS,The Talmudic Tunnelers
-1,6.0,1,11,QS,The Talmudic Tunnelers
+1,6.0,1,12,QS,The Talmudic Tunnelers
 1,6.0,2,7,QS,The Talmudic Tunnelers
 1,6.0,3,2,QS,The Talmudic Tunnelers
 1,6.0,4,1,QS Potential,The Talmudic Tunnelers
@@ -52,7 +52,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,3.2,2,1,Bad Start,Tucker? I hardly know her
 2,3.2,6+,1,Bad Start,Tucker? I hardly know her
 2,4.0,0,1,Bad Start,Tucker? I hardly know her
-2,4.0,4,1,Bad Start,Tucker? I hardly know her
+2,4.0,4,2,Bad Start,Tucker? I hardly know her
 2,4.0,5,1,Bad Start,Tucker? I hardly know her
 2,4.0,6+,1,Bad Start,Tucker? I hardly know her
 2,4.1,1,1,Bad Start,Tucker? I hardly know her
@@ -98,7 +98,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,< 3,0,1,Bad Start,Tucker? I hardly know her
 2,< 3,1,2,Bad Start,Tucker? I hardly know her
 2,< 3,2,3,Bad Start,Tucker? I hardly know her
-2,< 3,3,1,Bad Start,Tucker? I hardly know her
+2,< 3,3,2,Bad Start,Tucker? I hardly know her
 2,< 3,6+,1,Bad Start,Tucker? I hardly know her
 2,> 7,0,4,QS,Tucker? I hardly know her
 2,> 7,1,1,QS,Tucker? I hardly know her
@@ -132,7 +132,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.2,6+,1,Bad Start,All That is Wright
 4,6.0,0,5,QS,All That is Wright
 4,6.0,1,8,QS,All That is Wright
-4,6.0,2,1,QS,All That is Wright
+4,6.0,2,2,QS,All That is Wright
 4,6.0,3,3,QS,All That is Wright
 4,6.0,4,3,QS Potential,All That is Wright
 4,6.0,5,1,Bad Start,All That is Wright
@@ -153,7 +153,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,> 7,0,4,QS,All That is Wright
 4,> 7,1,4,QS,All That is Wright
 4,> 7,2,2,QS,All That is Wright
-4,> 7,3,1,QS,All That is Wright
+4,> 7,3,2,QS,All That is Wright
 5,3.0,1,1,Bad Start,The Traveling Secretaries
 5,3.0,3,1,Bad Start,The Traveling Secretaries
 5,3.0,6+,1,Bad Start,The Traveling Secretaries
@@ -195,7 +195,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,6.1,2,2,QS,The Traveling Secretaries
 5,6.1,6+,1,Bad Start,The Traveling Secretaries
 5,6.2,0,1,QS,The Traveling Secretaries
-5,6.2,2,2,QS,The Traveling Secretaries
+5,6.2,2,3,QS,The Traveling Secretaries
 5,6.2,4,1,QS Potential,The Traveling Secretaries
 5,7.0,0,8,QS,The Traveling Secretaries
 5,7.0,1,3,QS,The Traveling Secretaries
@@ -265,7 +265,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.0,3,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,4,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,5,3,Bad Start,Bibee-di-Bobbidi-Boo
-7,4.0,6+,4,Bad Start,Bibee-di-Bobbidi-Boo
+7,4.0,6+,5,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.1,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,0,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,1,1,Bad Start,Bibee-di-Bobbidi-Boo
@@ -345,7 +345,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,6.1,4,1,QS Potential,Mt. Everest Taquito Farmers
 8,6.1,5,1,Bad Start,Mt. Everest Taquito Farmers
 8,6.2,0,1,QS,Mt. Everest Taquito Farmers
-8,7.0,0,4,QS,Mt. Everest Taquito Farmers
+8,7.0,0,6,QS,Mt. Everest Taquito Farmers
 8,7.0,1,3,QS,Mt. Everest Taquito Farmers
 8,7.0,2,1,QS,Mt. Everest Taquito Farmers
 8,7.0,3,2,QS,Mt. Everest Taquito Farmers
@@ -356,7 +356,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,> 7,2,1,QS,Mt. Everest Taquito Farmers
 8,CG,0,1,CG,Mt. Everest Taquito Farmers
 9,3.0,5,1,Bad Start,Book of Bob
-9,3.0,6+,2,Bad Start,Book of Bob
+9,3.0,6+,3,Bad Start,Book of Bob
 9,3.1,3,1,Bad Start,Book of Bob
 9,3.2,1,1,Bad Start,Book of Bob
 9,3.2,2,1,Bad Start,Book of Bob
@@ -471,6 +471,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,4.0,6+,2,Bad Start,Blasphemous Hot Takes
 12,4.1,0,1,Bad Start,Blasphemous Hot Takes
 12,4.1,1,1,Bad Start,Blasphemous Hot Takes
+12,4.1,3,1,Bad Start,Blasphemous Hot Takes
 12,4.1,6+,2,Bad Start,Blasphemous Hot Takes
 12,4.2,2,1,Bad Start,Blasphemous Hot Takes
 12,4.2,4,3,Bad Start,Blasphemous Hot Takes
@@ -491,7 +492,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.2,6+,1,Bad Start,Blasphemous Hot Takes
 12,6.0,0,7,QS,Blasphemous Hot Takes
 12,6.0,1,7,QS,Blasphemous Hot Takes
-12,6.0,2,4,QS,Blasphemous Hot Takes
+12,6.0,2,5,QS,Blasphemous Hot Takes
 12,6.0,3,5,QS,Blasphemous Hot Takes
 12,6.0,4,4,QS Potential,Blasphemous Hot Takes
 12,6.0,5,1,Bad Start,Blasphemous Hot Takes
@@ -525,7 +526,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.0,2,3,Bad Start,Ketel Bells
 13,4.0,4,2,Bad Start,Ketel Bells
 13,4.0,6+,2,Bad Start,Ketel Bells
-13,4.1,4,1,Bad Start,Ketel Bells
+13,4.1,4,2,Bad Start,Ketel Bells
 13,4.1,5,4,Bad Start,Ketel Bells
 13,4.1,6+,2,Bad Start,Ketel Bells
 13,4.2,2,1,Bad Start,Ketel Bells
@@ -559,6 +560,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,7.0,0,2,QS,Ketel Bells
 13,7.0,1,4,QS,Ketel Bells
 13,7.0,2,4,QS,Ketel Bells
+13,7.0,3,1,QS,Ketel Bells
 13,< 3,2,1,Bad Start,Ketel Bells
 13,< 3,3,2,Bad Start,Ketel Bells
 13,< 3,6+,2,Bad Start,Ketel Bells
