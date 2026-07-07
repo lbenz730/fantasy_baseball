@@ -1,7 +1,13 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 Ketel Bells,Bibee-di-Bobbidi-Boo,0,14,0,11,11,0,0.47050989330968973,0.49812692435459077
-All That is Wright,Book of Bob,0,14,0,11,11,0,0.5468238984653867,0.49812692435459077
+Ketel Bells,Bibee-di-Bobbidi-Boo,1,13,8,11,11,0,0.5254685175871189,0.5954986872550521
+All That is Wright,Book of Bob,0,14,0,11,11,0,0.5462291064740301,0.49812692435459077
+All That is Wright,Book of Bob,1,13,-12,11,10,1,0.5183826479318435,0.47768570631876356
 Top Gunner: Henderson,Tucker? I hardly know her,0,14,0,11,11,0,0.4317305139210161,0.49812692435459077
+Top Gunner: Henderson,Tucker? I hardly know her,1,13,7,11,11,0,0.5017764782430237,0.5835745213039246
 The West Bank Occupiers,The Traveling Secretaries,0,14,0,11,11,0,0.40635798574090404,0.49812692435459077
+The West Bank Occupiers,The Traveling Secretaries,1,13,64,9,9,0,0.8295980328894454,0.9587666365389017
 The Novaks,Mt. Everest Taquito Farmers,0,14,0,11,11,0,0.5810762484527435,0.49812692435459077
+The Novaks,Mt. Everest Taquito Farmers,1,13,23,11,11,0,0.7168964607201849,0.7550884399229456
 Blasphemous Hot Takes,The Talmudic Tunnelers,0,14,0,11,11,0,0.4686916799424838,0.49812692435459077
+Blasphemous Hot Takes,The Talmudic Tunnelers,1,13,-40,11,10,1,0.2646767366343594,0.23508560082011226
