@@ -77,18 +77,18 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 12,288.5,159.5,129,Blasphemous Hot Takes,13,76,17,112,1,288.5,159.5,129,112,17,9,359.5,188.5,171,Book of Bob,36,135,359.5,188.5,171,135,36,11,10,6
 1,318.5,153.5,165,The Talmudic Tunnelers,13,77,10.5,154.5,1,318.5,153.5,165,154.5,10.5,2,374.5,190.5,184,Tucker? I hardly know her,12,172,374.5,190.5,184,172,12,7,11,4.5
 8,289.5,179.5,110,Mt. Everest Taquito Farmers,13,78,13.5,96.5,1,289.5,179.5,110,96.5,13.5,5,256.5,153,103.5,The Traveling Secretaries,29,74.5,256.5,153,103.5,74.5,29,10,7,11
-7,363.5,250.5,113,Bibee-di-Bobbidi-Boo,14,79,30,83,1,363.5,250.5,113,83,30,4,392,207.5,184.5,All That is Wright,36.5,148,392,207.5,184.5,148,36.5,4,2,7
+7,362.5,249.5,113,Bibee-di-Bobbidi-Boo,14,79,30,83,1,362.5,249.5,113,83,30,4,392,207.5,184.5,All That is Wright,36.5,148,392,207.5,184.5,148,36.5,4,2,7
 13,268.5,170.5,98,Ketel Bells,14,80,5,93,1,268.5,170.5,98,93,5,14,297,197,100,Top Gunner: Henderson,37,63,297,197,100,63,37,12,12,10
-9,337,210,127,Book of Bob,14,81,23,104,1,337,210,127,104,23,11,312.5,197.5,115,The West Bank Occupiers,30.5,84.5,312.5,197.5,115,84.5,30.5,6,5,5
+9,336,209,127,Book of Bob,14,81,23,104,1,336,209,127,104,23,11,312.5,197.5,115,The West Bank Occupiers,30.5,84.5,312.5,197.5,115,84.5,30.5,6,5,5
 2,279.5,215.5,64,Tucker? I hardly know her,14,82,7.5,56.5,1,279.5,215.5,64,56.5,7.5,6,310,203,107,The Novaks,30.5,76.5,310,203,107,76.5,30.5,11,4,12
 5,375.5,233.5,142,The Traveling Secretaries,14,83,22.5,119.5,1,375.5,233.5,142,119.5,22.5,12,295,202,93,Blasphemous Hot Takes,37,56,295,202,93,56,37,3,3,3
 8,398,269,129,Mt. Everest Taquito Farmers,14,84,6.5,122.5,1,398,269,129,122.5,6.5,1,345.5,196,149.5,The Talmudic Tunnelers,27,122.5,345.5,196,149.5,122.5,27,1,1,4
-13,117,63.5,53.5,Ketel Bells,15,85,8,45.5,NA,NA,NA,NA,NA,NA,7,60.5,56.5,4,Bibee-di-Bobbidi-Boo,4,0,NA,NA,NA,NA,NA,2,4,2.5
-4,108.5,66,42.5,All That is Wright,15,86,0,42.5,NA,NA,NA,NA,NA,NA,9,98,41,57,Book of Bob,8,49,NA,NA,NA,NA,NA,3,2,5
-14,68,50,18,Top Gunner: Henderson,15,87,18,0,NA,NA,NA,NA,NA,NA,2,84.5,40,44.5,Tucker? I hardly know her,9,35.5,NA,NA,NA,NA,NA,9,8,10
-11,92.5,54.5,38,The West Bank Occupiers,15,88,3.5,34.5,NA,NA,NA,NA,NA,NA,5,62,33.5,28.5,The Traveling Secretaries,1,27.5,NA,NA,NA,NA,NA,5,7,6
-6,74.5,60,14.5,The Novaks,15,89,0,14.5,NA,NA,NA,NA,NA,NA,8,57,37,20,Mt. Everest Taquito Farmers,-7.5,27.5,NA,NA,NA,NA,NA,8,5,11
-12,88,64.5,23.5,Blasphemous Hot Takes,15,90,9,14.5,NA,NA,NA,NA,NA,NA,1,126,72.5,53.5,The Talmudic Tunnelers,11,42.5,NA,NA,NA,NA,NA,6,3,8
+13,205,101,104,Ketel Bells,15,85,17,87,NA,NA,NA,NA,NA,NA,7,86.5,67.5,19,Bibee-di-Bobbidi-Boo,3.5,15.5,NA,NA,NA,NA,NA,2,3,2
+4,151,108.5,42.5,All That is Wright,15,86,0,42.5,NA,NA,NA,NA,NA,NA,9,151.5,54,97.5,Book of Bob,11.5,86,NA,NA,NA,NA,NA,4,2,8
+14,100,69.5,30.5,Top Gunner: Henderson,15,87,14,16.5,NA,NA,NA,NA,NA,NA,2,141,98,43,Tucker? I hardly know her,9,34,NA,NA,NA,NA,NA,11,9,10
+11,140.5,77,63.5,The West Bank Occupiers,15,88,6.5,57,NA,NA,NA,NA,NA,NA,5,101,44,57,The Traveling Secretaries,13,44,NA,NA,NA,NA,NA,7,8,4
+6,114,87,27,The Novaks,15,89,8,19,NA,NA,NA,NA,NA,NA,8,111,80,31,Mt. Everest Taquito Farmers,-19.5,50.5,NA,NA,NA,NA,NA,8,6,11
+12,144,91.5,52.5,Blasphemous Hot Takes,15,90,9,43.5,NA,NA,NA,NA,NA,NA,1,221.5,115.5,106,The Talmudic Tunnelers,21.5,84.5,NA,NA,NA,NA,NA,5,5,6
 7,NA,NA,NA,Bibee-di-Bobbidi-Boo,16,91,NA,NA,1.4285714285714286,NA,NA,NA,NA,NA,9,NA,NA,NA,Book of Bob,NA,NA,NA,NA,NA,NA,NA,1,1,1
 2,NA,NA,NA,Tucker? I hardly know her,16,92,NA,NA,1.4285714285714286,NA,NA,NA,NA,NA,13,NA,NA,NA,Ketel Bells,NA,NA,NA,NA,NA,NA,NA,2,2,2
 5,NA,NA,NA,The Traveling Secretaries,16,93,NA,NA,1.4285714285714286,NA,NA,NA,NA,NA,4,NA,NA,NA,All That is Wright,NA,NA,NA,NA,NA,NA,NA,3,3,3
@@ -197,18 +197,18 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 9,359.5,188.5,171,Book of Bob,13,76,36,135,1,359.5,188.5,171,135,36,12,288.5,159.5,129,Blasphemous Hot Takes,17,112,288.5,159.5,129,112,17,4,6,3
 2,374.5,190.5,184,Tucker? I hardly know her,13,77,12,172,1,374.5,190.5,184,172,12,1,318.5,153.5,165,The Talmudic Tunnelers,10.5,154.5,318.5,153.5,165,154.5,10.5,2,5,1
 5,256.5,153,103.5,The Traveling Secretaries,13,78,29,74.5,1,256.5,153,103.5,74.5,29,8,289.5,179.5,110,Mt. Everest Taquito Farmers,13.5,96.5,289.5,179.5,110,96.5,13.5,12,12,12
-4,392,207.5,184.5,All That is Wright,14,79,36.5,148,1,392,207.5,184.5,148,36.5,7,363.5,250.5,113,Bibee-di-Bobbidi-Boo,30,83,363.5,250.5,113,83,30,2,6,1
+4,392,207.5,184.5,All That is Wright,14,79,36.5,148,1,392,207.5,184.5,148,36.5,7,362.5,249.5,113,Bibee-di-Bobbidi-Boo,30,83,362.5,249.5,113,83,30,2,6,1
 14,297,197,100,Top Gunner: Henderson,14,80,37,63,1,297,197,100,63,37,13,268.5,170.5,98,Ketel Bells,5,93,268.5,170.5,98,93,5,9,10,9
-11,312.5,197.5,115,The West Bank Occupiers,14,81,30.5,84.5,1,312.5,197.5,115,84.5,30.5,9,337,210,127,Book of Bob,23,104,337,210,127,104,23,7,9,6
+11,312.5,197.5,115,The West Bank Occupiers,14,81,30.5,84.5,1,312.5,197.5,115,84.5,30.5,9,336,209,127,Book of Bob,23,104,336,209,127,104,23,7,9,6
 6,310,203,107,The Novaks,14,82,30.5,76.5,1,310,203,107,76.5,30.5,2,279.5,215.5,64,Tucker? I hardly know her,7.5,56.5,279.5,215.5,64,56.5,7.5,8,7,8
 12,295,202,93,Blasphemous Hot Takes,14,83,37,56,1,295,202,93,56,37,5,375.5,233.5,142,The Traveling Secretaries,22.5,119.5,375.5,233.5,142,119.5,22.5,10,8,11
 1,345.5,196,149.5,The Talmudic Tunnelers,14,84,27,122.5,1,345.5,196,149.5,122.5,27,8,398,269,129,Mt. Everest Taquito Farmers,6.5,122.5,398,269,129,122.5,6.5,5,11,2
-7,60.5,56.5,4,Bibee-di-Bobbidi-Boo,15,85,4,0,NA,NA,NA,NA,NA,NA,13,117,63.5,53.5,Ketel Bells,8,45.5,NA,NA,NA,NA,NA,11,6,12
-9,98,41,57,Book of Bob,15,86,8,49,NA,NA,NA,NA,NA,NA,4,108.5,66,42.5,All That is Wright,0,42.5,NA,NA,NA,NA,NA,4,9,1
-2,84.5,40,44.5,Tucker? I hardly know her,15,87,9,35.5,NA,NA,NA,NA,NA,NA,14,68,50,18,Top Gunner: Henderson,18,0,NA,NA,NA,NA,NA,7,10,4
-5,62,33.5,28.5,The Traveling Secretaries,15,88,1,27.5,NA,NA,NA,NA,NA,NA,11,92.5,54.5,38,The West Bank Occupiers,3.5,34.5,NA,NA,NA,NA,NA,10,12,7
-8,57,37,20,Mt. Everest Taquito Farmers,15,89,-7.5,27.5,NA,NA,NA,NA,NA,NA,6,74.5,60,14.5,The Novaks,0,14.5,NA,NA,NA,NA,NA,12,11,9
-1,126,72.5,53.5,The Talmudic Tunnelers,15,90,11,42.5,NA,NA,NA,NA,NA,NA,12,88,64.5,23.5,Blasphemous Hot Takes,9,14.5,NA,NA,NA,NA,NA,1,1,2.5
+7,86.5,67.5,19,Bibee-di-Bobbidi-Boo,15,85,3.5,15.5,NA,NA,NA,NA,NA,NA,13,205,101,104,Ketel Bells,17,87,NA,NA,NA,NA,NA,12,10,12
+9,151.5,54,97.5,Book of Bob,15,86,11.5,86,NA,NA,NA,NA,NA,NA,4,151,108.5,42.5,All That is Wright,0,42.5,NA,NA,NA,NA,NA,3,11,3
+2,141,98,43,Tucker? I hardly know her,15,87,9,34,NA,NA,NA,NA,NA,NA,14,100,69.5,30.5,Top Gunner: Henderson,14,16.5,NA,NA,NA,NA,NA,6,4,7
+5,101,44,57,The Traveling Secretaries,15,88,13,44,NA,NA,NA,NA,NA,NA,11,140.5,77,63.5,The West Bank Occupiers,6.5,57,NA,NA,NA,NA,NA,10,12,5
+8,111,80,31,Mt. Everest Taquito Farmers,15,89,-19.5,50.5,NA,NA,NA,NA,NA,NA,6,114,87,27,The Novaks,8,19,NA,NA,NA,NA,NA,9,7,9
+1,221.5,115.5,106,The Talmudic Tunnelers,15,90,21.5,84.5,NA,NA,NA,NA,NA,NA,12,144,91.5,52.5,Blasphemous Hot Takes,9,43.5,NA,NA,NA,NA,NA,1,1,1
 9,NA,NA,NA,Book of Bob,16,91,NA,NA,1.4285714285714286,NA,NA,NA,NA,NA,7,NA,NA,NA,Bibee-di-Bobbidi-Boo,NA,NA,NA,NA,NA,NA,NA,7,7,7
 13,NA,NA,NA,Ketel Bells,16,92,NA,NA,1.4285714285714286,NA,NA,NA,NA,NA,2,NA,NA,NA,Tucker? I hardly know her,NA,NA,NA,NA,NA,NA,NA,8,8,8
 4,NA,NA,NA,All That is Wright,16,93,NA,NA,1.4285714285714286,NA,NA,NA,NA,NA,5,NA,NA,NA,The Traveling Secretaries,NA,NA,NA,NA,NA,NA,NA,9,9,9
