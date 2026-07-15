@@ -10,20 +10,24 @@ library(readr)
 library(glue)
 
 list_of_game_ids <- function(date_) {
-  games <- 
+  games <-
     GET(paste0('http://statsapi.mlb.com/api/v1/schedule/games/?sportId=1&gameType=R&date=', date_)) %>%
     content(as = 'text') %>%
     fromJSON(flatten = T)
-  
-  all_games_date <- 
+
+  if(length(games$dates) == 0) {
+    return(integer(0))
+  }
+
+  all_games_date <-
     games$dates$games[[1]] %>%
-    as_tibble() %>% 
-    filter(status.statusCode %in% c('F','FR')) %>% 
+    as_tibble() %>%
+    filter(status.statusCode %in% c('F','FR')) %>%
     pull(gamePk)
-  
-  
+
+
   return(all_games_date)
-  
+
 }
 
 
