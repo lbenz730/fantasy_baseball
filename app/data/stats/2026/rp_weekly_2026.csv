@@ -7551,8 +7551,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 85,15,Yandy Diaz,33481,NA,20.5,13
 85,15,Vinnie Pasquantino,4109109,NA,1,13
 85,15,Alec Burleson,4345070,NA,15.5,13
-85,15,Aaron Nola,33709,NA,15,13
-85,15,Brett Baty,42414,NA,20,13
+85,15,Aaron Nola,33709,NA,30,13
+85,15,Brett Baty,42414,NA,27,13
 85,15,Shane McClanahan,41199,NA,25,13
 85,15,Ryan O'Hearn,35183,NA,33.5,13
 85,15,Gerrit Cole,32081,NA,16.5,13
@@ -7569,7 +7569,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 85,15,Brandon Nimmo,32159,NA,19,13
 85,15,Dylan Crews,4719511,NA,1,13
 86,15,Paul Sewald,35009,2,15,4
-86,15,Francisco Lindor,32129,NA,11.5,4
+86,15,Francisco Lindor,32129,NA,10.5,4
 86,15,Daulton Varsho,40963,NA,-0.5,4
 86,15,Grant Taylor,4927630,2,12,4
 86,15,Nathan Eovaldi,31174,NA,20,4
@@ -7585,13 +7585,13 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 86,15,Zebby Matthews,4791597,NA,2,4
 86,15,Seiya Suzuki,4142424,NA,24,4
 86,15,Tarik Skubal,42409,NA,27,4
-86,15,Juan Soto,36969,NA,30.5,4
+86,15,Juan Soto,36969,NA,35,4
 86,15,Anthony Seigler,41194,NA,-0.5,4
 86,15,Jake McCarthy,41197,NA,20,4
 86,15,Bryce Miller,4654313,NA,-1,4
 86,15,Jose Altuve,31662,NA,18.5,4
 86,15,Michael Busch,42415,NA,15,4
-86,15,Carson Benge,4925604,NA,30,4
+86,15,Carson Benge,4925604,NA,32,4
 86,15,Jacob Latz,3210625,2,8,4
 86,15,Payton Tolle,4966140,NA,38,4
 86,15,Jeremy Pena,41273,NA,3,4
@@ -7625,7 +7625,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 88,15,Zack Gelof,4414531,NA,-3.5,11
 88,15,CJ Abrams,42402,NA,25.5,11
 88,15,Nico Hoerner,41219,NA,5,11
-88,15,Brandon Marsh,40803,NA,6.5,11
+88,15,Brandon Marsh,40803,NA,6,11
 88,15,Ben Rice,5016968,NA,45.5,11
 88,15,Riley O'Brien,41509,3,17,11
 88,15,Will Warren,5132011,NA,-5,11
@@ -7659,7 +7659,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 89,15,Heliot Ramos,39642,NA,25.5,6
 89,15,Isaac Paredes,39706,NA,14,6
 89,15,Paul Skenes,4719507,NA,30,6
-89,15,Bryce Harper,30951,NA,7,6
+89,15,Bryce Harper,30951,NA,9.5,6
 89,15,Dustin May,40937,NA,7,6
 89,15,Taylor Ward,34923,NA,18.5,6
 89,15,Jordan Walker,4684778,NA,32.5,6
@@ -7693,8 +7693,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 90,15,JJ Bleday,42410,NA,19,12
 90,15,Andres Munoz,40939,2,8.5,12
 90,15,Wilyer Abreu,4990055,NA,14.5,12
-90,15,Trea Turner,33710,NA,11,12
-90,15,Kyle Schwarber,33712,NA,15.5,12
+90,15,Trea Turner,33710,NA,15.5,12
+90,15,Kyle Schwarber,33712,NA,16,12
 90,15,Joey Cantillo,42488,NA,29.5,12
 90,15,Trey Yesavage,4949041,NA,-6.5,12
 90,15,Garrett Whitlock,39674,1,7,12
@@ -7849,6 +7849,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 86,15,Jung Hoo Lee,5134621,NA,4.5,9
 86,15,Tyler Wells,4717904,2,4,9
 86,15,Dominic Canzone,4345621,NA,7.5,9
+86,15,A.J. Ewing,5208019,NA,2,9
 86,15,David Bednar,38303,3,15.5,9
 86,15,Gage Jump,5023852,NA,16,9
 86,15,Ivan Herrera,41889,NA,11,9
@@ -7861,7 +7862,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 86,15,Sam Antonacci,5207167,NA,16,9
 86,15,Jesus Luzardo,39667,NA,33.5,9
 86,15,Ian Seymour,4669425,NA,12,9
-86,15,Bo Bichette,38904,NA,6.5,9
+86,15,Bo Bichette,38904,NA,4,9
 86,15,Logan Henderson,4917878,NA,10,9
 86,15,Esmerlyn Valdez,5137200,NA,36,9
 86,15,Landen Roupp,4345404,NA,28,9
@@ -7874,11 +7875,11 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 87,15,Samuel Basallo,4917646,NA,14,2
 87,15,Josh Bell,32517,NA,12,2
 87,15,Nick Kurtz,4966637,NA,-2,2
-87,15,Luke Weaver,33770,2,11,2
+87,15,Luke Weaver,33770,3,13,2
 87,15,Luis Garcia Jr.,40459,NA,17.5,2
 87,15,George Springer,32078,NA,7.5,2
 87,15,Max Meyer,4345164,NA,10,2
-87,15,Bryson Stott,42417,NA,14,2
+87,15,Bryson Stott,42417,NA,13,2
 87,15,Hunter Greene,39635,NA,34.5,2
 87,15,Caleb Durbin,5007615,NA,12.5,2
 87,15,Anthony Volpe,42547,NA,0,2
@@ -7893,7 +7894,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 88,15,TJ Rumfield,5014349,NA,8.5,5
 88,15,Shane Drohan,4315203,NA,16,5
 88,15,Bobby Witt Jr.,42403,NA,17.5,5
-88,15,Christian Scott,4414215,NA,16.5,5
+88,15,Christian Scott,4414215,NA,37.5,5
 88,15,Andy Pages,42468,NA,16.5,5
 88,15,Jake Bauers,35013,NA,30,5
 88,15,Shea Langeliers,42598,NA,5.5,5
@@ -7917,7 +7918,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 89,15,Eduardo Rodriguez,32675,NA,16.5,8
 89,15,Jakob Marsee,4866735,NA,14,8
 89,15,Colson Montgomery,4872685,NA,2.5,8
-89,15,Devin Williams,33224,3,-8.5,8
+89,15,Devin Williams,33224,4,-1.5,8
 89,15,Kyle Stowers,42796,NA,6,8
 89,15,Hunter Goodman,4416591,NA,6,8
 89,15,Xavier Edwards,41326,NA,9.5,8

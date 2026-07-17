@@ -186,7 +186,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,5.1,4,2,Bad Start,The Traveling Secretaries
 5,5.1,5,1,Bad Start,The Traveling Secretaries
 5,5.1,6+,1,Bad Start,The Traveling Secretaries
-5,5.2,0,1,Blue Balls,The Traveling Secretaries
+5,5.2,0,2,Blue Balls,The Traveling Secretaries
 5,5.2,1,2,Blue Balls,The Traveling Secretaries
 5,5.2,2,1,Blue Balls,The Traveling Secretaries
 5,5.2,3,2,Blue Balls,The Traveling Secretaries
@@ -565,7 +565,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,6.0,0,13,QS,Ketel Bells
 13,6.0,1,10,QS,Ketel Bells
 13,6.0,2,7,QS,Ketel Bells
-13,6.0,3,1,QS,Ketel Bells
+13,6.0,3,2,QS,Ketel Bells
 13,6.0,4,3,QS Potential,Ketel Bells
 13,6.0,5,2,Bad Start,Ketel Bells
 13,6.0,6+,1,Bad Start,Ketel Bells
