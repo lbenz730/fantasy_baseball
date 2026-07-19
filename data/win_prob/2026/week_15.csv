@@ -12,6 +12,7 @@ Ketel Bells,Bibee-di-Bobbidi-Boo,9,5,110.5,4,4,0,0.9927755162999902,0.9956702221
 Ketel Bells,Bibee-di-Bobbidi-Boo,10,4,110.5,4,4,0,0.9938759610936914,0.9956702221859859
 Ketel Bells,Bibee-di-Bobbidi-Boo,11,3,132.5,3,4,-1,0.9961686780609691,0.9916122806857046
 Ketel Bells,Bibee-di-Bobbidi-Boo,12,2,162.5,1,3,-2,0.9980131599936788,0.9951471939221641
+Ketel Bells,Bibee-di-Bobbidi-Boo,13,1,131.5,1,2,-1,0.9972072069624662,0.9912819762148858
 All That is Wright,Book of Bob,0,14,0,11,11,0,0.5465265190735147,0.49812692435459077
 All That is Wright,Book of Bob,1,13,-12,11,10,1,0.5183826479318435,0.47768570631876356
 All That is Wright,Book of Bob,2,12,10.5,9,8,1,0.6687608729888379,0.6871817167050533
@@ -25,6 +26,7 @@ All That is Wright,Book of Bob,9,5,40,2,2,0,0.8409226165483659,0.876931779717536
 All That is Wright,Book of Bob,10,4,40,2,2,0,0.8307360397051041,0.8769317797175367
 All That is Wright,Book of Bob,11,3,46,2,2,0,0.8802988871846651,0.9054555221965185
 All That is Wright,Book of Bob,12,2,39,1,1,0,0.8760248780191817,0.8715138673547418
+All That is Wright,Book of Bob,13,1,64.5,0,0,0,0.9858095344304775,0.959729789256944
 Top Gunner: Henderson,Tucker? I hardly know her,0,14,0,11,11,0,0.4317305139210161,0.49812692435459077
 Top Gunner: Henderson,Tucker? I hardly know her,1,13,7,11,11,0,0.5017764782430237,0.5835745213039246
 Top Gunner: Henderson,Tucker? I hardly know her,2,12,-16.5,11,9,2,0.4431300530796296,0.5200337817097934
@@ -38,6 +40,7 @@ Top Gunner: Henderson,Tucker? I hardly know her,9,5,7,3,3,0,0.5332599138738221,0
 Top Gunner: Henderson,Tucker? I hardly know her,10,4,7,3,3,0,0.5715586637975281,0.5835745213039246
 Top Gunner: Henderson,Tucker? I hardly know her,11,3,6,3,3,0,0.568334569403804,0.5715517494543229
 Top Gunner: Henderson,Tucker? I hardly know her,12,2,41,1,3,-2,0.6910083109173892,0.6929644799366466
+Top Gunner: Henderson,Tucker? I hardly know her,13,1,44,0,0,0,0.954107442981343,0.8966744919075192
 The West Bank Occupiers,The Traveling Secretaries,0,14,0,11,11,0,0.40635798574090404,0.49812692435459077
 The West Bank Occupiers,The Traveling Secretaries,1,13,64,9,9,0,0.8295980328894454,0.9587666365389017
 The West Bank Occupiers,The Traveling Secretaries,2,12,30.5,8,8,0,0.643835327746054,0.8169075137455283
@@ -51,6 +54,7 @@ The West Bank Occupiers,The Traveling Secretaries,9,5,30,2,3,-1,0.62190831349053
 The West Bank Occupiers,The Traveling Secretaries,10,4,30,2,3,-1,0.649952012755063,0.6855641924221655
 The West Bank Occupiers,The Traveling Secretaries,11,3,8.5,2,2,0,0.6135819910050155,0.6014196863178021
 The West Bank Occupiers,The Traveling Secretaries,12,2,19,1,2,-1,0.5604234848355433,0.5868441120525917
+The West Bank Occupiers,The Traveling Secretaries,13,1,5.5,0,0,0,0.7048909539442043,0.5655076004905626
 The Novaks,Mt. Everest Taquito Farmers,0,14,0,11,11,0,0.5810762484527435,0.49812692435459077
 The Novaks,Mt. Everest Taquito Farmers,1,13,23,11,11,0,0.7168964607201849,0.7550884399229456
 The Novaks,Mt. Everest Taquito Farmers,2,12,17.5,10,10,0,0.6833625640279475,0.7015940377148108
@@ -64,6 +68,7 @@ The Novaks,Mt. Everest Taquito Farmers,9,5,102,1,5,-4,0.8538575673342486,0.94114
 The Novaks,Mt. Everest Taquito Farmers,10,4,102,1,5,-4,0.8561368012667437,0.9411444784406517
 The Novaks,Mt. Everest Taquito Farmers,11,3,97.5,1,5,-4,0.8871503660845895,0.9326073277831771
 The Novaks,Mt. Everest Taquito Farmers,12,2,91.5,1,3,-2,0.9588179418718608,0.9363302506112223
+The Novaks,Mt. Everest Taquito Farmers,13,1,135.5,0,3,-3,0.9953842700627817,0.9814186399715014
 Blasphemous Hot Takes,The Talmudic Tunnelers,0,14,0,11,11,0,0.4686916799424838,0.49812692435459077
 Blasphemous Hot Takes,The Talmudic Tunnelers,1,13,-40,11,10,1,0.2646767366343594,0.23508560082011226
 Blasphemous Hot Takes,The Talmudic Tunnelers,2,12,-38,10,9,1,0.2724314050815192,0.24938003070239587
@@ -77,3 +82,4 @@ Blasphemous Hot Takes,The Talmudic Tunnelers,9,5,-98.5,4,3,1,0.0471972968522561,
 Blasphemous Hot Takes,The Talmudic Tunnelers,10,4,-98.5,4,3,1,0.03454486691393975,0.03052598056388517
 Blasphemous Hot Takes,The Talmudic Tunnelers,11,3,-93.5,4,3,1,0.04279193186323067,0.03684679684838756
 Blasphemous Hot Takes,The Talmudic Tunnelers,12,2,-56.5,2,2,0,0.057541280846595724,0.05776955877065644
+Blasphemous Hot Takes,The Talmudic Tunnelers,13,1,-8.5,0,2,-2,0.13996527993380992,0.26442120586633555
