@@ -578,7 +578,7 @@ team_points <-
     matchup_id == 1 & params$season == 2026 ~ rp_points * 7/11,
     matchup_id == 1 & params$season == 2025 ~ rp_points * 7/4,
     matchup_id == 14 & params$season < 2024 ~ rp_points * 7/10,
-    matchup_id == 15 & params$season == 2026 ~ rp_points * 7/10
+    matchup_id == 15 & params$season == 2026 ~ rp_points * 7/10,
     matchup_id == 16 & params$season >= 2024 ~ rp_points * 7/10,
     matchup_id > n_games ~ rp_points * 7/14,
     (matchup_id == params$matchup_id) & (wday(Sys.Date()) == 2) ~ rp_points,
