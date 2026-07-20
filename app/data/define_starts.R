@@ -8,7 +8,7 @@ library(tidyr)
 df_start_26 <-
   tibble('matchup_id' = 1:22) %>%
   mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
-                                 matchup_id == 15 ~ 11,
+                                 matchup_id == 15 ~ 13,
                                  matchup_id > 20 ~ 16,
                                  T ~ 8),
          'duration' = case_when(matchup_id == 1 ~ 12,
@@ -22,7 +22,7 @@ df_start_26 <-
 df_start_25 <-
   tibble('matchup_id' = 1:23) %>%
   mutate('start_cap' = case_when(matchup_id == 1 ~ 5,
-                                 matchup_id == 16 ~ 11,
+                                 matchup_id == 16 ~ 13,
                                  matchup_id > 21 ~ 16,
                                  T ~ 8),
          'duration' = case_when(matchup_id == 1 ~ 13,
@@ -37,7 +37,7 @@ df_start_25 <-
 df_start_24 <-
   tibble('matchup_id' = 1:23) %>%
   mutate('start_cap' = case_when(matchup_id == 1 ~ 5,
-                                 matchup_id == 16 ~ 11,
+                                 matchup_id == 16 ~ 13,
                                  matchup_id > 21 ~ 16,
                                  T ~ 8),
          'duration' = case_when(matchup_id == 1 ~ 12,
@@ -51,7 +51,7 @@ df_start_24 <-
 df_start_23 <-
   tibble('matchup_id' = 1:23) %>%
   mutate('start_cap' = case_when(matchup_id == 1 ~ 13,
-                                 matchup_id == 14 ~ 11,
+                                 matchup_id == 14 ~ 13,
                                  matchup_id > 21 ~ 16,
                                  T ~ 8),
          'duration' = case_when(matchup_id == 1 ~ 11,
