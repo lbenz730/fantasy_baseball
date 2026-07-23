@@ -329,25 +329,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Chad Patrick,5131708,14,25.5,5.1,15
 15,RP,Mason Miller,4730225,5,25.5,6.375,15
 15,RP,Cade Smith,4987924,5,24.5,4.9,15
-0,C,Dillon Dingler,4345620,14,26,13,16
-1,1B,Yandy Diaz,33481,13,16,8,16
-2,2B,Jazz Chisholm Jr.,41433,8,14,14,16
-3,3B,Manny Machado,31097,7,16.5,8.25,16
-4,SS,CJ Abrams,42402,11,21,10.5,16
-5,OF,Jo Adell,40854,1,16.5,8.25,16
-5,OF,Yordan Alvarez,36018,6,15,7.5,16
-5,OF,Ian Happ,34945,7,12,6,16
-5,OF,Fernando Tatis Jr.,35983,7,11.5,5.75,16
-5,OF,Pete Crow-Armstrong,4717833,8,11.5,5.75,16
-6,2B/SS,Jeremy Pena,41273,4,15,7.5,16
-7,1B/3B,Junior Caminero,4905921,11,14.5,7.25,16
-12,UTIL,Mookie Betts,33039,1,15,7.5,16
+0,C,Dillon Dingler,4345620,14,26,8.666666666666666,16
+1,1B,Isaac Paredes,39706,6,21,7,16
+2,2B,Fernando Tatis Jr.,35983,7,19.5,6.5,16
+3,3B,Junior Caminero,4905921,11,17.5,5.833333333333333,16
+4,SS,CJ Abrams,42402,11,27.5,9.166666666666666,16
+5,OF,Yordan Alvarez,36018,6,22,7.333333333333333,16
+5,OF,Jo Adell,40854,1,16.5,5.5,16
+5,OF,Seiya Suzuki,4142424,4,16.5,5.5,16
+5,OF,Ian Happ,34945,7,15.5,5.166666666666667,16
+5,OF,Trevor Larnach,41205,7,15,5,16
+6,2B/SS,Jeremy Pena,41273,4,24,8,16
+7,1B/3B,Manny Machado,31097,7,16.5,5.5,16
+12,UTIL,Mookie Betts,33039,1,16.5,5.5,16
+14,SP,Cade Cavalli,4308037,6,26,26,16
+14,SP,Gerrit Cole,32081,13,26,26,16
 14,SP,Zack Wheeler,31267,13,26,26,16
 14,SP,George Kirby,42406,12,25.5,25.5,16
 14,SP,Jose Soriano,40973,14,24.5,24.5,16
 14,SP,Andrew Abbott,4414528,4,24,24,16
-14,SP,Michael Wacha,32640,7,22,22,16
-14,SP,Walbert Urena,5197476,9,19,19,16
-15,RP,Fernando Cruz,34068,6,10,10,16
-15,RP,Tanner Scott,35135,6,8,8,16
-15,RP,Cade Smith,4987924,5,7,7,16
+15,RP,Emilio Pagan,33403,8,13,6.5,16
+15,RP,Grant Taylor,4927630,4,13,13,16
+15,RP,Aaron Ashby,41325,7,11,11,16

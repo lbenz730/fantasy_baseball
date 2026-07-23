@@ -17,11 +17,12 @@ get_trans_log <- function(season, trades = T) {
     df_daily %>% 
     group_by(player, player_id) %>% 
     mutate('rostered_prev' = lag(scoring_period_id, 1) == scoring_period_id - 1) %>% 
-    mutate('rostered_prev' = ifelse(is.na(rostered_prev), scoring_period_id == 1, rostered_prev)) %>% 
+    mutate('rostered_prev' = ifelse(is.na(rostered_prev), scoring_period_id == 1, rostered_prev)) %>%
     mutate('free_agent_add' = !rostered_prev,
-           'rp_eligible' = grepl('15', eligible_slots)) %>% 
-    mutate('stint' = cumsum(free_agent_add)) %>% 
-    group_by(player, player_id, team_id, stint) %>% 
+           'team_change' = is.na(lag(team_id)) | team_id != lag(team_id),
+           'rp_eligible' = grepl('15', eligible_slots)) %>%
+    mutate('stint' = cumsum(free_agent_add | team_change)) %>%
+    group_by(player, player_id, team_id, stint) %>%
     summarise('start' = min(scoring_period_id),
               'end' = max(scoring_period_id),
               'rp_eligible' = rp_eligible[scoring_period_id == min(scoring_period_id)]) %>% 
