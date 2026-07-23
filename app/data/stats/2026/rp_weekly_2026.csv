@@ -7568,7 +7568,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 85,15,Alex Vesia,42622,5,19.5,13
 85,15,Brandon Nimmo,32159,NA,26.5,13
 85,15,Dylan Crews,4719511,NA,15,13
-86,15,Paul Sewald,35009,4,16.5,4
+86,15,Paul Sewald,35009,4,19.5,4
 86,15,Francisco Lindor,32129,NA,21,4
 86,15,Daulton Varsho,40963,NA,-0.5,4
 86,15,Grant Taylor,4927630,3,16,4
@@ -8407,7 +8407,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 94,16,Jhoan Duran,41109,1,1,14
 94,16,Dillon Dingler,4345620,NA,26,14
 94,16,Curtis Mead,42360,NA,-2.5,14
-94,16,Cody Bellinger,33912,NA,7,14
+94,16,Cody Bellinger,33912,NA,8,14
 94,16,Shohei Ohtani,39832,NA,NA,14
 94,16,Pete Alonso,37498,NA,6,14
 95,16,Brayan Rocchio,41217,NA,12.5,11
@@ -8432,7 +8432,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 96,16,Cade Cavalli,4308037,NA,26,6
 96,16,Bryce Harper,30951,NA,9.5,6
 96,16,Kyle Bradish,4311625,NA,20,6
-96,16,Taylor Ward,34923,NA,5.5,6
+96,16,Taylor Ward,34923,NA,6.5,6
 96,16,Jacob Wilson,4719300,NA,16,6
 96,16,Cal Raleigh,41292,NA,12,6
 96,16,Jordan Walker,4684778,NA,4,6
