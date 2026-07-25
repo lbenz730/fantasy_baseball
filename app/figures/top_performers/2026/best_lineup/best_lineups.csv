@@ -329,25 +329,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Chad Patrick,5131708,14,25.5,5.1,15
 15,RP,Mason Miller,4730225,5,25.5,6.375,15
 15,RP,Cade Smith,4987924,5,24.5,4.9,15
-0,C,Dillon Dingler,4345620,14,32,8,16
-1,1B,Isaac Paredes,39706,6,21,7,16
-2,2B,Fernando Tatis Jr.,35983,7,22,5.5,16
-3,3B,Manny Machado,31097,7,18.5,4.625,16
-4,SS,CJ Abrams,42402,11,27.5,9.166666666666666,16
-5,OF,Yordan Alvarez,36018,6,22,7.333333333333333,16
-5,OF,Jo Adell,40854,1,16.5,5.5,16
-5,OF,Seiya Suzuki,4142424,4,16.5,5.5,16
-5,OF,Trevor Larnach,41205,7,16.5,4.125,16
-5,OF,Michael Harris II,42470,1,16,4,16
-6,2B/SS,Jeremy Pena,41273,4,24,8,16
-7,1B/3B,Yandy Diaz,33481,13,17,4.25,16
-12,UTIL,Gabriel Moreno,42464,12,20.5,5.125,16
+0,C,Dillon Dingler,4345620,14,31,6.2,16
+1,1B,Isaac Paredes,39706,6,23.5,5.875,16
+2,2B,Fernando Tatis Jr.,35983,7,21.5,4.3,16
+3,3B,Manny Machado,31097,7,22,4.4,16
+4,SS,CJ Abrams,42402,11,30,7.5,16
+5,OF,Yordan Alvarez,36018,6,25,6.25,16
+5,OF,Corbin Carroll,42404,2,20.5,5.125,16
+5,OF,Michael Harris II,42470,1,19.5,3.9,16
+5,OF,Pete Crow-Armstrong,4717833,8,19.5,4.875,16
+5,OF,Jo Adell,40854,1,18.5,4.625,16
+6,2B/SS,Jeremy Pena,41273,4,27.5,6.875,16
+7,1B/3B,Nolan Arenado,31261,13,17.5,3.5,16
+12,UTIL,Gabriel Moreno,42464,12,23.5,4.7,16
+14,SP,Cam Schlittler,5134581,11,35.5,35.5,16
 14,SP,Gavin Williams,4345076,6,35,35,16
+14,SP,Tarik Skubal,42409,4,32,32,16
+14,SP,Noah Cameron,4417208,14,30,30,16
+14,SP,Jesus Luzardo,39667,9,29,29,16
 14,SP,Cade Cavalli,4308037,6,26,26,16
-14,SP,Gerrit Cole,32081,13,26,26,16
-14,SP,Zack Wheeler,31267,13,26,26,16
-14,SP,George Kirby,42406,12,25.5,25.5,16
-14,SP,Taj Bradley,42480,5,25,25,16
-15,RP,Emilio Pagan,33403,8,13,6.5,16
-15,RP,Grant Taylor,4927630,4,13,13,16
-15,RP,Aaron Ashby,41325,7,11,11,16
+15,RP,Emilio Pagan,33403,8,21,7,16
+15,RP,Aroldis Chapman,30442,1,18.5,6.166666666666667,16
+15,RP,Tanner Scott,35135,6,15,7.5,16

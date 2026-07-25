@@ -35,7 +35,7 @@ Andrew Lama,Michael Bogaty,3,8,0.2727272727272727
 Andrew Lama,Zach Vinik,4,6,0.4
 Andrew Tham,Alex Brod,4,16,0.2
 Andrew Tham,Andrew Lama,6.5,8.5,0.43333333333333335
-Andrew Tham,Blair Prato,8.5,10.5,0.4473684210526316
+Andrew Tham,Blair Prato,8,11,0.42105263157894735
 Andrew Tham,Dan Gold,6,11,0.35294117647058826
 Andrew Tham,Dylan Boyd,9,13,0.4090909090909091
 Andrew Tham,Griffin Schwab,3,3,0.5
@@ -53,7 +53,7 @@ Andrew Tham,Vick Raghunathan,1,1,0.5
 Andrew Tham,Zach Vinik,3,5,0.375
 Blair Prato,Alex Brod,11,5,0.6875
 Blair Prato,Andrew Lama,7,7,0.5
-Blair Prato,Andrew Tham,10.5,8.5,0.5526315789473685
+Blair Prato,Andrew Tham,11,8,0.5789473684210527
 Blair Prato,Dan Gold,10,6,0.625
 Blair Prato,Dylan Boyd,12,5,0.7058823529411765
 Blair Prato,Jack Wagner,9,9,0.5
@@ -157,7 +157,7 @@ James Whitty,Dylan Boyd,6,5,0.5454545454545454
 James Whitty,Jack Wagner,5,6,0.45454545454545453
 James Whitty,Jake Hubertus,6,4,0.6
 James Whitty,Louis Danowsky,2,0,1
-James Whitty,Luke Benz,4,7,0.36363636363636365
+James Whitty,Luke Benz,3.5,7.5,0.3181818181818182
 James Whitty,Michael Bogaty,7,7,0.5
 James Whitty,Zach Vinik,2,6,0.25
 Jordan Bennett,Alex Brod,0,1,0
@@ -227,7 +227,7 @@ Luke Benz,Dan Gold,8,5,0.6153846153846154
 Luke Benz,Dylan Boyd,7,6,0.5384615384615384
 Luke Benz,Jack Wagner,8,7,0.5333333333333333
 Luke Benz,Jake Hubertus,7,8,0.4666666666666667
-Luke Benz,James Whitty,7,4,0.6363636363636364
+Luke Benz,James Whitty,7.5,3.5,0.6818181818181818
 Luke Benz,Kent Hubert,1,0,1
 Luke Benz,Louis Danowsky,3,1,0.75
 Luke Benz,Michael Bogaty,8,7,0.5333333333333333
