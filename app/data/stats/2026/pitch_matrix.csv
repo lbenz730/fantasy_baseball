@@ -111,7 +111,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,< 3,6+,1,Bad Start,Tucker? I hardly know her
 2,> 7,0,4,QS,Tucker? I hardly know her
 2,> 7,1,1,QS,Tucker? I hardly know her
-4,3.0,3,1,Bad Start,All That is Wright
+4,3.0,3,2,Bad Start,All That is Wright
 4,3.0,6+,1,Bad Start,All That is Wright
 4,3.1,6+,1,Bad Start,All That is Wright
 4,3.2,1,1,Bad Start,All That is Wright
@@ -132,7 +132,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,5.0,4,1,Bad Start,All That is Wright
 4,5.0,5,1,Bad Start,All That is Wright
 4,5.1,1,1,QS Potential,All That is Wright
-4,5.1,2,3,QS Potential,All That is Wright
+4,5.1,2,4,QS Potential,All That is Wright
 4,5.1,3,2,QS Potential,All That is Wright
 4,5.1,4,1,Bad Start,All That is Wright
 4,5.1,5,3,Bad Start,All That is Wright
@@ -235,7 +235,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,4.2,1,1,Bad Start,The Novaks
 6,4.2,2,2,Bad Start,The Novaks
 6,4.2,3,1,Bad Start,The Novaks
-6,4.2,5,1,Bad Start,The Novaks
+6,4.2,5,2,Bad Start,The Novaks
 6,5.0,0,3,QS Potential,The Novaks
 6,5.0,1,5,QS Potential,The Novaks
 6,5.0,2,6,QS Potential,The Novaks
@@ -285,6 +285,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.0,4,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,5,4,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,6+,6,Bad Start,Bibee-di-Bobbidi-Boo
+7,4.1,4,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.1,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,0,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,1,1,Bad Start,Bibee-di-Bobbidi-Boo
@@ -358,6 +359,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.1,2,1,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,3,2,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,4,1,Bad Start,Mt. Everest Taquito Farmers
+8,5.2,0,1,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,1,2,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,2,1,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,3,2,Blue Balls,Mt. Everest Taquito Farmers
@@ -424,14 +426,14 @@ team_id,ip,earned_runs,n,start_type,team
 9,5.2,2,1,Blue Balls,Book of Bob
 9,5.2,3,2,Blue Balls,Book of Bob
 9,6.0,0,10,QS,Book of Bob
-9,6.0,1,9,QS,Book of Bob
+9,6.0,1,10,QS,Book of Bob
 9,6.0,2,14,QS,Book of Bob
 9,6.0,3,1,QS,Book of Bob
 9,6.0,4,1,QS Potential,Book of Bob
 9,6.0,5,2,Bad Start,Book of Bob
 9,6.0,6+,2,Bad Start,Book of Bob
 9,6.1,2,2,QS,Book of Bob
-9,6.1,3,1,QS,Book of Bob
+9,6.1,3,2,QS,Book of Bob
 9,6.1,5,1,Bad Start,Book of Bob
 9,6.2,1,2,QS,Book of Bob
 9,6.2,6+,1,Bad Start,Book of Bob
@@ -507,7 +509,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,4.0,3,4,Bad Start,Blasphemous Hot Takes
 12,4.0,4,2,Bad Start,Blasphemous Hot Takes
 12,4.0,5,2,Bad Start,Blasphemous Hot Takes
-12,4.0,6+,2,Bad Start,Blasphemous Hot Takes
+12,4.0,6+,3,Bad Start,Blasphemous Hot Takes
 12,4.1,0,1,Bad Start,Blasphemous Hot Takes
 12,4.1,1,1,Bad Start,Blasphemous Hot Takes
 12,4.1,3,1,Bad Start,Blasphemous Hot Takes
@@ -559,6 +561,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,> 7,3,2,QS,Blasphemous Hot Takes
 12,CG,2,1,CG,Blasphemous Hot Takes
 13,3.0,0,2,Bad Start,Ketel Bells
+13,3.0,5,1,Bad Start,Ketel Bells
 13,3.0,6+,2,Bad Start,Ketel Bells
 13,3.1,1,1,Bad Start,Ketel Bells
 13,3.2,2,1,Bad Start,Ketel Bells
