@@ -48,7 +48,7 @@ Andrew Tham,Kent Hubert,5,5,0.5
 Andrew Tham,Louis Danowsky,7,3,0.7
 Andrew Tham,Luke Benz,3,10,0.23076923076923078
 Andrew Tham,Matt O'Donnell,2,4,0.3333333333333333
-Andrew Tham,Michael Bogaty,2,14,0.125
+Andrew Tham,Michael Bogaty,3,13,0.1875
 Andrew Tham,Vick Raghunathan,1,1,0.5
 Andrew Tham,Zach Vinik,3,5,0.375
 Blair Prato,Alex Brod,11,5,0.6875
@@ -62,7 +62,7 @@ Blair Prato,James Whitty,10,3,0.7692307692307693
 Blair Prato,Josh Chodor,3,0,1
 Blair Prato,Kent Hubert,2,3,0.4
 Blair Prato,Louis Danowsky,5,0,1
-Blair Prato,Luke Benz,10,5,0.6666666666666666
+Blair Prato,Luke Benz,9,6,0.6
 Blair Prato,Michael Bogaty,5,10,0.3333333333333333
 Blair Prato,Zach Vinik,3,6,0.3333333333333333
 Dan Gold,Alex Brod,7,14,0.3333333333333333
@@ -222,7 +222,7 @@ Louis Danowsky,Vick Raghunathan,2,0,1
 Luke Benz,Alex Brod,8,9,0.47058823529411764
 Luke Benz,Andrew Lama,11,3,0.7857142857142857
 Luke Benz,Andrew Tham,10,3,0.7692307692307693
-Luke Benz,Blair Prato,5,10,0.3333333333333333
+Luke Benz,Blair Prato,6,9,0.4
 Luke Benz,Dan Gold,8,5,0.6153846153846154
 Luke Benz,Dylan Boyd,7,6,0.5384615384615384
 Luke Benz,Jack Wagner,8,7,0.5333333333333333
@@ -247,7 +247,7 @@ Matt O'Donnell,Louis Danowsky,4,2,0.6666666666666666
 Matt O'Donnell,Vick Raghunathan,0,1,0
 Michael Bogaty,Alex Brod,6,10,0.375
 Michael Bogaty,Andrew Lama,8,3,0.7272727272727273
-Michael Bogaty,Andrew Tham,14,2,0.875
+Michael Bogaty,Andrew Tham,13,3,0.8125
 Michael Bogaty,Blair Prato,10,5,0.6666666666666666
 Michael Bogaty,Dan Gold,11,7,0.6111111111111112
 Michael Bogaty,Dylan Boyd,7,10,0.4117647058823529
