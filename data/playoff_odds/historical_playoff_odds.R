@@ -62,9 +62,9 @@ for(i in 1:11) {
   x <- 
     df_sims %>% 
     group_by(team, division_id, sim_id) %>% 
-    summarise('wins' = sum(total_points > total_points_opp),
-              'points' = sum(total_points)) %>% 
-    ungroup() 
+    summarise('wins' = sum(total_points > total_points_opp) + 0.5 * sum(total_points == total_points_opp),
+              'points' = sum(total_points)) %>%
+    ungroup()
   
   x <- 
     group_by(x, sim_id) %>% 

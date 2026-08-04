@@ -867,23 +867,23 @@ df_sims <-
 write_csv(df_sims, 'data/playoff_odds/raw_sims.csv')
 
 if(params$matchup_id <= reg_season) {
-  x <- 
-    df_sims %>% 
-    filter(matchup_id <= reg_season) %>% 
-    group_by(team, division_id, sim_id, team_id) %>% 
-    summarise('wins' = sum(total_points > total_points_opp),
+  x <-
+    df_sims %>%
+    filter(matchup_id <= reg_season) %>%
+    group_by(team, division_id, sim_id, team_id) %>%
+    summarise('wins' = sum(total_points > total_points_opp) + 0.5 * sum(total_points == total_points_opp),
               'points' = sum(total_points),
-              'win_this_week' = as.numeric(total_points[matchup_id == params$matchup_id] > total_points_opp[matchup_id == params$matchup_id])) %>% 
+              'win_this_week' = as.numeric(total_points[matchup_id == params$matchup_id] > total_points_opp[matchup_id == params$matchup_id])) %>%
     ungroup()
 } else {
-  x <- 
-    df_sims %>% 
-    filter(matchup_id <= reg_season) %>% 
-    group_by(team, division_id, sim_id, team_id) %>% 
-    summarise('wins' = sum(total_points > total_points_opp),
-              'points' = sum(total_points)) %>% 
+  x <-
+    df_sims %>%
+    filter(matchup_id <= reg_season) %>%
+    group_by(team, division_id, sim_id, team_id) %>%
+    summarise('wins' = sum(total_points > total_points_opp) + 0.5 * sum(total_points == total_points_opp),
+              'points' = sum(total_points)) %>%
     ungroup()
-  
+
 }
 
 write_csv(x, 'data/playoff_odds/distributions.csv')
