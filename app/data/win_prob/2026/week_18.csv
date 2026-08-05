@@ -1,13 +1,19 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 Bibee-di-Bobbidi-Boo,The Traveling Secretaries,0,7,0,8,8,0,0.3778901938141576,0.49812692435459077
 Bibee-di-Bobbidi-Boo,The Traveling Secretaries,1,6,12.5,8,8,0,0.49212855688311263,0.6475990708459218
-Mt. Everest Taquito Farmers,Tucker? I hardly know her,0,7,0,8,8,0,0.5363453027037535,0.49812692435459077
+Bibee-di-Bobbidi-Boo,The Traveling Secretaries,2,5,24,8,8,0,0.5626068206664391,0.7640867690426446
+Mt. Everest Taquito Farmers,Tucker? I hardly know her,0,7,0,8,8,0,0.5343787625295146,0.49812692435459077
 Mt. Everest Taquito Farmers,Tucker? I hardly know her,1,6,-34,8,7,1,0.3635913707926701,0.27966253862521573
+Mt. Everest Taquito Farmers,Tucker? I hardly know her,2,5,-66.5,4,5,-1,0.07215550681229196,0.048342383914975445
 The Talmudic Tunnelers,Book of Bob,0,7,0,8,8,0,0.5215318062671187,0.49812692435459077
 The Talmudic Tunnelers,Book of Bob,1,6,-18.5,7,8,-1,0.3540119590986899,0.2478789998238938
+The Talmudic Tunnelers,Book of Bob,2,5,-81,7,5,2,0.14953079700136407,0.08901675937892102
 Blasphemous Hot Takes,Ketel Bells,0,7,0,8,8,0,0.5253732353480763,0.49812692435459077
 Blasphemous Hot Takes,Ketel Bells,1,6,8.5,7,7,0,0.5857972620011093,0.6014196863178021
+Blasphemous Hot Takes,Ketel Bells,2,5,0,6,7,-1,0.4752263790932397,0.4038977655604978
 The Novaks,All That is Wright,0,7,0,8,8,0,0.4650168194503624,0.49812692435459077
 The Novaks,All That is Wright,1,6,-12.5,8,8,0,0.391055212048386,0.34898881925987413
-The West Bank Occupiers,Top Gunner: Henderson,0,7,0,8,8,0,0.6313087909938244,0.49812692435459077
+The Novaks,All That is Wright,2,5,-39.5,8,7,1,0.27634407272039513,0.23860531996183892
+The West Bank Occupiers,Top Gunner: Henderson,0,7,0,8,8,0,0.6310787463694053,0.49812692435459077
 The West Bank Occupiers,Top Gunner: Henderson,1,6,-8,7,6,1,0.5690669549813074,0.5166111058544134
+The West Bank Occupiers,Top Gunner: Henderson,2,5,11,6,6,0,0.6667446192145672,0.6305513660313316
