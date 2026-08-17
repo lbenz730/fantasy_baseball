@@ -9710,7 +9710,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 109,19,Eury Perez,4917854,NA,52.5,8
 109,19,Miguel Vargas,42453,5,32,8
 109,19,Elly De La Cruz,4917694,6,3,8
-109,19,Dominic Canzone,4345621,6,22,8
+109,19,Dominic Canzone,4345621,6,21.5,8
 109,19,Jazz Chisholm Jr.,41433,6,7,8
 109,19,Bubba Chandler,4683325,NA,11,8
 109,19,Josh Naylor,35066,5,12.5,8
@@ -9765,7 +9765,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 111,19,Hunter Gaddis,4187661,NA,10.5,2
 111,19,Caleb Durbin,5007615,7,17,2
 111,19,Mike Trout,30836,7,22.5,2
-111,19,Yainer Diaz,4781491,3,2,2
+111,19,Yainer Diaz,4781491,3,1.5,2
 112,19,Ketel Marte,32512,5,20,9
 112,19,Bryan Reynolds,38980,6,14.5,9
 112,19,Jared Jones,4918156,NA,16,9
@@ -9780,7 +9780,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 112,19,David Bednar,38303,NA,10,9
 112,19,Ivan Herrera,41889,6,15.5,9
 112,19,Lars Nootbaar,4448736,3,2,9
-112,19,Bryan Woo,4629089,NA,15,9
+112,19,Bryan Woo,4629089,NA,20,9
 112,19,Jonathan Aranda,40810,6,9.5,9
 112,19,Walbert Urena,5197476,NA,25,9
 112,19,Dylan Lee,41455,NA,16.5,9
@@ -9829,10 +9829,10 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 114,19,Max Fried,32685,NA,11,4
 114,19,Jake McCarthy,41197,6,4.5,4
 114,19,Bryce Miller,4654313,NA,4.5,4
-114,19,Jose Altuve,31662,5,10,4
+114,19,Jose Altuve,31662,5,11,4
 114,19,Sal Stewart,5080771,6,18,4
 114,19,Kaelen Culpepper,4935268,2,0,4
-114,19,Carson Benge,4925604,6,14.5,4
+114,19,Carson Benge,4925604,6,15.5,4
 114,19,Michael Busch,42415,5,2,4
 114,19,Nolan McLean,4433874,NA,22,4
 114,19,Jacob Latz,3210625,NA,16.5,4
@@ -9962,7 +9962,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 109,19,Ian Happ,34945,6,6,7
 109,19,Rafael Devers,33859,6,19.5,7
 109,19,Rico Garcia,41382,NA,-4,7
-109,19,Randy Arozarena,36488,6,22.5,7
+109,19,Randy Arozarena,36488,6,24.5,7
 109,19,Reid Detmers,4326697,NA,60,7
 109,19,Geraldo Perdomo,41355,5,9.5,7
 109,19,Hunter Brown,4717803,NA,16.5,7
@@ -10025,7 +10025,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 111,19,Kyle Harrison,4683375,NA,-10.5,12
 111,19,Max Clark,5148964,6,8,12
 111,19,JJ Bleday,42410,6,5.5,12
-111,19,Andres Munoz,40939,NA,-3,12
+111,19,Andres Munoz,40939,NA,4.5,12
 111,19,Wilyer Abreu,4990055,7,29.5,12
 111,19,Trea Turner,33710,4,8.5,12
 111,19,Kyle Schwarber,33712,6,22.5,12
@@ -10042,7 +10042,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 112,19,Marcus Semien,32146,1,-0.5,6
 112,19,Trevor Rogers,39640,NA,23.5,6
 112,19,Heliot Ramos,39642,3,0,6
-112,19,Isaac Paredes,39706,6,22.5,6
+112,19,Isaac Paredes,39706,6,23.5,6
 112,19,Paul Skenes,4719507,NA,11,6
 112,19,Tommy Edman,39907,3,4,6
 112,19,Austin Riley,34982,1,-0.5,6
@@ -10054,7 +10054,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 112,19,Brendan Donovan,41773,2,-0.5,6
 112,19,Jordan Walker,4684778,6,21.5,6
 112,19,Eugenio Suarez,32367,6,21,6
-112,19,Yordan Alvarez,36018,6,18.5,6
+112,19,Yordan Alvarez,36018,6,19.5,6
 112,19,Corey Seager,32691,6,15,6
 112,19,Jackson Holliday,5080633,6,14,6
 112,19,Gavin Williams,4345076,NA,-1,6
@@ -10083,7 +10083,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 113,19,J.T. Ginn,4414002,NA,9,11
 113,19,Ryan Jeffers,41587,5,16,11
 113,19,Trent Grisham,34995,6,28,11
-113,19,Josh Hader,32760,NA,17,11
+113,19,Josh Hader,32760,NA,20,11
 113,19,Joey Cantillo,42488,NA,25.5,11
 113,19,Cam Schlittler,5134581,NA,15.5,11
 113,19,Parker Messick,4619898,NA,14.5,11
