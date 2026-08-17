@@ -8,7 +8,7 @@ library(here)
 source(here('models/build_training_set.R'))
 
 plot_wp <- function(season, week, plot = T, all = F) {
-  xgb_model <- xgb.load(here('models/xgb_winprob'))
+  xgb_model <- xgb.load(here('models/xgb_winprob.json'))
   log_reg <- read_rds(here('models/log_reg.rds'))
   prior <- read_rds(here('models/prior.rds'))
   preprocessing_recipe <- read_rds(here('models/recipe.rds'))

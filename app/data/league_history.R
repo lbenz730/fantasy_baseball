@@ -45,7 +45,16 @@ convert_schedule <- function(df, format = 'old') {
     )
     
   }
-  
+
+}
+
+pick_winner <- function(x, cond) {
+  cond[is.na(cond)] <- FALSE
+  if (sum(cond) == 1) {
+    x[cond]
+  } else {
+    NA
+  }
 }
 
 
@@ -85,10 +94,10 @@ summarise_season <- function(season, format, history_url, rs_bounds_old) {
       head(2) %>% 
       convert_schedule('new') %>% 
       mutate('game_id' = c('champ', 'third', 'champ', 'third')) %>% 
-      summarise('champion' = team[team_score > opp_score & game_id == 'champ'],
-                'runner_up' = team[team_score < opp_score & game_id == 'champ'],
-                'third' = team[team_score > opp_score & game_id == 'third'],
-                'fourth' = team[team_score < opp_score & game_id == 'third'])
+      summarise('champion' = pick_winner(team, team_score > opp_score & game_id == 'champ'),
+                'runner_up' = pick_winner(team, team_score < opp_score & game_id == 'champ'),
+                'third' = pick_winner(team, team_score > opp_score & game_id == 'third'),
+                'fourth' = pick_winner(team, team_score < opp_score & game_id == 'third'))
     
     season_stats <- 
       season_stats %>% 
@@ -135,10 +144,10 @@ summarise_season <- function(season, format, history_url, rs_bounds_old) {
       convert_schedule('old') %>% 
       mutate('game_id' = c('champ', 'third', 'champ', 'third')) %>% 
       left_join(old_managers, by = c('team', 'season')) %>% 
-      summarise('champion' = team_id[team_score > opp_score & game_id == 'champ'],
-                'runner_up' = team_id[team_score < opp_score & game_id == 'champ'],
-                'third' = team_id[team_score > opp_score & game_id == 'third'],
-                'fourth' = team_id[team_score < opp_score & game_id == 'third'])
+      summarise('champion' = pick_winner(team_id, team_score > opp_score & game_id == 'champ'),
+                'runner_up' = pick_winner(team_id, team_score < opp_score & game_id == 'champ'),
+                'third' = pick_winner(team_id, team_score > opp_score & game_id == 'third'),
+                'fourth' = pick_winner(team_id, team_score < opp_score & game_id == 'third'))
     
     season_stats <- 
       season_stats %>% 

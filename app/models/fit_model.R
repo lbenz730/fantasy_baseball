@@ -148,7 +148,7 @@ model <-
           nrounds = best_params$iter,
           verbose = 2)
 
-xgb.save(model, here('models/xgb_winprob'))
+xgb.save(model, here('models/xgb_winprob.json'))
 
 importance <- xgboost::xgb.importance(
   feature_names = colnames(bake(preprocessing_recipe, df)),
