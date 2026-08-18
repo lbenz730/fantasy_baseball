@@ -14,36 +14,48 @@ df <- bind_rows(build_train_set(2020, augment = T),
                 build_train_set(2025, augment = T))
                 
 
-covariates <- c('score_diff', 
+covariates <- c('score_diff',
                 'days_left',
-                
+
                 'score_days_ratio',
                 'score_starts_ratio',
-                
+
                 'start_advantage',
                 'start_advantage_ratio',
-                
-                'points_per_day_spread',
-                # 'pitch_spread_per_start', 
-                ''
+
+                'points_per_day_spread'
+                # 'pitch_spread_per_start'
 )
 
-constraints <- c(
-  1, 0, 
-  -1, -1,
-  1, 1,
-  1)
+### Named by covariate so constraint order is derived from the baked matrix's
+### actual column order below, rather than assumed positionally
+constraint_map <- c(
+  'score_diff' = 1,
+  'days_left' = 0,
+  'score_days_ratio' = -1,
+  'score_starts_ratio' = -1,
+  'start_advantage' = 1,
+  'start_advantage_ratio' = 1,
+  'points_per_day_spread' = 1
+)
 
 
 
 
 ### Preprocessing Recipe
-preprocessing_recipe <- 
-  recipe(win ~ ., data = df) %>% 
-  step_rm(ends_with('id')) %>% 
-  step_rm(-any_of(covariates)) %>% 
-  prep()
-# preprocessing_recipe <- butcher::butcher(preprocessing_recipe)
+preprocessing_recipe <-
+  recipe(win ~ ., data = df) %>%
+  step_rm(ends_with('id')) %>%
+  step_rm(-any_of(covariates)) %>%
+  prep(retain = FALSE)
+
+baked_cols <- colnames(bake(preprocessing_recipe, df))
+stopifnot(all(baked_cols %in% names(constraint_map)))
+constraints <- unname(constraint_map[baked_cols])
+
+### Strips the formula's captured environment (which otherwise drags the
+### full training data along when serialized) plus the retained template
+preprocessing_recipe <- butcher::butcher(preprocessing_recipe)
 write_rds(preprocessing_recipe, here('models/recipe.rds'))
 
 ### CV Folds
@@ -90,10 +102,9 @@ run_cv <- function(param_set) {
     )
   
   ### Cross validation
-  cv_model <- 
+  cv_model <-
     xgb.cv(
-      data = as.matrix(df_train),
-      label = df$win,
+      data = xgb.DMatrix(data = as.matrix(df_train), label = df$win),
       params = params,
       nrounds = 5000,
       folds = cv_folds,
@@ -126,27 +137,21 @@ best_params <-
   arrange(logloss) %>% 
   dplyr::slice(1)
 
-params <-
-  list('booster' = "gbtree",
-       'objective' = "binary:logistic",
-       'eval_metric' = c("logloss"),
-       'eta' = best_params$eta,
-       'gamma' = best_params$gamma,
-       'subsample' = best_params$subsample,
-       'colsample_bytree' = best_params$colsample_bytree,
-       'max_depth' = best_params$max_depth,
-       'min_child_weight' = best_params$min_child_weight,
-       'monotone_constraints' = constraints)
-
-
-
-
-model <- 
-  xgboost(params = params,
-          data = as.matrix(bake(preprocessing_recipe, df)),
-          label = df$win,
+model <-
+  xgboost(x = as.matrix(bake(preprocessing_recipe, df)),
+          y = as.logical(df$win),
+          objective = "binary:logistic",
+          eval_metric = "logloss",
           nrounds = best_params$iter,
-          verbose = 2)
+          learning_rate = best_params$eta,
+          min_split_loss = best_params$gamma,
+          subsample = best_params$subsample,
+          colsample_bytree = best_params$colsample_bytree,
+          max_depth = best_params$max_depth,
+          min_child_weight = best_params$min_child_weight,
+          monotone_constraints = constraints,
+          booster = "gbtree",
+          verbosity = 1)
 
 xgb.save(model, here('models/xgb_winprob.json'))
 

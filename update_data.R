@@ -834,14 +834,14 @@ if(params$matchup_id > 1) {
 names(team_mus) <- sort(unique(team_points$team))
 names(team_sigmas) <- sort(unique(team_points$team))
 
-na_ix <- 
-  (schedule$matchup_id > params$matchup_id) | (wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12 & (schedule$matchup_id >= params$matchup_id))
+na_ix <-
+  (schedule$matchup_id > params$matchup_id) | (wday(Sys.Date()) == 2 & hour(Sys.time()) < 12 & (schedule$matchup_id >= params$matchup_id))
 
 
 df_sims <- future_map_dfr(1:params$nsims, sim_season, .options = furrr_options(seed = 12))
 
 ### Edit Current Week
-if(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 20)) {
+if(!(wday(Sys.Date()) == 2 & hour(Sys.time()) < 20)) {
   df_sims[df_sims$matchup_id == params$matchup_id,] <- edit_wp(df_sims, df_wp, team_mus, team_sigmas)
 }
 
@@ -951,7 +951,7 @@ if(params$matchup_id == 1) {
 }
 
 ### Edit previous week if first day of matchup
-params$sim_match_id <- ifelse(!(wday(Sys.Date()) == 2 & hour(Sys.Date()) < 12), params$matchup_id, params$matchup_id - 1)
+params$sim_match_id <- ifelse(!(wday(Sys.Date()) == 2 & hour(Sys.time()) < 12), params$matchup_id, params$matchup_id - 1)
 read_csv(glue('data/playoff_odds/historical_playoff_odds_{params$season}.csv')) %>%
   filter(matchup_id != params$sim_match_id) %>%
   bind_rows(sim_results %>% mutate('matchup_id' = params$sim_match_id)) %>% 
