@@ -10022,7 +10022,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 111,19,Tommy Edman,39907,NA,3,12
 111,19,Juan Morillo,4722925,2,7.5,12
 111,19,George Kirby,42406,NA,-4.5,12
-111,19,Kyle Harrison,4683375,NA,-10.5,12
+111,19,Kyle Harrison,4683375,NA,-0.5,12
 111,19,Max Clark,5148964,NA,8,12
 111,19,JJ Bleday,42410,NA,5.5,12
 111,19,Andres Munoz,40939,3,4.5,12
@@ -10234,8 +10234,8 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 113,NA,NA,NA,NA,NA,13
 114,NA,NA,NA,NA,NA,4
 115,20,Michael Wacha,32640,NA,4,7
-115,20,Ian Happ,34945,NA,2.5,7
-115,20,Willi Castro,34230,NA,-0.5,7
+115,20,Ian Happ,34945,NA,3.5,7
+115,20,Willi Castro,34230,NA,1.5,7
 115,20,Rico Garcia,41382,1,4.5,7
 115,20,Brandon Lowe,39961,NA,2,7
 115,20,Manny Machado,31097,NA,2,7
@@ -10248,7 +10248,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 116,20,Ty France,35591,NA,2,12
 116,20,Brock Burke,39945,1,2.5,12
 116,20,Max Clark,5148964,NA,2.5,12
-116,20,JJ Bleday,42410,NA,3.5,12
+116,20,JJ Bleday,42410,NA,4.5,12
 116,20,Wilyer Abreu,4990055,NA,6,12
 116,20,Trea Turner,33710,NA,3.5,12
 116,20,Kyle Schwarber,33712,NA,1.5,12
@@ -10260,7 +10260,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 116,20,Max Muncy,33303,NA,11,12
 117,20,Matt McLain,4422899,NA,1,6
 117,20,Masyn Winn,4683365,NA,1.5,6
-117,20,Tommy Edman,39907,NA,1.5,6
+117,20,Tommy Edman,39907,NA,2,6
 117,20,Jackson Holliday,5080633,NA,1.5,6
 117,20,Bryce Harper,30951,NA,5,6
 117,20,Jackson Merrill,4872691,NA,1,6
@@ -10279,7 +10279,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 118,20,Brooks Lee,4629081,NA,0,11
 119,20,Alec Bohm,41169,NA,2.5,14
 119,20,Lawrence Butler,4917919,NA,2,14
-119,20,Blake Snell,33748,NA,17.5,14
+119,20,Blake Snell,33748,NA,22.5,14
 119,20,Framber Valdez,36581,NA,7,14
 119,20,Jhoan Duran,41109,1,2,14
 119,20,Dillon Dingler,4345620,NA,1.5,14
@@ -10289,6 +10289,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 119,20,Gunnar Henderson,42507,NA,3.5,14
 119,20,Griffin Conine,41295,NA,1.5,14
 119,20,Luis Robert Jr.,39631,NA,1.5,14
+120,20,Jacob Webb,40384,1,4,4
 120,20,Nolan McLean,4433874,NA,15.5,4
 120,20,Francisco Lindor,32129,NA,3,4
 120,20,Marcus Semien,32146,NA,0,4
@@ -10297,7 +10298,7 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 120,20,Jake McCarthy,41197,NA,1.5,4
 120,20,Kevin McGonigle,5149072,NA,7.5,4
 120,20,Sal Stewart,5080771,NA,2,4
-120,20,Carson Benge,4925604,NA,0,4
+120,20,Carson Benge,4925604,NA,2,4
 120,20,Michael Busch,42415,NA,0,4
 1,NA,NA,NA,NA,NA,7
 2,NA,NA,NA,NA,NA,14
@@ -10413,38 +10414,40 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 112,NA,NA,NA,NA,NA,6
 113,NA,NA,NA,NA,NA,11
 114,NA,NA,NA,NA,NA,14
-115,20,Cole Carrigg,5149102,NA,-0.5,1
+115,20,Cole Carrigg,5149102,NA,-1.5,1
+115,20,Michael Harris II,42470,NA,1,1
+115,20,Alex Bregman,34886,NA,5,1
+115,20,Drake Baldwin,4810190,NA,4,1
+115,20,Mookie Betts,33039,NA,4,1
+115,20,Yoendrys Gomez,42898,1,5.5,1
 115,20,Jac Caglianone,4926296,NA,6,1
 115,20,Bryan Baker,40884,1,9,1
 115,20,Mitch Bratt,5123768,NA,-3,1
-115,20,Michael Harris II,42470,NA,1,1
-115,20,Alex Bregman,34886,NA,4,1
 115,20,Heriberto Hernandez,42455,NA,-1,1
-115,20,Drake Baldwin,4810190,NA,4,1
-115,20,Munetaka Murakami,4872595,NA,3.5,1
+115,20,Munetaka Murakami,4872595,NA,4.5,1
 115,20,Ronald Acuna Jr.,36185,NA,1.5,1
 115,20,Ceddanne Rafaela,4987382,NA,9,1
 115,20,Matt Olson,32767,NA,2.5,1
-115,20,Mookie Betts,33039,NA,4,1
 116,20,Nick Gonzales,4311634,NA,4,8
-116,20,Miguel Vargas,42453,NA,1.5,8
+116,20,Miguel Vargas,42453,NA,1,8
 116,20,Jakob Marsee,4866735,NA,-0.5,8
 116,20,Elly De La Cruz,4917694,NA,2.5,8
 116,20,Emilio Pagan,33403,1,4.5,8
+116,20,Troy Johnston,4346111,NA,0,8
 116,20,Xavier Edwards,41326,NA,3.5,8
-116,20,Pete Crow-Armstrong,4717833,NA,10.5,8
-117,20,TJ Rumfield,5014349,NA,1,5
+116,20,Pete Crow-Armstrong,4717833,NA,17.5,8
+117,20,TJ Rumfield,5014349,NA,2.5,5
 117,20,Bobby Witt Jr.,42403,NA,16,5
-117,20,Andy Pages,42468,NA,8,5
+117,20,Andy Pages,42468,NA,9,5
 117,20,Cristopher Sanchez,42359,NA,17,5
 117,20,Chandler Simpson,4679983,NA,-1,5
-117,20,Shota Imanaga,5134630,NA,18,5
+117,20,Shota Imanaga,5134630,NA,23,5
 117,20,Ildemaro Vargas,32985,NA,1,5
 117,20,Luke Keaschall,4977664,NA,3.5,5
 117,20,Royce Lewis,40635,NA,1.5,5
-117,20,Chase Meidroth,5136929,NA,-1.5,5
+117,20,Chase Meidroth,5136929,NA,-2,5
 118,20,Bryson Stott,42417,NA,4,2
-118,20,Nico Hoerner,41219,NA,4,2
+118,20,Nico Hoerner,41219,NA,6,2
 118,20,Caleb Durbin,5007615,NA,8,2
 118,20,Corbin Carroll,42404,NA,0,2
 118,20,Josh Bell,32517,NA,7,2
@@ -10455,15 +10458,15 @@ team_ix,matchup_id,player,player_id,n_games,n_points,team_id
 119,20,Ivan Herrera,41889,NA,10,9
 119,20,Bryan Reynolds,38980,NA,-1.5,9
 119,20,Luis Rengifo,37237,NA,0.5,9
-119,20,Zac Veen,4717903,NA,0,9
+119,20,Zac Veen,4717903,NA,2.5,9
 119,20,Bo Bichette,38904,NA,2,9
 119,20,Martin Perez,31098,NA,0,9
 119,20,Jonathan Aranda,40810,NA,4.5,9
 119,20,Liam Hicks,4725251,NA,-1,9
 119,20,JJ Wetherholt,4941056,NA,1,9
-119,20,A.J. Ewing,5208019,NA,1,9
+119,20,A.J. Ewing,5208019,NA,2,9
 119,20,Spencer Torkelson,4424286,NA,-0.5,9
-120,20,Freddie Freeman,30193,NA,5,13
+120,20,Freddie Freeman,30193,NA,8,13
 120,20,Adley Rutschman,42178,NA,5,13
 120,20,Xander Bogaerts,31606,NA,0.5,13
 120,20,Jake Mangum,42664,NA,4,13
