@@ -417,25 +417,25 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Louis Varland,4917888,6,26,6.5,19
 15,RP,Josh Hader,32760,11,20,5,19
 15,RP,Dylan Lee,41455,9,16.5,5.5,19
-0,C,Adley Rutschman,42178,13,15,7.5,20
-1,1B,Freddie Freeman,30193,13,15.5,7.75,20
-2,2B,Willi Castro,34230,7,14.5,7.25,20
-3,3B,Max Muncy,33303,12,13,6.5,20
-4,SS,Bobby Witt Jr.,42403,5,19,9.5,20
-5,OF,Pete Crow-Armstrong,4717833,8,24.5,12.25,20
-5,OF,Fernando Tatis Jr.,35983,7,12.5,6.25,20
-5,OF,Jake Bauers,35013,5,11.5,11.5,20
-5,OF,Ceddanne Rafaela,4987382,1,11,5.5,20
-5,OF,Andy Pages,42468,5,10,5,20
-6,2B/SS,Bryson Stott,42417,2,10,5,20
-7,1B/3B,Willson Contreras,32532,12,15,7.5,20
-12,UTIL,Shohei Ohtani,39832,14,23.5,11.75,20
+0,C,Adley Rutschman,42178,13,15,5,20
+1,1B,Yandy Diaz,33481,13,21,7,20
+2,2B,Fernando Tatis Jr.,35983,7,17.5,5.833333333333333,20
+3,3B,Willi Castro,34230,7,14,4.666666666666667,20
+4,SS,Bobby Witt Jr.,42403,5,21.5,7.166666666666667,20
+5,OF,Pete Crow-Armstrong,4717833,8,24,8,20
+5,OF,Jordan Walker,4684778,6,16.5,4.125,20
+5,OF,Kody Clemens,41311,11,12,4,20
+5,OF,Andy Pages,42468,5,11.5,3.8333333333333335,20
+5,OF,Jac Caglianone,4926296,1,11,3.6666666666666665,20
+6,2B/SS,Mookie Betts,33039,1,14,4.666666666666667,20
+7,1B/3B,Josh Bell,32517,2,18.5,6.166666666666667,20
+12,UTIL,Shohei Ohtani,39832,14,23.5,7.833333333333333,20
+14,SP,Cade Cavalli,4308037,6,30,30,20
+14,SP,Parker Messick,4619898,11,26.5,26.5,20
 14,SP,Braxton Ashcraft,41282,2,26,26,20
 14,SP,Shane Baz,39639,1,23,23,20
 14,SP,Shota Imanaga,5134630,5,23,23,20
 14,SP,Blake Snell,33748,14,22.5,22.5,20
-14,SP,Foster Griffin,33773,7,22,22,20
-14,SP,Robbie Ray,32175,1,20.5,20.5,20
+15,RP,Yoendrys Gomez,42898,1,18.5,6.166666666666667,20
+15,RP,Bryan Baker,40884,1,16,8,20
 15,RP,Riley O'Brien,41509,11,16,8,20
-15,RP,Yoendrys Gomez,42898,1,11.5,5.75,20
-15,RP,Bryan Baker,40884,1,9,9,20
