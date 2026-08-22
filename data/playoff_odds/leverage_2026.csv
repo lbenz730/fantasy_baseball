@@ -1,13 +1,13 @@
 team,team_id,playoffs_W,playoffs_L,n_W,n_L,playoffs_baseline,playoff_leverage,ferry_W,ferry_L,ferry_baseline,ferry_leverage
-All That is Wright,4,1,1,956,9044,1,0,0,0,0,0
-Bibee-di-Bobbidi-Boo,7,0,0,2380,7620,0,0,0,0,0,0
-Blasphemous Hot Takes,12,0,0,5081,4919,0,0,0.9320999803188349,1,0.9655,-0.0679000196811651
-Book of Bob,9,0.0334855403348554,0,657,9343,0.0022,0.0334855403348554,0,0,0,0
-Ketel Bells,13,0,0,9044,956,0,0,0,0,0,0
-Mt. Everest Taquito Farmers,8,0,0,4919,5081,0,0,0,0,0,0
-The Novaks,6,1,0.23374204563091727,3557,6443,0.5063,0.7662579543690827,0,0,0,0
-The Talmudic Tunnelers,1,1,0,7620,2380,0.762,1,0,0,0,0
-The Traveling Secretaries,5,1,0.2395276918751757,6443,3557,0.7295,0.7604723081248244,0,0,0,0
-The West Bank Occupiers,11,1,1,1122,8878,1,0,0,0,0,0
-Top Gunner: Henderson,14,0,0,9343,657,0,0,0,0.5251141552511416,0.0345,-0.5251141552511416
-Tucker? I hardly know her,2,0,0,8878,1122,0,0,0,0,0,0
+All That is Wright,4,1,1,1143,8857,1,0,0,0,0,0
+Bibee-di-Bobbidi-Boo,7,0,0,6527,3473,0,0,0,0,0,0
+Blasphemous Hot Takes,12,0,0,3477,6523,0,0,0.995973540408398,1,0.9986,-0.004026459591601972
+Book of Bob,9,0.075,0,40,9960,3.0000000000000003e-4,0.075,0,0,0,0
+Ketel Bells,13,0,0,8857,1143,0,0,0,0,0,0
+Mt. Everest Taquito Farmers,8,0,0,6523,3477,0,0,0,0,0,0
+The Novaks,6,1,0.6473222979552093,4865,5135,0.8189,0.35267770204479065,0,0,0,0
+The Talmudic Tunnelers,1,1,0,3473,6527,0.3473,1,0,0,0,0
+The Traveling Secretaries,5,1,0.65775950668037,5135,4865,0.8335,0.34224049331963,0,0,0,0
+The West Bank Occupiers,11,1,1,289,9711,1,0,0,0,0,0
+Top Gunner: Henderson,14,0,0,9960,40,0,0,0,0.35,0.0014,-0.35
+Tucker? I hardly know her,2,0,0,9711,289,0,0,0,0,0,0
