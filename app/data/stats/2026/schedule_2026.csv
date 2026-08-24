@@ -113,9 +113,15 @@ matchup_id,game_id,home_team_id,home_total_points,home_batting_points,home_pitch
 19,112,9,377.5,189.5,188,6,337.5,166,171.5,Book of Bob,The Novaks
 19,113,13,323.5,204,119.5,11,352.5,197.5,155,Ketel Bells,The West Bank Occupiers
 19,114,4,364,192,172,14,307.5,209.5,98,All That is Wright,Top Gunner: Henderson
-20,115,7,315.5,157,158.5,1,299.5,148.5,151,Bibee-di-Bobbidi-Boo,The Talmudic Tunnelers
-20,116,12,278,208.5,69.5,8,235,146.5,88.5,Blasphemous Hot Takes,Mt. Everest Taquito Farmers
-20,117,6,289.5,162.5,127,5,255.5,162,93.5,The Novaks,The Traveling Secretaries
-20,118,11,200.5,139.5,61,2,311.5,204,107.5,The West Bank Occupiers,Tucker? I hardly know her
-20,119,14,345,221,124,9,206.5,102.5,104,Top Gunner: Henderson,Book of Bob
-20,120,4,230.5,135,95.5,13,287,154.5,132.5,All That is Wright,Ketel Bells
+20,115,7,371.5,203.5,168,1,336,175,161,Bibee-di-Bobbidi-Boo,The Talmudic Tunnelers
+20,116,12,316.5,237.5,79,8,308.5,184,124.5,Blasphemous Hot Takes,Mt. Everest Taquito Farmers
+20,117,6,327,200,127,5,294.5,185,109.5,The Novaks,The Traveling Secretaries
+20,118,11,254.5,175,79.5,2,354.5,229.5,125,The West Bank Occupiers,Tucker? I hardly know her
+20,119,14,404.5,245.5,159,9,241,117.5,123.5,Top Gunner: Henderson,Book of Bob
+20,120,4,313,189.5,123.5,13,319,183,136,All That is Wright,Ketel Bells
+21,121,4,NA,NA,NA,5,NA,NA,NA,All That is Wright,The Traveling Secretaries
+21,122,11,NA,NA,NA,6,NA,NA,NA,The West Bank Occupiers,The Novaks
+21,123,7,NA,NA,NA,13,NA,NA,NA,Bibee-di-Bobbidi-Boo,Ketel Bells
+21,124,2,NA,NA,NA,1,NA,NA,NA,Tucker? I hardly know her,The Talmudic Tunnelers
+21,125,9,NA,NA,NA,8,NA,NA,NA,Book of Bob,Mt. Everest Taquito Farmers
+21,126,14,NA,NA,NA,12,NA,NA,NA,Top Gunner: Henderson,Blasphemous Hot Takes
