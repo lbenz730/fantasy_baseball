@@ -1,13 +1,19 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
-All That is Wright,The Traveling Secretaries,0,14,0,16,16,0,0.5289371489772787,0.498125815376785
+All That is Wright,The Traveling Secretaries,0,14,0,16,16,0,0.5293555704325533,0.498125815376785
 All That is Wright,The Traveling Secretaries,1,13,-35,16,14,2,0.4043564311100457,0.3521354155905114
-The West Bank Occupiers,The Novaks,0,14,0,16,16,0,0.43884372191624743,0.498125815376785
+All That is Wright,The Traveling Secretaries,2,12,-6,14,13,1,0.5276645718891565,0.5359680945074278
+The West Bank Occupiers,The Novaks,0,14,0,16,16,0,0.4390505160542536,0.498125815376785
 The West Bank Occupiers,The Novaks,1,13,16,14,14,0,0.5501120620229548,0.6857028272046178
+The West Bank Occupiers,The Novaks,2,12,43,13,12,1,0.743359952549872,0.886344936394379
 Bibee-di-Bobbidi-Boo,Ketel Bells,0,14,0,16,16,0,0.5323704355687013,0.498125815376785
 Bibee-di-Bobbidi-Boo,Ketel Bells,1,13,24,16,15,1,0.7033172794125907,0.7880810240618547
+Bibee-di-Bobbidi-Boo,Ketel Bells,2,12,31.5,16,13,3,0.7727386889111875,0.8883475945650925
 Tucker? I hardly know her,The Talmudic Tunnelers,0,14,0,16,16,0,0.41904941785875105,0.498125815376785
 Tucker? I hardly know her,The Talmudic Tunnelers,1,13,18,14,14,0,0.5366673482389136,0.7065228288029053
-Book of Bob,Mt. Everest Taquito Farmers,0,14,0,16,16,0,0.5576724684527862,0.498125815376785
-Book of Bob,Mt. Everest Taquito Farmers,1,13,14.5,15,16,-1,0.6027841498349396,0.5439171442857812
+Tucker? I hardly know her,The Talmudic Tunnelers,2,12,45.5,13,14,-1,0.7001130668552171,0.7997458419359975
+Book of Bob,Mt. Everest Taquito Farmers,0,14,0,16,16,0,0.5593288696663996,0.498125815376785
+Book of Bob,Mt. Everest Taquito Farmers,1,13,15.5,15,16,-1,0.605417604976298,0.553570845392354
+Book of Bob,Mt. Everest Taquito Farmers,2,12,17,13,16,-3,0.5475764232471395,0.4186320094241742
 Top Gunner: Henderson,Blasphemous Hot Takes,0,14,0,16,16,0,0.4116579206449286,0.498125815376785
 Top Gunner: Henderson,Blasphemous Hot Takes,1,13,42.5,14,16,-2,0.6009132111826704,0.7046879354909883
+Top Gunner: Henderson,Blasphemous Hot Takes,2,12,75.5,13,16,-3,0.7688883826245246,0.8571994528717686

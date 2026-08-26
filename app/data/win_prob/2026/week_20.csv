@@ -12,14 +12,14 @@ Blasphemous Hot Takes,Mt. Everest Taquito Farmers,1,6,24.5,7,8,-1,0.630381927844
 Blasphemous Hot Takes,Mt. Everest Taquito Farmers,2,5,66,6,8,-2,0.8024283793772132,0.8510221974079161
 Blasphemous Hot Takes,Mt. Everest Taquito Farmers,3,4,65,6,8,-2,0.7812668515839816,0.84625110705626
 Blasphemous Hot Takes,Mt. Everest Taquito Farmers,4,3,27.5,4,7,-3,0.5090461254120192,0.5130548477174445
-Blasphemous Hot Takes,Mt. Everest Taquito Farmers,5,2,5.5,1,3,-2,0.3481917362792367,0.3764462099008062
-Blasphemous Hot Takes,Mt. Everest Taquito Farmers,6,1,43,0,2,-2,0.7605843077024508,0.7085382262550545
-Blasphemous Hot Takes,Mt. Everest Taquito Farmers,7,0,8,0,0,0,1,0.5953927209259413
+Blasphemous Hot Takes,Mt. Everest Taquito Farmers,5,2,8.5,1,3,-2,0.36817026988849483,0.4029415590042052
+Blasphemous Hot Takes,Mt. Everest Taquito Farmers,6,1,46,0,2,-2,0.8087288308754353,0.7310057952462788
+Blasphemous Hot Takes,Mt. Everest Taquito Farmers,7,0,11,0,0,0,1,0.6304108375748946
 The Novaks,The Traveling Secretaries,0,7,0,8,8,0,0.48236632860123013,0.498125815376785
 The Novaks,The Traveling Secretaries,1,6,-40.5,8,6,2,0.338434554603931,0.30682743324456935
 The Novaks,The Traveling Secretaries,2,5,-51.5,7,6,1,0.18764495408346377,0.1639290231371979
-The Novaks,The Traveling Secretaries,3,4,-25,3,4,-1,0.1985950803100911,0.20361565318696048
-The Novaks,The Traveling Secretaries,4,3,13,1,4,-3,0.35283200926326735,0.38381398651714255
+The Novaks,The Traveling Secretaries,3,4,-24,3,4,-1,0.2068360589577167,0.2100106590158783
+The Novaks,The Traveling Secretaries,4,3,14,1,4,-3,0.3552599846818161,0.3924224076162336
 The Novaks,The Traveling Secretaries,5,2,30,0,4,-4,0.49025372752101115,0.6128513459638203
 The Novaks,The Traveling Secretaries,6,1,34,0,2,-2,0.6734736344426948,0.6350598657965971
 The Novaks,The Traveling Secretaries,7,0,31.5,0,0,0,1,0.8239141944446378
@@ -28,7 +28,7 @@ The West Bank Occupiers,Tucker? I hardly know her,1,6,-12,8,8,0,0.45188071386244
 The West Bank Occupiers,Tucker? I hardly know her,2,5,-46.5,6,6,0,0.17154316597246597,0.09141610528347233
 The West Bank Occupiers,Tucker? I hardly know her,3,4,-16,5,6,-1,0.2962017644127022,0.26639931831747804
 The West Bank Occupiers,Tucker? I hardly know her,4,3,-47.5,5,6,-1,0.11211241606012652,0.09612462536174403
-The West Bank Occupiers,Tucker? I hardly know her,5,2,-74.5,2,4,-2,0.027124308455711104,0.029994223028324038
+The West Bank Occupiers,Tucker? I hardly know her,5,2,-74.5,2,4,-2,0.0271243084557111,0.029994223028324024
 The West Bank Occupiers,Tucker? I hardly know her,6,1,-111,2,2,0,0.0024351965734908144,0.004187367872776751
 The West Bank Occupiers,Tucker? I hardly know her,7,0,-100,1,0,1,0,0.02875942095385236
 Top Gunner: Henderson,Book of Bob,0,7,0,8,8,0,0.3447448008484691,0.498125815376785
@@ -36,14 +36,14 @@ Top Gunner: Henderson,Book of Bob,1,6,51,6,7,-1,0.7273420603540003,0.83189715517
 Top Gunner: Henderson,Book of Bob,2,5,60,5,6,-1,0.7936167671249386,0.8754479656448346
 Top Gunner: Henderson,Book of Bob,3,4,69,3,5,-2,0.833976730672815,0.8646051137064821
 Top Gunner: Henderson,Book of Bob,4,3,94,2,4,-2,0.9346475100232063,0.941734540319889
-Top Gunner: Henderson,Book of Bob,5,2,135,1,3,-2,0.9940998185345286,0.9866878702913736
-Top Gunner: Henderson,Book of Bob,6,1,136.5,1,2,-1,0.997216820561623,0.9928430312623
-Top Gunner: Henderson,Book of Bob,7,0,149.5,0,1,-1,1,0.9956763042571694
+Top Gunner: Henderson,Book of Bob,5,2,130,1,3,-2,0.9934246057106276,0.9840143775277218
+Top Gunner: Henderson,Book of Bob,6,1,131.5,1,2,-1,0.996835067070454,0.9913160172976242
+Top Gunner: Henderson,Book of Bob,7,0,144.5,0,1,-1,1,0.9947506024721093
 All That is Wright,Ketel Bells,0,7,0,8,8,0,0.6411051049430704,0.498125815376785
 All That is Wright,Ketel Bells,1,6,-10.5,7,7,0,0.5170147019204109,0.37183312454651235
 All That is Wright,Ketel Bells,2,5,-29.5,6,6,0,0.3601033611684951,0.18852265854175504
 All That is Wright,Ketel Bells,3,4,-22.5,4,5,-1,0.2534841027287775,0.2198773455759555
 All That is Wright,Ketel Bells,4,3,-68.5,4,3,1,0.09644625742760557,0.0917985717220732
-All That is Wright,Ketel Bells,5,2,-73.5,3,1,2,0.11525559443309695,0.11436000538169507
-All That is Wright,Ketel Bells,6,1,-56.5,1,0,1,0.06769661787644939,0.13893554716292683
-All That is Wright,Ketel Bells,7,0,-6,0,0,0,0,0.42486151548543083
+All That is Wright,Ketel Bells,5,2,-72.5,3,1,2,0.12428092312000526,0.11819586559861235
+All That is Wright,Ketel Bells,6,1,-55.5,1,0,1,0.06887879910255759,0.14366427206735968
+All That is Wright,Ketel Bells,7,0,-5,0,0,0,0,0.43693209260824944
