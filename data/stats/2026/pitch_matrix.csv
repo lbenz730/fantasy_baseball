@@ -21,7 +21,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,4.2,6+,1,Bad Start,The Talmudic Tunnelers
 1,5.0,0,6,QS Potential,The Talmudic Tunnelers
 1,5.0,1,9,QS Potential,The Talmudic Tunnelers
-1,5.0,2,6,QS Potential,The Talmudic Tunnelers
+1,5.0,2,7,QS Potential,The Talmudic Tunnelers
 1,5.0,3,6,QS Potential,The Talmudic Tunnelers
 1,5.0,4,3,Bad Start,The Talmudic Tunnelers
 1,5.0,5,4,Bad Start,The Talmudic Tunnelers
@@ -66,6 +66,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,3.1,2,1,Bad Start,Tucker? I hardly know her
 2,3.1,6+,2,Bad Start,Tucker? I hardly know her
 2,3.2,2,1,Bad Start,Tucker? I hardly know her
+2,3.2,4,1,Bad Start,Tucker? I hardly know her
 2,3.2,6+,1,Bad Start,Tucker? I hardly know her
 2,4.0,0,1,Bad Start,Tucker? I hardly know her
 2,4.0,1,1,Bad Start,Tucker? I hardly know her
@@ -102,7 +103,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,5.2,5,3,Bad Start,Tucker? I hardly know her
 2,5.2,6+,1,Bad Start,Tucker? I hardly know her
 2,6.0,0,9,QS,Tucker? I hardly know her
-2,6.0,1,15,QS,Tucker? I hardly know her
+2,6.0,1,16,QS,Tucker? I hardly know her
 2,6.0,2,7,QS,Tucker? I hardly know her
 2,6.0,3,5,QS,Tucker? I hardly know her
 2,6.0,4,6,QS Potential,Tucker? I hardly know her
@@ -126,6 +127,7 @@ team_id,ip,earned_runs,n,start_type,team
 2,> 7,0,4,QS,Tucker? I hardly know her
 2,> 7,1,3,QS,Tucker? I hardly know her
 2,CG,1,1,CG,Tucker? I hardly know her
+4,3.0,2,1,Bad Start,All That is Wright
 4,3.0,3,2,Bad Start,All That is Wright
 4,3.0,6+,1,Bad Start,All That is Wright
 4,3.1,6+,1,Bad Start,All That is Wright
@@ -257,6 +259,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,4.1,2,1,Bad Start,The Novaks
 6,4.1,3,2,Bad Start,The Novaks
 6,4.1,5,1,Bad Start,The Novaks
+6,4.1,6+,1,Bad Start,The Novaks
 6,4.2,1,1,Bad Start,The Novaks
 6,4.2,2,2,Bad Start,The Novaks
 6,4.2,3,1,Bad Start,The Novaks
@@ -267,7 +270,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,5.0,3,10,QS Potential,The Novaks
 6,5.0,4,7,Bad Start,The Novaks
 6,5.0,5,3,Bad Start,The Novaks
-6,5.0,6+,2,Bad Start,The Novaks
+6,5.0,6+,3,Bad Start,The Novaks
 6,5.1,0,1,QS Potential,The Novaks
 6,5.1,1,2,QS Potential,The Novaks
 6,5.1,2,3,QS Potential,The Novaks
@@ -297,6 +300,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,7.0,2,4,QS,The Novaks
 6,7.0,3,2,QS,The Novaks
 6,7.0,4,1,QS Potential,The Novaks
+6,< 3,0,1,Bad Start,The Novaks
 6,< 3,2,1,Bad Start,The Novaks
 6,< 3,3,1,Bad Start,The Novaks
 6,< 3,5,3,Bad Start,The Novaks
@@ -393,7 +397,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.1,3,2,QS Potential,Mt. Everest Taquito Farmers
 8,5.1,4,2,Bad Start,Mt. Everest Taquito Farmers
 8,5.2,0,2,Blue Balls,Mt. Everest Taquito Farmers
-8,5.2,1,2,Blue Balls,Mt. Everest Taquito Farmers
+8,5.2,1,3,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,2,1,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,3,3,Blue Balls,Mt. Everest Taquito Farmers
 8,5.2,5,1,Bad Start,Mt. Everest Taquito Farmers
@@ -412,7 +416,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,7.0,0,9,QS,Mt. Everest Taquito Farmers
 8,7.0,1,3,QS,Mt. Everest Taquito Farmers
 8,7.0,2,2,QS,Mt. Everest Taquito Farmers
-8,7.0,3,4,QS,Mt. Everest Taquito Farmers
+8,7.0,3,5,QS,Mt. Everest Taquito Farmers
 8,< 3,0,1,Bad Start,Mt. Everest Taquito Farmers
 8,< 3,1,1,Bad Start,Mt. Everest Taquito Farmers
 8,< 3,5,1,Bad Start,Mt. Everest Taquito Farmers
@@ -477,7 +481,7 @@ team_id,ip,earned_runs,n,start_type,team
 9,6.1,6+,1,Bad Start,Book of Bob
 9,6.2,1,3,QS,Book of Bob
 9,6.2,6+,1,Bad Start,Book of Bob
-9,7.0,0,10,QS,Book of Bob
+9,7.0,0,11,QS,Book of Bob
 9,7.0,1,4,QS,Book of Bob
 9,7.0,2,3,QS,Book of Bob
 9,7.0,3,4,QS,Book of Bob
@@ -587,7 +591,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.2,6+,1,Bad Start,Blasphemous Hot Takes
 12,6.0,0,9,QS,Blasphemous Hot Takes
 12,6.0,1,11,QS,Blasphemous Hot Takes
-12,6.0,2,10,QS,Blasphemous Hot Takes
+12,6.0,2,11,QS,Blasphemous Hot Takes
 12,6.0,3,6,QS,Blasphemous Hot Takes
 12,6.0,4,7,QS Potential,Blasphemous Hot Takes
 12,6.0,5,1,Bad Start,Blasphemous Hot Takes
@@ -702,7 +706,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,5.0,3,5,QS Potential,Top Gunner: Henderson
 14,5.0,4,7,Bad Start,Top Gunner: Henderson
 14,5.0,5,3,Bad Start,Top Gunner: Henderson
-14,5.0,6+,3,Bad Start,Top Gunner: Henderson
+14,5.0,6+,4,Bad Start,Top Gunner: Henderson
 14,5.1,0,1,QS Potential,Top Gunner: Henderson
 14,5.1,1,2,QS Potential,Top Gunner: Henderson
 14,5.1,2,2,QS Potential,Top Gunner: Henderson
