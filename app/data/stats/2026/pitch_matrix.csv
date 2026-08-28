@@ -208,7 +208,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,4.2,4,5,Bad Start,The Traveling Secretaries
 5,5.0,0,2,QS Potential,The Traveling Secretaries
 5,5.0,1,12,QS Potential,The Traveling Secretaries
-5,5.0,2,7,QS Potential,The Traveling Secretaries
+5,5.0,2,8,QS Potential,The Traveling Secretaries
 5,5.0,3,5,QS Potential,The Traveling Secretaries
 5,5.0,4,2,Bad Start,The Traveling Secretaries
 5,5.0,5,5,Bad Start,The Traveling Secretaries
@@ -346,6 +346,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.0,5,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,6.0,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,6.1,0,1,QS,Bibee-di-Bobbidi-Boo
+7,6.1,1,1,QS,Bibee-di-Bobbidi-Boo
 7,6.1,2,2,QS,Bibee-di-Bobbidi-Boo
 7,6.1,5,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,6.2,1,1,QS,Bibee-di-Bobbidi-Boo
@@ -404,7 +405,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,5.2,6+,1,Bad Start,Mt. Everest Taquito Farmers
 8,6.0,0,11,QS,Mt. Everest Taquito Farmers
 8,6.0,1,12,QS,Mt. Everest Taquito Farmers
-8,6.0,2,11,QS,Mt. Everest Taquito Farmers
+8,6.0,2,12,QS,Mt. Everest Taquito Farmers
 8,6.0,3,9,QS,Mt. Everest Taquito Farmers
 8,6.0,4,5,QS Potential,Mt. Everest Taquito Farmers
 8,6.1,1,1,QS,Mt. Everest Taquito Farmers
@@ -591,7 +592,7 @@ team_id,ip,earned_runs,n,start_type,team
 12,5.2,6+,1,Bad Start,Blasphemous Hot Takes
 12,6.0,0,9,QS,Blasphemous Hot Takes
 12,6.0,1,11,QS,Blasphemous Hot Takes
-12,6.0,2,11,QS,Blasphemous Hot Takes
+12,6.0,2,12,QS,Blasphemous Hot Takes
 12,6.0,3,6,QS,Blasphemous Hot Takes
 12,6.0,4,7,QS Potential,Blasphemous Hot Takes
 12,6.0,5,1,Bad Start,Blasphemous Hot Takes
@@ -661,7 +662,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,6.0,0,16,QS,Ketel Bells
 13,6.0,1,13,QS,Ketel Bells
 13,6.0,2,12,QS,Ketel Bells
-13,6.0,3,6,QS,Ketel Bells
+13,6.0,3,7,QS,Ketel Bells
 13,6.0,4,3,QS Potential,Ketel Bells
 13,6.0,5,2,Bad Start,Ketel Bells
 13,6.0,6+,1,Bad Start,Ketel Bells
@@ -681,6 +682,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,< 3,3,2,Bad Start,Ketel Bells
 13,< 3,6+,2,Bad Start,Ketel Bells
 13,> 7,1,1,QS,Ketel Bells
+13,CG,0,1,CG,Ketel Bells
 14,3.0,4,1,Bad Start,Top Gunner: Henderson
 14,3.0,6+,1,Bad Start,Top Gunner: Henderson
 14,3.1,2,1,Bad Start,Top Gunner: Henderson
@@ -701,7 +703,7 @@ team_id,ip,earned_runs,n,start_type,team
 14,4.2,5,2,Bad Start,Top Gunner: Henderson
 14,4.2,6+,1,Bad Start,Top Gunner: Henderson
 14,5.0,0,6,QS Potential,Top Gunner: Henderson
-14,5.0,1,4,QS Potential,Top Gunner: Henderson
+14,5.0,1,5,QS Potential,Top Gunner: Henderson
 14,5.0,2,3,QS Potential,Top Gunner: Henderson
 14,5.0,3,5,QS Potential,Top Gunner: Henderson
 14,5.0,4,7,Bad Start,Top Gunner: Henderson
