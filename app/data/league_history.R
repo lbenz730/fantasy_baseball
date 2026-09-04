@@ -60,10 +60,9 @@ pick_winner <- function(x, cond) {
 
 
 
-summarise_season <- function(season, format, history_url, rs_bounds_old) {
+summarise_season <- function(season, format, history_url, rs_bounds_old, old_managers) {
   df_start <- read_csv('data/df_start.csv')
-  old_managers <- read_sheet(history_url, 'Managers')
-  
+
   if(format == 'new') {
     teams <- read_csv(glue('data/stats/{season}/teams_{season}.csv'))
     schedule <- read_csv(glue('data/stats/{season}/schedule_{season}.csv'))
@@ -168,10 +167,9 @@ summarise_season <- function(season, format, history_url, rs_bounds_old) {
   
 }
 
-get_schedule <- function(season, format, history_url, rs_bounds_old) {
+get_schedule <- function(season, format, history_url, rs_bounds_old, old_managers) {
   df_start <- read_csv('data/df_start.csv')
-  old_managers <- read_sheet(history_url, 'Managers')
-  
+
   if(format == 'old') {
     schedule <- read_sheet(history_url, sheet = as.character(season))
     schedule <- 
@@ -235,8 +233,8 @@ update_league_history <- function(season_max) {
   
   
   
-  old_stats <- map_dfr(2015:2019, summarise_season, 'old', history_url, rs_bounds_old)
-  new_stats <- map_dfr(2020:season_max, summarise_season, 'new', history_url, rs_bounds_old)
+  old_stats <- map_dfr(2015:2019, summarise_season, 'old', history_url, rs_bounds_old, old_managers)
+  new_stats <- map_dfr(2020:season_max, summarise_season, 'new', history_url, rs_bounds_old, old_managers)
   
   league_history <- bind_rows(old_stats, new_stats) 
   write_csv(league_history, 'data/stats/league_history.csv')
@@ -254,8 +252,9 @@ update_win_loss_matrix <- function(season_max) {
   
   df_managers <- read_csv('data/stats/manager_history.csv')
   history_url <- 'https://docs.google.com/spreadsheets/d/1teUNQArj8mCKb5Ukctp5b9nFKFX8GHMjDJHbPUNcfV8'
-  old_stats <- map_dfr(2015:2019, get_schedule, 'old', history_url, rs_bounds_old)
-  new_stats <- map_dfr(2020:season_max, get_schedule, 'new', history_url, rs_bounds_old)
+  old_managers <- read_sheet(history_url, 'Managers')
+  old_stats <- map_dfr(2015:2019, get_schedule, 'old', history_url, rs_bounds_old, old_managers)
+  new_stats <- map_dfr(2020:season_max, get_schedule, 'new', history_url, rs_bounds_old, old_managers)
   
   df_results <- 
     bind_rows(old_stats, new_stats) %>% 
