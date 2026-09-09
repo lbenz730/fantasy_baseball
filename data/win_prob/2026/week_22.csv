@@ -1,13 +1,19 @@
 team_home,team_away,day_of_matchup,days_left,score_diff,starts_left_home,starts_left_away,start_advantage,win_prob,win_prob_lr
 All That is Wright,The West Bank Occupiers,0,14,0,16,16,0,0.595309870428346,0.498125815376785
 All That is Wright,The West Bank Occupiers,1,13,-19.5,16,15,1,0.496779181600989,0.40563190997332854
+All That is Wright,The West Bank Occupiers,2,12,-45,13,14,-1,0.2708450666531194,0.1049327211897912
 The Novaks,The Traveling Secretaries,0,14,0,16,16,0,0.4776064295310221,0.498125815376785
 The Novaks,The Traveling Secretaries,1,13,27.5,15,15,0,0.6461652573854576,0.7935067697916678
+The Novaks,The Traveling Secretaries,2,12,6,14,15,-1,0.47315192862662603,0.461261900480237
 Bibee-di-Bobbidi-Boo,The Talmudic Tunnelers,0,14,0,16,16,0,0.45417061653834867,0.498125815376785
 Bibee-di-Bobbidi-Boo,The Talmudic Tunnelers,1,13,8,16,14,2,0.5492378944904552,0.7301970694218805
+Bibee-di-Bobbidi-Boo,The Talmudic Tunnelers,2,12,72,13,14,-1,0.8269655022890401,0.9181784559642432
 Ketel Bells,Book of Bob,0,14,0,16,16,0,0.4417206086583998,0.498125815376785
 Ketel Bells,Book of Bob,1,13,-20,16,15,1,0.36104009980801804,0.4009422478499048
+Ketel Bells,Book of Bob,2,12,-27.5,16,15,1,0.3120745887043591,0.33317505800848995
 Tucker? I hardly know her,Top Gunner: Henderson,0,14,0,16,16,0,0.5584108615727938,0.498125815376785
 Tucker? I hardly know her,Top Gunner: Henderson,1,13,0.5,15,15,0,0.5622177969292268,0.5042788440363923
+Tucker? I hardly know her,Top Gunner: Henderson,2,12,-34.5,15,12,3,0.4505606265041074,0.419593856321196
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,0,14,0,16,16,0,0.4876236726490111,0.498125815376785
 Mt. Everest Taquito Farmers,Blasphemous Hot Takes,1,13,-64.5,14,13,1,0.16947036905313673,0.10564994430666873
+Mt. Everest Taquito Farmers,Blasphemous Hot Takes,2,12,-6,11,13,-2,0.34416515095320327,0.2825530401511481
