@@ -462,24 +462,24 @@ lineup_id,position,player,player_id,team_id,points,ppg,matchup_id
 15,RP,Emilio Pagan,33403,8,35.5,4.4375,21
 15,RP,Mason Montgomery,4424112,11,31,5.166666666666667,21
 0,C,William Contreras,39895,4,36,7.2,22
-1,1B,Rafael Devers,33859,7,24,6,22
-2,2B,Brice Turang,41179,5,37.5,7.5,22
-3,3B,Max Muncy,33303,12,24.5,4.9,22
-4,SS,Francisco Lindor,32129,4,33,6.6,22
-5,OF,Jackson Chourio,4917869,5,41.5,8.3,22
-5,OF,Jackson Merrill,4872691,6,41.5,8.3,22
-5,OF,Cody Bellinger,33912,11,33,6.6,22
-5,OF,Fernando Tatis Jr.,35983,7,25.5,5.1,22
-5,OF,Teoscar Hernandez,33377,12,24.5,4.9,22
-6,2B/SS,Elly De La Cruz,4917694,8,25.5,5.1,22
-7,1B/3B,Kevin McGonigle,5149072,4,23,3.8333333333333335,22
-12,UTIL,Carter Jensen,4917812,7,25,5,22
+1,1B,Isaac Paredes,39706,6,26,4.333333333333333,22
+2,2B,Brice Turang,41179,5,40.5,6.75,22
+3,3B,Nolan Arenado,31261,13,33,5.5,22
+4,SS,Francisco Lindor,32129,4,33,5.5,22
+5,OF,Jackson Merrill,4872691,6,44,7.333333333333333,22
+5,OF,Jackson Chourio,4917869,5,40.5,6.75,22
+5,OF,Randy Arozarena,36488,7,34,5.666666666666667,22
+5,OF,Fernando Tatis Jr.,35983,7,33,5.5,22
+5,OF,Cody Bellinger,33912,11,32,5.333333333333333,22
+6,2B/SS,Kevin McGonigle,5149072,4,30,5,22
+7,1B/3B,Kazuma Okamoto,5134636,2,26,4.333333333333333,22
+12,UTIL,Riley Greene,42179,14,30.5,5.083333333333333,22
+14,SP,Cam Schlittler,5134581,11,60,30,22
 14,SP,Jesus Luzardo,39667,9,51,51,22
+14,SP,Noah Cameron,4417208,12,46,23,22
 14,SP,Jacob deGrom,32796,13,33.5,33.5,22
-14,SP,Yoshinobu Yamamoto,4872587,7,31.5,31.5,22
-14,SP,Cam Schlittler,5134581,11,31,31,22
-14,SP,Reid Detmers,4326697,7,30,30,22
-14,SP,Zack Wheeler,31267,13,27,27,22
+14,SP,Cal Quantrill,39875,8,33,16.5,22
+14,SP,Trevor Rogers,39640,6,32.5,16.25,22
 15,RP,Mason Miller,4730225,5,21,7,22
-15,RP,Kenley Jansen,29630,13,15,5,22
-15,RP,Rico Garcia,41382,7,15,5,22
+15,RP,Mason Montgomery,4424112,11,20,6.666666666666667,22
+15,RP,David Bednar,38303,9,16,5.333333333333333,22
