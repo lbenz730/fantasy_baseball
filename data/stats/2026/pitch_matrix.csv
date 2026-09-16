@@ -9,7 +9,7 @@ team_id,ip,earned_runs,n,start_type,team
 1,3.2,5,1,Bad Start,The Talmudic Tunnelers
 1,4.0,1,3,Bad Start,The Talmudic Tunnelers
 1,4.0,2,1,Bad Start,The Talmudic Tunnelers
-1,4.0,3,2,Bad Start,The Talmudic Tunnelers
+1,4.0,3,3,Bad Start,The Talmudic Tunnelers
 1,4.0,4,1,Bad Start,The Talmudic Tunnelers
 1,4.0,5,2,Bad Start,The Talmudic Tunnelers
 1,4.0,6+,1,Bad Start,The Talmudic Tunnelers
@@ -185,7 +185,7 @@ team_id,ip,earned_runs,n,start_type,team
 4,6.2,2,1,QS,All That is Wright
 4,6.2,3,3,QS,All That is Wright
 4,7.0,0,14,QS,All That is Wright
-4,7.0,1,4,QS,All That is Wright
+4,7.0,1,5,QS,All That is Wright
 4,7.0,3,6,QS,All That is Wright
 4,7.0,5,1,Bad Start,All That is Wright
 4,< 3,0,2,Bad Start,All That is Wright
@@ -215,7 +215,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,4.2,2,1,Bad Start,The Traveling Secretaries
 5,4.2,3,2,Bad Start,The Traveling Secretaries
 5,4.2,4,5,Bad Start,The Traveling Secretaries
-5,5.0,0,2,QS Potential,The Traveling Secretaries
+5,5.0,0,3,QS Potential,The Traveling Secretaries
 5,5.0,1,13,QS Potential,The Traveling Secretaries
 5,5.0,2,8,QS Potential,The Traveling Secretaries
 5,5.0,3,5,QS Potential,The Traveling Secretaries
@@ -243,6 +243,7 @@ team_id,ip,earned_runs,n,start_type,team
 5,6.1,1,1,QS,The Traveling Secretaries
 5,6.1,2,2,QS,The Traveling Secretaries
 5,6.1,3,1,QS,The Traveling Secretaries
+5,6.1,5,1,Bad Start,The Traveling Secretaries
 5,6.1,6+,1,Bad Start,The Traveling Secretaries
 5,6.2,0,2,QS,The Traveling Secretaries
 5,6.2,2,4,QS,The Traveling Secretaries
@@ -296,7 +297,7 @@ team_id,ip,earned_runs,n,start_type,team
 6,5.2,4,1,Bad Start,The Novaks
 6,6.0,0,8,QS,The Novaks
 6,6.0,1,9,QS,The Novaks
-6,6.0,2,18,QS,The Novaks
+6,6.0,2,19,QS,The Novaks
 6,6.0,3,3,QS,The Novaks
 6,6.0,4,3,QS Potential,The Novaks
 6,6.0,5,4,Bad Start,The Novaks
@@ -324,7 +325,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,3.0,1,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,3.0,6+,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,3.2,6+,1,Bad Start,Bibee-di-Bobbidi-Boo
-7,4.0,2,1,Bad Start,Bibee-di-Bobbidi-Boo
+7,4.0,2,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,3,3,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,4,2,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.0,5,6,Bad Start,Bibee-di-Bobbidi-Boo
@@ -336,7 +337,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,4.2,1,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,4,1,Bad Start,Bibee-di-Bobbidi-Boo
 7,4.2,6+,2,Bad Start,Bibee-di-Bobbidi-Boo
-7,5.0,1,8,QS Potential,Bibee-di-Bobbidi-Boo
+7,5.0,1,9,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,2,6,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,3,8,QS Potential,Bibee-di-Bobbidi-Boo
 7,5.0,4,3,Bad Start,Bibee-di-Bobbidi-Boo
@@ -366,7 +367,7 @@ team_id,ip,earned_runs,n,start_type,team
 7,6.2,1,2,QS,Bibee-di-Bobbidi-Boo
 7,6.2,2,1,QS,Bibee-di-Bobbidi-Boo
 7,6.2,3,3,QS,Bibee-di-Bobbidi-Boo
-7,7.0,0,4,QS,Bibee-di-Bobbidi-Boo
+7,7.0,0,5,QS,Bibee-di-Bobbidi-Boo
 7,7.0,1,14,QS,Bibee-di-Bobbidi-Boo
 7,7.0,2,7,QS,Bibee-di-Bobbidi-Boo
 7,7.0,3,1,QS,Bibee-di-Bobbidi-Boo
@@ -405,7 +406,7 @@ team_id,ip,earned_runs,n,start_type,team
 8,4.2,3,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,4,1,Bad Start,Mt. Everest Taquito Farmers
 8,4.2,6+,1,Bad Start,Mt. Everest Taquito Farmers
-8,5.0,0,4,QS Potential,Mt. Everest Taquito Farmers
+8,5.0,0,5,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,1,7,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,2,9,QS Potential,Mt. Everest Taquito Farmers
 8,5.0,3,5,QS Potential,Mt. Everest Taquito Farmers
@@ -548,7 +549,7 @@ team_id,ip,earned_runs,n,start_type,team
 11,5.1,4,2,Bad Start,The West Bank Occupiers
 11,5.2,0,3,Blue Balls,The West Bank Occupiers
 11,5.2,1,9,Blue Balls,The West Bank Occupiers
-11,5.2,2,4,Blue Balls,The West Bank Occupiers
+11,5.2,2,5,Blue Balls,The West Bank Occupiers
 11,5.2,3,2,Blue Balls,The West Bank Occupiers
 11,5.2,4,4,Bad Start,The West Bank Occupiers
 11,5.2,5,1,Bad Start,The West Bank Occupiers
@@ -674,7 +675,7 @@ team_id,ip,earned_runs,n,start_type,team
 13,4.2,6+,1,Bad Start,Ketel Bells
 13,5.0,0,4,QS Potential,Ketel Bells
 13,5.0,1,7,QS Potential,Ketel Bells
-13,5.0,2,12,QS Potential,Ketel Bells
+13,5.0,2,13,QS Potential,Ketel Bells
 13,5.0,3,3,QS Potential,Ketel Bells
 13,5.0,4,6,Bad Start,Ketel Bells
 13,5.0,5,1,Bad Start,Ketel Bells
