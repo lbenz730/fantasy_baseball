@@ -125,7 +125,7 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 2,553,344,209,Tucker? I hardly know her,21,124,57.5,151.5,1,553,344,209,151.5,57.5,1,647.5,421,226.5,The Talmudic Tunnelers,48,178.5,647.5,421,226.5,178.5,48,11,8,9
 9,627.5,303,324.5,Book of Bob,21,125,5.5,319,1,627.5,303,324.5,319,5.5,8,558,413.5,144.5,Mt. Everest Taquito Farmers,37,107.5,558,413.5,144.5,107.5,37,7,12,2
 14,630.5,328.5,302,Top Gunner: Henderson,21,126,50.5,251.5,1,630.5,328.5,302,251.5,50.5,12,427.5,322.5,105,Blasphemous Hot Takes,52,53,427.5,322.5,105,53,52,6,9,4
-4,702.5,446.5,256,All That is Wright,22,127,38,218,NA,NA,NA,NA,NA,NA,11,718,388.5,329.5,The West Bank Occupiers,62,267.5,NA,NA,NA,NA,NA,2,1,4
+4,701.5,445.5,256,All That is Wright,22,127,38,218,NA,NA,NA,NA,NA,NA,11,718,388.5,329.5,The West Bank Occupiers,62,267.5,NA,NA,NA,NA,NA,2,1,4
 6,678,409.5,268.5,The Novaks,22,128,48.5,220,NA,NA,NA,NA,NA,NA,5,689,404,285,The Traveling Secretaries,101.5,183.5,NA,NA,NA,NA,NA,4,3,3
 7,634.5,391,243.5,Bibee-di-Bobbidi-Boo,22,129,28.5,215,NA,NA,NA,NA,NA,NA,1,560,391,169,The Talmudic Tunnelers,17.5,151.5,NA,NA,NA,NA,NA,5,5.5,5
 13,553.5,322.5,231,Ketel Bells,22,130,45.5,185.5,NA,NA,NA,NA,NA,NA,9,488,292,196,Book of Bob,20.5,175.5,NA,NA,NA,NA,NA,8,11,6
@@ -257,7 +257,7 @@ team_id,total_points,batting_points,pitching_points,team,matchup_id,game_id,rp_p
 1,647.5,421,226.5,The Talmudic Tunnelers,21,124,48,178.5,1,647.5,421,226.5,178.5,48,2,553,344,209,Tucker? I hardly know her,57.5,151.5,553,344,209,151.5,57.5,5,4,8
 8,558,413.5,144.5,Mt. Everest Taquito Farmers,21,125,37,107.5,1,558,413.5,144.5,107.5,37,9,627.5,303,324.5,Book of Bob,5.5,319,627.5,303,324.5,319,5.5,10,5,11
 12,427.5,322.5,105,Blasphemous Hot Takes,21,126,52,53,1,427.5,322.5,105,53,52,14,630.5,328.5,302,Top Gunner: Henderson,50.5,251.5,630.5,328.5,302,251.5,50.5,12,10,12
-11,718,388.5,329.5,The West Bank Occupiers,22,127,62,267.5,NA,NA,NA,NA,NA,NA,4,702.5,446.5,256,All That is Wright,38,218,NA,NA,NA,NA,NA,1,7,1
+11,718,388.5,329.5,The West Bank Occupiers,22,127,62,267.5,NA,NA,NA,NA,NA,NA,4,701.5,445.5,256,All That is Wright,38,218,NA,NA,NA,NA,NA,1,7,1
 5,689,404,285,The Traveling Secretaries,22,128,101.5,183.5,NA,NA,NA,NA,NA,NA,6,678,409.5,268.5,The Novaks,48.5,220,NA,NA,NA,NA,NA,3,4,2
 1,560,391,169,The Talmudic Tunnelers,22,129,17.5,151.5,NA,NA,NA,NA,NA,NA,7,634.5,391,243.5,Bibee-di-Bobbidi-Boo,28.5,215,NA,NA,NA,NA,NA,7,5.5,9
 9,488,292,196,Book of Bob,22,130,20.5,175.5,NA,NA,NA,NA,NA,NA,13,553.5,322.5,231,Ketel Bells,45.5,185.5,NA,NA,NA,NA,NA,12,12,8
